@@ -6,7 +6,7 @@ $namespaces:
   xsd: http://www.w3.org/2001/XMLSchema#
 
 $schemas:
- - https://schema.org/version/latest/schemaorg-current-http.rdf
+  - https://schema.org/version/latest/schemaorg-current-http.rdf
 
 s:author:
   class: s:Person
