@@ -24,6 +24,23 @@ $ cwltool run-sr-mpirun.cwl run-sr-mpirun-job.yml
 
 This will create the files `sr.out` and `sr.err`.
 
+### Tool to run sr with MPIRequirement and Docker
+
+This would be a natural change for a user that has an existing workflow
+as in the example in the previous section, using `DockerRequirement`.
+But, as per documentation, you cannot use `DockerRequirement` and
+`cwltool:MPIRequirement` together ⚠️.
+
+It is possible to try with the CWL tool `run-sr-mpireq.cwl`.
+
+```bash
+$ cwltool --enable-ext run-sr-mpireq.cwl --executable sr --msg_size 0 --niter 1 --np 2
+INFO /home/kinow/Development/python/workspace/cwltool/venv/bin/cwltool 3.1.20260108082146.dev10+g544f108b9
+INFO Resolved 'run-sr-mpireq.cwl' to 'file:///home/kinow/Development/python/workspace/cwl-mpi/examples/mpich-sr/run-sr-mpireq.cwl'
+ERROR Workflow or tool uses unsupported feature:
+No support for DockerRequirement and MPIRequirement both being required, unless Singularity or uDocker is being used.
+```
+
 ## Workflow
 
 ```bash

@@ -1,13 +1,17 @@
-#!/usr/bin/env cwl-runner
+#!/usr/bin/env cwltool
 cwlVersion: v1.2
 class: CommandLineTool
 
+# Refs:
+# - https://cwltool.readthedocs.io/en/latest/index.html#running-mpi-based-tools-that-need-to-be-launched
+
 $namespaces:
+  cwltool: "http://commonwl.org/cwltool#"
   s: https://schema.org/
   xsd: http://www.w3.org/2001/XMLSchema#
 
 $schemas:
-  - https://schema.org/version/latest/schemaorg-current-http.rdf
+ - https://schema.org/version/latest/schemaorg-current-http.rdf
 
 s:author:
   class: s:Person
@@ -34,28 +38,42 @@ s:license:
 #  "@type": "@id"
 #  "@value": "https://opensource.org/licenses/MIT"
 
-label: Compile sr.c with mpicc
+label: Run compiled sr using mpirun
 
 requirements:
   DockerRequirement:
     dockerPull: mfisherman/mpich:4.3.2
+  cwltool:MPIRequirement:
+    processes: $(inputs.np)
 
-baseCommand: mpicc
+baseCommand: [$(inputs.executable.path)]
 
 inputs:
-  source:
-    type: File
-    inputBinding:
-      position: 1
-  output_name:
-    type: string
-    default: a.out
-    inputBinding:
-      prefix: -o
-      position: 2
-
-outputs:
+  np:
+    type: int
+    default: 2
   executable:
     type: File
+  msg_size:
+    type: int
+    default: 0
+    inputBinding:
+      position: 1
+  niter:
+    type: int
+    default: 1
+    inputBinding:
+      position: 2
+
+stdout: sr.out
+stderr: sr.err
+
+outputs:
+  stdout_file:
+    type: File
     outputBinding:
-      glob: $(inputs.output_name)
+      glob: sr.out
+  stderr_file:
+    type: File
+    outputBinding:
+      glob: sr.err
