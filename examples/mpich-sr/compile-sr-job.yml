@@ -1,0 +1,5 @@
+source:
+  class: File
+  path: sr.c
+output_name: a.out
+
