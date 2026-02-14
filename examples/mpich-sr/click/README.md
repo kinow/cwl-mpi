@@ -10,7 +10,7 @@ does.
 For example, from the parent directory you can test it with this command:
 
 ```bash
-$ cwl2click --output ./ ../sr-workflow.cwl
+$ cwl2click --output ./click ./sr-workflow.cwl
 ```
 
 [^1]: https://terradue.github.io/cwl2click/execution/
