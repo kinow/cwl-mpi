@@ -38,11 +38,9 @@ s:license:
 #  "@type": "@id"
 #  "@value": "https://opensource.org/licenses/MIT"
 
-label: Run compiled sr using mpirun
+label: Run compiled sr using mpirun without Docker
 
 requirements:
-  DockerRequirement:
-    dockerPull: mfisherman/mpich:4.3.2
   cwltool:MPIRequirement:
     processes: $(inputs.np)
 
