@@ -41,7 +41,7 @@ ERROR Workflow or tool uses unsupported feature:
 No support for DockerRequirement and MPIRequirement both being required, unless Singularity or uDocker is being used.
 ```
 
-### Tool to run sr with MPIRequirement and Docker
+### Tool to run sr with MPIRequirement and without Docker
 
 The `run-sr-mpireq-nodocker.cwl` contains the same tool defined above, but without
 using the `DockerRequirement`. This means this will use the system `mpirun`. If you
