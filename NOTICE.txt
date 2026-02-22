@@ -1,0 +1,8 @@
+The file sr.c in this repository is adapted from MPICH.
+MPICH is distributed under the MPICH License, a BSD-like permissive license.
+See https://www.mpich.org/downloads/ for details.
+
+This repository contains workflows written to run with external workflow
+managers. No code from those workflow manager tools is included.
+All workflow definitions in this repository are licensed under CC BY 4.0.
+
