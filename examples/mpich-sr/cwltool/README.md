@@ -1,10 +1,16 @@
-# Example: MPICH's sr.c (test)
+# cwltool
 
-`sr.c` from MPICH source code.
+<https://cwltool.readthedocs.io/en/latest/>
 
-https://github.com/pmodels/mpich/blob/a0f6d778bb864774ef9cdd29b1bd6004adc6cf64/test/basic/sr.c
+CWLTool version: 3.1.20260108082146.dev10+g544f108b9 (commit 544f108b906c179520b0a6d64c3c21d168b48fa2)
 
-## Tools
+## Prerequisites
+
+```bash
+pip install cwltool
+```
+
+## Local Tests
 
 ### Tool to compile sr.c
 
@@ -102,3 +108,14 @@ different values for processors, message size, and iterations.
 ```bash
 $ cwltool sr-workflow.cwl sr-workflow-job.yml --np=6 --msg_size=10 --niter=8 --source=./sr.c
 ```
+
+## HPC Tests
+
+CWLTool does not provide batch schedulers integration. While it can
+be used in an HPC environment, for running workflows it will probably
+require containers with Singularity and some work to make it work with
+MPI, OpenMP, CUDA.
+
+## Container Tests
+
+TODO

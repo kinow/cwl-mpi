@@ -58,3 +58,6 @@ dkms.conf
 
 **/sr
 
+venv/
+
+

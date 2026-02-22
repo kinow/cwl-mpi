@@ -1,12 +1,14 @@
-# Example: MPICH's sr.c (test)
+# StreamFlow
 
-## StreamFlow
+StreamFlow version: 0.2.0.dev14 (commit f8619e9b4aa9176bbce90bf64b05c9bb1903cc9b)
 
-Prerequisites:
+## Prerequisites
 
 ```bash
 pip install streamflow
 ```
+
+## Local Tests
 
 StreamFlow includes a CWL runner, but it does not support the `MPIRequirement`
 hint. Running the version of the workflow `mpirun` used with `cwltool` works
@@ -173,3 +175,134 @@ msg_sz=0, niter=1
 ```
 
 [streamflow_file]: https://streamflow.di.unito.it/documentation/latest/operations.html#put-it-all-together
+
+## HPC Tests
+
+The first requirement for using StreamFlow on an HPC cluster that does not have
+Docker installed is to comment out the `DockerRequirement` hint in the CWL tool.
+
+Then, to use MPI, we need to load the modules and use a batch scheduler
+like SLURM. This test uses the Slurm cluster on CSC LUMI HPC.
+
+It is also necessary to create a StreamFlow file, e.g., `run-sr-mpirun-streamflow-slurm.cwl`:
+
+```yaml
+# Ref: https://streamflow.di.unito.it/documentation/latest/cwl/cwl-runner.html
+version: v1.0
+workflows:
+  workflow_name:
+    type: cwl
+    config:
+      file: sr-workflow.cwl
+      settings: sr-workflow-job.yml
+    bindings:
+      - step: /compile
+        target:
+          deployment: lumi_slurm
+      - step: /run
+        target:
+          deployment: lumi_slurm
+deployments:
+  lumi_slurm:
+    type: slurm
+    workdir: /users/<USER>/cwl/cwl-mpi/examples/mpich-sr/streamflow/runs/
+    config:
+      hostname: lumi.csc.fi
+      username: <USER>
+      file: run-sr-mpirun-streamflow-slurm.jinja
+      sshKey: ~/.ssh/id_rsa_mn
+```
+
+It also requires a Jinja2 template file, referenced in the StreamFlow file above.
+
+```bash
+#!/bin/bash
+
+#SBATCH --job-name=streamflow_cwl_mpi_1
+#SBATCH --output=%x_%j.out
+#SBATCH --error=%x_%j.err
+#SBATCH --partition=standard
+#SBATCH -A <PROJECT>
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --cpus-per-task=1
+#SBATCH -t 00:05:00
+
+module load \
+    LUMI/24.03 \
+    partition/L \
+    gcc-native/14.2 \
+    craype/2.7.35 \
+    cray-mpich/9.0.1 \
+    cray-python/3.11.7
+
+source /pfs/lustrep3/projappl/<PROJECT>/<USER>/cwl/cwl-mpi/venv/bin/activate
+
+{{streamflow_command}}
+```
+
+The `streamflow_command` value will be replaced by StreamFlow when running the workflow.
+The script defines the Slurm settings, the modules to load, and the Python virtual
+environment to use.
+
+The StreamFlow workflow can be executed from a local laptop or virtual machine using
+the command `streamflow run run-sr-mpirun-streamflow.cwl`. This will start the StreamFlow
+Python process locally and submit the jobs to the cluster via SSH, using the Slurm
+deployment settings.
+
+Upon failure, the Slurm logs can be inspected in the working directory on the HPC cluster.
+Succesful executions will produce the `sr.out` and `sr.err` files on the HPC and StreamFlow
+will copy them to the local directory.
+
+`sr.out`:
+
+```bash
+sr: size 4 rank 0
+msg_sz=0, niter=1
+sr: size 4 rank 1
+sr: size 4 rank 2
+sr: process 2 finished
+sr: size 4 rank 3
+sr: process 3 finished
+sr: process 0 finished
+All messages successfully received!
+sr: process 1 finished
+```
+
+`sr.err`:
+
+```bash
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-milan".
+
+
+Lmod is automatically replacing "craype-x86-milan" with "craype-x86-rome".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.5.0" with "PrgEnv-gnu/8.5.0".
+
+
+Lmod is automatically replacing "cce/17.0.1" with "gcc-native/14.2".
+
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+LUMI/24.03:
+The LUMI/24.03 stack is currently unsupported as it was never tested with
+the version of ROCm that is now on the system (and the version it was 
+designed for is actually too old for the current GPU driver). Due to the OS 
+and network stack update, we can also not guarantee that CPU-only software 
+will still work as intended.
+
+-------------------------------------------------------------------------------
+The following have been reloaded with a version change:
+  1) cray-dsmml/0.3.1 => cray-dsmml/0.3.0
+  2) cray-libsci/25.03.0 => cray-libsci/24.03.0
+  3) cray-mpich/8.1.32 => cray-mpich/9.0.1
+  4) craype/2.7.34 => craype/2.7.35
+  5) perftools-base/25.03.0 => perftools-base/24.03.0
+```
+
+## Container Tests
+
+TODO
