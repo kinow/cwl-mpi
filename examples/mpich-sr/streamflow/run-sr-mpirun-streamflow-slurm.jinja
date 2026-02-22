@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#SBATCH --job-name=streamflow_cwl_mpi_1
+#SBATCH --output=%x_%j.out
+#SBATCH --error=%x_%j.err
+#SBATCH --partition=standard
+#SBATCH -A <PROJECT>
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --cpus-per-task=1
+#SBATCH -t 00:05:00
+
+module load \
+    LUMI/24.03 \
+    partition/L \
+    gcc-native/14.2 \
+    craype/2.7.35 \
+    cray-mpich/9.0.1 \
+    cray-python/3.11.7
+
+source /pfs/lustrep3/projappl/<PROJECT>/<USER>/cwl/cwl-mpi/venv/bin/activate
+
+{{streamflow_command}}

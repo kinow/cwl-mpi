@@ -46,7 +46,7 @@ No support for DockerRequirement and MPIRequirement both being required, unless 
 The `run-sr-mpireq-nodocker.cwl` contains the same tool defined above, but without
 using the `DockerRequirement`. This means this will use the system `mpirun`. If you
 use the `compile-sr.cwl` tool to compile `sr`, you will probably have issues due to the
-different MPI version used to compile and run ⚠️ . So first use `mpicc` to compile your
+different MPI version used to compile and run ⚠️. So first use `mpicc` to compile your
 `sr` program, and then launch this tool like this:
 
 ```bash
