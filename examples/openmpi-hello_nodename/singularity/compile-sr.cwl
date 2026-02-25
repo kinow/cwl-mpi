@@ -37,10 +37,8 @@ s:license:
 label: Compile sr.c with mpicc
 
 requirements:
-  ResourceRequirement:
-    coresMin: 1
   DockerRequirement:
-    dockerPull: mfisherman/mpich:4.3.2
+    dockerPull: mfisherman/openmpi:5.0.9
 
 baseCommand: mpicc
 
