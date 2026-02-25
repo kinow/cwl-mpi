@@ -128,4 +128,125 @@ Slurm on BSC MN5.
 
 ## Container Tests
 
-TODO
+Running the workflow in a container with Toil is quite simple. You must use
+the `DockerRequirement` with the right image and other settings for your
+container, and launch it with `toil-cwl-runner`:
+
+```bash
+toil-cwl-runner \
+    --singularity \
+    --logLevel=DEBUG \
+    --retryCount 0 \
+    sr-workflow-docker.cwl sr-workflow-mpirun-job.yml 
+```
+
+In the debug output, you should be able to confirm that the command executes successfully
+and that it is using Docker. For example:
+
+```bash
+...
+...
+	[2026-02-26T19:37:57+0100] [MainThread] [I] [cwltool] [job sr-workflow-docker.cwl.run.run-sr-mpirun.cwl] /tmp/toilwf-5cdce9ed09a9515ba26de4bb5ac56d89/2904/job/tmp1br7ihn0/tmp-out_zrh1uu3$ docker \
+	    run \
+	    -i \
+	    --mount=type=bind,source=/tmp/toilwf-5cdce9ed09a9515ba26de4bb5ac56d89/2904/job/tmp1br7ihn0/tmp-out_zrh1uu3,target=/TBNLca \
+	    --mount=type=bind,source=/tmp/toilwf-5cdce9ed09a9515ba26de4bb5ac56d89/2904/job/tmp_h8t57882i9s1pdy,target=/tmp \
+	    --mount=type=bind,source=/tmp/tmp5ry5avkd/files/for-job/kind-CWLJob/instance-nokqatxq/file-b57872aeaadd4e41a6e8de8dfd8870d3/a.out,target=/var/lib/cwl/stg9297013a-74a7-4c22-a5f3-d35194c43512/a.out,readonly \
+	    --workdir=/TBNLca \
+	    --read-only=true \
+	    --net=none \
+	    --log-driver=none \
+	    --user=1000:1000 \
+	    --rm \
+	    --cidfile=/tmp/toilwf-5cdce9ed09a9515ba26de4bb5ac56d89/2904/job/tmp_h8t5788be362pm4/20260226193757-899158.cid \
+	    --env=TMPDIR=/tmp \
+	    --env=HOME=/TBNLca \
+	    mfisherman/mpich:4.3.2 \
+	    /bin/sh \
+	    -c \
+	    mpirun -np 2 /var/lib/cwl/stg9297013a-74a7-4c22-a5f3-d35194c43512/a.out 0 1 > /tmp/toilwf-5cdce9ed09a9515ba26de4bb5ac56d89/2904/job/tmp1br7ihn0/tmp-out_zrh1uu3/sr.out 2> /tmp/toilwf-5cdce9ed09a9515ba26de4bb5ac56d89/2904/job/tmp1br7ihn0/tmp-out_zrh1uu3/sr.err
+...
+...
+[2026-02-26T19:35:16+0100] [MainThread] [I] [toil.cwl.cwltoil] Computing output file checksums...
+{
+    "stderr": {
+        "location": "file:///home/kinow/Development/python/workspace/cwl-mpi/examples/mpich-sr/toil/sr.err",
+        "basename": "sr.err",
+        "nameroot": "sr",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/home/kinow/Development/python/workspace/cwl-mpi/examples/mpich-sr/toil/sr.err"
+    },
+    "stdout": {
+        "location": "file:///home/kinow/Development/python/workspace/cwl-mpi/examples/mpich-sr/toil/sr.out",
+        "basename": "sr.out",
+        "nameroot": "sr",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$c9c80dae90e2a704fe4e54e671a4d7dbf768543e",
+        "size": 136,
+        "path": "/home/kinow/Development/python/workspace/cwl-mpi/examples/mpich-sr/toil/sr.out"
+    }
+}
+[2026-02-26T19:35:16+0100] [MainThread] [I] [toil.cwl.cwltoil] CWL run complete!
+[2026-02-26T19:35:16+0100] [MainThread] [I] [toil.lib.history] Workflow 9f3d6d8e-feb0-45a5-a62a-bf62a9ddb226 stopped. Success: True
+[2026-02-26T19:35:16+0100] [MainThread] [I] [toil.common] Successfully deleted the job store: FileJobStore(/tmp/tmpn1i95zbo)
+```
+
+To test with Singularity, all you have to do is just pass the `--singularity`
+option to `toil-cwl-runner`.
+
+```bash
+...
+...
+[2026-02-26T19:39:17+0100] [MainThread] [I] [cwltool] [job sr-workflow-docker.cwl.run.run-sr-mpirun.cwl] /tmp/toilwf-da706989e3e25c2b8c1fdbfc773e3008/2f9b/job/tmpr292j62g/tmp-outqzg4uh29$ singularity \
+    --quiet \
+    run \
+    --contain \
+    --ipc \
+    --cleanenv \
+    --no-eval \
+    --userns \
+    --home \
+    /tmp/toilwf-da706989e3e25c2b8c1fdbfc773e3008/2f9b/job/tmpr292j62g/tmp-outqzg4uh29:/rgHCFe \
+    --mount=type=bind,source=/tmp/toilwf-da706989e3e25c2b8c1fdbfc773e3008/2f9b/job/tmpqpoggcmtypfhg5nl,target=/tmp \
+    --mount=type=bind,source=/tmp/tmp20il8g28/files/for-job/kind-CWLJob/instance-2f6w8y0j/file-988f01ef7a054e32a3148c9d9e9710fa/a.out,target=/var/lib/cwl/stg72542286-e4e1-4b17-a475-339f3b947bf9/a.out,readonly \
+    --pwd \
+    /rgHCFe \
+    --net \
+    --network \
+    none \
+    /tmp/toilwf-da706989e3e25c2b8c1fdbfc773e3008/2f9b/job/mfisherman_mpich:4.3.2.sif \
+    /bin/sh \
+    -c \
+    mpirun -np 2 /var/lib/cwl/stg72542286-e4e1-4b17-a475-339f3b947bf9/a.out 0 1 > /tmp/toilwf-da706989e3e25c2b8c1fdbfc773e3008/2f9b/job/tmpr292j62g/tmp-outqzg4uh29/sr.out 2> /tmp/toilwf-da706989e3e25c2b8c1fdbfc773e3008/2f9b/job/tmpr292j62g/tmp-outqzg4uh29/sr.err
+...
+...
+```
+
+Now, both cases run fine, but they are not using MPI and Singularity the recommended way for
+HPCs. Instead of running `mpirun` inside of `singularity` or `docker`, it must do the reverse:
+`mpirun -np 2 singularity run|exec ...`
+
+I could not find a way to get Toil to run `mpirun` inside of `singularity` or `docker`. My last
+test was with this command-line, after seeing some tests in Toil
+[that appear to use CWLTool](https://github.com/search?q=repo%3ADataBiosphere%2Ftoil%20mpi&type=code):
+
+```bash
+toil-cwl-runner \
+  --singularity \
+  --enable-ext \
+  --enable-dev \
+  --logLevel=DEBUG \
+  --retryCount 0 \
+  sr-workflow-docker.cwl sr-workflow-mpirun-job.yml
+```
+
+Alas, that still performs `mpirun` inside of `singularity` or `docker`.
+
+It is possible to craft a container that calls `mpirun -np N singularity`, but that becomes
+complicated to maintain as we would end up having to guess if it is Apptainer, Singularity,
+pass the right arguments to bind and add environment variables, etc. Things that the workflow
+manager tool would be better at handling – like what CWLTool tries to do.

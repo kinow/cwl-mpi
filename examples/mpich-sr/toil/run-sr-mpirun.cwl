@@ -7,7 +7,7 @@ $namespaces:
   xsd: http://www.w3.org/2001/XMLSchema#
 
 $schemas:
-  - https://schema.org/version/latest/schemaorg-current-http.rdf
+ - https://schema.org/version/latest/schemaorg-current-http.rdf
 
 s:author:
   class: s:Person
@@ -34,30 +34,53 @@ s:license:
 #  "@type": "@id"
 #  "@value": "https://opensource.org/licenses/MIT"
 
-label: Compile sr.c with mpicc
-
 requirements:
+  ShellCommandRequirement: {}
+  InlineJavascriptRequirement: {}
   ResourceRequirement:
-    coresMin: 1
+    coresMin: 2
   DockerRequirement:
     dockerPull: mfisherman/mpich:4.3.2
 
-baseCommand: mpicc
+label: Run compiled sr using mpirun
+
+baseCommand: []
 
 inputs:
-  source:
-    type: File
+  launcher:
+    type: string
+    default: mpirun  # mpirun, srun, ...
     inputBinding:
       position: 1
-  output_name:
-    type: string
-    default: a.out
+  np:
+    type: int?
     inputBinding:
-      prefix: -o
+      prefix: "-np"
       position: 2
-
-outputs:
   executable:
     type: File
+    inputBinding:
+      position: 3
+  msg_size:
+    type: int
+    default: 0
+    inputBinding:
+      position: 4
+  niter:
+    type: int
+    default: 1
+    inputBinding:
+      position: 5
+
+stdout: sr.out
+stderr: sr.err
+
+outputs:
+  stdout_file:
+    type: File
     outputBinding:
-      glob: $(inputs.output_name)
+      glob: sr.out
+  stderr_file:
+    type: File
+    outputBinding:
+      glob: sr.err

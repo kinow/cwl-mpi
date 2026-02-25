@@ -1,6 +1,6 @@
 #!/usr/bin/env cwl-runner
 cwlVersion: v1.2
-class: CommandLineTool
+class: Workflow
 
 $namespaces:
   s: https://schema.org/
@@ -34,30 +34,41 @@ s:license:
 #  "@type": "@id"
 #  "@value": "https://opensource.org/licenses/MIT"
 
-label: Compile sr.c with mpicc
-
-requirements:
-  ResourceRequirement:
-    coresMin: 1
-  DockerRequirement:
-    dockerPull: mfisherman/mpich:4.3.2
-
-baseCommand: mpicc
+label: Workflow to compile and run sr.c from mpich tests
 
 inputs:
   source:
     type: File
-    inputBinding:
-      position: 1
-  output_name:
-    type: string
-    default: a.out
-    inputBinding:
-      prefix: -o
-      position: 2
+  np:
+    type: int
+    default: 2
+  msg_size:
+    type: int
+    default: 0
+  niter:
+    type: int
+    default: 1
 
 outputs:
-  executable:
+  stdout:
     type: File
-    outputBinding:
-      glob: $(inputs.output_name)
+    outputSource: run/stdout_file
+  stderr:
+    type: File
+    outputSource: run/stderr_file
+
+steps:
+  compile:
+    run: compile-sr.cwl
+    in:
+      source: source
+    out:
+      [ executable ]
+  run:
+    run: run-sr-mpireq.cwl
+    in:
+      executable: compile/executable
+      np: np
+      msg_size: msg_size
+      niter: niter
+    out: [ stdout_file, stderr_file ]
