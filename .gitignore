@@ -60,4 +60,6 @@ dkms.conf
 
 venv/
 *.sif
+*.tar
+
 
