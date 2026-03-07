@@ -41,10 +41,10 @@ s:license:
 label: Run compiled sr using mpirun without Docker
 
 requirements:
-  ShellCommandRequirement: {}
-  InlineJavascriptRequirement: {}
   cwltool:MPIRequirement:
     processes: $(inputs.np)
+  NetworkAccess:
+    networkAccess: true
   ResourceRequirement:
     coresMin: 2
 
