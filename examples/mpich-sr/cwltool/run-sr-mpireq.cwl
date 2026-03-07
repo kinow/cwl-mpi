@@ -45,6 +45,8 @@ requirements:
     dockerPull: mfisherman/mpich:4.3.2
   cwltool:MPIRequirement:
     processes: $(inputs.np)
+  NetworkAccess:
+    networkAccess: true
 
 baseCommand: []
 

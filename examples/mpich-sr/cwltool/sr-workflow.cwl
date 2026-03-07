@@ -65,7 +65,7 @@ steps:
     out:
       [ executable ]
   run:
-    run: run-sr-mpirun.cwl
+    run: run-sr-mpireq.cwl
     in:
       executable: compile/executable
       np: np

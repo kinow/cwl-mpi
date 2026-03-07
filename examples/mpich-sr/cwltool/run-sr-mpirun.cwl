@@ -39,6 +39,8 @@ label: Run compiled sr using mpirun
 requirements:
   DockerRequirement:
     dockerPull: mfisherman/mpich:4.3.2
+  NetworkAccess:
+    networkAccess: true
 
 baseCommand: mpirun
 
