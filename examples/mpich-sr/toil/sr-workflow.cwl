@@ -68,7 +68,7 @@ steps:
     out:
       [ executable ]
   run:
-    run: run-sr-mpirun-nodocker.cwl
+    run: run-sr-mpireq-nodocker.cwl
     in:
       executable: compile/executable
       launcher: launcher

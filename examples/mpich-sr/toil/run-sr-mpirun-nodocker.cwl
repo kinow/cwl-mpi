@@ -35,8 +35,8 @@ s:license:
 #  "@value": "https://opensource.org/licenses/MIT"
 
 requirements:
-  ShellCommandRequirement: {}
-  InlineJavascriptRequirement: {}
+  NetworkAccess:
+    networkAccess: true
   ResourceRequirement:
     coresMin: 2
 
