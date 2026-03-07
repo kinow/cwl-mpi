@@ -2,8 +2,8 @@
 
 This repository contains CWL MPI workflows. These workflows are used for
 testing and demonstration purposes. They are part of a thesis written for
-the joint HPC Master at the universities of Santiago de Compostela and
-da Coruña.
+the [joint HPC Master at the universities of Santiago de Compostela and
+da Coruña](https://www.usc.gal/en/studies/masters/engineering-and-architecture/master-high-performance-computing-online).
 
 ## Examples
 
