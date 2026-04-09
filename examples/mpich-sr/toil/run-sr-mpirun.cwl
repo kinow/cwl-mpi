@@ -34,37 +34,43 @@ s:license:
 #  "@type": "@id"
 #  "@value": "https://opensource.org/licenses/MIT"
 
-label: Run compiled sr using mpirun
-
 requirements:
+  ShellCommandRequirement: {}
+  InlineJavascriptRequirement: {}
+  ResourceRequirement:
+    coresMin: 2
   DockerRequirement:
     dockerPull: mfisherman/mpich:4.3.2
-  NetworkAccess:
-    networkAccess: true
 
-baseCommand: mpirun
+label: Run compiled sr using mpirun
+
+baseCommand: []
 
 inputs:
-  np:
-    type: int
-    default: 2
+  launcher:
+    type: string
+    default: mpirun  # mpirun, srun, ...
     inputBinding:
-      prefix: -np
       position: 1
+  np:
+    type: int?
+    inputBinding:
+      prefix: "-np"
+      position: 2
   executable:
     type: File
     inputBinding:
-      position: 2
+      position: 3
   msg_size:
     type: int
     default: 0
     inputBinding:
-      position: 3
+      position: 4
   niter:
     type: int
     default: 1
     inputBinding:
-      position: 4
+      position: 5
 
 stdout: sr.out
 stderr: sr.err

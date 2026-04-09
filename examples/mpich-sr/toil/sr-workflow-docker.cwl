@@ -1,13 +1,13 @@
 #!/usr/bin/env cwl-runner
 cwlVersion: v1.2
-class: CommandLineTool
+class: Workflow
 
 $namespaces:
   s: https://schema.org/
   xsd: http://www.w3.org/2001/XMLSchema#
 
 $schemas:
- - https://schema.org/version/latest/schemaorg-current-http.rdf
+  - https://schema.org/version/latest/schemaorg-current-http.rdf
 
 s:author:
   class: s:Person
@@ -34,47 +34,46 @@ s:license:
 #  "@type": "@id"
 #  "@value": "https://opensource.org/licenses/MIT"
 
-label: Run compiled sr using mpirun
-
-requirements:
-  DockerRequirement:
-    dockerPull: mfisherman/mpich:4.3.2
-  NetworkAccess:
-    networkAccess: true
-
-baseCommand: mpirun
+label: Workflow to compile and run sr.c from mpich tests
 
 inputs:
+  launcher:
+    type: string
+    default: "mpirun"
   np:
-    type: int
+    type: int?
     default: 2
-    inputBinding:
-      prefix: -np
-      position: 1
-  executable:
+  source:
     type: File
-    inputBinding:
-      position: 2
   msg_size:
     type: int
     default: 0
-    inputBinding:
-      position: 3
   niter:
     type: int
     default: 1
-    inputBinding:
-      position: 4
-
-stdout: sr.out
-stderr: sr.err
 
 outputs:
-  stdout_file:
+  stdout:
     type: File
-    outputBinding:
-      glob: sr.out
-  stderr_file:
+    outputSource: run/stdout_file
+  stderr:
     type: File
-    outputBinding:
-      glob: sr.err
+    outputSource: run/stderr_file
+
+steps:
+  compile:
+    run: compile-sr.cwl
+    in:
+      source: source
+    out:
+      [ executable ]
+  run:
+    # run: run-sr-mpirun-nodocker.cwl
+    run: run-sr-mpirun.cwl
+    in:
+      executable: compile/executable
+      launcher: launcher
+      np: np
+      msg_size: msg_size
+      niter: niter
+    out: [ stdout_file, stderr_file ]

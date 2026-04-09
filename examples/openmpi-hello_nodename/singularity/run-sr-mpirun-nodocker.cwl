@@ -36,21 +36,20 @@ s:license:
 
 label: Run compiled sr using mpirun
 
-requirements:
-  DockerRequirement:
-    dockerPull: mfisherman/mpich:4.3.2
-  NetworkAccess:
-    networkAccess: true
+# We must comment this as Docker is not available no most HPCs.
+# requirements:
+#  DockerRequirement:
+#    dockerPull: mfisherman/mpich:4.3.2
 
-baseCommand: mpirun
+baseCommand: srun
 
 inputs:
-  np:
-    type: int
-    default: 2
-    inputBinding:
-      prefix: -np
-      position: 1
+#  np:
+#    type: int
+#    default: 2
+#    inputBinding:
+#      prefix: -np
+#      position: 1
   executable:
     type: File
     inputBinding:

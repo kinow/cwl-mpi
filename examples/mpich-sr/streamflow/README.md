@@ -305,4 +305,34 @@ The following have been reloaded with a version change:
 
 ## Container Tests
 
-TODO
+StreamFlow automatically parses the `DockerRequirement` hint in the CWL configuration
+and uses the Docker container to run the workflow.
+
+We can also [use Singularity](https://streamflow.di.unito.it/documentation/0.2/cwl/docker-requirement.html)
+by adding this to the StreamFlow configuration:
+
+```yaml
+workflows:
+  name:
+    type: cwl
+    config:
+      file: ...
+      settings: ...
+      docker:
+        - step: /
+          deployment:
+            type: singularity
+            config: {}
+```
+
+The `/` step is appplied recursively to all steps in the workflow,
+using `singularity` in every step.
+
+※ StreamFlow also does not seem to allow users to use `apptainer` instead of `singularity`.
+
+Running the workflow without `--debug` does not print that the command is executed with
+a Docker container by default.
+
+```bash
+streamflow run --debug run-sr-mpirun-streamflow.cwl
+```

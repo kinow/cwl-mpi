@@ -1,8 +1,12 @@
-#!/usr/bin/env cwl-runner
+#!/usr/bin/env cwltool
 cwlVersion: v1.2
 class: CommandLineTool
 
+# Refs:
+# - https://cwltool.readthedocs.io/en/latest/index.html#running-mpi-based-tools-that-need-to-be-launched
+
 $namespaces:
+  cwltool: "http://commonwl.org/cwltool#"
   s: https://schema.org/
   xsd: http://www.w3.org/2001/XMLSchema#
 
@@ -38,33 +42,33 @@ label: Run compiled sr using mpirun
 
 requirements:
   DockerRequirement:
-    dockerPull: mfisherman/mpich:4.3.2
+    # dockerPull: mfisherman/mpich:4.3.2
+    dockerPull: mfisherman/openmpi:5.0.9
+  cwltool:MPIRequirement:
+    processes: $(inputs.np)
   NetworkAccess:
     networkAccess: true
 
-baseCommand: mpirun
+baseCommand: []
 
 inputs:
   np:
     type: int
     default: 2
-    inputBinding:
-      prefix: -np
-      position: 1
   executable:
     type: File
     inputBinding:
-      position: 2
+      position: 1
   msg_size:
     type: int
     default: 0
     inputBinding:
-      position: 3
+      position: 2
   niter:
     type: int
     default: 1
     inputBinding:
-      position: 4
+      position: 3
 
 stdout: sr.out
 stderr: sr.err

@@ -1,0 +1,32 @@
+Bootstrap: docker
+From: ubuntu:22.04
+
+%labels
+    Author Bruno de Paula Kinoshita (curso348)
+    MPI container to run a
+
+%environment
+    export OMPI_ALLOW_RUN_AS_ROOT=1
+    export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+
+%post
+    apt-get update
+    DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        build-essential \
+        openmpi-bin \
+        libopenmpi-dev \
+        wget
+
+    # Create working directory
+    mkdir -p /opt/mpi_app
+    cd /opt/mpi_app
+
+%files
+    hello_nodename.c /opt/mpi_app/hello_nodename.c
+
+%post
+    cd /opt/mpi_app
+    mpicc hello_nodename.c -o hello_nodename
+
+%runscript
+    exec /opt/mpi_app/hello_nodename "$@"
