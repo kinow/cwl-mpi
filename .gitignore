@@ -63,5 +63,6 @@ venv/
 
 # Singularity/Apptainer containers
 *.sif
+*.tar
 
 
