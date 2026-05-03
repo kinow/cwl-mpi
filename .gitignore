@@ -54,10 +54,14 @@ dkms.conf
 # debug information files
 *.dwo
 
+# Slurm files
 *.err
-
 **/sr
 
+# Python venv
 venv/
+
+# Singularity/Apptainer containers
+*.sif
 
 
