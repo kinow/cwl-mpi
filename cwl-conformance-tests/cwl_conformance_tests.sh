@@ -75,7 +75,7 @@ CWL_TAG[v1.2]="v1.2.1"
 
 # Tools configuration
 # TOOLS=("cwltool" "toil")
-TOOLS=("cwltool")
+TOOLS=("toil")
 
 # NOTE: We are using declare here, which will not work with MacOS'
 #       default Shell (bash in MacOS may be an alias to another
@@ -84,17 +84,18 @@ TOOLS=("cwltool")
 # Tool binaries
 declare -A TOOL_BIN
 TOOL_BIN[cwltool]="cwltool"
-# TOOL_BIN[toil]="toil-cwl-runner"
+TOOL_BIN[toil]="toil-cwl-runner"
 
 # Extra args passed to the binaries
 declare -A TOOL_ARGS
 TOOL_ARGS[cwltool]="--singularity --enable-dev --tmpdir-prefix=$HPC_SCRATCH_DIR"
-TOOL_ARGS[toil]="toil-cwl-runner"
+TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress"
 
 # Optional special modes (like Toil Slurm launcher)
 declare -A TOOL_MODES
-TOOL_MODES[toil]="local slurm"
-TOOL_MODES[cwltool]="default"
+#TOOL_MODES[toil]="local slurm"
+TOOL_MODES[toil]="local"
+TOOL_MODES[cwltool]="local"
 
 # Base working directory
 BASE_DIR=$(pwd)/runs
