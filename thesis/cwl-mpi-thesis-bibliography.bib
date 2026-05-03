@@ -1,3 +1,51 @@
+@article{15TIPSWORKFLOWSHPC,
+  title = {Fifteen Quick Tips for Success with {{HPC}}, i.e., Responsibly {{BASHing}} That {{Linux}} Cluster},
+  author = {Alnasir, Jamie J.},
+  year = 2021,
+  month = aug,
+  journal = {PLOS Computational Biology},
+  volume = {17},
+  number = {8},
+  pages = {1--9},
+  publisher = {Public Library of Science},
+  doi = {10.1371/journal.pcbi.1009207},
+  abstract = {null}
+}
+
+@inproceedings{BEE1,
+  title = {Build and Execution Environment ({{BEE}}): An Encapsulated Environment Enabling {{HPC}} Applications Running Everywhere},
+  booktitle = {2018 {{IEEE}} International Conference on Big Data (Big Data)},
+  author = {Chen, Jieyang and Guan, Qiang and Liang, Xin and Bryant, Paul and Grubel, Patricia and McPherson, Allen and Lo, Li-Ta and Randles, Timothy and Chen, Zizhong and Ahrens, James Paul},
+  year = 2018,
+  pages = {1737--1746},
+  doi = {10.1109/BigData.2018.8622572},
+  keywords = {cloud computing,Cloud computing,container,Containers,high performance computing,Linux,Runtime,Switches,Task analysis,User interfaces}
+}
+
+@inproceedings{BEE2,
+  title = {{{BeeFlow}}: A Workflow Management System for in Situ Processing across {{HPC}} and Cloud Systems},
+  booktitle = {2018 {{IEEE}} 38th International Conference on Distributed Computing Systems ({{ICDCS}})},
+  author = {Chen, Jieyang and Guan, Qiang and Zhang, Zhao and Liang, Xin and Vernon, Louis and McPherson, Allen and Lo, Li-Ta and Grubel, Patricia and Randles, Tim and Chen, Zizhong and Ahrens, James},
+  year = 2018,
+  pages = {1029--1038},
+  doi = {10.1109/ICDCS.2018.00103},
+  keywords = {Analytical models,cloud computing,Cloud computing,Computational modeling,container,Containers,Data models,high performance computing,Load modeling,scientific workflow,Task analysis}
+}
+
+@inproceedings{BEECWL,
+  title = {{{BeeSwarm}}: {{Enabling}} Parallel Scaling Performance Measurement in Continuous Integration for {{HPC}} Applications},
+  booktitle = {2021 36th {{IEEE}}/{{ACM}} International Conference on Automated Software Engineering ({{ASE}})},
+  author = {Tronge, Jake and Chen, Jieyang and Grubel, Patricia and Randles, Tim and Davis, Rusty and Wofford, Quincy and Anaya, Steven and Guan, Qiang},
+  year = 2021,
+  month = nov,
+  pages = {1136--1140},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  doi = {10.1109/ASE51524.2021.9678805},
+  abstract = {Testing is one of the most important steps in software development--it ensures the quality of software. Continuous Integration (CI) is a widely used testing standard that can report software quality to the developer in a timely manner during development progress. Performance, especially scalability, is another key factor for High Performance Computing (HPC) applications. There are many existing profiling and performance tools for HPC applications, but none of these are integrated into CI tools. In this work, we propose BeeSwarm, an HPC container based parallel scaling performance system that can be easily applied to the current CI test environments. BeeSwarm is mainly designed for HPC application developers who need to monitor how their applications can scale on different compute resources. We demonstrate BeeSwarm using a multi-physics HPC application with Travis CI, GitLab CI and GitHub Actions while using ChameleonCloud and Google Compute Engine as the compute backends. Our results show that BeeSwarm can be used for scalability and performance testing of HPC applications.},
+  keywords = {Engines,Internet,Measurement,Monitoring,Scalability,Software quality,Standards}
+}
+
 @inproceedings{ben-nunWorkflowsAreNew2020,
   title = {Workflows Are the {{New Applications}}: {{Challenges}} in {{Performance}}, {{Portability}}, and {{Productivity}}},
   shorttitle = {Workflows Are the {{New Applications}}},
@@ -10,19 +58,63 @@
   urldate = {2026-02-25},
   abstract = {Great strides have been made to enable performance, portability, and productivity in HPC, but the focus has so far been on standalone applications and on-node programming models. Complex workflows comprising many communicating orchestrators, services, and simulations are redefining what modern HPC applications look like, and it is time to revisit what performance, portability, and performance mean when considered at the workflow level. What definitions make the most sense for workflows? How can workflows be deployed across HPC centers with incompatible software? And how can we ensure that not just one but many applications are deployed reliably and in an optimized way across different clusters? This paper highlights trends, reveals new challenges, and points to some potential solutions.},
   keywords = {Computational modeling,Data models,HPC,Instruments,Next generation networking,performance,portability,productivity,Productivity,Real-time systems,Training,workflows},
-  file = {/home/bdepaula/Zotero/storage/I7JDJ3HP/9309042.html}
+  file = {/home/kinow/Zotero/storage/I7JDJ3HP/9309042.html}
 }
 
-@misc{CommonWorkflowLanguage2016,
-  title = {Common {{Workflow Language}}, v1.0},
+@article{Colonnelli_StreamFlow_cross-breeding_cloud_2021,
+  title = {{{StreamFlow}}: Cross-Breeding Cloud with {{HPC}}},
+  author = {Colonnelli, Iacopo and Cantalupo, Barbara and Merelli, Ivan and Aldinucci, Marco},
+  year = 2021,
+  journal = {IEEE Transactions on Emerging Topics in Computing},
+  volume = {9},
+  number = {4},
+  pages = {1723--1737},
+  doi = {10.1109/TETC.2020.3019202}
+}
+
+@misc{CWL4HPC,
+  title = {{{CWL4HPC Working Group}}},
+  author = {{Common Workflow Language}},
+  urldate = {2026-04-30},
+  abstract = {The Common Workflow Language (CWL) is an open standard for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and Machine Learning.},
+  langid = {english},
+  note = {Accessed: 2026-04-30},
+  file = {/home/kinow/Zotero/storage/DLYLJ8ZA/cwl4hpc.html}
+}
+
+@misc{cwltool,
+  title = {Cwltool: {{Reference}} Implementation of the Common Workflow Language},
+  author = {{Common Workflow Language Project}},
+  year = {n.d.},
+  note = {Accessed: 2026-05-01}
+}
+
+@book{cwlv1,
+  title = {Common Workflow Language, v1.0},
+  author = {Amstutz, Peter and Crusoe, Michael R. and Tijani{\'c}, Neboj{\v s}a and Chapman, Brad and Chilton, John and Heuer, Michael and Kartashov, Andrey and Leehr, Dan and M{\'e}nager, Herv{\'e} and Nedeljkovich, Maya and Scales, Matt and {Soiland-Reyes}, Stian and Stojanovic, Luka},
+  editor = {Amstutz, Peter and Crusoe, Michael R. and Tijani{\'c}, Neboj{\v s}a},
   year = 2016,
   month = jul,
   publisher = {figshare},
+  address = {United States},
   doi = {10.6084/m9.figshare.3115156.v2},
-  urldate = {2026-02-25},
-  abstract = {The Common Workflow Language (CWL) is an informal, multi-vendor working group consisting of various organizations and individuals that have an interest in portability of data analysis workflows.  Our goal is to create specifications that enable data scientists to describe analysis tools and workflows that are powerful, easy to use, portable, and support reproducibility.CWL builds on technologies such as JSON-LD and Avro for data modeling and Docker for portable runtime environments. CWL is designed to express workflows for data-intensive science, such as Bioinformatics, Medical Imaging, Chemistry, Physics, and Astronomy.This is v1.0 of the CWL tool and workflow specification, released on 2016-07-08.The specification, in HTML format, is in the draft-3/docs folder.},
+  abstract = {The Common Workflow Language (CWL) is an informal, multi-vendor working group consisting of various organizations and individuals that have an interest in portability of data analysis workflows. Our goal is to create specifications that enable data scientists to describe analysis tools and workflows that are powerful, easy to use, portable, and support reproducibility.CWL builds on technologies such as JSON-LD and Avro for data modeling and Docker for portable runtime environments. CWL is designed to express workflows for data-intensive science, such as Bioinformatics, Medical Imaging, Chemistry, Physics, and Astronomy.This is v1.0 of the CWL tool and workflow specification, released on 2016-07-08},
   langid = {english},
-  file = {/home/bdepaula/Zotero/storage/73WFGSA2/2.html}
+  keywords = {cwl,specification,workflow},
+  note = {Specification, product of the Common Workflow Language working group. http://www.commonwl.org/v1.0/}
+}
+
+@article{geoweaverCWL,
+  title = {Geoweaver\_cwl: {{Transforming}} Geoweaver {{AI}} Workflows to Common Workflow Language to Extend Interoperability},
+  author = {Kale, Amruta and Sun, Ziheng and Fan, Chao and Ma, Xiaogang},
+  year = 2023,
+  journal = {Applied Computing and Geosciences},
+  volume = {19},
+  pages = {100126},
+  issn = {2590-1974},
+  doi = {10.1016/j.acags.2023.100126},
+  abstract = {Recently, workflow management platforms are gaining more attention in the artificial intelligence (AI) community. Traditionally, researchers self-managed their workflows in a manual and tedious way that heavily relies on their memory. Due to the complexity and unpredictability of AI models, they often struggled to track and manage all the data, steps, and history of the workflow. AI workflows are time-consuming, redundant, and error-prone, especially when big data is involved. A common strategy to make these workflows more manageable is to use a workflow management system, and we recommend Geoweaver, an open-source workflow management system that enables users to create, modify and reuse AI workflows all in one place. To make our work in Geoweaver reusable by the other workflow management systems, we created an add-on functionality geoweaver\_cwl, a Python package that automatically converts Geoweaver AI workflows into the Common Workflow Language (CWL) format. It will allow researchers to easily share, exchange, modify, reuse, and build a new workflow from existing ones in other CWL-compliant software. A user study was conducted with the existing workflows created by Geoweaver to collect suggestions and fill in the gaps between our package and Geoweaver. The evaluation confirms that geoweaver\_cwl can lead to a well-versed AI process while disclosing opportunities for further extensions. The geoweaver\_cwl package is publicly released online at https://pypi.org/project/geoweaver-cwl/0.0.1/.},
+  keywords = {AI workflows,Common workflow language,Explainability,Provenance,Transparency}
 }
 
 @article{haddaStandardizingWorkflowExecution,
@@ -30,7 +122,7 @@
   author = {Hadda, Hamza},
   abstract = {Modern scientific and data-intensive applications increasingly rely on workflow management systems to ensure the reproducibility, portability, and scalability of computational pipelines. The Common Workflow Language (CWL) has emerged as a community-driven standard for describing such workflows in a platform-independent and declarative manner. In contrast, the Brane framework offers an imperative, multi-site orchestration system designed for dynamic execution and programmability across distributed environments. This thesis investigates the feasibility and design of integrating CWL into the Brane ecosystem. The goal is to enhance Brane's compatibility with standardized workflow descriptions while preserving its core strengths in flexible orchestration and distributed deployment. The system implemented a translation mechanism to parse CWL CommandLineTool definitions and generate Brane-compatible packages, including support for Docker-based execution and metadata encapsulation. This work contributes a foundation for future interoperability between CWL and distributed workflow engines, opening up new possibilities for reproducible, scalable, and context-aware scientific computing.},
   langid = {english},
-  file = {/home/bdepaula/Zotero/storage/RMR3ZB64/Hadda - Standardizing Workflow Execution CWL Integration in Brane for Distributed Scientific Computing.pdf}
+  file = {/home/kinow/Zotero/storage/RMR3ZB64/Hadda - Standardizing Workflow Execution CWL Integration in Brane for Distributed Scientific Computing.pdf}
 }
 
 @article{khanSharingInteroperableWorkflow2019,
@@ -47,7 +139,15 @@
   doi = {10.1093/gigascience/giz095},
   urldate = {2026-02-25},
   abstract = {The automation of data analysis in the form of scientific workflows has become a widely adopted practice in many fields of research. Computationally driven data-intensive experiments using workflows enable automation, scaling, adaptation, and provenance support. However, there are still several challenges associated with the effective sharing, publication, and reproducibility of such workflows due to the incomplete capture of provenance and lack of interoperability between different technical (software) platforms.Based on best-practice recommendations identified from the literature on workflow design, sharing, and publishing, we define a hierarchical provenance framework to achieve uniformity in provenance and support comprehensive and fully re-executable workflows equipped with domain-specific information. To realize this framework, we present CWLProv, a standard-based format to represent any workflow-based computational analysis to produce workflow output artefacts that satisfy the various levels of provenance. We use open source community-driven standards, interoperable workflow definitions in Common Workflow Language (CWL), structured provenance representation using the W3C PROV model, and resource aggregation and sharing as workflow-centric research objects generated along with the final outputs of a given workflow enactment. We demonstrate the utility of this approach through a practical implementation of CWLProv and evaluation using real-life genomic workflows developed by independent groups.The underlying principles of the standards utilized by CWLProv enable semantically rich and executable research objects that capture computational workflows with retrospective provenance such that any platform supporting CWL will be able to understand the analysis, reuse the methods for partial reruns, or reproduce the analysis to validate the published findings.},
-  file = {/home/bdepaula/Zotero/storage/5JA7X3RC/Khan et al. - 2019 - Sharing interoperable workflow provenance A review of best practices and their practical applicatio.pdf;/home/bdepaula/Zotero/storage/K5EIWZ9H/giz095.html}
+  file = {/home/kinow/Zotero/storage/5JA7X3RC/Khan et al. - 2019 - Sharing interoperable workflow provenance A review of best practices and their practical applicatio.pdf;/home/kinow/Zotero/storage/K5EIWZ9H/giz095.html}
+}
+
+@book{kirk2022programming,
+  title = {Programming Massively Parallel Processors: A Hands-on Approach},
+  author = {Kirk, David B and Hwu, Wen-mei W and El Hajj, Izzat},
+  year = 2022,
+  edition = {4},
+  publisher = {Morgan Kaufmann}
 }
 
 @article{leipzigRoleMetadataReproducible2021,
@@ -65,7 +165,31 @@
   langid = {english},
   pmid = {34553169},
   keywords = {containers,FAIR,metadata,notebooks,ontologies,pipelines,provenance,RCR,replicability,reproducibility,reproducible computational research,reproducible research,semantic,software dependencies,workflows},
-  file = {/home/bdepaula/Zotero/storage/P697H3ZA/Leipzig et al. - 2021 - The role of metadata in reproducible computational research.pdf}
+  file = {/home/kinow/Zotero/storage/P697H3ZA/Leipzig et al. - 2021 - The role of metadata in reproducible computational research.pdf}
+}
+
+@article{MethodsIncludedCWL,
+  title = {Methods Included: Standardizing Computational Reuse and Portability with the {{Common Workflow Language}}},
+  author = {Crusoe, Michael R. and Abeln, Sanne and Iosup, Alexandru and Amstutz, Peter and Chilton, John and Tijani{\'c}, Neboj{\v s}a and M{\'e}nager, Herv{\'e} and {Soiland-Reyes}, Stian and Gavrilovi{\'c}, Bogdan and Goble, Carole and Community, The CWL},
+  year = 2022,
+  month = may,
+  journal = {Communications of The Acm},
+  volume = {65},
+  number = {6},
+  pages = {54--63},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  issn = {0001-0782},
+  doi = {10.1145/3486897},
+  abstract = {Standardizing computational reuse and portability with the Common Workflow Language.},
+  issue_date = {June 2022}
+}
+
+@misc{mpicommentsforum,
+  title = {[{{Mpi-comments}}] {{On}} the Use of Environment Variables},
+  author = {Forum, {\relax MPI}},
+  year = 2026,
+  note = {Accessed: 2026-05-02}
 }
 
 @inproceedings{nashSupercomputingMPIMeets2020,
@@ -80,7 +204,29 @@
   urldate = {2026-02-25},
   abstract = {Use of standards-based workflows is still somewhat unusual by high-performance computing users. In this paper we describe the experience of using the Common Workflow Language (CWL) standards to describe the execution, in parallel, of MPI-parallelised applications. In particular, we motivate and describe the simple extension to the specification which was required, as well as our implementation of this within the CWL reference runner. We discuss some of the unexpected benefits, such as simple use of HPC-oriented performance measurement tools, and CWL software requirements interfacing with HPC module systems. We close with a request for comment from the community on how these features could be adopted within versions of the CWL standards.},
   keywords = {Containers,Engines,Libraries,MPI,open standards,parallel applications,performance measurement,Software,Standards,Task analysis,Tools,workflows},
-  file = {/home/bdepaula/Zotero/storage/ZHSKEJS5/Nash et al. - 2020 - Supercomputing with MPI meets the Common Workflow Language standards an experience report.pdf}
+  file = {/home/kinow/Zotero/storage/ZHSKEJS5/Nash et al. - 2020 - Supercomputing with MPI meets the Common Workflow Language standards an experience report.pdf}
+}
+
+@inproceedings{PARSL,
+  title = {Parsl: {{Pervasive}} Parallel Programming in Python},
+  booktitle = {28th {{ACM}} International Symposium on High-Performance Parallel and Distributed Computing ({{HPDC}})},
+  author = {Babuji, Yadu and Woodard, Anna and Li, Zhuozhao and Katz, Daniel S. and Clifford, Ben and Kumar, Rohan and Lacinski, Lukasz and Chard, Ryan and Wozniak, Justin and Foster, Ian and Wilde, Mike and Chard, Kyle},
+  year = 2019,
+  doi = {10.1145/3307681.3325400}
+}
+
+@inproceedings{PARSLCWL,
+  title = {Parsl+{{CWL}}: {{Towards}} Combining the Python and {{CWL}} Ecosystems},
+  booktitle = {Proceedings of the {{SC}} '24 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis},
+  author = {Karle, Nishchay and Clifford, Ben and Babuji, Yadu and Chard, Ryan and Katz, Daniel S. and Chard, Kyle},
+  year = 2025,
+  series = {Sc-w '24},
+  pages = {2040--2047},
+  publisher = {IEEE Press},
+  address = {Atlanta, GA, USA},
+  doi = {10.1109/SCW63240.2024.00255},
+  abstract = {The Common Workflow Language (CWL) is a widely adopted language for defining and sharing computational workflows. It is designed to be independent of the execution engine on which workflows are executed. In this paper, we describe our experiences integrating CWL with Parsl, a Python-based parallel programming library designed to manage execution of workflows across diverse computing environments. We propose a new method that converts CWL CommandLineTool definitions into Parsl apps, enabling Parsl scripts to easily import and use tools represented in CWL. We describe a Parsl runner that is capable of executing a CWL CommandLineTool directly. We also describe a proof-of-concept extension to support inline Python in a CWL workflow definition, enabling seamless use in Parsl's Python ecosystem. We demonstrate the benefits of this integration by presenting example CWL CommandLineTool definitions that show how they can be used in Parsl, and comparing performance of executing an image processing workflow using the Parsl integration and other CWL runners.},
+  isbn = {979-8-3503-5554-3}
 }
 
 @article{piccoloSimplifyingDevelopmentPortable2021,
@@ -98,5 +244,41 @@
   urldate = {2026-02-25},
   abstract = {Command-line software plays a critical role in biology research. However, processes for installing and executing software differ widely. The Common Workflow Language (CWL) is a community standard that addresses this problem. Using CWL, tool developers can formally describe a tool's inputs, outputs, and other execution details. CWL documents can include instructions for executing tools inside software containers. Accordingly, CWL tools are portable---they can be executed on diverse computers---including personal workstations, high-performance clusters, or the cloud. CWL also supports workflows, which describe dependencies among tools and using outputs from one tool as inputs to others. To date, CWL has been used primarily for batch processing of large datasets, especially in genomics. But it can also be used for analytical steps of a study. This article explains key concepts about CWL and software containers and provides examples for using CWL in biology research. CWL documents are text-based, so they can be created manually, without computer programming. However, ensuring that these documents conform to the CWL specification may prevent some users from adopting it. To address this gap, we created ToolJig, a Web application that enables researchers to create CWL documents interactively. ToolJig validates information provided by the user to ensure it is complete and valid. After creating a CWL tool or workflow, the user can create `input-object' files, which store values for a particular invocation of a tool or workflow. In addition, ToolJig provides examples of how to execute the tool or workflow via a workflow engine. ToolJig and our examples are available at https://github.com/srp33/ToolJig.},
   keywords = {command-line software,Common Workflow Language,computational workflows,learn by example,research reproducibility,Web application},
-  file = {/home/bdepaula/Zotero/storage/HBNLZC28/Piccolo et al. - 2021 - Simplifying the development of portable, scalable, and reproducible workflows.pdf}
+  file = {/home/kinow/Zotero/storage/HBNLZC28/Piccolo et al. - 2021 - Simplifying the development of portable, scalable, and reproducible workflows.pdf}
+}
+
+@article{Toil_CWL,
+  title = {Toil Enables Reproducible, Open Source, Big Biomedical Data Analyses},
+  author = {Vivian, John and Rao, Arjun Arkal and Nothaft, Frank Austin and Ketchum, Christopher and Armstrong, Joel and Novak, Adam and Pfeil, Jacob and Narkizian, Jake and Deran, Alden D. and {Musselman-Brown}, Audrey and Schmidt, Hannes and Amstutz, Peter and Craft, Brian and Goldman, Mary and Rosenbloom, Kate and Cline, Melissa and O'Connor, Brian and Hanna, Megan and Birger, Chet and Kent, W. James and Patterson, David A. and Joseph, Anthony D. and Zhu, Jingchun and Zaranek, Sasha and Getz, Gad and Haussler, David and Paten, Benedict},
+  year = 2017,
+  month = apr,
+  journal = {Nature Biotechnology},
+  volume = {35},
+  number = {4},
+  pages = {314--316},
+  issn = {1546-1696},
+  doi = {10.1038/nbt.3772}
+}
+
+@book{UsingMPI,
+  title = {Using {{MPI}} : Portable Parallel Programming with the Message-Passing Interface},
+  author = {Gropp, William and Lusk, Ewing and Skjellum, Anthony},
+  year = 2014,
+  series = {Scientific and Engineering Computation.},
+  edition = {3rd ed},
+  publisher = {MIT Press},
+  address = {Cambridge, Mass.; London},
+  isbn = {978-0-262-57132-6},
+  langid = {english},
+  keywords = {Interfaces de usuario,Programacion en paralelo}
+}
+
+@inproceedings{WHY_WF_BREAKS,
+  title = {Why Workflows Break --- {{Understanding}} and Combating Decay in {{Taverna}} Workflows},
+  booktitle = {2012 {{IEEE}} 8th International Conference on E-Science},
+  author = {Zhao, Jun and {Gomez-Perez}, Jose Manuel and Belhajjame, Khalid and Klyne, Graham and {Garcia-Cuesta}, Esteban and Garrido, Aleix and Hettne, Kristina and Roos, Marco and De Roure, David and Goble, Carole},
+  year = 2012,
+  pages = {1--9},
+  doi = {10.1109/eScience.2012.6404482},
+  keywords = {Biological system modeling,Data models,Databases,Maintenance engineering,OWL,Web services}
 }
