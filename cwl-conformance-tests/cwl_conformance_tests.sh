@@ -16,6 +16,19 @@ set -o pipefail
 # Ensures that unicode (including emojis🎉) is properly represented on the command line
 export PYTHONIOENCODING=utf8
 
+# Disables Python's fault handler to avoid harmless shutdown noise from CWL tools
+# (prevents non-fatal destructor errors from appearing during interpreter shutdown on HPC systems)
+# e.g., on MN5 this test consistently fails:
+# cwltool --singularity --enable-dev \
+#   --tmpdir-prefix=/gpfs/scratch/$bscproject/$bscuser \
+#   runs/specs/v1.1/tests/optional-numerical-output-0.cwl \
+#   runs/specs/v1.1/tests/empty.json
+#
+# with:
+#
+# 
+export PYTHONFAULTHANDLER=0
+
 ##############################
 # Logging
 ##############################
@@ -57,6 +70,7 @@ fi
 
 # CWL versions to test
 CWL_VERSIONS=("v1.0" "v1.1" "v1.2")
+#CWL_VERSIONS=("v1.0")
 
 # How many tests we will run in parallel
 N_TESTS_IN_PARALLEL=16
@@ -75,7 +89,8 @@ CWL_TAG[v1.2]="v1.2.1"
 
 # Tools configuration
 # TOOLS=("cwltool" "toil")
-TOOLS=("toil")
+TOOLS=("cwltool")
+#TOOLS=("streamflow")
 
 # NOTE: We are using declare here, which will not work with MacOS'
 #       default Shell (bash in MacOS may be an alias to another
@@ -85,17 +100,12 @@ TOOLS=("toil")
 declare -A TOOL_BIN
 TOOL_BIN[cwltool]="cwltool"
 TOOL_BIN[toil]="toil-cwl-runner"
+TOOL_BIN[streamflow]="toil-cwl-runner"
 
 # Extra args passed to the binaries
 declare -A TOOL_ARGS
 TOOL_ARGS[cwltool]="--singularity --enable-dev --tmpdir-prefix=$HPC_SCRATCH_DIR"
 TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress"
-
-# Optional special modes (like Toil Slurm launcher)
-declare -A TOOL_MODES
-#TOOL_MODES[toil]="local slurm"
-TOOL_MODES[toil]="local"
-TOOL_MODES[cwltool]="local"
 
 # Base working directory
 BASE_DIR=$(pwd)/runs
@@ -201,14 +211,15 @@ run_tests() {
     # We run each test within a subshell.
     START_TIME=$(date +%s)
     (
-        cd "$TOOL_DIR" || exit 1
-
-        TEST_SCRIPT="$BASE_DIR/specs/$VERSION/run_test.sh"
-
-        if [ ! -f "$TEST_SCRIPT" ]; then
-            log "ERROR: Missing run_test.sh for $VERSION at $TEST_SCRIPT"
-            exit 1
+        cd "$BASE_DIR/specs/$VERSION" || exit 1
+        if [ "$VERSION" = "v1.0" ]; then
+          # This is the only exception, 1.1, 1.2, follow a new pattern...
+          cd v1.0/
         fi
+
+        # v1.1 and v1.2 run_test.sh did not work on LUMI, MN5, and CESGA FT3.
+        # TEST_SCRIPT="$BASE_DIR/specs/$VERSION/run_test.sh"
+        TEST_SCRIPT=cwltest
 
         # shellcheck disable=SC1090
         source "$BASE_DIR/venv-$TOOL/bin/activate"
@@ -220,14 +231,24 @@ run_tests() {
             EXTRA="${EXTRA} --batchSystem slurm"
         fi
 
+        TEST_FILE="conformance_tests.yaml"
+        if [ "$VERSION" = "v1.0" ]; then
+          TEST_FILE="conformance_test_v1.0.yaml"
+        fi
+
         # Build base args
         ARGS=(
-            "--junit-xml=$TOOL_DIR/junit.xml"
+            "--verbose"
+            "--test=${TEST_FILE}"
+            "--junit-verbose"
+            "--junit-xml=${TOOL_DIR}/junit.xml"
             "--timeout=30"
             "-j${N_TESTS_IN_PARALLEL}"
-            "RUNNER=$RUNNER"
-            "EXTRA=${EXTRA}"
+            "--tool=$RUNNER"
+            "--"
         )
+        # split EXTRA into words safely
+        read -r -a EXTRA_ARR <<< "$EXTRA"
 
         # TODO: -j8 works only on cwl v1.0. The run_test of the others has a bug
         #       in argparse (eval expects =?).
@@ -250,7 +271,7 @@ run_tests() {
             "$RUNNER" --version || true
             echo ""
             set -exv
-            bash "$TEST_SCRIPT" "${ARGS[@]}"
+            "$TEST_SCRIPT" "${ARGS[@]}" "${EXTRA_ARR[@]}"
             set +exv
         }
 
@@ -284,6 +305,8 @@ log "All CWL specifications cloned locally."
 # Run tests per tool
 log "Running the tests..."
 
+MODE="${MODE:-local}"
+
 for TOOL in "${TOOLS[@]}"; do
 
     log "Setting up environment for $TOOL"
@@ -291,12 +314,10 @@ for TOOL in "${TOOLS[@]}"; do
     log "Done!"
 
     for VERSION in "${CWL_VERSIONS[@]}"; do
-        for MODE in ${TOOL_MODES[$TOOL]}; do
-            log "[RUN] tool=$TOOL version=$VERSION mode=$MODE"
-            run_tests "$TOOL" "$VERSION" "$MODE"
-            log "[RUN] Finished $TOOL $VERSION ($MODE)"
-            log "----------------------------------------"
-        done
+      log "[RUN] tool=$TOOL version=$VERSION mode=$MODE"
+      run_tests "$TOOL" "$VERSION" "$MODE"
+      log "[RUN] Finished $TOOL $VERSION ($MODE)"
+      log "----------------------------------------"
     done
 
 done

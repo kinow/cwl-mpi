@@ -1,0 +1,1222 @@
+=== RUN START ===
+Mon May 25 13:52:48 CEST 2026
+TOOL=cwltool
+VERSION=v1.2
+MODE=local
+RUNNER=cwltool
+EXTRA=--singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED]
+=================
+
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/bin/cwltool 3.2.20260413085819
+
++ cwltest --verbose --test=conformance_tests.yaml --junit-verbose --junit-xml=/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/cwltool/v1.2/local/junit.xml --timeout=30 -j16 --tool=cwltool -- --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED]
+Test [1/378] cl_basic_generation: General test of command line generation
+
+Test [2/378] nested_prefixes_arrays: Test nested prefixes with arrays
+
+Test [3/378] nested_cl_bindings: Test nested command line bindings
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpgdky3v8e --quiet tests/bwa-mem-tool.cwl tests/bwa-mem-job.json
+Test [4/378] cl_optional_inputs_missing: Test command line with optional input (missing)
+
+Test [5/378] cl_optional_bindings_provided: Test command line with optional input (provided)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpg5iuh7yk --quiet tests/binding-test.cwl tests/bwa-mem-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbrinv891 --quiet tests/cat1-testcli.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpes9sfj4h --quiet tests/tmap-tool.cwl tests/tmap-job.json
+Test [8/378] stdout_redirect_shortcut_docker: Test command execution in Docker with shortcut stdout redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp0d6c1y5t --quiet tests/cat1-testcli.cwl tests/cat-n-job.json
+Test [9/378] stdout_redirect_mediumcut_docker: Test command execution in Docker with mediumcut stdout redirection
+
+Test [6/378] initworkdir_expreng_requirements: Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature
+
+Test [7/378] stdout_redirect_docker: Test command execution in Docker with stdout redirection
+
+Test [10/378] stderr_redirect: Test command line with stderr redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphwafiav6 --quiet tests/cat3-tool-shortcut.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqqzgcomk --quiet tests/cat3-tool-mediumcut.cwl tests/cat-job.json
+Test [11/378] stderr_redirect_shortcut: Test command line with stderr redirection, brief syntax
+
+Test [12/378] stderr_redirect_mediumcut: Test command line with stderr redirection, named brief syntax
+
+Test [13/378] stdinout_redirect_docker: Test command execution in Docker with stdin and stdout redirection
+
+Test [14/378] expression_any: Test default usage of Any in expressions.
+
+Test [16/378] expression_any_string: Testing the string 'null' does not trip up an Any with a default value.
+
+Test [15/378] expression_any_null: Test explicitly passing null to Any type inputs with default values.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpto9nplhf --quiet tests/template-tool.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcy7pxqhp --quiet tests/cat3-tool.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpolaox_r3 --quiet tests/stderr.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp2vkjaoce --quiet tests/stderr-shortcut.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplsavnz1h --quiet tests/null-expression1-tool.cwl tests/null-expression1-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpuosi24h8 --quiet tests/stderr-mediumcut.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpyx6_uy2h --quiet tests/null-expression1-tool.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpu2j4oy9a --quiet tests/cat4-tool.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwryi7f3a --quiet tests/null-expression1-tool.cwl tests/null-expression2-job.json
+Test [17/378] expression_any_nodefaultany: Test Any without defaults cannot be unspecified.
+
+Test [18/378] expression_any_null_nodefaultany: Test explicitly passing null to Any type without a default value.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppccn34_6 --quiet tests/null-expression2-tool.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpjpwfigwc --quiet tests/null-expression2-tool.cwl tests/null-expression1-job.json
+Test [19/378] expression_any_nullstring_nodefaultany: Testing the string 'null' does not trip up an Any without a default value.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpyp3szx9x --quiet tests/null-expression2-tool.cwl tests/null-expression2-job.json
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:       exports = module.exports = _;
+tests/template-tool.cwl:7:9: JSHINT:       ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     exports._ = _;
+tests/template-tool.cwl:7:9: JSHINT:     ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     if (typeof module !== 'undefined' && module.exports) {
+tests/template-tool.cwl:7:9: JSHINT:                                          ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:       exports = module.exports = _;
+tests/template-tool.cwl:7:9: JSHINT:                 ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     return setTimeout(function(){
+tests/template-tool.cwl:7:9: JSHINT:            ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:         timeout = setTimeout(later, remaining);
+tests/template-tool.cwl:7:9: JSHINT:                   ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:         timeout = setTimeout(later, wait - last);
+tests/template-tool.cwl:7:9: JSHINT:                   ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:       if (!timeout) timeout = setTimeout(later, wait);
+tests/template-tool.cwl:7:9: JSHINT:                               ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:         clearTimeout(timeout);
+tests/template-tool.cwl:7:9: JSHINT:         ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'clearTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     root._ = previousUnderscore;
+tests/template-tool.cwl:7:9: JSHINT:              ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'previousUnderscore' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:   if (typeof define === 'function' && define.amd) {
+tests/template-tool.cwl:7:9: JSHINT:                                       ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     define('underscore', [], function() {
+tests/template-tool.cwl:7:9: JSHINT:     ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:8:9: JSHINT: var t = function(s) { return _.template(s, {variable: 'data'})({'inputs': inputs}); };
+tests/template-tool.cwl:8:9: JSHINT:                              ^
+tests/template-tool.cwl:8:9: JSHINT: W117: '_' is not defined.[0m
+Test [20/378] any_outputSource_compatibility: Testing Any type compatibility in outputSource
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp9a4uv36c --quiet tests/any-type-compat.cwl tests/any-type-job.json
+Test [21/378] stdinout_redirect: Test command execution in with stdin and stdout redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpgjvwbzm6 --quiet tests/cat-tool.cwl tests/cat-job.json
+Test [22/378] expression_parseint: Test ExpressionTool with Javascript engine
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppy5wyrl6 --quiet tests/parseInt-tool.cwl tests/parseInt-job.json
+Test [23/378] expression_outputEval: Test outputEval to transform output
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpca61tuts --quiet tests/wc2-tool.cwl tests/wc-job.json
+Test [24/378] wf_wc_parseInt: Test two step workflow with imported tools
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpftcmzdef --quiet tests/count-lines1-wf.cwl tests/wc-job.json
+Test [25/378] wf_wc_expressiontool: Test two step workflow with inline tools
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp878uxjcx --quiet tests/count-lines2-wf.cwl tests/wc-job.json
+Test [26/378] wf_wc_scatter: Test single step workflow with Scatter step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpysyf2rkh --quiet tests/count-lines3-wf.cwl tests/count-lines3-job.json
+Test [27/378] wf_wc_scatter_multiple_merge: Test single step workflow with Scatter step and two data links connected to same input, default merge behavior
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpnh9pes_k --quiet tests/count-lines4-wf.cwl tests/count-lines4-job.json
+Test [28/378] wf_wc_scatter_multiple_nested: Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpt2z_g6st --quiet tests/count-lines6-wf.cwl tests/count-lines6-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/null-expression2-tool.cwl:9:3: Missing required input parameter 'i1'[0m
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/null-expression2-tool.cwl:9:3: Missing required input parameter 'i1'[0m
+Test [29/378] wf_wc_scatter_multiple_flattened: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpp_t1d1_l --quiet tests/count-lines7-wf.cwl tests/count-lines6-job.json
+Test [30/378] wf_wc_nomultiple: Test when step source is a single-item list and there is no linkMerge, then it not wrapped in a list, and that MultipleInputFeatureRequirement is not required.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmph9bggyew --quiet tests/count-lines13-wf.cwl tests/count-lines4-job.json
+Test [31/378] wf_wc_nomultiple_merge_nested: Test when step source is a single-item list and linkMerge is listed, then it is wrapped in a list.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpftfwj5hb --quiet tests/count-lines19-wf.cwl tests/count-lines4-job.json
+Test [32/378] wf_input_default_missing: Test workflow with default value for input parameter (missing)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp6mnbkaxz --quiet tests/count-lines5-wf.cwl tests/empty.json
+Test [33/378] wf_input_default_provided: Test workflow with default value for input parameter (provided)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmph2hzllu6 --quiet tests/count-lines5-wf.cwl tests/wc-job.json
+Test [34/378] wf_default_tool_default: Test that workflow defaults override tool defaults
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplnukm_mg --quiet tests/echo-wf-default.cwl tests/empty.json
+Test [35/378] envvar_req: Test EnvVarRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpzzy9k6tk --quiet tests/env-tool1.cwl tests/env-job.json
+The file is hello.txt
+Test [36/378] wf_scatter_single_param: Test workflow scatter with single scatter parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpldnhl2yd --quiet tests/scatter-wf1.cwl tests/scatter-job1.json
+Test [37/378] wf_scatter_two_nested_crossproduct: Test workflow scatter with two scatter parameters and nested_crossproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp8x9z2uek --quiet tests/scatter-wf2.cwl tests/scatter-job2.json
+Test [38/378] wf_scatter_two_flat_crossproduct: Test workflow scatter with two scatter parameters and flat_crossproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpmezhnzu9 --quiet tests/scatter-wf3.cwl#main tests/scatter-job2.json
+Test [39/378] wf_scatter_two_dotproduct: Test workflow scatter with two scatter parameters and dotproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk6m8fu0u --quiet tests/scatter-wf4.cwl#main tests/scatter-job2.json
+Test [40/378] wf_scatter_emptylist: Test workflow scatter with single empty list parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp3cuzp_ha --quiet tests/scatter-wf1.cwl tests/scatter-empty-job1.json
+Test [41/378] wf_scatter_nested_crossproduct_secondempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbllxs0nn --quiet tests/scatter-wf2.cwl tests/scatter-empty-job2.json
+Test [42/378] wf_scatter_nested_crossproduct_firstempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty
+
+Test [43/378] wf_scatter_flat_crossproduct_oneempty: Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpsaqn7zbw --quiet tests/scatter-wf3.cwl#main tests/scatter-empty-job3.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpgtku2_qt --quiet tests/scatter-wf3.cwl#main tests/scatter-empty-job2.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in'.  All outputs will be empty.[0m
+Test [44/378] wf_scatter_dotproduct_twoempty: Test workflow scatter with two empty scatter parameters and dotproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpm5cs4icw --quiet tests/scatter-wf4.cwl#main tests/scatter-empty-job4.json
+Test [45/378] any_input_param: Test Any type input parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpss1y2p9n --quiet tests/echo-tool.cwl tests/env-job.json
+Test [46/378] nested_workflow: Test nested workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpz07i2fhp --quiet tests/count-lines8-wf.cwl tests/wc-job.json
+Test [47/378] requirement_priority: Test requirement priority
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpjxt5q2va --quiet tests/env-wf1.cwl tests/env-job.json
+Test [48/378] requirement_override_hints: Test requirements override hints
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpxgutt77l --quiet tests/env-wf2.cwl tests/env-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+Test [49/378] requirement_workflow_steps: Test requirements on workflow steps
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbby069v8 --quiet tests/env-wf3.cwl tests/env-job.json
+Test [50/378] step_input_default_value: Test default value on step input parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwsjvr1no --quiet tests/count-lines9-wf.cwl tests/empty.json
+Test [51/378] step_input_default_value_nosource: Test use default value on step input parameter with empty source
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpiwlgtowc --quiet tests/count-lines11-wf.cwl tests/empty.json
+Test [52/378] step_input_default_value_nullsource: Test use default value on step input parameter with null source
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp79z22gmd --quiet tests/count-lines11-wf.cwl tests/file1-null.json
+Test [53/378] step_input_default_value_overriden: Test default value on step input parameter overridden by provided source
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp8h8ds3kw --quiet tests/count-lines11-wf.cwl tests/cat-job.json
+Test [54/378] wf_simple: Test simple workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpm79xrqoi --quiet tests/revsort.cwl tests/revsort-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1'.  All outputs will be empty.[0m
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+Test [55/378] hints_unknown_ignored: Test unknown hints are ignored.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpyia5etld --quiet tests/cat5-tool.cwl tests/cat-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1', 'echo_in2'.  All outputs will be empty.[0m
+Test [56/378] initial_workdir_secondary_files_expr: Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpj8hils4y --quiet tests/search.cwl#main tests/search-job.json
+Test [57/378] rename: Test InitialWorkDirRequirement with expression in filename.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp6owxtqe9 --quiet tests/rename.cwl tests/rename-job.json
+Test [58/378] initial_workdir_trailingnl: Test if trailing newline is present in file entry in InitialWorkDir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp8elpmpb2 --quiet tests/iwdr-entry.cwl tests/string-job.json
+Test [59/378] inline_expressions: Test inline expressions
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp5jwzlw6l --quiet tests/wc4-tool.cwl tests/wc-job.json
+Test [60/378] schemadef_req_tool_param: Test SchemaDefRequirement definition used in tool parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp37nwwza6 --quiet tests/schemadef-tool.cwl tests/schemadef-job.json
+Test [61/378] schemadef_req_wf_param: Test SchemaDefRequirement definition used in workflow parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp9p2rigt3 --quiet tests/schemadef-wf.cwl tests/schemadef-job.json
+Test [62/378] param_evaluation_noexpr: Test parameter evaluation, no support for JS expressions
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpq048g9yq --quiet tests/params.cwl tests/empty.json
+Test [63/378] param_evaluation_expr: Test parameter evaluation, with support for JS expressions
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpxg9b579x --quiet tests/params2.cwl tests/empty.json
+Test [64/378] metadata: Test metadata
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmptzfd3zxa --quiet tests/metadata.cwl tests/cat-job.json
+[1;30mWARNING[0m [33mtests/cat5-tool.cwl:10:3: Warning: checking item
+                          Warning:   Field 'class' contains undefined reference to
+                          'http://example.com/BlibberBlubberFakeRequirement'[0m
+CONFIGVAR=hello
+Test [65/378] format_checking: Test simple format checking.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqt5um8h2 --quiet tests/formattest.cwl tests/formattest-job.json
+Test [66/378] format_checking_subclass: Test format checking against ontology using subclassOf.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvepjq8c_ --quiet tests/formattest2.cwl tests/formattest2-job.json
+Test [67/378] format_checking_equivalentclass: Test format checking against ontology using equivalentClass.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmprr4_jcxe --quiet tests/formattest3.cwl tests/formattest2-job.json
+Test [68/378] output_secondaryfile_optional: Test optional output file and optional secondaryFile on output.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpz5_qjqql --quiet tests/optional-output.cwl tests/cat-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [69/378] valuefrom_ignored_null: Test that valueFrom is ignored when the parameter is null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp0amkr8nv --quiet tests/vf-concat.cwl tests/empty.json
+Test [70/378] valuefrom_secondexpr_ignored: Test that second expression in concatenated valueFrom is not ignored
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpkkq4d3vi --quiet tests/vf-concat.cwl tests/cat-job.json
+Test [71/378] valuefrom_wf_step: Test valueFrom on workflow step.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpdqqcoty1 --quiet tests/step-valuefrom-wf.cwl tests/step-valuefrom-wf.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/search.cwl:103:13: Source 'result' of type "File" may be incompatible
+tests/search.cwl:108:9:    with sink 'file' of type "File"[0m
+Test [72/378] valuefrom_wf_step_multiple: Test valueFrom on workflow step with multiple sources
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwad0eshy --quiet tests/step-valuefrom2-wf.cwl tests/step-valuefrom-job.json
+Test [73/378] valuefrom_wf_step_other: Test valueFrom on workflow step referencing other inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpzol5xtab --quiet tests/step-valuefrom3-wf.cwl tests/step-valuefrom-job.json
+Test [74/378] record_output_binding: Test record type output binding.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp0wyhs3fa --quiet tests/record-output.cwl tests/record-output-job.json
+Test [75/378] docker_json_output_path: Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvjr5kqtn --quiet tests/test-cwl-out.cwl tests/empty.json
+Test [76/378] docker_json_output_location: Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpmfkexz_x --quiet tests/test-cwl-out2.cwl tests/empty.json
+Test [77/378] json_output_path_relative: Test support for reading cwl.output.json where 'path' is relative path in output dir.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk1nkx2rt --quiet tests/test-cwl-out3.cwl tests/empty.json
+Test [78/378] json_output_location_relative: Test support for reading cwl.output.json where 'location' is relative reference to output dir.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpb3vdxwyv --quiet tests/test-cwl-out4.cwl tests/empty.json
+Test [79/378] multiple_glob_expr_list: Test support for returning multiple glob patterns from expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcldr7l49 --quiet tests/glob-expr-list.cwl tests/abc.json
+Test [80/378] wf_scatter_oneparam_valuefrom: Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpj4kk22qy --quiet tests/scatter-valuefrom-wf1.cwl tests/scatter-valuefrom-job1.json
+Test [81/378] wf_scatter_twoparam_nested_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpa_22t2ew --quiet tests/scatter-valuefrom-wf2.cwl tests/scatter-valuefrom-job2.json
+Test [82/378] wf_scatter_twoparam_flat_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp2dzrmvgc --quiet tests/scatter-valuefrom-wf3.cwl#main tests/scatter-valuefrom-job2.json
+Test [83/378] wf_scatter_twoparam_dotproduct_valuefrom: Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpzqo4qgqw --quiet tests/scatter-valuefrom-wf4.cwl#main tests/scatter-valuefrom-job2.json
+Test [84/378] wf_scatter_oneparam_valuefrom_twice_current_el: Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpznsoxgle --quiet tests/scatter-valuefrom-wf5.cwl tests/scatter-valuefrom-job1.json
+Test [85/378] wf_scatter_oneparam_valueFrom: Test valueFrom eval on scattered input parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpos_8wifz --quiet tests/scatter-valuefrom-wf6.cwl tests/scatter-valuefrom-job3.json
+Test [86/378] wf_two_inputfiles_namecollision: Test workflow two input files with same name.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplpb6ov1t --quiet tests/conflict-wf.cwl#collision tests/conflict-job.json
+Test [87/378] directory_input_param_ref: Test directory input with parameter reference
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpevt4434a --quiet tests/dir.cwl tests/dir-job.yml
+Test [88/378] directory_input_docker: Test directory input in Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpjo5gt9je --quiet tests/dir2.cwl tests/dir-job.yml
+Test [89/378] directory_output: Test directory output
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplvq57qsx --quiet tests/dir3.cwl tests/dir3-job.yml
+Test [90/378] directory_secondaryfiles: Test directories in secondaryFiles
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpdw2nnmbc --quiet tests/dir4.cwl tests/dir4-job.yml
+Test [91/378] dynamic_initial_workdir: Test dynamic initial work dir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpivgm1spk --quiet tests/dir5.cwl tests/dir-job.yml
+Test [92/378] writable_stagedfiles: Test writable staged files.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpsqtf402f --quiet tests/stagefile.cwl tests/stagefile-job.yml
+Test [93/378] input_file_literal: Test file literal as input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp64gb0m8e --quiet tests/cat3-tool.cwl tests/file-literal.yml
+Test [94/378] initial_workdir_expr: Test expression in InitialWorkDir listing
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbedt3d_q --quiet tests/linkfile.cwl tests/arguments-job.yml
+Test [95/378] nameroot_nameext_stdout_expr: Test nameroot/nameext expression in arguments, stdout
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcdsgk9zc --quiet tests/nameroot.cwl tests/wc-job.json
+Test [96/378] input_dir_inputbinding: Test directory input with inputBinding
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp4nx11bpc --quiet tests/dir6.cwl tests/dir-job.yml
+Test [97/378] cl_gen_arrayofarrays: Test command line generation of array-of-arrays
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplh_b8x7o --quiet tests/nested-array.cwl tests/nested-array-job.yml
+Test [98/378] env_home_tmpdir: Test $HOME and $TMPDIR are set correctly
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqv1392t_ --quiet tests/envvar.cwl tests/empty.json
+Test [99/378] env_home_tmpdir_docker: Test $HOME and $TMPDIR are set correctly in Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp67z2mtbr --quiet tests/envvar2.cwl tests/empty.json
+Test [100/378] expressionlib_tool_wf_override: Test that expressionLib requirement of individual tool step overrides expressionLib of workflow.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpu_qmtb3k --quiet tests/js-expr-req-wf.cwl#wf tests/empty.json
+Test [101/378] initial_workdir_output: Test output of InitialWorkDir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpdld12149 --quiet tests/initialworkdirrequirement-docker-out.cwl tests/initialworkdirrequirement-docker-out-job.json
+Test [102/378] embedded_subworkflow: Test embedded subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphrgl6pqn --quiet tests/count-lines10-wf.cwl tests/wc-job.json
+hello.txt
+goodbye.txt
+Test [103/378] filesarray_secondaryfiles: Test required, optional and null secondaryFiles on array of files.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpuafnefii --quiet tests/docker-array-secondaryfiles.cwl tests/docker-array-secondaryfiles-job.json
+Test [104/378] filesarray_secondaryfiles2: Test required, optional and null secondaryFiles on array of files.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpirog4kpd --quiet tests/docker-array-secondaryfiles.cwl tests/docker-array-secondaryfiles-job2.json
+Test [105/378] exprtool_directory_literal: Test directory literal output created by ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphx87ykqy --quiet tests/dir7.cwl tests/dir7.yml
+Test [106/378] exprtool_file_literal: Test file literal output created by ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpangye0au --quiet tests/file-literal-ex.cwl tests/empty.json
+Test [107/378] dockeroutputdir: Test dockerOutputDirectory
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwio7rxl1 --quiet tests/docker-output-dir.cwl tests/empty.json
+Test [108/378] hints_import: Test hints with $import
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp4w2afk8o --quiet tests/imported-hint.cwl tests/empty.json
+Test [109/378] default_path_notfound_warning: Test warning instead of error when default path is not found
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp9rx6c9tb --quiet tests/default_path.cwl tests/default_path_job.yml
+Test [110/378] inlinejs_req_expressions: Test InlineJavascriptRequirement with multiple expressions in the same tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplfbhkf_y --quiet tests/inline-js.cwl tests/empty.json
+HOME=/gpfs/scratch/[REDACTED]/[REDACTED]da0xi7xm TMPDIR=/gpfs/scratch/[REDACTED]/[REDACTED]puy5u5p2
+Test [111/378] input_dir_recurs_copy_writable: Test if a writable input directory is recursively copied and writable
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpt5wnlt6m --quiet tests/recursive-input-directory.cwl tests/recursive-input-directory.yml
+Test [112/378] null_missing_params: Test that missing parameters are null (not undefined) in expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpiif1i_uz --quiet tests/null-defined.cwl tests/empty.json
+Test [113/378] param_notnull_expr: Test that provided parameter is not null in expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpijk5oid4 --quiet tests/null-defined.cwl tests/cat-job.json
+Test [114/378] wf_compound_doc: Test compound workflow document
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp1b17wao6 --quiet tests/revsort-packed.cwl#main tests/revsort-job.json
+HOME=/IXkQPi TMPDIR=/tmp
+Test [115/378] nameroot_nameext_generated: Test that nameroot and nameext are generated from basename at execution time by the runner
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpm4jhsrg5 --quiet tests/basename-fields-test.cwl tests/basename-fields-job.yml
+Test [116/378] initialworkpath_output: Test that file path in $(inputs) for initialworkdir is in $(outdir).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcgh8nkeq --quiet tests/initialwork-path.cwl tests/wc-job.json
+Hello world!
+Test [117/378] wf_scatter_twopar_oneinput_flattenedmerge: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp0fav6wgy --quiet tests/count-lines12-wf.cwl tests/count-lines6-job.json
+Test [118/378] wf_multiplesources_multipletypes: Test step input with multiple sources with multiple types
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp06qvmguy --quiet tests/sum-wf.cwl tests/sum-job.json
+Test [119/378] shelldir_notinterpreted: Test that shell directives are not interpreted.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpaeo4_hbr --quiet tests/shellchar.cwl tests/empty.json
+Test [120/378] shelldir_quoted: Test that shell directives are quoted.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbo3_310j --quiet tests/shellchar2.cwl tests/empty.json
+Test [121/378] initial_workdir_empty_writable: Test empty writable dir with InitialWorkDirRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcwxsy8fs --quiet tests/writable-dir.cwl tests/empty.json
+Test [122/378] initial_workdir_empty_writable_docker: Test empty writable dir with InitialWorkDirRequirement inside Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpoc16xvad --quiet tests/writable-dir-docker.cwl tests/empty.json
+Test [123/378] dynamic_resreq_inputs: Test dynamic resource reqs referencing inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp2kz4tk8i --quiet tests/dynresreq.cwl tests/dynresreq-job.yaml
+Test [124/378] fileliteral_input_docker: Test file literal as input without Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp36a9ahup --quiet tests/cat3-nodocker.cwl tests/file-literal.yml
+Test [125/378] outputbinding_glob_sorted: Test that OutputBinding.glob is sorted as specified by POSIX
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwy6bx1io --quiet tests/glob_test.cwl tests/empty.json
+Test [126/378] initialworkdir_nesteddir: Test InitialWorkDirRequirement with a nested directory structure from another step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpaepb6rc_ --quiet tests/iwdr_with_nested_dirs.cwl tests/empty.json
+Test [127/378] booleanflags_cl_noinputbinding: Test that boolean flags do not appear on command line if inputBinding is empty and not null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpjmiwucw5 --quiet tests/bool-empty-inputbinding.cwl tests/bool-empty-inputbinding-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Missing required secondary file '.dat' from file object: {
+    "class": "File",
+    "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/ref.fasta",
+    "size": 12010,
+    "basename": "ref.fasta",
+    "nameroot": "ref",
+    "nameext": ".fasta",
+    "secondaryFiles": [
+        {
+            "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/ref.fasta.fai",
+            "basename": "ref.fasta.fai",
+            "class": "File"
+        }
+    ]
+}[0m
+Test [128/378] expr_reference_self_noinput: Test that expression engine does not fail to evaluate reference to self with unprovided input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbqwvo4v9 --quiet tests/stage-unprovided-file.cwl tests/empty.json
+Test [129/378] success_codes: Test successCodes
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbfa3uwao --quiet tests/exit-success.cwl tests/empty.json
+Test [130/378] dynamic_resreq_wf: Test simple workflow with a dynamic resource requirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpp_xxdp3u --quiet tests/dynresreq-workflow.cwl tests/dynresreq-job.yaml
+Test [131/378] cl_empty_array_input: Test that empty array input does not add anything to command line
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp3d0ib4_g --quiet tests/empty-array-input.cwl tests/empty-array-job.json
+Test [132/378] resreq_step_overrides_wf: Test that ResourceRequirement on a step level redefines requirement on the workflow level
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp0gdwq106 --quiet tests/steplevel-resreq.cwl tests/empty.json
+Test [133/378] valuefrom_constant_overrides_inputs: Test valueFrom with constant value overriding provided array inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvpz8ean_ --quiet tests/valueFrom-constant.cwl tests/array-of-strings-job.yml
+Test [134/378] dynamic_resreq_filesizes: Test dynamic resource reqs referencing the size of Files inside a Directory
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp6hc_jvki --quiet tests/dynresreq-dir.cwl tests/dynresreq-dir-job.yaml
+Test [135/378] wf_step_connect_undeclared_param: Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbdoj640d --quiet tests/pass-unconnected.cwl tests/empty.json
+Test [136/378] wf_step_access_undeclared_param: Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpuum9_dz_ --quiet tests/fail-unconnected.cwl tests/empty.json
+Test [137/378] env_home_tmpdir_docker_no_return_code: Test $HOME and $TMPDIR are set correctly in Docker without using return code
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcvy8jlyt --quiet tests/envvar3.cwl tests/empty.json
+Test [138/378] wf_scatter_oneparam_valuefrom_inputs: Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpuoehkwdn --quiet tests/scatter-valuefrom-inputs-wf1.cwl tests/scatter-valuefrom-job1.json
+Test [139/378] packed_import_schema: SchemaDefRequirement with $import, and packed
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpeu0ey_5d --quiet tests/import_schema-def_packed.cwl tests/import_schema-def_job.yml
+Test [140/378] job_input_secondary_subdirs: Test specifying secondaryFiles in subdirectories of the job input document.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp8n3utb44 --quiet tests/dir4.cwl tests/dir4-subdir-1-job.yml
+Test [141/378] job_input_subdir_primary_and_secondary_subdirs: Test specifying secondaryFiles in same subdirectory of the job input as the primary input file.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpehfkec3s --quiet tests/dir4.cwl tests/dir4-subdir-2-job.yml
+Test [142/378] scatter_embedded_subworkflow: Test simple scatter over an embedded subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpnf4e9nve --quiet tests/count-lines18-wf.cwl tests/count-lines3-job.json
+Test [143/378] scatter_multi_input_embedded_subworkflow: Test simple multiple input scatter over an embedded subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpttrf1w70 --quiet tests/count-lines14-wf.cwl tests/count-lines4-job.json
+Test [144/378] workflow_embedded_subworkflow_embedded_subsubworkflow: Test twice nested subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpz7qerztw --quiet tests/count-lines15-wf.cwl tests/wc-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/pass-unconnected.cwl:18:7: 'in2' is not an input parameter of
+                                 file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/echo-tool.cwl,
+                                 expected in[0m
+Test [145/378] workflow_embedded_subworkflow_with_tool_and_subsubworkflow: Test subworkflow of mixed depth with tool first
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_pu0qtfm --quiet tests/count-lines16-wf.cwl tests/wc-job.json
+Test [146/378] workflow_embedded_subworkflow_with_subsubworkflow_and_tool: Test subworkflow of mixed depth with tool after
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpriu1ag_f --quiet tests/count-lines17-wf.cwl tests/wc-job.json
+Test [147/378] workflow_records_inputs_and_outputs: Test record type inputs to and outputs from workflows.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpblc_54fl --quiet tests/record-output-wf.cwl tests/record-output-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/fail-unconnected.cwl:18:7: 'in2' is not an input parameter of
+                                 file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/fail-unspecified-input.cwl,
+                                 expected in[0m
+Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/expression.py", line 322, in do_eval
+    return interpolate(
+        ex,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/expression.py", line 227, in interpolate
+    e = evaluator(
+        js_engine, scan[w[0] + 1 : w[1]], rootvars, jslib, fullJS, **kwargs
+    )
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/expression.py", line 176, in evaluator
+    raise JavascriptException(
+    ...<3 lines>...
+    )
+cwl_utils.errors.JavascriptException: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: tests/fail-unspecified-input.cwl:13:33: Expression evaluation error:
+tests/fail-unspecified-input.cwl:13:33: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [148/378] workflow_integer_input: Test integer workflow input and outputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp1sgf0nxb --quiet tests/io-int-wf.cwl tests/io-int.json
+INFO:    Using cached SIF image
+Test [149/378] workflow_integer_input_optional_specified: Test optional integer workflow inputs (specified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpilnietqw --quiet tests/io-int-optional-wf.cwl tests/io-int.json
+Test [150/378] workflow_integer_input_optional_unspecified: Test optional integer workflow inputs (unspecified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpf3vgihbb --quiet tests/io-int-optional-wf.cwl tests/empty.json
+Test [151/378] workflow_integer_input_default_specified: Test default integer workflow inputs (specified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqd2lt4of --quiet tests/io-int-default-wf.cwl tests/io-int.json
+Test [152/378] workflow_integer_input_default_unspecified: Test default integer workflow inputs (unspecified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpmhcve0l8 --quiet tests/io-int-default-wf.cwl tests/empty.json
+Test [153/378] workflow_integer_input_default_and_tool_integer_input_default: Test default integer tool and workflow inputs (unspecified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpalmo5snj --quiet tests/io-int-default-tool-and-wf.cwl tests/empty.json
+Test [154/378] workflow_file_input_default_unspecified: Test File input with default unspecified to workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_jfijbs2 --quiet tests/io-file-default-wf.cwl tests/empty.json
+Test [155/378] workflow_file_input_default_specified: Test File input with default specified to workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwb0ujj8x --quiet tests/io-file-default-wf.cwl tests/default_path_job.yml
+Test [156/378] clt_optional_union_input_file_or_files_with_array_of_one_file_provided: Test input union type or File or File array to a tool with one file in array specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpm1y82xlo --quiet tests/io-file-or-files.cwl tests/job-input-array-one-empty-file.json
+Test [157/378] clt_optional_union_input_file_or_files_with_many_files_provided: Test input union type or File or File array to a tool with a few files in array specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpbpf4txpz --quiet tests/io-file-or-files.cwl tests/job-input-array-few-files.json
+Test [158/378] clt_optional_union_input_file_or_files_with_single_file_provided: Test input union type or File or File array to a tool with one file specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpod90dikc --quiet tests/io-file-or-files.cwl tests/job-input-one-file.json
+Test [159/378] clt_optional_union_input_file_or_files_with_nothing_provided: Test input union type or File or File array to a tool with null specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp4crg7rb7 --quiet tests/io-file-or-files.cwl tests/job-input-null.json
+Test [160/378] clt_any_input_with_integer_provided: Test Any parameter with integer input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpudd0ya9l --quiet tests/io-any-1.cwl tests/io-any-int.json
+Test [161/378] clt_any_input_with_string_provided: Test Any parameter with string input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpies1w3cf --quiet tests/io-any-1.cwl tests/io-any-string.json
+Test [162/378] clt_any_input_with_file_provided: Test Any parameter with file input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqeqx5sj_ --quiet tests/io-any-1.cwl tests/io-any-file.json
+Test [163/378] clt_any_input_with_mixed_array_provided: Test Any parameter with array input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpkj7nz_am --quiet tests/io-any-1.cwl tests/io-any-array.json
+Test [164/378] clt_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpaseitgi6 --quiet tests/io-any-1.cwl tests/io-any-record.json
+Test [165/378] workflow_any_input_with_integer_provided: Test Any parameter with integer input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpzc0zcqnu --quiet tests/io-any-wf-1.cwl tests/io-any-int.json
+Test [166/378] workflow_any_input_with_string_provided: Test Any parameter with string input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphwgryss0 --quiet tests/io-any-wf-1.cwl tests/io-any-string.json
+Test [167/378] workflow_any_input_with_file_provided: Test Any parameter with file input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmprljateem --quiet tests/io-any-wf-1.cwl tests/io-any-file.json
+Test [168/378] workflow_any_input_with_mixed_array_provided: Test Any parameter with array input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpu5zp5xsv --quiet tests/io-any-wf-1.cwl tests/io-any-array.json
+Test [169/378] workflow_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp3sz2m212 --quiet tests/io-any-wf-1.cwl tests/io-any-record.json
+Test [170/378] workflow_union_default_input_unspecified: Test union type input to workflow with default unspecified
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpr9puyk8m --quiet tests/io-union-input-default-wf.cwl tests/empty.json
+Test [171/378] workflow_union_default_input_with_file_provided: Test union type input to workflow with default specified as file
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpa8tfrg1h --quiet tests/io-union-input-default-wf.cwl tests/io-any-file.json
+Test [172/378] workflowstep_valuefrom_string: Test valueFrom on workflow step from literal (string).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp06f4qz48 --quiet tests/step-valuefrom4-wf.cwl tests/empty.json
+Test [173/378] workflowstep_valuefrom_file_basename: Test valueFrom on workflow step using basename.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpm25c583c --quiet tests/step-valuefrom5-wf.cwl tests/wc-job.json
+Test [174/378] expression_tool_int_array_output: Test output arrays in a tool (with ints).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpa8a44kgw --quiet tests/output-arrays-int.cwl tests/output-arrays-int-job.json
+Test [175/378] workflowstep_int_array_input_output: Test output arrays in a workflow (with ints).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpt5_nz2az --quiet tests/output-arrays-int-wf.cwl tests/output-arrays-int-job.json
+Test [176/378] workflow_file_array_output: Test output arrays in a workflow (with Files).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcbu9qttd --quiet tests/output-arrays-file-wf.cwl tests/output-arrays-file-job.json
+Test [177/378] docker_entrypoint: Test Docker ENTRYPOINT usage
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpncww3xfq --quiet tests/docker-run-cmd.cwl tests/empty.json
+Test [178/378] clt_file_size_property_with_empty_file: Test use of size in expressions for an empty file
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpxy9e_pcq --quiet tests/size-expression-tool.cwl tests/job-input-array-one-empty-file.json
+Test [179/378] clt_file_size_property_with_multi_file: Test use of size in expressions for a few files
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpxbio3k70 --quiet tests/size-expression-tool.cwl tests/job-input-array-few-files.json
+Test [180/378] any_without_defaults_unspecified_fails: Test Any without defaults, unspecified, should fail.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpfhkmxklw --quiet tests/echo-tool.cwl tests/null-expression-echo-job.json
+Test [181/378] any_without_defaults_specified_fails: Test Any without defaults, specified, should fail.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvu5h6sc0 --quiet tests/echo-tool.cwl tests/null-expression1-job.json
+Test [182/378] step_input_default_value_noexp: Test default value on step input parameter, no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpx5b2x93u --quiet tests/count-lines9-wf-noET.cwl tests/empty.json
+Test [183/378] step_input_default_value_overriden_noexp: Test default value on step input parameter overridden by provided source, no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpjue923pa --quiet tests/count-lines11-wf-noET.cwl tests/cat-job.json
+Test [184/378] nested_workflow_noexp: Test nested workflow, without ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppe2cu4ai --quiet tests/count-lines8-wf-noET.cwl tests/wc-job.json
+Test [185/378] wf_multiplesources_multipletypes_noexp: Test step input with multiple sources with multiple types, without ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpxt0qu8gk --quiet tests/sum-wf-noET.cwl tests/sum-job.json
+Test [186/378] dynamic_resreq_wf_optional_file_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpn1nwtuks --quiet tests/dynresreq-workflow-tooldefault.cwl tests/empty.json
+Test [187/378] dynamic_resreq_wf_optional_file_step_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_typki6d --quiet tests/dynresreq-workflow-stepdefault.cwl tests/empty.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/echo-tool.cwl:6:3: Missing required input parameter 'in'[0m
+Test [188/378] dynamic_resreq_wf_optional_file_wf_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itelf provides a default value (a local file) for this input.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp1j5v743n --quiet tests/dynresreq-workflow-inputdefault.cwl tests/empty.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/echo-tool.cwl:6:3: Missing required input parameter 'in'[0m
+Test [189/378] step_input_default_value_overriden_2nd_step: Test default value on step input parameter overridden by provided source. With passthrough first step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpa78h39u7 --quiet tests/count-lines11-extra-step-wf.cwl tests/cat-job.json
+Test [190/378] step_input_default_value_overriden_2nd_step_noexp: Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpexcymvn3 --quiet tests/count-lines11-extra-step-wf-noET.cwl tests/cat-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf-noET.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf-noET.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [191/378] step_input_default_value_overriden_2nd_step_null: Test default value on step input parameter overridden by provided source. With null producing first step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmps89heujw --quiet tests/count-lines11-null-step-wf.cwl tests/empty.json
+Test [192/378] step_input_default_value_overriden_2nd_step_null_noexp: Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_zxw20qm --quiet tests/count-lines11-null-step-wf-noET.cwl tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/dynresreq-workflow-tooldefault.cwl:6:3:  Source 'special_file' of type ["null", "File"] may
+                                               be incompatible
+tests/dynresreq-workflow-tooldefault.cwl:15:7:   with sink 'special_file' of type "File"[0m
+Test [193/378] stdin_from_directory_literal_with_local_file: Pipe to stdin from user provided local File via a Directory literal
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpp8uqs73i --quiet tests/cat-from-dir.cwl tests/cat-from-dir-job.yaml
+Test [194/378] stdin_from_directory_literal_with_literal_file: Pipe to stdin from literal File via a Directory literal
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp0dijrey0 --quiet tests/cat-from-dir.cwl tests/cat-from-dir-with-literal-file.yaml
+Test [195/378] directory_literal_with_literal_file_nostdin: Test non-stdin reference to literal File via a Directory literal
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpex96s94s --quiet tests/cat3-from-dir.cwl tests/cat-from-dir-with-literal-file.yaml
+INFO:    Using cached SIF image
+Test [196/378] no_inputs_commandlinetool: Test CommandLineTool without inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp9sfwbkxn --quiet tests/no-inputs-tool.cwl
+Test [197/378] no_outputs_commandlinetool: Test CommandLineTool without outputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp1t0hena1 --quiet tests/no-outputs-tool.cwl tests/cat-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/dynresreq-workflow-stepdefault.cwl:6:3:  Source 'special_file' of type ["null", "File"] may
+                                               be incompatible
+tests/dynresreq-workflow-stepdefault.cwl:15:7:   with sink 'special_file' of type "File"[0m
+Test [198/378] no_inputs_workflow: Test Workflow without inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp5_kjwqdk --quiet tests/no-inputs-wf.cwl
+Test [199/378] no_outputs_workflow: Test Workflow without outputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp7iq5xpq5 --quiet tests/no-outputs-wf.cwl tests/cat-job.json
+Test [200/378] anonymous_enum_in_array: Test an anonymous enum inside an array inside a record
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp38e180vw --quiet tests/anon_enum_inside_array.cwl tests/anon_enum_inside_array.yml
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-extra-step-wf-noET.cwl:6:3:  Source 'file1' of type ["null", "File"] may be
+                                                 incompatible
+tests/count-lines11-extra-step-wf-noET.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [201/378] schema-def_anonymous_enum_in_array: Test an anonymous enum inside an array inside a record, SchemaDefRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp06mc3x49 --quiet tests/anon_enum_inside_array_inside_schemadef.cwl tests/anon_enum_inside_array_inside_schemadef.yml
+Test [202/378] stdin_shorcut: Test command execution in with stdin and stdout redirection using stdin shortcut
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqf0a80wy --quiet tests/cat-tool-shortcut.cwl tests/wc-job.json
+Test [203/378] secondary_files_in_unnamed_records: Test secondaryFiles on anonymous record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpz0n88m7v --quiet tests/record-in-secondaryFiles.cwl tests/record-secondaryFiles-job.yml
+Test [204/378] secondary_files_in_named_records: Test secondaryFiles on SchemaDefRequirement record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk0n_fqmk --quiet tests/record-sd-secondaryFiles.cwl tests/record-secondaryFiles-job.yml
+Test [205/378] secondary_files_in_output_records: Test secondaryFiles on output record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmplm838fig --quiet tests/record-out-secondaryFiles.cwl tests/empty.json
+Test [206/378] secondary_files_workflow_propagation: Test secondaryFiles propagation through workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp1n86n_wd --quiet tests/record-in-secondaryFiles-wf.cwl tests/record-secondaryFiles-job.yml
+/var/lib/cwl/stg31b37f3a-71a4-42e7-a6c8-d3866aa4993c/hello.txt
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-extra-step-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be
+                                            incompatible
+tests/count-lines11-extra-step-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [207/378] secondary_files_missing: Test checking when secondaryFiles are missing
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpyb18tfcz --quiet tests/record-in-secondaryFiles-missing-wf.cwl tests/record-secondaryFiles-job.yml
+Test [208/378] input_records_file_entry_with_format: Test format on anonymous record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpq41s7pxu --quiet tests/record-in-format.cwl tests/record-format-job.yml
+Test [209/378] input_records_file_entry_with_format_and_bad_regular_input_file_format: Test file format checking on parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp4lg5tkpc --quiet tests/record-in-format.cwl tests/record-format-job2.yml
+Test [210/378] input_records_file_entry_with_format_and_bad_entry_file_format: Test file format checking on record field
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_wyh2z03 --quiet tests/record-in-format.cwl tests/record-format-job3.yml
+Test [211/378] input_records_file_entry_with_format_and_bad_entry_array_file_format: Test file format checking on array item
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppmsbkhws --quiet tests/record-in-format.cwl tests/record-format-job4.yml
+Test [212/378] record_output_file_entry_format: Test format on output record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk6zd9gfj --quiet tests/record-out-format.cwl tests/record-secondaryFiles-job.yml
+/var/lib/cwl/stg301dfe76-a142-4ab2-b45f-8a115cb7a468/hello.txt
+Test [213/378] workflow_input_inputBinding_loadContents: Test WorkflowInputParameter.inputBinding.loadContents
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpwl9a3mk_ --quiet tests/wf-loadContents.cwl tests/wf-loadContents-job.yml
+Test [214/378] workflow_input_loadContents_without_inputBinding: Test WorkflowInputParameter.loadContents
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpmxt85bd3 --quiet tests/wf-loadContents2.cwl tests/wf-loadContents-job.yml
+Test [215/378] expression_tool_input_loadContents: Test loadContents on InputParameter.loadContents (expression)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpor6fnud0 --quiet tests/wf-loadContents3.cwl tests/wf-loadContents-job.yml
+Test [216/378] workflow_step_in_loadContents: Test WorkflowStepInput.loadContents
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpioh5bxoy --quiet tests/wf-loadContents4.cwl tests/wf-loadContents-job.yml
+Test [217/378] timelimit_basic: Test that job fails when exceeding time limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmprwhtnr2o --quiet tests/timelimit.cwl tests/empty.json
+Test [218/378] timelimit_invalid: Test invalid time limit value
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmptb6a5mqm --quiet tests/timelimit2.cwl tests/empty.json
+Test [219/378] timelimit_zero_unlimited: Test zero timelimit means no limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphffopvqh --quiet tests/timelimit3.cwl tests/empty.json
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: tests/record-in-secondaryFiles.cwl:10:11: Missing required secondary file 'A.s2' from file object: {
+tests/record-in-secondaryFiles.cwl:10:11:     "class": "File",
+tests/record-in-secondaryFiles.cwl:10:11:     "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/rec/A",
+tests/record-in-secondaryFiles.cwl:10:11:     "size": 0,
+tests/record-in-secondaryFiles.cwl:10:11:     "basename": "A",
+tests/record-in-secondaryFiles.cwl:10:11:     "nameroot": "A",
+tests/record-in-secondaryFiles.cwl:10:11:     "nameext": "",
+tests/record-in-secondaryFiles.cwl:10:11:     "secondaryFiles": []
+tests/record-in-secondaryFiles.cwl:10:11: }[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Expected value of 'regular_input' to have format 'http://example.com/format1' but
+ File has an incompatible format: {
+    "class": "File",
+    "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/rec/D",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "D",
+    "nameroot": "D",
+    "nameext": ""
+}[0m
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Expected value of 'f1' to have format 'http://example.com/format1' but
+ File has an incompatible format: {
+    "class": "File",
+    "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/rec/A",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "A",
+    "nameroot": "A",
+    "nameext": ""
+}[0m
+Test [220/378] timelimit_from_expression: Test expression in time limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvq1y8zkl --quiet tests/timelimit4.cwl tests/empty.json
+Test [221/378] timelimit_expressiontool: Test timelimit in expressiontool is ignored
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpp3q8buym --quiet tests/timelimit5.cwl tests/empty.json
+Test [222/378] timelimit_basic_wf: Test that tool in workflow fails when exceeding time limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpxxemt16j --quiet tests/timelimit-wf.cwl tests/empty.json
+Test [223/378] timelimit_invalid_wf: Test that workflow level time limit is not applied to workflow execution time
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk2gavbgf --quiet tests/timelimit2-wf.cwl tests/empty.json
+[1;30mERROR[0m [31mGot workflow error[0m
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 541, in bind_input
+    check_format(
+    ~~~~~~~~~~~~^
+        fdatum,
+        ^^^^^^^
+        evaluated_format,
+        ^^^^^^^^^^^^^^^^^
+        self.formatgraph,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/file_formats.py", line 68, in check_format
+    raise ValidationException(
+        f"File has an incompatible format: {json_dumps(afile, indent=4)}"
+    )
+schema_salad.exceptions.ValidationException: File has an incompatible format: {
+    "class": "File",
+    "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/rec/C",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "C",
+    "nameroot": "C",
+    "nameext": ""
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/executors.py", line 215, in run_jobs
+    for job in jobiter:
+               ^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/command_line_tool.py", line 979, in job
+    builder = self._init_job(job_order, runtimeContext)
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/process.py", line 924, in _init_job
+    builder.bind_input(
+    ~~~~~~~~~~~~~~~~~~^
+        self.inputs_record_schema,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        job,
+        ^^^^
+        discover_secondaryFiles=getdefault(runtime_context.toplevel, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 323, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        f,
+        ^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 290, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        st,
+        ^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 323, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        f,
+        ^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 290, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        st,
+        ^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 348, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        itemschema,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 548, in bind_input
+    f"Expected value of {schema['name']!r} to have "
+                         ~~~~~~^^^^^^^^
+KeyError: 'name'
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+'name'[0m
+Test [224/378] timelimit_zero_unlimited_wf: Test zero timelimit means no limit in workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphvoqjkrd --quiet tests/timelimit3-wf.cwl tests/empty.json
+Test [225/378] timelimit_from_expression_wf: Test expression in time limit in workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppcolmqar --quiet tests/timelimit4-wf.cwl tests/empty.json
+Test [226/378] networkaccess: Test networkaccess enabled
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp4566yu1a --quiet tests/networkaccess.cwl tests/empty.json
+[1;30mERROR[0m [31mInput object failed validation:
+tests/timelimit2.cwl:7:5: timelimit must be an integer >= 0, got: -1[0m
+Test [227/378] networkaccess_disabled: Test networkaccess is disabled by default
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp6txite0m --quiet tests/networkaccess2.cwl tests/empty.json
+Test [228/378] initial_work_dir_for_null_and_arrays: Test null and array input in InitialWorkDirRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp921o0cl_ --quiet tests/stage-array.cwl tests/stage-array-job.json
+Test [229/378] initial_work_dir_for_array_dirs: Test array of directories InitialWorkDirRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppi11pa69 --quiet tests/stage-array-dirs.cwl tests/stage-array-dirs-job.yml
+rec
+testdir
+Test [230/378] cwl_requirements_addition: Test requirements in input document via EnvVarRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmprvh4d8w7 --quiet tests/env-tool3.cwl tests/env-job3.yaml
+Test [231/378] cwl_requirements_override_expression: Test conflicting requirements in input document via EnvVarRequirement and expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp1b139aht --quiet tests/env-tool4.cwl tests/env-job3.yaml
+Test [232/378] cwl_requirements_override_static: Test conflicting requirements in input document via EnvVarRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpjnw9vpzf --quiet tests/env-tool3.cwl tests/env-job4.yaml
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/socket.py", line 850, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/socket.py", line 987, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    assert(urllib.request.urlopen("http://commonwl.org").code == 200)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/local/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.14/urllib/request.py", line 1350, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+[1;30mWARNING[0m [33m[job networkaccess2.cwl] exited with status: 1[0m
+[1;30mWARNING[0m [33m[job networkaccess2.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [233/378] initial_workdir_output_glob: Test full path glob output of InitialWorkDir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_al65izu --quiet tests/initialworkdir-glob-fullpath.cwl tests/initialworkdirrequirement-docker-out-job.json
+Test [234/378] glob_outside_outputs_fails: Test fail trying to glob outside output directory
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpeaebe31t --quiet tests/glob-path-error.cwl tests/empty.json
+Test [235/378] illegal_symlink: symlink to file outside of working directory should NOT be retrieved
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpnioi1j23 --quiet tests/symlink-illegal.cwl tests/empty.json
+Test [236/378] legal_symlink: symlink to file inside of working directory should be retrieved
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpkj1ti7p7 --quiet tests/symlink-legal.cwl tests/empty.json
+Test [237/378] modify_file_content: inplace update has side effect on file content
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvc42180x --quiet tests/inp_update_wf.cwl tests/empty.json
+Test [238/378] modify_directory_content: inplace update has side effect on directory content
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp68dzt66b --quiet tests/inpdir_update_wf.cwl tests/empty.json
+Test [239/378] outputbinding_glob_directory: Test that OutputBinding.glob accepts Directories
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpww6i47fi --quiet tests/glob_directory.cwl tests/empty.json
+Test [240/378] stage_file_array: Test that array of input files can be staged to directory with entryname
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpq9b_mnz8 --quiet tests/stage_file_array.cwl tests/stage_file_array.job.json
+Test [241/378] stage_file_array_basename: Test that array of input files can be staged to directory with basename
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcymvdz32 --quiet tests/stage_file_array_basename.cwl tests/stage_file_array.job.json
+Test [242/378] stage_file_array_entryname_overrides: Test that if array of input files are staged to directory with basename and entryname, entryname overrides
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_k9lynw5 --quiet tests/stage_file_array_basename_and_entryname.cwl tests/stage_file_array.job.json
+
+[1;30mERROR[0m [31m[job glob-path-error.cwl] Job error:
+Error collecting output for parameter 'OUTPUT': tests/glob-path-error.cwl:17:7: glob patterns must not start with '/'[0m
+[1;30mWARNING[0m [33m[job glob-path-error.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+[1;30mWARNING[0m [33m[job timelimit.cwl] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job timelimit.cwl] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job timelimit.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [243/378] tmpdir_is_not_outdir: Test that runtime.tmpdir is not runtime.outdir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpt0tkjyqo --quiet tests/runtime-paths-distinct.cwl tests/empty.json
+Test [244/378] listing_default_none: Test that default behavior is 'no_listing' if not specified
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpf2c5j469 --quiet tests/listing_none1.cwl tests/listing-job.yml
+[1;30mERROR[0m [31m[job symlink-illegal.cwl] Job error:
+Error validating output record. Does not exist or is not a Directory: 'file:///gpfs/scratch/[REDACTED]/[REDACTED]03hl_6gy/symlink.txt'
+ in {
+    "output_file": {
+        "location": "file:///gpfs/scratch/[REDACTED]/[REDACTED]03hl_6gy/symlink.txt",
+        "basename": "symlink.txt",
+        "nameroot": "symlink",
+        "nameext": ".txt",
+        "class": "Directory"
+    }
+}[0m
+[1;30mWARNING[0m [33m[job symlink-illegal.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [245/378] listing_requirement_none: Test that 'listing' is not present when LoadListingRequirement is 'no_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmppdaobnaf --quiet tests/listing_none2.cwl tests/listing-job.yml
+Test [246/378] listing_loadListing_none: Test that 'listing' is not present when loadListing on input parameter is 'no_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpmelxm2gd --quiet tests/listing_none3.cwl tests/listing-job.yml
+Test [247/378] listing_requirement_shallow: Test that 'listing' is present in top directory object but not subdirectory object when LoadListingRequirement is 'shallow_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpiew_i5yp --quiet tests/listing_shallow1.cwl tests/listing-job.yml
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/inp_update_wf.cwl:26:7: 'wait' is not an input parameter of
+                              file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/specs/v1.2/tests/parseInt-tool.cwl,
+                              expected file1[0m
+Test [248/378] listing_loadListing_shallow: Test that 'listing' is present in top directory object but not subdirectory object when loadListing on input parameter loadListing is 'shallow_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpuv3hv7m8 --quiet tests/listing_shallow2.cwl tests/listing-job.yml
+input_dir
+[1;30mWARNING[0m [33m[job timelimit4.cwl] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job timelimit4.cwl] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job timelimit4.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [249/378] listing_outputBinding_loadListing: Test that loadListing works when used on outputBinding.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpgue5kscc --quiet tests/listing_shallow3.cwl tests/listing-job.yml
+Test [250/378] listing_requirement_deep: Test that 'listing' is present in top directory object and in subdirectory objects when LoadListingRequirement is 'deep_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphgi168kw --quiet tests/listing_deep1.cwl tests/listing-job.yml
+input_dir
+Test [251/378] listing_loadListing_deep: Test that 'listing' is present in top directory object and in subdirectory objects when input parameter loadListing is 'deep_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_xol5no8 --quiet tests/listing_deep2.cwl tests/listing-job.yml
+Test [252/378] inputBinding_position_expr: Test for expression in the InputBinding.position field; also test using emoji in CWL document and tool output
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpgnklyyby --quiet tests/echo-position-expr.cwl tests/echo-position-expr-job.yml
+[1;30mWARNING[0m [33m[job step1] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job step1] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job step1] completed permanentFail[0m
+[1;30mWARNING[0m [33m[step step1] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+input_dir
+Test [253/378] outputEval_exitCode: Can access exit code in outputEval
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmprm039fpn --quiet tests/exitcode.cwl tests/empty.json
+Test [254/378] any_input_param_graph_no_default: Test use of $graph without specifying which process to run
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpnm4s5dby --quiet tests/echo-tool-packed.cwl tests/env-job.json
+Test [255/378] any_input_param_graph_no_default_hashmain: Test use of $graph without specifying which process to run, hash-prefixed "main"
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp9shk921d --quiet tests/echo-tool-packed2.cwl tests/env-job.json
+Test [256/378] optional_numerical_output_returns_0_not_null: Test that optional number output is returned as 0, not null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpfub2mgbz --quiet tests/optional-numerical-output-0.cwl tests/empty.json
+Test [257/378] cores_float: Test float value for coresMin(Max) is rounded up in runtime.cores
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpvxg5ugwy --quiet tests/cores_float.cwl tests/empty.json
+Test [258/378] storage_float: Test float value for ram/tmpdir/outdir Min(Max) is rounded up
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpdg8w_otq --quiet tests/storage_float.cwl tests/empty.json
+Test [259/378] cat_synthetic_file: Test the generation of a synthetic file with inline contents.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpqgaprj1f --quiet tests/synth-file.cwl tests/synth-file-job.yml
+Test [260/378] continuation: Line continuations in bash scripts should behave correctly
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmp_5jgrdbj --quiet tests/string-interpolation/bash-line-continuation.cwl
+Test [261/378] continuation_expression: Line continuations in bash scripts should always behave correctly
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpgy74xjnp --quiet tests/string-interpolation/bash-line-continuation-with-expression.cwl
+Test [262/378] quoting_multiple_backslashes: Test quoting multiple backslashes
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk5rkm_5x --quiet tests/string-interpolation/bash-dollar-quote.cwl
+Test [263/378] escaping_expression_no_extra_quotes: Strings returned from JS expressions should not have extra quotes around them
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcwuhz26t --quiet tests/string-interpolation/js-quote.cwl
+Test [264/378] direct_optional_null_result: Simplest conditional pattern (False)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpg0bmdof4 --quiet tests/conditionals/cond-wf-001.cwl tests/conditionals/val.1.job.yaml
+Test [265/378] direct_optional_nonnull_result: Simplest conditional pattern (True)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpcmhilsbp --quiet tests/conditionals/cond-wf-001.cwl tests/conditionals/val.3.job.yaml
+Test [266/378] direct_required: Conditional using intermediate WorkflowStep.in input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpkjokwwy5 --quiet tests/conditionals/cond-wf-002.cwl tests/conditionals/val.1.job.yaml
+Test [267/378] pass_through_required_false_when: Pass through pattern with pickValue: first_non_null; 'when' is false
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmphiwydhrg --quiet tests/conditionals/cond-wf-003.cwl tests/conditionals/val.1.job.yaml
+Test [268/378] pass_through_required_true_when: pass through pattern with pickvalue: first_non_null; 'when' is true
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpk6la5m_6 --quiet tests/conditionals/cond-wf-003.cwl tests/conditionals/val.3.job.yaml
+Test [269/378] first_non_null_first_non_null: pickValue: first_non_null first item is non null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpx6ppm0m9 --quiet tests/conditionals/cond-wf-003.1.cwl tests/conditionals/val.0.job.yaml
+Test [270/378] first_non_null_all_null: pickValue: first_non_null needs at least one non null
+
+Test [271/378] first_non_null_second_non_null: pickValue: first_non_null second item is non null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmps547zdru --quiet tests/conditionals/cond-wf-003.1.cwl tests/conditionals/val.1.job.yaml
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmple28yjjf --quiet tests/conditionals/cond-wf-003.1.cwl tests/conditionals/val.3.job.yaml
+Test [272/378] pass_through_required_the_only_non_null: pickvalue: the_only_non_null will pass, only for false condition
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpfya5e0cr --quiet tests/conditionals/cond-wf-004.cwl tests/conditionals/val.1.job.yaml
+Test [273/378] pass_through_required_fail: pickValue: the_only_non_null will fail due to multiple non nulls
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch/[REDACTED]/[REDACTED] --outdir=/scratch/tmp/tmpptlfdx54 --quiet tests/conditionals/cond-wf-004.cwl tests/conditionals/val.3.job.yaml

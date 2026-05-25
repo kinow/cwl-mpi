@@ -47,5 +47,5 @@ cwl-conformance-tests//
 ## Usage
 
 ```bash
-HPC=mn5 HPC_SCRATCH_DIR=/gpfs/scratch/$bscgroup/$bscuser ./cwl-conformance-tests.sh
+HPC=mn5 HPC_SCRATCH_DIR=/gpfs/scratch/$bscgroup/$bscuser ./cwl_conformance_tests.sh
 ```
