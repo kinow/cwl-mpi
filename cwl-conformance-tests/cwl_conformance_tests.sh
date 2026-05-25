@@ -26,7 +26,7 @@ export PYTHONIOENCODING=utf8
 #
 # with:
 #
-# 
+#
 export PYTHONFAULTHANDLER=0
 
 ##############################
@@ -242,7 +242,7 @@ run_tests() {
             "--test=${TEST_FILE}"
             "--junit-verbose"
             "--junit-xml=${TOOL_DIR}/junit.xml"
-            "--timeout=30"
+            "--timeout=600"
             "-j${N_TESTS_IN_PARALLEL}"
             "--tool=$RUNNER"
             "--"

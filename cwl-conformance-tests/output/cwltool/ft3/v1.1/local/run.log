@@ -1,0 +1,1578 @@
+=== RUN START ===
+Mon May 25 09:10:30 PM CEST 2026
+TOOL=cwltool
+VERSION=v1.1
+MODE=local
+RUNNER=cwltool
+EXTRA=--singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/
+=================
+
+/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/bin/cwltool 3.2.20260413085819
+
++ cwltest --verbose --test=conformance_tests.yaml --junit-verbose --junit-xml=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/cwltool/v1.1/local/junit.xml --timeout=600 -j16 --tool=cwltool -- --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+Test [1/253] cl_basic_generation: General test of command line generation
+
+Test [2/253] nested_prefixes_arrays: Test nested prefixes with arrays
+
+Test [3/253] nested_cl_bindings: Test nested command line bindings
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp56sor01w --quiet tests/bwa-mem-tool.cwl tests/bwa-mem-job.json
+Test [4/253] cl_optional_inputs_missing: Test command line with optional input (missing)
+
+Test [5/253] cl_optional_bindings_provided: Test command line with optional input (provided)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmm_8mtgw --quiet tests/binding-test.cwl tests/bwa-mem-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4ri2bewj --quiet tests/cat1-testcli.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpe50mog9z --quiet tests/tmap-tool.cwl tests/tmap-job.json
+Test [7/253] stdout_redirect_docker: Test command execution in Docker with stdout redirection
+
+Test [9/253] stdout_redirect_mediumcut_docker: Test command execution in Docker with mediumcut stdout redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpeiuxftie --quiet tests/cat1-testcli.cwl tests/cat-n-job.json
+Test [10/253] stderr_redirect: Test command line with stderr redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2iqk6i9y --quiet tests/cat3-tool.cwl tests/cat-job.json
+Test [6/253] initworkdir_expreng_requirements: Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature
+
+Test [11/253] stderr_redirect_shortcut: Test command line with stderr redirection, brief syntax
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpk2gcbhaf --quiet tests/cat3-tool-mediumcut.cwl tests/cat-job.json
+Test [14/253] expression_any: Test default usage of Any in expressions.
+
+Test [13/253] stdinout_redirect_docker: Test command execution in Docker with stdin and stdout redirection
+
+Test [16/253] expression_any_string: Testing the string 'null' does not trip up an Any with a default value.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp99g7fem4 --quiet tests/stderr-shortcut.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpiclozx_3 --quiet tests/stderr.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpa266c96m --quiet tests/null-expression1-tool.cwl tests/empty.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpn9mbqlcv --quiet tests/cat4-tool.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpy38vxvys --quiet tests/null-expression1-tool.cwl tests/null-expression2-job.json
+Test [12/253] stderr_redirect_mediumcut: Test command line with stderr redirection, named brief syntax
+
+Test [15/253] expression_any_null: Test explicitly passing null to Any type inputs with default values.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpdy80j3ow --quiet tests/stderr-mediumcut.cwl tests/empty.json
+Test [8/253] stdout_redirect_shortcut_docker: Test command execution in Docker with shortcut stdout redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp6o2pwoyi --quiet tests/null-expression1-tool.cwl tests/null-expression1-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpxlck98w2 --quiet tests/template-tool.cwl tests/cat-job.json
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4t59th6n --quiet tests/cat3-tool-shortcut.cwl tests/cat-job.json
+Test [17/253] expression_any_nodefaultany: Test Any without defaults cannot be unspecified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0t9kuuh8 --quiet tests/null-expression2-tool.cwl tests/empty.json
+Test [18/253] expression_any_null_nodefaultany: Test explicitly passing null to Any type without a default value.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpf3qace5l --quiet tests/null-expression2-tool.cwl tests/null-expression1-job.json
+Test [19/253] expression_any_nullstring_nodefaultany: Testing the string 'null' does not trip up an Any without a default value.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp9jjkofxs --quiet tests/null-expression2-tool.cwl tests/null-expression2-job.json
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:       exports = module.exports = _;
+tests/template-tool.cwl:7:9: JSHINT:       ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     exports._ = _;
+tests/template-tool.cwl:7:9: JSHINT:     ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     if (typeof module !== 'undefined' && module.exports) {
+tests/template-tool.cwl:7:9: JSHINT:                                          ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:       exports = module.exports = _;
+tests/template-tool.cwl:7:9: JSHINT:                 ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     return setTimeout(function(){
+tests/template-tool.cwl:7:9: JSHINT:            ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:         timeout = setTimeout(later, remaining);
+tests/template-tool.cwl:7:9: JSHINT:                   ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:         timeout = setTimeout(later, wait - last);
+tests/template-tool.cwl:7:9: JSHINT:                   ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:       if (!timeout) timeout = setTimeout(later, wait);
+tests/template-tool.cwl:7:9: JSHINT:                               ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:         clearTimeout(timeout);
+tests/template-tool.cwl:7:9: JSHINT:         ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'clearTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     root._ = previousUnderscore;
+tests/template-tool.cwl:7:9: JSHINT:              ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'previousUnderscore' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:   if (typeof define === 'function' && define.amd) {
+tests/template-tool.cwl:7:9: JSHINT:                                       ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:7:9: JSHINT:     define('underscore', [], function() {
+tests/template-tool.cwl:7:9: JSHINT:     ^
+tests/template-tool.cwl:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.cwl:8:9: JSHINT: var t = function(s) { return _.template(s, {variable: 'data'})({'inputs': inputs}); };
+tests/template-tool.cwl:8:9: JSHINT:                              ^
+tests/template-tool.cwl:8:9: JSHINT: W117: '_' is not defined.[0m
+INFO:    Using cached SIF image
+INFO:    Using cached SIF image
+Test [20/253] any_outputSource_compatibility: Testing Any type compatibility in outputSource
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmqc5k0b_ --quiet tests/any-type-compat.cwl tests/any-type-job.json
+Test [21/253] stdinout_redirect: Test command execution in with stdin and stdout redirection
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0z8283ul --quiet tests/cat-tool.cwl tests/cat-job.json
+Test [22/253] expression_parseint: Test ExpressionTool with Javascript engine
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpzx1o85oe --quiet tests/parseInt-tool.cwl tests/parseInt-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-477181712/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3483765998/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-3724065305/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-1280177015/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-799855569/root: exit status 1
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1013625477/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-525096394/root: exit status 1
+INFO:    Using cached SIF image
+Test [23/253] expression_outputEval: Test outputEval to transform output
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpoisiczkl --quiet tests/wc2-tool.cwl tests/wc-job.json
+The file is hello.txt
+Test [24/253] wf_wc_parseInt: Test two step workflow with imported tools
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpnj11bfkm --quiet tests/count-lines1-wf.cwl tests/wc-job.json
+Test [25/253] wf_wc_expressiontool: Test two step workflow with inline tools
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpxy0e5gj5 --quiet tests/count-lines2-wf.cwl tests/wc-job.json
+INFO:    Using cached SIF image
+Test [26/253] wf_wc_scatter: Test single step workflow with Scatter step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpu1ax3xfs --quiet tests/count-lines3-wf.cwl tests/count-lines3-job.json
+Test [27/253] wf_wc_scatter_multiple_merge: Test single step workflow with Scatter step and two data links connected to same input, default merge behavior
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3w2a1akm --quiet tests/count-lines4-wf.cwl tests/count-lines4-job.json
+Test [28/253] wf_wc_scatter_multiple_nested: Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpjy8ganmm --quiet tests/count-lines6-wf.cwl tests/count-lines6-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/null-expression2-tool.cwl:9:3: Missing required input parameter 'i1'[0m
+Test [29/253] wf_wc_scatter_multiple_flattened: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpzk6m6fr2 --quiet tests/count-lines7-wf.cwl tests/count-lines6-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-1302983105/root: exit status 1
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/null-expression2-tool.cwl:9:3: Missing required input parameter 'i1'[0m
+Test [30/253] wf_wc_nomultiple: Test that no MultipleInputFeatureRequirement is necessary when workflow step source is a single-item list
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3vwqig2o --quiet tests/count-lines13-wf.cwl tests/count-lines6-job.json
+Test [31/253] wf_input_default_missing: Test workflow with default value for input parameter (missing)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1t5hgj1x --quiet tests/count-lines5-wf.cwl tests/empty.json
+Test [32/253] wf_input_default_provided: Test workflow with default value for input parameter (provided)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpgc0htw5q --quiet tests/count-lines5-wf.cwl tests/wc-job.json
+Test [33/253] wf_default_tool_default: Test that workflow defaults override tool defaults
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpj7u9p47w --quiet tests/echo-wf-default.cwl tests/empty.json
+Test [34/253] envvar_req: Test EnvVarRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpon4u8sdk --quiet tests/env-tool1.cwl tests/env-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1995742489/root: exit status 1
+Test [35/253] wf_scatter_single_param: Test workflow scatter with single scatter parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp34ym7pzr --quiet tests/scatter-wf1.cwl tests/scatter-job1.json
+Test [36/253] wf_scatter_two_nested_crossproduct: Test workflow scatter with two scatter parameters and nested_crossproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp03yia_kn --quiet tests/scatter-wf2.cwl tests/scatter-job2.json
+Test [37/253] wf_scatter_two_flat_crossproduct: Test workflow scatter with two scatter parameters and flat_crossproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpsnsdjj8z --quiet tests/scatter-wf3.cwl#main tests/scatter-job2.json
+Test [38/253] wf_scatter_two_dotproduct: Test workflow scatter with two scatter parameters and dotproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpv779iezv --quiet tests/scatter-wf4.cwl#main tests/scatter-job2.json
+Test [39/253] wf_scatter_emptylist: Test workflow scatter with single empty list parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpohhifbk2 --quiet tests/scatter-wf1.cwl tests/scatter-empty-job1.json
+Test [40/253] wf_scatter_nested_crossproduct_secondempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpg2r0_pfi --quiet tests/scatter-wf2.cwl tests/scatter-empty-job2.json
+Test [41/253] wf_scatter_nested_crossproduct_firstempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpzjsl3137 --quiet tests/scatter-wf3.cwl#main tests/scatter-empty-job3.json
+Test [42/253] wf_scatter_flat_crossproduct_oneempty: Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpuz27bp_t --quiet tests/scatter-wf3.cwl#main tests/scatter-empty-job2.json
+Test [43/253] wf_scatter_dotproduct_twoempty: Test workflow scatter with two empty scatter parameters and dotproduct join method
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0qqcmxpf --quiet tests/scatter-wf4.cwl#main tests/scatter-empty-job4.json
+Test [44/253] any_input_param: Test Any type input parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpq_i3hdx0 --quiet tests/echo-tool.cwl tests/env-job.json
+Test [45/253] nested_workflow: Test nested workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1nz6fnxv --quiet tests/count-lines8-wf.cwl tests/wc-job.json
+Test [46/253] requirement_priority: Test requirement priority
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmsw53iwp --quiet tests/env-wf1.cwl tests/env-job.json
+Test [47/253] requirement_override_hints: Test requirements override hints
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpiy9jnpe1 --quiet tests/env-wf2.cwl tests/env-job.json
+Test [48/253] requirement_workflow_steps: Test requirements on workflow steps
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpqkamxbot --quiet tests/env-wf3.cwl tests/env-job.json
+Test [49/253] step_input_default_value: Test default value on step input parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1icmzhke --quiet tests/count-lines9-wf.cwl tests/empty.json
+Test [50/253] step_input_default_value_nosource: Test use default value on step input parameter with empty source
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2bovqnrl --quiet tests/count-lines11-wf.cwl tests/empty.json
+Test [51/253] step_input_default_value_nullsource: Test use default value on step input parameter with null source
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp7g02t_ii --quiet tests/count-lines11-wf.cwl tests/file1-null.json
+Test [52/253] step_input_default_value_overriden: Test default value on step input parameter overridden by provided source
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpyj8uo7l6 --quiet tests/count-lines11-wf.cwl tests/cat-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in'.  All outputs will be empty.[0m
+Test [53/253] wf_simple: Test simple workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmplmntxbhq --quiet tests/revsort.cwl tests/revsort-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+Test [54/253] hints_unknown_ignored: Test unknown hints are ignored.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpge5tjhz8 --quiet tests/cat5-tool.cwl tests/cat-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1'.  All outputs will be empty.[0m
+Test [55/253] initial_workdir_secondary_files_expr: Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpx33d442x --quiet tests/search.cwl#main tests/search-job.json
+Test [56/253] rename: Test InitialWorkDirRequirement with expression in filename.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpz7drx7fb --quiet tests/rename.cwl tests/rename-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1', 'echo_in2'.  All outputs will be empty.[0m
+Test [57/253] initial_workdir_trailingnl: Test if trailing newline is present in file entry in InitialWorkDir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpoln2dd_0 --quiet tests/iwdr-entry.cwl tests/string-job.json
+Test [58/253] inline_expressions: Test inline expressions
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmbvifkc9 --quiet tests/wc4-tool.cwl tests/wc-job.json
+Test [59/253] schemadef_req_tool_param: Test SchemaDefRequirement definition used in tool parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpteo_fx04 --quiet tests/schemadef-tool.cwl tests/schemadef-job.json
+Test [60/253] schemadef_req_wf_param: Test SchemaDefRequirement definition used in workflow parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpzd8l7e29 --quiet tests/schemadef-wf.cwl tests/schemadef-job.json
+Test [61/253] param_evaluation_noexpr: Test parameter evaluation, no support for JS expressions
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp5oge_a26 --quiet tests/params.cwl tests/empty.json
+Test [62/253] param_evaluation_expr: Test parameter evaluation, with support for JS expressions
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp_7ljgs3l --quiet tests/params2.cwl tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [63/253] metadata: Test metadata
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvwe0icwf --quiet tests/metadata.cwl tests/cat-job.json
+INFO:    Using cached SIF image
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [64/253] format_checking: Test simple format checking.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpk_5s2ho1 --quiet tests/formattest.cwl tests/formattest-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [65/253] format_checking_subclass: Test format checking against ontology using subclassOf.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpjuvyyxzb --quiet tests/formattest2.cwl tests/formattest2-job.json
+Test [66/253] format_checking_equivalentclass: Test format checking against ontology using equivalentClass.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpu4_v612_ --quiet tests/formattest3.cwl tests/formattest2-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-4091151715/root: exit status 1
+Test [67/253] output_secondaryfile_optional: Test optional output file and optional secondaryFile on output.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpevqr0lee --quiet tests/optional-output.cwl tests/cat-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3210863869/root: exit status 1
+Test [68/253] valuefrom_ignored_null: Test that valueFrom is ignored when the parameter is null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpg4v3m46g --quiet tests/vf-concat.cwl tests/empty.json
+CONFIGVAR=hello
+Test [69/253] valuefrom_secondexpr_ignored: Test that second expression in concatenated valueFrom is not ignored
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp_wj5pw33 --quiet tests/vf-concat.cwl tests/cat-job.json
+Test [70/253] valuefrom_wf_step: Test valueFrom on workflow step.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpo4h6fum2 --quiet tests/step-valuefrom-wf.cwl tests/step-valuefrom-wf.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/search.cwl:103:13: Source 'result' of type "File" may be incompatible
+tests/search.cwl:108:9:    with sink 'file' of type "File"[0m
+Test [71/253] valuefrom_wf_step_multiple: Test valueFrom on workflow step with multiple sources
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpbt_97n3o --quiet tests/step-valuefrom2-wf.cwl tests/step-valuefrom-job.json
+Test [72/253] valuefrom_wf_step_other: Test valueFrom on workflow step referencing other inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpfg3u7i9f --quiet tests/step-valuefrom3-wf.cwl tests/step-valuefrom-job.json
+Test [73/253] record_output_binding: Test record type output binding.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpw6og8ph2 --quiet tests/record-output.cwl tests/record-output-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3134970086/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-511428584/root: exit status 1
+Test [74/253] docker_json_output_path: Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8xsoltx2 --quiet tests/test-cwl-out.cwl tests/empty.json
+Test [75/253] docker_json_output_location: Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmx1hb6dr --quiet tests/test-cwl-out2.cwl tests/empty.json
+Test [76/253] multiple_glob_expr_list: Test support for returning multiple glob patterns from expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp369yzt2i --quiet tests/glob-expr-list.cwl tests/abc.json
+Test [77/253] wf_scatter_oneparam_valuefrom: Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8qrx633s --quiet tests/scatter-valuefrom-wf1.cwl tests/scatter-valuefrom-job1.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3553598650/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-735020347/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-4241952518/root: exit status 1
+Hello world!
+Test [78/253] wf_scatter_twoparam_nested_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpibeur3d4 --quiet tests/scatter-valuefrom-wf2.cwl tests/scatter-valuefrom-job2.json
+Test [79/253] wf_scatter_twoparam_flat_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpt40a8t51 --quiet tests/scatter-valuefrom-wf3.cwl#main tests/scatter-valuefrom-job2.json
+Test [80/253] wf_scatter_twoparam_dotproduct_valuefrom: Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpq9fgrcyu --quiet tests/scatter-valuefrom-wf4.cwl#main tests/scatter-valuefrom-job2.json
+Test [81/253] wf_scatter_oneparam_valuefrom_twice_current_el: Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpv31pveak --quiet tests/scatter-valuefrom-wf5.cwl tests/scatter-valuefrom-job1.json
+Test [82/253] wf_scatter_oneparam_valueFrom: Test valueFrom eval on scattered input parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0wdr0mjz --quiet tests/scatter-valuefrom-wf6.cwl tests/scatter-valuefrom-job3.json
+Test [83/253] wf_two_inputfiles_namecollision: Test workflow two input files with same name.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpo7eicqfz --quiet tests/conflict-wf.cwl#collision tests/conflict-job.json
+Test [84/253] directory_input_param_ref: Test directory input with parameter reference
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp9rof_5zb --quiet tests/dir.cwl tests/dir-job.yml
+Test [85/253] directory_input_docker: Test directory input in Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp64wxcu5z --quiet tests/dir2.cwl tests/dir-job.yml
+Test [86/253] directory_output: Test directory output
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpeprm17ei --quiet tests/dir3.cwl tests/dir3-job.yml
+Test [87/253] directory_secondaryfiles: Test directories in secondaryFiles
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvhas0k0j --quiet tests/dir4.cwl tests/dir4-job.yml
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-2401895356/root: exit status 1
+Test [88/253] dynamic_initial_workdir: Test dynamic initial work dir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpixsvroyn --quiet tests/dir5.cwl tests/dir-job.yml
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-2392382936/root: exit status 1
+Test [89/253] writable_stagedfiles: Test writable staged files.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpimw9v18e --quiet tests/stagefile.cwl tests/stagefile-job.yml
+Test [90/253] input_file_literal: Test file literal as input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvs6ejaym --quiet tests/cat3-tool.cwl tests/file-literal.yml
+Test [91/253] initial_workdir_expr: Test expression in InitialWorkDir listing
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmk0r9349 --quiet tests/linkfile.cwl tests/arguments-job.yml
+Test [92/253] nameroot_nameext_stdout_expr: Test nameroot/nameext expression in arguments, stdout
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvy0v8pwy --quiet tests/nameroot.cwl tests/wc-job.json
+Test [93/253] input_dir_inputbinding: Test directory input with inputBinding
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpx4hfc9_i --quiet tests/dir6.cwl tests/dir-job.yml
+Test [94/253] cl_gen_arrayofarrays: Test command line generation of array-of-arrays
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpu8polhio --quiet tests/nested-array.cwl tests/nested-array-job.yml
+Test [95/253] env_home_tmpdir: Test $HOME and $TMPDIR are set correctly
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvgj4d996 --quiet tests/envvar.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-2923638255/root: exit status 1
+Test [96/253] env_home_tmpdir_docker: Test $HOME and $TMPDIR are set correctly in Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2yittcc_ --quiet tests/envvar2.cwl tests/empty.json
+Test [97/253] expressionlib_tool_wf_override: Test that expressionLib requirement of individual tool step overrides expressionLib of workflow.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpm077s1mg --quiet tests/js-expr-req-wf.cwl#wf tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1549851941/root: exit status 1
+hello.txt
+goodbye.txt
+Test [98/253] initial_workdir_output: Test output of InitialWorkDir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2fdm7jf7 --quiet tests/initialworkdirrequirement-docker-out.cwl tests/initialworkdirrequirement-docker-out-job.json
+Test [99/253] embedded_subworkflow: Test embedded subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp7l51c_ti --quiet tests/count-lines10-wf.cwl tests/wc-job.json
+Test [100/253] filesarray_secondaryfiles: Test required, optional and null secondaryFiles on array of files.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2ldwkob1 --quiet tests/docker-array-secondaryfiles.cwl tests/docker-array-secondaryfiles-job.json
+Test [101/253] filesarray_secondaryfiles2: Test required, optional and null secondaryFiles on array of files.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpp8ukzg5l --quiet tests/docker-array-secondaryfiles.cwl tests/docker-array-secondaryfiles-job2.json
+Test [102/253] exprtool_directory_literal: Test directory literal output created by ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpr5q7eeqr --quiet tests/dir7.cwl tests/dir7.yml
+HOME=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/4gafjlv0 TMPDIR=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/edr9s3ga
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1989615345/root: exit status 1
+Test [103/253] exprtool_file_literal: Test file literal output created by ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpzfsk7jl5 --quiet tests/file-literal-ex.cwl tests/empty.json
+Test [104/253] dockeroutputdir: Test dockerOutputDirectory
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpga640z8h --quiet tests/docker-output-dir.cwl tests/empty.json
+Test [105/253] hints_import: Test hints with $import
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmphaalkpgm --quiet tests/imported-hint.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-2411236028/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-595351591/root: exit status 1
+Test [106/253] default_path_notfound_warning: Test warning instead of error when default path is not found
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmphs21w2wy --quiet tests/default_path.cwl tests/default_path_job.yml
+[1;30mWARNING[0m [33mtests/cat5-tool.cwl:10:3: Warning: checking item
+                          Warning:   Field 'class' contains undefined reference to
+                          'http://example.com/BlibberBlubberFakeRequirement'[0m
+Test [107/253] inlinejs_req_expressions: Test InlineJavascriptRequirement with multiple expressions in the same tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp69ndkewk --quiet tests/inline-js.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-414340676/root: exit status 1
+Test [108/253] input_dir_recurs_copy_writable: Test if a writable input directory is recursively copied and writable
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmprs3pwpzq --quiet tests/recursive-input-directory.cwl tests/recursive-input-directory.yml
+Test [109/253] null_missing_params: Test that missing parameters are null (not undefined) in expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmps_q5x3x4 --quiet tests/null-defined.cwl tests/empty.json
+Test [110/253] param_notnull_expr: Test that provided parameter is not null in expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3fdsgpkr --quiet tests/null-defined.cwl tests/cat-job.json
+HOME=/lemVln TMPDIR=/tmp
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3502150870/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-4165938553/root: exit status 1
+Test [111/253] wf_compound_doc: Test compound workflow document
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpobbivpka --quiet tests/revsort-packed.cwl#main tests/revsort-job.json
+Test [112/253] nameroot_nameext_generated: Test that nameroot and nameext are generated from basename at execution time by the runner
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpaibnuo81 --quiet tests/basename-fields-test.cwl tests/basename-fields-job.yml
+Test [113/253] initialworkpath_output: Test that file path in $(inputs) for initialworkdir is in $(outdir).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp18d0u9fq --quiet tests/initialwork-path.cwl tests/wc-job.json
+Test [114/253] wf_scatter_twopar_oneinput_flattenedmerge: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpcm9mummw --quiet tests/count-lines12-wf.cwl tests/count-lines6-job.json
+Hello world!
+Test [115/253] wf_multiplesources_multipletypes: Test step input with multiple sources with multiple types
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpxz6p2dvi --quiet tests/sum-wf.cwl tests/sum-job.json
+Test [116/253] shelldir_notinterpreted: Test that shell directives are not interpreted.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpux_j67ip --quiet tests/shellchar.cwl tests/empty.json
+Test [117/253] shelldir_quoted: Test that shell directives are quoted.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpzi9rogad --quiet tests/shellchar2.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1060262064/root: exit status 1
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Missing required secondary file '.dat' from file object: {
+    "class": "File",
+    "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/ref.fasta",
+    "size": 12010,
+    "basename": "ref.fasta",
+    "nameroot": "ref",
+    "nameext": ".fasta",
+    "secondaryFiles": [
+        {
+            "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/ref.fasta.fai",
+            "basename": "ref.fasta.fai",
+            "class": "File"
+        }
+    ]
+}[0m
+Test [118/253] initial_workdir_empty_writable: Test empty writable dir with InitialWorkDirRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpl1upfyvh --quiet tests/writable-dir.cwl tests/empty.json
+Test [119/253] initial_workdir_empty_writable_docker: Test empty writable dir with InitialWorkDirRequirement inside Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2ciodow1 --quiet tests/writable-dir-docker.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-2773827378/root: exit status 1
+Test [120/253] dynamic_resreq_inputs: Test dynamic resource reqs referencing inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4qp5w10c --quiet tests/dynresreq.cwl tests/dynresreq-job.yaml
+Test [121/253] fileliteral_input_docker: Test file literal as input without Docker
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpont8fikg --quiet tests/cat3-nodocker.cwl tests/file-literal.yml
+Test [122/253] outputbinding_glob_sorted: Test that OutputBinding.glob is sorted as specified by POSIX
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpr25netpw --quiet tests/glob_test.cwl tests/empty.json
+Test [123/253] initialworkdir_nesteddir: Test InitialWorkDirRequirement with a nested directory structure from another step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0u4wvlb4 --quiet tests/iwdr_with_nested_dirs.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-360983425/root: exit status 1
+Test [124/253] booleanflags_cl_noinputbinding: Test that boolean flags do not appear on command line if inputBinding is empty and not null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4fbkleeb --quiet tests/bool-empty-inputbinding.cwl tests/bool-empty-inputbinding-job.json
+Test [125/253] expr_reference_self_noinput: Test that expression engine does not fail to evaluate reference to self with unprovided input
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpj_3tz6yp --quiet tests/stage-unprovided-file.cwl tests/empty.json
+Test [126/253] success_codes: Test successCodes
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpg9fuqxxa --quiet tests/exit-success.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-753039544/root: exit status 1
+Test [127/253] dynamic_resreq_wf: Test simple workflow with a dynamic resource requirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpjhfx2bls --quiet tests/dynresreq-workflow.cwl tests/dynresreq-job.yaml
+Test [128/253] cl_empty_array_input: Test that empty array input does not add anything to command line
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpl97wo7a3 --quiet tests/empty-array-input.cwl tests/empty-array-job.json
+Test [129/253] resreq_step_overrides_wf: Test that ResourceRequirement on a step level redefines requirement on the workflow level
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpody48ip8 --quiet tests/steplevel-resreq.cwl tests/empty.json
+Test [130/253] valuefrom_constant_overrides_inputs: Test valueFrom with constant value overriding provided array inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8h3pqxq_ --quiet tests/valueFrom-constant.cwl tests/array-of-strings-job.yml
+Test [131/253] dynamic_resreq_filesizes: Test dynamic resource reqs referencing the size of Files inside a Directory
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpnqfpm6vr --quiet tests/dynresreq-dir.cwl tests/dynresreq-dir-job.yaml
+Test [132/253] wf_step_connect_undeclared_param: Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpijwacytr --quiet tests/pass-unconnected.cwl tests/empty.json
+Test [133/253] wf_step_access_undeclared_param: Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmppg1dexb3 --quiet tests/fail-unconnected.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1808325679/root: exit status 1
+Test [134/253] env_home_tmpdir_docker: Test $HOME and $TMPDIR are set correctly in Docker without using return code
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp06oa6glf --quiet tests/envvar3.cwl tests/empty.json
+Test [135/253] wf_scatter_oneparam_valuefrom_inputs: Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpib0jp7z2 --quiet tests/scatter-valuefrom-inputs-wf1.cwl tests/scatter-valuefrom-job1.json
+Test [136/253] packed_import_schema: SchemaDefRequirement with $import, and packed
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvn_536j8 --quiet tests/import_schema-def_packed.cwl tests/import_schema-def_job.yml
+Test [137/253] job_input_secondary_subdirs: Test specifying secondaryFiles in subdirectories of the job input document.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpp474cav2 --quiet tests/dir4.cwl tests/dir4-subdir-1-job.yml
+Test [138/253] job_input_subdir_primary_and_secondary_subdirs: Test specifying secondaryFiles in same subdirectory of the job input as the primary input file.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpqylpx2g4 --quiet tests/dir4.cwl tests/dir4-subdir-2-job.yml
+Test [139/253] scatter_embedded_subworkflow: Test simple scatter over an embedded subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp2myx7s9v --quiet tests/count-lines18-wf.cwl tests/count-lines3-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-1326928860/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-1083857587/root: exit status 1
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/pass-unconnected.cwl:18:7: 'in2' is not an input parameter of
+                                 file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/echo-tool.cwl,
+                                 expected in[0m
+Test [140/253] scatter_multi_input_embedded_subworkflow: Test simple multiple input scatter over an embedded subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1azijh1q --quiet tests/count-lines14-wf.cwl tests/count-lines4-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/fail-unconnected.cwl:18:7: 'in2' is not an input parameter of
+                                 file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/fail-unspecified-input.cwl,
+                                 expected in[0m
+Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+Traceback (most recent call last):
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/expression.py", line 322, in do_eval
+    return interpolate(
+        ex,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/expression.py", line 227, in interpolate
+    e = evaluator(
+        js_engine, scan[w[0] + 1 : w[1]], rootvars, jslib, fullJS, **kwargs
+    )
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/expression.py", line 176, in evaluator
+    raise JavascriptException(
+    ...<3 lines>...
+    )
+cwl_utils.errors.JavascriptException: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: tests/fail-unspecified-input.cwl:13:33: Expression evaluation error:
+tests/fail-unspecified-input.cwl:13:33: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [141/253] workflow_embedded_subworkflow_embedded_subsubworkflow: Test twice nested subworkflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpxs401ogs --quiet tests/count-lines15-wf.cwl tests/wc-job.json
+Test [142/253] workflow_embedded_subworkflow_with_tool_and_subsubworkflow: Test subworkflow of mixed depth with tool first
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1ywzger7 --quiet tests/count-lines16-wf.cwl tests/wc-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-3019334482/root: exit status 1
+Test [143/253] workflow_embedded_subworkflow_with_subsubworkflow_and_tool: Test subworkflow of mixed depth with tool after
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp7_drbdm_ --quiet tests/count-lines17-wf.cwl tests/wc-job.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2-slim.sif" with FUSE at /tmp/rootfs-1587041404/root: exit status 1
+Test [144/253] workflow_records_inputs_and_outputs: Test record type inputs to and outputs from workflows.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpee676czj --quiet tests/record-output-wf.cwl tests/record-output-job.json
+Test [145/253] workflow_integer_input: Test integer workflow input and outputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpc_42ul2l --quiet tests/io-int-wf.cwl tests/io-int.json
+Test [146/253] workflow_integer_input_optional_specified: Test optional integer workflow inputs (specified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmppnftj1_5 --quiet tests/io-int-optional-wf.cwl tests/io-int.json
+Test [147/253] workflow_integer_input_optional_unspecified: Test optional integer workflow inputs (unspecified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpnc85qzx7 --quiet tests/io-int-optional-wf.cwl tests/empty.json
+INFO:    Using cached SIF image
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1640253420/root: exit status 1
+Test [148/253] workflow_integer_input_default_specified: Test default integer workflow inputs (specified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpa6f6fqxe --quiet tests/io-int-default-wf.cwl tests/io-int.json
+Test [149/253] workflow_integer_input_default_unspecified: Test default integer workflow inputs (unspecified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmps8b75xpi --quiet tests/io-int-default-wf.cwl tests/empty.json
+Test [150/253] workflow_integer_input_default_and_tool_integer_input_default: Test default integer tool and workflow inputs (unspecified)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1d209yez --quiet tests/io-int-default-tool-and-wf.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/alpine_latest.sif" with FUSE at /tmp/rootfs-514636140/root: exit status 1
+Test [151/253] workflow_file_input_default_unspecified: Test File input with default unspecified to workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpc5__ae0_ --quiet tests/io-file-default-wf.cwl tests/empty.json
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3658205343/root: exit status 1
+Test [152/253] workflow_file_input_default_specified: Test File input with default specified to workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmplmluegc2 --quiet tests/io-file-default-wf.cwl tests/default_path_job.yml
+Test [153/253] clt_optional_union_input_file_or_files_with_array_of_one_file_provided: Test input union type or File or File array to a tool with one file in array specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8p11cnyo --quiet tests/io-file-or-files.cwl tests/job-input-array-one-empty-file.json
+Test [154/253] clt_optional_union_input_file_or_files_with_many_files_provided: Test input union type or File or File array to a tool with a few files in array specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4hadt_nt --quiet tests/io-file-or-files.cwl tests/job-input-array-few-files.json
+Test [155/253] clt_optional_union_input_file_or_files_with_single_file_provided: Test input union type or File or File array to a tool with one file specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpt7mabrjw --quiet tests/io-file-or-files.cwl tests/job-input-one-file.json
+Test [156/253] clt_optional_union_input_file_or_files_with_nothing_provided: Test input union type or File or File array to a tool with null specified.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpvme1wo47 --quiet tests/io-file-or-files.cwl tests/job-input-null.json
+Test [157/253] clt_any_input_with_integer_provided: Test Any parameter with integer input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1yhqn9ou --quiet tests/io-any-1.cwl tests/io-any-int.json
+Test [158/253] clt_any_input_with_string_provided: Test Any parameter with string input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp5axjx8qg --quiet tests/io-any-1.cwl tests/io-any-string.json
+Test [159/253] clt_any_input_with_file_provided: Test Any parameter with file input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpdqgrtzs7 --quiet tests/io-any-1.cwl tests/io-any-file.json
+Test [160/253] clt_any_input_with_mixed_array_provided: Test Any parameter with array input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8gzksw2r --quiet tests/io-any-1.cwl tests/io-any-array.json
+Test [161/253] clt_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp5q3zditu --quiet tests/io-any-1.cwl tests/io-any-record.json
+Test [162/253] workflow_any_input_with_integer_provided: Test Any parameter with integer input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp03q8x0km --quiet tests/io-any-wf-1.cwl tests/io-any-int.json
+Test [163/253] workflow_any_input_with_string_provided: Test Any parameter with string input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpszhhaflz --quiet tests/io-any-wf-1.cwl tests/io-any-string.json
+Test [164/253] workflow_any_input_with_file_provided: Test Any parameter with file input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpbdsewxiz --quiet tests/io-any-wf-1.cwl tests/io-any-file.json
+Test [165/253] workflow_any_input_with_mixed_array_provided: Test Any parameter with array input to a workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmprbowxsiy --quiet tests/io-any-wf-1.cwl tests/io-any-array.json
+Test [166/253] workflow_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpfvn7gli4 --quiet tests/io-any-wf-1.cwl tests/io-any-record.json
+Test [167/253] workflow_union_default_input_unspecified: Test union type input to workflow with default unspecified
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1c3n51b3 --quiet tests/io-union-input-default-wf.cwl tests/empty.json
+Test [168/253] workflow_union_default_input_with_file_provided: Test union type input to workflow with default specified as file
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp98n_di4n --quiet tests/io-union-input-default-wf.cwl tests/io-any-file.json
+Test [169/253] workflowstep_valuefrom_string: Test valueFrom on workflow step from literal (string).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpwx75kxey --quiet tests/step-valuefrom4-wf.cwl tests/empty.json
+Test [170/253] workflowstep_valuefrom_file_basename: Test valueFrom on workflow step using basename.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0equgit4 --quiet tests/step-valuefrom5-wf.cwl tests/wc-job.json
+Test [171/253] expression_tool_int_array_output: Test output arrays in a tool (with ints).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8ioz_n5y --quiet tests/output-arrays-int.cwl tests/output-arrays-int-job.json
+Test [172/253] workflowstep_int_array_input_output: Test output arrays in a workflow (with ints).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3ugezzw9 --quiet tests/output-arrays-int-wf.cwl tests/output-arrays-int-job.json
+Test [173/253] workflow_file_array_output: Test output arrays in a workflow (with Files).
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpw0qvcayt --quiet tests/output-arrays-file-wf.cwl tests/output-arrays-file-job.json
+Test [174/253] docker_entrypoint: Test Docker ENTRYPOINT usage
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp7efi58zw --quiet tests/docker-run-cmd.cwl tests/empty.json
+Test [175/253] clt_file_size_property_with_empty_file: Test use of size in expressions for an empty file
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp_nw5mpnc --quiet tests/size-expression-tool.cwl tests/job-input-array-one-empty-file.json
+Test [176/253] clt_file_size_property_with_multi_file: Test use of size in expressions for a few files
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp7mnt9v35 --quiet tests/size-expression-tool.cwl tests/job-input-array-few-files.json
+Test [177/253] any_without_defaults_unspecified_fails: Test Any without defaults, unspecified, should fail.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp_lfz_d4h --quiet tests/echo-tool.cwl tests/null-expression-echo-job.json
+Test [178/253] any_without_defaults_specified_fails: Test Any without defaults, specified, should fail.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpgnh_pv7p --quiet tests/echo-tool.cwl tests/null-expression1-job.json
+Test [179/253] step_input_default_value_noexp: Test default value on step input parameter, no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpims1af8q --quiet tests/count-lines9-wf-noET.cwl tests/empty.json
+Test [180/253] step_input_default_value_overriden_noexp: Test default value on step input parameter overridden by provided source, no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpm8ch8g8f --quiet tests/count-lines11-wf-noET.cwl tests/cat-job.json
+Test [181/253] nested_workflow_noexp: Test nested workflow, without ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpp17vogtk --quiet tests/count-lines8-wf-noET.cwl tests/wc-job.json
+Test [182/253] wf_multiplesources_multipletypes_noexp: Test step input with multiple sources with multiple types, without ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpax6i_x_s --quiet tests/sum-wf-noET.cwl tests/sum-job.json
+Test [183/253] dynamic_resreq_wf_optional_file_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpqomlo4n5 --quiet tests/dynresreq-workflow-tooldefault.cwl tests/empty.json
+Test [184/253] dynamic_resreq_wf_optional_file_step_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpb_w8r5ft --quiet tests/dynresreq-workflow-stepdefault.cwl tests/empty.json
+Test [185/253] dynamic_resreq_wf_optional_file_wf_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itelf provides a default value (a local file) for this input.
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpbtvnbtqw --quiet tests/dynresreq-workflow-inputdefault.cwl tests/empty.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/echo-tool.cwl:6:3: Missing required input parameter 'in'[0m
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/echo-tool.cwl:6:3: Missing required input parameter 'in'[0m
+Test [186/253] step_input_default_value_overriden_2nd_step: Test default value on step input parameter overridden by provided source. With passthrough first step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmptktvx5d_ --quiet tests/count-lines11-extra-step-wf.cwl tests/cat-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf-noET.cwl:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf-noET.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [187/253] step_input_default_value_overriden_2nd_step_noexp: Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp16cg8jls --quiet tests/count-lines11-extra-step-wf-noET.cwl tests/cat-job.json
+Test [188/253] step_input_default_value_overriden_2nd_step_null: Test default value on step input parameter overridden by provided source. With null producing first step
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1gpo1jsb --quiet tests/count-lines11-null-step-wf.cwl tests/empty.json
+Test [189/253] step_input_default_value_overriden_2nd_step_null_noexp: Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpncefy1fi --quiet tests/count-lines11-null-step-wf-noET.cwl tests/empty.json
+Test [190/253] stdin_from_directory_literal_with_local_file: Pipe to stdin from user provided local File via a Directory literal
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpaa6pjxu5 --quiet tests/cat-from-dir.cwl tests/cat-from-dir-job.yaml
+Test [191/253] stdin_from_directory_literal_with_literal_file: Pipe to stdin from literal File via a Directory literal
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8sayzk3k --quiet tests/cat-from-dir.cwl tests/cat-from-dir-with-literal-file.yaml
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/dynresreq-workflow-tooldefault.cwl:6:3:  Source 'special_file' of type ["null", "File"] may
+                                               be incompatible
+tests/dynresreq-workflow-tooldefault.cwl:15:7:   with sink 'special_file' of type "File"[0m
+Test [192/253] directory_literal_with_literal_file_nostdin: Test non-stdin reference to literal File via a Directory literal
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3z0dc7b7 --quiet tests/cat3-from-dir.cwl tests/cat-from-dir-with-literal-file.yaml
+Test [193/253] no_inputs_commandlinetool: Test CommandLineTool without inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpljwfb0ex --quiet tests/no-inputs-tool.cwl
+Test [194/253] no_outputs_commandlinetool: Test CommandLineTool without outputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpo7kujxbx --quiet tests/no-outputs-tool.cwl tests/cat-job.json
+Test [195/253] no_inputs_workflow: Test Workflow without inputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmyvix836 --quiet tests/no-inputs-wf.cwl
+Test [196/253] no_outputs_workflow: Test Workflow without outputs
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpi14hl0tf --quiet tests/no-outputs-wf.cwl tests/cat-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/dynresreq-workflow-stepdefault.cwl:6:3:  Source 'special_file' of type ["null", "File"] may
+                                               be incompatible
+tests/dynresreq-workflow-stepdefault.cwl:15:7:   with sink 'special_file' of type "File"[0m
+Test [197/253] anonymous_enum_in_array: Test an anonymous enum inside an array inside a record
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp9d5vctft --quiet tests/anon_enum_inside_array.cwl tests/anon_enum_inside_array.yml
+Test [198/253] schema-def_anonymous_enum_in_array: Test an anonymous enum inside an array inside a record, SchemaDefRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmplmqa5i1v --quiet tests/anon_enum_inside_array_inside_schemadef.cwl tests/anon_enum_inside_array_inside_schemadef.yml
+Test [199/253] stdin_shorcut: Test command execution in with stdin and stdout redirection using stdin shortcut
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpa01g0wzq --quiet tests/wc-tool-shortcut.cwl tests/wc-job.json
+Test [200/253] secondary_files_in_unnamed_records: Test secondaryFiles on anonymous record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpcgod7swa --quiet tests/record-in-secondaryFiles.cwl tests/record-secondaryFiles-job.yml
+INFO:    Using cached SIF image
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/bash:4.4.12.sif" with FUSE at /tmp/rootfs-281984547/root: exit status 1
+Test [201/253] secondary_files_in_named_records: Test secondaryFiles on SchemaDefRequirement record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpp25t6iet --quiet tests/record-sd-secondaryFiles.cwl tests/record-secondaryFiles-job.yml
+Test [202/253] secondary_files_in_output_records: Test secondaryFiles on output record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp5hmy3eu1 --quiet tests/record-out-secondaryFiles.cwl tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-extra-step-wf-noET.cwl:6:3:  Source 'file1' of type ["null", "File"] may be
+                                                 incompatible
+tests/count-lines11-extra-step-wf-noET.cwl:17:7:   with sink 'file1' of type "File"[0m
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-extra-step-wf.cwl:6:3:  Source 'file1' of type ["null", "File"] may be
+                                            incompatible
+tests/count-lines11-extra-step-wf.cwl:17:7:   with sink 'file1' of type "File"[0m
+Test [203/253] secondary_files_workflow_propagation: Test secondaryFiles propagation through workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1_h5boku --quiet tests/record-in-secondaryFiles-wf.cwl tests/record-secondaryFiles-job.yml
+Test [204/253] secondary_files_missing: Test checking when secondaryFiles are missing
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmplz1iiiin --quiet tests/record-in-secondaryFiles-missing-wf.cwl tests/record-secondaryFiles-job.yml
+Test [205/253] input_records_file_entry_with_format: Test format on anonymous record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpghustu0u --quiet tests/record-in-format.cwl tests/record-format-job.yml
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-257110171/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-2939944471/root: exit status 1
+Test [206/253] input_records_file_entry_with_format_and_bad_regular_input_file_format: Test file format checking on parameter
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp42gfkeac --quiet tests/record-in-format.cwl tests/record-format-job2.yml
+Test [207/253] input_records_file_entry_with_format_and_bad_entry_file_format: Test file format checking on record field
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpidjs3kmu --quiet tests/record-in-format.cwl tests/record-format-job3.yml
+Test [208/253] input_records_file_entry_with_format_and_bad_entry_array_file_format: Test file format checking on array item
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp5ac2xvy6 --quiet tests/record-in-format.cwl tests/record-format-job4.yml
+Test [209/253] record_output_file_entry_format: Test format on output record fields
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpf7933q_3 --quiet tests/record-out-format.cwl tests/record-secondaryFiles-job.yml
+Test [210/253] workflow_input_inputBinding_loadContents: Test WorkflowInputParameter.inputBinding.loadContents
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8jj26cpr --quiet tests/wf-loadContents.cwl tests/wf-loadContents-job.yml
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-1571746334/root: exit status 1
+Test [211/253] workflow_input_loadContents_without_inputBinding: Test WorkflowInputParameter.loadContents
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp8rvy6xba --quiet tests/wf-loadContents2.cwl tests/wf-loadContents-job.yml
+/var/lib/cwl/stgaabec8f5-a292-44a0-8bce-0d9bd87f1d8c/hello.txt
+Test [212/253] expression_tool_input_loadContents: Test loadContents on InputParameter.loadContents (expression)
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpigpnugg_ --quiet tests/wf-loadContents3.cwl tests/wf-loadContents-job.yml
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-57259667/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-3438647803/root: exit status 1
+Test [213/253] workflow_step_in_loadContents: Test WorkflowStepInput.loadContents
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpnqx8v0vf --quiet tests/wf-loadContents4.cwl tests/wf-loadContents-job.yml
+Test [214/253] timelimit_basic: Test that job fails when exceeding time limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp6iobfbch --quiet tests/timelimit.cwl tests/empty.json
+/var/lib/cwl/stgd1d24fc4-7a9d-44b6-9a9e-b776e163b1c8/hello.txt
+Test [215/253] timelimit_invalid: Test invalid time limit value
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0t_jga6k --quiet tests/timelimit2.cwl tests/empty.json
+Test [216/253] timelimit_zero_unlimited: Test zero timelimit means no limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpk4s3p7k5 --quiet tests/timelimit3.cwl tests/empty.json
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: tests/record-in-secondaryFiles.cwl:10:11: Missing required secondary file 'A.s2' from file object: {
+tests/record-in-secondaryFiles.cwl:10:11:     "class": "File",
+tests/record-in-secondaryFiles.cwl:10:11:     "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/rec/A",
+tests/record-in-secondaryFiles.cwl:10:11:     "size": 0,
+tests/record-in-secondaryFiles.cwl:10:11:     "basename": "A",
+tests/record-in-secondaryFiles.cwl:10:11:     "nameroot": "A",
+tests/record-in-secondaryFiles.cwl:10:11:     "nameext": "",
+tests/record-in-secondaryFiles.cwl:10:11:     "secondaryFiles": []
+tests/record-in-secondaryFiles.cwl:10:11: }[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [217/253] timelimit_from_expression: Test expression in time limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp9io63_xw --quiet tests/timelimit4.cwl tests/empty.json
+Test 199 failed: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpa01g0wzq --quiet tests/wc-tool-shortcut.cwl tests/wc-job.json
+Test command execution in with stdin and stdout redirection using stdin shortcut
+Compare failure expected: {
+    "output": {
+        "checksum": "sha1$2936abd60952276ffbf91d709b19c6c48c263947",
+        "class": "File",
+        "location": "output",
+        "size": 24
+    }
+}
+got: {
+    "output": {
+        "basename": "output",
+        "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+        "class": "File",
+        "location": "file:///tmp/tmpa01g0wzq/output",
+        "path": "/tmp/tmpa01g0wzq/output",
+        "size": 15
+    }
+}
+caused by: failed comparison for key 'output': expected: {
+    "checksum": "sha1$2936abd60952276ffbf91d709b19c6c48c263947",
+    "class": "File",
+    "location": "output",
+    "size": 24
+}
+got: {
+    "basename": "output",
+    "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+    "class": "File",
+    "location": "file:///tmp/tmpa01g0wzq/output",
+    "path": "/tmp/tmpa01g0wzq/output",
+    "size": 15
+}
+caused by: Output file checksums do not match: actual 'sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae' is not equal to expected 'sha1$2936abd60952276ffbf91d709b19c6c48c263947'
+Test [218/253] timelimit_expressiontool: Test timelimit in expressiontool is ignored
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp6z_jgo4a --quiet tests/timelimit5.cwl tests/empty.json
+Test [219/253] timelimit_basic_wf: Test that tool in workflow fails when exceeding time limit
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmps66r30ov --quiet tests/timelimit-wf.cwl tests/empty.json
+Test [220/253] timelimit_invalid_wf: Test that workflow level time limit is not applied to workflow execution time
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpbjzddj07 --quiet tests/timelimit2-wf.cwl tests/empty.json
+Test [221/253] timelimit_zero_unlimited_wf: Test zero timelimit means no limit in workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmph4v8xdbm --quiet tests/timelimit3-wf.cwl tests/empty.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Expected value of 'f1' to have format 'http://example.com/format1' but
+ File has an incompatible format: {
+    "class": "File",
+    "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/rec/A",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "A",
+    "nameroot": "A",
+    "nameext": ""
+}[0m
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Expected value of 'regular_input' to have format 'http://example.com/format1' but
+ File has an incompatible format: {
+    "class": "File",
+    "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/rec/D",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "D",
+    "nameroot": "D",
+    "nameext": ""
+}[0m
+Test [222/253] timelimit_from_expression_wf: Test expression in time limit in workflow
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpxt3tsqe5 --quiet tests/timelimit4-wf.cwl tests/empty.json
+[1;30mERROR[0m [31mGot workflow error[0m
+Traceback (most recent call last):
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 541, in bind_input
+    check_format(
+    ~~~~~~~~~~~~^
+        fdatum,
+        ^^^^^^^
+        evaluated_format,
+        ^^^^^^^^^^^^^^^^^
+        self.formatgraph,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwl_utils/file_formats.py", line 68, in check_format
+    raise ValidationException(
+        f"File has an incompatible format: {json_dumps(afile, indent=4)}"
+    )
+schema_salad.exceptions.ValidationException: File has an incompatible format: {
+    "class": "File",
+    "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/rec/C",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "C",
+    "nameroot": "C",
+    "nameext": ""
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/executors.py", line 215, in run_jobs
+    for job in jobiter:
+               ^^^^^^^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/command_line_tool.py", line 979, in job
+    builder = self._init_job(job_order, runtimeContext)
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/process.py", line 924, in _init_job
+    builder.bind_input(
+    ~~~~~~~~~~~~~~~~~~^
+        self.inputs_record_schema,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        job,
+        ^^^^
+        discover_secondaryFiles=getdefault(runtime_context.toplevel, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 323, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        f,
+        ^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 290, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        st,
+        ^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 323, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        f,
+        ^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 290, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        st,
+        ^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 348, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        itemschema,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/venv-cwltool/lib/python3.13/site-packages/cwltool/builder.py", line 548, in bind_input
+    f"Expected value of {schema['name']!r} to have "
+                         ~~~~~~^^^^^^^^
+KeyError: 'name'
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+'name'[0m
+Test [223/253] networkaccess: Test networkaccess enabled
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmptbvaig16 --quiet tests/networkaccess.cwl tests/empty.json
+Test [224/253] networkaccess_disabled: Test networkaccess is disabled by default
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpk_yl_og9 --quiet tests/networkaccess2.cwl tests/empty.json
+Test [225/253] Test null and array input in InitialWorkDirRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4hlcz_7q --quiet tests/stage-array.cwl tests/stage-array-job.json
+Test [226/253] Test array of directories InitialWorkDirRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpu3d8heq4 --quiet tests/stage-array-dirs.cwl tests/stage-array-dirs-job.yml
+Test [227/253] cwl_requirements_addition: Test requirements in input document via EnvVarRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpfyf0xn73 --quiet tests/env-tool3.cwl tests/env-job3.yaml
+[1;30mERROR[0m [31mTool definition failed validation:
+tests/timelimit-wf.cwl:2:1:     Object 'tests/timelimit-wf.cwl' is not valid because
+                                tried 'Workflow' but
+tests/timelimit-wf.cwl:18:1:       the 'steps' field is not valid because
+                                    tried array of <WorkflowStep> but
+tests/timelimit-wf.cwl:19:3:           item is invalid because
+tests/timelimit-wf.cwl:23:5:             the 'run' field is not valid because
+tests/timelimit-wf.cwl:29:7:               the 'outputs' field is not valid because
+tests/timelimit-wf.cwl:30:9:                 item is invalid because
+tests/timelimit-wf.cwl:32:11:                 the 'outputBinding' field is not valid because
+                                                tried CommandOutputBinding but
+tests/timelimit-wf.cwl:33:13:                     the 'outputEval' field is not valid because
+                                                    tried Expression but
+                                                      value 'time passed' does not contain an
+                                                      expression in the form $() or ${}[0m
+Test [228/253] cwl_requirements_override_expression: Test conflicting requirements in input document via EnvVarRequirement and expression
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpt42ozgjq --quiet tests/env-tool4.cwl tests/env-job3.yaml
+[1;30mERROR[0m [31mInput object failed validation:
+tests/timelimit2.cwl:7:5: timelimit must be an integer >= 0, got: -1[0m
+[1;30mERROR[0m [31mTool definition failed validation:
+tests/timelimit4-wf.cwl:2:1:     Object 'tests/timelimit4-wf.cwl' is not valid because
+                                 tried 'Workflow' but
+tests/timelimit4-wf.cwl:21:1:       the 'steps' field is not valid because
+                                     tried array of <WorkflowStep> but
+tests/timelimit4-wf.cwl:22:3:           item is invalid because
+tests/timelimit4-wf.cwl:26:5:             the 'run' field is not valid because
+tests/timelimit4-wf.cwl:32:7:               the 'outputs' field is not valid because
+tests/timelimit4-wf.cwl:33:9:                 item is invalid because
+tests/timelimit4-wf.cwl:35:11:                 the 'outputBinding' field is not valid because
+                                                 tried CommandOutputBinding but
+tests/timelimit4-wf.cwl:36:13:                     the 'outputEval' field is not valid because
+                                                     tried Expression but
+                                                       value 'time passed' does not contain an
+                                                       expression in the form $() or ${}[0m
+Test [229/253] cwl_requirements_override_static: Test conflicting requirements in input document via EnvVarRequirement
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpslyzm4hd --quiet tests/env-tool3.cwl tests/env-job4.yaml
+Test [230/253] Test output of InitialWorkDir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4qabczx1 --quiet tests/initialworkdir-glob-fullpath.cwl tests/initialworkdirrequirement-docker-out-job.json
+Test [231/253] Test if full paths are allowed in glob
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp4net0x83 --quiet tests/initialworkdir-glob-fullpath.cwl tests/initialworkdirrequirement-docker-out-job.json
+Test [232/253] Test fail trying to glob outside output directory
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpr21wvusb --quiet tests/glob-path-error.cwl tests/empty.json
+Test [233/253] symlink to file outside of working directory should NOT be retrieved
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpdloqk55h --quiet tests/symlink-illegal.cwl tests/empty.json
+[1;30mWARNING[0m [33m[job timelimit.cwl] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job timelimit.cwl] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job timelimit.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [234/253] symlink to file inside of working directory should be retrieved
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpbrnrafvw --quiet tests/symlink-legal.cwl tests/empty.json
+INFO:    Using cached SIF image
+rec
+testdir
+Test [235/253] inplace update has side effect on file content
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp7555bqux --quiet tests/inp_update_wf.cwl tests/empty.json
+Test [236/253] inplace update has side effect on directory content
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpfmue90xc --quiet tests/inpdir_update_wf.cwl tests/empty.json
+Test [237/253] outputbinding_glob_directory: Test that OutputBinding.glob accepts Directories
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpqa5vl9k2 --quiet tests/glob_directory.cwl tests/empty.json
+Test [238/253] stage_file_array: Test that array of input files can be staged to directory with entryname
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmsy7i2ww --quiet tests/stage_file_array.cwl tests/stage_file_array.job.json
+Test [239/253] stage_file_array: Test that array of input files can be staged to directory with basename
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpu_zh60pe --quiet tests/stage_file_array_basename.cwl tests/stage_file_array.job.json
+Test [240/253] stage_file_array: Test that if array of input files are staged to directory with basename and entryname, entryname overrides
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpqbr3yf1z --quiet tests/stage_file_array_basename_and_entryname.cwl tests/stage_file_array.job.json
+[1;30mWARNING[0m [33m[job timelimit4.cwl] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job timelimit4.cwl] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job timelimit4.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [241/253] tmpdir_is_not_outdir: Test that runtime.tmpdir is not runtime.outdir
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmphzdsc8ub --quiet tests/runtime-paths-distinct.cwl tests/empty.json
+INFO:    Using cached SIF image
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:3.sif" with FUSE at /tmp/rootfs-4265995131/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif" with FUSE at /tmp/rootfs-45888812/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/alpine_latest.sif" with FUSE at /tmp/rootfs-2964312614/root: exit status 1
+
+Test [242/253] listing_default_none: Test that default behavior is 'no_listing' if not specified
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp1nxlfceg --quiet tests/listing_none1.cwl tests/listing-job.yml
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:3.sif" with FUSE at /tmp/rootfs-1736258568/root: exit status 1
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/alpine_latest.sif" with FUSE at /tmp/rootfs-1371460325/root: exit status 1
+[1;30mERROR[0m [31m[job glob-path-error.cwl] Job error:
+Error collecting output for parameter 'OUTPUT': tests/glob-path-error.cwl:17:7: glob patterns must not start with '/'[0m
+[1;30mWARNING[0m [33m[job glob-path-error.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+[1;30mERROR[0m [31m[job symlink-illegal.cwl] Job error:
+Error validating output record. Does not exist or is not a Directory: 'file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/rxhzgn5p/symlink.txt'
+ in {
+    "output_file": {
+        "location": "file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/rxhzgn5p/symlink.txt",
+        "basename": "symlink.txt",
+        "nameroot": "symlink",
+        "nameext": ".txt",
+        "class": "Directory"
+    }
+}[0m
+[1;30mWARNING[0m [33m[job symlink-illegal.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [243/253] listing_requirement_none: Test that 'listing' is not present when LoadListingRequirement is 'no_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp0pu1s404 --quiet tests/listing_none2.cwl tests/listing-job.yml
+Test [244/253] listing_loadListing_none: Test that 'listing' is not present when loadListing on input parameter is 'no_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3ztqj7v2 --quiet tests/listing_none3.cwl tests/listing-job.yml
+Test [245/253] listing_requirement_shallow: Test that 'listing' is present in top directory object but not subdirectory object when LoadListingRequirement is 'shallow_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmph60mttmb --quiet tests/listing_shallow1.cwl tests/listing-job.yml
+Test [246/253] listing_loadListing_shallow: Test that 'listing' is present in top directory object but not subdirectory object when loadListing on input parameter loadListing is 'shallow_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpifcb6em5 --quiet tests/listing_shallow2.cwl tests/listing-job.yml
+Test [247/253] listing_requirement_deep: Test that 'listing' is present in top directory object and in subdirectory objects when LoadListingRequirement is 'deep_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3zys457k --quiet tests/listing_deep1.cwl tests/listing-job.yml
+Test [248/253] listing_loadListing_deep: Test that 'listing' is present in top directory object and in subdirectory objects when input parameter loadListing is 'deep_listing'
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpqcudm_5h --quiet tests/listing_deep2.cwl tests/listing-job.yml
+input_dir
+input_dir
+input_dir
+Test [249/253] inputBinding_position_expr: Test for expression in the InputBinding.position field; also test using emoji in CWL document and tool output
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpmhuuh4hj --quiet tests/echo-position-expr.cwl tests/echo-position-expr-job.yml
+Test [250/253] outputEval_exitCode: Can access exit code in outputEval
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpx4e3w85z --quiet tests/exitcode.cwl tests/empty.json
+Test [251/253] any_input_param_graph_no_default: Test use of $graph without specifying which process to run
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp3eok23i7 --quiet tests/echo-tool-packed.cwl tests/env-job.json
+Test [252/253] any_input_param_graph_no_default_hashmain: Test use of $graph without specifying which process to run, hash-prefixed "main"
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmpimgj_sf0 --quiet tests/echo-tool-packed2.cwl tests/env-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/inp_update_wf.cwl:26:7: 'wait' is not an input parameter of
+                              file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/tests/parseInt-tool.cwl,
+                              expected file1[0m
+Test [253/253] optional_numerical_output_returns_0_not_null: Test that optional number output is returned as 0, not null
+
+Running: cwltool --singularity --enable-dev --tmpdir-prefix=/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/tmp/ --outdir=/tmp/tmp72030uo8 --quiet tests/optional-numerical-output-0.cwl tests/empty.json
+INFO:    Using cached SIF image
+fusermount3: mount failed: Operation not permitted
+WARNING: squashfuse mount failed, falling back to extraction: encountered error while trying to mount image "/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/specs/v1.1/python:2.7.15-alpine3.7.sif" with FUSE at /tmp/rootfs-2160485913/root: exit status 1
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.14/http/client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/socket.py", line 850, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/socket.py", line 987, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    assert(urllib.request.urlopen("http://commonwl.org").code == 200)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/local/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.14/urllib/request.py", line 1350, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+[1;30mWARNING[0m [33m[job networkaccess2.cwl] exited with status: 1[0m
+[1;30mWARNING[0m [33m[job networkaccess2.cwl] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+252 tests passed, 1 failures, 0 unsupported features
