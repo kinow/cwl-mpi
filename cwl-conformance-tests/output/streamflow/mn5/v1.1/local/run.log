@@ -1,0 +1,171 @@
+--2026-05-28 01:33:54--  https://github.com/common-workflow-language/cwl-v1.1/archive/4feec74019b56dc5c51be905a208ff90797661de.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/common-workflow-language/cwl-v1.1/tar.gz/4feec74019b56dc5c51be905a208ff90797661de [following]
+--2026-05-28 01:33:55--  https://codeload.github.com/common-workflow-language/cwl-v1.1/tar.gz/4feec74019b56dc5c51be905a208ff90797661de
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: '4feec74019b56dc5c51be905a208ff90797661de.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  599K
+    50K .......... .......... .......... .......... .......... 1.18M
+   100K .......... .......... .......... .......... .......... 48.0M
+   150K .......... .......... .......... .......... .......... 1.21M
+   200K .......... .......... .......... .......... .......... 42.8M
+   250K .......... .......... .......... .......... ..........  135M
+   300K .......... .......... .......... .......... ..........  136M
+   350K .......... .......... .......... .......... .......... 1.23M
+   400K .......... .......... .......... .......... ..........  137M
+   450K .......... .......... .......... .......... .......... 65.6M
+   500K .......... .......... .......... .......... ..........  120M
+   550K .......... .......... .......... .......... ..........  148M
+   600K .......... .......... .......... .......... ..........  144M
+   650K ...                                                     122M=0.2s
+
+2026-05-28 01:33:55 (3.04 MB/s) - '4feec74019b56dc5c51be905a208ff90797661de.tar.gz' saved [669111]
+
+Using Python 3.14.4 environment at: cwl-conformance-venv
+Resolved 4 packages in 91ms
+Checked 4 packages in 0.21ms
+Using Python 3.14.4 environment at: cwl-conformance-venv
+Resolved 51 packages in 430ms
+   Building streamflow @ file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow
+      Built streamflow @ file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow
+Prepared 1 package in 1.68s
+Uninstalled 1 package in 102ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 69ms
+ ~ streamflow==0.2.0rc2 (from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow)
+Using Python 3.14.4 environment at: cwl-conformance-venv
+Resolved 76 packages in 392ms
+   Building streamflow @ file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow
+      Built streamflow @ file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow
+Prepared 1 package in 997ms
+Uninstalled 1 package in 10ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 67ms
+ ~ streamflow==0.2.0rc2 (from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow)
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.14/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0
+rootdir: /gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow
+configfile: tox.ini
+plugins: cwltest-2.6.20251216093331, asyncio-1.3.0, xdist-3.8.0, cov-7.1.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=session
+created: 8/8 workers
+8 workers [0 items]
+
+
+==================================== ERRORS ====================================
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.14/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/gpfs/home/bsc/[REDACTED]/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+- generated xml file: /gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/junit.xml -
+============================== 8 errors in 2.66s ===============================

@@ -26,7 +26,6 @@ export PYTHONIOENCODING=utf8
 #
 # with:
 #
-#
 export PYTHONFAULTHANDLER=0
 
 ##############################
@@ -88,9 +87,9 @@ CWL_TAG[v1.1]="v1.1.0"
 CWL_TAG[v1.2]="v1.2.1"
 
 # Tools configuration
-# TOOLS=("cwltool" "toil")
-TOOLS=("cwltool")
-#TOOLS=("streamflow")
+TOOLS=("cwltool" "toil")
+#TOOLS=("cwltool")
+#TOOLS=("toil")
 
 # NOTE: We are using declare here, which will not work with MacOS'
 #       default Shell (bash in MacOS may be an alias to another
@@ -100,12 +99,11 @@ TOOLS=("cwltool")
 declare -A TOOL_BIN
 TOOL_BIN[cwltool]="cwltool"
 TOOL_BIN[toil]="toil-cwl-runner"
-TOOL_BIN[streamflow]="toil-cwl-runner"
 
 # Extra args passed to the binaries
 declare -A TOOL_ARGS
 TOOL_ARGS[cwltool]="--singularity --enable-dev --tmpdir-prefix=$HPC_SCRATCH_DIR"
-TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress"
+TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress --defaultMemory=2G --maxMemory=2G --cwl-min-ram=2G --outdir=$HPC_SCRATCH_DIR --log-dir=$HPC_SCRATCH_DIR --tmpdir-prefix=$HPC_SCRATCH_DIR --tmp-outdir-prefix=$HPC_SCRATCH_DIR --workDir=$HPC_SCRATCH_DIR --coordinationDir=$HPC_SCRATCH_DIR"
 
 # Base working directory
 BASE_DIR=$(pwd)/runs
@@ -136,12 +134,12 @@ setup_python_env() {
     "$ENV_DIR/bin/pip" install cwltest
 
     case "$TOOL" in
-        cwltool)
-            "$ENV_DIR/bin/pip" install cwltool
-            ;;
-        toil)
-            "$ENV_DIR/bin/pip" install toil[cwl]
-            ;;
+    cwltool)
+        "$ENV_DIR/bin/pip" install cwltool==3.2.20260413085819
+        ;;
+    toil)
+        "$ENV_DIR/bin/pip" install toil[cwl]==9.4.1
+        ;;
     esac
 }
 
@@ -179,11 +177,11 @@ clone_cwl_repo() {
     # NOTE: HPCs (e.g. CESGA FT3) have a tight quota on file size and number of
     #       inodes used. So the whole script is made to minimize files used.
     if ! git clone \
-            --depth 1 \
-            --branch "$TAG" \
-            --single-branch \
-            "$REPO" \
-            "$DEST"; then
+        --depth 1 \
+        --branch "$TAG" \
+        --single-branch \
+        "$REPO" \
+        "$DEST"; then
         log "ERROR: Failed to clone $VERSION"
         exit 1
     fi
@@ -213,8 +211,8 @@ run_tests() {
     (
         cd "$BASE_DIR/specs/$VERSION" || exit 1
         if [ "$VERSION" = "v1.0" ]; then
-          # This is the only exception, 1.1, 1.2, follow a new pattern...
-          cd v1.0/
+            # This is the only exception, 1.1, 1.2, follow a new pattern...
+            cd v1.0/
         fi
 
         # v1.1 and v1.2 run_test.sh did not work on LUMI, MN5, and CESGA FT3.
@@ -227,13 +225,26 @@ run_tests() {
         RUNNER="${TOOL_BIN[$TOOL]}"
         EXTRA="${TOOL_ARGS[$TOOL]}"
 
-        if [ "$TOOL" = "toil" ] && [ "$MODE" = "slurm" ]; then
-            EXTRA="${EXTRA} --batchSystem slurm"
+        # For toil + batch mode, we want to use the --batchSystem=slurm option.
+        # And the --bypass-file-store is used to assume the data is available
+        # everywhere (e.g., GPFS, Lustre).
+        if [ "$TOOL" = "toil" ] && [ "$MODE" = "batch" ]; then
+            EXTRA="${EXTRA} --batchSystem slurm --bypass-file-store"
         fi
+        # MareNostrum5 does not allow --mem flags; we also reuse Singularity
+        # containers as compute nodes are offline.
+        if [ "$TOOL" = "toil" ] && [ "$MODE" = "batch" ] && [ "$HPC" = "mn5" ]; then
+            # EXTRA="${EXTRA} --slurmAllocateMem=False --no-prepull"
+            EXTRA="${EXTRA} --slurmAllocateMem=False"
+        fi
+        # if [ "$TOOL" = "toil" ] && [ "$MODE" = "slurm" ] && [ "$HPC" = "mn5" ]; then
+        #     EXTRA="${EXTRA} --no-prepull"
+        # fi
 
+        # The CWL v1.0 project has a different structure, also different file names.
         TEST_FILE="conformance_tests.yaml"
         if [ "$VERSION" = "v1.0" ]; then
-          TEST_FILE="conformance_test_v1.0.yaml"
+            TEST_FILE="conformance_test_v1.0.yaml"
         fi
 
         # Build base args
@@ -248,7 +259,7 @@ run_tests() {
             "--"
         )
         # split EXTRA into words safely
-        read -r -a EXTRA_ARR <<< "$EXTRA"
+        read -r -a EXTRA_ARR <<<"$EXTRA"
 
         # TODO: -j8 works only on cwl v1.0. The run_test of the others has a bug
         #       in argparse (eval expects =?).
@@ -314,10 +325,10 @@ for TOOL in "${TOOLS[@]}"; do
     log "Done!"
 
     for VERSION in "${CWL_VERSIONS[@]}"; do
-      log "[RUN] tool=$TOOL version=$VERSION mode=$MODE"
-      run_tests "$TOOL" "$VERSION" "$MODE"
-      log "[RUN] Finished $TOOL $VERSION ($MODE)"
-      log "----------------------------------------"
+        log "[RUN] tool=$TOOL version=$VERSION mode=$MODE"
+        run_tests "$TOOL" "$VERSION" "$MODE"
+        log "[RUN] Finished $TOOL $VERSION ($MODE)"
+        log "----------------------------------------"
     done
 
 done
