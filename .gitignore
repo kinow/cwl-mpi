@@ -66,3 +66,6 @@ venv/
 *.tar
 
 cwl-conformance-tests/runs/
+cwl-conformance-tests/*.aux
+cwl-conformance-tests/*.log
+run.log
