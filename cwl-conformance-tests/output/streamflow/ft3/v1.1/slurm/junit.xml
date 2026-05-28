@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="3" failures="0" skipped="0" tests="3" time="3.132" timestamp="2026-05-28T13:55:08.732766+02:00" hostname="c201-10"><testcase classname="" name="cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de.conformance_tests.cwltest.yaml" file="cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml" time="0.000"><error message="collection failure">cwl-conformance-venv/lib/python3.13/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/lib/python3.13/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'</error><error message="collection failure">cwl-conformance-venv/lib/python3.13/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/lib/python3.13/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'</error><error message="collection failure">cwl-conformance-venv/lib/python3.13/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/lib/python3.13/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'</error></testcase></testsuite></testsuites>

@@ -1,0 +1,203 @@
+slurmstepd: info: Setting TMPDIR to /scratch/7186459. Previous errors about TMPDIR can be discarded
+--2026-05-28 13:54:20--  https://github.com/common-workflow-language/cwl-v1.1/archive/4feec74019b56dc5c51be905a208ff90797661de.tar.gz
+Resolving github.com... 140.82.121.4
+Connecting to github.com|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/common-workflow-language/cwl-v1.1/tar.gz/4feec74019b56dc5c51be905a208ff90797661de [following]
+--2026-05-28 13:54:20--  https://codeload.github.com/common-workflow-language/cwl-v1.1/tar.gz/4feec74019b56dc5c51be905a208ff90797661de
+Resolving codeload.github.com... 140.82.121.10
+Connecting to codeload.github.com|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘4feec74019b56dc5c51be905a208ff90797661de.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  592K
+    50K .......... .......... .......... .......... .......... 1.15M
+   100K .......... .......... .......... .......... .......... 60.1M
+   150K .......... .......... .......... .......... .......... 81.6M
+   200K .......... .......... .......... .......... .......... 1.17M
+   250K .......... .......... .......... .......... .......... 82.9M
+   300K .......... .......... .......... .......... .......... 88.5M
+   350K .......... .......... .......... .......... .......... 89.0M
+   400K .......... .......... .......... .......... .......... 1.21M
+   450K .......... .......... .......... .......... .......... 77.3M
+   500K .......... .......... .......... .......... .......... 87.0M
+   550K .......... .......... .......... .......... .......... 91.1M
+   600K .......... .......... .......... .......... .......... 92.9M
+   650K ...                                                    63.7M=0.2s
+
+2026-05-28 13:54:21 (2.98 MB/s) - ‘4feec74019b56dc5c51be905a208ff90797661de.tar.gz’ saved [669111]
+
+Using CPython 3.13.13 interpreter at: /mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/bin/python3
+Creating virtual environment at: cwl-conformance-venv
+Activate with: source cwl-conformance-venv/bin/activate
+Resolved 135 packages in 37ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 52 packages in 9.83s
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.13.5
+ + aiosignal==1.4.0
+ + aiosqlite==0.22.1
+ + antlr4-python3-runtime==4.13.2
+ + asyncssh==2.22.0
+ + attrs==25.4.0
+ + bcrypt==5.0.0
+ + cachebox==5.2.3
+ + cachecontrol==0.14.4
+ + certifi==2025.11.12
+ + cffi==2.0.0
+ + charset-normalizer==3.4.4
+ + cryptography==46.0.7
+ + cwl-upgrader==1.2.12
+ + cwl-utils==0.41
+ + filelock==3.20.3
+ + frozenlist==1.8.0
+ + idna==3.11
+ + importlib-metadata==9.0.0
+ + jinja2==3.1.6
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + kubernetes-asyncio==35.0.1
+ + markupsafe==3.0.3
+ + mistune==3.1.4
+ + msgpack==1.1.2
+ + mslex==1.3.0
+ + multidict==6.7.0
+ + mypy-extensions==1.1.0
+ + packaging==25.0
+ + propcache==0.4.1
+ + psutil==7.2.2
+ + pycparser==2.23
+ + pyparsing==3.2.5
+ + python-dateutil==2.9.0.post0
+ + pyyaml==6.0.3
+ + rdflib==7.6.0
+ + referencing==0.37.0
+ + requests==2.33.0
+ + rpds-py==0.30.0
+ + ruamel-yaml==0.18.16
+ + ruamel-yaml-clib==0.2.15
+ + schema-salad==8.9.20251102115403
+ + setuptools==80.9.0
+ + six==1.17.0
+ + streamflow==0.2.0rc2 (from file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow)
+ + typing-extensions==4.15.0
+ + urllib3==2.6.3
+ + yarl==1.22.0
+ + yattag==1.16.1
+ + zipp==3.23.0
+Using Python 3.13.13 environment at: cwl-conformance-venv
+Resolved 4 packages in 268ms
+Prepared 4 packages in 5ms
+Uninstalled 2 packages in 1.27s
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 4 packages in 10.69s
+ - packaging==25.0
+ + packaging==26.2
+ + pip==26.1.1
+ - setuptools==80.9.0
+ + setuptools==82.0.1
+ + wheel==0.47.0
+Using Python 3.13.13 environment at: cwl-conformance-venv
+Resolved 52 packages in 135ms
+   Building streamflow @ file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow
+      Built streamflow @ file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow
+Prepared 1 package in 5.12s
+Uninstalled 1 package in 7ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 543ms
+ ~ streamflow==0.2.0rc2 (from file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow)
+Using Python 3.13.13 environment at: cwl-conformance-venv
+Resolved 77 packages in 141ms
+   Building streamflow @ file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow
+      Built streamflow @ file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow
+Prepared 1 package in 3.66s
+Uninstalled 1 package in 59ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 26 packages in 5.83s
+ + argcomplete==3.6.3
+ + coloredlogs==15.0.1
+ + coverage==7.14.1
+ + cwltest==2.6.20251216093331
+ + cwltool==3.2.20260413085819
+ + defusedxml==0.7.1
+ + execnet==2.1.2
+ + humanfriendly==10.0
+ + iniconfig==2.3.0
+ + junit-xml==1.9
+ + lxml==6.1.1
+ + markdown-it-py==4.2.0
+ + mdurl==0.1.2
+ + networkx==3.6.1
+ + pluggy==1.6.0
+ + prov==1.5.1
+ + pydot==4.0.1
+ + pygments==2.20.0
+ + pytest==9.0.3
+ + pytest-asyncio==1.3.0
+ + pytest-cov==7.1.0
+ + pytest-xdist==3.8.0
+ + rich==15.0.0
+ + rich-argparse==1.8.0
+ + spython==0.3.14
+ ~ streamflow==0.2.0rc2 (from file:///mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow)
+/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.13/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.13/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+/mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow/cwl-conformance-venv/lib/python3.13/site-packages/coverage/control.py:958: CoverageWarning: No data was collected. (no-data-collected); see https://coverage.readthedocs.io/en/7.14.1/messages.html#warning-no-data-collected
+  self._warn("No data was collected.", slug="no-data-collected")
+============================= test session starts ==============================
+platform linux -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0
+rootdir: /mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow
+configfile: tox.ini
+plugins: cwltest-2.6.20251216093331, xdist-3.8.0, asyncio-1.3.0, cov-7.1.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=session
+created: 3/3 workers
+3 workers [0 items]
+
+
+==================================== ERRORS ====================================
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/lib/python3.13/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/lib/python3.13/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+_ ERROR collecting cwl-v1.1-4feec74019b56dc5c51be905a208ff90797661de/conformance_tests.cwltest.yaml _
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/plugin.py:260: in collect
+    name = utils.shortname(entry["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cwl-conformance-venv/lib/python3.13/site-packages/cwltest/utils.py:649: in shortname
+    return [n for n in re.split("[/#]", name) if len(n)][-1]
+                       ^^^^^^^^^^^^^^^^^^^^^^
+/mnt/netapp2/Store_uni/home/ulc/cursos/[REDACTED]/micromamba/envs/python-3.13/lib/python3.13/re/__init__.py:267: in split
+    return _compile(pattern, flags).split(string, maxsplit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: expected string or bytes-like object, got 'int'
+- generated xml file: /mnt/lustre/scratch/nlsas/home/ulc/cursos/[REDACTED]/cwl-mpi/cwl-conformance-tests/runs/streamflow/junit.xml -
+============================== 3 errors in 3.13s ===============================

@@ -1,0 +1,3410 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="2" tests="253" time="2233.303713798523">
+	<testsuite disabled="0" errors="0" failures="2" name="conformance_tests" skipped="2" tests="253" time="2233.303713798523">
+		<testcase name="General test of command line generation" time="10.922938" class="required, command_line_tool" file="cl_basic_generation" url="cwltest:conformance_tests#1">
+			<system-out>{
+    "args": [
+        "bwa",
+        "mem",
+        "-t",
+        "2",
+        "-I",
+        "1,2,3,4",
+        "-m",
+        "3",
+        "chr20.fa",
+        "example_human_Illumina.pe_1.fastq",
+        "example_human_Illumina.pe_2.fastq"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test nested prefixes with arrays" time="23.068833" class="required, command_line_tool" file="nested_prefixes_arrays" url="cwltest:conformance_tests#2">
+			<system-out>{
+    "args": [
+        "bwa",
+        "mem",
+        "chr20.fa",
+        "-XXX",
+        "-YYY",
+        "example_human_Illumina.pe_1.fastq",
+        "-YYY",
+        "example_human_Illumina.pe_2.fastq"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test nested command line bindings" time="10.553257" class="schema_def, command_line_tool" file="nested_cl_bindings" url="cwltest:conformance_tests#3">
+			<system-out>{
+    "args": [
+        "tmap",
+        "mapall",
+        "stage1",
+        "map1",
+        "--min-seq-length",
+        "20",
+        "map2",
+        "--min-seq-length",
+        "20",
+        "stage2",
+        "map1",
+        "--max-seq-length",
+        "20",
+        "--min-seq-length",
+        "10",
+        "--seed-length",
+        "16",
+        "map2",
+        "--max-seed-hits",
+        "-1",
+        "--max-seq-length",
+        "20",
+        "--min-seq-length",
+        "10"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command line with optional input (missing)" time="10.644921" class="required, command_line_tool" file="cl_optional_inputs_missing" url="cwltest:conformance_tests#4">
+			<system-out>{
+    "args": [
+        "cat",
+        "hello.txt"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command line with optional input (provided)" time="14.988077" class="required, command_line_tool" file="cl_optional_bindings_provided" url="cwltest:conformance_tests#5">
+			<system-out>{
+    "args": [
+        "cat",
+        "-n",
+        "hello.txt"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature" time="25.400187" class="initial_work_dir, inline_javascript, command_line_tool" file="initworkdir_expreng_requirements" url="cwltest:conformance_tests#6">
+			<system-out>{
+    "foo": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp1kd733j9/foo.txt",
+        "basename": "foo.txt",
+        "nameroot": "foo",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$63da67422622fbf9251a046d7a34b7ea0fd4fead",
+        "size": 22,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp1kd733j9/foo.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command execution in Docker with stdout redirection" time="10.513316" class="docker, command_line_tool" file="stdout_redirect_docker" url="cwltest:conformance_tests#7">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp6vngs635/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp6vngs635/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command execution in Docker with shortcut stdout redirection" time="42.695495" class="docker, command_line_tool" file="stdout_redirect_shortcut_docker" url="cwltest:conformance_tests#8">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5cq5t7vk/38a0d8ced58a3d0b788ad15402d7df4f9ee86f1c",
+        "basename": "38a0d8ced58a3d0b788ad15402d7df4f9ee86f1c",
+        "nameroot": "38a0d8ced58a3d0b788ad15402d7df4f9ee86f1c",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5cq5t7vk/38a0d8ced58a3d0b788ad15402d7df4f9ee86f1c"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command execution in Docker with mediumcut stdout redirection" time="10.515119" class="docker, command_line_tool" file="stdout_redirect_mediumcut_docker" url="cwltest:conformance_tests#9">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp1dmx3dgm/cat-out",
+        "basename": "cat-out",
+        "nameroot": "cat-out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp1dmx3dgm/cat-out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command line with stderr redirection" time="9.878943" class="shell_command, command_line_tool" file="stderr_redirect" url="cwltest:conformance_tests#10">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp1z1xk1_m/error.txt",
+        "basename": "error.txt",
+        "nameroot": "error",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15",
+        "size": 4,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp1z1xk1_m/error.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command line with stderr redirection, brief syntax" time="8.413962" class="shell_command, command_line_tool" file="stderr_redirect_shortcut" url="cwltest:conformance_tests#11">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp_qg5oebk/1f99bed3b9f300e8ba79591f398974179920200e",
+        "basename": "1f99bed3b9f300e8ba79591f398974179920200e",
+        "nameroot": "1f99bed3b9f300e8ba79591f398974179920200e",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15",
+        "size": 4,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp_qg5oebk/1f99bed3b9f300e8ba79591f398974179920200e"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command line with stderr redirection, named brief syntax" time="21.776224" class="shell_command, command_line_tool" file="stderr_redirect_mediumcut" url="cwltest:conformance_tests#12">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmptr1b8uky/std.err",
+        "basename": "std.err",
+        "nameroot": "std",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15",
+        "size": 4,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmptr1b8uky/std.err"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command execution in Docker with stdin and stdout redirection" time="15.931273" class="required, command_line_tool" file="stdinout_redirect_docker" url="cwltest:conformance_tests#13">
+			<system-out>{
+    "output_txt": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp8higz9dm/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp8higz9dm/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default usage of Any in expressions." time="33.068932" class="inline_javascript, expression_tool" file="expression_any" url="cwltest:conformance_tests#14">
+			<system-out>{
+    "output": 1
+}
+</system-out>
+		</testcase>
+		<testcase name="Test explicitly passing null to Any type inputs with default values." time="23.200145" class="inline_javascript, expression_tool" file="expression_any_null" url="cwltest:conformance_tests#15">
+			<system-out>{
+    "output": 1
+}
+</system-out>
+		</testcase>
+		<testcase name="Testing the string 'null' does not trip up an Any with a default value." time="44.706939" class="inline_javascript, expression_tool" file="expression_any_string" url="cwltest:conformance_tests#16">
+			<system-out>{
+    "output": 2
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any without defaults cannot be unspecified." time="11.733696" class="inline_javascript, expression_tool" file="expression_any_nodefaultany" url="cwltest:conformance_tests#17"/>
+		<testcase name="Test explicitly passing null to Any type without a default value." time="10.261868" class="inline_javascript, expression_tool" file="expression_any_null_nodefaultany" url="cwltest:conformance_tests#18"/>
+		<testcase name="Testing the string 'null' does not trip up an Any without a default value." time="15.822820" class="inline_javascript, expression_tool" file="expression_any_nullstring_nodefaultany" url="cwltest:conformance_tests#19">
+			<system-out>{
+    "output": 2
+}
+</system-out>
+		</testcase>
+		<testcase name="Testing Any type compatibility in outputSource" time="4.370602" class="required, workflow" file="any_outputSource_compatibility" url="cwltest:conformance_tests#20">
+			<system-out>{
+    "output1": [
+        "hello",
+        "world"
+    ],
+    "output2": [
+        "foo",
+        "bar"
+    ],
+    "output3": "hello"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command execution in with stdin and stdout redirection" time="4.228382" class="required, command_line_tool" file="stdinout_redirect" url="cwltest:conformance_tests#21">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmprcosnz1x/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmprcosnz1x/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test ExpressionTool with Javascript engine" time="13.574431" class="inline_javascript, expression_tool" file="expression_parseint" url="cwltest:conformance_tests#22">
+			<system-out>{
+    "output": 42
+}
+</system-out>
+		</testcase>
+		<testcase name="Test outputEval to transform output" time="14.404699" class="inline_javascript, command_line_tool" file="expression_outputEval" url="cwltest:conformance_tests#23">
+			<system-out>{
+    "output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test two step workflow with imported tools" time="13.575588" class="inline_javascript, workflow" file="wf_wc_parseInt" url="cwltest:conformance_tests#24">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test two step workflow with inline tools" time="10.430747" class="inline_javascript, workflow" file="wf_wc_expressiontool" url="cwltest:conformance_tests#25">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step" time="19.223371" class="scatter, inline_javascript, workflow" file="wf_wc_scatter" url="cwltest:conformance_tests#26">
+			<system-out>{
+    "count_output": [
+        16,
+        1
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, default merge behavior" time="13.505817" class="scatter, multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_merge" url="cwltest:conformance_tests#27">
+			<system-out>{
+    "count_output": [
+        16,
+        1
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior" time="9.600348" class="scatter, multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_nested" url="cwltest:conformance_tests#28">
+			<system-out>{
+    "count_output": [
+        32,
+        2
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior" time="9.194339" class="multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_flattened" url="cwltest:conformance_tests#29">
+			<system-out>{
+    "count_output": 34
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that no MultipleInputFeatureRequirement is necessary when workflow step source is a single-item list" time="8.803452" class="inline_javascript, workflow" file="wf_wc_nomultiple" url="cwltest:conformance_tests#30">
+			<system-out>{
+    "count_output": 32
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow with default value for input parameter (missing)" time="10.045637" class="inline_javascript, workflow" file="wf_input_default_missing" url="cwltest:conformance_tests#31">
+			<system-out>{
+    "count_output": 1
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow with default value for input parameter (provided)" time="9.983975" class="inline_javascript, workflow" file="wf_input_default_provided" url="cwltest:conformance_tests#32">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that workflow defaults override tool defaults" time="8.852566" class="required, workflow" file="wf_default_tool_default" url="cwltest:conformance_tests#33">
+			<system-out>{
+    "default_output": "workflow_default"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test EnvVarRequirement" time="4.272418" class="env_var, command_line_tool" file="envvar_req" url="cwltest:conformance_tests#34">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp4_8xg_8j/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519",
+        "size": 15,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp4_8xg_8j/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter" time="8.410023" class="scatter, workflow" file="wf_scatter_single_param" url="cwltest:conformance_tests#35">
+			<system-out>{
+    "out": [
+        "foo one",
+        "foo two",
+        "foo three",
+        "foo four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method" time="8.435058" class="scatter, workflow" file="wf_scatter_two_nested_crossproduct" url="cwltest:conformance_tests#36">
+			<failure type="failure">expected: {
+    "out": [
+        [
+            "foo one three",
+            "foo one four"
+        ],
+        [
+            "foo two three",
+            "foo two four"
+        ]
+    ]
+}
+got: {
+    "out": [
+        [
+            "foo one three",
+            "foo one four"
+        ],
+        [
+            "",
+            "foo two four"
+        ]
+    ]
+}
+caused by: failed comparison for key 'out': expected: [
+    [
+        "foo one three",
+        "foo one four"
+    ],
+    [
+        "foo two three",
+        "foo two four"
+    ]
+]
+got: [
+    [
+        "foo one three",
+        "foo one four"
+    ],
+    [
+        "",
+        "foo two four"
+    ]
+]
+caused by: expected: [
+    "foo two three",
+    "foo two four"
+]
+got: [
+    "",
+    "foo two four"
+]
+caused by: expected: "foo two three"
+got: ""</failure>
+			<system-out>{
+    "out": [
+        [
+            "foo one three",
+            "foo one four"
+        ],
+        [
+            "",
+            "foo two four"
+        ]
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and flat_crossproduct join method" time="8.930859" class="scatter, workflow" file="wf_scatter_two_flat_crossproduct" url="cwltest:conformance_tests#37">
+			<system-out>{
+    "out": [
+        "foo one three",
+        "foo one four",
+        "foo two three",
+        "foo two four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and dotproduct join method" time="8.291784" class="scatter, workflow" file="wf_scatter_two_dotproduct" url="cwltest:conformance_tests#38">
+			<system-out>{
+    "out": [
+        "foo one three",
+        "foo two four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single empty list parameter" time="6.493365" class="scatter, workflow" file="wf_scatter_emptylist" url="cwltest:conformance_tests#39">
+			<system-out>{
+    "out": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty" time="8.589350" class="scatter, workflow" file="wf_scatter_nested_crossproduct_secondempty" url="cwltest:conformance_tests#40">
+			<system-out>{
+    "out": [
+        [],
+        []
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty" time="6.503128" class="scatter, workflow" file="wf_scatter_nested_crossproduct_firstempty" url="cwltest:conformance_tests#41">
+			<system-out>{
+    "out": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method" time="6.151433" class="scatter, workflow" file="wf_scatter_flat_crossproduct_oneempty" url="cwltest:conformance_tests#42">
+			<system-out>{
+    "out": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two empty scatter parameters and dotproduct join method" time="5.618162" class="scatter, workflow" file="wf_scatter_dotproduct_twoempty" url="cwltest:conformance_tests#43">
+			<system-out>{
+    "out": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any type input parameter" time="4.677689" class="required, command_line_tool" file="any_input_param" url="cwltest:conformance_tests#44">
+			<system-out>{
+    "out": "hello test env\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test nested workflow" time="10.892848" class="subworkflow, workflow, inline_javascript" file="nested_workflow" url="cwltest:conformance_tests#45">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test requirement priority" time="19.455955" class="env_var, workflow" file="requirement_priority" url="cwltest:conformance_tests#46">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpb3t_gkvz/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519",
+        "size": 15,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpb3t_gkvz/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test requirements override hints" time="10.539603" class="env_var, workflow" file="requirement_override_hints" url="cwltest:conformance_tests#47">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpzwnoa_mf/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$cdc1e84968261d6a7575b5305945471f8be199b6",
+        "size": 9,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpzwnoa_mf/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test requirements on workflow steps" time="10.267872" class="env_var, workflow" file="requirement_workflow_steps" url="cwltest:conformance_tests#48">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpcb7q_hmb/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$cdc1e84968261d6a7575b5305945471f8be199b6",
+        "size": 9,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpcb7q_hmb/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter" time="10.319661" class="inline_javascript, workflow" file="step_input_default_value" url="cwltest:conformance_tests#49">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test use default value on step input parameter with empty source" time="9.820572" class="inline_javascript, workflow" file="step_input_default_value_nosource" url="cwltest:conformance_tests#50">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test use default value on step input parameter with null source" time="8.663167" class="inline_javascript, workflow" file="step_input_default_value_nullsource" url="cwltest:conformance_tests#51">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source" time="8.958061" class="inline_javascript, workflow" file="step_input_default_value_overriden" url="cwltest:conformance_tests#52">
+			<system-out>{
+    "count_output": 1
+}
+</system-out>
+		</testcase>
+		<testcase name="Test simple workflow" time="13.607397" class="required, workflow" file="wf_simple" url="cwltest:conformance_tests#53">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmptyx8yzdv/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$b9214658cc453331b62c2282b772a5c063dbd284",
+        "size": 1111,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmptyx8yzdv/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test unknown hints are ignored." time="7.819713" class="required, command_line_tool" file="hints_unknown_ignored" url="cwltest:conformance_tests#54">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpnq2ilrvm/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpnq2ilrvm/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field." time="14.097817" class="initial_work_dir, inline_javascript, command_line_tool" file="initial_workdir_secondary_files_expr" url="cwltest:conformance_tests#55">
+			<system-out>{
+    "indexedfile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt",
+        "basename": "input.txt",
+        "nameroot": "input",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "size": 1111,
+        "secondaryFiles": [
+            {
+                "basename": "input.txt.idx1",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx1",
+                "class": "File",
+                "nameroot": "input.txt",
+                "nameext": ".idx1",
+                "size": 1500,
+                "checksum": "sha1$1f6fe811644355974cdd06d9eb695d6e859f3b44",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx1"
+            },
+            {
+                "basename": "input.idx2",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.idx2",
+                "class": "File",
+                "nameroot": "input",
+                "nameext": ".idx2",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.idx2"
+            },
+            {
+                "basename": "input.txt.idx3",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx3",
+                "class": "File",
+                "nameroot": "input.txt",
+                "nameext": ".idx3",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx3"
+            },
+            {
+                "basename": "input.txt.idx4",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx4",
+                "class": "File",
+                "nameroot": "input.txt",
+                "nameext": ".idx4",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx4"
+            },
+            {
+                "class": "File",
+                "basename": "input.txt.idx5",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx5",
+                "nameroot": "input.txt",
+                "nameext": ".idx5",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx5"
+            },
+            {
+                "basename": "input.idx6.txt",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.idx6.txt",
+                "class": "File",
+                "nameroot": "input.idx6",
+                "nameext": ".txt",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.idx6.txt"
+            },
+            {
+                "basename": "input.txt.idx7",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx7",
+                "class": "File",
+                "nameroot": "input.txt",
+                "nameext": ".idx7",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt.idx7"
+            },
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/hello.txt",
+                "size": 13,
+                "basename": "hello.txt",
+                "nameroot": "hello",
+                "nameext": ".txt",
+                "streamable": false,
+                "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/hello.txt"
+            },
+            {
+                "basename": "input.txt_idx8",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt_idx8",
+                "class": "Directory",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt_idx8/index",
+                        "basename": "index",
+                        "size": 0,
+                        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "nameroot": "index",
+                        "nameext": "",
+                        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt_idx8/index"
+                    }
+                ],
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt_idx8"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/input.txt"
+    },
+    "outfile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/result.txt",
+        "basename": "result.txt",
+        "nameroot": "result",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$e2dc9daaef945ac15f01c238ed2f1660f60909a0",
+        "size": 142,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvqfw4_08/result.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement with expression in filename." time="8.545169" class="initial_work_dir, command_line_tool" file="rename" url="cwltest:conformance_tests#56">
+			<system-out>{
+    "outfile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpld00ese0/fish.txt",
+        "basename": "fish.txt",
+        "nameroot": "fish",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "size": 1111,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpld00ese0/fish.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test if trailing newline is present in file entry in InitialWorkDir" time="12.708871" class="initial_work_dir, command_line_tool" file="initial_workdir_trailingnl" url="cwltest:conformance_tests#57">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpuaddnbll/example.conf",
+        "basename": "example.conf",
+        "nameroot": "example",
+        "nameext": ".conf",
+        "class": "File",
+        "checksum": "sha1$6a47aa22b2a9d13a66a24b3ee5eaed95ce4753cf",
+        "size": 16,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpuaddnbll/example.conf"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test inline expressions" time="6.124477" class="inline_javascript, command_line_tool" file="inline_expressions" url="cwltest:conformance_tests#58">
+			<system-out>{
+    "output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement definition used in tool parameter" time="6.627796" class="schema_def, command_line_tool" file="schemadef_req_tool_param" url="cwltest:conformance_tests#59">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp8r0go31m/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$f12e6cfe70f3253f70b0dbde17c692e7fb0f1e5e",
+        "size": 12,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp8r0go31m/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement definition used in workflow parameter" time="14.791820" class="schema_def, workflow" file="schemadef_req_wf_param" url="cwltest:conformance_tests#60">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpwvb0ce6x/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$f12e6cfe70f3253f70b0dbde17c692e7fb0f1e5e",
+        "size": 12,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpwvb0ce6x/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test parameter evaluation, no support for JS expressions" time="6.000667" class="required, command_line_tool" file="param_evaluation_noexpr" url="cwltest:conformance_tests#61">
+			<system-out>{
+    "t1": {
+        "bar": {
+            "baz": "zab1",
+            "b az": 2,
+            "b'az": true,
+            "b\"az": null,
+            "buz": [
+                "a",
+                "b",
+                "c"
+            ]
+        }
+    },
+    "t2": {
+        "baz": "zab1",
+        "b az": 2,
+        "b'az": true,
+        "b\"az": null,
+        "buz": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "t3": {
+        "baz": "zab1",
+        "b az": 2,
+        "b'az": true,
+        "b\"az": null,
+        "buz": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "t4": {
+        "baz": "zab1",
+        "b az": 2,
+        "b'az": true,
+        "b\"az": null,
+        "buz": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "t5": "zab1",
+    "t6": "zab1",
+    "t7": "zab1",
+    "t8": "zab1",
+    "t9": 2,
+    "t10": true,
+    "t11": true,
+    "t12": null,
+    "t13": "-zab1",
+    "t14": "-zab1",
+    "t15": "-zab1",
+    "t16": "-zab1",
+    "t17": "zab1 zab1",
+    "t18": "zab1 zab1",
+    "t19": "zab1 zab1",
+    "t20": "zab1 zab1",
+    "t21": "2 2",
+    "t22": "true true",
+    "t23": "true true",
+    "t24": "null null",
+    "t25": "b",
+    "t26": "b b",
+    "t27": null,
+    "t28": 3
+}
+</system-out>
+		</testcase>
+		<testcase name="Test parameter evaluation, with support for JS expressions" time="8.903514" class="inline_javascript, command_line_tool" file="param_evaluation_expr" url="cwltest:conformance_tests#62">
+			<system-out>{
+    "t1": {
+        "bar": {
+            "baz": "zab1",
+            "b az": 2,
+            "b'az": true,
+            "b\"az": null,
+            "buz": [
+                "a",
+                "b",
+                "c"
+            ]
+        }
+    },
+    "t2": {
+        "baz": "zab1",
+        "b az": 2,
+        "b'az": true,
+        "b\"az": null,
+        "buz": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "t3": {
+        "baz": "zab1",
+        "b az": 2,
+        "b'az": true,
+        "b\"az": null,
+        "buz": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "t4": {
+        "baz": "zab1",
+        "b az": 2,
+        "b'az": true,
+        "b\"az": null,
+        "buz": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "t5": "zab1",
+    "t6": "zab1",
+    "t7": "zab1",
+    "t8": "zab1",
+    "t9": 2,
+    "t10": true,
+    "t11": true,
+    "t12": null,
+    "t13": "-zab1",
+    "t14": "-zab1",
+    "t15": "-zab1",
+    "t16": "-zab1",
+    "t17": "zab1 zab1",
+    "t18": "zab1 zab1",
+    "t19": "zab1 zab1",
+    "t20": "zab1 zab1",
+    "t21": "2 2",
+    "t22": "true true",
+    "t23": "true true",
+    "t24": "null null",
+    "t25": "b",
+    "t26": "b b",
+    "t27": null,
+    "t28": 3
+}
+</system-out>
+		</testcase>
+		<testcase name="Test metadata" time="10.603718" class="required" file="metadata" url="cwltest:conformance_tests#63">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test simple format checking." time="5.488190" class="required, command_line_tool" file="format_checking" url="cwltest:conformance_tests#64">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5bxdroyk/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$97fe1b50b4582cebc7d853796ebd62e3e163aa3f",
+        "size": 1111,
+        "format": "http://edamontology.org/format_2330",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5bxdroyk/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test format checking against ontology using subclassOf." time="11.826362" class="required, command_line_tool" file="format_checking_subclass" url="cwltest:conformance_tests#65">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpktahkn4j/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$971d88faeda85a796752ecf752b7e2e34f1337ce",
+        "size": 12010,
+        "format": "http://edamontology.org/format_1929",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpktahkn4j/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test format checking against ontology using equivalentClass." time="11.974374" class="required, command_line_tool" file="format_checking_equivalentclass" url="cwltest:conformance_tests#66">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5sb_c49f/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$971d88faeda85a796752ecf752b7e2e34f1337ce",
+        "size": 12010,
+        "format": "http://edamontology.org/format_1929",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5sb_c49f/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test optional output file and optional secondaryFile on output." time="9.058574" class="docker, command_line_tool" file="output_secondaryfile_optional" url="cwltest:conformance_tests#67">
+			<system-out>{
+    "optional_file": null,
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpk7262f03/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "secondaryFiles": [],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpk7262f03/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that valueFrom is ignored when the parameter is null" time="7.714047" class="inline_javascript, command_line_tool" file="valuefrom_ignored_null" url="cwltest:conformance_tests#68">
+			<system-out>{
+    "out": "\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that second expression in concatenated valueFrom is not ignored" time="10.827872" class="inline_javascript, command_line_tool" file="valuefrom_secondexpr_ignored" url="cwltest:conformance_tests#69">
+			<system-out>{
+    "out": "a string\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step." time="13.045929" class="step_input, inline_javascript, workflow" file="valuefrom_wf_step" url="cwltest:conformance_tests#70">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step with multiple sources" time="12.253902" class="step_input, inline_javascript, multiple_input, workflow" file="valuefrom_wf_step_multiple" url="cwltest:conformance_tests#71">
+			<system-out>{
+    "val": "3\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step referencing other inputs" time="9.774108" class="step_input, inline_javascript, workflow" file="valuefrom_wf_step_other" url="cwltest:conformance_tests#72">
+			<system-out>{
+    "val": "3\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test record type output binding." time="6.419228" class="shell_command, command_line_tool" file="record_output_binding" url="cwltest:conformance_tests#73">
+			<system-out>{
+    "orec": {
+        "ofoo": {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5m4wk_13/foo",
+            "basename": "foo",
+            "nameroot": "foo",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+            "size": 1111,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5m4wk_13/foo"
+        },
+        "obar": {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5m4wk_13/bar",
+            "basename": "bar",
+            "nameroot": "bar",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$aeb3d11bdf536511649129f4077d5cda6a324118",
+            "size": 12010,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5m4wk_13/bar"
+        }
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided." time="6.674024" class="shell_command, command_line_tool" file="docker_json_output_path" url="cwltest:conformance_tests#74">
+			<system-out>{
+    "foo": {
+        "class": "File",
+        "basename": "foo",
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpost3z59y/foo",
+        "nameroot": "foo",
+        "nameext": "",
+        "size": 4,
+        "checksum": "sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpost3z59y/foo"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided." time="5.358404" class="shell_command, command_line_tool" file="docker_json_output_location" url="cwltest:conformance_tests#75">
+			<system-out>{
+    "foo": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp7rb061ii/foo",
+        "class": "File",
+        "basename": "foo",
+        "nameroot": "foo",
+        "nameext": "",
+        "size": 4,
+        "checksum": "sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp7rb061ii/foo"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test support for returning multiple glob patterns from expression" time="5.367556" class="required, command_line_tool" file="multiple_glob_expr_list" url="cwltest:conformance_tests#76">
+			<system-out>{
+    "files": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp1kpewnq9/a",
+            "basename": "a",
+            "nameroot": "a",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp1kpewnq9/a"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp1kpewnq9/b",
+            "basename": "b",
+            "nameroot": "b",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp1kpewnq9/b"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp1kpewnq9/c",
+            "basename": "c",
+            "nameroot": "c",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp1kpewnq9/c"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)" time="16.072262" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom" url="cwltest:conformance_tests#77">
+			<system-out>{
+    "out": [
+        "foo one one",
+        "foo one two",
+        "foo one three",
+        "foo one four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input" time="16.435166" class="scatter, step_input, workflow" file="wf_scatter_twoparam_nested_crossproduct_valuefrom" url="cwltest:conformance_tests#78">
+			<system-out>{
+    "out": [
+        [
+            "foo one one three",
+            "foo one one four"
+        ],
+        [
+            "foo one two three",
+            "foo one two four"
+        ]
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input" time="10.783149" class="scatter, step_input, workflow" file="wf_scatter_twoparam_flat_crossproduct_valuefrom" url="cwltest:conformance_tests#79">
+			<system-out>{
+    "out": [
+        "foo one one three",
+        "foo one one four",
+        "foo one two three",
+        "foo one two four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input" time="14.353299" class="scatter, step_input, workflow" file="wf_scatter_twoparam_dotproduct_valuefrom" url="cwltest:conformance_tests#80">
+			<system-out>{
+    "out": [
+        "foo one one three",
+        "foo one two four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)" time="10.653143" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom_twice_current_el" url="cwltest:conformance_tests#81">
+			<system-out>{
+    "out": [
+        "foo one one",
+        "foo two two",
+        "foo three three",
+        "foo four four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom eval on scattered input parameter" time="12.786513" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valueFrom" url="cwltest:conformance_tests#82">
+			<system-out>{
+    "out_message": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpwu_8cttr/87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9",
+            "basename": "87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9",
+            "nameroot": "87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$98030575f6fc40e5021be5a8803a6bef94aee11f",
+            "size": 16,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpwu_8cttr/87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpwu_8cttr/87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9_2",
+            "basename": "87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9",
+            "nameroot": "87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$edcacd50778d98ae113015406b3195c165059dd8",
+            "size": 16,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpwu_8cttr/87df43e1ad9f9a386eeb4a7c99fddca51c3fb8f9_2"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow two input files with same name." time="20.068263" class="required, workflow" file="wf_two_inputfiles_namecollision" url="cwltest:conformance_tests#83">
+			<system-out>{
+    "fileout": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpi6ypj1bb/out.txt",
+        "basename": "out.txt",
+        "nameroot": "out",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$a2d8d6e7b28295dc9977dc3bdb652ddd480995f0",
+        "size": 25,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpi6ypj1bb/out.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test directory input with parameter reference" time="12.116560" class="shell_command, command_line_tool" file="directory_input_param_ref" url="cwltest:conformance_tests#84">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpwnu07413/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$13cda8661796ae241da3a18668fb552161a72592",
+        "size": 20,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpwnu07413/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test directory input in Docker" time="7.716759" class="required, command_line_tool, shell_command" file="directory_input_docker" url="cwltest:conformance_tests#85">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpuv3_kdo6/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$13cda8661796ae241da3a18668fb552161a72592",
+        "size": 20,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpuv3_kdo6/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test directory output" time="7.616677" class="required, command_line_tool" file="directory_output" url="cwltest:conformance_tests#86">
+			<system-out>{
+    "outdir": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpn7qlbocs/tmp-outypjwjcos",
+        "basename": "tmp-outypjwjcos",
+        "nameroot": "tmp-outypjwjcos",
+        "nameext": "",
+        "class": "Directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpn7qlbocs/tmp-outypjwjcos/goodbye.txt",
+                "basename": "goodbye.txt",
+                "size": 24,
+                "checksum": "sha1$dd0a4c4c49ba43004d6611771972b6cf969c1c01",
+                "nameroot": "goodbye",
+                "nameext": ".txt",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpn7qlbocs/tmp-outypjwjcos/goodbye.txt"
+            },
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpn7qlbocs/tmp-outypjwjcos/hello.txt",
+                "basename": "hello.txt",
+                "size": 13,
+                "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+                "nameroot": "hello",
+                "nameext": ".txt",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpn7qlbocs/tmp-outypjwjcos/hello.txt"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpn7qlbocs/tmp-outypjwjcos"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test directories in secondaryFiles" time="10.770091" class="shell_command, command_line_tool" file="directory_secondaryfiles" url="cwltest:conformance_tests#87">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpf7g9ndoc/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$13cda8661796ae241da3a18668fb552161a72592",
+        "size": 20,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpf7g9ndoc/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test dynamic initial work dir" time="16.973066" class="shell_command, initial_work_dir, command_line_tool" file="dynamic_initial_workdir" url="cwltest:conformance_tests#88">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpgxkw6kjp/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$13cda8661796ae241da3a18668fb552161a72592",
+        "size": 20,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpgxkw6kjp/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test writable staged files." time="7.438535" class="initial_work_dir, command_line_tool" file="writable_stagedfiles" url="cwltest:conformance_tests#89">
+			<system-out>{
+    "outfile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmppvl43372/bob.txt",
+        "basename": "bob.txt",
+        "nameroot": "bob",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$b769c7b2e316edd4b5eb2d24799b2c1f9d8c86e6",
+        "size": 1111,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmppvl43372/bob.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test file literal as input" time="8.584649" class="required, command_line_tool" file="input_file_literal" url="cwltest:conformance_tests#90">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpl6t0f3d5/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$d0e04ff6c413c7d57f9a0ca0a33cd3ab52e2dd9c",
+        "size": 18,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpl6t0f3d5/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test expression in InitialWorkDir listing" time="7.312358" class="initial_work_dir, command_line_tool" file="initial_workdir_expr" url="cwltest:conformance_tests#91">
+			<system-out>{
+    "classfile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpdosw__ej/Hello.class",
+        "basename": "Hello.class",
+        "nameroot": "Hello",
+        "nameext": ".class",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpdosw__ej/Hello.class"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test nameroot/nameext expression in arguments, stdout" time="8.411560" class="required, command_line_tool" file="nameroot_nameext_stdout_expr" url="cwltest:conformance_tests#92">
+			<system-out>{
+    "b": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpds89ojd8/whale.xtx",
+        "basename": "whale.xtx",
+        "nameroot": "whale",
+        "nameext": ".xtx",
+        "class": "File",
+        "checksum": "sha1$c4cfd130e7578714e3eef91c1d6d90e0e0b9db3e",
+        "size": 21,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpds89ojd8/whale.xtx"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test directory input with inputBinding" time="7.130272" class="shell_command, command_line_tool" file="input_dir_inputbinding" url="cwltest:conformance_tests#93">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp11f_bd7o/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$13cda8661796ae241da3a18668fb552161a72592",
+        "size": 20,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp11f_bd7o/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command line generation of array-of-arrays" time="8.255957" class="required, command_line_tool" file="cl_gen_arrayofarrays" url="cwltest:conformance_tests#94">
+			<system-out>{
+    "echo": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpk7m9o6n9/echo.txt",
+        "basename": "echo.txt",
+        "nameroot": "echo",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$3f786850e387550fdab836ed7e6dc881de23001b",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpk7m9o6n9/echo.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly" time="5.632910" class="shell_command, command_line_tool" file="env_home_tmpdir" url="cwltest:conformance_tests#95">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly in Docker" time="5.877433" class="shell_command, command_line_tool" file="env_home_tmpdir_docker" url="cwltest:conformance_tests#96">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test that expressionLib requirement of individual tool step overrides expressionLib of workflow." time="8.584113" class="inline_javascript, workflow" file="expressionlib_tool_wf_override" url="cwltest:conformance_tests#97">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp2nhh1bu6/whatever.txt",
+        "basename": "whatever.txt",
+        "nameroot": "whatever",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp2nhh1bu6/whatever.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test output of InitialWorkDir" time="5.935954" class="docker, initial_work_dir, command_line_tool" file="initial_workdir_output" url="cwltest:conformance_tests#98">
+			<system-out>{
+    "OUTPUT": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpx3fdaedx/ref.fasta",
+        "basename": "ref.fasta",
+        "nameroot": "ref",
+        "nameext": ".fasta",
+        "class": "File",
+        "checksum": "sha1$aeb3d11bdf536511649129f4077d5cda6a324118",
+        "size": 12010,
+        "secondaryFiles": [
+            {
+                "basename": "ref.fasta.fai",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpx3fdaedx/ref.fasta.fai",
+                "class": "File",
+                "nameroot": "ref.fasta",
+                "nameext": ".fai",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpx3fdaedx/ref.fasta.fai"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpx3fdaedx/ref.fasta"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test embedded subworkflow" time="9.810625" class="subworkflow, workflow" file="embedded_subworkflow" url="cwltest:conformance_tests#99">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test required, optional and null secondaryFiles on array of files." time="8.188150" class="docker, inline_javascript, shell_command, command_line_tool" file="filesarray_secondaryfiles" url="cwltest:conformance_tests#100">
+			<system-out>{
+    "bai_list": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpfi0imn0_/fai.list",
+        "basename": "fai.list",
+        "nameroot": "fai",
+        "nameext": ".list",
+        "class": "File",
+        "checksum": "sha1$081fc0e57d6efa5f75eeb237aab1d04031132be6",
+        "size": 386,
+        "secondaryFiles": [],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpfi0imn0_/fai.list"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test required, optional and null secondaryFiles on array of files." time="1.785888" class="docker, inline_javascript, shell_command, command_line_tool" file="filesarray_secondaryfiles2" url="cwltest:conformance_tests#101"/>
+		<testcase name="Test directory literal output created by ExpressionTool" time="4.662024" class="inline_javascript, expression_tool" file="exprtool_directory_literal" url="cwltest:conformance_tests#102">
+			<system-out>{
+    "dir": {
+        "class": "Directory",
+        "basename": "a_directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp4nuov_mv/a_directory/hello.txt",
+                "size": 13,
+                "basename": "hello.txt",
+                "nameroot": "hello",
+                "nameext": ".txt",
+                "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp4nuov_mv/a_directory/hello.txt"
+            },
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp4nuov_mv/a_directory/whale.txt",
+                "size": 1111,
+                "basename": "whale.txt",
+                "nameroot": "whale",
+                "nameext": ".txt",
+                "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp4nuov_mv/a_directory/whale.txt"
+            }
+        ],
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp4nuov_mv/a_directory",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp4nuov_mv/a_directory"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test file literal output created by ExpressionTool" time="4.696213" class="inline_javascript, expression_tool" file="exprtool_file_literal" url="cwltest:conformance_tests#103">
+			<system-out>{
+    "lit": {
+        "class": "File",
+        "basename": "a_file",
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpuvc1mhuz/a_file",
+        "nameroot": "a_file",
+        "nameext": "",
+        "size": 19,
+        "checksum": "sha1$fea23663b9c8ed71968f86415b5ec091bb111448",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpuvc1mhuz/a_file"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test dockerOutputDirectory" time="5.309662" class="docker, command_line_tool" file="dockeroutputdir" url="cwltest:conformance_tests#104">
+			<system-out>{
+    "thing": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpy0nvbbe8/thing",
+        "basename": "thing",
+        "nameroot": "thing",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpy0nvbbe8/thing"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test hints with $import" time="5.285102" class="required, command_line_tool" file="hints_import" url="cwltest:conformance_tests#105">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpi4ithivr/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519",
+        "size": 15,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpi4ithivr/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test warning instead of error when default path is not found" time="4.405272" class="required, command_line_tool" file="default_path_notfound_warning" url="cwltest:conformance_tests#106">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test InlineJavascriptRequirement with multiple expressions in the same tool" time="6.705821" class="inline_javascript, command_line_tool" file="inlinejs_req_expressions" url="cwltest:conformance_tests#107">
+			<system-out>{
+    "args": [
+        "-A",
+        "2",
+        "-B",
+        "baz",
+        "-C",
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1",
+        "-D"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test if a writable input directory is recursively copied and writable" time="5.872418" class="initial_work_dir, shell_command, command_line_tool" file="input_dir_recurs_copy_writable" url="cwltest:conformance_tests#108">
+			<system-out>{
+    "output_dir": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir",
+        "basename": "work_dir",
+        "nameroot": "work_dir",
+        "nameext": "",
+        "class": "Directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/e",
+                "basename": "e",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "nameroot": "e",
+                "nameext": "",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/e"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/c",
+                "basename": "c",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/c/d",
+                        "basename": "d",
+                        "size": 0,
+                        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "nameroot": "d",
+                        "nameext": "",
+                        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/c/d"
+                    }
+                ],
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/c"
+            },
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/a",
+                "basename": "a",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "nameroot": "a",
+                "nameext": "",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/a"
+            },
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/b",
+                "basename": "b",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "nameroot": "b",
+                "nameext": "",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir/b"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/work_dir"
+    },
+    "test_result": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvvxt8637/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that missing parameters are null (not undefined) in expression" time="5.571557" class="inline_javascript, command_line_tool" file="null_missing_params" url="cwltest:conformance_tests#109">
+			<system-out>{
+    "out": "t\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that provided parameter is not null in expression" time="4.648306" class="inline_javascript, command_line_tool" file="param_notnull_expr" url="cwltest:conformance_tests#110">
+			<system-out>{
+    "out": "f\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test compound workflow document" time="13.366786" class="required, workflow" file="wf_compound_doc" url="cwltest:conformance_tests#111">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9cy9zeic/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$b9214658cc453331b62c2282b772a5c063dbd284",
+        "size": 1111,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9cy9zeic/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that nameroot and nameext are generated from basename at execution time by the runner" time="10.628322" class="step_input_expression, workflow" file="nameroot_nameext_generated" url="cwltest:conformance_tests#112">
+			<system-out>{
+    "extFile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmprhb0y40w/out.txt",
+        "basename": "out.txt",
+        "nameroot": "out",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$301a72c82a835e1737caf30f94d0eec210c4d9f1",
+        "size": 5,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmprhb0y40w/out.txt"
+    },
+    "rootFile": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmprhb0y40w/out.txt_2",
+        "basename": "out.txt",
+        "nameroot": "out",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$b4a583c391e234cf210e1d576f68f674c8ad7ecd",
+        "size": 10,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmprhb0y40w/out.txt_2"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that file path in $(inputs) for initialworkdir is in $(outdir)." time="4.173972" class="initial_work_dir, command_line_tool" file="initialworkpath_output" url="cwltest:conformance_tests#113">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list" time="8.703828" class="multiple_input, inline_javascript, workflow" file="wf_scatter_twopar_oneinput_flattenedmerge" url="cwltest:conformance_tests#114">
+			<system-out>{
+    "count_output": 34
+}
+</system-out>
+		</testcase>
+		<testcase name="Test step input with multiple sources with multiple types" time="8.303838" class="step_input, inline_javascript, multiple_input, workflow" file="wf_multiplesources_multipletypes" url="cwltest:conformance_tests#115">
+			<system-out>{
+    "result": 12
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that shell directives are not interpreted." time="4.602737" class="required, command_line_tool" file="shelldir_notinterpreted" url="cwltest:conformance_tests#116">
+			<system-out>{
+    "stderr_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpz3jw9n2i/ef0ba8266ef65043fc4e25a78541a185d8ec6246",
+        "basename": "ef0ba8266ef65043fc4e25a78541a185d8ec6246",
+        "nameroot": "ef0ba8266ef65043fc4e25a78541a185d8ec6246",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpz3jw9n2i/ef0ba8266ef65043fc4e25a78541a185d8ec6246"
+    },
+    "stdout_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpz3jw9n2i/427a8c64477e00af8a376107edcb31963825ebe5",
+        "basename": "427a8c64477e00af8a376107edcb31963825ebe5",
+        "nameroot": "427a8c64477e00af8a376107edcb31963825ebe5",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$1555252d52d4ec3262538a4426a83a99cfff4402",
+        "size": 9,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpz3jw9n2i/427a8c64477e00af8a376107edcb31963825ebe5"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that shell directives are quoted." time="4.494392" class="shell_command, command_line_tool" file="shelldir_quoted" url="cwltest:conformance_tests#117">
+			<system-out>{
+    "stderr_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp8gppa4la/a915c72b5611295c47f6193e28f9aa77bcaf61e6",
+        "basename": "a915c72b5611295c47f6193e28f9aa77bcaf61e6",
+        "nameroot": "a915c72b5611295c47f6193e28f9aa77bcaf61e6",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp8gppa4la/a915c72b5611295c47f6193e28f9aa77bcaf61e6"
+    },
+    "stdout_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp8gppa4la/5c5fb0f0f6d42c47085d0643acfe3cca1bac2ab8",
+        "basename": "5c5fb0f0f6d42c47085d0643acfe3cca1bac2ab8",
+        "nameroot": "5c5fb0f0f6d42c47085d0643acfe3cca1bac2ab8",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$1555252d52d4ec3262538a4426a83a99cfff4402",
+        "size": 9,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp8gppa4la/5c5fb0f0f6d42c47085d0643acfe3cca1bac2ab8"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test empty writable dir with InitialWorkDirRequirement" time="4.441036" class="inline_javascript, initial_work_dir, command_line_tool" file="initial_workdir_empty_writable" url="cwltest:conformance_tests#118">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpovgq5pau/emptyWritableDir",
+        "basename": "emptyWritableDir",
+        "nameroot": "emptyWritableDir",
+        "nameext": "",
+        "class": "Directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpovgq5pau/emptyWritableDir/blurg",
+                "basename": "blurg",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "nameroot": "blurg",
+                "nameext": "",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpovgq5pau/emptyWritableDir/blurg"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpovgq5pau/emptyWritableDir"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test empty writable dir with InitialWorkDirRequirement inside Docker" time="6.181432" class="inline_javascript, initial_work_dir, command_line_tool" file="initial_workdir_empty_writable_docker" url="cwltest:conformance_tests#119">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvgexuqr9/emptyWritableDir",
+        "basename": "emptyWritableDir",
+        "nameroot": "emptyWritableDir",
+        "nameext": "",
+        "class": "Directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvgexuqr9/emptyWritableDir/blurg",
+                "basename": "blurg",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "nameroot": "blurg",
+                "nameext": "",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvgexuqr9/emptyWritableDir/blurg"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvgexuqr9/emptyWritableDir"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test dynamic resource reqs referencing inputs" time="7.426849" class="resource, command_line_tool" file="dynamic_resreq_inputs" url="cwltest:conformance_tests#120">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqm7v0y3i/cores.txt",
+        "basename": "cores.txt",
+        "nameroot": "cores",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqm7v0y3i/cores.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test file literal as input without Docker" time="4.249144" class="required, command_line_tool" file="fileliteral_input_docker" url="cwltest:conformance_tests#121">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpeemsy10z/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$d0e04ff6c413c7d57f9a0ca0a33cd3ab52e2dd9c",
+        "size": 18,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpeemsy10z/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that OutputBinding.glob is sorted as specified by POSIX" time="4.258992" class="required, command_line_tool" file="outputbinding_glob_sorted" url="cwltest:conformance_tests#122">
+			<system-out>{
+    "letters": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/a",
+            "basename": "a",
+            "nameroot": "a",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/a"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/b",
+            "basename": "b",
+            "nameroot": "b",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/b"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/c",
+            "basename": "c",
+            "nameroot": "c",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/c"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/w",
+            "basename": "w",
+            "nameroot": "w",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/w"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/x",
+            "basename": "x",
+            "nameroot": "x",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/x"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/y",
+            "basename": "y",
+            "nameroot": "y",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/y"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/z",
+            "basename": "z",
+            "nameroot": "z",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpajkfugo0/z"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement with a nested directory structure from another step" time="8.276397" class="initial_work_dir, workflow" file="initialworkdir_nesteddir" url="cwltest:conformance_tests#123">
+			<system-out>{
+    "ya_empty": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqodqv2ww/ya",
+        "basename": "ya",
+        "nameroot": "ya",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqodqv2ww/ya"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that boolean flags do not appear on command line if inputBinding is empty and not null" time="6.526926" class="required, command_line_tool" file="booleanflags_cl_noinputbinding" url="cwltest:conformance_tests#124">
+			<system-out>{
+    "args": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that expression engine does not fail to evaluate reference to self with unprovided input" time="5.351963" class="required, command_line_tool" file="expr_reference_self_noinput" url="cwltest:conformance_tests#125">
+			<system-out>{
+    "args": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test successCodes" time="4.398528" class="required, command_line_tool" file="success_codes" url="cwltest:conformance_tests#126">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test simple workflow with a dynamic resource requirement" time="8.766468" class="resource, workflow" file="dynamic_resreq_wf" url="cwltest:conformance_tests#127">
+			<system-out>{
+    "cores": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5q5k5jrh/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5q5k5jrh/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that empty array input does not add anything to command line" time="5.232379" class="required, command_line_tool" file="cl_empty_array_input" url="cwltest:conformance_tests#128">
+			<system-out>{
+    "args": []
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that ResourceRequirement on a step level redefines requirement on the workflow level" time="9.589880" class="resource, workflow" file="resreq_step_overrides_wf" url="cwltest:conformance_tests#129">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpbey918lw/cores.txt",
+        "basename": "cores.txt",
+        "nameroot": "cores",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpbey918lw/cores.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom with constant value overriding provided array inputs" time="6.993729" class="required, command_line_tool" file="valuefrom_constant_overrides_inputs" url="cwltest:conformance_tests#130">
+			<system-out>{
+    "args": [
+        "replacementValue"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test dynamic resource reqs referencing the size of Files inside a Directory" time="7.549917" class="resource, command_line_tool" file="dynamic_resreq_filesizes" url="cwltest:conformance_tests#131">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpbtoi0bq0/cores.txt",
+        "basename": "cores.txt",
+        "nameroot": "cores",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpbtoi0bq0/cores.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs." time="8.284038" class="required, workflow" file="wf_step_connect_undeclared_param" url="cwltest:conformance_tests#132">
+			<system-out>{
+    "out": "hello inp1\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool." time="12.355889" class="required, workflow" file="wf_step_access_undeclared_param" url="cwltest:conformance_tests#133"/>
+		<testcase name="Test $HOME and $TMPDIR are set correctly in Docker without using return code" time="5.286383" class="shell_command, command_line_tool" file="env_home_tmpdir_docker" url="cwltest:conformance_tests#134">
+			<system-out>{
+    "results": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp_pey86er/results",
+        "basename": "results",
+        "nameroot": "results",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$7d5ca8c0c03e883c56c4eb1ef6f6bb9bccad4d86",
+        "size": 8,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp_pey86er/results"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)" time="9.369895" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom_inputs" url="cwltest:conformance_tests#135">
+			<system-out>{
+    "out": [
+        "foo one one",
+        "foo one two",
+        "foo one three",
+        "foo one four"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="SchemaDefRequirement with $import, and packed" time="10.228692" class="schema_def, workflow" file="packed_import_schema" url="cwltest:conformance_tests#136">
+			<system-out>{
+    "output_bam": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp7jdqpjlz/a.bam",
+        "basename": "a.bam",
+        "nameroot": "a",
+        "nameext": ".bam",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp7jdqpjlz/a.bam"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test specifying secondaryFiles in subdirectories of the job input document." time="4.288965" class="shell_command, command_line_tool" file="job_input_secondary_subdirs" url="cwltest:conformance_tests#137">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmph08vr70b/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$9d9bc8f5252d39274b5dfbac64216c6e888f5dfc",
+        "size": 14,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmph08vr70b/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test specifying secondaryFiles in same subdirectory of the job input as the primary input file." time="4.478649" class="shell_command, command_line_tool" file="job_input_subdir_primary_and_secondary_subdirs" url="cwltest:conformance_tests#138">
+			<system-out>{
+    "outlist": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpq6127uha/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$9d9bc8f5252d39274b5dfbac64216c6e888f5dfc",
+        "size": 14,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpq6127uha/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test simple scatter over an embedded subworkflow" time="12.617765" class="workflow, inline_javascript" file="scatter_embedded_subworkflow" url="cwltest:conformance_tests#139">
+			<system-out>{
+    "count_output": [
+        16,
+        1
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test simple multiple input scatter over an embedded subworkflow" time="13.027329" class="workflow, scatter, subworkflow, multiple_input, inline_javascript" file="scatter_multi_input_embedded_subworkflow" url="cwltest:conformance_tests#140">
+			<system-out>{
+    "count_output": [
+        16,
+        1
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test twice nested subworkflow" time="9.818198" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_embedded_subsubworkflow" url="cwltest:conformance_tests#141">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test subworkflow of mixed depth with tool first" time="15.762631" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_with_tool_and_subsubworkflow" url="cwltest:conformance_tests#142">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test subworkflow of mixed depth with tool after" time="12.829728" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_with_subsubworkflow_and_tool" url="cwltest:conformance_tests#143">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test record type inputs to and outputs from workflows." time="8.460068" class="workflow, shell_command" file="workflow_records_inputs_and_outputs" url="cwltest:conformance_tests#144">
+			<system-out>{
+    "orec": {
+        "ofoo": {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpibptj2qi/foo",
+            "basename": "foo",
+            "nameroot": "foo",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+            "size": 1111,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpibptj2qi/foo"
+        },
+        "obar": {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpibptj2qi/bar",
+            "basename": "bar",
+            "nameroot": "bar",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$aeb3d11bdf536511649129f4077d5cda6a324118",
+            "size": 12010,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpibptj2qi/bar"
+        }
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test integer workflow input and outputs" time="8.314108" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input" url="cwltest:conformance_tests#145">
+			<system-out>{
+    "o": 10
+}
+</system-out>
+		</testcase>
+		<testcase name="Test optional integer workflow inputs (specified)" time="8.337240" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_optional_specified" url="cwltest:conformance_tests#146">
+			<system-out>{
+    "o": 10
+}
+</system-out>
+		</testcase>
+		<testcase name="Test optional integer workflow inputs (unspecified)" time="8.433234" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_optional_unspecified" url="cwltest:conformance_tests#147">
+			<system-out>{
+    "o": 4
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default integer workflow inputs (specified)" time="8.492740" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_specified" url="cwltest:conformance_tests#148">
+			<system-out>{
+    "o": 10
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default integer workflow inputs (unspecified)" time="9.465681" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_unspecified" url="cwltest:conformance_tests#149">
+			<system-out>{
+    "o": 8
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default integer tool and workflow inputs (unspecified)" time="8.475992" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_and_tool_integer_input_default" url="cwltest:conformance_tests#150">
+			<system-out>{
+    "o": 13
+}
+</system-out>
+		</testcase>
+		<testcase name="Test File input with default unspecified to workflow" time="7.845025" class="workflow" file="workflow_file_input_default_unspecified" url="cwltest:conformance_tests#151">
+			<system-out>{
+    "o": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvsye9vw4/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "size": 1111,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvsye9vw4/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test File input with default specified to workflow" time="7.239886" class="workflow" file="workflow_file_input_default_specified" url="cwltest:conformance_tests#152">
+			<system-out>{
+    "o": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp2m07z7d2/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp2m07z7d2/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with one file in array specified." time="4.407622" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_array_of_one_file_provided" url="cwltest:conformance_tests#153">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpu4cog8gu/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpu4cog8gu/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with a few files in array specified." time="4.442108" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_many_files_provided" url="cwltest:conformance_tests#154">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpsq_b6ot1/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$6d1723861ad5a1260f1c3c07c93076c5a215f646",
+        "size": 1114,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpsq_b6ot1/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with one file specified." time="4.748772" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_single_file_provided" url="cwltest:conformance_tests#155">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpdp6f6f6v/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376",
+        "size": 1111,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpdp6f6f6v/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with null specified." time="6.125239" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_nothing_provided" url="cwltest:conformance_tests#156">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpc7z6bmdy/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$503458abf7614be3fb26d85ff5d8f3e17aa0a552",
+        "size": 10,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpc7z6bmdy/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with integer input to a tool" time="6.055274" class="command_line_tool, inline_javascript" file="clt_any_input_with_integer_provided" url="cwltest:conformance_tests#157">
+			<system-out>{
+    "t1": 7
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with string input to a tool" time="5.582486" class="command_line_tool, inline_javascript" file="clt_any_input_with_string_provided" url="cwltest:conformance_tests#158">
+			<system-out>{
+    "t1": "7"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with file input to a tool" time="5.055526" class="command_line_tool, inline_javascript" file="clt_any_input_with_file_provided" url="cwltest:conformance_tests#159">
+			<system-out>{
+    "t1": "File"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with array input to a tool" time="5.554328" class="command_line_tool, inline_javascript" file="clt_any_input_with_mixed_array_provided" url="cwltest:conformance_tests#160">
+			<system-out>{
+    "t1": [
+        1,
+        "moocow"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with record input to a tool" time="4.500792" class="command_line_tool, inline_javascript" file="clt_any_input_with_record_provided" url="cwltest:conformance_tests#161">
+			<system-out>{
+    "t1": {
+        "moo": 1,
+        "cow": 5
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with integer input to a workflow" time="8.581758" class="workflow, inline_javascript" file="workflow_any_input_with_integer_provided" url="cwltest:conformance_tests#162">
+			<system-out>{
+    "t1": 7
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with string input to a workflow" time="11.236053" class="workflow, inline_javascript" file="workflow_any_input_with_string_provided" url="cwltest:conformance_tests#163">
+			<system-out>{
+    "t1": "7"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with file input to a workflow" time="8.714201" class="workflow, inline_javascript" file="workflow_any_input_with_file_provided" url="cwltest:conformance_tests#164">
+			<system-out>{
+    "t1": "File"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with array input to a workflow" time="8.764781" class="workflow, inline_javascript" file="workflow_any_input_with_mixed_array_provided" url="cwltest:conformance_tests#165">
+			<system-out>{
+    "t1": [
+        1,
+        "moocow"
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with record input to a tool" time="8.646125" class="workflow, inline_javascript" file="workflow_any_input_with_record_provided" url="cwltest:conformance_tests#166">
+			<system-out>{
+    "t1": {
+        "moo": 1,
+        "cow": 5
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test union type input to workflow with default unspecified" time="11.182819" class="workflow, inline_javascript, expression_tool" file="workflow_union_default_input_unspecified" url="cwltest:conformance_tests#167">
+			<system-out>{
+    "o": "the default value"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test union type input to workflow with default specified as file" time="9.234396" class="workflow, inline_javascript, expression_tool" file="workflow_union_default_input_with_file_provided" url="cwltest:conformance_tests#168">
+			<system-out>{
+    "o": "File"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step from literal (string)." time="8.080797" class="workflow, step_input" file="workflowstep_valuefrom_string" url="cwltest:conformance_tests#169">
+			<system-out>{
+    "val": "moocow\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step using basename." time="9.836484" class="workflow, step_input" file="workflowstep_valuefrom_file_basename" url="cwltest:conformance_tests#170">
+			<system-out>{
+    "val1": "whale.txt\n",
+    "val2": "step1_out\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test output arrays in a tool (with ints)." time="4.928460" class="expression_tool, inline_javascript" file="expression_tool_int_array_output" url="cwltest:conformance_tests#171">
+			<system-out>{
+    "o": [
+        0,
+        1,
+        2
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test output arrays in a workflow (with ints)." time="8.380425" class="workflow, expression_tool, inline_javascript" file="workflowstep_int_array_input_output" url="cwltest:conformance_tests#172">
+			<system-out>{
+    "o": 12
+}
+</system-out>
+		</testcase>
+		<testcase name="Test output arrays in a workflow (with Files)." time="11.646276" class="workflow, expression_tool, inline_javascript" file="workflow_file_array_output" url="cwltest:conformance_tests#173">
+			<system-out>{
+    "o": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpu8ljmkoq/moo",
+            "basename": "moo",
+            "nameroot": "moo",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpu8ljmkoq/moo"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpu8ljmkoq/cow",
+            "basename": "cow",
+            "nameroot": "cow",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpu8ljmkoq/cow"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Docker ENTRYPOINT usage" time="6.746973" class="command_line_tool, docker" file="docker_entrypoint" url="cwltest:conformance_tests#174">
+			<system-out>{
+    "cow": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmptcbhtyoc/cow",
+        "basename": "cow",
+        "nameroot": "cow",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$7a788f56fa49ae0ba5ebde780efe4d6a89b5db47",
+        "size": 4,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmptcbhtyoc/cow"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test use of size in expressions for an empty file" time="5.587823" class="command_line_tool, inline_javascript" file="clt_file_size_property_with_empty_file" url="cwltest:conformance_tests#175">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9pygx1ed/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$dad5a8472b87f6c5ef87d8fc6ef1458defc57250",
+        "size": 11,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9pygx1ed/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test use of size in expressions for a few files" time="5.630557" class="command_line_tool, inline_javascript" file="clt_file_size_property_with_multi_file" url="cwltest:conformance_tests#176">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp7u1asdy0/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$9def39730e8012bd09bf8387648982728501737d",
+        "size": 31,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp7u1asdy0/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Any without defaults, unspecified, should fail." time="1.233596" class="command_line_tool, required" file="any_without_defaults_unspecified_fails" url="cwltest:conformance_tests#177"/>
+		<testcase name="Test Any without defaults, specified, should fail." time="1.226745" class="command_line_tool, required" file="any_without_defaults_specified_fails" url="cwltest:conformance_tests#178"/>
+		<testcase name="Test default value on step input parameter, no ExpressionTool" time="7.305216" class="workflow, required" file="step_input_default_value_noexp" url="cwltest:conformance_tests#179">
+			<system-out>{
+    "wc_output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpjvu049j1/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$3596ea087bfdaf52380eae441077572ed289d657",
+        "size": 3,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpjvu049j1/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source, no ExpressionTool" time="8.411221" class="workflow, required" file="step_input_default_value_overriden_noexp" url="cwltest:conformance_tests#180">
+			<system-out>{
+    "wc_output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpzr_xzfl4/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpzr_xzfl4/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test nested workflow, without ExpressionTool" time="8.332495" class="workflow, subworkflow" file="nested_workflow_noexp" url="cwltest:conformance_tests#181">
+			<system-out>{
+    "wc_output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpsfaf0c41/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$3596ea087bfdaf52380eae441077572ed289d657",
+        "size": 3,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpsfaf0c41/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test step input with multiple sources with multiple types, without ExpressionTool" time="8.329676" class="workflow, step_input, inline_javascript, multiple_input" file="wf_multiplesources_multipletypes_noexp" url="cwltest:conformance_tests#182">
+			<system-out>{
+    "result": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp2zumy352/result.txt",
+        "basename": "result.txt",
+        "nameroot": "result",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$ad552e6dc057d1d825bf49df79d6b98eba846ebe",
+        "size": 3,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp2zumy352/result.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input." time="9.529518" class="workflow, resource" file="dynamic_resreq_wf_optional_file_default" url="cwltest:conformance_tests#183">
+			<system-out>{
+    "cores": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpu3xxpwsl/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpu3xxpwsl/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input." time="8.557826" class="workflow, resource" file="dynamic_resreq_wf_optional_file_step_default" url="cwltest:conformance_tests#184">
+			<system-out>{
+    "cores": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp570rnv_m/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp570rnv_m/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itelf provides a default value (a local file) for this input." time="8.519067" class="workflow, resource" file="dynamic_resreq_wf_optional_file_wf_default" url="cwltest:conformance_tests#185">
+			<system-out>{
+    "cores": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpypj8w0l9/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpypj8w0l9/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With passthrough first step" time="8.704173" class="workflow, inline_javascript" file="step_input_default_value_overriden_2nd_step" url="cwltest:conformance_tests#186">
+			<system-out>{
+    "count_output": 1
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool" time="9.323879" class="workflow, required" file="step_input_default_value_overriden_2nd_step_noexp" url="cwltest:conformance_tests#187">
+			<system-out>{
+    "wc_output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpubccd0s0/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e",
+        "size": 2,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpubccd0s0/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With null producing first step" time="12.014614" class="workflow, inline_javascript" file="step_input_default_value_overriden_2nd_step_null" url="cwltest:conformance_tests#188">
+			<system-out>{
+    "count_output": 16
+}
+</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool" time="10.689551" class="workflow, required" file="step_input_default_value_overriden_2nd_step_null_noexp" url="cwltest:conformance_tests#189">
+			<system-out>{
+    "wc_output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmprdqiihzw/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$3596ea087bfdaf52380eae441077572ed289d657",
+        "size": 3,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmprdqiihzw/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Pipe to stdin from user provided local File via a Directory literal" time="4.350099" class="command_line_tool, required" file="stdin_from_directory_literal_with_local_file" url="cwltest:conformance_tests#190">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpfa9g0uk2/c4154090e3d3bdf6f151cf7d2e71554c0f1e9369",
+        "basename": "c4154090e3d3bdf6f151cf7d2e71554c0f1e9369",
+        "nameroot": "c4154090e3d3bdf6f151cf7d2e71554c0f1e9369",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$47a013e660d408619d894b20806b1d5086aab03b",
+        "size": 13,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpfa9g0uk2/c4154090e3d3bdf6f151cf7d2e71554c0f1e9369"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Pipe to stdin from literal File via a Directory literal" time="4.512564" class="command_line_tool, required" file="stdin_from_directory_literal_with_literal_file" url="cwltest:conformance_tests#191">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmphix88syn/c4154090e3d3bdf6f151cf7d2e71554c0f1e9369",
+        "basename": "c4154090e3d3bdf6f151cf7d2e71554c0f1e9369",
+        "nameroot": "c4154090e3d3bdf6f151cf7d2e71554c0f1e9369",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$ef88e689559565999700d6fea7cf7ba306d04360",
+        "size": 26,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmphix88syn/c4154090e3d3bdf6f151cf7d2e71554c0f1e9369"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test non-stdin reference to literal File via a Directory literal" time="4.412781" class="command_line_tool, required" file="directory_literal_with_literal_file_nostdin" url="cwltest:conformance_tests#192">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmph7ry_8p7/output.txt",
+        "basename": "output.txt",
+        "nameroot": "output",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$ef88e689559565999700d6fea7cf7ba306d04360",
+        "size": 26,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmph7ry_8p7/output.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test CommandLineTool without inputs" time="5.317333" class="command_line_tool, required" file="no_inputs_commandlinetool" url="cwltest:conformance_tests#193">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp7n5t0atz/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae",
+        "size": 4,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp7n5t0atz/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test CommandLineTool without outputs" time="5.386455" class="command_line_tool, required" file="no_outputs_commandlinetool" url="cwltest:conformance_tests#194">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test Workflow without inputs" time="9.302677" class="workflow, required" file="no_inputs_workflow" url="cwltest:conformance_tests#195">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpkxluyxv9/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae",
+        "size": 4,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpkxluyxv9/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test Workflow without outputs" time="9.260933" class="workflow, required" file="no_outputs_workflow" url="cwltest:conformance_tests#196">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test an anonymous enum inside an array inside a record" time="4.289587" class="command_line_tool, required" file="anonymous_enum_in_array" url="cwltest:conformance_tests#197">
+			<system-out>{
+    "result": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp7m79vq_k/c37e6aee3b8aca1d8b9209a504ab04c88568e3a8",
+        "basename": "c37e6aee3b8aca1d8b9209a504ab04c88568e3a8",
+        "nameroot": "c37e6aee3b8aca1d8b9209a504ab04c88568e3a8",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$2132943d72c39423e0b9425cbc40dfd5bf3e9cb2",
+        "size": 39,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp7m79vq_k/c37e6aee3b8aca1d8b9209a504ab04c88568e3a8"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test an anonymous enum inside an array inside a record, SchemaDefRequirement" time="4.313095" class="command_line_tool, schema_def" file="schema-def_anonymous_enum_in_array" url="cwltest:conformance_tests#198">
+			<system-out>{
+    "result": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqtk5iu6h/99fbc222cbde295ea1fc9d55b28e8766ba786b61",
+        "basename": "99fbc222cbde295ea1fc9d55b28e8766ba786b61",
+        "nameroot": "99fbc222cbde295ea1fc9d55b28e8766ba786b61",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$f17c7d81f66e1520fca25b96b90eeeae5bbf08b0",
+        "size": 39,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqtk5iu6h/99fbc222cbde295ea1fc9d55b28e8766ba786b61"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test command execution in with stdin and stdout redirection using stdin shortcut" time="5.712398" class="command_line_tool, docker" file="stdin_shorcut" url="cwltest:conformance_tests#199">
+			<failure type="failure">expected: {
+    "output": {
+        "checksum": "sha1$2936abd60952276ffbf91d709b19c6c48c263947",
+        "class": "File",
+        "location": "output",
+        "size": 24
+    }
+}
+got: {
+    "output": {
+        "basename": "output",
+        "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+        "class": "File",
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9ztagrvr/output",
+        "nameext": "",
+        "nameroot": "output",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9ztagrvr/output",
+        "size": 15
+    }
+}
+caused by: failed comparison for key 'output': expected: {
+    "checksum": "sha1$2936abd60952276ffbf91d709b19c6c48c263947",
+    "class": "File",
+    "location": "output",
+    "size": 24
+}
+got: {
+    "basename": "output",
+    "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+    "class": "File",
+    "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9ztagrvr/output",
+    "nameext": "",
+    "nameroot": "output",
+    "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9ztagrvr/output",
+    "size": 15
+}
+caused by: Output file checksums do not match: actual 'sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae' is not equal to expected 'sha1$2936abd60952276ffbf91d709b19c6c48c263947'</failure>
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9ztagrvr/output",
+        "basename": "output",
+        "nameroot": "output",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+        "size": 15,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9ztagrvr/output"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test secondaryFiles on anonymous record fields" time="4.487373" class="command_line_tool, required" file="secondary_files_in_unnamed_records" url="cwltest:conformance_tests#200">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test secondaryFiles on SchemaDefRequirement record fields" time="4.340878" class="command_line_tool, schema_def" file="secondary_files_in_named_records" url="cwltest:conformance_tests#201">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test secondaryFiles on output record fields" time="4.381990" class="command_line_tool, required" file="secondary_files_in_output_records" url="cwltest:conformance_tests#202">
+			<system-out>{
+    "record_output": {
+        "f1": {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/A",
+            "basename": "A",
+            "nameroot": "A",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "secondaryFiles": [
+                {
+                    "basename": "A.s2",
+                    "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/A.s2",
+                    "class": "File",
+                    "nameroot": "A",
+                    "nameext": ".s2",
+                    "size": 0,
+                    "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                    "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/A.s2"
+                }
+            ],
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/A"
+        },
+        "f2": [
+            {
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/B",
+                "basename": "B",
+                "nameroot": "B",
+                "nameext": "",
+                "class": "File",
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "size": 0,
+                "secondaryFiles": [
+                    {
+                        "basename": "B.s3",
+                        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/B.s3",
+                        "class": "File",
+                        "nameroot": "B",
+                        "nameext": ".s3",
+                        "size": 0,
+                        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/B.s3"
+                    }
+                ],
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/B"
+            },
+            {
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/C",
+                "basename": "C",
+                "nameroot": "C",
+                "nameext": "",
+                "class": "File",
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "size": 0,
+                "secondaryFiles": [
+                    {
+                        "basename": "C.s3",
+                        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/C.s3",
+                        "class": "File",
+                        "nameroot": "C",
+                        "nameext": ".s3",
+                        "size": 0,
+                        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/C.s3"
+                    }
+                ],
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvxipzybz/C"
+            }
+        ]
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test secondaryFiles propagation through workflow" time="8.417903" class="workflow, required" file="secondary_files_workflow_propagation" url="cwltest:conformance_tests#203">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test checking when secondaryFiles are missing" time="11.888473" class="workflow, required" file="secondary_files_missing" url="cwltest:conformance_tests#204"/>
+		<testcase name="Test format on anonymous record fields" time="6.683954" class="command_line_tool, required" file="input_records_file_entry_with_format" url="cwltest:conformance_tests#205">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test file format checking on parameter" time="1.229499" class="command_line_tool, format_checking" file="input_records_file_entry_with_format_and_bad_regular_input_file_format" url="cwltest:conformance_tests#206"/>
+		<testcase name="Test file format checking on record field" time="1.197145" class="command_line_tool, format_checking" file="input_records_file_entry_with_format_and_bad_entry_file_format" url="cwltest:conformance_tests#207"/>
+		<testcase name="Test file format checking on array item" time="1.153390" class="command_line_tool, format_checking" file="input_records_file_entry_with_format_and_bad_entry_array_file_format" url="cwltest:conformance_tests#208"/>
+		<testcase name="Test format on output record fields" time="4.447828" class="command_line_tool, format_checking" file="record_output_file_entry_format" url="cwltest:conformance_tests#209">
+			<system-out>{
+    "f1out": {
+        "class": "File",
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5gmke_rk/A",
+        "size": 0,
+        "basename": "A",
+        "nameroot": "A",
+        "nameext": "",
+        "format": "http://example.com/format1",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5gmke_rk/A"
+    },
+    "record_output": {
+        "f2out": {
+            "class": "File",
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5gmke_rk/B",
+            "size": 0,
+            "basename": "B",
+            "nameroot": "B",
+            "nameext": "",
+            "format": "http://example.com/format2",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5gmke_rk/B"
+        }
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test WorkflowInputParameter.inputBinding.loadContents" time="8.603088" class="workflow, step_input, inline_javascript, expression_tool" file="workflow_input_inputBinding_loadContents" url="cwltest:conformance_tests#210">
+			<system-out>{
+    "my_int": 42
+}
+</system-out>
+		</testcase>
+		<testcase name="Test WorkflowInputParameter.loadContents" time="10.044868" class="workflow, step_input, inline_javascript, expression_tool" file="workflow_input_loadContents_without_inputBinding" url="cwltest:conformance_tests#211">
+			<system-out>{
+    "my_int": 42
+}
+</system-out>
+		</testcase>
+		<testcase name="Test loadContents on InputParameter.loadContents (expression)" time="9.868287" class="workflow, step_input, inline_javascript, expression_tool" file="expression_tool_input_loadContents" url="cwltest:conformance_tests#212">
+			<system-out>{
+    "my_int": 42
+}
+</system-out>
+		</testcase>
+		<testcase name="Test WorkflowStepInput.loadContents" time="8.644590" class="workflow, step_input, inline_javascript, expression_tool" file="workflow_step_in_loadContents" url="cwltest:conformance_tests#213">
+			<system-out>{
+    "my_int": 42
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that job fails when exceeding time limit" time="15.251525" class="command_line_tool, timelimit" file="timelimit_basic" url="cwltest:conformance_tests#214"/>
+		<testcase name="Test invalid time limit value" time="10.687657" class="command_line_tool, timelimit" file="timelimit_invalid" url="cwltest:conformance_tests#215"/>
+		<testcase name="Test zero timelimit means no limit" time="19.434607" class="command_line_tool, timelimit" file="timelimit_zero_unlimited" url="cwltest:conformance_tests#216">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test expression in time limit" time="15.255111" class="command_line_tool, timelimit, inline_javascript" file="timelimit_from_expression" url="cwltest:conformance_tests#217"/>
+		<testcase name="Test timelimit in expressiontool is ignored" time="8.562763" class="expression_tool, timelimit, inline_javascript" file="timelimit_expressiontool" url="cwltest:conformance_tests#218">
+			<system-out>{
+    "status": "Done"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that tool in workflow fails when exceeding time limit" time="0.976448" class="workflow, timelimit" file="timelimit_basic_wf" url="cwltest:conformance_tests#219"/>
+		<testcase name="Test that workflow level time limit is not applied to workflow execution time" time="14.578832" class="workflow, timelimit, inline_javascript" file="timelimit_invalid_wf" url="cwltest:conformance_tests#220">
+			<system-out>{
+    "o": "time passed"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test zero timelimit means no limit in workflow" time="18.884025" class="workflow, timelimit, inline_javascript" file="timelimit_zero_unlimited_wf" url="cwltest:conformance_tests#221">
+			<system-out>{
+    "o": "time passed"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test expression in time limit in workflow" time="0.970026" class="workflow, timelimit, inline_javascript" file="timelimit_from_expression_wf" url="cwltest:conformance_tests#222"/>
+		<testcase name="Test networkaccess enabled" time="7.569184" class="command_line_tool, networkaccess" file="networkaccess" url="cwltest:conformance_tests#223">
+			<system-out>{}
+</system-out>
+		</testcase>
+		<testcase name="Test networkaccess is disabled by default" time="13.409786" class="networkaccess" file="networkaccess_disabled" url="cwltest:conformance_tests#224"/>
+		<testcase name="Test null and array input in InitialWorkDirRequirement" time="4.309761" class="resource, command_line_tool" url="cwltest:conformance_tests#225">
+			<system-out>{
+    "output": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpl8_djg1z/lsout",
+        "basename": "lsout",
+        "nameroot": "lsout",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e453d26efd859a9abc80ae1a1d9d63db72376053",
+        "size": 32,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpl8_djg1z/lsout"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test array of directories InitialWorkDirRequirement" time="4.310349" class="resource, command_line_tool" url="cwltest:conformance_tests#226">
+			<system-out>{
+    "output": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9akyb47a/a",
+            "basename": "a",
+            "nameroot": "a",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9akyb47a/a"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp9akyb47a/B",
+            "basename": "B",
+            "nameroot": "B",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "size": 0,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp9akyb47a/B"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test requirements in input document via EnvVarRequirement" time="4.191895" class="command_line_tool, input_object_requirements" file="cwl_requirements_addition" url="cwltest:conformance_tests#227">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp_afyw1kv/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519",
+        "size": 15,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp_afyw1kv/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test conflicting requirements in input document via EnvVarRequirement and expression" time="4.413130" class="command_line_tool, input_object_requirements" file="cwl_requirements_override_expression" url="cwltest:conformance_tests#228">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpxrr54bhw/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519",
+        "size": 15,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpxrr54bhw/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test conflicting requirements in input document via EnvVarRequirement" time="4.190286" class="command_line_tool, input_object_requirements" file="cwl_requirements_override_static" url="cwltest:conformance_tests#229">
+			<system-out>{
+    "out": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpfmk5bjvt/out",
+        "basename": "out",
+        "nameroot": "out",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$715e62184492851512a020c36ab7118eca114a59",
+        "size": 23,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpfmk5bjvt/out"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test output of InitialWorkDir" time="5.253006" class="initial_work_dir" url="cwltest:conformance_tests#230">
+			<system-out>{
+    "OUTPUT": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp96fj3wm_/ref.fasta",
+        "basename": "ref.fasta",
+        "nameroot": "ref",
+        "nameext": ".fasta",
+        "class": "File",
+        "checksum": "sha1$aeb3d11bdf536511649129f4077d5cda6a324118",
+        "size": 12010,
+        "secondaryFiles": [
+            {
+                "basename": "ref.fasta.fai",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp96fj3wm_/ref.fasta.fai",
+                "class": "File",
+                "nameroot": "ref.fasta",
+                "nameext": ".fai",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp96fj3wm_/ref.fasta.fai"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp96fj3wm_/ref.fasta"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test if full paths are allowed in glob" time="5.050363" class="initial_work_dir" url="cwltest:conformance_tests#231">
+			<system-out>{
+    "OUTPUT": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpymqo_7ij/ref.fasta",
+        "basename": "ref.fasta",
+        "nameroot": "ref",
+        "nameext": ".fasta",
+        "class": "File",
+        "checksum": "sha1$aeb3d11bdf536511649129f4077d5cda6a324118",
+        "size": 12010,
+        "secondaryFiles": [
+            {
+                "basename": "ref.fasta.fai",
+                "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpymqo_7ij/ref.fasta.fai",
+                "class": "File",
+                "nameroot": "ref.fasta",
+                "nameext": ".fai",
+                "size": 0,
+                "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpymqo_7ij/ref.fasta.fai"
+            }
+        ],
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpymqo_7ij/ref.fasta"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test fail trying to glob outside output directory" time="11.910846" class="required" url="cwltest:conformance_tests#232"/>
+		<testcase name="symlink to file outside of working directory should NOT be retrieved" time="11.587436" class="required" url="cwltest:conformance_tests#233"/>
+		<testcase name="symlink to file inside of working directory should be retrieved" time="6.205269" class="required" url="cwltest:conformance_tests#234">
+			<system-out>{
+    "output_file": {
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpsu0jht5h/symlink.txt",
+        "basename": "symlink.txt",
+        "nameroot": "symlink",
+        "nameext": ".txt",
+        "class": "File",
+        "checksum": "sha1$cd28ec34f3f9425aca544b6332453708e8aaa82a",
+        "size": 27,
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpsu0jht5h/symlink.txt"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="inplace update has side effect on file content" time="10.157978" class="inplace_update" url="cwltest:conformance_tests#235">
+			<skipped type="skipped" message="Unsupported"/>
+		</testcase>
+		<testcase name="inplace update has side effect on directory content" time="9.254449" class="inplace_update" url="cwltest:conformance_tests#236">
+			<skipped type="skipped" message="Unsupported"/>
+		</testcase>
+		<testcase name="Test that OutputBinding.glob accepts Directories" time="4.419818" class="required, command_line_tool" file="outputbinding_glob_directory" url="cwltest:conformance_tests#237">
+			<system-out>{
+    "directories": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp0zkk355i/a_dir",
+            "basename": "a_dir",
+            "nameroot": "a_dir",
+            "nameext": "",
+            "class": "Directory",
+            "listing": [],
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp0zkk355i/a_dir"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp0zkk355i/a_dir",
+            "basename": "b_dir",
+            "nameroot": "b_dir",
+            "nameext": "",
+            "class": "Directory",
+            "listing": [],
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp0zkk355i/a_dir"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp0zkk355i/a_dir",
+            "basename": "c_dir",
+            "nameroot": "c_dir",
+            "nameext": "",
+            "class": "Directory",
+            "listing": [],
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp0zkk355i/a_dir"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that array of input files can be staged to directory with entryname" time="5.545942" class="required, command_line_tool" file="stage_file_array" url="cwltest:conformance_tests#238">
+			<system-out>{
+    "output": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-1.txt",
+            "basename": "sfa-1.txt",
+            "nameroot": "sfa-1",
+            "nameext": ".txt",
+            "class": "File",
+            "checksum": "sha1$4c1cd0638ab3580310823fd1556d27ecb4816df6",
+            "size": 49,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-1.txt"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-1.txt.sec",
+            "basename": "sfa-1.txt.sec",
+            "nameroot": "sfa-1.txt",
+            "nameext": ".sec",
+            "class": "File",
+            "checksum": "sha1$40f4ee1bcd1a9466fcd2e48cf7fc3798025d2f9a",
+            "size": 59,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-1.txt.sec"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-2.txt",
+            "basename": "sfa-2.txt",
+            "nameroot": "sfa-2",
+            "nameext": ".txt",
+            "class": "File",
+            "checksum": "sha1$4c1cd0638ab3580310823fd1556d27ecb4816df6",
+            "size": 49,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-2.txt"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-2.txt.sec",
+            "basename": "sfa-2.txt.sec",
+            "nameroot": "sfa-2.txt",
+            "nameext": ".sec",
+            "class": "File",
+            "checksum": "sha1$40f4ee1bcd1a9466fcd2e48cf7fc3798025d2f9a",
+            "size": 59,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpqvib_yu1/sfa-2.txt.sec"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that array of input files can be staged to directory with basename" time="5.231457" class="required, command_line_tool" file="stage_file_array" url="cwltest:conformance_tests#239">
+			<system-out>{
+    "output": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-1.txt",
+            "basename": "sfa-1.txt",
+            "nameroot": "sfa-1",
+            "nameext": ".txt",
+            "class": "File",
+            "checksum": "sha1$4c1cd0638ab3580310823fd1556d27ecb4816df6",
+            "size": 49,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-1.txt"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-1.txt.sec",
+            "basename": "sfa-1.txt.sec",
+            "nameroot": "sfa-1.txt",
+            "nameext": ".sec",
+            "class": "File",
+            "checksum": "sha1$40f4ee1bcd1a9466fcd2e48cf7fc3798025d2f9a",
+            "size": 59,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-1.txt.sec"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-2.txt",
+            "basename": "sfa-2.txt",
+            "nameroot": "sfa-2",
+            "nameext": ".txt",
+            "class": "File",
+            "checksum": "sha1$4c1cd0638ab3580310823fd1556d27ecb4816df6",
+            "size": 49,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-2.txt"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-2.txt.sec",
+            "basename": "sfa-2.txt.sec",
+            "nameroot": "sfa-2.txt",
+            "nameext": ".sec",
+            "class": "File",
+            "checksum": "sha1$40f4ee1bcd1a9466fcd2e48cf7fc3798025d2f9a",
+            "size": 59,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmpvonkjqro/sfa-2.txt.sec"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that if array of input files are staged to directory with basename and entryname, entryname overrides" time="4.275469" class="required, command_line_tool" file="stage_file_array" url="cwltest:conformance_tests#240">
+			<system-out>{
+    "output": [
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-1.txt",
+            "basename": "sfa-1.txt",
+            "nameroot": "sfa-1",
+            "nameext": ".txt",
+            "class": "File",
+            "checksum": "sha1$4c1cd0638ab3580310823fd1556d27ecb4816df6",
+            "size": 49,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-1.txt"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-1.txt.sec",
+            "basename": "sfa-1.txt.sec",
+            "nameroot": "sfa-1.txt",
+            "nameext": ".sec",
+            "class": "File",
+            "checksum": "sha1$40f4ee1bcd1a9466fcd2e48cf7fc3798025d2f9a",
+            "size": 59,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-1.txt.sec"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-2.txt",
+            "basename": "sfa-2.txt",
+            "nameroot": "sfa-2",
+            "nameext": ".txt",
+            "class": "File",
+            "checksum": "sha1$4c1cd0638ab3580310823fd1556d27ecb4816df6",
+            "size": 49,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-2.txt"
+        },
+        {
+            "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-2.txt.sec",
+            "basename": "sfa-2.txt.sec",
+            "nameroot": "sfa-2.txt",
+            "nameext": ".sec",
+            "class": "File",
+            "checksum": "sha1$40f4ee1bcd1a9466fcd2e48cf7fc3798025d2f9a",
+            "size": 59,
+            "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmp5qifb2li/sfa-2.txt.sec"
+        }
+    ]
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that runtime.tmpdir is not runtime.outdir" time="4.156464" class="command_line_tool" file="tmpdir_is_not_outdir" url="cwltest:conformance_tests#241">
+			<system-out>{
+    "foo": {
+        "class": "File",
+        "basename": "foo",
+        "location": "file:///scratch/[REDACTED]/[REDACTED]/tmp/tmppwjw2sgt/foo",
+        "nameroot": "foo",
+        "nameext": "",
+        "size": 4,
+        "checksum": "sha1$fa98d6085770a79e44853d575cd3ab40c0f1f4de",
+        "path": "/scratch/[REDACTED]/[REDACTED]/tmp/tmppwjw2sgt/foo"
+    }
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that default behavior is 'no_listing' if not specified" time="5.713407" class="command_line_tool" file="listing_default_none" url="cwltest:conformance_tests#242">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that 'listing' is not present when LoadListingRequirement is 'no_listing'" time="4.574239" class="command_line_tool" file="listing_requirement_none" url="cwltest:conformance_tests#243">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that 'listing' is not present when loadListing on input parameter is 'no_listing'" time="4.696856" class="command_line_tool" file="listing_loadListing_none" url="cwltest:conformance_tests#244">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object but not&#10;subdirectory object when LoadListingRequirement is&#10;'shallow_listing'" time="4.706383" class="command_line_tool" file="listing_requirement_shallow" url="cwltest:conformance_tests#245">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object but not&#10;subdirectory object when loadListing on input parameter loadListing is&#10;'shallow_listing'" time="4.743423" class="command_line_tool" file="listing_loadListing_shallow" url="cwltest:conformance_tests#246">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object and in&#10;subdirectory objects when LoadListingRequirement is&#10;'deep_listing'" time="4.882983" class="command_line_tool" file="listing_requirement_deep" url="cwltest:conformance_tests#247">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object and in&#10;subdirectory objects when input parameter loadListing is&#10;'deep_listing'" time="4.593754" class="command_line_tool" file="listing_loadListing_deep" url="cwltest:conformance_tests#248">
+			<system-out>{
+    "out": true
+}
+</system-out>
+		</testcase>
+		<testcase name="Test for expression in the InputBinding.position field; also test using emoji in CWL document and tool output" time="4.737775" class="command_line_tool, required" file="inputBinding_position_expr" url="cwltest:conformance_tests#249">
+			<system-out>{
+    "out": "\ud83d\udd7a 1 singular sensation!\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Can access exit code in outputEval" time="4.248938" class="command_line_tool, required" file="outputEval_exitCode" url="cwltest:conformance_tests#250">
+			<system-out>{
+    "code": 7
+}
+</system-out>
+		</testcase>
+		<testcase name="Test use of $graph without specifying which process to run" time="4.365370" class="required, command_line_tool" file="any_input_param_graph_no_default" url="cwltest:conformance_tests#251">
+			<system-out>{
+    "out": "hello test env\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test use of $graph without specifying which process to run,&#10;hash-prefixed &quot;main&quot;" time="4.176349" class="required, command_line_tool" file="any_input_param_graph_no_default_hashmain" url="cwltest:conformance_tests#252">
+			<system-out>{
+    "out": "hello test env\n"
+}
+</system-out>
+		</testcase>
+		<testcase name="Test that optional number output is returned as 0, not null" time="5.550700" class="required, inline_javascript, command_line_tool" file="optional_numerical_output_returns_0_not_null" url="cwltest:conformance_tests#253">
+			<system-out>{
+    "out": 0
+}
+</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

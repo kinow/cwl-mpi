@@ -1,0 +1,287 @@
+Requirement already satisfied: setuptools in ./cwl-conformance-venv/lib/python3.13/site-packages (82.0.1)
+Requirement already satisfied: wheel in ./cwl-conformance-venv/lib/python3.13/site-packages (0.47.0)
+Requirement already satisfied: pip>=25.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (26.1.1)
+Requirement already satisfied: packaging>=24.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from wheel) (26.2)
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: aiohttp==3.13.5 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (3.13.5)
+Requirement already satisfied: aiosqlite==0.22.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (0.22.1)
+Requirement already satisfied: antlr4-python3-runtime==4.13.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (4.13.2)
+Requirement already satisfied: asyncssh==2.22.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (2.22.0)
+Requirement already satisfied: bcrypt==5.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (5.0.0)
+Requirement already satisfied: cachebox==5.2.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (5.2.3)
+Requirement already satisfied: cwl-utils==0.41 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (0.41)
+Requirement already satisfied: importlib-metadata==9.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (9.0.0)
+Requirement already satisfied: Jinja2==3.1.6 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (3.1.6)
+Requirement already satisfied: jsonschema==4.26.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (4.26.0)
+Requirement already satisfied: kubernetes_asyncio==35.0.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (35.0.1)
+Requirement already satisfied: mslex==1.3.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (1.3.0)
+Requirement already satisfied: psutil==7.2.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (7.2.2)
+Requirement already satisfied: referencing==0.37.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (0.37.0)
+Requirement already satisfied: rdflib==7.6.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (7.6.0)
+Requirement already satisfied: typing-extensions==4.15.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (4.15.0)
+Requirement already satisfied: yattag==1.16.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (1.16.1)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (2.6.2)
+Requirement already satisfied: aiosignal>=1.4.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (0.5.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (1.24.2)
+Requirement already satisfied: cryptography>=39.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from asyncssh==2.22.0->streamflow==0.2.0rc2) (48.0.0)
+Requirement already satisfied: cwl-upgrader>=1.2.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwl-utils==0.41->streamflow==0.2.0rc2) (1.2.15)
+Requirement already satisfied: packaging in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwl-utils==0.41->streamflow==0.2.0rc2) (26.2)
+Requirement already satisfied: requests in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwl-utils==0.41->streamflow==0.2.0rc2) (2.34.2)
+Requirement already satisfied: ruamel-yaml<0.20,>=0.17.6 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwl-utils==0.41->streamflow==0.2.0rc2) (0.19.1)
+Requirement already satisfied: schema-salad<9,>=8.8.20250205075315 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwl-utils==0.41->streamflow==0.2.0rc2) (8.9.20260417192335)
+Requirement already satisfied: zipp>=3.20 in ./cwl-conformance-venv/lib/python3.13/site-packages (from importlib-metadata==9.0.0->streamflow==0.2.0rc2) (4.1.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from Jinja2==3.1.6->streamflow==0.2.0rc2) (3.0.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./cwl-conformance-venv/lib/python3.13/site-packages (from jsonschema==4.26.0->streamflow==0.2.0rc2) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from jsonschema==4.26.0->streamflow==0.2.0rc2) (0.30.0)
+Requirement already satisfied: certifi>=14.05.14 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (2026.5.20)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (2.9.0.post0)
+Requirement already satisfied: pyyaml>=3.12 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (6.0.3)
+Requirement already satisfied: six>=1.9.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (1.17.0)
+Requirement already satisfied: urllib3>=1.24.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (2.7.0)
+Requirement already satisfied: pyparsing<4,>=2.1.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from rdflib==7.6.0->streamflow==0.2.0rc2) (3.3.2)
+Requirement already satisfied: mistune<3.3,>=3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (3.2.1)
+Requirement already satisfied: CacheControl<0.15,>=0.13.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (0.14.4)
+Requirement already satisfied: mypy_extensions in ./cwl-conformance-venv/lib/python3.13/site-packages (from schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (1.1.0)
+Requirement already satisfied: rich-argparse in ./cwl-conformance-venv/lib/python3.13/site-packages (from schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (1.8.0)
+Requirement already satisfied: msgpack<2.0.0,>=0.5.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from CacheControl<0.15,>=0.13.1->CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (1.1.2)
+Requirement already satisfied: filelock>=3.8.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (3.29.0)
+Requirement already satisfied: idna>=2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from yarl<2.0,>=1.17.0->aiohttp==3.13.5->streamflow==0.2.0rc2) (3.16)
+Requirement already satisfied: cffi>=2.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cryptography>=39.0->asyncssh==2.22.0->streamflow==0.2.0rc2) (2.0.0)
+Requirement already satisfied: pycparser in ./cwl-conformance-venv/lib/python3.13/site-packages (from cffi>=2.0.0->cryptography>=39.0->asyncssh==2.22.0->streamflow==0.2.0rc2) (3.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from requests->cwl-utils==0.41->streamflow==0.2.0rc2) (3.4.7)
+Requirement already satisfied: rich>=11.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from rich-argparse->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (15.0.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from rich>=11.0.0->rich-argparse->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from rich>=11.0.0->rich-argparse->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (2.20.0)
+Requirement already satisfied: mdurl~=0.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=11.0.0->rich-argparse->schema-salad<9,>=8.8.20250205075315->cwl-utils==0.41->streamflow==0.2.0rc2) (0.1.2)
+Building wheels for collected packages: streamflow
+  Building wheel for streamflow (pyproject.toml): started
+  Building wheel for streamflow (pyproject.toml): finished with status 'done'
+  Created wheel for streamflow: filename=streamflow-0.2.0rc2-py3-none-any.whl size=338245 sha256=b7590e6b69a8602e2e4028d973722e1ebe62792d56f791f746f1f6cfc7fac48e
+  Stored in directory: /pfs/lustrep4/scratch/[REDACTED]/[REDACTED]/tmp/pip-ephem-wheel-cache-s3m34y9b/wheels/bc/03/bb/97df0966fe1060b33b3e528ae1fbaf4cc44dae1f0e1797a159
+Successfully built streamflow
+Installing collected packages: streamflow
+  Attempting uninstall: streamflow
+    Found existing installation: streamflow 0.2.0rc2
+    Uninstalling streamflow-0.2.0rc2:
+      Successfully uninstalled streamflow-0.2.0rc2
+Successfully installed streamflow-0.2.0rc2
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: cwltest==2.6.20251216093331 in ./cwl-conformance-venv/lib/python3.13/site-packages (2.6.20251216093331)
+Requirement already satisfied: cwltool==3.2.20260413085819 in ./cwl-conformance-venv/lib/python3.13/site-packages (3.2.20260413085819)
+Requirement already satisfied: pytest==9.0.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (9.0.3)
+Requirement already satisfied: pytest-asyncio==1.3.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (1.3.0)
+Requirement already satisfied: pytest-cov==7.1.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (7.1.0)
+Requirement already satisfied: pytest-xdist==3.8.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (3.8.0)
+Requirement already satisfied: aiohttp==3.13.5 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (3.13.5)
+Requirement already satisfied: aiosqlite==0.22.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (0.22.1)
+Requirement already satisfied: antlr4-python3-runtime==4.13.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (4.13.2)
+Requirement already satisfied: asyncssh==2.22.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (2.22.0)
+Requirement already satisfied: bcrypt==5.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (5.0.0)
+Requirement already satisfied: cachebox==5.2.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (5.2.3)
+Requirement already satisfied: cwl-utils==0.41 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (0.41)
+Requirement already satisfied: importlib-metadata==9.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (9.0.0)
+Requirement already satisfied: Jinja2==3.1.6 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (3.1.6)
+Requirement already satisfied: jsonschema==4.26.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (4.26.0)
+Requirement already satisfied: kubernetes_asyncio==35.0.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (35.0.1)
+Requirement already satisfied: mslex==1.3.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (1.3.0)
+Requirement already satisfied: psutil==7.2.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (7.2.2)
+Requirement already satisfied: referencing==0.37.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (0.37.0)
+Requirement already satisfied: rdflib==7.6.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (7.6.0)
+Requirement already satisfied: typing-extensions==4.15.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (4.15.0)
+Requirement already satisfied: yattag==1.16.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from streamflow==0.2.0rc2) (1.16.1)
+Requirement already satisfied: schema-salad<9,>=5.0.20200220195218 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltest==2.6.20251216093331) (8.9.20260417192335)
+Requirement already satisfied: junit-xml>=1.8 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltest==2.6.20251216093331) (1.9)
+Requirement already satisfied: defusedxml in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltest==2.6.20251216093331) (0.7.1)
+Requirement already satisfied: iniconfig>=1.0.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from pytest==9.0.3) (2.3.0)
+Requirement already satisfied: packaging>=22 in ./cwl-conformance-venv/lib/python3.13/site-packages (from pytest==9.0.3) (26.2)
+Requirement already satisfied: pluggy<2,>=1.5 in ./cwl-conformance-venv/lib/python3.13/site-packages (from pytest==9.0.3) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from pytest==9.0.3) (2.20.0)
+Requirement already satisfied: requests>=2.6.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (2.34.2)
+Requirement already satisfied: ruamel.yaml<0.20,>=0.16 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (0.19.1)
+Requirement already satisfied: prov==1.5.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (1.5.1)
+Requirement already satisfied: mypy-extensions in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (1.1.0)
+Requirement already satisfied: coloredlogs in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (15.0.1)
+Requirement already satisfied: pydot>=1.4.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (4.0.1)
+Requirement already satisfied: argcomplete>=1.12.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (3.6.3)
+Requirement already satisfied: pyparsing!=3.0.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (3.3.2)
+Requirement already satisfied: spython>=0.3.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (0.3.14)
+Requirement already satisfied: rich-argparse in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwltool==3.2.20260413085819) (1.8.0)
+Requirement already satisfied: coverage>=7.10.6 in ./cwl-conformance-venv/lib/python3.13/site-packages (from coverage[toml]>=7.10.6->pytest-cov==7.1.0) (7.14.1)
+Requirement already satisfied: execnet>=2.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from pytest-xdist==3.8.0) (2.1.2)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (2.6.2)
+Requirement already satisfied: aiosignal>=1.4.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (0.5.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from aiohttp==3.13.5->streamflow==0.2.0rc2) (1.24.2)
+Requirement already satisfied: cryptography>=39.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from asyncssh==2.22.0->streamflow==0.2.0rc2) (48.0.0)
+Requirement already satisfied: cwl-upgrader>=1.2.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cwl-utils==0.41->streamflow==0.2.0rc2) (1.2.15)
+Requirement already satisfied: zipp>=3.20 in ./cwl-conformance-venv/lib/python3.13/site-packages (from importlib-metadata==9.0.0->streamflow==0.2.0rc2) (4.1.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from Jinja2==3.1.6->streamflow==0.2.0rc2) (3.0.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./cwl-conformance-venv/lib/python3.13/site-packages (from jsonschema==4.26.0->streamflow==0.2.0rc2) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from jsonschema==4.26.0->streamflow==0.2.0rc2) (0.30.0)
+Requirement already satisfied: certifi>=14.05.14 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (2026.5.20)
+Requirement already satisfied: python-dateutil>=2.5.3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (2.9.0.post0)
+Requirement already satisfied: pyyaml>=3.12 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (6.0.3)
+Requirement already satisfied: six>=1.9.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (1.17.0)
+Requirement already satisfied: urllib3>=1.24.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from kubernetes_asyncio==35.0.1->streamflow==0.2.0rc2) (2.7.0)
+Requirement already satisfied: lxml in ./cwl-conformance-venv/lib/python3.13/site-packages (from prov==1.5.1->cwltool==3.2.20260413085819) (6.1.1)
+Requirement already satisfied: networkx in ./cwl-conformance-venv/lib/python3.13/site-packages (from prov==1.5.1->cwltool==3.2.20260413085819) (3.6.1)
+Requirement already satisfied: mistune<3.3,>=3 in ./cwl-conformance-venv/lib/python3.13/site-packages (from schema-salad<9,>=5.0.20200220195218->cwltest==2.6.20251216093331) (3.2.1)
+Requirement already satisfied: CacheControl<0.15,>=0.13.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=5.0.20200220195218->cwltest==2.6.20251216093331) (0.14.4)
+Requirement already satisfied: msgpack<2.0.0,>=0.5.2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from CacheControl<0.15,>=0.13.1->CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=5.0.20200220195218->cwltest==2.6.20251216093331) (1.1.2)
+Requirement already satisfied: filelock>=3.8.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=5.0.20200220195218->cwltest==2.6.20251216093331) (3.29.0)
+Requirement already satisfied: idna>=2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from yarl<2.0,>=1.17.0->aiohttp==3.13.5->streamflow==0.2.0rc2) (3.16)
+Requirement already satisfied: cffi>=2.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from cryptography>=39.0->asyncssh==2.22.0->streamflow==0.2.0rc2) (2.0.0)
+Requirement already satisfied: pycparser in ./cwl-conformance-venv/lib/python3.13/site-packages (from cffi>=2.0.0->cryptography>=39.0->asyncssh==2.22.0->streamflow==0.2.0rc2) (3.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./cwl-conformance-venv/lib/python3.13/site-packages (from requests>=2.6.1->cwltool==3.2.20260413085819) (3.4.7)
+Requirement already satisfied: humanfriendly>=9.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from coloredlogs->cwltool==3.2.20260413085819) (10.0)
+Requirement already satisfied: rich>=11.0.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from rich-argparse->cwltool==3.2.20260413085819) (15.0.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./cwl-conformance-venv/lib/python3.13/site-packages (from rich>=11.0.0->rich-argparse->cwltool==3.2.20260413085819) (4.2.0)
+Requirement already satisfied: mdurl~=0.1 in ./cwl-conformance-venv/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=11.0.0->rich-argparse->cwltool==3.2.20260413085819) (0.1.2)
+Building wheels for collected packages: streamflow
+  Building wheel for streamflow (pyproject.toml): started
+  Building wheel for streamflow (pyproject.toml): finished with status 'done'
+  Created wheel for streamflow: filename=streamflow-0.2.0rc2-py3-none-any.whl size=338245 sha256=7fc09b1f2b48d116fcd07720604aa750306cbcedb0fdea94a3cda4d6aada77b1
+  Stored in directory: /pfs/lustrep4/scratch/[REDACTED]/[REDACTED]/tmp/pip-ephem-wheel-cache-awbd3ogt/wheels/bc/03/bb/97df0966fe1060b33b3e528ae1fbaf4cc44dae1f0e1797a159
+Successfully built streamflow
+Installing collected packages: streamflow
+  Attempting uninstall: streamflow
+    Found existing installation: streamflow 0.2.0rc2
+    Uninstalling streamflow-0.2.0rc2:
+      Successfully uninstalled streamflow-0.2.0rc2
+Successfully installed streamflow-0.2.0rc2
+mv: cannot stat '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.yaml': No such file or directory
+============================= test session starts ==============================
+platform linux -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0
+rootdir: /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow
+configfile: tox.ini
+plugins: cov-7.1.0, cwltest-2.6.20251216093331, xdist-3.8.0, asyncio-1.3.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=session
+created: 8/8 workers
+8 workers [197 items]
+
+........................................................................ [ 36%]
+........................................................................ [ 72%]
+...........s.........................................                    [ 99%]
+- generated xml file: /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/junit.xml -
+=========================== short test summary info ============================
+SKIPPED [1] common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml: Test 'docker_entrypoint' is in the exclude list.
+================== 196 passed, 1 skipped in 125.83s (0:02:05) ==================
+Name                                               Stmts   Miss Branch BrPart  Cover
+------------------------------------------------------------------------------------
+streamflow/__init__.py                                 2      0      0      0   100%
+streamflow/config/__init__.py                          7      1      2      1    78%
+streamflow/config/config.py                           84     36     44      7    49%
+streamflow/config/schema.py                           30      0      4      0   100%
+streamflow/config/validator.py                        28      5      4      2    78%
+streamflow/core/__init__.py                            0      0      0      0   100%
+streamflow/core/config.py                             64      7     16      2    86%
+streamflow/core/context.py                            22      2      0      0    91%
+streamflow/core/data.py                               39      2      2      0    95%
+streamflow/core/deployment.py                        145     40     18      5    69%
+streamflow/core/exception.py                          17      0      0      0   100%
+streamflow/core/persistence.py                        22      1      0      0    95%
+streamflow/core/processor.py                         162     31     26      5    78%
+streamflow/core/provenance.py                         10      3      0      0    70%
+streamflow/core/recovery.py                           46     10     10      3    73%
+streamflow/core/scheduling.py                        171     38     30      7    74%
+streamflow/core/utils.py                             179     53     78     15    67%
+streamflow/core/workflow.py                          320     68     50     15    77%
+streamflow/cwl/__init__.py                             0      0      0      0   100%
+streamflow/cwl/combinator.py                          43      6     14      2    82%
+streamflow/cwl/command.py                            422     70    196     47    78%
+streamflow/cwl/expression.py                          86     33     44      7    49%
+streamflow/cwl/hardware.py                            37      1      0      0    97%
+streamflow/cwl/main.py                                45      3     12      3    89%
+streamflow/cwl/processor.py                          266     31     94     12    85%
+streamflow/cwl/requirement/__init__.py                 0      0      0      0   100%
+streamflow/cwl/requirement/docker/__init__.py          7      0      0      0   100%
+streamflow/cwl/requirement/docker/docker.py          111     97      4      0    12%
+streamflow/cwl/requirement/docker/kubernetes.py       33     20      2      0    37%
+streamflow/cwl/requirement/docker/nocontainer.py      12      2      0      0    83%
+streamflow/cwl/requirement/docker/singularity.py      80      1      4      1    98%
+streamflow/cwl/requirement/docker/translator.py       15      0      0      0   100%
+streamflow/cwl/runner.py                              76     17     16      5    72%
+streamflow/cwl/step.py                               259     61     88     11    74%
+streamflow/cwl/token.py                               40     27     24      0    20%
+streamflow/cwl/transformer.py                        230     76     62     12    60%
+streamflow/cwl/translator.py                         974    201    504     64    77%
+streamflow/cwl/utils.py                              428     67    236     47    80%
+streamflow/cwl/workflow.py                            58      4     12      1    93%
+streamflow/data/__init__.py                            5      0      0      0   100%
+streamflow/data/manager.py                           185     34     88      8    76%
+streamflow/data/remotepath.py                        419    176    174     30    55%
+streamflow/data/utils.py                              30      3     12      2    83%
+streamflow/deployment/__init__.py                      5      0      0      0   100%
+streamflow/deployment/aiotarstream.py                823    705    352      0    10%
+streamflow/deployment/connector/__init__.py           10      0      0      0   100%
+streamflow/deployment/connector/base.py              170     91     32      1    41%
+streamflow/deployment/connector/container.py         651    362    210     31    40%
+streamflow/deployment/connector/kubernetes.py        483    383    194      0    15%
+streamflow/deployment/connector/local.py              76     15     18      4    78%
+streamflow/deployment/connector/occam.py             195    157     80      0    14%
+streamflow/deployment/connector/queue_manager.py     408    328     78      0    16%
+streamflow/deployment/connector/ssh.py               305    226     66      0    21%
+streamflow/deployment/filter/__init__.py               6      0      0      0   100%
+streamflow/deployment/filter/matching.py              59     39     24      0    24%
+streamflow/deployment/filter/shuffle.py               12      2      0      0    83%
+streamflow/deployment/future.py                      109     49     42      8    45%
+streamflow/deployment/manager.py                     104     13     30      6    84%
+streamflow/deployment/shell.py                        96     31     26      6    61%
+streamflow/deployment/stream.py                       24     10      4      0    50%
+streamflow/deployment/template.py                     21     12      6      0    33%
+streamflow/deployment/utils.py                        42     22     14      1    38%
+streamflow/deployment/wrapper.py                      41     12      2      1    70%
+streamflow/ext/__init__.py                             0      0      0      0   100%
+streamflow/ext/plugin.py                              55     16      2      1    70%
+streamflow/ext/utils.py                              233    202    144      1     8%
+streamflow/log_handler.py                             55     20     12      0    52%
+streamflow/main.py                                   160    113     54      0    23%
+streamflow/parser.py                                  63      4      2      0    91%
+streamflow/persistence/__init__.py                     5      0      0      0   100%
+streamflow/persistence/base.py                        17      0      0      0   100%
+streamflow/persistence/loading_context.py             90     62     14      0    27%
+streamflow/persistence/sqlite.py                     252    103     20      4    58%
+streamflow/persistence/utils.py                        8      2      0      0    75%
+streamflow/provenance/__init__.py                      5      0      0      0   100%
+streamflow/provenance/run_crate.py                   677    603    348      0     7%
+streamflow/recovery/__init__.py                        7      0      0      0   100%
+streamflow/recovery/checkpoint_manager.py             38     10      2      0    70%
+streamflow/recovery/failure_manager.py               131     83     34      0    29%
+streamflow/recovery/utils.py                         225    173     78      0    17%
+streamflow/report.py                                  43     36     14      0    12%
+streamflow/scheduling/__init__.py                      5      0      0      0   100%
+streamflow/scheduling/policy/__init__.py               4      0      0      0   100%
+streamflow/scheduling/policy/data_locality.py         31     16     14      0    33%
+streamflow/scheduling/scheduler.py                   176     37     82     14    74%
+streamflow/version.py                                  2      0      0      0   100%
+streamflow/workflow/__init__.py                        0      0      0      0   100%
+streamflow/workflow/combinator.py                    115     35     54      5    68%
+streamflow/workflow/command.py                        96     18     20      5    77%
+streamflow/workflow/executor.py                      102     17     50     12    80%
+streamflow/workflow/port.py                           74     38     22      0    40%
+streamflow/workflow/step.py                          782    213    304     53    69%
+streamflow/workflow/token.py                         121     34     22      5    67%
+streamflow/workflow/transformer.py                    26      5     10      5    72%
+streamflow/workflow/utils.py                          48      9     30      6    73%
+------------------------------------------------------------------------------------
+TOTAL                                              12495   5533   4380    483    51%
+Wrote XML report to coverage.xml

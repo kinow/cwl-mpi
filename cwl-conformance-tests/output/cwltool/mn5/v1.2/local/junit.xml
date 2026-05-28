@@ -1,0 +1,1057 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="337" tests="378" time="442.49964475631714">
+	<testsuite disabled="0" errors="0" failures="337" name="conformance_tests" skipped="0" tests="378" time="442.49964475631714">
+		<testcase name="General test of command line generation" time="0.924743" class="required, command_line_tool" file="cl_basic_generation" url="cwltest:conformance_tests#1">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp4do1j_r9 --quiet tests/bwa-mem-tool.cwl tests/bwa-mem-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test nested prefixes with arrays" time="0.921701" class="required, command_line_tool" file="nested_prefixes_arrays" url="cwltest:conformance_tests#2">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0149v1nc --quiet tests/binding-test.cwl tests/bwa-mem-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test nested command line bindings" time="0.950669" class="schema_def, command_line_tool" file="nested_cl_bindings" url="cwltest:conformance_tests#3">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk3azoarf --quiet tests/tmap-tool.cwl tests/tmap-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command line with optional input (missing)" time="0.916079" class="required, command_line_tool" file="cl_optional_inputs_missing" url="cwltest:conformance_tests#4">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpa7qeu0z9 --quiet tests/cat1-testcli.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command line with optional input (provided)" time="0.915124" class="required, command_line_tool" file="cl_optional_bindings_provided" url="cwltest:conformance_tests#5">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwdby4muy --quiet tests/cat1-testcli.cwl tests/cat-n-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature" time="3.200924" class="initial_work_dir, inline_javascript, command_line_tool" file="initworkdir_expreng_requirements" url="cwltest:conformance_tests#6">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgweehwuy --quiet tests/template-tool.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command execution in Docker with stdout redirection" time="0.922362" class="docker, command_line_tool" file="stdout_redirect_docker" url="cwltest:conformance_tests#7">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpopkctit7 --quiet tests/cat3-tool.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command execution in Docker with shortcut stdout redirection" time="0.906845" class="docker, command_line_tool" file="stdout_redirect_shortcut_docker" url="cwltest:conformance_tests#8">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpktrj6q8c --quiet tests/cat3-tool-shortcut.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command execution in Docker with mediumcut stdout redirection" time="0.909575" class="docker, command_line_tool" file="stdout_redirect_mediumcut_docker" url="cwltest:conformance_tests#9">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_kla4ri9 --quiet tests/cat3-tool-mediumcut.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command line with stderr redirection" time="0.949332" class="shell_command, command_line_tool" file="stderr_redirect" url="cwltest:conformance_tests#10">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0uqh6s72 --quiet tests/stderr.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command line with stderr redirection, brief syntax" time="0.932324" class="shell_command, command_line_tool" file="stderr_redirect_shortcut" url="cwltest:conformance_tests#11">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp4mjx700x --quiet tests/stderr-shortcut.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command line with stderr redirection, named brief syntax" time="0.928928" class="shell_command, command_line_tool" file="stderr_redirect_mediumcut" url="cwltest:conformance_tests#12">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0i7ksv8_ --quiet tests/stderr-mediumcut.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command execution in Docker with stdin and stdout redirection" time="0.905938" class="required, command_line_tool" file="stdinout_redirect_docker" url="cwltest:conformance_tests#13">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpzfk64c8f --quiet tests/cat4-tool.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default usage of Any in expressions." time="3.103314" class="inline_javascript, expression_tool" file="expression_any" url="cwltest:conformance_tests#14">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgjdfazdn --quiet tests/null-expression1-tool.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test explicitly passing null to Any type inputs with default values." time="3.059120" class="inline_javascript, expression_tool" file="expression_any_null" url="cwltest:conformance_tests#15">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpd9j13nol --quiet tests/null-expression1-tool.cwl tests/null-expression1-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Testing the string 'null' does not trip up an Any with a default value." time="3.197199" class="inline_javascript, expression_tool" file="expression_any_string" url="cwltest:conformance_tests#16">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdid1yk4r --quiet tests/null-expression1-tool.cwl tests/null-expression2-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any without defaults cannot be unspecified." time="1.788773" class="inline_javascript, expression_tool" file="expression_any_nodefaultany" url="cwltest:conformance_tests#17"/>
+		<testcase name="Test explicitly passing null to Any type without a default value." time="1.787234" class="inline_javascript, expression_tool" file="expression_any_null_nodefaultany" url="cwltest:conformance_tests#18"/>
+		<testcase name="Testing the string 'null' does not trip up an Any without a default value." time="1.776496" class="inline_javascript, expression_tool" file="expression_any_nullstring_nodefaultany" url="cwltest:conformance_tests#19">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_urfz244 --quiet tests/null-expression2-tool.cwl tests/null-expression2-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Testing Any type compatibility in outputSource" time="0.911405" class="required, workflow" file="any_outputSource_compatibility" url="cwltest:conformance_tests#20">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphj9vs02z --quiet tests/any-type-compat.cwl tests/any-type-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command execution in with stdin and stdout redirection" time="0.892843" class="required, command_line_tool" file="stdinout_redirect" url="cwltest:conformance_tests#21">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp34j6n75j --quiet tests/cat-tool.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test ExpressionTool with Javascript engine" time="1.773598" class="inline_javascript, expression_tool" file="expression_parseint" url="cwltest:conformance_tests#22">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgxsanhuq --quiet tests/parseInt-tool.cwl tests/parseInt-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test outputEval to transform output" time="1.767160" class="inline_javascript, command_line_tool" file="expression_outputEval" url="cwltest:conformance_tests#23">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqs292iyf --quiet tests/wc2-tool.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test two step workflow with imported tools" time="1.780490" class="inline_javascript, workflow" file="wf_wc_parseInt" url="cwltest:conformance_tests#24">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpewyu15yi --quiet tests/count-lines1-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test two step workflow with inline tools" time="0.934230" class="inline_javascript, workflow" file="wf_wc_expressiontool" url="cwltest:conformance_tests#25">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwpjkfspb --quiet tests/count-lines2-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step" time="1.772988" class="scatter, inline_javascript, workflow" file="wf_wc_scatter" url="cwltest:conformance_tests#26">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpbq_0nqvz --quiet tests/count-lines3-wf.cwl tests/count-lines3-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, default merge behavior" time="1.785913" class="scatter, multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_merge" url="cwltest:conformance_tests#27">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpyckka5of --quiet tests/count-lines4-wf.cwl tests/count-lines4-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior" time="1.743899" class="scatter, multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_nested" url="cwltest:conformance_tests#28">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9cl2ifll --quiet tests/count-lines6-wf.cwl tests/count-lines6-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior" time="1.676338" class="multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_flattened" url="cwltest:conformance_tests#29">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphriiuf5k --quiet tests/count-lines7-wf.cwl tests/count-lines6-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test when step source is a single-item list and there is no linkMerge, then it not wrapped in a list, and that MultipleInputFeatureRequirement is not required." time="1.683650" class="inline_javascript, workflow" file="wf_wc_nomultiple" url="cwltest:conformance_tests#30">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpne_xuomw --quiet tests/count-lines13-wf.cwl tests/count-lines4-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test when step source is a single-item list and linkMerge is listed, then it is wrapped in a list." time="1.670242" class="inline_javascript, workflow" file="wf_wc_nomultiple_merge_nested" url="cwltest:conformance_tests#31">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmps8p2sosy --quiet tests/count-lines19-wf.cwl tests/count-lines4-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow with default value for input parameter (missing)" time="1.674627" class="inline_javascript, workflow" file="wf_input_default_missing" url="cwltest:conformance_tests#32">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpv4j3o0h1 --quiet tests/count-lines5-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow with default value for input parameter (provided)" time="1.721042" class="inline_javascript, workflow" file="wf_input_default_provided" url="cwltest:conformance_tests#33">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdlrnls_k --quiet tests/count-lines5-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that workflow defaults override tool defaults" time="0.899806" class="required, workflow" file="wf_default_tool_default" url="cwltest:conformance_tests#34">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpja_r43dz --quiet tests/echo-wf-default.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test EnvVarRequirement" time="0.903384" class="env_var, command_line_tool" file="envvar_req" url="cwltest:conformance_tests#35">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpf1roiufc --quiet tests/env-tool1.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter" time="0.894459" class="scatter, workflow" file="wf_scatter_single_param" url="cwltest:conformance_tests#36">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt3ufsgxc --quiet tests/scatter-wf1.cwl tests/scatter-job1.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method" time="0.907825" class="scatter, workflow" file="wf_scatter_two_nested_crossproduct" url="cwltest:conformance_tests#37">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8bidtue8 --quiet tests/scatter-wf2.cwl tests/scatter-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and flat_crossproduct join method" time="0.999131" class="scatter, workflow" file="wf_scatter_two_flat_crossproduct" url="cwltest:conformance_tests#38">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqd7qcgtm --quiet tests/scatter-wf3.cwl#main tests/scatter-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and dotproduct join method" time="0.956516" class="scatter, workflow" file="wf_scatter_two_dotproduct" url="cwltest:conformance_tests#39">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphxdq2ncl --quiet tests/scatter-wf4.cwl#main tests/scatter-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with single empty list parameter" time="0.894482" class="scatter, workflow" file="wf_scatter_emptylist" url="cwltest:conformance_tests#40">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp3jn0jwcn --quiet tests/scatter-wf1.cwl tests/scatter-empty-job1.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty" time="0.880768" class="scatter, workflow" file="wf_scatter_nested_crossproduct_secondempty" url="cwltest:conformance_tests#41">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_dvgu02c --quiet tests/scatter-wf2.cwl tests/scatter-empty-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty" time="0.911763" class="scatter, workflow" file="wf_scatter_nested_crossproduct_firstempty" url="cwltest:conformance_tests#42">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsq52wq06 --quiet tests/scatter-wf3.cwl#main tests/scatter-empty-job3.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method" time="0.877143" class="scatter, workflow" file="wf_scatter_flat_crossproduct_oneempty" url="cwltest:conformance_tests#43">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpi50koxab --quiet tests/scatter-wf3.cwl#main tests/scatter-empty-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two empty scatter parameters and dotproduct join method" time="0.876130" class="scatter, workflow" file="wf_scatter_dotproduct_twoempty" url="cwltest:conformance_tests#44">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt10qfel8 --quiet tests/scatter-wf4.cwl#main tests/scatter-empty-job4.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any type input parameter" time="0.880114" class="required, command_line_tool" file="any_input_param" url="cwltest:conformance_tests#45">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt1r88zir --quiet tests/echo-tool.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test nested workflow" time="1.719402" class="subworkflow, workflow, inline_javascript" file="nested_workflow" url="cwltest:conformance_tests#46">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5rhicl3b --quiet tests/count-lines8-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test requirement priority" time="0.898797" class="env_var, workflow" file="requirement_priority" url="cwltest:conformance_tests#47">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqqvcvbjg --quiet tests/env-wf1.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test requirements override hints" time="0.902000" class="env_var, workflow" file="requirement_override_hints" url="cwltest:conformance_tests#48">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgkd2re1f --quiet tests/env-wf2.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test requirements on workflow steps" time="0.893305" class="env_var, workflow" file="requirement_workflow_steps" url="cwltest:conformance_tests#49">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmps5aihbr6 --quiet tests/env-wf3.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter" time="1.758672" class="inline_javascript, workflow" file="step_input_default_value" url="cwltest:conformance_tests#50">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqc77ncuq --quiet tests/count-lines9-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test use default value on step input parameter with empty source" time="1.690333" class="inline_javascript, workflow" file="step_input_default_value_nosource" url="cwltest:conformance_tests#51">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkelff4wt --quiet tests/count-lines11-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test use default value on step input parameter with null source" time="1.704239" class="inline_javascript, workflow" file="step_input_default_value_nullsource" url="cwltest:conformance_tests#52">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp27ftsnk_ --quiet tests/count-lines11-wf.cwl tests/file1-null.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source" time="1.667990" class="inline_javascript, workflow" file="step_input_default_value_overriden" url="cwltest:conformance_tests#53">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcwuhywt7 --quiet tests/count-lines11-wf.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test simple workflow" time="1.105645" class="required, workflow" file="wf_simple" url="cwltest:conformance_tests#54">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpf0lq2muw --quiet tests/revsort.cwl tests/revsort-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test unknown hints are ignored." time="1.062281" class="required, command_line_tool" file="hints_unknown_ignored" url="cwltest:conformance_tests#55">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp55eioyzt --quiet tests/cat5-tool.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field." time="1.682346" class="initial_work_dir, inline_javascript, workflow" file="initial_workdir_secondary_files_expr" url="cwltest:conformance_tests#56">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpjgtlwsv3 --quiet tests/search.cwl#main tests/search-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement with expression in filename." time="0.875575" class="initial_work_dir, command_line_tool" file="rename" url="cwltest:conformance_tests#57">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpszgqjw_b --quiet tests/rename.cwl tests/rename-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test if trailing newline is present in file entry in InitialWorkDir" time="0.938403" class="initial_work_dir, command_line_tool" file="initial_workdir_trailingnl" url="cwltest:conformance_tests#58">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpp2kvgn37 --quiet tests/iwdr-entry.cwl tests/string-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test inline expressions" time="1.629748" class="inline_javascript, command_line_tool" file="inline_expressions" url="cwltest:conformance_tests#59">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9khns1n6 --quiet tests/wc4-tool.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement definition used in tool parameter" time="0.884281" class="schema_def, command_line_tool" file="schemadef_req_tool_param" url="cwltest:conformance_tests#60">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsnkc7vu4 --quiet tests/schemadef-tool.cwl tests/schemadef-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement definition used in workflow parameter" time="0.891211" class="schema_def, workflow" file="schemadef_req_wf_param" url="cwltest:conformance_tests#61">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp107hpn9t --quiet tests/schemadef-wf.cwl tests/schemadef-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test parameter evaluation, no support for JS expressions" time="0.902731" class="required, command_line_tool" file="param_evaluation_noexpr" url="cwltest:conformance_tests#62">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpyzvct099 --quiet tests/params.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test parameter evaluation, with support for JS expressions" time="1.779183" class="inline_javascript, command_line_tool" file="param_evaluation_expr" url="cwltest:conformance_tests#63">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfxlgilk5 --quiet tests/params2.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test metadata" time="0.965071" class="required, command_line_tool" file="metadata" url="cwltest:conformance_tests#64">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptup0gjc6 --quiet tests/metadata.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test simple format checking." time="0.878479" class="required, command_line_tool" file="format_checking" url="cwltest:conformance_tests#65">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpy0mvrqaj --quiet tests/formattest.cwl tests/formattest-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test format checking against ontology using subclassOf." time="2.857786" class="required, command_line_tool" file="format_checking_subclass" url="cwltest:conformance_tests#66">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp6i9hpm7e --quiet tests/formattest2.cwl tests/formattest2-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test format checking against ontology using equivalentClass." time="2.834794" class="required, command_line_tool" file="format_checking_equivalentclass" url="cwltest:conformance_tests#67">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxyger7xu --quiet tests/formattest3.cwl tests/formattest2-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test optional output file and optional secondaryFile on output." time="0.879534" class="docker, command_line_tool" file="output_secondaryfile_optional" url="cwltest:conformance_tests#68">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxb3qed9q --quiet tests/optional-output.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that valueFrom is ignored when the parameter is null" time="1.660956" class="inline_javascript, command_line_tool" file="valuefrom_ignored_null" url="cwltest:conformance_tests#69">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpena0vets --quiet tests/vf-concat.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that second expression in concatenated valueFrom is not ignored" time="1.670439" class="inline_javascript, command_line_tool" file="valuefrom_secondexpr_ignored" url="cwltest:conformance_tests#70">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmps5ocn6e6 --quiet tests/vf-concat.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step." time="1.671236" class="step_input, inline_javascript, workflow" file="valuefrom_wf_step" url="cwltest:conformance_tests#71">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphcy6azvf --quiet tests/step-valuefrom-wf.cwl tests/step-valuefrom-wf.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step with multiple sources" time="0.890370" class="step_input, inline_javascript, multiple_input, workflow" file="valuefrom_wf_step_multiple" url="cwltest:conformance_tests#72">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpb0fnefso --quiet tests/step-valuefrom2-wf.cwl tests/step-valuefrom-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step referencing other inputs" time="0.903644" class="step_input, inline_javascript, workflow" file="valuefrom_wf_step_other" url="cwltest:conformance_tests#73">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpydntbdl7 --quiet tests/step-valuefrom3-wf.cwl tests/step-valuefrom-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test record type output binding." time="0.910068" class="shell_command, command_line_tool" file="record_output_binding" url="cwltest:conformance_tests#74">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpnkbj_awe --quiet tests/record-output.cwl tests/record-output-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided." time="0.885972" class="shell_command, command_line_tool" file="docker_json_output_path" url="cwltest:conformance_tests#75">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpj4rwpymf --quiet tests/test-cwl-out.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided." time="0.889440" class="shell_command, command_line_tool" file="docker_json_output_location" url="cwltest:conformance_tests#76">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptzoz13ip --quiet tests/test-cwl-out2.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json where 'path' is relative path in output dir." time="0.879531" class="required, command_line_tool" file="json_output_path_relative" url="cwltest:conformance_tests#77">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdt3w164g --quiet tests/test-cwl-out3.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json where 'location' is relative reference to output dir." time="0.902836" class="required, command_line_tool" file="json_output_location_relative" url="cwltest:conformance_tests#78">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfdr4av_q --quiet tests/test-cwl-out4.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test support for returning multiple glob patterns from expression" time="0.872977" class="required, command_line_tool" file="multiple_glob_expr_list" url="cwltest:conformance_tests#79">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_9psfkyn --quiet tests/glob-expr-list.cwl tests/abc.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)" time="0.884656" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom" url="cwltest:conformance_tests#80">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp4hlc76o7 --quiet tests/scatter-valuefrom-wf1.cwl tests/scatter-valuefrom-job1.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input" time="0.902512" class="scatter, step_input, workflow" file="wf_scatter_twoparam_nested_crossproduct_valuefrom" url="cwltest:conformance_tests#81">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpaghvcdef --quiet tests/scatter-valuefrom-wf2.cwl tests/scatter-valuefrom-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input" time="0.894394" class="scatter, step_input, workflow" file="wf_scatter_twoparam_flat_crossproduct_valuefrom" url="cwltest:conformance_tests#82">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkiijhfwk --quiet tests/scatter-valuefrom-wf3.cwl#main tests/scatter-valuefrom-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input" time="0.911624" class="scatter, step_input, workflow" file="wf_scatter_twoparam_dotproduct_valuefrom" url="cwltest:conformance_tests#83">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpu7cr7gfb --quiet tests/scatter-valuefrom-wf4.cwl#main tests/scatter-valuefrom-job2.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)" time="0.895561" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom_twice_current_el" url="cwltest:conformance_tests#84">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpf5_n2md3 --quiet tests/scatter-valuefrom-wf5.cwl tests/scatter-valuefrom-job1.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom eval on scattered input parameter" time="0.888504" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valueFrom" url="cwltest:conformance_tests#85">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpppf2ywuh --quiet tests/scatter-valuefrom-wf6.cwl tests/scatter-valuefrom-job3.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow two input files with same name." time="0.901240" class="required, workflow" file="wf_two_inputfiles_namecollision" url="cwltest:conformance_tests#86">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8l_fx0kc --quiet tests/conflict-wf.cwl#collision tests/conflict-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test directory input with parameter reference" time="0.887784" class="shell_command, command_line_tool" file="directory_input_param_ref" url="cwltest:conformance_tests#87">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9jhoe83f --quiet tests/dir.cwl tests/dir-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test directory input in Docker" time="0.886527" class="command_line_tool, shell_command" file="directory_input_docker" url="cwltest:conformance_tests#88">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpso7tj_jv --quiet tests/dir2.cwl tests/dir-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test directory output" time="0.876916" class="required, command_line_tool" file="directory_output" url="cwltest:conformance_tests#89">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp6ql7qpxt --quiet tests/dir3.cwl tests/dir3-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test directories in secondaryFiles" time="0.882182" class="shell_command, command_line_tool" file="directory_secondaryfiles" url="cwltest:conformance_tests#90">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpixuz47u3 --quiet tests/dir4.cwl tests/dir4-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test dynamic initial work dir" time="0.874829" class="shell_command, initial_work_dir, command_line_tool" file="dynamic_initial_workdir" url="cwltest:conformance_tests#91">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpd9udbrqb --quiet tests/dir5.cwl tests/dir-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test writable staged files." time="0.874183" class="initial_work_dir, command_line_tool" file="writable_stagedfiles" url="cwltest:conformance_tests#92">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpb2yxk_5o --quiet tests/stagefile.cwl tests/stagefile-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test file literal as input" time="0.879899" class="required, command_line_tool" file="input_file_literal" url="cwltest:conformance_tests#93">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkrozbrml --quiet tests/cat3-tool.cwl tests/file-literal.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test expression in InitialWorkDir listing" time="0.867208" class="initial_work_dir, command_line_tool" file="initial_workdir_expr" url="cwltest:conformance_tests#94">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5lasa8_0 --quiet tests/linkfile.cwl tests/arguments-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test nameroot/nameext expression in arguments, stdout" time="0.882039" class="required, command_line_tool" file="nameroot_nameext_stdout_expr" url="cwltest:conformance_tests#95">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_e6tv_s9 --quiet tests/nameroot.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test directory input with inputBinding" time="0.945024" class="shell_command, command_line_tool" file="input_dir_inputbinding" url="cwltest:conformance_tests#96">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptovyzkbc --quiet tests/dir6.cwl tests/dir-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command line generation of array-of-arrays" time="0.947531" class="required, command_line_tool" file="cl_gen_arrayofarrays" url="cwltest:conformance_tests#97">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpvord_ov_ --quiet tests/nested-array.cwl tests/nested-array-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly" time="0.898665" class="shell_command, command_line_tool" file="env_home_tmpdir" url="cwltest:conformance_tests#98">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwgf4ucc8 --quiet tests/envvar.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly in Docker" time="0.884231" class="shell_command, command_line_tool" file="env_home_tmpdir_docker" url="cwltest:conformance_tests#99">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsefxr1d5 --quiet tests/envvar2.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that expressionLib requirement of individual tool step overrides expressionLib of workflow." time="1.684376" class="inline_javascript, workflow" file="expressionlib_tool_wf_override" url="cwltest:conformance_tests#100">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk9y8gtj8 --quiet tests/js-expr-req-wf.cwl#wf tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test output of InitialWorkDir" time="0.903086" class="docker, initial_work_dir, command_line_tool" file="initial_workdir_output" url="cwltest:conformance_tests#101">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp4024ix8y --quiet tests/initialworkdirrequirement-docker-out.cwl tests/initialworkdirrequirement-docker-out-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test embedded subworkflow" time="1.695226" class="subworkflow, workflow" file="embedded_subworkflow" url="cwltest:conformance_tests#102">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpnobhf5sq --quiet tests/count-lines10-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test required, optional and null secondaryFiles on array of files." time="1.692738" class="docker, inline_javascript, shell_command, command_line_tool" file="filesarray_secondaryfiles" url="cwltest:conformance_tests#103">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmps3zf02sk --quiet tests/docker-array-secondaryfiles.cwl tests/docker-array-secondaryfiles-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test required, optional and null secondaryFiles on array of files." time="1.695463" class="docker, inline_javascript, shell_command, command_line_tool" file="filesarray_secondaryfiles2" url="cwltest:conformance_tests#104"/>
+		<testcase name="Test directory literal output created by ExpressionTool" time="1.667527" class="inline_javascript, expression_tool" file="exprtool_directory_literal" url="cwltest:conformance_tests#105">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpf5ba6yi4 --quiet tests/dir7.cwl tests/dir7.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test file literal output created by ExpressionTool" time="1.656307" class="inline_javascript, expression_tool" file="exprtool_file_literal" url="cwltest:conformance_tests#106">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkcfpksdy --quiet tests/file-literal-ex.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test dockerOutputDirectory" time="0.882972" class="docker, command_line_tool" file="dockeroutputdir" url="cwltest:conformance_tests#107">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwfhe6v1v --quiet tests/docker-output-dir.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test hints with $import" time="0.883782" class="required, command_line_tool" file="hints_import" url="cwltest:conformance_tests#108">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcoddykx2 --quiet tests/imported-hint.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test warning instead of error when default path is not found" time="0.878879" class="required, command_line_tool" file="default_path_notfound_warning" url="cwltest:conformance_tests#109">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt1t2po2p --quiet tests/default_path.cwl tests/default_path_job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InlineJavascriptRequirement with multiple expressions in the same tool" time="1.703432" class="inline_javascript, command_line_tool" file="inlinejs_req_expressions" url="cwltest:conformance_tests#110">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcv3oiz7m --quiet tests/inline-js.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test if a writable input directory is recursively copied and writable" time="0.888573" class="initial_work_dir, shell_command, command_line_tool" file="input_dir_recurs_copy_writable" url="cwltest:conformance_tests#111">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpac9abz21 --quiet tests/recursive-input-directory.cwl tests/recursive-input-directory.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that missing parameters are null (not undefined) in expression" time="1.679307" class="inline_javascript, command_line_tool" file="null_missing_params" url="cwltest:conformance_tests#112">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk0vv_pn3 --quiet tests/null-defined.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that provided parameter is not null in expression" time="1.678162" class="inline_javascript, command_line_tool" file="param_notnull_expr" url="cwltest:conformance_tests#113">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmplhj9iurd --quiet tests/null-defined.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test compound workflow document" time="0.919243" class="required, workflow" file="wf_compound_doc" url="cwltest:conformance_tests#114">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8n1ma248 --quiet tests/revsort-packed.cwl#main tests/revsort-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that nameroot and nameext are generated from basename at execution time by the runner" time="1.220674" class="step_input, workflow" file="nameroot_nameext_generated" url="cwltest:conformance_tests#115">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcitbfra9 --quiet tests/basename-fields-test.cwl tests/basename-fields-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that file path in $(inputs) for initialworkdir is in $(outdir)." time="1.036565" class="initial_work_dir, command_line_tool" file="initialworkpath_output" url="cwltest:conformance_tests#116">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5x4381sp --quiet tests/initialwork-path.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list" time="1.646538" class="multiple_input, inline_javascript, workflow" file="wf_scatter_twopar_oneinput_flattenedmerge" url="cwltest:conformance_tests#117">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8cungwwl --quiet tests/count-lines12-wf.cwl tests/count-lines6-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test step input with multiple sources with multiple types" time="0.887969" class="step_input, inline_javascript, multiple_input, workflow" file="wf_multiplesources_multipletypes" url="cwltest:conformance_tests#118">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpj07hjxki --quiet tests/sum-wf.cwl tests/sum-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that shell directives are not interpreted." time="0.872074" class="required, command_line_tool" file="shelldir_notinterpreted" url="cwltest:conformance_tests#119">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptf1ic27r --quiet tests/shellchar.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that shell directives are quoted." time="0.954856" class="shell_command, command_line_tool" file="shelldir_quoted" url="cwltest:conformance_tests#120">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpvg3vv10x --quiet tests/shellchar2.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test empty writable dir with InitialWorkDirRequirement" time="0.879847" class="inline_javascript, initial_work_dir, command_line_tool" file="initial_workdir_empty_writable" url="cwltest:conformance_tests#121">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpty8ksi6z --quiet tests/writable-dir.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test empty writable dir with InitialWorkDirRequirement inside Docker" time="0.872941" class="inline_javascript, initial_work_dir, command_line_tool" file="initial_workdir_empty_writable_docker" url="cwltest:conformance_tests#122">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpml7y3xs9 --quiet tests/writable-dir-docker.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test dynamic resource reqs referencing inputs" time="0.891463" class="resource, command_line_tool" file="dynamic_resreq_inputs" url="cwltest:conformance_tests#123">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8ec41ht0 --quiet tests/dynresreq.cwl tests/dynresreq-job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test file literal as input without Docker" time="0.890815" class="required, command_line_tool" file="fileliteral_input_docker" url="cwltest:conformance_tests#124">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpajfec69u --quiet tests/cat3-nodocker.cwl tests/file-literal.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that OutputBinding.glob is sorted as specified by POSIX" time="0.884809" class="required, command_line_tool" file="outputbinding_glob_sorted" url="cwltest:conformance_tests#125">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp10rgzy93 --quiet tests/glob_test.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement with a nested directory structure from another step" time="0.890745" class="initial_work_dir, workflow" file="initialworkdir_nesteddir" url="cwltest:conformance_tests#126">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp47bfpext --quiet tests/iwdr_with_nested_dirs.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that boolean flags do not appear on command line if inputBinding is empty and not null" time="0.882609" class="required, command_line_tool" file="booleanflags_cl_noinputbinding" url="cwltest:conformance_tests#127">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmph8oklfwo --quiet tests/bool-empty-inputbinding.cwl tests/bool-empty-inputbinding-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that expression engine does not fail to evaluate reference to self with unprovided input" time="0.873479" class="required, command_line_tool" file="expr_reference_self_noinput" url="cwltest:conformance_tests#128">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkqybzg_s --quiet tests/stage-unprovided-file.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test successCodes" time="0.888040" class="required, command_line_tool" file="success_codes" url="cwltest:conformance_tests#129">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqpfwqx24 --quiet tests/exit-success.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test simple workflow with a dynamic resource requirement" time="0.897887" class="resource, workflow" file="dynamic_resreq_wf" url="cwltest:conformance_tests#130">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1jc2h6tq --quiet tests/dynresreq-workflow.cwl tests/dynresreq-job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that empty array input does not add anything to command line" time="0.886319" class="required, command_line_tool" file="cl_empty_array_input" url="cwltest:conformance_tests#131">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpmch9p6eg --quiet tests/empty-array-input.cwl tests/empty-array-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that ResourceRequirement on a step level redefines requirement on the workflow level" time="0.883327" class="resource, workflow" file="resreq_step_overrides_wf" url="cwltest:conformance_tests#132">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpuv7q9eur --quiet tests/steplevel-resreq.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom with constant value overriding provided array inputs" time="0.880442" class="required, command_line_tool" file="valuefrom_constant_overrides_inputs" url="cwltest:conformance_tests#133">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp76wck2ae --quiet tests/valueFrom-constant.cwl tests/array-of-strings-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test dynamic resource reqs referencing the size of Files inside a Directory" time="1.633006" class="resource, command_line_tool" file="dynamic_resreq_filesizes" url="cwltest:conformance_tests#134">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxmighigt --quiet tests/dynresreq-dir.cwl tests/dynresreq-dir-job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs." time="0.875455" class="required, workflow" file="wf_step_connect_undeclared_param" url="cwltest:conformance_tests#135">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpav68d433 --quiet tests/pass-unconnected.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool." time="0.892083" class="required, workflow" file="wf_step_access_undeclared_param" url="cwltest:conformance_tests#136"/>
+		<testcase name="Test $HOME and $TMPDIR are set correctly in Docker without using return code" time="0.878371" class="shell_command, command_line_tool" file="env_home_tmpdir_docker_no_return_code" url="cwltest:conformance_tests#137">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8hpadnr9 --quiet tests/envvar3.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)" time="0.886828" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom_inputs" url="cwltest:conformance_tests#138">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8f36cprq --quiet tests/scatter-valuefrom-inputs-wf1.cwl tests/scatter-valuefrom-job1.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="SchemaDefRequirement with $import, and packed" time="1.244333" class="schema_def, workflow" file="packed_import_schema" url="cwltest:conformance_tests#139">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1lp78lkg --quiet tests/import_schema-def_packed.cwl tests/import_schema-def_job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test specifying secondaryFiles in subdirectories of the job input document." time="0.874094" class="shell_command, command_line_tool" file="job_input_secondary_subdirs" url="cwltest:conformance_tests#140">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_04vt47l --quiet tests/dir4.cwl tests/dir4-subdir-1-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test specifying secondaryFiles in same subdirectory of the job input as the primary input file." time="0.895800" class="shell_command, command_line_tool" file="job_input_subdir_primary_and_secondary_subdirs" url="cwltest:conformance_tests#141">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptjizjj74 --quiet tests/dir4.cwl tests/dir4-subdir-2-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test simple scatter over an embedded subworkflow" time="1.679297" class="workflow, inline_javascript" file="scatter_embedded_subworkflow" url="cwltest:conformance_tests#142">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdj70slha --quiet tests/count-lines18-wf.cwl tests/count-lines3-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test simple multiple input scatter over an embedded subworkflow" time="1.664629" class="workflow, scatter, subworkflow, multiple_input, inline_javascript" file="scatter_multi_input_embedded_subworkflow" url="cwltest:conformance_tests#143">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpnf01un3_ --quiet tests/count-lines14-wf.cwl tests/count-lines4-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test twice nested subworkflow" time="1.688136" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_embedded_subsubworkflow" url="cwltest:conformance_tests#144">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmprgw_mjsv --quiet tests/count-lines15-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test subworkflow of mixed depth with tool first" time="1.684654" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_with_tool_and_subsubworkflow" url="cwltest:conformance_tests#145">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpl0jlnbf_ --quiet tests/count-lines16-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test subworkflow of mixed depth with tool after" time="1.677023" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_with_subsubworkflow_and_tool" url="cwltest:conformance_tests#146">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpj8qkc2h6 --quiet tests/count-lines17-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test record type inputs to and outputs from workflows." time="0.903877" class="workflow, shell_command" file="workflow_records_inputs_and_outputs" url="cwltest:conformance_tests#147">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpnm5m8ujb --quiet tests/record-output-wf.cwl tests/record-output-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test integer workflow input and outputs" time="0.918205" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input" url="cwltest:conformance_tests#148">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt42v3h3c --quiet tests/io-int-wf.cwl tests/io-int.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test optional integer workflow inputs (specified)" time="0.889590" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_optional_specified" url="cwltest:conformance_tests#149">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpo5ghxlvo --quiet tests/io-int-optional-wf.cwl tests/io-int.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test optional integer workflow inputs (unspecified)" time="0.884404" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_optional_unspecified" url="cwltest:conformance_tests#150">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmprw_rvy0r --quiet tests/io-int-optional-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default integer workflow inputs (specified)" time="0.884115" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_specified" url="cwltest:conformance_tests#151">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp271mr6_f --quiet tests/io-int-default-wf.cwl tests/io-int.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default integer workflow inputs (unspecified)" time="0.895504" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_unspecified" url="cwltest:conformance_tests#152">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpu9d64iij --quiet tests/io-int-default-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default integer tool and workflow inputs (unspecified)" time="0.880131" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_and_tool_integer_input_default" url="cwltest:conformance_tests#153">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpd4sj2cxn --quiet tests/io-int-default-tool-and-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test File input with default unspecified to workflow" time="0.961807" class="workflow" file="workflow_file_input_default_unspecified" url="cwltest:conformance_tests#154">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0brnbvcu --quiet tests/io-file-default-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test File input with default specified to workflow" time="0.914845" class="workflow" file="workflow_file_input_default_specified" url="cwltest:conformance_tests#155">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmppytsk78o --quiet tests/io-file-default-wf.cwl tests/default_path_job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with one file in array specified." time="1.699828" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_array_of_one_file_provided" url="cwltest:conformance_tests#156">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8yxkc82l --quiet tests/io-file-or-files.cwl tests/job-input-array-one-empty-file.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with a few files in array specified." time="1.738827" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_many_files_provided" url="cwltest:conformance_tests#157">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxsgai9yg --quiet tests/io-file-or-files.cwl tests/job-input-array-few-files.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with one file specified." time="1.693054" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_single_file_provided" url="cwltest:conformance_tests#158">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpr4jm396z --quiet tests/io-file-or-files.cwl tests/job-input-one-file.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with null specified." time="1.721643" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_nothing_provided" url="cwltest:conformance_tests#159">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpvhg51s8m --quiet tests/io-file-or-files.cwl tests/job-input-null.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with integer input to a tool" time="1.708738" class="command_line_tool, inline_javascript" file="clt_any_input_with_integer_provided" url="cwltest:conformance_tests#160">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpv9oh0u37 --quiet tests/io-any-1.cwl tests/io-any-int.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with string input to a tool" time="1.711652" class="command_line_tool, inline_javascript" file="clt_any_input_with_string_provided" url="cwltest:conformance_tests#161">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpiavn0hrz --quiet tests/io-any-1.cwl tests/io-any-string.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with file input to a tool" time="1.706908" class="command_line_tool, inline_javascript" file="clt_any_input_with_file_provided" url="cwltest:conformance_tests#162">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpg2_7j4qy --quiet tests/io-any-1.cwl tests/io-any-file.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with array input to a tool" time="1.676242" class="command_line_tool, inline_javascript" file="clt_any_input_with_mixed_array_provided" url="cwltest:conformance_tests#163">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0lbvs2ih --quiet tests/io-any-1.cwl tests/io-any-array.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with record input to a tool" time="1.702306" class="command_line_tool, inline_javascript" file="clt_any_input_with_record_provided" url="cwltest:conformance_tests#164">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp85x3be35 --quiet tests/io-any-1.cwl tests/io-any-record.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with integer input to a workflow" time="1.711667" class="workflow, inline_javascript" file="workflow_any_input_with_integer_provided" url="cwltest:conformance_tests#165">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpn7eaieq_ --quiet tests/io-any-wf-1.cwl tests/io-any-int.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with string input to a workflow" time="1.702365" class="workflow, inline_javascript" file="workflow_any_input_with_string_provided" url="cwltest:conformance_tests#166">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpyau5dxyl --quiet tests/io-any-wf-1.cwl tests/io-any-string.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with file input to a workflow" time="1.709387" class="workflow, inline_javascript" file="workflow_any_input_with_file_provided" url="cwltest:conformance_tests#167">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpacg3kef_ --quiet tests/io-any-wf-1.cwl tests/io-any-file.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with array input to a workflow" time="1.734852" class="workflow, inline_javascript" file="workflow_any_input_with_mixed_array_provided" url="cwltest:conformance_tests#168">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpa0mu7hia --quiet tests/io-any-wf-1.cwl tests/io-any-array.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any parameter with record input to a tool" time="1.730819" class="workflow, inline_javascript" file="workflow_any_input_with_record_provided" url="cwltest:conformance_tests#169">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdc83ngom --quiet tests/io-any-wf-1.cwl tests/io-any-record.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test union type input to workflow with default unspecified" time="0.949795" class="workflow, inline_javascript, expression_tool" file="workflow_union_default_input_unspecified" url="cwltest:conformance_tests#170">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpbp1fiqgy --quiet tests/io-union-input-default-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test union type input to workflow with default specified as file" time="0.899544" class="workflow, inline_javascript, expression_tool" file="workflow_union_default_input_with_file_provided" url="cwltest:conformance_tests#171">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2idnw9wu --quiet tests/io-union-input-default-wf.cwl tests/io-any-file.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step from literal (string)." time="0.901289" class="workflow, step_input" file="workflowstep_valuefrom_string" url="cwltest:conformance_tests#172">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpnqdtf8pt --quiet tests/step-valuefrom4-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step using basename." time="0.910299" class="workflow, step_input" file="workflowstep_valuefrom_file_basename" url="cwltest:conformance_tests#173">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpx9bsq65g --quiet tests/step-valuefrom5-wf.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test output arrays in a tool (with ints)." time="1.645464" class="expression_tool, inline_javascript" file="expression_tool_int_array_output" url="cwltest:conformance_tests#174">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp6e4nmzk0 --quiet tests/output-arrays-int.cwl tests/output-arrays-int-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test output arrays in a workflow (with ints)." time="0.906250" class="workflow, expression_tool, inline_javascript" file="workflowstep_int_array_input_output" url="cwltest:conformance_tests#175">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpau9907v2 --quiet tests/output-arrays-int-wf.cwl tests/output-arrays-int-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test output arrays in a workflow (with Files)." time="0.910406" class="workflow, expression_tool, inline_javascript" file="workflow_file_array_output" url="cwltest:conformance_tests#176">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwxia4w52 --quiet tests/output-arrays-file-wf.cwl tests/output-arrays-file-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Docker ENTRYPOINT usage" time="0.884078" class="command_line_tool, docker" file="docker_entrypoint" url="cwltest:conformance_tests#177">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpaprs2_9v --quiet tests/docker-run-cmd.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test use of size in expressions for an empty file" time="1.680582" class="command_line_tool, inline_javascript" file="clt_file_size_property_with_empty_file" url="cwltest:conformance_tests#178">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqhes5p2e --quiet tests/size-expression-tool.cwl tests/job-input-array-one-empty-file.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test use of size in expressions for a few files" time="1.669397" class="command_line_tool, inline_javascript" file="clt_file_size_property_with_multi_file" url="cwltest:conformance_tests#179">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpw1gsupai --quiet tests/size-expression-tool.cwl tests/job-input-array-few-files.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Any without defaults, unspecified, should fail." time="0.881524" class="command_line_tool, required" file="any_without_defaults_unspecified_fails" url="cwltest:conformance_tests#180"/>
+		<testcase name="Test Any without defaults, specified, should fail." time="0.870497" class="command_line_tool, required" file="any_without_defaults_specified_fails" url="cwltest:conformance_tests#181"/>
+		<testcase name="Test default value on step input parameter, no ExpressionTool" time="0.881370" class="workflow, required" file="step_input_default_value_noexp" url="cwltest:conformance_tests#182">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqm1f0su5 --quiet tests/count-lines9-wf-noET.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source, no ExpressionTool" time="0.888693" class="workflow, required" file="step_input_default_value_overriden_noexp" url="cwltest:conformance_tests#183">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptwhhcqer --quiet tests/count-lines11-wf-noET.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test nested workflow, without ExpressionTool" time="0.892935" class="workflow, subworkflow" file="nested_workflow_noexp" url="cwltest:conformance_tests#184">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqpf4gwau --quiet tests/count-lines8-wf-noET.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test step input with multiple sources with multiple types, without ExpressionTool" time="0.880882" class="workflow, step_input, inline_javascript, multiple_input" file="wf_multiplesources_multipletypes_noexp" url="cwltest:conformance_tests#185">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpy5iqefwj --quiet tests/sum-wf-noET.cwl tests/sum-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input." time="0.890410" class="workflow, resource" file="dynamic_resreq_wf_optional_file_default" url="cwltest:conformance_tests#186">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5zun8kny --quiet tests/dynresreq-workflow-tooldefault.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input." time="0.977319" class="workflow, resource" file="dynamic_resreq_wf_optional_file_step_default" url="cwltest:conformance_tests#187">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2whbjoz7 --quiet tests/dynresreq-workflow-stepdefault.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itelf provides a default value (a local file) for this input." time="0.894716" class="workflow, resource" file="dynamic_resreq_wf_optional_file_wf_default" url="cwltest:conformance_tests#188">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9qiin250 --quiet tests/dynresreq-workflow-inputdefault.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With passthrough first step" time="1.698633" class="workflow, inline_javascript" file="step_input_default_value_overriden_2nd_step" url="cwltest:conformance_tests#189">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2x2elgai --quiet tests/count-lines11-extra-step-wf.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool" time="0.892323" class="workflow, required" file="step_input_default_value_overriden_2nd_step_noexp" url="cwltest:conformance_tests#190">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpj6e4bvus --quiet tests/count-lines11-extra-step-wf-noET.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With null producing first step" time="1.672436" class="workflow, inline_javascript" file="step_input_default_value_overriden_2nd_step_null" url="cwltest:conformance_tests#191">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9mvfb2cl --quiet tests/count-lines11-null-step-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool" time="1.669492" class="workflow, required" file="step_input_default_value_overriden_2nd_step_null_noexp" url="cwltest:conformance_tests#192">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk_5g0oym --quiet tests/count-lines11-null-step-wf-noET.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Pipe to stdin from user provided local File via a Directory literal" time="0.878255" class="command_line_tool, required" file="stdin_from_directory_literal_with_local_file" url="cwltest:conformance_tests#193">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpiqz0jad9 --quiet tests/cat-from-dir.cwl tests/cat-from-dir-job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Pipe to stdin from literal File via a Directory literal" time="0.872598" class="command_line_tool, required" file="stdin_from_directory_literal_with_literal_file" url="cwltest:conformance_tests#194">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpuv04vz2q --quiet tests/cat-from-dir.cwl tests/cat-from-dir-with-literal-file.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test non-stdin reference to literal File via a Directory literal" time="0.870740" class="command_line_tool, required" file="directory_literal_with_literal_file_nostdin" url="cwltest:conformance_tests#195">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmph2s2tngb --quiet tests/cat3-from-dir.cwl tests/cat-from-dir-with-literal-file.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test CommandLineTool without inputs" time="0.889292" class="command_line_tool, required" file="no_inputs_commandlinetool" url="cwltest:conformance_tests#196">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp93mg5lkb --quiet tests/no-inputs-tool.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test CommandLineTool without outputs" time="0.876877" class="command_line_tool, required" file="no_outputs_commandlinetool" url="cwltest:conformance_tests#197">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp6fxxsx1t --quiet tests/no-outputs-tool.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Workflow without inputs" time="0.931197" class="workflow, required" file="no_inputs_workflow" url="cwltest:conformance_tests#198">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgz1twbnx --quiet tests/no-inputs-wf.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test Workflow without outputs" time="0.874452" class="workflow, required" file="no_outputs_workflow" url="cwltest:conformance_tests#199">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpx9wqdfeo --quiet tests/no-outputs-wf.cwl tests/cat-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test an anonymous enum inside an array inside a record" time="0.890656" class="command_line_tool, required" file="anonymous_enum_in_array" url="cwltest:conformance_tests#200">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt4d8xezc --quiet tests/anon_enum_inside_array.cwl tests/anon_enum_inside_array.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test an anonymous enum inside an array inside a record, SchemaDefRequirement" time="0.881915" class="command_line_tool, schema_def" file="schema-def_anonymous_enum_in_array" url="cwltest:conformance_tests#201">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqx89vjpb --quiet tests/anon_enum_inside_array_inside_schemadef.cwl tests/anon_enum_inside_array_inside_schemadef.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test command execution in with stdin and stdout redirection using stdin shortcut" time="0.884627" class="command_line_tool, docker" file="stdin_shorcut" url="cwltest:conformance_tests#202">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9lqa25i1 --quiet tests/cat-tool-shortcut.cwl tests/wc-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test secondaryFiles on anonymous record fields" time="0.893320" class="command_line_tool, required" file="secondary_files_in_unnamed_records" url="cwltest:conformance_tests#203">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp37kbg686 --quiet tests/record-in-secondaryFiles.cwl tests/record-secondaryFiles-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test secondaryFiles on SchemaDefRequirement record fields" time="0.879537" class="command_line_tool, schema_def" file="secondary_files_in_named_records" url="cwltest:conformance_tests#204">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsfgx61gm --quiet tests/record-sd-secondaryFiles.cwl tests/record-secondaryFiles-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test secondaryFiles on output record fields" time="0.883051" class="command_line_tool, required" file="secondary_files_in_output_records" url="cwltest:conformance_tests#205">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgtuqb00t --quiet tests/record-out-secondaryFiles.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test secondaryFiles propagation through workflow" time="0.885013" class="workflow, required" file="secondary_files_workflow_propagation" url="cwltest:conformance_tests#206">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpm404tod4 --quiet tests/record-in-secondaryFiles-wf.cwl tests/record-secondaryFiles-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test checking when secondaryFiles are missing" time="0.882788" class="workflow, required" file="secondary_files_missing" url="cwltest:conformance_tests#207"/>
+		<testcase name="Test format on anonymous record fields" time="0.869559" class="command_line_tool, required" file="input_records_file_entry_with_format" url="cwltest:conformance_tests#208">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt59ejoc7 --quiet tests/record-in-format.cwl tests/record-format-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test file format checking on parameter" time="0.877907" class="command_line_tool, format_checking" file="input_records_file_entry_with_format_and_bad_regular_input_file_format" url="cwltest:conformance_tests#209"/>
+		<testcase name="Test file format checking on record field" time="0.877095" class="command_line_tool, format_checking" file="input_records_file_entry_with_format_and_bad_entry_file_format" url="cwltest:conformance_tests#210"/>
+		<testcase name="Test file format checking on array item" time="0.876462" class="command_line_tool, format_checking" file="input_records_file_entry_with_format_and_bad_entry_array_file_format" url="cwltest:conformance_tests#211"/>
+		<testcase name="Test format on output record fields" time="0.932605" class="command_line_tool, format_checking" file="record_output_file_entry_format" url="cwltest:conformance_tests#212">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2raljjn3 --quiet tests/record-out-format.cwl tests/record-secondaryFiles-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test WorkflowInputParameter.inputBinding.loadContents" time="1.646985" class="workflow, step_input, inline_javascript, expression_tool" file="workflow_input_inputBinding_loadContents" url="cwltest:conformance_tests#213">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpjjkdkyyk --quiet tests/wf-loadContents.cwl tests/wf-loadContents-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test WorkflowInputParameter.loadContents" time="1.669612" class="workflow, step_input, inline_javascript, expression_tool" file="workflow_input_loadContents_without_inputBinding" url="cwltest:conformance_tests#214">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgzu3ce2s --quiet tests/wf-loadContents2.cwl tests/wf-loadContents-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test loadContents on InputParameter.loadContents (expression)" time="1.658418" class="workflow, step_input, inline_javascript, expression_tool" file="expression_tool_input_loadContents" url="cwltest:conformance_tests#215">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpr8evas95 --quiet tests/wf-loadContents3.cwl tests/wf-loadContents-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test WorkflowStepInput.loadContents" time="1.677908" class="workflow, step_input, inline_javascript, expression_tool" file="workflow_step_in_loadContents" url="cwltest:conformance_tests#216">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpvqrf3nal --quiet tests/wf-loadContents4.cwl tests/wf-loadContents-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that job fails when exceeding time limit" time="0.876183" class="command_line_tool, timelimit, work_reuse" file="timelimit_basic" url="cwltest:conformance_tests#217"/>
+		<testcase name="Test invalid time limit value" time="0.884453" class="command_line_tool, timelimit, json_schema_invalid" file="timelimit_invalid" url="cwltest:conformance_tests#218"/>
+		<testcase name="Test zero timelimit means no limit" time="0.884007" class="command_line_tool, timelimit, work_reuse" file="timelimit_zero_unlimited" url="cwltest:conformance_tests#219">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpyqdd2o1p --quiet tests/timelimit3.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test expression in time limit" time="0.876376" class="command_line_tool, timelimit, inline_javascript, work_reuse" file="timelimit_from_expression" url="cwltest:conformance_tests#220"/>
+		<testcase name="Test timelimit in expressiontool is ignored" time="1.659585" class="expression_tool, timelimit, inline_javascript" file="timelimit_expressiontool" url="cwltest:conformance_tests#221">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2n0_sso_ --quiet tests/timelimit5.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that tool in workflow fails when exceeding time limit" time="0.879027" class="workflow, timelimit" file="timelimit_basic_wf" url="cwltest:conformance_tests#222"/>
+		<testcase name="Test that workflow level time limit is not applied to workflow execution time" time="0.884083" class="workflow, timelimit, inline_javascript" file="timelimit_invalid_wf" url="cwltest:conformance_tests#223">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfqt7ik6b --quiet tests/timelimit2-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test zero timelimit means no limit in workflow" time="0.868075" class="workflow, timelimit, inline_javascript, work_reuse" file="timelimit_zero_unlimited_wf" url="cwltest:conformance_tests#224">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwk5yu1lo --quiet tests/timelimit3-wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test expression in time limit in workflow" time="0.882297" class="workflow, timelimit, inline_javascript, work_reuse" file="timelimit_from_expression_wf" url="cwltest:conformance_tests#225"/>
+		<testcase name="Test networkaccess enabled" time="0.881494" class="command_line_tool, networkaccess" file="networkaccess" url="cwltest:conformance_tests#226">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpde6o9yt4 --quiet tests/networkaccess.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test networkaccess is disabled by default" time="0.887158" class="networkaccess, command_line_tool" file="networkaccess_disabled" url="cwltest:conformance_tests#227"/>
+		<testcase name="Test null and array input in InitialWorkDirRequirement" time="0.975017" class="resource, command_line_tool, initial_work_dir" file="initial_work_dir_for_null_and_arrays" url="cwltest:conformance_tests#228">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpchdk8jyh --quiet tests/stage-array.cwl tests/stage-array-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test array of directories InitialWorkDirRequirement" time="0.886942" class="resource, command_line_tool, initial_work_dir" file="initial_work_dir_for_array_dirs" url="cwltest:conformance_tests#229">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp3_7swj58 --quiet tests/stage-array-dirs.cwl tests/stage-array-dirs-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test requirements in input document via EnvVarRequirement" time="0.888495" class="command_line_tool, input_object_requirements" file="cwl_requirements_addition" url="cwltest:conformance_tests#230">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpjcgxdh6l --quiet tests/env-tool3.cwl tests/env-job3.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test conflicting requirements in input document via EnvVarRequirement and expression" time="0.893569" class="command_line_tool, input_object_requirements" file="cwl_requirements_override_expression" url="cwltest:conformance_tests#231">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpqubzzexn --quiet tests/env-tool4.cwl tests/env-job3.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test conflicting requirements in input document via EnvVarRequirement" time="0.890017" class="command_line_tool, input_object_requirements" file="cwl_requirements_override_static" url="cwltest:conformance_tests#232">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpi_spp1xl --quiet tests/env-tool3.cwl tests/env-job4.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test full path glob output of InitialWorkDir" time="0.873609" class="initial_work_dir, command_line_tool" file="initial_workdir_output_glob" url="cwltest:conformance_tests#233">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0qnb2box --quiet tests/initialworkdir-glob-fullpath.cwl tests/initialworkdirrequirement-docker-out-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test fail trying to glob outside output directory" time="0.861454" class="command_line_tool, docker" file="glob_outside_outputs_fails" url="cwltest:conformance_tests#234"/>
+		<testcase name="symlink to file outside of working directory should NOT be retrieved" time="0.876534" class="command_line_tool" file="illegal_symlink" url="cwltest:conformance_tests#235"/>
+		<testcase name="symlink to file inside of working directory should be retrieved" time="0.884650" class="command_line_tool" file="legal_symlink" url="cwltest:conformance_tests#236">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmps0_jindj --quiet tests/symlink-legal.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="inplace update has side effect on file content" time="2.022598" class="inplace_update, workflow" file="modify_file_content" url="cwltest:conformance_tests#237">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpmqgrr036 --quiet tests/inp_update_wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="inplace update has side effect on directory content" time="0.908645" class="inplace_update, workflow" file="modify_directory_content" url="cwltest:conformance_tests#238">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpuq8rdzh3 --quiet tests/inpdir_update_wf.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that OutputBinding.glob accepts Directories" time="0.893984" class="required, command_line_tool" file="outputbinding_glob_directory" url="cwltest:conformance_tests#239">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmps6w82qt2 --quiet tests/glob_directory.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that array of input files can be staged to directory with entryname" time="0.882668" class="command_line_tool, initial_work_dir, inline_javascript" file="stage_file_array" url="cwltest:conformance_tests#240">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp97gf6bz6 --quiet tests/stage_file_array.cwl tests/stage_file_array.job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that array of input files can be staged to directory with basename" time="0.884517" class="command_line_tool, initial_work_dir, inline_javascript" file="stage_file_array_basename" url="cwltest:conformance_tests#241">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfnmaxivs --quiet tests/stage_file_array_basename.cwl tests/stage_file_array.job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that if array of input files are staged to directory with basename and entryname, entryname overrides" time="0.895403" class="command_line_tool, initial_work_dir, inline_javascript" file="stage_file_array_entryname_overrides" url="cwltest:conformance_tests#242">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpd171xvsj --quiet tests/stage_file_array_basename_and_entryname.cwl tests/stage_file_array.job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that runtime.tmpdir is not runtime.outdir" time="0.889633" class="command_line_tool" file="tmpdir_is_not_outdir" url="cwltest:conformance_tests#243">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp3rzf6yxp --quiet tests/runtime-paths-distinct.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that default behavior is 'no_listing' if not specified" time="1.676430" class="command_line_tool" file="listing_default_none" url="cwltest:conformance_tests#244">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8tm4svbl --quiet tests/listing_none1.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that 'listing' is not present when LoadListingRequirement is 'no_listing'" time="1.706386" class="command_line_tool, load_listing" file="listing_requirement_none" url="cwltest:conformance_tests#245">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpmtgds439 --quiet tests/listing_none2.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that 'listing' is not present when loadListing on input parameter is 'no_listing'" time="1.675828" class="command_line_tool" file="listing_loadListing_none" url="cwltest:conformance_tests#246">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphn11mb0j --quiet tests/listing_none3.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object but not subdirectory object when LoadListingRequirement is 'shallow_listing'" time="1.688394" class="command_line_tool, load_listing" file="listing_requirement_shallow" url="cwltest:conformance_tests#247">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5laq2lpl --quiet tests/listing_shallow1.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object but not subdirectory object when loadListing on input parameter loadListing is 'shallow_listing'" time="1.686835" class="command_line_tool" file="listing_loadListing_shallow" url="cwltest:conformance_tests#248">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcrx4zctn --quiet tests/listing_shallow2.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that loadListing works when used on outputBinding." time="1.689944" class="command_line_tool" file="listing_outputBinding_loadListing" url="cwltest:conformance_tests#249">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpf_4uyf4p --quiet tests/listing_shallow3.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object and in subdirectory objects when LoadListingRequirement is 'deep_listing'" time="1.673739" class="command_line_tool, load_listing" file="listing_requirement_deep" url="cwltest:conformance_tests#250">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpjpfk5_yn --quiet tests/listing_deep1.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that 'listing' is present in top directory object and in subdirectory objects when input parameter loadListing is 'deep_listing'" time="1.639827" class="command_line_tool" file="listing_loadListing_deep" url="cwltest:conformance_tests#251">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp66snfesu --quiet tests/listing_deep2.cwl tests/listing-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test for expression in the InputBinding.position field; also test using emoji in CWL document and tool output" time="1.664879" class="command_line_tool, required" file="inputBinding_position_expr" url="cwltest:conformance_tests#252">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp34kyc1le --quiet tests/echo-position-expr.cwl tests/echo-position-expr-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Can access exit code in outputEval" time="0.890002" class="command_line_tool, required" file="outputEval_exitCode" url="cwltest:conformance_tests#253">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp4991jzxx --quiet tests/exitcode.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test use of $graph without specifying which process to run" time="0.898363" class="required, command_line_tool" file="any_input_param_graph_no_default" url="cwltest:conformance_tests#254">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8h_rsp06 --quiet tests/echo-tool-packed.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test use of $graph without specifying which process to run, hash-prefixed &quot;main&quot;" time="0.894548" class="required, command_line_tool" file="any_input_param_graph_no_default_hashmain" url="cwltest:conformance_tests#255">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmplobog41a --quiet tests/echo-tool-packed2.cwl tests/env-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that optional number output is returned as 0, not null" time="1.649431" class="inline_javascript, command_line_tool" file="optional_numerical_output_returns_0_not_null" url="cwltest:conformance_tests#256">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsr6rcgb0 --quiet tests/optional-numerical-output-0.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test float value for coresMin(Max) is rounded up in runtime.cores" time="0.889461" class="resource, command_line_tool" file="cores_float" url="cwltest:conformance_tests#257">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_a72at5y --quiet tests/cores_float.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test float value for ram/tmpdir/outdir Min(Max) is rounded up" time="0.892723" class="resource, command_line_tool" file="storage_float" url="cwltest:conformance_tests#258">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp96u_g59f --quiet tests/storage_float.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test the generation of a synthetic file with inline contents." time="0.878456" class="required, command_line_tool" file="cat_synthetic_file" url="cwltest:conformance_tests#259">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphwx2ghri --quiet tests/synth-file.cwl tests/synth-file-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Line continuations in bash scripts should behave correctly" time="0.882957" class="inline_javascript, command_line_tool" file="continuation" url="cwltest:conformance_tests#260">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwlpmzm4q --quiet tests/string-interpolation/bash-line-continuation.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Line continuations in bash scripts should always behave correctly" time="0.902364" class="inline_javascript, command_line_tool" file="continuation_expression" url="cwltest:conformance_tests#261">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfusn3upl --quiet tests/string-interpolation/bash-line-continuation-with-expression.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test quoting multiple backslashes" time="0.894852" class="inline_javascript, command_line_tool" file="quoting_multiple_backslashes" url="cwltest:conformance_tests#262">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpaz02m273 --quiet tests/string-interpolation/bash-dollar-quote.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Strings returned from JS expressions should not have extra quotes around them" time="0.903997" class="inline_javascript, command_line_tool" file="escaping_expression_no_extra_quotes" url="cwltest:conformance_tests#263">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp6a7b37wo --quiet tests/string-interpolation/js-quote.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simplest conditional pattern (False)" time="1.669024" class="conditional, inline_javascript, workflow" file="direct_optional_null_result" url="cwltest:conformance_tests#264">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpq3s1y71u --quiet tests/conditionals/cond-wf-001.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simplest conditional pattern (True)" time="1.722082" class="conditional, inline_javascript, workflow" file="direct_optional_nonnull_result" url="cwltest:conformance_tests#265">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp9sl3vwv5 --quiet tests/conditionals/cond-wf-001.cwl tests/conditionals/val.3.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Conditional using intermediate WorkflowStep.in input" time="1.697363" class="conditional, inline_javascript, workflow" file="direct_required" url="cwltest:conformance_tests#266">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpwtkxov12 --quiet tests/conditionals/cond-wf-002.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Pass through pattern with pickValue: first_non_null; 'when' is false" time="1.694164" class="conditional, inline_javascript, multiple_input, workflow" file="pass_through_required_false_when" url="cwltest:conformance_tests#267">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmppxhldmw9 --quiet tests/conditionals/cond-wf-003.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pass through pattern with pickvalue: first_non_null; 'when' is true" time="1.682951" class="conditional, inline_javascript, multiple_input, workflow" file="pass_through_required_true_when" url="cwltest:conformance_tests#268">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxigcpf1i --quiet tests/conditionals/cond-wf-003.cwl tests/conditionals/val.3.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: first_non_null first item is non null" time="2.019350" class="conditional, inline_javascript, multiple_input, workflow" file="first_non_null_first_non_null" url="cwltest:conformance_tests#269">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdrpue945 --quiet tests/conditionals/cond-wf-003.1.cwl tests/conditionals/val.0.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: first_non_null needs at least one non null" time="2.025607" class="conditional, inline_javascript, multiple_input, workflow" file="first_non_null_all_null" url="cwltest:conformance_tests#270"/>
+		<testcase name="pickValue: first_non_null second item is non null" time="2.009666" class="conditional, inline_javascript, multiple_input, workflow" file="first_non_null_second_non_null" url="cwltest:conformance_tests#271">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxwk7sueg --quiet tests/conditionals/cond-wf-003.1.cwl tests/conditionals/val.3.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickvalue: the_only_non_null will pass, only for false condition" time="1.651066" class="conditional, inline_javascript, multiple_input, workflow" file="pass_through_required_the_only_non_null" url="cwltest:conformance_tests#272">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk3xa9c57 --quiet tests/conditionals/cond-wf-004.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: the_only_non_null will fail due to multiple non nulls" time="1.838788" class="conditional, inline_javascript, multiple_input, workflow" file="pass_through_required_fail" url="cwltest:conformance_tests#273"/>
+		<testcase name="pickValue: all_non_null will fail validation" time="1.650089" class="conditional, inline_javascript, multiple_input, workflow" file="all_non_null_multi_with_non_array_output" url="cwltest:conformance_tests#274"/>
+		<testcase name="pickValue: the_only_non_null will pass for only one active node" time="1.853759" class="conditional, inline_javascript, multiple_input, workflow" file="the_only_non_null_single_true" url="cwltest:conformance_tests#275">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfahret0n --quiet tests/conditionals/cond-wf-006.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: the_only_non_null will fail with two active nodes" time="1.806109" class="conditional, inline_javascript, multiple_input, workflow" file="the_only_non_null_multi_true" url="cwltest:conformance_tests#276"/>
+		<testcase name="pickValue: all_non_null will produce a list, even if empty" time="1.721197" class="conditional, inline_javascript, multiple_input, workflow" file="all_non_null_all_null" url="cwltest:conformance_tests#277">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsepetoxc --quiet tests/conditionals/cond-wf-007.cwl tests/conditionals/val.0.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: all_non_null will produce a list; even if single item list" time="1.705970" class="conditional, inline_javascript, multiple_input, workflow" file="all_non_null_one_non_null" url="cwltest:conformance_tests#278">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp494luk1g --quiet tests/conditionals/cond-wf-007.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: all_non_null will produce a list" time="1.700714" class="conditional, inline_javascript, multiple_input, workflow" file="all_non_null_multi_non_null" url="cwltest:conformance_tests#279">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpefi04xtf --quiet tests/conditionals/cond-wf-007.cwl tests/conditionals/val.3.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simple scatter: conditional on a non scattered variable (False)" time="1.689915" class="conditional, inline_javascript, scatter, workflow" file="condifional_scatter_on_nonscattered_false" url="cwltest:conformance_tests#280">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpahkjrpnn --quiet tests/conditionals/cond-wf-009.cwl tests/conditionals/cond15.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simple scatter: conditional on a non scattered variable (True)" time="1.660830" class="conditional, inline_javascript, scatter, workflow" file="condifional_scatter_on_nonscattered_true" url="cwltest:conformance_tests#281">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2c0sszub --quiet tests/conditionals/cond-wf-009.cwl tests/conditionals/cond16.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simple scatter: Add conditional variable to scatter" time="1.672392" class="conditional, inline_javascript, scatter, workflow" file="scatter_on_scattered_conditional" url="cwltest:conformance_tests#282">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk3io1mmb --quiet tests/conditionals/cond-wf-010.cwl tests/conditionals/val.6.list.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="nested cross product scatter with condition on one dimension" time="1.722193" class="conditional, inline_javascript, scatter, workflow" file="conditionals_nested_cross_scatter" url="cwltest:conformance_tests#283">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1h7xhges --quiet tests/conditionals/cond-wf-011.cwl tests/conditionals/cond18.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Non-boolean values from &quot;when&quot; should fail" time="1.692758" class="conditional, inline_javascript, workflow" file="conditionals_non_boolean_fail" url="cwltest:conformance_tests#284"/>
+		<testcase name="Scatter two steps, flatten result + pickValue" time="1.638622" class="conditional, inline_javascript, scatter, multiple, workflow" file="conditionals_multi_scatter" url="cwltest:conformance_tests#285">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpp62orip1 --quiet tests/conditionals/cond-wf-013.cwl tests/conditionals/cond20.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="simplest conditional pattern (true), no javascript" time="0.875871" class="conditional, workflow" file="direct_optional_null_result_nojs" url="cwltest:conformance_tests#286">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpsjy5r8pk --quiet tests/conditionals/cond-wf-001_nojs.cwl tests/conditionals/test-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="simplest conditional pattern (false), no javascript" time="0.878287" class="conditional, workflow" file="direct_optional_nonnull_result_nojs" url="cwltest:conformance_tests#287">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkmc496dk --quiet tests/conditionals/cond-wf-001_nojs.cwl tests/conditionals/test-false.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Conditional using intermediate WorkflowStep.in input; no javascript" time="0.882478" class="conditional, workflow" file="direct_required_nojs" url="cwltest:conformance_tests#288">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpzxu0_vfn --quiet tests/conditionals/cond-wf-002_nojs.cwl tests/conditionals/val.1.job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Pass through pattern with pickValue: first_non_null; 'when' is false'; no javascript" time="0.892087" class="conditional, multiple_input, workflow" file="pass_through_required_false_when_nojs" url="cwltest:conformance_tests#289">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgajvzkv5 --quiet tests/conditionals/cond-wf-003_nojs.cwl tests/conditionals/test-false.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pass through pattern with pickvalue: first_non_null; 'when' is true'; no javascript" time="0.894471" class="conditional, multiple_input, workflow" file="pass_through_required_true_when_nojs" url="cwltest:conformance_tests#290">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpj2btwoo8 --quiet tests/conditionals/cond-wf-003_nojs.cwl tests/conditionals/test-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: first_non_null first item is non null; no javascript" time="1.215274" class="conditional, multiple_input, workflow" file="first_non_null_first_non_null_nojs" url="cwltest:conformance_tests#291">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpoakgskdn --quiet tests/conditionals/cond-wf-003.1_nojs.cwl tests/conditionals/first-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: first_non_null needs at least one non null; no javascript" time="1.220515" class="conditional, multiple_input, workflow" file="first_non_null_all_null_nojs" url="cwltest:conformance_tests#292"/>
+		<testcase name="pickValue: first_non_null second item is non null; no javascript" time="1.213677" class="conditional, multiple_input, workflow" file="first_non_null_second_non_null_nojs" url="cwltest:conformance_tests#293">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk7vy55gr --quiet tests/conditionals/cond-wf-003.1_nojs.cwl tests/conditionals/second-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickvalue: the_only_non_null will pass, only for false condition; no javascript" time="0.900781" class="conditional, multiple_input, workflow" file="pass_through_required_the_only_non_null_nojs" url="cwltest:conformance_tests#294">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpy31ngahy --quiet tests/conditionals/cond-wf-004_nojs.cwl tests/conditionals/test-false.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: the_only_non_null will fail due to multiple non nulls; no javascript" time="0.883342" class="conditional, multiple_input, workflow" file="pass_through_required_fail_nojs" url="cwltest:conformance_tests#295"/>
+		<testcase name="pickValue: all_non_null will fail validation; no javascript" time="0.880818" class="conditional, multiple_input, workflow" file="all_non_null_multi_with_non_array_output_nojs" url="cwltest:conformance_tests#296"/>
+		<testcase name="pickValue: the_only_non_null will pass for only one active node; no javascript" time="0.900841" class="conditional, multiple_input, workflow" file="the_only_non_null_single_true_nojs" url="cwltest:conformance_tests#297">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1dejsfjr --quiet tests/conditionals/cond-wf-006_nojs.cwl tests/conditionals/second-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: the_only_non_null will fail with two active nodes; no javascript" time="0.902359" class="conditional, multiple_input, workflow" file="the_only_non_null_multi_true_nojs" url="cwltest:conformance_tests#298"/>
+		<testcase name="pickValue: all_non_null will produce a list, even if empty; no javascript" time="0.944219" class="conditional, multiple_input, workflow" file="all_non_null_all_null_nojs" url="cwltest:conformance_tests#299">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpelekhh2t --quiet tests/conditionals/cond-wf-007_nojs.cwl tests/conditionals/both-false.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: all_non_null will produce a list; even if single item list; no javascript" time="0.901873" class="conditional, multiple_input, workflow" file="all_non_null_one_non_null_nojs" url="cwltest:conformance_tests#300">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0me9hv7k --quiet tests/conditionals/cond-wf-007_nojs.cwl tests/conditionals/second-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="pickValue: all_non_null will produce a list; no javascript" time="0.918606" class="conditional, multiple_input, workflow" file="all_non_null_multi_non_null_nojs" url="cwltest:conformance_tests#301">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0ocsdhqf --quiet tests/conditionals/cond-wf-007_nojs.cwl tests/conditionals/both-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simple scatter: conditional on a non scattered variable (False); no javascript" time="0.897259" class="conditional, scatter, workflow" file="condifional_scatter_on_nonscattered_false_nojs" url="cwltest:conformance_tests#302">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp_rdpxck3 --quiet tests/conditionals/cond-wf-009_nojs.cwl tests/conditionals/test-false.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simple scatter: conditional on a non scattered variable (True); no javascript" time="0.890990" class="conditional, scatter, workflow" file="condifional_scatter_on_nonscattered_true_nojs" url="cwltest:conformance_tests#303">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1oxt6oj4 --quiet tests/conditionals/cond-wf-009_nojs.cwl tests/conditionals/test-true.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Simple scatter: Add conditional variable to scatter; no javascript" time="0.895822" class="conditional, scatter, workflow" file="scatter_on_scattered_conditional_nojs" url="cwltest:conformance_tests#304">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcn_g6_8m --quiet tests/conditionals/cond-wf-010_nojs.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="nested cross product scatter with condition on one dimension; no javascript" time="0.904093" class="conditional, scatter, workflow" file="conditionals_nested_cross_scatter_nojs" url="cwltest:conformance_tests#305">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1ewqzhty --quiet tests/conditionals/cond-wf-011_nojs.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Non-boolean values from &quot;when&quot; should fail; no javascript" time="0.925731" class="conditional, workflow" file="conditionals_non_boolean_fail_nojs" url="cwltest:conformance_tests#306"/>
+		<testcase name="Scatter two steps, flatten result + pickValue; no javascript" time="0.907510" class="conditional, scatter, multiple, workflow" file="conditionals_multi_scatter_nojs" url="cwltest:conformance_tests#307">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpyn1lt9yc --quiet tests/conditionals/cond-wf-013_nojs.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Default inputs, choose step to run based on what was provided, first case" time="1.986483" class="conditional, scatter, multiple, workflow" file="cond-with-defaults-1" url="cwltest:conformance_tests#308">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpvf9i9fua --quiet tests/conditionals/cond-with-defaults.cwl tests/conditionals/cond-job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Default inputs, choose step to run based on what was provided, second case" time="2.093614" class="conditional, scatter, multiple, workflow" file="cond-with-defaults-2" url="cwltest:conformance_tests#309">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpt_c55lfj --quiet tests/conditionals/cond-with-defaults.cwl tests/conditionals/cond-job2.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm CommandInputParameter expression can receive a File object" time="1.664921" class="inline_javascript, secondary_files, command_line_tool, shell_command" file="command_input_file_expression" url="cwltest:conformance_tests#310">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptyxg6buw --quiet tests/secondaryfiles/rename-inputs.cwl tests/secondaryfiles/rename-inputs.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm CommandOutputParameter expression can receive a File object" time="1.658367" class="inline_javascript, secondary_files, command_line_tool" file="command_output_file_expression" url="cwltest:conformance_tests#311">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmppujgs5_8 --quiet tests/secondaryfiles/rename-outputs.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="test v1.0 workflow document that runs other versions" time="1.125522" class="workflow" file="mixed_version_v10_wf" url="cwltest:conformance_tests#312">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpc_sdsjep --quiet tests/mixed-versions/wf-v10.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="test v1.1 workflow document that runs other versions" time="1.123611" class="workflow" file="mixed_version_v11_wf" url="cwltest:conformance_tests#313">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpzms9ivlf --quiet tests/mixed-versions/wf-v11.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="test v1.2 workflow document that runs other versions" time="1.889512" class="workflow" file="mixed_version_v12_wf" url="cwltest:conformance_tests#314">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpryv5jubw --quiet tests/mixed-versions/wf-v12.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="test tool with v1.2 syntax marked as v1.0 (should fail)" time="0.632748" class="command_line_tool, json_schema_invalid" file="invalid_syntax_v10_uses_v12_tool" url="cwltest:conformance_tests#315"/>
+		<testcase name="test tool with v1.2 syntax marked as v1.1 (should fail)" time="0.661965" class="command_line_tool, json_schema_invalid" file="invalid_syntax_v11_uses_v12_tool" url="cwltest:conformance_tests#316"/>
+		<testcase name="test wf with v1.2 syntax marked as v1.0 (should fail)" time="0.636632" class="workflow" file="invalid_syntax_v10_uses_v12_workflow" url="cwltest:conformance_tests#317"/>
+		<testcase name="test wf with v1.2 syntax marked as v1.1 (should fail)" time="0.666740" class="workflow" file="invalid_syntax_v11_uses_v12_workflow" url="cwltest:conformance_tests#318"/>
+		<testcase name="test 1.2 wf that includes tools that are marked as v1.0 and v1.1 that&#10;contain v1.2 features (should fail)" time="1.647524" class="workflow" file="invalid_syntax_mixed_v12_workflow" url="cwltest:conformance_tests#319"/>
+		<testcase name="Test that loading from cwl.output.json isn't limited to 64k" time="0.886382" class="command_line_tool, required" file="cwloutput_nolimit" url="cwltest:conformance_tests#320">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpuymcaqz_ --quiet tests/loadContents/cwloutput-nolimit.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that loadContents on a file larger than 64k fails" time="0.878828" class="command_line_tool, required, json_schema_invalid" file="loadcontents_limit" url="cwltest:conformance_tests#321"/>
+		<testcase name="Test that InitialWorkDir contents can be bigger than 64k" time="0.883557" class="initial_work_dir, command_line_tool" file="iwd-nolimit" url="cwltest:conformance_tests#322">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpmjh3gmv8 --quiet tests/iwd/iwd-nolimit.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test dump object to JSON in InitialWorkDir file contents, no trailing newline" time="0.878444" class="initial_work_dir, command_line_tool" file="iwd-jsondump1" url="cwltest:conformance_tests#323">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmptotu46b7 --quiet tests/iwd/iwd-jsondump1.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test dump object to JSON in InitialWorkDir file contents, with trailing newline" time="1.009720" class="initial_work_dir, command_line_tool" file="iwd-jsondump1-nl" url="cwltest:conformance_tests#324">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpywho3lja --quiet tests/iwd/iwd-jsondump1-nl.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test array to JSON in InitialWorkDir file contents, no trailing newline" time="0.881482" class="initial_work_dir, command_line_tool" file="iwd-jsondump2" url="cwltest:conformance_tests#325">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk6plcj19 --quiet tests/iwd/iwd-jsondump2.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test array to JSON in InitialWorkDir file contents, with trailing newline" time="0.883919" class="initial_work_dir, command_line_tool" file="iwd-jsondump2-nl" url="cwltest:conformance_tests#326">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpa6xsa3sr --quiet tests/iwd/iwd-jsondump2-nl.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test number to JSON in InitialWorkDir file contents, no trailing newline" time="0.887535" class="initial_work_dir, command_line_tool" file="iwd-jsondump3" url="cwltest:conformance_tests#327">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmppvxm8b3c --quiet tests/iwd/iwd-jsondump3.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test number to JSON in InitialWorkDir file contents, with trailing newline" time="0.895669" class="initial_work_dir, command_line_tool" file="iwd-jsondump3-nl" url="cwltest:conformance_tests#328">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpd6m37w2u --quiet tests/iwd/iwd-jsondump3-nl.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDir file passthrough" time="0.884165" class="initial_work_dir, command_line_tool" file="iwd-passthrough1" url="cwltest:conformance_tests#329">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpw6nia9d2 --quiet tests/iwd/iwd-passthrough1.cwl tests/loadContents/input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDir file object is serialized to json" time="0.882021" class="initial_work_dir, command_line_tool" file="iwd-passthrough2" url="cwltest:conformance_tests#330">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpevwu7kri --quiet tests/iwd/iwd-passthrough2.cwl tests/loadContents/input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDir file object is passed through" time="0.880212" class="initial_work_dir, command_line_tool" file="iwd-passthrough3" url="cwltest:conformance_tests#331">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpcgvwvir9 --quiet tests/iwd/iwd-passthrough3.cwl tests/loadContents/input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test InitialWorkDir file object is passed through" time="0.879532" class="initial_work_dir, command_line_tool" file="iwd-passthrough4" url="cwltest:conformance_tests#332">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpo3ki897f --quiet tests/iwd/iwd-passthrough4.cwl tests/loadContents/input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test File and Directory object in listing" time="0.880643" class="initial_work_dir, command_line_tool" file="iwd-fileobjs1" url="cwltest:conformance_tests#333">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpdpxwk94l --quiet tests/iwd/iwd-fileobjs1.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test File and Directory object in listing" time="0.869661" class="initial_work_dir, command_line_tool" file="iwd-fileobjs2" url="cwltest:conformance_tests#334">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmphge4efr3 --quiet tests/iwd/iwd-fileobjs2.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test input mount locations when container required" time="0.878351" class="initial_work_dir, command_line_tool" file="iwd-container-entryname1" url="cwltest:conformance_tests#335">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp0d0rfa4j --quiet tests/iwd/iwd-container-entryname1.cwl tests/loadContents/input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test input mount locations when no container (should fail)" time="0.893529" class="initial_work_dir, command_line_tool" file="iwd-container-entryname2" url="cwltest:conformance_tests#336"/>
+		<testcase name="Test input mount locations when container is a hint (should fail)" time="0.879085" class="initial_work_dir, command_line_tool" file="iwd-container-entryname3" url="cwltest:conformance_tests#337"/>
+		<testcase name="Must fail if entryname starts with ../" time="0.879455" class="initial_work_dir, command_line_tool" file="iwd-container-entryname4" url="cwltest:conformance_tests#338"/>
+		<testcase name="Test directory literal containing a real file" time="1.632414" class="initial_work_dir, command_line_tool" file="iwdr_dir_literal_real_file" url="cwltest:conformance_tests#339">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp1_j1nt4c --quiet tests/iwd/iwdr_dir_literal_real_file.cwl tests/loadContents/input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test emitting a subdirectory from initial workdir" time="0.892179" class="initial_work_dir, command_line_tool, workflow" file="iwd-subdir" url="cwltest:conformance_tests#340">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpyky7hd7h --quiet tests/iwd/iwd-subdir-wf.cwl tests/iwd/iwd-subdir-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter" time="0.897817" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="simple_simple_scatter" url="cwltest:conformance_tests#341">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpprja4wwl --quiet tests/scatter/simple-simple-scatter.cwl tests/scatter/scatter-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external dotproduct and internal simple" time="0.914473" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="dotproduct_simple_scatter" url="cwltest:conformance_tests#342">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpz_c9skk9 --quiet tests/scatter/dotproduct-simple-scatter.cwl tests/scatter/scatter2-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external simple and internal dotproduct" time="0.894856" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="simple_dotproduct_scatter" url="cwltest:conformance_tests#343">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp2curkjqs --quiet tests/scatter/simple-dotproduct-scatter.cwl tests/scatter/scatter3-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external dotproduct and internal dotproduct" time="0.900163" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="dotproduct_dotproduct_scatter" url="cwltest:conformance_tests#344">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpumimrbul --quiet tests/scatter/dotproduct-dotproduct-scatter.cwl tests/scatter/scatter4-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external flat_crossproduct and internal simple" time="0.897112" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="flat_crossproduct_simple_scatter" url="cwltest:conformance_tests#345">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp345thjw8 --quiet tests/scatter/flat-crossproduct-simple-scatter.cwl tests/scatter/scatter2-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external simple and internal flat_crossproduct" time="0.899365" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="simple_flat_crossproduct_scatter" url="cwltest:conformance_tests#346">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpeqxs6k3h --quiet tests/scatter/simple-flat-crossproduct-scatter.cwl tests/scatter/scatter3-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external flat_crossproduct and internal flat_crossproduct" time="0.901779" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="flat_crossproduct_flat_crossproduct_scatter" url="cwltest:conformance_tests#347">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5a2dtfdg --quiet tests/scatter/flat-crossproduct-flat-crossproduct-scatter.cwl tests/scatter/scatter4-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external nested_crossproduct and internal simple" time="0.898429" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="nested_crossproduct_simple_scatter" url="cwltest:conformance_tests#348">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpm0g9nlb2 --quiet tests/scatter/nested-crossproduct-simple-scatter.cwl tests/scatter/scatter2-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external simple and internal nested_crossproduct" time="0.897012" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="simple_nested_crossproduct_scatter" url="cwltest:conformance_tests#349">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpk7l1bj0g --quiet tests/scatter/simple-nested-crossproduct-scatter.cwl tests/scatter/scatter3-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Two level nested scatter: external nested_crossproduct and internal nested_crossproduct" time="0.902855" class="workflow, subworkflow, scatter, inline_javascript, expression_tool" file="nested_crossproduct_nested_crossproduct_scatter" url="cwltest:conformance_tests#350">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpx_lzxj4k --quiet tests/scatter/nested-crossproduct-nested-crossproduct-scatter.cwl tests/scatter/scatter4-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test parameter reference that refers to null.something" time="0.863550" class="required, command_line_tool" file="params_broken_null" url="cwltest:conformance_tests#351"/>
+		<testcase name="Test parameter reference that refers to length of non-array input" time="0.872721" class="required, command_line_tool" file="length_for_non_array" url="cwltest:conformance_tests#352"/>
+		<testcase name="Test 'length' in parameter reference where it does not refer to length of an array input" time="0.914498" class="required, command_line_tool" file="user_defined_length_in_parameter_reference" url="cwltest:conformance_tests#353">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpu9wc0f2g --quiet tests/params_input_length_non_array.cwl tests/length_non_array_input.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test non-stdin reference to literal File via a nested Directory literal" time="0.880889" class="command_line_tool, required" file="directory_literal_with_literal_file_in_subdir_nostdin" url="cwltest:conformance_tests#354">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp__1g357h --quiet tests/cat4-from-dir.cwl tests/cat-from-dir-with-literal-file-in-subdir.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm that colons are tolerated in input paths, string values, stdout shortcut, and output file &amp; directory names" time="0.909566" class="required, command_line_tool" file="colon_in_paths" url="cwltest:conformance_tests#355">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpoofu1ysz --quiet tests/colon:test.cwl tests/colon:test:job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm that colons are tolerated in output directory names" time="0.877444" class="required, command_line_tool" file="colon_in_output_path" url="cwltest:conformance_tests#356">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpld0bs_v1 --quiet tests/colon_test_output.cwl tests/colon_test_output_job.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm that records with defaults are accepted" time="0.885976" class="required, command_line_tool" file="record_with_default" url="cwltest:conformance_tests#357">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpck4bstno --quiet tests/paramref_arguments_roundtrip.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Use of outputEval on a record itself, not the fields of the record" time="1.640022" class="inline_javascript, command_line_tool" file="record_outputeval" url="cwltest:conformance_tests#358">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgzn3892m --quiet tests/record_outputeval.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Use of outputEval on a record itself, not the fields of the record (without javascript)" time="0.875127" class="required, command_line_tool" file="record_outputeval_nojs" url="cwltest:conformance_tests#359">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmph056ngwg --quiet tests/record_outputeval_nojs.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Use of expression tool to change basename of file, then correctly staging&#10;the file using the new name." time="0.893378" class="workflow, inline_javascript, expression_tool" file="staging-basename" url="cwltest:conformance_tests#360">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpkv1a9lol --quiet tests/staging-basename/wf_ren.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Use of $(runtime.outdir) for outputBinding glob." time="0.870308" class="required, command_line_tool" file="runtime-outdir" url="cwltest:conformance_tests#361">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp7ie0us7p --quiet tests/runtime-outdir.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test sorting arguments at each level (inputBinding for all levels)" time="0.880791" class="command_line_tool, required" file="record_order_with_input_bindings" url="cwltest:conformance_tests#362">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpght6fi_t --quiet tests/record-order.cwl tests/record-order-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Direct use of Workflow level input fields in the outputs." time="0.878924" class="required, workflow" file="output_reference_workflow_input" url="cwltest:conformance_tests#363">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpgtjpefs9 --quiet tests/output_reference_workflow_input.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that chaining two echo calls causes the workflow tool to emit the output to stdout.&#10;This is to confirm that the workflow tool will **not** create an expression such as&#10;`echo a &amp;&amp; echo b &gt; out.txt`, but instead will produce the correct `echo a &amp;&amp; echo b`,&#10;and capture the output correctly." time="0.879284" class="shell_command, command_line_tool" file="stdout_chained_commands" url="cwltest:conformance_tests#364">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpvx2vm1br --quiet tests/stdout_chained_commands.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="MultipleInputFeatureRequirement on workflow outputs." time="1.198356" class="workflow, multiple_input" file="multiple-input-feature-requirement" url="cwltest:conformance_tests#365">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpojvrxgzz --quiet tests/multiple_input_feature_requirement.cwl' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="A test case for JS with an input record." time="1.620751" class="inline_javascript, command_line_tool" file="js-input-record" url="cwltest:conformance_tests#366">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5kim60sf --quiet tests/js-input-record.cwl tests/js-input-record.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement with a workflow, with the `$import` under types. It is similar to schemadef-wf, but the `$import` is different." time="1.670003" class="workflow, schema_def" file="schemadef_types_with_import" url="cwltest:conformance_tests#367">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp6qx6qf2r --quiet tests/schemadef_types_with_import-wf.cwl tests/schemadef_types_with_import-job.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test for correct handling of URL-quoting in filename to refer to filename containing a hash mark" time="0.881520" class="required, command_line_tool" file="filename_with_hash_mark" url="cwltest:conformance_tests#368">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpfvgijig0 --quiet tests/cat-tool.cwl tests/octo.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Test that a type error is raised if directories are returned by glob evaluation when type is File" time="0.876435" class="required, command_line_tool" file="capture_files" url="cwltest:conformance_tests#369"/>
+		<testcase name="Test that a type error is raised if files are returned by glob evaluation when type is Directory" time="0.886118" class="required, command_line_tool" file="capture_dirs" url="cwltest:conformance_tests#370"/>
+		<testcase name="Test that both files and directories are captured by glob evaluation when type is [Directory, File]" time="0.884442" class="required, command_line_tool" file="capture_files_and_dirs" url="cwltest:conformance_tests#371">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp4x6wdmmo --quiet tests/capture-files-and-dirs.cwl tests/dir-job.yml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm that very big and very small numbers are represented using decimals, not scientific notation" time="1.406522" class="inline_javascript, command_line_tool" file="very_big_and_very_floats" url="cwltest:conformance_tests#372">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpmzj2jsqu --quiet tests/floats_small_and_large.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirm that very big and very small numbers are represented using decimals, not scientific notation" time="0.649692" class="required, command_line_tool" file="very_big_and_very_floats_nojs" url="cwltest:conformance_tests#373">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpf6k2v31l --quiet tests/floats_small_and_large_nojs.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="Confirms that &quot;false&quot;-like (but not 'null') values override any default" time="0.693262" class="step_input, workflow" file="default_with_falsey_value" url="cwltest:conformance_tests#374">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp8y098fdh --quiet tests/default_with_falsey_value.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="demonstrate usage of nested types" time="0.873486" class="require, command_line_tool" file="nested_types" url="cwltest:conformance_tests#375">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpzqi_zgbk --quiet tests/nested_types.cwl tests/nested_types.yaml' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="confirm that $runtime is available to parameter references in arguments" time="0.888392" class="required, command_line_tool" file="paramref_arguments_runtime" url="cwltest:conformance_tests#376">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmpxyqp0iy_ --quiet tests/paramref_arguments_runtime.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="confirm that $self is available and set to null in arguments" time="0.884354" class="required, command_line_tool" file="paramref_arguments_self" url="cwltest:conformance_tests#377">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp5ld9z6z7 --quiet tests/paramref_arguments_self.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+		<testcase name="confirm that $inputs is available to parameter references in arguments" time="0.888589" class="required, command_line_tool" file="paramref_arguments_inputs" url="cwltest:conformance_tests#378">
+			<failure type="failure">Command 'cwltool --singularity --enable-dev --tmpdir-prefix=/gpfs/scratch// --outdir=/scratch/tmp/tmp43re9ujo --quiet tests/paramref_arguments_inputs.cwl tests/empty.json' returned non-zero exit status 1.</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

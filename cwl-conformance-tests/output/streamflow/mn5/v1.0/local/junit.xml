@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="39" skipped="1" tests="197" time="16.357" timestamp="2026-05-28T01:27:34.230766+02:00" hostname="glogin4"><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdinout_redirect_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="8.077"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output:&#10;  output_txt:&#10;    class: File&#10;    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;    location: output.txt&#10;    size: 13&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat4-tool.cwl&#10;label: stdinout_redirect_docker&#10;id: 13&#10;doc: Test command execution in Docker with stdin and stdout redirection&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '145'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output:
+  output_txt:
+    class: File
+    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+    location: output.txt
+    size: 13
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat4-tool.cwl
+label: stdinout_redirect_docker
+id: 13
+doc: Test command execution in Docker with stdin and stdout redirection
+tags:
+- required
+- command_line_tool
+line: '145'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_dotproduct_twoempty" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="7.259" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_two_flat_crossproduct" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="7.430" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="cl_basic_generation" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="8.113"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bwa-mem-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bwa-mem-tool.cwl&#10;output:&#10;  args:&#10;  - bwa&#10;  - mem&#10;  - -t&#10;  - '2'&#10;  - -I&#10;  - 1,2,3,4&#10;  - -m&#10;  - '3'&#10;  - chr20.fa&#10;  - example_human_Illumina.pe_1.fastq&#10;  - example_human_Illumina.pe_2.fastq&#10;label: cl_basic_generation&#10;id: 1&#10;doc: General test of command line generation&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '0'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bwa-mem-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bwa-mem-tool.cwl
+output:
+  args:
+  - bwa
+  - mem
+  - -t
+  - '2'
+  - -I
+  - 1,2,3,4
+  - -m
+  - '3'
+  - chr20.fa
+  - example_human_Illumina.pe_1.fastq
+  - example_human_Illumina.pe_2.fastq
+label: cl_basic_generation
+id: 1
+doc: General test of command line generation
+tags:
+- required
+- command_line_tool
+line: '0'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_input_default_missing" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="7.647" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdout_redirect_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="8.076"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output:&#10;  output_file:&#10;    class: File&#10;    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;    location: output.txt&#10;    size: 13&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool-docker.cwl&#10;label: stdout_redirect_docker&#10;id: 7&#10;doc: Test command execution in Docker with stdout redirection&#10;tags:&#10;- docker&#10;- command_line_tool&#10;line: '67'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output:
+  output_file:
+    class: File
+    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+    location: output.txt
+    size: 13
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool-docker.cwl
+label: stdout_redirect_docker
+id: 7
+doc: Test command execution in Docker with stdout redirection
+tags:
+- docker
+- command_line_tool
+line: '67'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_expressiontool" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="7.510" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_any_nullstring_nodefaultany" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="7.364" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="any_input_param" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.176" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="any_outputSource_compatibility" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.118" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_two_dotproduct" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.106" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="nested_workflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.317" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdinout_redirect" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.184" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_scatter" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.218" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_emptylist" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.035" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_nested_crossproduct_secondempty" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.099" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_input_default_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.083" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_parseint" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.038" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_nested_crossproduct_firstempty" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.058" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_outputEval" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.169" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_scatter_multiple_merge" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.207" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_default_tool_default" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.053" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_flat_crossproduct_oneempty" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.072" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="requirement_priority" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.058" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="envvar_req" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.048" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.327" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="requirement_override_hints" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.055" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_single_param" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.093" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="requirement_workflow_steps" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.062" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_parseInt" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.106" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_two_nested_crossproduct" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.168" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="format_checking_equivalentclass" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="2.856"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest2-job.json&#10;output:&#10;  output:&#10;    location: output.txt&#10;    format: http://edamontology.org/format_1929&#10;    size: 12010&#10;    class: File&#10;    checksum: sha1$971d88faeda85a796752ecf752b7e2e34f1337ce&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest3.cwl&#10;label: format_checking_equivalentclass&#10;id: 66&#10;doc: Test format checking against ontology using equivalentClass.&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '897'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest2-job.json
+output:
+  output:
+    location: output.txt
+    format: http://edamontology.org/format_1929
+    size: 12010
+    class: File
+    checksum: sha1$971d88faeda85a796752ecf752b7e2e34f1337ce
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest3.cwl
+label: format_checking_equivalentclass
+id: 66
+doc: Test format checking against ontology using equivalentClass.
+tags:
+- required
+- command_line_tool
+line: '897'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_scatter_multiple_nested" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.175" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initial_workdir_secondary_files_expr" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="1.079"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/search-job.json&#10;output:&#10;  outfile:&#10;    class: File&#10;    checksum: sha1$e2dc9daaef945ac15f01c238ed2f1660f60909a0&#10;    location: result.txt&#10;    size: 142&#10;  indexedfile:&#10;    location: input.txt&#10;    class: File&#10;    checksum: sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&#10;    secondaryFiles:&#10;    - location: input.txt.idx1&#10;      class: File&#10;      checksum: sha1$1f6fe811644355974cdd06d9eb695d6e859f3b44&#10;      size: 1500&#10;    - location: input.idx2&#10;      class: File&#10;      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      size: 0&#10;    - location: input.txt.idx3&#10;      class: File&#10;      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      size: 0&#10;    - location: input.txt.idx4&#10;      class: File&#10;      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      size: 0&#10;    - location: input.txt.idx5&#10;      class: File&#10;      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      size: 0&#10;    - location: input.idx6.txt&#10;      class: File&#10;      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      size: 0&#10;    - checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      class: File&#10;      location: input.txt.idx7&#10;      size: 0&#10;    - checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;      class: File&#10;      location: hello.txt&#10;      size: 13&#10;    - class: Directory&#10;      listing:&#10;      - basename: index&#10;        checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;        class: File&#10;        location: index&#10;        size: 0&#10;      location: input.txt_idx8&#10;    size: 1111&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/search.cwl#main&#10;label: initial_workdir_secondary_files_expr&#10;id: 55&#10;doc: Test InitialWorkDirRequirement linking input files and capturing &#10;  secondaryFiles on input and output. Also tests the use of a variety of &#10;  parameter references and expressions in the secondaryFiles field.&#10;tags:&#10;- initial_work_dir&#10;- inline_javascript&#10;- command_line_tool&#10;line: '551'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/search-job.json
+output:
+  outfile:
+    class: File
+    checksum: sha1$e2dc9daaef945ac15f01c238ed2f1660f60909a0
+    location: result.txt
+    size: 142
+  indexedfile:
+    location: input.txt
+    class: File
+    checksum: sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376
+    secondaryFiles:
+    - location: input.txt.idx1
+      class: File
+      checksum: sha1$1f6fe811644355974cdd06d9eb695d6e859f3b44
+      size: 1500
+    - location: input.idx2
+      class: File
+      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      size: 0
+    - location: input.txt.idx3
+      class: File
+      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      size: 0
+    - location: input.txt.idx4
+      class: File
+      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      size: 0
+    - location: input.txt.idx5
+      class: File
+      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      size: 0
+    - location: input.idx6.txt
+      class: File
+      checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      size: 0
+    - checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      class: File
+      location: input.txt.idx7
+      size: 0
+    - checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+      class: File
+      location: hello.txt
+      size: 13
+    - class: Directory
+      listing:
+      - basename: index
+        checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+        class: File
+        location: index
+        size: 0
+      location: input.txt_idx8
+    size: 1111
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/search.cwl#main
+label: initial_workdir_secondary_files_expr
+id: 55
+doc: Test InitialWorkDirRequirement linking input files and capturing 
+  secondaryFiles on input and output. Also tests the use of a variety of 
+  parameter references and expressions in the secondaryFiles field.
+tags:
+- initial_work_dir
+- inline_javascript
+- command_line_tool
+line: '551'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdout_redirect_shortcut_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.851"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool-shortcut.cwl&#10;output:&#10;  output_file:&#10;    class: File&#10;    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;    location: Any&#10;    size: 13&#10;label: stdout_redirect_shortcut_docker&#10;id: 8&#10;doc: Test command execution in Docker with shortcut stdout redirection&#10;tags:&#10;- docker&#10;- command_line_tool&#10;line: '80'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool-shortcut.cwl
+output:
+  output_file:
+    class: File
+    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+    location: Any
+    size: 13
+label: stdout_redirect_shortcut_docker
+id: 8
+doc: Test command execution in Docker with shortcut stdout redirection
+tags:
+- docker
+- command_line_tool
+line: '80'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_any" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.413" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="param_evaluation_noexpr" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.145" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_scatter_multiple_flattened" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.108" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="nested_prefixes_arrays" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.856"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output:&#10;  args:&#10;  - bwa&#10;  - mem&#10;  - chr20.fa&#10;  - -XXX&#10;  - -YYY&#10;  - example_human_Illumina.pe_1.fastq&#10;  - -YYY&#10;  - example_human_Illumina.pe_2.fastq&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bwa-mem-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/binding-test.cwl&#10;label: nested_prefixes_arrays&#10;id: 2&#10;doc: Test nested prefixes with arrays&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '12'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output:
+  args:
+  - bwa
+  - mem
+  - chr20.fa
+  - -XXX
+  - -YYY
+  - example_human_Illumina.pe_1.fastq
+  - -YYY
+  - example_human_Illumina.pe_2.fastq
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bwa-mem-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/binding-test.cwl
+label: nested_prefixes_arrays
+id: 2
+doc: Test nested prefixes with arrays
+tags:
+- required
+- command_line_tool
+line: '12'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_nosource" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.073" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_nullsource" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.070" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_wc_nomultiple" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.095" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="param_evaluation_expr" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.162" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_overriden" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.075" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="valuefrom_wf_step_other" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.076" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_simple" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.999"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort-job.json&#10;output:&#10;  output:&#10;    class: File&#10;    checksum: sha1$b9214658cc453331b62c2282b772a5c063dbd284&#10;    location: output.txt&#10;    size: 1111&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort.cwl&#10;label: wf_simple&#10;id: 53&#10;doc: Test simple workflow&#10;tags:&#10;- required&#10;- workflow&#10;line: '525'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort-job.json
+output:
+  output:
+    class: File
+    checksum: sha1$b9214658cc453331b62c2282b772a5c063dbd284
+    location: output.txt
+    size: 1111
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort.cwl
+label: wf_simple
+id: 53
+doc: Test simple workflow
+tags:
+- required
+- workflow
+line: '525'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="record_output_binding" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.096" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="metadata" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="1.042"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output: {}&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/metadata.cwl&#10;label: metadata&#10;id: 63&#10;doc: Test metadata&#10;tags:&#10;- required&#10;line: '859'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output: {}
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/metadata.cwl
+label: metadata
+id: 63
+doc: Test metadata
+tags:
+- required
+line: '859'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="docker_json_output_path" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.930"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output:&#10;  foo:&#10;    location: foo&#10;    class: File&#10;    checksum: sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&#10;    size: 4&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/test-cwl-out.cwl&#10;label: docker_json_output_path&#10;id: 74&#10;doc: Test support for reading cwl.output.json when running in a Docker container&#10;  and just 'path' is provided.&#10;tags:&#10;- shell_command&#10;- command_line_tool&#10;line: '992'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output:
+  foo:
+    location: foo
+    class: File
+    checksum: sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15
+    size: 4
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/test-cwl-out.cwl
+label: docker_json_output_path
+id: 74
+doc: Test support for reading cwl.output.json when running in a Docker container
+  and just 'path' is provided.
+tags:
+- shell_command
+- command_line_tool
+line: '992'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_any_null" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.036" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_any_string" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.033" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_any_nodefaultany" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.026" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_any_null_nodefaultany" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.028" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_two_inputfiles_namecollision" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.274" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="directory_input_param_ref" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.077" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdout_redirect_mediumcut_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.855"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output:&#10;  output_file:&#10;    class: File&#10;    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;    location: cat-out&#10;    size: 13&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool-mediumcut.cwl&#10;label: stdout_redirect_mediumcut_docker&#10;id: 9&#10;doc: Test command execution in Docker with mediumcut stdout redirection&#10;tags:&#10;- docker&#10;- command_line_tool&#10;line: '93'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output:
+  output_file:
+    class: File
+    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+    location: cat-out
+    size: 13
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool-mediumcut.cwl
+label: stdout_redirect_mediumcut_docker
+id: 9
+doc: Test command execution in Docker with mediumcut stdout redirection
+tags:
+- docker
+- command_line_tool
+line: '93'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="directory_input_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.880"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/dir-job.yml&#10;output:&#10;  outlist:&#10;    size: 20&#10;    location: output.txt&#10;    checksum: sha1$13cda8661796ae241da3a18668fb552161a72592&#10;    class: File&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/dir2.cwl&#10;label: directory_input_docker&#10;id: 85&#10;doc: Test directory input in Docker&#10;tags:&#10;- required&#10;- command_line_tool&#10;- shell_command&#10;line: '1148'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/dir-job.yml
+output:
+  outlist:
+    size: 20
+    location: output.txt
+    checksum: sha1$13cda8661796ae241da3a18668fb552161a72592
+    class: File
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/dir2.cwl
+label: directory_input_docker
+id: 85
+doc: Test directory input in Docker
+tags:
+- required
+- command_line_tool
+- shell_command
+line: '1148'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="nested_cl_bindings" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.910"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output:&#10;  args:&#10;  - tmap&#10;  - mapall&#10;  - stage1&#10;  - map1&#10;  - --min-seq-length&#10;  - '20'&#10;  - map2&#10;  - --min-seq-length&#10;  - '20'&#10;  - stage2&#10;  - map1&#10;  - --max-seq-length&#10;  - '20'&#10;  - --min-seq-length&#10;  - '10'&#10;  - --seed-length&#10;  - '16'&#10;  - map2&#10;  - --max-seed-hits&#10;  - '-1'&#10;  - --max-seq-length&#10;  - '20'&#10;  - --min-seq-length&#10;  - '10'&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/tmap-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/tmap-tool.cwl&#10;label: nested_cl_bindings&#10;id: 3&#10;doc: Test nested command line bindings&#10;tags:&#10;- schema_def&#10;- command_line_tool&#10;line: '24'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output:
+  args:
+  - tmap
+  - mapall
+  - stage1
+  - map1
+  - --min-seq-length
+  - '20'
+  - map2
+  - --min-seq-length
+  - '20'
+  - stage2
+  - map1
+  - --max-seq-length
+  - '20'
+  - --min-seq-length
+  - '10'
+  - --seed-length
+  - '16'
+  - map2
+  - --max-seed-hits
+  - '-1'
+  - --max-seq-length
+  - '20'
+  - --min-seq-length
+  - '10'
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/tmap-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/tmap-tool.cwl
+label: nested_cl_bindings
+id: 3
+doc: Test nested command line bindings
+tags:
+- schema_def
+- command_line_tool
+line: '24'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="rename" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.065" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initial_workdir_trailingnl" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.049" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="inline_expressions" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.110" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="schemadef_req_tool_param" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.051" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="schemadef_req_wf_param" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.053" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="hints_unknown_ignored" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="1.169"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output:&#10;  output_file:&#10;    class: File&#10;    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;    location: output.txt&#10;    size: 13&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat5-tool.cwl&#10;label: hints_unknown_ignored&#10;id: 54&#10;doc: Test unknown hints are ignored.&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '538'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output:
+  output_file:
+    class: File
+    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+    location: output.txt
+    size: 13
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat5-tool.cwl
+label: hints_unknown_ignored
+id: 54
+doc: Test unknown hints are ignored.
+tags:
+- required
+- command_line_tool
+line: '538'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_initial_workdir" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.116" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="docker_json_output_location" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.835"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output:&#10;  foo:&#10;    location: foo&#10;    class: File&#10;    checksum: sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&#10;    size: 4&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/test-cwl-out2.cwl&#10;label: docker_json_output_location&#10;id: 75&#10;doc: Test support for reading cwl.output.json when running in a Docker container&#10;  and just 'location' is provided.&#10;tags:&#10;- shell_command&#10;- command_line_tool&#10;line: '1009'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output:
+  foo:
+    location: foo
+    class: File
+    checksum: sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15
+    size: 4
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/test-cwl-out2.cwl
+label: docker_json_output_location
+id: 75
+doc: Test support for reading cwl.output.json when running in a Docker container
+  and just 'location' is provided.
+tags:
+- shell_command
+- command_line_tool
+line: '1009'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="format_checking" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.050" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="format_checking_subclass" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="2.653"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest2-job.json&#10;output:&#10;  output:&#10;    location: output.txt&#10;    format: http://edamontology.org/format_1929&#10;    size: 12010&#10;    class: File&#10;    checksum: sha1$971d88faeda85a796752ecf752b7e2e34f1337ce&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest2.cwl&#10;label: format_checking_subclass&#10;id: 65&#10;doc: Test format checking against ontology using subclassOf.&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '882'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest2-job.json
+output:
+  output:
+    location: output.txt
+    format: http://edamontology.org/format_1929
+    size: 12010
+    class: File
+    checksum: sha1$971d88faeda85a796752ecf752b7e2e34f1337ce
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/formattest2.cwl
+label: format_checking_subclass
+id: 65
+doc: Test format checking against ontology using subclassOf.
+tags:
+- required
+- command_line_tool
+line: '882'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="writable_stagedfiles" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.842"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/stagefile-job.yml&#10;output:&#10;  outfile:&#10;    checksum: sha1$b769c7b2e316edd4b5eb2d24799b2c1f9d8c86e6&#10;    size: 1111&#10;    location: bob.txt&#10;    class: File&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/stagefile.cwl&#10;label: writable_stagedfiles&#10;id: 89&#10;doc: Test writable staged files.&#10;tags:&#10;- initial_work_dir&#10;- command_line_tool&#10;line: '1217'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/stagefile-job.yml
+output:
+  outfile:
+    checksum: sha1$b769c7b2e316edd4b5eb2d24799b2c1f9d8c86e6
+    size: 1111
+    location: bob.txt
+    class: File
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/stagefile.cwl
+label: writable_stagedfiles
+id: 89
+doc: Test writable staged files.
+tags:
+- initial_work_dir
+- command_line_tool
+line: '1217'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stderr_redirect" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.237" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="directory_output" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.070" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="cl_optional_inputs_missing" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.893"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output:&#10;  args:&#10;  - cat&#10;  - hello.txt&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat1-testcli.cwl&#10;label: cl_optional_inputs_missing&#10;id: 4&#10;doc: Test command line with optional input (missing)&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '35'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output:
+  args:
+  - cat
+  - hello.txt
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat1-testcli.cwl
+label: cl_optional_inputs_missing
+id: 4
+doc: Test command line with optional input (missing)
+tags:
+- required
+- command_line_tool
+line: '35'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="directory_secondaryfiles" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.073" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initial_workdir_output" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.837"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/initialworkdirrequirement-docker-out-job.json&#10;output:&#10;  OUTPUT:&#10;    checksum: sha1$aeb3d11bdf536511649129f4077d5cda6a324118&#10;    location: ref.fasta&#10;    secondaryFiles:&#10;    - checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      location: ref.fasta.fai&#10;      class: File&#10;      size: 0&#10;    class: File&#10;    size: 12010&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/initialworkdirrequirement-docker-out.cwl&#10;label: initial_workdir_output&#10;id: 98&#10;doc: Test output of InitialWorkDir&#10;tags:&#10;- docker&#10;- initial_work_dir&#10;- command_line_tool&#10;line: '1328'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/initialworkdirrequirement-docker-out-job.json
+output:
+  OUTPUT:
+    checksum: sha1$aeb3d11bdf536511649129f4077d5cda6a324118
+    location: ref.fasta
+    secondaryFiles:
+    - checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      location: ref.fasta.fai
+      class: File
+      size: 0
+    class: File
+    size: 12010
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/initialworkdirrequirement-docker-out.cwl
+label: initial_workdir_output
+id: 98
+doc: Test output of InitialWorkDir
+tags:
+- docker
+- initial_work_dir
+- command_line_tool
+line: '1328'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stderr_redirect_shortcut" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.049" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stderr_redirect_mediumcut" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.048" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dockeroutputdir" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.860"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output:&#10;  thing:&#10;    checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;    location: thing&#10;    class: File&#10;    size: 0&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/docker-output-dir.cwl&#10;label: dockeroutputdir&#10;id: 103&#10;doc: Test dockerOutputDirectory&#10;tags:&#10;- docker&#10;- command_line_tool&#10;line: '1410'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output:
+  thing:
+    checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+    location: thing
+    class: File
+    size: 0
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/docker-output-dir.cwl
+label: dockeroutputdir
+id: 103
+doc: Test dockerOutputDirectory
+tags:
+- docker
+- command_line_tool
+line: '1410'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="multiple_glob_expr_list" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.093" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_oneparam_valuefrom" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.074" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="input_file_literal" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.833"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/file-literal.yml&#10;output:&#10;  output_file:&#10;    class: File&#10;    checksum: sha1$d0e04ff6c413c7d57f9a0ca0a33cd3ab52e2dd9c&#10;    location: output.txt&#10;    size: 18&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool.cwl&#10;label: input_file_literal&#10;id: 90&#10;doc: Test file literal as input&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '1232'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/file-literal.yml
+output:
+  output_file:
+    class: File
+    checksum: sha1$d0e04ff6c413c7d57f9a0ca0a33cd3ab52e2dd9c
+    location: output.txt
+    size: 18
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat3-tool.cwl
+label: input_file_literal
+id: 90
+doc: Test file literal as input
+tags:
+- required
+- command_line_tool
+line: '1232'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="input_dir_recurs_copy_writable" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.101" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_twoparam_nested_crossproduct_valuefrom" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.129" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="null_missing_params" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.047" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="param_notnull_expr" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.042" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_compound_doc" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.910"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort-job.json&#10;output:&#10;  output:&#10;    class: File&#10;    checksum: sha1$b9214658cc453331b62c2282b772a5c063dbd284&#10;    location: output.txt&#10;    size: 1111&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort-packed.cwl#main&#10;label: wf_compound_doc&#10;id: 110&#10;doc: Test compound workflow document&#10;tags:&#10;- required&#10;- workflow&#10;line: '1528'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort-job.json
+output:
+  output:
+    class: File
+    checksum: sha1$b9214658cc453331b62c2282b772a5c063dbd284
+    location: output.txt
+    size: 1111
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/revsort-packed.cwl#main
+label: wf_compound_doc
+id: 110
+doc: Test compound workflow document
+tags:
+- required
+- workflow
+line: '1528'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_twoparam_flat_crossproduct_valuefrom" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.102" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_twoparam_dotproduct_valuefrom" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.088" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="cl_optional_bindings_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.855"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output:&#10;  args:&#10;  - cat&#10;  - -n&#10;  - hello.txt&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-n-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat1-testcli.cwl&#10;label: cl_optional_bindings_provided&#10;id: 5&#10;doc: Test command line with optional input (provided)&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '44'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output:
+  args:
+  - cat
+  - -n
+  - hello.txt
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-n-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat1-testcli.cwl
+label: cl_optional_bindings_provided
+id: 5
+doc: Test command line with optional input (provided)
+tags:
+- required
+- command_line_tool
+line: '44'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="output_secondaryfile_optional" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="1.119"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/optional-output.cwl&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output:&#10;  optional_file:&#10;  output_file:&#10;    location: output.txt&#10;    size: 13&#10;    class: File&#10;    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b&#10;label: output_secondaryfile_optional&#10;id: 67&#10;doc: Test optional output file and optional secondaryFile on output.&#10;tags:&#10;- docker&#10;- command_line_tool&#10;line: '912'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/optional-output.cwl
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output:
+  optional_file:
+  output_file:
+    location: output.txt
+    size: 13
+    class: File
+    checksum: sha1$47a013e660d408619d894b20806b1d5086aab03b
+label: output_secondaryfile_optional
+id: 67
+doc: Test optional output file and optional secondaryFile on output.
+tags:
+- docker
+- command_line_tool
+line: '912'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="embedded_subworkflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.073" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_oneparam_valuefrom_twice_current_el" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.083" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="filesarray_secondaryfiles" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.864"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/docker-array-secondaryfiles-job.json&#10;output:&#10;  bai_list:&#10;    checksum: sha1$081fc0e57d6efa5f75eeb237aab1d04031132be6&#10;    location: fai.list&#10;    class: File&#10;    size: 386&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/docker-array-secondaryfiles.cwl&#10;label: filesarray_secondaryfiles&#10;id: 100&#10;doc: Test secondaryFiles on array of files.&#10;tags:&#10;- docker&#10;- inline_javascript&#10;- shell_command&#10;- command_line_tool&#10;line: '1355'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/docker-array-secondaryfiles-job.json
+output:
+  bai_list:
+    checksum: sha1$081fc0e57d6efa5f75eeb237aab1d04031132be6
+    location: fai.list
+    class: File
+    size: 386
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/docker-array-secondaryfiles.cwl
+label: filesarray_secondaryfiles
+id: 100
+doc: Test secondaryFiles on array of files.
+tags:
+- docker
+- inline_javascript
+- shell_command
+- command_line_tool
+line: '1355'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_oneparam_valueFrom" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.064" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="hints_import" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.045" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="shelldir_notinterpreted" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.043" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="default_path_notfound_warning" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.121" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="shelldir_quoted" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.052" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initial_workdir_empty_writable" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.070" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="inlinejs_req_expressions" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.844"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output:&#10;  args:&#10;  - -A&#10;  - '2'&#10;  - -B&#10;  - baz&#10;  - -C&#10;  - '10'&#10;  - '9'&#10;  - '8'&#10;  - '7'&#10;  - '6'&#10;  - '5'&#10;  - '4'&#10;  - '3'&#10;  - '2'&#10;  - '1'&#10;  - -D&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/inline-js.cwl&#10;label: inlinejs_req_expressions&#10;id: 106&#10;doc: Test InlineJavascriptRequirement with multiple expressions in the same tool&#10;tags:&#10;- inline_javascript&#10;- command_line_tool&#10;line: '1445'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output:
+  args:
+  - -A
+  - '2'
+  - -B
+  - baz
+  - -C
+  - '10'
+  - '9'
+  - '8'
+  - '7'
+  - '6'
+  - '5'
+  - '4'
+  - '3'
+  - '2'
+  - '1'
+  - -D
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/inline-js.cwl
+label: inlinejs_req_expressions
+id: 106
+doc: Test InlineJavascriptRequirement with multiple expressions in the same tool
+tags:
+- inline_javascript
+- command_line_tool
+line: '1445'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initial_workdir_empty_writable_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.923"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output:&#10;  out:&#10;    basename: emptyWritableDir&#10;    listing:&#10;    - checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;      basename: blurg&#10;      location: blurg&#10;      class: File&#10;      size: 0&#10;    location: emptyWritableDir&#10;    class: Directory&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/writable-dir-docker.cwl&#10;label: initial_workdir_empty_writable_docker&#10;id: 118&#10;doc: Test empty writable dir with InitialWorkDirRequirement inside Docker&#10;tags:&#10;- inline_javascript&#10;- initial_work_dir&#10;- command_line_tool&#10;line: '1653'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output:
+  out:
+    basename: emptyWritableDir
+    listing:
+    - checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+      basename: blurg
+      location: blurg
+      class: File
+      size: 0
+    location: emptyWritableDir
+    class: Directory
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/writable-dir-docker.cwl
+label: initial_workdir_empty_writable_docker
+id: 118
+doc: Test empty writable dir with InitialWorkDirRequirement inside Docker
+tags:
+- inline_javascript
+- initial_work_dir
+- command_line_tool
+line: '1653'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initial_workdir_expr" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.051" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="nameroot_nameext_stdout_expr" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.043" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="success_codes" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.031" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_resreq_wf" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.078" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="cl_empty_array_input" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.842"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty-array-job.json&#10;output:&#10;  args: []&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty-array-input.cwl&#10;label: cl_empty_array_input&#10;id: 127&#10;doc: Test that empty array input does not add anything to command line&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '1796'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty-array-job.json
+output:
+  args: []
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty-array-input.cwl
+label: cl_empty_array_input
+id: 127
+doc: Test that empty array input does not add anything to command line
+tags:
+- required
+- command_line_tool
+line: '1796'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="nameroot_nameext_generated" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.085" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initialworkpath_output" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.050" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initworkdir_expreng_requirements" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.847"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: output:&#10;  foo:&#10;    checksum: sha1$63da67422622fbf9251a046d7a34b7ea0fd4fead&#10;    class: File&#10;    location: foo.txt&#10;    size: 22&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/template-tool.cwl&#10;label: initworkdir_expreng_requirements&#10;id: 6&#10;doc: Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig &#10;  feature&#10;tags:&#10;- initial_work_dir&#10;- inline_javascript&#10;- command_line_tool&#10;line: '53'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: output:
+  foo:
+    checksum: sha1$63da67422622fbf9251a046d7a34b7ea0fd4fead
+    class: File
+    location: foo.txt
+    size: 22
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/template-tool.cwl
+label: initworkdir_expreng_requirements
+id: 6
+doc: Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig 
+  feature
+tags:
+- initial_work_dir
+- inline_javascript
+- command_line_tool
+line: '53'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_twopar_oneinput_flattenedmerge" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.097" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_multiplesources_multipletypes" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.112" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="exprtool_directory_literal" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.039" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="exprtool_file_literal" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.030" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="job_input_subdir_primary_and_secondary_subdirs" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.071" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_scatter_oneparam_valuefrom_inputs" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.081" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="valuefrom_ignored_null" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.062" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="scatter_embedded_subworkflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.154" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="packed_import_schema" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.873"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/import_schema-def_job.yml&#10;output:&#10;  output_bam:&#10;    checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&#10;    basename: a.bam&#10;    class: File&#10;    size: 0&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/import_schema-def_packed.cwl#main&#10;label: packed_import_schema&#10;id: 135&#10;doc: SchemaDefRequirement with $import, and packed&#10;tags:&#10;- schema_def&#10;- workflow&#10;line: '1887'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/import_schema-def_job.yml
+output:
+  output_bam:
+    checksum: sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709
+    basename: a.bam
+    class: File
+    size: 0
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/import_schema-def_packed.cwl#main
+label: packed_import_schema
+id: 135
+doc: SchemaDefRequirement with $import, and packed
+tags:
+- schema_def
+- workflow
+line: '1887'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="valuefrom_secondexpr_ignored" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.047" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_resreq_inputs" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.049" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="valuefrom_wf_step" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.090" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="fileliteral_input_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.057" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="scatter_multi_input_embedded_subworkflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.134" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="initialworkdir_nesteddir" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.153" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="outputbinding_glob_sorted" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.063" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="valuefrom_wf_step_multiple" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.230" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="input_dir_inputbinding" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.081" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_embedded_subworkflow_with_tool_and_subsubworkflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.294" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_embedded_subworkflow_embedded_subsubworkflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.076" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="cl_gen_arrayofarrays" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.054" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="booleanflags_cl_noinputbinding" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.863"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bool-empty-inputbinding-job.json&#10;output:&#10;  args: []&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bool-empty-inputbinding.cwl&#10;label: booleanflags_cl_noinputbinding&#10;id: 123&#10;doc: Test that boolean flags do not appear on command line if inputBinding is &#10;  empty and not null&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '1752'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bool-empty-inputbinding-job.json
+output:
+  args: []
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/bool-empty-inputbinding.cwl
+label: booleanflags_cl_noinputbinding
+id: 123
+doc: Test that boolean flags do not appear on command line if inputBinding is 
+  empty and not null
+tags:
+- required
+- command_line_tool
+line: '1752'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="resreq_step_overrides_wf" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.044" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_integer_input_optional_specified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.037" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="valuefrom_constant_overrides_inputs" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.850"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/array-of-strings-job.yml&#10;output:&#10;  args:&#10;  - replacementValue&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/valueFrom-constant.cwl&#10;label: valuefrom_constant_overrides_inputs&#10;id: 129&#10;doc: Test valueFrom with constant value overriding provided array inputs&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '1820'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/array-of-strings-job.yml
+output:
+  args:
+  - replacementValue
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/valueFrom-constant.cwl
+label: valuefrom_constant_overrides_inputs
+id: 129
+doc: Test valueFrom with constant value overriding provided array inputs
+tags:
+- required
+- command_line_tool
+line: '1820'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="env_home_tmpdir" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.047" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_integer_input_optional_unspecified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.033" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="env_home_tmpdir_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.834"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output: {}&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/envvar2.cwl&#10;label: env_home_tmpdir_docker&#10;id: 96&#10;doc: Test $HOME and $TMPDIR are set correctly in Docker&#10;tags:&#10;- shell_command&#10;- command_line_tool&#10;line: '1306'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output: {}
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/envvar2.cwl
+label: env_home_tmpdir_docker
+id: 96
+doc: Test $HOME and $TMPDIR are set correctly in Docker
+tags:
+- shell_command
+- command_line_tool
+line: '1306'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_records_inputs_and_outputs" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.174" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_integer_input_default_specified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.036" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_integer_input_default_unspecified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.034" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_integer_input_default_and_tool_integer_input_default" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.045" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_embedded_subworkflow_with_subsubworkflow_and_tool" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.077" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_file_input_default_unspecified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.069" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_step_connect_undeclared_param" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.280" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_integer_input" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.037" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_optional_union_input_file_or_files_with_array_of_one_file_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.059" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_file_input_default_specified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.053" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_optional_union_input_file_or_files_with_many_files_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.060" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_optional_union_input_file_or_files_with_nothing_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.051" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_optional_union_input_file_or_files_with_single_file_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.052" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_any_input_with_integer_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.073" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_any_input_with_string_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.163" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_any_input_with_file_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.134" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_any_input_with_mixed_array_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.062" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_any_input_with_string_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.068" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_step_access_undeclared_param" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.047" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_any_input_with_integer_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.070" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_any_input_with_record_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.069" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="env_home_tmpdir_docker" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.845"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output:&#10;  results:&#10;    basename: results&#10;    class: File&#10;    checksum: sha1$7d5ca8c0c03e883c56c4eb1ef6f6bb9bccad4d86&#10;    size: 8&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/envvar3.cwl&#10;label: env_home_tmpdir_docker&#10;id: 133&#10;doc: Test $HOME and $TMPDIR are set correctly in Docker without using return &#10;  code&#10;tags:&#10;- shell_command&#10;- command_line_tool&#10;line: '1865'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output:
+  results:
+    basename: results
+    class: File
+    checksum: sha1$7d5ca8c0c03e883c56c4eb1ef6f6bb9bccad4d86
+    size: 8
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/envvar3.cwl
+label: env_home_tmpdir_docker
+id: 133
+doc: Test $HOME and $TMPDIR are set correctly in Docker without using return 
+  code
+tags:
+- shell_command
+- command_line_tool
+line: '1865'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_any_input_with_file_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.070" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="job_input_secondary_subdirs" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.112" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_any_input_with_mixed_array_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.072" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_any_input_with_record_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.075" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_union_default_input_with_file_provided" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.038" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflowstep_int_array_input_output" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.049" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflowstep_valuefrom_file_basename" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.072" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflowstep_valuefrom_string" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.042" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expression_tool_int_array_output" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.033" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_file_array_output" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.074" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_file_size_property_with_empty_file" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.056" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="clt_file_size_property_with_multi_file" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.054" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="docker_entrypoint" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.000"><skipped type="pytest.skip" message="Test 'docker_entrypoint' is in the exclude list.">/gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml:1: Test 'docker_entrypoint' is in the exclude list.</skipped></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_overriden_noexp" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.063" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="any_without_defaults_specified_fails" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.031" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_noexp" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.056" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="any_without_defaults_unspecified_fails" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.036" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="nested_workflow_noexp" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.072" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="wf_multiplesources_multipletypes_noexp" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.090" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_resreq_wf_optional_file_step_default" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.085" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_resreq_wf_optional_file_default" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.097" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expr_reference_self_noinput" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.859"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json&#10;output:&#10;  args: []&#10;tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/stage-unprovided-file.cwl&#10;label: expr_reference_self_noinput&#10;id: 124&#10;doc: Test that expression engine does not fail to evaluate reference to self &#10;  with unprovided input&#10;tags:&#10;- required&#10;- command_line_tool&#10;line: '1763'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/empty.json
+output:
+  args: []
+tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/stage-unprovided-file.cwl
+label: expr_reference_self_noinput
+id: 124
+doc: Test that expression engine does not fail to evaluate reference to self 
+  with unprovided input
+tags:
+- required
+- command_line_tool
+line: '1763'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_resreq_filesizes" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.051" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="dynamic_resreq_wf_optional_file_wf_default" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.124" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_overriden_2nd_step" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.119" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="expressionlib_tool_wf_override" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.063" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_overriden_2nd_step_noexp" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.107" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdin_from_directory_literal_with_local_file" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.061" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_overriden_2nd_step_null" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.092" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="no_inputs_commandlinetool" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.843"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-inputs-tool.cwl&#10;output:&#10;  output:&#10;    checksum: sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae&#10;    location: output&#10;    class: File&#10;    size: 4&#10;id: 192&#10;label: no_inputs_commandlinetool&#10;doc: Test CommandLineTool without inputs&#10;tags:&#10;- command_line_tool&#10;- required&#10;line: '2525'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-inputs-tool.cwl
+output:
+  output:
+    checksum: sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae
+    location: output
+    class: File
+    size: 4
+id: 192
+label: no_inputs_commandlinetool
+doc: Test CommandLineTool without inputs
+tags:
+- command_line_tool
+- required
+line: '2525'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="no_inputs_workflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.846"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-inputs-wf.cwl&#10;output:&#10;  output:&#10;    checksum: sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae&#10;    location: output&#10;    class: File&#10;    size: 4&#10;id: 194&#10;label: no_inputs_workflow&#10;doc: Test Workflow without inputs&#10;tags:&#10;- workflow&#10;- required&#10;line: '2547'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-inputs-wf.cwl
+output:
+  output:
+    checksum: sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae
+    location: output
+    class: File
+    size: 4
+id: 194
+label: no_inputs_workflow
+doc: Test Workflow without inputs
+tags:
+- workflow
+- required
+line: '2547'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="stdin_from_directory_literal_with_literal_file" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.053" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="no_outputs_commandlinetool" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.850"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-outputs-tool.cwl&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output: {}&#10;id: 193&#10;label: no_outputs_commandlinetool&#10;doc: Test CommandLineTool without outputs&#10;tags:&#10;- command_line_tool&#10;- required&#10;line: '2538'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-outputs-tool.cwl
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output: {}
+id: 193
+label: no_outputs_commandlinetool
+doc: Test CommandLineTool without outputs
+tags:
+- command_line_tool
+- required
+line: '2538'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="directory_literal_with_literal_file_nostdin" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.060" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="no_outputs_workflow" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.851"><failure message="CWL test execution failed. &#10;Returned non-zero but it should be zero&#10;Test: tool: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-outputs-wf.cwl&#10;job: &#10;  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json&#10;output: {}&#10;id: 195&#10;label: no_outputs_workflow&#10;doc: Test Workflow without outputs&#10;tags:&#10;- workflow&#10;- required&#10;line: '2560'&#10;">CWL test execution failed. 
+Returned non-zero but it should be zero
+Test: tool: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/no-outputs-wf.cwl
+job: 
+  file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl/cwl-mpi/cwl-conformance-tests/runs/streamflow/common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/v1.0/cat-job.json
+output: {}
+id: 195
+label: no_outputs_workflow
+doc: Test Workflow without outputs
+tags:
+- workflow
+- required
+line: '2560'
+</failure></testcase><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="workflow_union_default_input_unspecified" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.227" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="step_input_default_value_overriden_2nd_step_null_noexp" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.068" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="anonymous_enum_in_array" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.055" /><testcase classname="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8.v1.0.conformance_test_v1.0.cwltest.yaml" name="schema-def_anonymous_enum_in_array" file="common-workflow-language-a062055fddcc7d7d9dbc53d28288e3ccb9a800d8/v1.0/conformance_test_v1.0.cwltest.yaml" line="0" time="0.067" /></testsuite></testsuites>
