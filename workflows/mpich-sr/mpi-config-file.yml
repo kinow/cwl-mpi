@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: CC-BY-4.0
+#
+# This file is licensed under CC BY 4.0
+# https://creativecommons.org/licenses/by/4.0/
+#
+# Copyright (c) 2026 Bruno de Paula Kinoshita
+
+# This file provides platform-specific MPI configuration.
+# It is read only when the MPIRequirement is active.
+
+# See: https://github.com/common-workflow-language/cwltool/blob/8949fc2d68efe128ce841739d1190645dbd233bb/README.rst#running-mpi-based-tools-that-need-to-be-launched
+# runner, nproc_flag, default_nproc, extra_flags, env_pass,
+# env_pass_regex, env_set
+
+# Example specifying srun as MPI launcher instead of the default mpirun.
+runner: srun
