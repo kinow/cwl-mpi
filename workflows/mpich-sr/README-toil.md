@@ -56,7 +56,7 @@ $ make CWL_RUNNER=toil-cwl-runner SINGULARITY=0 mpirun-req
 $ # This fails
 make CWL_RUNNER=toil-cwl-runner SINGULARITY=1 mpirun-req
 ...
-	[2026-05-31T20:57:04+0200] [MainThread] [I] [cwltool] [job mpich-mpirun-base-command] /tmp/toilwf-7d72e6d6f1b954339d909cee94601057/5dba/job/tmp2bbj10bl/tmp-outkdg15z1a$ mpirun \
+	[2026-05-31T20:57:04+0200] [MainThread] [I] [cwltool] [job mpirun-base-command] /tmp/toilwf-7d72e6d6f1b954339d909cee94601057/5dba/job/tmp2bbj10bl/tmp-outkdg15z1a$ mpirun \
 	    -n \
 	    2 \
 	    singularity \
@@ -80,8 +80,8 @@ make CWL_RUNNER=toil-cwl-runner SINGULARITY=1 mpirun-req
 	    /var/lib/cwl/stg7992e2ab-8c61-4715-8c1d-a94c46c04ee0/sr \
 	    0 \
 	    1 > /tmp/toilwf-7d72e6d6f1b954339d909cee94601057/5dba/job/tmp2bbj10bl/tmp-outkdg15z1a/mpirun-mpi-requirement.out 2> /tmp/toilwf-7d72e6d6f1b954339d909cee94601057/5dba/job/tmp2bbj10bl/tmp-outkdg15z1a/mpirun-mpi-requirement.err
-	[2026-05-31T20:57:04+0200] [MainThread] [W] [cwltool] [job mpich-mpirun-base-command] exited with status: 6
-	[2026-05-31T20:57:04+0200] [MainThread] [W] [cwltool] [job mpich-mpirun-base-command] completed permanentFail
+	[2026-05-31T20:57:04+0200] [MainThread] [W] [cwltool] [job mpirun-base-command] exited with status: 6
+	[2026-05-31T20:57:04+0200] [MainThread] [W] [cwltool] [job mpirun-base-command] completed permanentFail
 	[2026-05-31T20:57:04+0200] [MainThread] [W] [toil.fileStores.abstractFileStore] Failed job accessed files:
 	[2026-05-31T20:57:04+0200] [MainThread] [W] [toil.fileStores.abstractFileStore] Symlinked file 'files/no-job/file-53f749fe5e3a4f2991f1adb961d7d487/sr' to path '/tmp/toilwf-7d72e6d6f1b954339d909cee94601057/5dba/job/tmpndwu97qn.tmp'
 	[2026-05-31T20:57:04+0200] [MainThread] [C] [toil.worker] Worker crashed with traceback:
@@ -113,8 +113,8 @@ make: *** [Makefile:59: mpirun-req] Error 1
 You can also call the tools and workflows directly:
 
 ```bash
-$ toil-cwl-runner mpich-mpicc.cwl
-$ toil-cwl-runner --singularity mpich-mpirun-base-command.cwl
+$ toil-cwl-runner mpicc.cwl
+$ toil-cwl-runner --singularity mpirun-base-command.cwl
 $ toil-cwl-runner --singularity --logLevel=DEBUG  --retryCount 0 --bypass-file-store workflow-base-command.cwl
 ```
 

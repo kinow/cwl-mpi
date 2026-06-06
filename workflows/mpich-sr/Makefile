@@ -10,69 +10,118 @@ CWL_RUNNER ?= cwltool
 # Enable with: make SINGULARITY=1
 SINGULARITY ?= 0
 ifeq ($(SINGULARITY),1)
-	CWL_SINGULARITY = --singularity
+    CWL_SINGULARITY = --singularity
 else
-	CWL_SINGULARITY = --no-container
+    ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
+        CWL_SINGULARITY =
+    else
+        CWL_SINGULARITY = --no-container
+    endif
 endif
 
 DEBUG ?= 0
 ifeq ($(DEBUG),1)
-	CWL_DEBUG = --debug
+    ifneq ($(findstring toil,$(CWL_RUNNER)),)
+        CWL_DEBUG = --logDebug
+    else
+        CWL_DEBUG = --debug
+    endif
 else
-	CWL_DEBUG =
+    CWL_DEBUG =
 endif
-
-CWLTOOL_ARGS = --strict-cpu-limit --strict-memory-limit
-CWLTOOL_EXT = --enable-ext
 
 ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
-	CWLTOOL_ARGS =
-	CWLTOOL_EXT =
+    CWLTOOL_ARGS =
+    CWLTOOL_EXT =
+else
+	CWLTOOL_ARGS = --strict-cpu-limit --strict-memory-limit
+	CWLTOOL_EXT = --enable-ext
 endif
 
-CWL_MPICC = mpich-mpicc.cwl
+CWL_MPICC = mpicc.cwl
 # Uses mpirun as base command.
-CWL_MPIRUN_BASE = mpich-mpirun-base-command.cwl
+CWL_MPIRUN_BASE = sr-base-command.cwl
 # Uses MPIRequirement.
-CWL_MPIRUN_REQ = mpich-mpirun-mpi-requirement.cwl
-# Workflow that calls mpich-mpirun-base-command.cwl
-CWL_WORKFLOW_BASE = workflow-base-command.cwl
-# Workflow that calls mpich-mpirun-mpi-requirement.cwl
-CWL_WORKFLOW_REQ = workflow-mpi-requirement.cwl
+CWL_MPIRUN_REQ = sr-mpi-requirement.cwl
+# Workflow that calls sr-workflow-base-command.cwl
+CWL_WORKFLOW_BASE = sr-workflow-base-command.cwl
+# Workflow that calls sr-workflow-mpi-requirement.cwl
+CWL_WORKFLOW_REQ = sr-workflow-mpi-requirement.cwl
 
 BINARY = sr \
-	a.out
+    a.out
 
-OUT_FILES = \
-	$(BINARY) \
-	*.out \
-	*.err
+.PHONY: all build clean \
+    mpicc mpirun-base mpirun-req \
+    workflow-base workflow-req \
+    run-all
 
-.PHONY: all build run clean mpicc mpirun-base mpirun-requirement
+ifeq ($(SINGULARITY),1)
+    LOGDIR = logs/$(CWL_RUNNER)/singularity
+else
+    LOGDIR = logs/$(CWL_RUNNER)/nosingularity
+endif
 
 all: build
 
-build: clean mpicc
+build: mpicc
 
+# ------------------------
+# Helper macro for logging
+# ------------------------
+define run_cwl
+	@echo "→ $(1)"
+	@mkdir -p "$(LOGDIR)"
+	@bash -c 'set -o pipefail; \
+	   $(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_ARGS) $(2) \
+	   > "$(LOGDIR)/$(1).out" 2> "$(LOGDIR)/$(1).err"; \
+	   STATUS=$$?; \
+	   echo $$STATUS > "$(LOGDIR)/$(1).exit"; \
+	   exit $$STATUS'
+endef
+
+# ------------------------
+# Targets (With Explicit Dependencies)
+# ------------------------
+
+# mpicc generates the local 'sr' binary
 mpicc:
-	@echo "→ $@"
-	$(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_ARGS) $(CWL_MPICC)
+	$(call run_cwl,mpicc,$(CWL_MPICC))
 
-mpirun-base:
-	@echo "→ $@"
-	$(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_ARGS) $(CWL_MPIRUN_BASE) --np 2
+# Standalone runs must depend on mpicc so the 'sr' binary exists
+mpirun-base: mpicc
+	$(call run_cwl,mpirun-base,$(CWL_MPIRUN_BASE) --np 2)
 
-mpirun-req:
-	@echo "→ $@"
-	$(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_EXT) $(CWLTOOL_ARGS) $(CWL_MPIRUN_REQ) --np 2
+mpirun-req: mpicc
+	$(call run_cwl,mpirun-req,$(CWLTOOL_EXT) $(CWL_MPIRUN_REQ) --np 2)
 
+# Workflows compile internally, so they can run independently
 workflow-base:
-	@echo "→ $@"
-	$(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_EXT) $(CWLTOOL_ARGS) $(CWL_WORKFLOW_BASE) --np 2
+	$(call run_cwl,workflow-base,$(CWLTOOL_EXT) $(CWL_WORKFLOW_BASE) --np 2)
 
 workflow-req:
-	@echo "→ $@"
-	$(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_EXT) $(CWLTOOL_ARGS) $(CWL_WORKFLOW_REQ) --np 2
+	$(call run_cwl,workflow-req,$(CWLTOOL_EXT) $(CWL_WORKFLOW_REQ) --np 2)
+
+# ------------------------
+# Run all
+# ------------------------
+run-all:
+	@echo "→ running all tests without Singularity"
+	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpicc
+	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-base
+	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-req
+	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-base
+	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-req
+
+	@echo "→ running all tests with Singularity"
+	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpicc
+	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-base
+	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-req
+	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-base
+	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-req
+
+	@echo "→ run-all complete"
 
 clean:
-	rm -f $(OUT_FILES)
+	rm -f $(BINARY) *.out *.err
+	rm -rf logs/

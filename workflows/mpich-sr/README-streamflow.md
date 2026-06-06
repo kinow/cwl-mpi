@@ -12,7 +12,7 @@ workflows:
   workflow_name:
     type: cwl
     config:
-      file: "/home/kinow/Development/python/workspace/cwl-mpi/workflows/mpich-sr/mpich-mpirun-base-command.cwl"
+      file: "/home/kinow/Development/python/workspace/cwl-mpi/workflows/mpich-sr/mpirun-base-command.cwl"
       docker:
         - step: /
           deployment:

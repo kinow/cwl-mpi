@@ -70,3 +70,4 @@ cwl-conformance-tests/*.aux
 cwl-conformance-tests/*.log
 run.log
 
+workflows/mpich-sr/logs/

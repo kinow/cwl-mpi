@@ -33,9 +33,9 @@ s:codeRepository: https://github.com/kinow/cwl-mpi
 
 # --- CWL Tool ---
 
-id: mpich-mpirun-base-command
+id: mpirun-base-command
 class: CommandLineTool
-label: mpich-mpirun-base-command
+label: mpirun-base-command
 baseCommand: mpirun
 doc: >
   An example CWL tool that uses the MPICH 4.3.2 Docker image.

@@ -34,25 +34,25 @@ s:codeRepository: https://github.com/kinow/cwl-mpi
 
 # --- CWL Tool ---
 
-id: mpich-sr-workflow
+id: sr-workflow
 class: Workflow
-label: mpich-sr-workflow
+label: sr-workflow
 doc: >
   A CWL workflow that runs the MPI sr program.
   
-  It uses the mpich-mpicc.cwl and mpich-mpirun-mpi-requirement.cwl tools.
+  It uses the mpicc.cwl and mpirun-mpi-requirement.cwl tools.
   
   The MPI program (`sr`) is executed with the `MPIRequirement` extension.
 
 steps:
   mpicc:
-    run: mpich-mpicc.cwl
+    run: mpicc.cwl
     in:
       source: source
     out:
       [ executable ]
   mpirun:
-    run: mpich-mpirun-mpi-requirement.cwl
+    run: sr-mpi-requirement.cwl
     in:
       executable: mpicc/executable
       np: np

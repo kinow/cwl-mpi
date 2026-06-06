@@ -39,10 +39,14 @@ class: CommandLineTool
 label: mpich-mpicc
 baseCommand: mpicc
 doc: >
-  An example CWL tool that uses the MPICH 4.3.2 Docker image.
+  An example CWL tool that compiles a C program using the `mpicc`
+  compiler wrapper.
+  
   By default, it compiles the `sr.c` source file using the `mpicc`
   compiler wrapper. The tool can also be used to compile other
   C programs by providing a different value for source.
+  
+  It uses the MPICH 4.3.2 Docker image as a hint.
 
 hints:
   DockerRequirement:

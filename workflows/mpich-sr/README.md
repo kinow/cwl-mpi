@@ -34,12 +34,12 @@ thesis as the simplest test of CWL + MPI.
 
 ## Main files
 
-- [`mpich-mpicc.cwl`](mpich-mpicc.cwl)
+- [`mpicc.cwl`](mpicc.cwl)
     - A CWL `CommandLineTool` that compiles C programs with MPICH `mpicc`.
     - By default, compiles `sr.c` and produces `sr` binary.
-    - Example usage: `cwltool mpich-mpicc.cwl`, then verify you now have the binary `sr`.
+    - Example usage: `cwltool mpicc.cwl`, then verify you now have the binary `sr`.
 
-- [`mpich-mpirun-base-command.cwl`](mpich-mpirun-base-command.cwl)
+- [`mpirun-base-command.cwl`](./sr-workflow-base-command.cwl)
     - A CWL `CommandLineTool` that runs an MPI program with MPICH `mpirun`.
     - `mpirun` is the base command.
     - Use `--singularity` on HPC systems.
@@ -48,9 +48,9 @@ thesis as the simplest test of CWL + MPI.
     - By default, runs `sr`, and produces two log files, `sr-mpirun-base-command.out`
       and `sr-mpirun-base-command.err`.
     - Example usage:
-      `cwltool --singularity --enable-ext  mpich-mpirun-base-command.cwl --msg_size 10 --niter 10 --np 2`
+      `cwltool --singularity --enable-ext  mpirun-base-command.cwl --msg_size 10 --niter 10 --np 2`
 
-- [`mpich-mpirun-mpi-requirement.cwl`](mpich-mpirun-mpi-requirement.cwl)
+- [`mpirun-mpi-requirement.cwl`](sr-workflow-mpi-requirement.cwl)
     - A CWL `CommandLineTool` that runs an MPI program with MPICH `mpirun`.
     - The base command is empty.
     - `MPIRequirement` is used to specify the MPI launcher as base command.
@@ -62,13 +62,13 @@ thesis as the simplest test of CWL + MPI.
       and `sr-mpirun-mpi-requirement.err`.
     - Note **you must enable `--enable-ext`** to use `MPIRequirement`.
     - Example usage:
-      `cwltool --singularity --enable-ext  mpich-mpirun-mpi-requirement.cwl --msg_size 10 --niter 10 --np 2`
+      `cwltool --singularity --enable-ext  sr-mpirun-mpi-requirement.cwl --msg_size 10 --niter 10 --np 2`
 
-- [`workflow-base-command.cwl`](workflow-base-command.cwl)
-    - A Workflow that runs `mpich-mpicc.cwl` and `mpich-mpirun-base-command.cwl`.
+- [`sr-workflow-base-command.cwl`](sr-workflow-base-command.cwl)
+    - A Workflow that runs `mpicc.cwl` and `mpirun-base-command.cwl`.
 
-- [`workflow-mpi-requirement.cwl`](workflow-mpi-requirement.cwl)
-    - A Workflow that runs `mpich-mpicc.cwl` and `mpich-mpirun-mpi-requirement.cwl`.
+- [`sr-workflow-mpi-requirement.cwl`](sr-workflow-mpi-requirement.cwl)
+    - A Workflow that runs `mpicc.cwl` and `mpirun-mpi-requirement.cwl`.
 
 ## Other files
 
@@ -81,8 +81,8 @@ thesis as the simplest test of CWL + MPI.
     - Example MPI configuration file. Used by the `MPIRequirement` to
       load MPI settings to be used in a specific platform (e.g., use `srun` instead of `mpirun`).
 - [`mpicc-job.yml`](mpicc-job.yml)
-    - Example job file for `mpich-mpicc.cwl`.
-    - Example usage: `cwltool mpich-mpicc.cwl mpicc-job.yml`
+    - Example job file for `mpicc.cwl`.
+    - Example usage: `cwltool mpicc.cwl mpicc-job.yml`
     - The example above causes the output to be `a.out` (specified in the job file) instead of `sr`.
 
 ## License
