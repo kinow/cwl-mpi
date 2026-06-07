@@ -56,10 +56,29 @@ BINARY = sr \
     workflow-base workflow-req \
     run-all
 
+# Examples:
+#   make PLATFORM=laptop
+#   make PLATFORM=mn5
+#   make PLATFORM=lumi
+#   make PLATFORM=ft3
+#   make PLATFORM=aws
+
+VALID_PLATFORMS := laptop mn5 lumi ft3 aws
+PLATFORM ?=
+
+ifndef PLATFORM
+$(error PLATFORM is not set. Valid values: $(VALID_PLATFORMS). Example: make PLATFORM=mn5 run-all)
+endif
+
+ifeq ($(filter $(PLATFORM),$(VALID_PLATFORMS)),)
+$(error Invalid PLATFORM='$(PLATFORM)'. Valid values: $(VALID_PLATFORMS))
+endif
+
+# Output logs directory
 ifeq ($(SINGULARITY),1)
-    LOGDIR = logs/$(CWL_RUNNER)/singularity
+    LOGDIR = logs/$(CWL_RUNNER)/$(PLATFORM)/singularity
 else
-    LOGDIR = logs/$(CWL_RUNNER)/nosingularity
+    LOGDIR = logs/$(CWL_RUNNER)/$(PLATFORM)/nosingularity
 endif
 
 all: build
