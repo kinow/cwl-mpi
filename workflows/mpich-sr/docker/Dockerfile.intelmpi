@@ -1,0 +1,13 @@
+FROM intel/oneapi-hpckit:latest
+
+SHELL ["/bin/bash", "-c"]
+
+WORKDIR /app
+COPY sr.c .
+
+RUN mpiicx sr.c -o sr
+
+RUN useradd -m mpiuser
+USER mpiuser
+
+CMD ["mpirun", "-n", "2", "./sr"]
