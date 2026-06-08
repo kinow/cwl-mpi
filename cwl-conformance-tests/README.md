@@ -49,3 +49,9 @@ cwl-conformance-tests//
 ```bash
 HPC=mn5 HPC_SCRATCH_DIR=/gpfs/scratch/$bscgroup/$bscuser ./cwl_conformance_tests.sh
 ```
+
+## LaTeX tables
+
+```bash
+$ python3 report_latex.py > table.tex && pdflatex table.tex && xdg-open table.pdf
+```

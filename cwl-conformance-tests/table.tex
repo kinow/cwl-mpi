@@ -7,105 +7,234 @@
 \geometry{margin=1in}
 \begin{document}
 \clearpage
-\section*{cwltool}
-\begin{table}[htbp]
+\subsubsection*{cwltool Conformance Tests Results}
+\begin{table}[ht!]
 \centering
 \setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.4}
-\begin{tabular}{|>{\columncolor{lightgray!30}}c|>{\columncolor{lightgray!30}}c|c|c|c|c|c|c|c|c|c|}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
- &  & \multicolumn{3}{c|}{\textbf{CWL v1.0.2}} & \multicolumn{3}{c|}{\textbf{CWL v1.1.0}} & \multicolumn{3}{c|}{\textbf{CWL v1.2.1}} \\
-\hhline{>{\arrayrulecolor{lightgray!50}}-->{\arrayrulecolor{black}}|---------|}
-\rowcolor{lightgray!50}
-\multirow{-2}{*}{\textbf{HPC}} & \multirow{-2}{*}{\textbf{Mode}} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} \\
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FT3 & local & 197 & 0 & 0 & 252 & 1 & 0 & 377 & 1 & 0 \\
-\hline
-FT3 & slurm & 197 & 0 & 0 & 252 & 1 & 0 & 377 & 1 & 0 \\
-\hline
-FT3 & batch & — & — & — & — & — & — & — & — & — \\
+FinisTerrae III & local & 197 & 0 & 0 & \textbf{100.0} \% \\
+FinisTerrae III & slurm & 197 & 0 & 0 & \textbf{100.0} \% \\
+FinisTerrae III & batch & — & — & — & — \\
 \hline\hline
-LUMI & local & 197 & 0 & 0 & 252 & 1 & 0 & 377 & 1 & 0 \\
-\hline
-LUMI & slurm & 197 & 0 & 0 & 252 & 1 & 0 & 377 & 1 & 0 \\
-\hline
-LUMI & batch & — & — & — & — & — & — & — & — & — \\
+LUMI & local & 197 & 0 & 0 & \textbf{100.0} \% \\
+LUMI & slurm & 197 & 0 & 0 & \textbf{100.0} \% \\
+LUMI & batch & — & — & — & — \\
 \hline\hline
-MN5 & local & 197 & 0 & 0 & 252 & 1 & 0 & 41 & 337 & 0 \\
-\hline
-MN5 & slurm & 197 & 0 & 0 & 251 & 2 & 0 & 376 & 2 & 0 \\
-\hline
-MN5 & batch & — & — & — & — & — & — & — & — & — \\
+MareNostrum 5 & local & 197 & 0 & 0 & \textbf{100.0} \% \\
+MareNostrum 5 & slurm & 197 & 0 & 0 & \textbf{100.0} \% \\
+MareNostrum 5 & batch & — & — & — & — \\
 \hline
 \end{tabular}
+\caption{CWL v1.0.2 conformance results on HPC systems.}
+\label{tab:cwltool_v10}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\hline
+FinisTerrae III & local & 252 & 1 & 0 & 99.6 \% \\
+FinisTerrae III & slurm & 252 & 1 & 0 & 99.6 \% \\
+FinisTerrae III & batch & — & — & — & — \\
+\hline\hline
+LUMI & local & 252 & 1 & 0 & 99.6 \% \\
+LUMI & slurm & 252 & 1 & 0 & 99.6 \% \\
+LUMI & batch & — & — & — & — \\
+\hline\hline
+MareNostrum 5 & local & 252 & 1 & 0 & 99.6 \% \\
+MareNostrum 5 & slurm & 251 & 2 & 0 & 99.2 \% \\
+MareNostrum 5 & batch & — & — & — & — \\
+\hline
+\end{tabular}
+\caption{CWL v1.1.0 conformance results on HPC systems.}
+\label{tab:cwltool_v11}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\hline
+FinisTerrae III & local & 377 & 1 & 0 & 99.7 \% \\
+FinisTerrae III & slurm & 377 & 1 & 0 & 99.7 \% \\
+FinisTerrae III & batch & — & — & — & — \\
+\hline\hline
+LUMI & local & 377 & 1 & 0 & 99.7 \% \\
+LUMI & slurm & 377 & 1 & 0 & 99.7 \% \\
+LUMI & batch & — & — & — & — \\
+\hline\hline
+MareNostrum 5 & local & 41 & 337 & 0 & 10.8 \% \\
+MareNostrum 5 & slurm & 376 & 2 & 0 & 99.5 \% \\
+MareNostrum 5 & batch & — & — & — & — \\
+\hline
+\end{tabular}
+\caption{CWL v1.2.1 conformance results on HPC systems.}
+\label{tab:cwltool_v12}
 \end{table}
 \clearpage
-\section*{Toil}
-\begin{table}[htbp]
+\subsubsection*{Toil Conformance Tests Results}
+\begin{table}[ht!]
 \centering
 \setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.4}
-\begin{tabular}{|>{\columncolor{lightgray!30}}c|>{\columncolor{lightgray!30}}c|c|c|c|c|c|c|c|c|c|}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
- &  & \multicolumn{3}{c|}{\textbf{CWL v1.0.2}} & \multicolumn{3}{c|}{\textbf{CWL v1.1.0}} & \multicolumn{3}{c|}{\textbf{CWL v1.2.1}} \\
-\hhline{>{\arrayrulecolor{lightgray!50}}-->{\arrayrulecolor{black}}|---------|}
-\rowcolor{lightgray!50}
-\multirow{-2}{*}{\textbf{HPC}} & \multirow{-2}{*}{\textbf{Mode}} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} \\
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FT3 & local & 197 & 0 & 0 & 249 & 2 & 2 & 373 & 3 & 2 \\
-\hline
-FT3 & slurm & 194 & 3 & 0 & 249 & 2 & 2 & 373 & 3 & 2 \\
-\hline
-FT3 & batch & 38 & 159 & 0 & 138 & 115 & 0 & 222 & 156 & 0 \\
+FinisTerrae III & local & 197 & 0 & 0 & \textbf{100.0} \% \\
+FinisTerrae III & slurm & 194 & 3 & 0 & 98.5 \% \\
+FinisTerrae III & batch & 38 & 159 & 0 & 19.3 \% \\
 \hline\hline
-LUMI & local & 195 & 2 & 0 & 247 & 4 & 2 & 374 & 2 & 2 \\
-\hline
-LUMI & slurm & 195 & 2 & 0 & 249 & 2 & 2 & 373 & 3 & 2 \\
-\hline
-LUMI & batch & 48 & 149 & 0 & 90 & 163 & 0 & 176 & 202 & 0 \\
+LUMI & local & 195 & 2 & 0 & 99.0 \% \\
+LUMI & slurm & 195 & 2 & 0 & 99.0 \% \\
+LUMI & batch & 48 & 149 & 0 & 24.4 \% \\
 \hline\hline
-MN5 & local & 193 & 4 & 0 & 246 & 5 & 2 & 373 & 3 & 2 \\
-\hline
-MN5 & slurm & 157 & 33 & 7 & 206 & 38 & 9 & 320 & 43 & 15 \\
-\hline
-MN5 & batch & 70 & 124 & 3 & 124 & 124 & 5 & 171 & 203 & 4 \\
+MareNostrum 5 & local & 193 & 4 & 0 & 98.0 \% \\
+MareNostrum 5 & slurm & 157 & 33 & 7 & 79.7 \% \\
+MareNostrum 5 & batch & 70 & 124 & 3 & 35.5 \% \\
 \hline
 \end{tabular}
+\caption{CWL v1.0.2 conformance results on HPC systems.}
+\label{tab:toil_v10}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\hline
+FinisTerrae III & local & 249 & 2 & 2 & 98.4 \% \\
+FinisTerrae III & slurm & 249 & 2 & 2 & 98.4 \% \\
+FinisTerrae III & batch & 138 & 115 & 0 & 54.5 \% \\
+\hline\hline
+LUMI & local & 247 & 4 & 2 & 97.6 \% \\
+LUMI & slurm & 249 & 2 & 2 & 98.4 \% \\
+LUMI & batch & 90 & 163 & 0 & 35.6 \% \\
+\hline\hline
+MareNostrum 5 & local & 246 & 5 & 2 & 97.2 \% \\
+MareNostrum 5 & slurm & 206 & 38 & 9 & 81.4 \% \\
+MareNostrum 5 & batch & 124 & 124 & 5 & 49.0 \% \\
+\hline
+\end{tabular}
+\caption{CWL v1.1.0 conformance results on HPC systems.}
+\label{tab:toil_v11}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\hline
+FinisTerrae III & local & 373 & 3 & 2 & 98.7 \% \\
+FinisTerrae III & slurm & 373 & 3 & 2 & 98.7 \% \\
+FinisTerrae III & batch & 222 & 156 & 0 & 58.7 \% \\
+\hline\hline
+LUMI & local & 374 & 2 & 2 & 98.9 \% \\
+LUMI & slurm & 373 & 3 & 2 & 98.7 \% \\
+LUMI & batch & 176 & 202 & 0 & 46.6 \% \\
+\hline\hline
+MareNostrum 5 & local & 373 & 3 & 2 & 98.7 \% \\
+MareNostrum 5 & slurm & 320 & 43 & 15 & 84.7 \% \\
+MareNostrum 5 & batch & 171 & 203 & 4 & 45.2 \% \\
+\hline
+\end{tabular}
+\caption{CWL v1.2.1 conformance results on HPC systems.}
+\label{tab:toil_v12}
 \end{table}
 \clearpage
-\section*{StreamFlow}
-\begin{table}[htbp]
+\subsubsection*{StreamFlow Conformance Tests Results}
+\begin{table}[ht!]
 \centering
 \setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.4}
-\begin{tabular}{|>{\columncolor{lightgray!30}}c|>{\columncolor{lightgray!30}}c|c|c|c|c|c|c|c|c|c|}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
- &  & \multicolumn{3}{c|}{\textbf{CWL v1.0.2}} & \multicolumn{3}{c|}{\textbf{CWL v1.1.0}} & \multicolumn{3}{c|}{\textbf{CWL v1.2.1}} \\
-\hhline{>{\arrayrulecolor{lightgray!50}}-->{\arrayrulecolor{black}}|---------|}
-\rowcolor{lightgray!50}
-\multirow{-2}{*}{\textbf{HPC}} & \multirow{-2}{*}{\textbf{Mode}} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} \\
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FT3 & local & 162 & 18 & 1 & 0 & 0 & 0 & 314 & 31 & 2 \\
-\hline
-FT3 & slurm & 170 & 26 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-\hline
-FT3 & batch & — & — & — & — & — & — & — & — & — \\
+FinisTerrae III & local & 162 & 18 & 1 & 89.5 \% \\
+FinisTerrae III & slurm & 170 & 26 & 1 & 86.3 \% \\
+FinisTerrae III & batch & — & — & — & — \\
 \hline\hline
-LUMI & local & 196 & 0 & 1 & 0 & 0 & 0 & 375 & 1 & 2 \\
-\hline
-LUMI & slurm & 196 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-\hline
-LUMI & batch & — & — & — & — & — & — & — & — & — \\
+LUMI & local & 196 & 0 & 1 & 99.5 \% \\
+LUMI & slurm & 196 & 0 & 1 & 99.5 \% \\
+LUMI & batch & — & — & — & — \\
 \hline\hline
-MN5 & local & 157 & 39 & 1 & 0 & 0 & 0 & 325 & 51 & 2 \\
-\hline
-MN5 & slurm & 157 & 39 & 1 & 0 & 0 & 0 & 325 & 51 & 2 \\
-\hline
-MN5 & batch & — & — & — & — & — & — & — & — & — \\
+MareNostrum 5 & local & 157 & 39 & 1 & 79.7 \% \\
+MareNostrum 5 & slurm & 157 & 39 & 1 & 79.7 \% \\
+MareNostrum 5 & batch & — & — & — & — \\
 \hline
 \end{tabular}
+\caption{CWL v1.0.2 conformance results on HPC systems.}
+\label{tab:streamflow_v10}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\hline
+FinisTerrae III & local & 0 & 0 & 0 & 0.0 \% \\
+FinisTerrae III & slurm & 0 & 0 & 0 & 0.0 \% \\
+FinisTerrae III & batch & — & — & — & — \\
+\hline\hline
+LUMI & local & 0 & 0 & 0 & 0.0 \% \\
+LUMI & slurm & 0 & 0 & 0 & 0.0 \% \\
+LUMI & batch & — & — & — & — \\
+\hline\hline
+MareNostrum 5 & local & 0 & 0 & 0 & 0.0 \% \\
+MareNostrum 5 & slurm & 0 & 0 & 0 & 0.0 \% \\
+MareNostrum 5 & batch & — & — & — & — \\
+\hline
+\end{tabular}
+\caption{CWL v1.1.0 conformance results on HPC systems.}
+\label{tab:streamflow_v11}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\hline
+FinisTerrae III & local & 314 & 31 & 2 & 90.5 \% \\
+FinisTerrae III & slurm & 0 & 0 & 0 & 0.0 \% \\
+FinisTerrae III & batch & — & — & — & — \\
+\hline\hline
+LUMI & local & 375 & 1 & 2 & 99.2 \% \\
+LUMI & slurm & 0 & 0 & 0 & 0.0 \% \\
+LUMI & batch & — & — & — & — \\
+\hline\hline
+MareNostrum 5 & local & 325 & 51 & 2 & 86.0 \% \\
+MareNostrum 5 & slurm & 325 & 51 & 2 & 86.0 \% \\
+MareNostrum 5 & batch & — & — & — & — \\
+\hline
+\end{tabular}
+\caption{CWL v1.2.1 conformance results on HPC systems.}
+\label{tab:streamflow_v12}
 \end{table}
 \end{document}

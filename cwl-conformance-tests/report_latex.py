@@ -87,89 +87,83 @@ def print_latex(results_found: AllResultType) -> None:
     print(r"\geometry{margin=1in}")
     print(r"\begin{document}")
 
-    col = (
-        r"|>{\columncolor{lightgray!30}}c|>{\columncolor{lightgray!30}}c|"
-        r"c|c|c|"
-        r"c|c|c|"
-        r"c|c|c|"
-    )
+    # Map versions
+    CWL_VERSIONS = {
+        "v1.0": "CWL v1.0.2",
+        "v1.1": "CWL v1.1.0",
+        "v1.2": "CWL v1.2.1",
+    }
+
+    # and HPC names
+    HPC_NAMES = {
+        "ft3": "FinisTerrae III",
+        "lumi": "LUMI",
+        "mn5": "MareNostrum 5",
+    }
+
+    def cell(r: Result | None) -> tuple[str, str, str]:
+        if r is None:
+            return ("—", "—", "—")
+        return (str(r.passed), str(r.failed), str(r.skipped))
+
+    def success_pct(r: Result | None) -> str:
+        if r is None:
+            return "—"
+        total = r.passed + r.failed + r.skipped
+        if total == 0:
+            # return "—"
+            return "0.0"
+        return f"{(r.passed / total) * 100:.1f}"
 
     for runner_key, runner_name in RUNNERS.items():
-        print(r"\clearpage")
-        print(r"\section*{" + runner_name + r"}")
-
-        print(r"\begin{table}[htbp]")
-        print(r"\centering")
-        print(r"\setlength{\tabcolsep}{6pt}")
-        print(r"\renewcommand{\arraystretch}{1.4}")
-
-        print(r"\begin{tabular}{" + col + r"}")
-        print(r"\hline")
-
-        # First Header Row
-        print(r"\rowcolor{lightgray!50}")
-        print(
-            r" & "
-            r" & "
-            r"\multicolumn{3}{c|}{\textbf{CWL v1.0.2}} & "
-            r"\multicolumn{3}{c|}{\textbf{CWL v1.1.0}} & "
-            r"\multicolumn{3}{c|}{\textbf{CWL v1.2.1}} \\"
-        )
-
-        print(r"\hhline{>{\arrayrulecolor{lightgray!50}}-->{\arrayrulecolor{black}}|---------|}")
-
-        # Second Header Row
-        print(r"\rowcolor{lightgray!50}")
-        print(
-            r"\multirow{-2}{*}{\textbf{HPC}} & "
-            r"\multirow{-2}{*}{\textbf{Mode}} & "
-            r"\textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & "
-            r"\textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & "
-            r"\textbf{Passed} & \textbf{Failed} & \textbf{Skipped} \\"
-        )
-
-        print(r"\hline")
-
-        # This guarantees "batch" rows show up everywhere, even if the directory was missing.
         runner_data = results_found.get(runner_key, {})
 
-        # Build flat collection array for safe indexing and clean look-ahead grouping
-        flat_rows = []
-        for hpc in HPCS:
-            for mode in MODES:
-                flat_rows.append((hpc, mode))
+        print(r"\clearpage")
+        print(r"\subsubsection*{" + runner_name + r" Conformance Tests Results}")
 
-        for i, (hpc, mode) in enumerate(flat_rows):
-            r10 = runner_data.get((hpc, mode, "v1.0"))
-            r11 = runner_data.get((hpc, mode, "v1.1"))
-            r12 = runner_data.get((hpc, mode, "v1.2"))
+        # Build tables per CWL version
+        for version_key, version_label in CWL_VERSIONS.items():
 
-            def cell(r: Result | None) -> str:
-                # If a structural result or folder doesn't exist, output clean "—" tags
-                if r is None:
-                    return "— — —"
-                return f"{r.passed} {r.failed} {r.skipped}"
+            print(r"\begin{table}[ht!]")
+            print(r"\centering")
+            print(r"\setlength{\tabcolsep}{6pt}")
+            print(r"\renewcommand{\arraystretch}{1.2}")
 
-            print(
-                hpc.upper() + r" & " +
-                mode + r" & "
-                + " & ".join(cell(r10).split()) + " & "
-                + " & ".join(cell(r11).split()) + " & "
-                + " & ".join(cell(r12).split()) + r" \\"
-            )
+            print(r"\begin{tabular}{|c|c|c|c|c|c|}")
+            print(r"\hline")
 
-            # Cluster separation logic (double-rule lines down when HPC changes)
-            if i < len(flat_rows) - 1:
-                next_hpc = flat_rows[i + 1][0]
-                if hpc != next_hpc:
+            # Header
+            print(r"\rowcolor{lightgray!50}")
+            print(r"\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\")
+            print(r"\hline")
+
+            for i, hpc in enumerate(HPCS):
+                for mode in MODES:
+
+                    rdata = runner_data.get((hpc, mode, version_key))
+                    passed, failed, skipped = cell(rdata)
+                    pct = success_pct(rdata)
+                    if pct == "100.0":
+                        pct = r"\textbf{100.0}"
+                    hpc_name = HPC_NAMES.get(hpc, hpc.upper())
+                    if pct != "—":
+                        pct = f"{pct} \%"
+
+                    print(
+                        f"{hpc_name} & {mode} & "
+                        f"{passed} & {failed} & {skipped} & {pct} \\\\"
+                    )
+
+                # visual separator between HPC blocks
+                if i < len(HPCS) - 1:
                     print(r"\hline\hline")
                 else:
                     print(r"\hline")
-            else:
-                print(r"\hline")
 
-        print(r"\end{tabular}")
-        print(r"\end{table}")
+            print(r"\end{tabular}")
+            print(r"\caption{" + f"{version_label} conformance results on HPC systems." + r"}")
+            print(r"\label{tab:" + runner_key + "_" + version_key.replace(".", "") + r"}")
+            print(r"\end{table}")
 
     print(r"\end{document}")
 
