@@ -1,0 +1,282 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{hhline}
+\geometry{margin=1in}
+\begin{document}
+\clearpage
+\subsubsection*{cwltool Feature Coverage}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+docker & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+env\_var & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+expression\_tool & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+initial\_work\_dir & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+inline\_javascript & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+multiple\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+required & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+resource & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+scatter & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+schema\_def & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+shell\_command & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+step\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+step\_input\_expression & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+subworkflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+workflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for cwltool (v1.0.2)}
+\label{tab:cwltool_feat_v10}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & 99.2 \% & 99.2 \% & 98.9 \% \\
+docker & 90.0 \% & 90.0 \% & 90.0 \% \\
+env\_var & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+expression\_tool & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+format\_checking & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+initial\_work\_dir & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+inline\_javascript & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+inplace\_update & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+input\_object\_requirements & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+multiple\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+networkaccess & \textbf{100.0} \% & \textbf{100.0} \% & 75.0 \% \\
+required & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+resource & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+scatter & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+schema\_def & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+shell\_command & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+step\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+step\_input\_expression & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+subworkflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+timelimit & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+workflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for cwltool (v1.1.0)}
+\label{tab:cwltool_feat_v11}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & \textbf{100.0} \% & \textbf{100.0} \% & 99.6 \% \\
+docker & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+env\_var & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+expression\_tool & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+format\_checking & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+initial\_work\_dir & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+inline\_javascript & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+inplace\_update & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+input\_object\_requirements & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+multiple\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+networkaccess & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+required & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+resource & \textbf{100.0} \% & \textbf{100.0} \% & 94.4 \% \\
+scatter & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+schema\_def & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+shell\_command & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+step\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+step\_input\_expression & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+subworkflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+timelimit & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+workflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for cwltool (v1.2.1)}
+\label{tab:cwltool_feat_v12}
+\end{table}
+\clearpage
+\subsubsection*{StreamFlow Feature Coverage}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & 77.1 \% & 98.9 \% & 64.9 \% \\
+docker & 15.4 \% & 87.5 \% & 0.0 \% \\
+env\_var & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+expression\_tool & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+initial\_work\_dir & 76.0 \% & \textbf{100.0} \% & 61.5 \% \\
+inline\_javascript & 94.7 \% & \textbf{100.0} \% & 93.5 \% \\
+multiple\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+required & 73.1 \% & \textbf{100.0} \% & 59.2 \% \\
+resource & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+scatter & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+schema\_def & 88.9 \% & \textbf{100.0} \% & 60.0 \% \\
+shell\_command & 85.7 \% & \textbf{100.0} \% & 73.7 \% \\
+step\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+subworkflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+workflow & 96.7 \% & \textbf{100.0} \% & 93.5 \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for StreamFlow (v1.0.2)}
+\label{tab:streamflow_feat_v10}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & 84.8 \% & 99.4 \% & 74.7 \% \\
+docker & 37.5 \% & 90.9 \% & 18.2 \% \\
+env\_var & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+expression\_tool & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+format\_checking & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+initial\_work\_dir & 88.9 \% & \textbf{100.0} \% & 73.7 \% \\
+inline\_javascript & 96.2 \% & \textbf{100.0} \% & 94.8 \% \\
+inplace\_update & 50.0 \% & 50.0 \% & 50.0 \% \\
+input\_object\_requirements & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+json\_schema\_invalid & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+load\_listing & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+multiple\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+networkaccess & \textbf{100.0} \% & \textbf{100.0} \% & 50.0 \% \\
+require & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+required & 74.3 \% & \textbf{100.0} \% & 69.1 \% \\
+resource & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+scatter & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+schema\_def & \textbf{100.0} \% & \textbf{100.0} \% & 71.4 \% \\
+shell\_command & 84.2 \% & \textbf{100.0} \% & 72.7 \% \\
+step\_input & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+subworkflow & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+timelimit & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+work\_reuse & \textbf{100.0} \% & \textbf{100.0} \% & \textbf{100.0} \% \\
+workflow & 94.1 \% & 99.1 \% & 93.6 \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for StreamFlow (v1.2.1)}
+\label{tab:streamflow_feat_v12}
+\end{table}
+\clearpage
+\subsubsection*{Toil Feature Coverage}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & 67.7 \% & 72.3 \% & 64.2 \% \\
+docker & 70.4 \% & 74.1 \% & 48.1 \% \\
+env\_var & 66.7 \% & 66.7 \% & 66.7 \% \\
+expression\_tool & 93.3 \% & 93.3 \% & 90.0 \% \\
+initial\_work\_dir & 66.7 \% & 69.2 \% & 56.4 \% \\
+inline\_javascript & 76.9 \% & 76.5 \% & 83.3 \% \\
+multiple\_input & 75.0 \% & 70.8 \% & 87.5 \% \\
+required & 69.3 \% & 75.3 \% & 58.0 \% \\
+resource & 66.7 \% & 76.2 \% & 61.9 \% \\
+scatter & 75.0 \% & 68.3 \% & 85.0 \% \\
+schema\_def & 66.7 \% & 66.7 \% & 58.3 \% \\
+shell\_command & 68.3 \% & 73.0 \% & 66.7 \% \\
+step\_input & 73.8 \% & 66.7 \% & 78.6 \% \\
+step\_input\_expression & 66.7 \% & 66.7 \% & \textbf{100.0} \% \\
+subworkflow & 66.7 \% & 66.7 \% & 66.7 \% \\
+workflow & 75.1 \% & 74.0 \% & 77.7 \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for Toil (v1.0.2)}
+\label{tab:toil_feat_v10}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & 80.6 \% & 76.3 \% & 68.4 \% \\
+docker & 63.3 \% & 70.0 \% & 36.7 \% \\
+env\_var & 66.7 \% & 75.0 \% & 66.7 \% \\
+expression\_tool & 98.7 \% & 98.7 \% & 98.7 \% \\
+format\_checking & 91.7 \% & \textbf{100.0} \% & 91.7 \% \\
+initial\_work\_dir & 68.9 \% & 71.1 \% & 57.8 \% \\
+inline\_javascript & 92.4 \% & 82.6 \% & 91.3 \% \\
+inplace\_update & 0.0 \% & 16.7 \% & 0.0 \% \\
+input\_object\_requirements & 66.7 \% & 66.7 \% & 66.7 \% \\
+multiple\_input & 95.8 \% & 75.0 \% & 95.8 \% \\
+networkaccess & \textbf{100.0} \% & 83.3 \% & 33.3 \% \\
+required & 83.1 \% & 76.9 \% & 65.6 \% \\
+resource & 66.7 \% & 74.1 \% & 66.7 \% \\
+scatter & 93.3 \% & 68.3 \% & 98.3 \% \\
+schema\_def & 77.8 \% & 66.7 \% & 61.1 \% \\
+shell\_command & 71.4 \% & 79.4 \% & 60.3 \% \\
+step\_input & 92.6 \% & 79.6 \% & 96.3 \% \\
+step\_input\_expression & 66.7 \% & 66.7 \% & 66.7 \% \\
+subworkflow & 85.7 \% & 76.2 \% & 85.7 \% \\
+timelimit & \textbf{100.0} \% & 85.2 \% & 96.3 \% \\
+workflow & 87.8 \% & 76.9 \% & 87.5 \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for Toil (v1.1.0)}
+\label{tab:toil_feat_v11}
+\end{table}
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Feature} & \textbf{FinisTerrae III} & \textbf{LUMI} & \textbf{MareNostrum 5} \\
+\hline
+command\_line\_tool & 80.1 \% & 78.8 \% & 67.2 \% \\
+docker & 80.0 \% & 76.7 \% & 56.7 \% \\
+env\_var & 83.3 \% & \textbf{100.0} \% & 83.3 \% \\
+expression\_tool & 93.3 \% & 88.0 \% & 92.0 \% \\
+format\_checking & \textbf{100.0} \% & 83.3 \% & 91.7 \% \\
+initial\_work\_dir & 73.3 \% & 80.0 \% & 64.4 \% \\
+inline\_javascript & 87.9 \% & 79.9 \% & 84.8 \% \\
+inplace\_update & 83.3 \% & \textbf{100.0} \% & 50.0 \% \\
+input\_object\_requirements & 77.8 \% & 88.9 \% & 55.6 \% \\
+multiple\_input & 83.3 \% & 79.2 \% & 79.2 \% \\
+networkaccess & \textbf{100.0} \% & 66.7 \% & \textbf{100.0} \% \\
+required & 78.5 \% & 81.0 \% & 65.6 \% \\
+resource & 85.2 \% & 77.8 \% & 59.3 \% \\
+scatter & 81.7 \% & 80.0 \% & 83.3 \% \\
+schema\_def & 83.3 \% & 83.3 \% & 61.1 \% \\
+shell\_command & 74.6 \% & 69.8 \% & 66.7 \% \\
+step\_input & 81.5 \% & 79.6 \% & 83.3 \% \\
+step\_input\_expression & \textbf{100.0} \% & 66.7 \% & \textbf{100.0} \% \\
+subworkflow & 90.5 \% & 81.0 \% & 81.0 \% \\
+timelimit & \textbf{100.0} \% & 88.9 \% & \textbf{100.0} \% \\
+workflow & 87.1 \% & 80.2 \% & 84.8 \% \\
+\hline
+\end{tabular}
+\caption{Feature coverage for Toil (v1.2.1)}
+\label{tab:toil_feat_v12}
+\end{table}
+\end{document}

@@ -28,7 +28,7 @@ The output of these tests is stored in the output directory for each CWL tool. E
 output directory contains subfolders with the output of each run. e.g.,
 
 ```
-cwl-conformance-tests//
+cwl-conformance-tests/
 ├── cwl_conformance_tests.sh
 └── hpc/
     ├── mn5.sh
@@ -52,6 +52,11 @@ HPC=mn5 HPC_SCRATCH_DIR=/gpfs/scratch/$bscgroup/$bscuser ./cwl_conformance_tests
 
 ## LaTeX tables
 
+The `report_feature_coverage.py` script generates a table with the feature coverage
+for each CWL version. It downloads the CWL specification Git repositories and runs
+the tests. The specification YAML files are saved in the `specs` directory.
+
 ```bash
-$ python3 report_latex.py > table.tex && pdflatex table.tex && xdg-open table.pdf
+$ python3 report_latex.py >results.tex && pdflatex results.tex && xdg-open results.pdf
+$ python3 report_feature_coverage.py >coverage.tex && pdflatex coverage.tex && xdg-open coverage.pdf
 ```
