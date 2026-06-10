@@ -1,0 +1,3 @@
+poem:
+  class: File
+  path: poem.txt
