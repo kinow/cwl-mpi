@@ -5,142 +5,138 @@
 #
 # Copyright (c) 2026 Bruno de Paula Kinoshita
 
+SHELL := /bin/bash
+
+TIMEOUT ?= 300
+
 CWL_RUNNER ?= cwltool
-
-# Enable with: make SINGULARITY=1
-SINGULARITY ?= 0
-ifeq ($(SINGULARITY),1)
-    CWL_SINGULARITY = --singularity
-else
-    ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
-        CWL_SINGULARITY =
-    else
-        CWL_SINGULARITY = --no-container
-    endif
-endif
-
 DEBUG ?= 0
-ifeq ($(DEBUG),1)
-    ifneq ($(findstring toil,$(CWL_RUNNER)),)
-        CWL_DEBUG = --logDebug
-    else
-        CWL_DEBUG = --debug
-    endif
-else
-    CWL_DEBUG =
-endif
-
-ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
-    CWLTOOL_ARGS =
-    CWLTOOL_EXT =
-else
-	CWLTOOL_ARGS = --strict-cpu-limit --strict-memory-limit
-	CWLTOOL_EXT = --enable-ext
-endif
-
-CWL_MPICC = mpicc.cwl
-# Uses mpirun as base command.
-CWL_MPIRUN_BASE = sr-base-command.cwl
-# Uses MPIRequirement.
-CWL_MPIRUN_REQ = sr-mpi-requirement.cwl
-# Workflow that calls sr-workflow-base-command.cwl
-CWL_WORKFLOW_BASE = sr-workflow-base-command.cwl
-# Workflow that calls sr-workflow-mpi-requirement.cwl
-CWL_WORKFLOW_REQ = sr-workflow-mpi-requirement.cwl
-
-BINARY = sr \
-    a.out
-
-.PHONY: all build clean \
-    mpicc mpirun-base mpirun-req \
-    workflow-base workflow-req \
-    run-all
-
-# Examples:
-#   make PLATFORM=laptop
-#   make PLATFORM=mn5
-#   make PLATFORM=lumi
-#   make PLATFORM=ft3
-#   make PLATFORM=aws
 
 VALID_PLATFORMS := laptop mn5 lumi ft3 aws
 PLATFORM ?=
 
 ifndef PLATFORM
-$(error PLATFORM is not set. Valid values: $(VALID_PLATFORMS). Example: make PLATFORM=mn5 run-all)
+	$(error PLATFORM is not set. Example: make PLATFORM=mn5 CONTAINER=none run-all)
 endif
 
 ifeq ($(filter $(PLATFORM),$(VALID_PLATFORMS)),)
-$(error Invalid PLATFORM='$(PLATFORM)'. Valid values: $(VALID_PLATFORMS))
+	$(error Invalid PLATFORM=$(PLATFORM))
 endif
 
-# Output logs directory
-ifeq ($(SINGULARITY),1)
-    LOGDIR = logs/$(CWL_RUNNER)/$(PLATFORM)/singularity
+CONTAINER ?= none
+
+ifeq ($(PLATFORM),laptop)
+	VALID_CONTAINERS := none docker singularity
+else ifeq ($(PLATFORM),aws)
+	VALID_CONTAINERS := none docker
 else
-    LOGDIR = logs/$(CWL_RUNNER)/$(PLATFORM)/nosingularity
+	VALID_CONTAINERS := none singularity
 endif
 
-all: build
+ifeq ($(filter $(CONTAINER),$(VALID_CONTAINERS)),)
+	$(error Invalid CONTAINER=$(CONTAINER) for PLATFORM=$(PLATFORM))
+endif
 
-build: mpicc
+ifeq ($(CONTAINER),singularity)
+	CWL_CONTAINER_ARGS := --singularity
+else ifeq ($(CONTAINER),none)
+	CWL_CONTAINER_ARGS := --no-container
+else
+	CWL_CONTAINER_ARGS :=
+endif
 
-# ------------------------
-# Helper macro for logging
-# ------------------------
+ifeq ($(DEBUG),1)
+	CWL_DEBUG := --debug
+else
+	CWL_DEBUG :=
+endif
+
+ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
+    CWLTOOL_ARGS =
+else
+	CWLTOOL_ARGS = --strict-cpu-limit --strict-memory-limit --enable-ext
+endif
+
+LOGDIR := logs/$(CWL_RUNNER)/$(PLATFORM)/$(CONTAINER)
+
+CWL_MPICC = mpicc.cwl
+CWL_MPIRUN_BASE = sr-base-command.cwl
+CWL_MPIRUN_REQ = sr-mpi-requirement.cwl
+CWL_WORKFLOW_BASE = sr-workflow-base-command.cwl
+CWL_WORKFLOW_REQ = sr-workflow-mpi-requirement.cwl
+
+BINARY := sr a.out
+
+.PHONY: run-all mpicc mpirun-base mpirun-req workflow-base workflow-req clean prepare
+
+# The run_cwl function has a "Poor man's walltime checker similar to Slurm, using
+# the Linux timeout utility.
 define run_cwl
 	@echo "→ $(1)"
 	@mkdir -p "$(LOGDIR)"
-	@bash -c 'set -o pipefail; \
-	   $(CWL_RUNNER) $(CWL_SINGULARITY) $(CWL_DEBUG) $(CWLTOOL_ARGS) $(2) \
-	   > "$(LOGDIR)/$(1).out" 2> "$(LOGDIR)/$(1).err"; \
-	   STATUS=$$?; \
-	   echo $$STATUS > "$(LOGDIR)/$(1).exit"; \
-	   exit $$STATUS'
+	START=$$(date +%s); \
+	timeout --kill-after=30s $(TIMEOUT)s $(CWL_RUNNER) \
+		$(CWL_CONTAINER_ARGS) \
+		$(CWL_DEBUG) \
+		$(CWLTOOL_ARGS) \
+		$(2) \
+	> "$(LOGDIR)/$(1).log" 2>&1 ; \
+	EXIT=$$? ; \
+	END=$$(date +%s); \
+	DURATION=$$((END - START)); \
+	echo "$$DURATION" > "$(LOGDIR)/$(1).time"; \
+	if [ $$EXIT -eq 124 ]; then \
+		echo "timeout" > "$(LOGDIR)/$(1).exit"; \
+	elif [ $$EXIT -eq 137 ]; then \
+		echo "killed" > "$(LOGDIR)/$(1).exit"; \
+	else \
+		echo $$EXIT > "$(LOGDIR)/$(1).exit"; \
+	fi
 endef
 
-# ------------------------
-# Targets (With Explicit Dependencies)
-# ------------------------
-
-# mpicc generates the local 'sr' binary
 mpicc:
 	$(call run_cwl,mpicc,$(CWL_MPICC))
 
-# Standalone runs must depend on mpicc so the 'sr' binary exists
 mpirun-base: mpicc
-	$(call run_cwl,mpirun-base,$(CWL_MPIRUN_BASE) --np 2)
+	$(call run_cwl,mpirun-base,$(CWL_MPIRUN_BASE) --np 6)
 
 mpirun-req: mpicc
-	$(call run_cwl,mpirun-req,$(CWLTOOL_EXT) $(CWL_MPIRUN_REQ) --np 2)
+	$(call run_cwl,mpirun-req,$(CWL_MPIRUN_REQ) --np 6)
 
-# Workflows compile internally, so they can run independently
 workflow-base:
-	$(call run_cwl,workflow-base,$(CWLTOOL_EXT) $(CWL_WORKFLOW_BASE) --np 2)
+	$(call run_cwl,workflow-base,$(CWL_WORKFLOW_BASE) --np 6)
 
 workflow-req:
-	$(call run_cwl,workflow-req,$(CWLTOOL_EXT) $(CWL_WORKFLOW_REQ) --np 2)
+	$(call run_cwl,workflow-req,$(CWL_WORKFLOW_REQ) --np 6)
 
-# ------------------------
-# Run all
-# ------------------------
 run-all:
-	@echo "→ running all tests without Singularity"
-	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpicc
-	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-base
-	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-req
-	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-base
-	-$(MAKE) SINGULARITY=0 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-req
+	@echo "Platform=$(PLATFORM) Container=$(CONTAINER) Runner=$(CWL_RUNNER)"
+	-$(MAKE) mpicc
+	-$(MAKE) mpirun-base
+	-$(MAKE) mpirun-req
+	-$(MAKE) workflow-base
+	-$(MAKE) workflow-req
+	@echo ""
+	@echo "================ REPORT ================"
+	@$(MAKE) report
 
-	@echo "→ running all tests with Singularity"
-	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpicc
-	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-base
-	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) mpirun-req
-	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-base
-	-$(MAKE) SINGULARITY=1 CWL_RUNNER=$(CWL_RUNNER) DEBUG=$(DEBUG) workflow-req
-
-	@echo "→ run-all complete"
+report:
+	@echo "===================================================="
+	@echo " Experiment report (with timing)"
+	@echo "===================================================="
+	@printf "%-20s %-10s %-10s\n" "TEST" "RESULT" "TIME(s)"
+	@echo "----------------------------------------------------"
+	@find "$(LOGDIR)" -name "*.exit" | sort | while read f; do \
+		name=$$(basename "$$f" .exit); \
+		status=$$(cat "$$f"); \
+		timefile="$(LOGDIR)/$$name.time"; \
+		if [ -f "$$timefile" ]; then \
+			time=$$(cat "$$timefile"); \
+		else \
+			time="-"; \
+		fi; \
+		printf "%-20s %-10s %-10s\n" "$$name" "$$status" "$$time"; \
+	done
 
 clean:
-	rm -f $(BINARY) *.out *.err
-	rm -rf logs/
+	rm -rf logs $(BINARY)
