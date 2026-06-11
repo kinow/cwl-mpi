@@ -12,23 +12,23 @@
 set -euo pipefail
 
 if [[ $# -lt 1 ]]; then
-    echo "Usage: $0 [--debug] WORKFLOW.cwl [SETTINGS.yml] [--singularity]"
+    echo "Usage: $0 [--debug] [--container=docker|singularity|none] WORKFLOW.cwl [SETTINGS.yml]"
     exit 1
 fi
 
 cwl_file=""
 settings=""
-use_singularity=false
+container="none"
 debug=false
 
 # Loop through all arguments dynamically
 for arg in "$@"; do
     case "$arg" in
-    --singularity)
-        use_singularity=true
-        ;;
     --debug)
         debug=true
+        ;;
+    --container=*)
+        container="${arg#*=}"
         ;;
     *.cwl)
         cwl_file="$(realpath "$arg")"
@@ -52,11 +52,24 @@ if [[ -z "$cwl_file" ]]; then
     exit 1
 fi
 
+# And a container...
+if [[ "$container" != "docker" && "$container" != "singularity" && "$container" != "none" ]]; then
+    echo "Error: Invalid --container value: $container"
+    echo "Valid options: docker | singularity | none"
+    exit 1
+fi
+
 wrapper=$(mktemp)
 trap 'rm -f "$wrapper"' EXIT
 
+# The database connection using memory is to avoid errors that happened while running
+# the workflows, e.g., sqlite3.OperationalError: database is locked
 cat >"$wrapper" <<EOF
 version: v1.0
+database:
+  type: default
+  config:
+    connection: ":memory:"
 workflows:
   workflow_name:
     type: cwl
@@ -71,12 +84,23 @@ if [[ -n "$settings" ]]; then
 EOF
 fi
 
-if [[ "$use_singularity" == true ]]; then
+# ----------------------------
+# Container configuration
+# ----------------------------
+if [[ "$container" == "singularity" ]]; then
     cat >>"$wrapper" <<'EOF'
       docker:
         - step: /
           deployment:
             type: singularity
+            config: {}
+EOF
+elif [[ "$container" == "docker" ]]; then
+    cat >>"$wrapper" <<'EOF'
+      docker:
+        - step: /
+          deployment:
+            type: docker
             config: {}
 EOF
 fi

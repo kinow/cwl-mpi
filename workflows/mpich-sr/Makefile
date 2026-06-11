@@ -7,7 +7,7 @@
 
 SHELL := /bin/bash
 
-TIMEOUT ?= 300
+TIMEOUT ?= 30
 
 CWL_RUNNER ?= cwltool
 DEBUG ?= 0
@@ -37,12 +37,16 @@ ifeq ($(filter $(CONTAINER),$(VALID_CONTAINERS)),)
 	$(error Invalid CONTAINER=$(CONTAINER) for PLATFORM=$(PLATFORM))
 endif
 
-ifeq ($(CONTAINER),singularity)
-	CWL_CONTAINER_ARGS := --singularity
-else ifeq ($(CONTAINER),none)
-	CWL_CONTAINER_ARGS := --no-container
+ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
+	CWL_CONTAINER_ARGS := --container=$(CONTAINER)
 else
-	CWL_CONTAINER_ARGS :=
+	ifeq ($(CONTAINER),singularity)
+		CWL_CONTAINER_ARGS := --singularity
+	else ifeq ($(CONTAINER),none)
+		CWL_CONTAINER_ARGS := --no-container
+	else
+		CWL_CONTAINER_ARGS :=
+	endif
 endif
 
 ifeq ($(DEBUG),1)
@@ -52,12 +56,12 @@ else
 endif
 
 ifneq ($(findstring streamflow,$(CWL_RUNNER)),)
+	LOGDIR := logs/streamflow/$(PLATFORM)/$(CONTAINER)
     CWLTOOL_ARGS =
 else
+	LOGDIR := logs/$(CWL_RUNNER)/$(PLATFORM)/$(CONTAINER)
 	CWLTOOL_ARGS = --strict-cpu-limit --strict-memory-limit --enable-ext
 endif
-
-LOGDIR := logs/$(CWL_RUNNER)/$(PLATFORM)/$(CONTAINER)
 
 CWL_MPICC = mpicc.cwl
 CWL_MPIRUN_BASE = sr-base-command.cwl
@@ -114,6 +118,14 @@ run-all:
 	-$(MAKE) mpicc
 	-$(MAKE) mpirun-base
 	-$(MAKE) mpirun-req
+	-$(MAKE) workflow-base
+	-$(MAKE) workflow-req
+	@echo ""
+	@echo "================ REPORT ================"
+	@$(MAKE) report
+
+run-workflows:
+	@echo "Platform=$(PLATFORM) Container=$(CONTAINER) Runner=$(CWL_RUNNER)"
 	-$(MAKE) workflow-base
 	-$(MAKE) workflow-req
 	@echo ""
