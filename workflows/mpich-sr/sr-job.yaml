@@ -1,0 +1,3 @@
+executable:
+  class: File
+  path: sr

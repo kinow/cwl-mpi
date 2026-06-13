@@ -70,9 +70,6 @@ inputs:
     type: File
     inputBinding:
       position: 2
-    default:
-      class: File
-      path: sr
   msg_size:
     type: int
     default: 0

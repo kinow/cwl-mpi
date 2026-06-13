@@ -1,0 +1,122 @@
+StreamFlow file:
+
+version: v1.0
+database:
+  type: default
+  config:
+    connection: ":memory:"
+workflows:
+  workflow_name:
+    type: cwl
+    config:
+      file: "/home/kinow/Development/python/workspace/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl"
+      docker:
+        - step: /
+          deployment:
+            type: singularity
+            config: {}
+
+
+Executing: streamflow run --debug --outdir logs/streamflow/laptop/singularity /tmp/tmp.xzS9tYXmyb
+2026-06-14 01:23:26.485 INFO     Processing workflow 9fb41a3b-49a2-4fdf-a3ae-beed230a74d3
+2026-06-14 01:23:26.485 INFO     Building workflow execution plan
+2026-06-14 01:23:26.966 ERROR    
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/cwl/translator.py", line 2260, in _translate_workflow
+    cwl_utils.parser.utils.static_checker(cwl_element)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/utils.py", line 163, in static_checker
+    cast(str, s.id): type_for_step_input(
+                     ~~~~~~~~~~~~~~~~~~~^
+        step, s, cast(str, workflow.cwlVersion)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/utils.py", line 398, in type_for_step_input
+    return cwl_v1_2_utils.type_for_step_input(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cast(cwl_v1_2.WorkflowStep, step), cast(cwl_v1_2.WorkflowStepInput, in_)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2_utils.py", line 488, in type_for_step_input
+    step_run = cwl_utils.parser.utils.load_step(step)
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/utils.py", line 140, in load_step
+    step_run = cwl_utils.parser.load_document_by_uri(
+        path=step.loadingOptions.fetcher.urljoin(
+    ...<3 lines>...
+        loadingOptions=step.loadingOptions,
+    )
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 319, in load_document_by_uri
+    return load_document_by_string(
+        loadingOptions.fetcher.fetch_text(real_uri),
+    ...<3 lines>...
+        load_all,
+    )
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 365, in load_document_by_string
+    return load_document_by_yaml(result, uri, loadingOptions, id_, load_all)
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 390, in load_document_by_yaml
+    result = cwl_v1_2.load_document_by_yaml(
+        yaml, uri, cast(Optional[cwl_v1_2.LoadingOptions], loadingOptions)
+    )
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 30779, in load_document_by_yaml
+    result, metadata = _document_load(
+                       ~~~~~~~~~~~~~~^
+        union_of_CommandLineToolLoader_or_ExpressionToolLoader_or_WorkflowLoader_or_OperationLoader_or_ProcessGeneratorLoader_or_array_of_union_of_CommandLineToolLoader_or_ExpressionToolLoader_or_WorkflowLoader_or_OperationLoader_or_ProcessGeneratorLoader,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        loadingOptions,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 1040, in _document_load
+    loader.load(doc2, baseuri, loadingOptions, docRoot=baseuri),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 808, in load
+    raise ValidationException("", None, errors, "*")
+schema_salad.exceptions.ValidationException: sr-mpi-requirement.cwl:9:1:   Object `sr-mpi-requirement.cwl` is not valid because:
+sr-mpi-requirement.cwl:51:1:   the `requirements` field is not valid because:
+                                 Expected a <class 'NoneType'> but got list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/main.py", line 281, in main
+    asyncio.run(_async_run(parsed_args))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/asyncio/runners.py", line 196, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/asyncio/runners.py", line 119, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/main.py", line 187, in _async_run
+    await asyncio.gather(*workflow_tasks)
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/cwl/main.py", line 84, in main
+    workflow = translator.translate()
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/cwl/translator.py", line 3166, in translate
+    self._recursive_translate(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        workflow=workflow,
+        ^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        cwl_name_prefix=cwl_root_prefix,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/cwl/translator.py", line 1980, in _recursive_translate
+    self._translate_workflow(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        workflow=workflow,
+        ^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        cwl_name_prefix=cwl_name_prefix,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/streamflow/lib/python3.13/site-packages/streamflow/cwl/translator.py", line 2262, in _translate_workflow
+    raise WorkflowDefinitionException from ve
+streamflow.core.exception.WorkflowDefinitionException
