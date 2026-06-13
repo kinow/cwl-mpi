@@ -57,7 +57,7 @@ requirements:
   NetworkAccess:
     networkAccess: false
   ResourceRequirement:
-    coresMin: 1
+    coresMin: 2
     ramMin: 512
 
 inputs:

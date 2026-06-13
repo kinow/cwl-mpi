@@ -12,7 +12,7 @@
 set -euo pipefail
 
 if [[ $# -lt 1 ]]; then
-    echo "Usage: $0 [--debug] [--container=docker|singularity|none] WORKFLOW.cwl [SETTINGS.yml]"
+    echo "Usage: $0 [--debug] [--container=docker|singularity|none] [--outdir DIR] WORKFLOW.cwl [SETTINGS.yml]"
     exit 1
 fi
 
@@ -20,6 +20,7 @@ cwl_file=""
 settings=""
 container="none"
 debug=false
+outdir=""
 
 # Loop through all arguments dynamically
 for arg in "$@"; do
@@ -29,6 +30,9 @@ for arg in "$@"; do
         ;;
     --container=*)
         container="${arg#*=}"
+        ;;
+    --outdir=*)
+        outdir="${arg#*=}"
         ;;
     *.cwl)
         cwl_file="$(realpath "$arg")"
@@ -111,8 +115,13 @@ printf "\n\n"
 
 # Construct the streamflow command dynamically
 cmd=(streamflow run)
+
 if [[ "$debug" == true ]]; then
     cmd+=(--debug)
+fi
+
+if [[ -n "$outdir" ]]; then
+    cmd+=(--outdir "$outdir")
 fi
 
 # Add only the wrapper generated file

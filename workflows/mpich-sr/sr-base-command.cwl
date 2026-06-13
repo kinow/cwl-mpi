@@ -53,7 +53,7 @@ requirements:
   NetworkAccess:
     networkAccess: false
   ResourceRequirement:
-    coresMin: 1
+    coresMin: 2
     ramMin: 512
 
 inputs:
@@ -67,9 +67,6 @@ inputs:
     type: File
     inputBinding:
       position: 2
-    default:
-      class: File
-      path: sr
   msg_size:
     type: int
     default: 0

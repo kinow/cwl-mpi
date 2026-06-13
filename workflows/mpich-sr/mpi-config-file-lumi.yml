@@ -21,5 +21,6 @@
 runner: srun
 
 # To avoid --preserve-entire-environment, we pass the environment variables
-# necessary for srun to work.
-env_pass_regex: []
+# necessary for srun to work. In LUMI, we pass the SLURM and CRAY environment
+# variables, and also LD_LIBRARY_PATH as that is needed for libfabric.
+env_pass_regex: ["SLURM_.*", "CRAY_.*", "LD_LIBRARY_PATH"]
