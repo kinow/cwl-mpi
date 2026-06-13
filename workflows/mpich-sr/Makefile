@@ -79,6 +79,20 @@ else
 	CWLTOOL_ARGS = --strict-cpu-limit --strict-memory-limit --enable-ext --mpi-config-file mpi-config-file.yml
 endif
 
+# --- MN5-specific runtime tweaks.
+#     LUMI is happy to launch and resolve internal libraries, etc., automatically.
+#     But on MN5 you must load the impi module first, and that is not automagically
+#     propagated, nor available in the Slurm compute nodes. The temporary directory
+#     issue happened with CWL Conformance Tests. cwltool failed to use the node's
+#     disk and its temporary directory.
+ifeq ($(PLATFORM),mn5)
+ifneq ($(findstring streamflow,$(CWL_RUNNER)),streamflow)
+CWLTOOL_ARGS += --tmp-outdir-prefix=$(LOGDIR)/ \
+                --preserve-environment=I_MPI_ROOT \
+                --preserve-environment=LD_LIBRARY_PATH
+endif
+endif
+
 # Set the log output directory. This is where we keep the outputs of
 # the tools and workflows. This directory is Git-ignored. After the
 # runs complete, they are manually inspected and then copied to the
