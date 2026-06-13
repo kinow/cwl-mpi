@@ -1,0 +1,4 @@
+/scratch/tmp/41770328/tmpc48gzat9/stg6ecbebec-8394-475f-a5df-9529559810ec/sr.c:8:10: fatal error: mpi.h: No such file or directory
+    8 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.

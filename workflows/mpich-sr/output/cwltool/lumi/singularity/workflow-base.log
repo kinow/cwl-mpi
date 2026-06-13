@@ -1,0 +1,380 @@
+[1;30mINFO[0m /pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'sr-workflow-base-command.cwl' to 'file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl'
+[1;30mDEBUG[0m [32mParsed job order from command line: {
+    "__id": "sr-workflow-base-command.cwl",
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6,
+    "source": {
+        "class": "File",
+        "path": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6,
+    "source": {
+        "class": "File",
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [workflow ] starting step mpicc
+[1;30mDEBUG[0m [32m[step mpicc] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] start
+[1;30mDEBUG[0m [32m[job mpicc] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mpicc.cwl#mpich-mpicc as part of step mpicc[0m
+[1;30mDEBUG[0m [32m[job mpicc] {
+    "source": {
+        "class": "File",
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    },
+    "output_name": "sr"
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] path mappings is {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c": [
+        "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "/var/lib/cwl/stgb5c116dd-8508-4b92-a514-23ffae590ce4/sr.c",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpicc"
+    },
+    {
+        "position": [
+            1,
+            "source"
+        ],
+        "datum": {
+            "class": "File",
+            "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+            "size": 2570,
+            "basename": "sr.c",
+            "nameroot": "sr",
+            "nameext": ".c",
+            "path": "/var/lib/cwl/stgb5c116dd-8508-4b92-a514-23ffae590ce4/sr.c",
+            "dirname": "/var/lib/cwl/stgb5c116dd-8508-4b92-a514-23ffae590ce4"
+        }
+    },
+    {
+        "prefix": "-o",
+        "position": [
+            2,
+            "output_name"
+        ],
+        "datum": "sr"
+    }
+][0m
+[1;30mDEBUG[0m [32mSingularity version: 4.1.3 ({_SINGULARITY_FLAVOR}.[0m
+[1;30mINFO[0m Using local copy of Singularity image mfisherman_mpich:4.3.2.sif found in /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr
+[1;30mDEBUG[0m [32m[job mpicc] initial work dir {}[0m
+[1;30mINFO[0m [job mpicc] /tmp/_zvsocgy$ singularity \
+    --quiet \
+    run \
+    --contain \
+    --ipc \
+    --cleanenv \
+    --no-eval \
+    --pid \
+    --home \
+    /tmp/_zvsocgy:/USYmGW \
+    --mount=type=bind,source=/tmp/0orn5yod,target=/tmp \
+    --mount=type=bind,source=/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c,target=/var/lib/cwl/stgb5c116dd-8508-4b92-a514-23ffae590ce4/sr.c,readonly \
+    --pwd \
+    /USYmGW \
+    --net \
+    --network \
+    none \
+    /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mfisherman_mpich:4.3.2.sif \
+    mpicc \
+    /var/lib/cwl/stgb5c116dd-8508-4b92-a514-23ffae590ce4/sr.c \
+    -o \
+    sr
+[1;30mINFO[0m [job mpicc] completed success
+[1;30mDEBUG[0m [32m[job mpicc] outputs {
+    "executable": {
+        "location": "file:///tmp/_zvsocgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/executable": {
+        "location": "file:///tmp/_zvsocgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] completed success
+[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /tmp/gsj9aq70[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /tmp/0orn5yod[0m
+[1;30mINFO[0m [workflow ] starting step mpirun
+[1;30mDEBUG[0m [32m[step mpirun] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
+        "location": "file:///tmp/_zvsocgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/msg_size": 0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/niter": 1,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/np": 6
+}[0m
+[1;30mDEBUG[0m [32m[step mpirun] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
+        "location": "file:///tmp/_zvsocgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/msg_size": 0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/niter": 1,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/np": 6
+}[0m
+[1;30mINFO[0m [step mpirun] start
+[1;30mDEBUG[0m [32m[job mpirun] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-base-command.cwl#mpirun-base-command as part of step mpirun[0m
+[1;30mDEBUG[0m [32m[job mpirun] {
+    "executable": {
+        "location": "file:///tmp/_zvsocgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] path mappings is {
+    "file:///tmp/_zvsocgy/sr": [
+        "/tmp/_zvsocgy/sr",
+        "/var/lib/cwl/stgb81c9e96-00fd-41d5-9f72-c6338f61129b/sr",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-np",
+        "position": [
+            1,
+            "np"
+        ],
+        "datum": 6
+    },
+    {
+        "position": [
+            2,
+            "executable"
+        ],
+        "datum": {
+            "location": "file:///tmp/_zvsocgy/sr",
+            "basename": "sr",
+            "nameroot": "sr",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+            "size": 16512,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/var/lib/cwl/stgb81c9e96-00fd-41d5-9f72-c6338f61129b/sr",
+            "dirname": "/var/lib/cwl/stgb81c9e96-00fd-41d5-9f72-c6338f61129b"
+        }
+    },
+    {
+        "position": [
+            3,
+            "msg_size"
+        ],
+        "datum": 0
+    },
+    {
+        "position": [
+            4,
+            "niter"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mINFO[0m Using local copy of Singularity image mfisherman_mpich:4.3.2.sif found in /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr
+[1;30mDEBUG[0m [32m[job mpirun] initial work dir {}[0m
+[1;30mINFO[0m [job mpirun] /tmp/yiavqxsu$ singularity \
+    --quiet \
+    run \
+    --contain \
+    --ipc \
+    --cleanenv \
+    --no-eval \
+    --pid \
+    --home \
+    /tmp/yiavqxsu:/USYmGW \
+    --mount=type=bind,source=/tmp/4xma3lr0,target=/tmp \
+    --mount=type=bind,source=/tmp/_zvsocgy/sr,target=/var/lib/cwl/stgb81c9e96-00fd-41d5-9f72-c6338f61129b/sr,readonly \
+    --pwd \
+    /USYmGW \
+    --net \
+    --network \
+    none \
+    /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mfisherman_mpich:4.3.2.sif \
+    mpirun \
+    -np \
+    6 \
+    /var/lib/cwl/stgb81c9e96-00fd-41d5-9f72-c6338f61129b/sr \
+    0 \
+    1 > /tmp/yiavqxsu/mpirun-base-command.out 2> /tmp/yiavqxsu/mpirun-base-command.err
+[1;30mINFO[0m [job mpirun] completed success
+[1;30mDEBUG[0m [32m[job mpirun] outputs {
+    "stderr_file": {
+        "location": "file:///tmp/yiavqxsu/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout_file": {
+        "location": "file:///tmp/yiavqxsu/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$47dc8057ec7d1c90f64160464adcb2c2d604ecba",
+        "size": 300,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpirun] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/stdout_file": {
+        "location": "file:///tmp/yiavqxsu/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$47dc8057ec7d1c90f64160464adcb2c2d604ecba",
+        "size": 300,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/stderr_file": {
+        "location": "file:///tmp/yiavqxsu/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step mpirun] completed success
+[1;30mINFO[0m [workflow ] completed success
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stderr": {
+        "location": "file:///tmp/yiavqxsu/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout": {
+        "location": "file:///tmp/yiavqxsu/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$47dc8057ec7d1c90f64160464adcb2c2d604ecba",
+        "size": 300,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /tmp/v1qvz2ez[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /tmp/4xma3lr0[0m
+[1;30mDEBUG[0m [32mMoving /tmp/yiavqxsu/mpirun-base-command.err to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/singularity/mpirun-base-command.err[0m
+[1;30mDEBUG[0m [32mMoving /tmp/yiavqxsu/mpirun-base-command.out to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/singularity/mpirun-base-command.out[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/g49kzwg7[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/yiavqxsu[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/_zvsocgy[0m
+{
+    "stderr": {
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/singularity/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/singularity/mpirun-base-command.err"
+    },
+    "stdout": {
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/singularity/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "class": "File",
+        "checksum": "sha1$47dc8057ec7d1c90f64160464adcb2c2d604ecba",
+        "size": 300,
+        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/singularity/mpirun-base-command.out"
+    }
+}[1;30mINFO[0m Final process status is success

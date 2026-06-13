@@ -1,0 +1,120 @@
+Length of workDir path "/home/kinow/Development/python/workspace/cwl-mpi/workflows/mpich-sr/logs/toil/laptop/docker" is 91 characters.  Consider setting a shorter path with --workPath or setting TMPDIR to something like "/tmp" to avoid overly long paths.
+Pulling mfisherman/mpich:4.3.2 with docker...
+INFO:cwl_utils.image_puller:Pulling mfisherman/mpich:4.3.2 with docker...
+Image successfully pulled: mfisherman/mpich:4.3.2
+INFO:cwl_utils.image_puller:Image successfully pulled: mfisherman/mpich:4.3.2
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/toil/bin/cwl-docker-extract", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 140, in main
+    run(arg_parser().parse_args(sys.argv[1:]))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 59, in run
+    for req in traverse(top):
+               ~~~~~~~~^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 121, in traverse
+    yield from traverse_workflow(process)
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 135, in traverse_workflow
+    yield from traverse(get_process_from_step(step))
+                        ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 127, in get_process_from_step
+    return cast(cwl.Process, cwl.load_document_by_uri(step.run))
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 328, in load_document_by_uri
+    return load_document_by_string(
+        loadingOptions.fetcher.fetch_text(real_uri),
+    ...<3 lines>...
+        load_all,
+    )
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 365, in load_document_by_string
+    return load_document_by_yaml(result, uri, loadingOptions, id_, load_all)
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 390, in load_document_by_yaml
+    result = cwl_v1_2.load_document_by_yaml(
+        yaml, uri, cast(Optional[cwl_v1_2.LoadingOptions], loadingOptions)
+    )
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 30779, in load_document_by_yaml
+    result, metadata = _document_load(
+                       ~~~~~~~~~~~~~~^
+        union_of_CommandLineToolLoader_or_ExpressionToolLoader_or_WorkflowLoader_or_OperationLoader_or_ProcessGeneratorLoader_or_array_of_union_of_CommandLineToolLoader_or_ExpressionToolLoader_or_WorkflowLoader_or_OperationLoader_or_ProcessGeneratorLoader,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        loadingOptions,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 1040, in _document_load
+    loader.load(doc2, baseuri, loadingOptions, docRoot=baseuri),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 808, in load
+    raise ValidationException("", None, errors, "*")
+schema_salad.exceptions.ValidationException: sr-mpi-requirement.cwl:9:1:   Object `sr-mpi-requirement.cwl` is not valid because:
+sr-mpi-requirement.cwl:51:1:   the `requirements` field is not valid because:
+                                 Expected a <class 'NoneType'> but got list
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/toil/bin/toil-cwl-runner", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/toil/cwl/cwltoil.py", line 4466, in main
+    try_prepull(uri, runtime_context, expected_config.batchSystem)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/toil/cwl/cwltoil.py", line 289, in try_prepull
+    call_command(["cwl-docker-extract", cwl_tool_uri])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/toil/lib/misc.py", line 218, in call_command
+    raise CalledProcessErrorStderr(
+        proc.returncode, cmd, output=stdout, stderr=stderr
+    )
+toil.lib.misc.CalledProcessErrorStderr: Command '['cwl-docker-extract', 'file:///home/kinow/Development/python/workspace/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl']' exit status 1: Pulling mfisherman/mpich:4.3.2 with docker...
+INFO:cwl_utils.image_puller:Pulling mfisherman/mpich:4.3.2 with docker...
+Image successfully pulled: mfisherman/mpich:4.3.2
+INFO:cwl_utils.image_puller:Image successfully pulled: mfisherman/mpich:4.3.2
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/toil/bin/cwl-docker-extract", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 140, in main
+    run(arg_parser().parse_args(sys.argv[1:]))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 59, in run
+    for req in traverse(top):
+               ~~~~~~~~^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 121, in traverse
+    yield from traverse_workflow(process)
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 135, in traverse_workflow
+    yield from traverse(get_process_from_step(step))
+                        ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/docker_extract.py", line 127, in get_process_from_step
+    return cast(cwl.Process, cwl.load_document_by_uri(step.run))
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 328, in load_document_by_uri
+    return load_document_by_string(
+        loadingOptions.fetcher.fetch_text(real_uri),
+    ...<3 lines>...
+        load_all,
+    )
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 365, in load_document_by_string
+    return load_document_by_yaml(result, uri, loadingOptions, id_, load_all)
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/__init__.py", line 390, in load_document_by_yaml
+    result = cwl_v1_2.load_document_by_yaml(
+        yaml, uri, cast(Optional[cwl_v1_2.LoadingOptions], loadingOptions)
+    )
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 30779, in load_document_by_yaml
+    result, metadata = _document_load(
+                       ~~~~~~~~~~~~~~^
+        union_of_CommandLineToolLoader_or_ExpressionToolLoader_or_WorkflowLoader_or_OperationLoader_or_ProcessGeneratorLoader_or_array_of_union_of_CommandLineToolLoader_or_ExpressionToolLoader_or_WorkflowLoader_or_OperationLoader_or_ProcessGeneratorLoader,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        loadingOptions,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 1040, in _document_load
+    loader.load(doc2, baseuri, loadingOptions, docRoot=baseuri),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/toil/lib/python3.13/site-packages/cwl_utils/parser/cwl_v1_2.py", line 808, in load
+    raise ValidationException("", None, errors, "*")
+schema_salad.exceptions.ValidationException: sr-mpi-requirement.cwl:9:1:   Object `sr-mpi-requirement.cwl` is not valid because:
+sr-mpi-requirement.cwl:51:1:   the `requirements` field is not valid because:
+                                 Expected a <class 'NoneType'> but got list
+

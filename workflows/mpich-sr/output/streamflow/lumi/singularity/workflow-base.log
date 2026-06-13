@@ -1,0 +1,178 @@
+StreamFlow file:
+
+version: v1.0
+database:
+  type: default
+  config:
+    connection: ":memory:"
+workflows:
+  workflow_name:
+    type: cwl
+    config:
+      file: "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl"
+      docker:
+        - step: /
+          deployment:
+            type: singularity
+            config: {}
+
+
+Executing: streamflow run --debug --outdir logs/streamflow/lumi/singularity /tmp/tmp.XSLJmrNgOo
+2026-06-13 20:50:10.147 INFO     Processing workflow cd65ad4d-6471-42d4-8c08-4a8febceef33
+2026-06-13 20:50:10.147 INFO     Building workflow execution plan
+2026-06-13 20:50:12.732 DEBUG    Translating Workflow /
+2026-06-13 20:50:12.734 DEBUG    Translating WorkflowStep /mpicc
+2026-06-13 20:50:12.740 DEBUG    Translating CommandLineTool /mpicc
+2026-06-13 20:50:12.741 DEBUG    Translating WorkflowStep /mpirun
+2026-06-13 20:50:12.749 DEBUG    Translating CommandLineTool /mpirun
+2026-06-13 20:50:14.405 INFO     COMPLETED building of workflow execution plan
+2026-06-13 20:50:14.405 INFO     EXECUTING workflow cd65ad4d-6471-42d4-8c08-4a8febceef33
+2026-06-13 20:50:14.411 DEBUG    Step /source-wf-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /source-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /np-wf-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /np-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /msg_size-wf-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /msg_size-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /niter-wf-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /niter-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /mpicc/source-cmd-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /mpicc/output_name-cmd-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /mpirun/np-cmd-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /mpirun/msg_size-cmd-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.411 DEBUG    Step /mpirun/niter-cmd-default-transformer-injector received inputs ['0']
+2026-06-13 20:50:14.412 DEBUG    Retrieving available locations for job /source-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.413 DEBUG    Available locations for job /source-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.413 DEBUG    Job /source-wf-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.413 DEBUG    Retrieving available locations for job /np-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.413 DEBUG    Available locations for job /np-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.413 DEBUG    Job /np-wf-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.413 DEBUG    Retrieving available locations for job /msg_size-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.414 DEBUG    Available locations for job /msg_size-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.414 DEBUG    Job /msg_size-wf-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.414 DEBUG    Retrieving available locations for job /niter-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.414 DEBUG    COMPLETED Step __deploy__/__LOCAL__
+2026-06-13 20:50:14.414 DEBUG    COMPLETED Step __deploy__/33243d6b-248f-4a6d-8774-0d1445a2de73
+2026-06-13 20:50:14.414 DEBUG    COMPLETED Step __deploy__/08608745-1f32-438d-bace-63ccb7bf361d
+2026-06-13 20:50:14.415 DEBUG    Available locations for job /niter-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.415 DEBUG    Job /niter-wf-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.415 DEBUG    Retrieving available locations for job /mpicc/source-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.415 DEBUG    Available locations for job /mpicc/source-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.415 DEBUG    Job /mpicc/source-cmd-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.415 DEBUG    Retrieving available locations for job /mpicc/output_name-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.416 DEBUG    Available locations for job /mpicc/output_name-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.416 DEBUG    Job /mpicc/output_name-cmd-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.416 DEBUG    Retrieving available locations for job /mpirun/np-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.417 DEBUG    Available locations for job /mpirun/np-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.417 DEBUG    Job /mpirun/np-cmd-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.417 DEBUG    COMPLETED Step /source-wf-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.417 DEBUG    Retrieving available locations for job /mpirun/msg_size-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.417 DEBUG    Available locations for job /mpirun/msg_size-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.417 DEBUG    Job /mpirun/msg_size-cmd-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.418 DEBUG    Retrieving available locations for job /mpirun/niter-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-13 20:50:14.418 DEBUG    COMPLETED Step /np-wf-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.418 DEBUG    COMPLETED Step /msg_size-wf-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.418 DEBUG    Available locations for job /mpirun/niter-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-13 20:50:14.418 DEBUG    Job /mpirun/niter-cmd-default-transformer-injector/0 allocated locally
+2026-06-13 20:50:14.418 DEBUG    Job /source-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.419 DEBUG    Job /np-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.419 DEBUG    Job /msg_size-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.419 DEBUG    Job /niter-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.419 DEBUG    COMPLETED Step /niter-wf-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.420 DEBUG    Job /mpicc/source-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.420 DEBUG    Job /mpicc/output_name-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.421 DEBUG    COMPLETED Step /mpicc/source-cmd-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.421 DEBUG    Job /mpirun/np-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.421 DEBUG    COMPLETED Step /mpicc/output_name-cmd-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.421 DEBUG    Job /np-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.421 DEBUG    COMPLETED Step /mpirun/np-cmd-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.421 DEBUG    Step /np-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.422 DEBUG    Job /mpirun/msg_size-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.422 DEBUG    Step /msg_size-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.422 DEBUG    Step /niter-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.422 DEBUG    Job /msg_size-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.422 DEBUG    Step /np-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.422 DEBUG    COMPLETED Step /mpirun/msg_size-cmd-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.422 DEBUG    Job /niter-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.422 DEBUG    Step /msg_size-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.422 DEBUG    Job /mpirun/niter-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-13 20:50:14.422 DEBUG    Job /mpicc/output_name-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.423 DEBUG    COMPLETED Step /mpirun/niter-cmd-default-transformer-injector/__schedule__
+2026-06-13 20:50:14.423 DEBUG    Step /niter-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.423 DEBUG    Job /mpirun/np-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.423 DEBUG    Step /np-token-transformer received inputs ['0']
+2026-06-13 20:50:14.423 DEBUG    Step /np-wf-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.423 DEBUG    Step /msg_size-token-transformer received inputs ['0']
+2026-06-13 20:50:14.423 DEBUG    Step /msg_size-wf-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.423 DEBUG    Step /mpicc/output_name-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.423 DEBUG    Step /niter-token-transformer received inputs ['0']
+2026-06-13 20:50:14.423 DEBUG    Step /niter-wf-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.424 DEBUG    Step /mpirun/np-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.424 DEBUG    COMPLETED Step /np-wf-default-transformer-injector
+2026-06-13 20:50:14.424 DEBUG    Job /mpirun/msg_size-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.424 DEBUG    COMPLETED Step /np-wf-default-transformer
+2026-06-13 20:50:14.424 DEBUG    COMPLETED Step /msg_size-wf-default-transformer
+2026-06-13 20:50:14.424 DEBUG    COMPLETED Step /niter-wf-default-transformer
+2026-06-13 20:50:14.424 DEBUG    COMPLETED Step /msg_size-wf-default-transformer-injector
+2026-06-13 20:50:14.424 DEBUG    Step /mpirun/msg_size-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.425 DEBUG    COMPLETED Step /niter-wf-default-transformer-injector
+2026-06-13 20:50:14.425 DEBUG    Job /mpirun/niter-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.425 DEBUG    Step /mpirun/niter-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.425 DEBUG    COMPLETED Step /mpicc/output_name-cmd-default-transformer-injector
+2026-06-13 20:50:14.425 DEBUG    COMPLETED Step /mpirun/np-cmd-default-transformer-injector
+2026-06-13 20:50:14.425 DEBUG    Step /np-token-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.425 DEBUG    Step /msg_size-token-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.425 DEBUG    Step /niter-token-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.425 DEBUG    COMPLETED Step /mpirun/msg_size-cmd-default-transformer-injector
+2026-06-13 20:50:14.426 DEBUG    COMPLETED Step /np-token-transformer
+2026-06-13 20:50:14.426 DEBUG    COMPLETED Step /msg_size-token-transformer
+2026-06-13 20:50:14.426 DEBUG    COMPLETED Step /mpirun/niter-cmd-default-transformer-injector
+2026-06-13 20:50:14.426 DEBUG    COMPLETED Step /niter-token-transformer
+2026-06-13 20:50:14.504 DEBUG    Job /mpicc/source-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.504 DEBUG    Step /mpicc/source-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.504 DEBUG    Job /source-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-13 20:50:14.504 DEBUG    Step /source-wf-default-transformer received inputs ['0']
+2026-06-13 20:50:14.505 DEBUG    Step /source-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-13 20:50:14.505 DEBUG    COMPLETED Step /mpicc/source-cmd-default-transformer-injector
+2026-06-13 20:50:14.505 DEBUG    Step /source-token-transformer received inputs ['0']
+2026-06-13 20:50:14.505 DEBUG    Processing /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c on location __LOCAL__/__LOCAL__.
+2026-06-13 20:50:14.505 DEBUG    Step /source-wf-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.506 DEBUG    COMPLETED Step /source-wf-default-transformer-injector
+2026-06-13 20:50:14.506 DEBUG    COMPLETED Step /source-wf-default-transformer
+2026-06-13 20:50:14.506 DEBUG    Step /mpicc/output_name-step-default-transformer received inputs ['0']
+2026-06-13 20:50:14.506 DEBUG    Step /mpicc/source-cmd-default-transformer received inputs ['0']
+2026-06-13 20:50:14.506 DEBUG    Step /source-token-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.506 DEBUG    Step /mpicc/output_name-step-default-transformer received inputs ['0']
+2026-06-13 20:50:14.506 DEBUG    Step /mpicc/output_name-step-default-transformer received inputs ['0']
+2026-06-13 20:50:14.506 DEBUG    COMPLETED Step /source-token-transformer
+2026-06-13 20:50:14.506 DEBUG    Step /mpicc/source-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.507 DEBUG    COMPLETED Step /mpicc/source-cmd-default-transformer
+2026-06-13 20:50:14.507 DEBUG    Step /mpicc/output_name-cmd-default-transformer received inputs ['0']
+2026-06-13 20:50:14.507 DEBUG    Step /mpicc/output_name-step-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.507 DEBUG    Step /mpicc/output_name-cmd-default-transformer received inputs ['0']
+2026-06-13 20:50:14.507 DEBUG    COMPLETED Step /mpicc/output_name-step-default-transformer
+2026-06-13 20:50:14.507 DEBUG    Step /mpicc/source-token-transformer received inputs ['0', '0']
+2026-06-13 20:50:14.507 DEBUG    Processing /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c on location __LOCAL__/__LOCAL__.
+2026-06-13 20:50:14.507 DEBUG    Step /mpicc/output_name-token-transformer received inputs ['0', '0']
+2026-06-13 20:50:14.507 DEBUG    Step /mpicc/output_name-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.508 DEBUG    COMPLETED Step /mpicc/output_name-cmd-default-transformer
+2026-06-13 20:50:14.508 DEBUG    Step /mpicc/__transfer__/output_name received inputs ['0']
+2026-06-13 20:50:14.508 DEBUG    Step /mpicc/output_name-token-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.508 DEBUG    COMPLETED Step /mpicc/output_name-token-transformer
+2026-06-13 20:50:14.508 DEBUG    Step /mpicc/__transfer__/source received inputs ['0']
+2026-06-13 20:50:14.508 DEBUG    Step /mpicc/__schedule__ received inputs ['0', '0']
+2026-06-13 20:50:14.508 DEBUG    Step /mpicc/source-token-transformer received termination token with Status COMPLETED
+2026-06-13 20:50:14.508 DEBUG    Retrieving available locations for job /mpicc/0 on 33243d6b-248f-4a6d-8774-0d1445a2de73/mfisherman/mpich:4.3.2.
+2026-06-13 20:50:14.508 INFO     DEPLOYING 33243d6b-248f-4a6d-8774-0d1445a2de73
+2026-06-13 20:50:14.516 DEBUG    EXECUTING command singularity --version 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-13 20:50:14.521 DEBUG    COMPLETED Step /mpicc/source-token-transformer
+2026-06-13 20:50:14.539 DEBUG    Using singularity-ce version 4.1.3-150500.10.7.
+2026-06-13 20:50:14.539 DEBUG    EXECUTING command singularity instance start    --bind  "/tmp/streamflow:/tmp/streamflow"     --cleanenv    --contain                       --net   --network  "none"                         docker://mfisherman/mpich:4.3.2 7f061b56-df16-440b-9e59-50a8319192ab  2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-13 20:50:15.965 DEBUG    EXECUTING command singularity instance list --json 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-13 20:50:15.993 DEBUG    EXECUTING command nproc 2>&1 on SubprocessShell with command `singularity exec instance://7f061b56-df16-440b-9e59-50a8319192ab sh`
+2026-06-13 20:50:16.056 DEBUG    EXECUTING command cat /proc/meminfo | grep MemTotal | awk '{print $2}' 2>&1 on SubprocessShell with command `singularity exec instance://7f061b56-df16-440b-9e59-50a8319192ab sh`
+2026-06-13 20:50:16.066 DEBUG    EXECUTING command cat /proc/1/mountinfo 2>&1 on SubprocessShell with command `singularity exec instance://7f061b56-df16-440b-9e59-50a8319192ab sh`
+2026-06-13 20:50:16.067 DEBUG    Container binds: {'/tmp/streamflow': '/tmp/streamflow'}
+2026-06-13 20:50:16.067 DEBUG    EXECUTING command df -aT | tail -n +2 | awk 'NF == 1 {device = $1; getline; $0 = device $0} {print $7, $2, $5}' 2>&1 on SubprocessShell with command `singularity exec instance://7f061b56-df16-440b-9e59-50a8319192ab sh`
+2026-06-13 20:50:16.070 INFO     COMPLETED deployment of 33243d6b-248f-4a6d-8774-0d1445a2de73
+2026-06-13 20:50:16.070 DEBUG    EXECUTING command test -e /tmp/streamflow && readlink -f /tmp/streamflow 2>&1 on SubprocessShell with command `singularity exec instance://7f061b56-df16-440b-9e59-50a8319192ab sh`
+2026-06-13 20:50:16.072 DEBUG    Not enough available locations: job /mpicc/0 requires 1 locations on deployment 33243d6b-248f-4a6d-8774-0d1445a2de73/mfisherman/mpich:4.3.2, but only 0 are available.
