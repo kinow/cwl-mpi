@@ -3,11 +3,34 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+"""Script to generate the Simple MPI Workflow Results.
+
+Note that this is not a copy and paste output. The results were analyzed
+individually, because some runners produced a successful run but in reality
+were doing `singularity mpirun` instead of `mpirun singularity`.
+
+After this analysis, the table was manually edited to include the IN
+(Invalid) results.
+"""
+
 LOG_DIR = Path("output")
 
 RUNNERS = ["cwltool", "streamflow", "toil"]
 PLATFORMS = ["ft3", "lumi", "mn5", "laptop", "aws"]
 CONTAINERS = ["none", "docker", "singularity"]
+TESTS = [
+    ("workflow-base",
+     "Simple MPI workflow execution results across runners, platforms, and container backends with baseCommand: mpirun (TO: time-out, IN: invalid)"),
+    ("workflow-req",
+     "Simple MPI workflow execution results across runners, platforms, and container backends with MPIRequirement (TO: time-out, IN: invalid)"),
+]
+PLATFORM_NAMES = {
+    "ft3": "FinisTerrae III",
+    "lumi": "LUMI",
+    "mn5": "MareNostrum 5",
+    "laptop": "Laptop",
+    "aws": "AWS",
+}
 
 
 @dataclass
@@ -74,53 +97,90 @@ def fmt_time(t):
     return f"{t:.1f}"
 
 
-def fmt_status(s):
-    if s == "0":
-        return "OK"
-    if s == "timeout":
+def fmt_status(status):
+    if status == "0":
+        return r"\textbf{OK}"
+    if status in ("124", "timeout"):
         return "TO"
-    if s == "killed":
+    if status in ("137", "killed"):
         return "KILLED"
-    return s
+    return status
 
 
-def print_latex(data):
-    print(r"\documentclass{article}")
-    print(r"\usepackage{booktabs}")
-    print(r"\usepackage{geometry}")
-    print(r"\geometry{margin=1in}")
-    print(r"\begin{document}")
+def print_table(data, test, caption):
+    print(r"\begin{table}[ht!]")
+    print(r"\centering")
+    print(r"\setlength{\tabcolsep}{6pt}")
+    print(r"\renewcommand{\arraystretch}{1.2}")
+    print(r"\begin{tabular}{|c|c|c|c|c|}")
+    print(r"\hline")
+    print(r"\rowcolor{lightgray!50}")
+    print(
+        r"\textbf{Runner} & "
+        r"\textbf{HPC} & "
+        r"\textbf{Container} & "
+        r"\textbf{Status} & "
+        r"\textbf{Time (s)} \\"
+    )
+    print(r"\hline")
 
-    for runner, runner_data in data.items():
+    first_runner = True
 
-        print(r"\section*{" + runner + "}")
+    for runner in RUNNERS:
 
-        for (platform, container), tests in sorted(runner_data.items()):
+        if runner not in data:
+            continue
 
-            print(r"\subsection*{" + f"{platform} / {container}" + "}")
+        if not first_runner:
+            print(r"\hline\hline")
 
-            print(r"\begin{tabular}{lcc}")
-            print(r"\toprule")
-            print(r"Test & Status & Time (s) \\")
-            print(r"\midrule")
+        first_runner = False
 
-            for test, result in sorted(tests.items()):
+        runner_data = data[runner]
+
+        for platform in PLATFORMS:
+            for container in CONTAINERS:
+
+                result = (
+                    runner_data
+                    .get((platform, container), {})
+                    .get(test)
+                )
+
                 if result is None:
                     continue
 
+                status = fmt_status(result.status)
+                time = fmt_time(result.time)
+
                 print(
-                    f"{test} & "
-                    f"{fmt_status(result.status)} & "
-                    f"{fmt_time(result.time)} \\\\"
+                    f"{runner} & "
+                    f"{PLATFORM_NAMES.get(platform, platform)} & "
+                    f"{container} & "
+                    f"{status} & "
+                    f"{time} \\\\"
                 )
 
-            print(r"\bottomrule")
-            print(r"\end{tabular}")
+    print(r"\hline")
+    print(r"\end{tabular}")
+    print(f"\\caption{{{caption}}}")
+    print(r"\end{table}")
+    print()
+
+
+def print_latex_tables(data):
+    print(r"\documentclass{article}")
+    print(r"\usepackage{geometry}")
+    print(r"\usepackage[table]{xcolor}")
+    print(r"\geometry{margin=1in}")
+    print(r"\begin{document}")
+
+    for test, caption in TESTS:
+        print_table(data, test, caption)
 
     print(r"\end{document}")
 
 
 if __name__ == "__main__":
     data = collect()
-    print_latex(data)
-
+    print_latex_tables(data)

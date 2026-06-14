@@ -1,58 +1,80 @@
 \documentclass{article}
-\usepackage{booktabs}
 \usepackage{geometry}
+\usepackage[table]{xcolor}
 \geometry{margin=1in}
 \begin{document}
 \begin{table}[ht!]
 \centering
-\begin{tabular}{llllcc}
-\toprule
-Runner & HPC & Container & Test & Status & Time (s) \\
-\midrule
-cwltool & laptop & docker & workflow-base & OK & 5.0 \\
-cwltool & laptop & docker & workflow-req & OK & 4.0 \\
-cwltool & laptop & none & workflow-base & OK & 3.0 \\
-cwltool & laptop & none & workflow-req & OK & 3.0 \\
-cwltool & laptop & singularity & workflow-base & OK & 4.0 \\
-cwltool & laptop & singularity & workflow-req & 1 & 3.0 \\
-cwltool & lumi & none & workflow-base & 1 & 87.0 \\
-cwltool & lumi & none & workflow-req & OK & 4.0 \\
-cwltool & lumi & singularity & workflow-base & OK & 79.0 \\
-cwltool & lumi & singularity & workflow-req & 1 & 5.0 \\
-cwltool & mn5 & none & workflow-base & OK & 8.0 \\
-cwltool & mn5 & none & workflow-req & OK & 3.0 \\
-cwltool & mn5 & singularity & workflow-base & 1 & 3.0 \\
-cwltool & mn5 & singularity & workflow-req & 1 & 2.0 \\
-streamflow & laptop & docker & workflow-base & OK & 3.0 \\
-streamflow & laptop & docker & workflow-req & 1 & 1.0 \\
-streamflow & laptop & none & workflow-base & OK & 2.0 \\
-streamflow & laptop & none & workflow-req & 1 & 2.0 \\
-streamflow & laptop & singularity & workflow-base & timeout & 31.0 \\
-streamflow & laptop & singularity & workflow-req & 1 & 1.0 \\
-streamflow & lumi & none & workflow-base & 1 & 113.0 \\
-streamflow & lumi & none & workflow-req & 1 & 3.0 \\
-streamflow & lumi & singularity & workflow-base & timeout & 300.0 \\
-streamflow & lumi & singularity & workflow-req & 1 & 3.0 \\
-streamflow & mn5 & none & workflow-base & 1 & 16.0 \\
-streamflow & mn5 & none & workflow-req & 1 & 1.0 \\
-streamflow & mn5 & singularity & workflow-base & 1 & 1.0 \\
-streamflow & mn5 & singularity & workflow-req & 1 & 1.0 \\
-toil & laptop & docker & workflow-base & OK & 18.0 \\
-toil & laptop & docker & workflow-req & 1 & 4.0 \\
-toil & laptop & none & workflow-base & OK & 11.0 \\
-toil & laptop & none & workflow-req & OK & 11.0 \\
-toil & laptop & singularity & workflow-base & OK & 14.0 \\
-toil & laptop & singularity & workflow-req & 1 & 14.0 \\
-toil & lumi & none & workflow-base & 1 & 124.0 \\
-toil & lumi & none & workflow-req & OK & 14.0 \\
-toil & lumi & singularity & workflow-base & OK & 113.0 \\
-toil & lumi & singularity & workflow-req & 1 & 20.0 \\
-toil & mn5 & none & workflow-base & 1 & 18.0 \\
-toil & mn5 & none & workflow-req & 1 & 8.0 \\
-toil & mn5 & singularity & workflow-base & 1 & 10.0 \\
-toil & mn5 & singularity & workflow-req & 1 & 9.0 \\
-\bottomrule
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Runner} & \textbf{HPC} & \textbf{Container} & \textbf{Status} & \textbf{Time (s)} \\
+\hline
+cwltool & LUMI & none & 1 & 87.0 \\
+cwltool & LUMI & singularity & IN & 79.0 \\
+cwltool & MareNostrum 5 & none & \textbf{OK} & 8.0 \\
+cwltool & MareNostrum 5 & singularity & 1 & 3.0 \\
+cwltool & Laptop & none & \textbf{OK} & 3.0 \\
+cwltool & Laptop & docker & \textbf{OK} & 5.0 \\
+cwltool & Laptop & singularity & IN & 4.0 \\
+\hline\hline
+streamflow & LUMI & none & 1 & 113.0 \\
+streamflow & LUMI & singularity & TO & 300.0 \\
+streamflow & MareNostrum 5 & none & 1 & 16.0 \\
+streamflow & MareNostrum 5 & singularity & 1 & 1.0 \\
+streamflow & Laptop & none & \textbf{OK} & 2.0 \\
+streamflow & Laptop & docker & \textbf{OK} & 3.0 \\
+streamflow & Laptop & singularity & TO & 31.0 \\
+\hline\hline
+toil & LUMI & none & 1 & 124.0 \\
+toil & LUMI & singularity & IN & 113.0 \\
+toil & MareNostrum 5 & none & 1 & 18.0 \\
+toil & MareNostrum 5 & singularity & 1 & 10.0 \\
+toil & Laptop & none & \textbf{OK} & 11.0 \\
+toil & Laptop & docker & \textbf{OK} & 18.0 \\
+toil & Laptop & singularity & IN & 14.0 \\
+\hline
 \end{tabular}
-\caption{HPC workflow execution results across runners, platforms, and container backends.}
+\caption{Simple MPI workflow execution results across runners, platforms, and container backends with baseCommand: mpirun (TO: time-out, IN: invalid)}
 \end{table}
+
+\begin{table}[ht!]
+\centering
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{Runner} & \textbf{HPC} & \textbf{Container} & \textbf{Status} & \textbf{Time (s)} \\
+\hline
+cwltool & LUMI & none & \textbf{OK} & 4.0 \\
+cwltool & LUMI & singularity & 1 & 5.0 \\
+cwltool & MareNostrum 5 & none & \textbf{OK} & 3.0 \\
+cwltool & MareNostrum 5 & singularity & 1 & 2.0 \\
+cwltool & Laptop & none & \textbf{OK} & 3.0 \\
+cwltool & Laptop & docker & \textbf{OK} & 4.0 \\
+cwltool & Laptop & singularity & 1 & 3.0 \\
+\hline\hline
+streamflow & LUMI & none & 1 & 3.0 \\
+streamflow & LUMI & singularity & 1 & 3.0 \\
+streamflow & MareNostrum 5 & none & 1 & 1.0 \\
+streamflow & MareNostrum 5 & singularity & 1 & 1.0 \\
+streamflow & Laptop & none & 1 & 2.0 \\
+streamflow & Laptop & docker & 1 & 1.0 \\
+streamflow & Laptop & singularity & 1 & 1.0 \\
+\hline\hline
+toil & LUMI & none & \textbf{OK} & 14.0 \\
+toil & LUMI & singularity & 1 & 20.0 \\
+toil & MareNostrum 5 & none & 1 & 8.0 \\
+toil & MareNostrum 5 & singularity & 1 & 9.0 \\
+toil & Laptop & none & \textbf{OK} & 11.0 \\
+toil & Laptop & docker & 1 & 4.0 \\
+toil & Laptop & singularity & 1 & 14.0 \\
+\hline
+\end{tabular}
+\caption{Simple MPI workflow execution results across runners, platforms, and container backends with MPIRequirement (TO: time-out, IN: invalid)}
+\end{table}
+
 \end{document}
