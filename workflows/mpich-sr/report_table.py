@@ -16,7 +16,7 @@ After this analysis, the table was manually edited to include the IN
 LOG_DIR = Path("output")
 
 RUNNERS = ["cwltool", "streamflow", "toil"]
-PLATFORMS = ["ft3", "lumi", "mn5", "laptop", "aws"]
+PLATFORMS = ["ft3", "lumi", "mn5", "laptop", "cloud"]
 CONTAINERS = ["none", "docker", "singularity"]
 TESTS = [
     ("workflow-base",
@@ -29,7 +29,7 @@ PLATFORM_NAMES = {
     "lumi": "LUMI",
     "mn5": "MareNostrum 5",
     "laptop": "Laptop",
-    "aws": "AWS",
+    "cloud": "Cloud",
 }
 
 
@@ -100,6 +100,8 @@ def fmt_time(t):
 def fmt_status(status):
     if status == "0":
         return r"\textbf{OK}"
+    if status == "1":
+        return r"ERR"
     if status in ("124", "timeout"):
         return "TO"
     if status in ("137", "killed"):

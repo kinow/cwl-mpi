@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: CC-BY-4.0
+#
+# This file is licensed under CC BY 4.0
+# https://creativecommons.org/licenses/by/4.0/
+#
+# Copyright (c) 2026 Bruno de Paula Kinoshita
+
+# This file provides platform-specific MPI configuration.
+# It is read only when the MPIRequirement is used.
+
+# See: https://github.com/common-workflow-language/cwltool/blob/8949fc2d68efe128ce841739d1190645dbd233bb/README.rst#running-mpi-based-tools-that-need-to-be-launched
+# - runner (mpirun, srun, ...)
+# - nproc_flag (-n, -np, ...)
+# - default_nproc
+# - extra_flags
+# - env_pass,
+# - env_pass_regex
+# - env_set
+
+# I use MPICH on my laptop.
+runner: mpirun
+
+# To avoid --preserve-entire-environment, we pass the environment variables
+# necessary for srun to work.
+env_pass_regex: []

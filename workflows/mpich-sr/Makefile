@@ -8,9 +8,9 @@
 SHELL := /bin/bash
 
 TIMEOUT ?= 30
-
-CWL_RUNNER ?= cwltool
 DEBUG ?= 0
+NUMBER_OF_PROCESSES ?= 6
+CWL_RUNNER ?= cwltool
 
 # Set the platform to be used. Laptop is for bare-metal,
 # mn5, lumi, and ft3 are HPCs, and cloud is the cloud provider (herzog, etc.).
@@ -27,10 +27,8 @@ endif
 # If using Apptainer, set to Singularity is Apptainer ships with a Singularity
 # binary. none means to use the local environment files (i.e. no container used).
 CONTAINER ?= none
-ifeq ($(PLATFORM),laptop)
+ifneq ($(filter $(PLATFORM),laptop cloud),)
 	VALID_CONTAINERS := none docker singularity
-else ifeq ($(PLATFORM),cloud)
-	VALID_CONTAINERS := none docker
 else
 	VALID_CONTAINERS := none singularity
 endif
@@ -150,16 +148,16 @@ mpicc:
 	$(call run_cwl,mpicc,$(CWL_MPICC))
 
 mpirun-base: mpicc
-	$(call run_cwl,mpirun-base,$(CWL_MPIRUN_BASE) --executable $(LOGDIR)/sr --np 6)
+	$(call run_cwl,mpirun-base,$(CWL_MPIRUN_BASE) --executable $(LOGDIR)/sr --np $(NUMBER_OF_PROCESSES))
 
 mpirun-req: mpicc
-	$(call run_cwl,mpirun-req,$(CWL_MPIRUN_REQ) --executable $(LOGDIR)/sr --np --np 6)
+	$(call run_cwl,mpirun-req,$(CWL_MPIRUN_REQ) --executable $(LOGDIR)/sr --np --np $(NUMBER_OF_PROCESSES))
 
 workflow-base:
-	$(call run_cwl,workflow-base,$(CWL_WORKFLOW_BASE) --np 6)
+	$(call run_cwl,workflow-base,$(CWL_WORKFLOW_BASE) --np $(NUMBER_OF_PROCESSES))
 
 workflow-req:
-	$(call run_cwl,workflow-req,$(CWL_WORKFLOW_REQ) --np 6)
+	$(call run_cwl,workflow-req,$(CWL_WORKFLOW_REQ) --np $(NUMBER_OF_PROCESSES))
 
 # These extra targets are used for testing the environment health (run-all),
 # and for running the tests in each environment (run-workflows)

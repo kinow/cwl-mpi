@@ -1,0 +1,424 @@
+StreamFlow file:
+
+version: v1.0
+database:
+  type: default
+  config:
+    connection: ":memory:"
+workflows:
+  workflow_name:
+    type: cwl
+    config:
+      file: "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl"
+      docker:
+        - step: /
+          deployment:
+            type: docker
+            config: {}
+
+
+Executing: streamflow run --debug --outdir logs/streamflow/cloud/docker /tmp/tmp.P68xDGHesz
+2026-06-14 15:10:01.233 INFO     Processing workflow 7620e8b7-2f4e-4aae-b883-8c7a990950c3
+2026-06-14 15:10:01.233 INFO     Building workflow execution plan
+2026-06-14 15:10:02.381 DEBUG    Translating Workflow /
+2026-06-14 15:10:02.383 DEBUG    Translating WorkflowStep /mpicc
+2026-06-14 15:10:02.391 DEBUG    Translating CommandLineTool /mpicc
+2026-06-14 15:10:02.392 DEBUG    Translating WorkflowStep /mpirun
+2026-06-14 15:10:02.402 DEBUG    Translating CommandLineTool /mpirun
+2026-06-14 15:10:02.965 INFO     COMPLETED building of workflow execution plan
+2026-06-14 15:10:02.965 INFO     EXECUTING workflow 7620e8b7-2f4e-4aae-b883-8c7a990950c3
+2026-06-14 15:10:02.970 DEBUG    Step /source-wf-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /source-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /np-wf-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /np-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /msg_size-wf-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /msg_size-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /niter-wf-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /niter-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /mpicc/source-cmd-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /mpicc/output_name-cmd-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /mpirun/np-cmd-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /mpirun/msg_size-cmd-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.970 DEBUG    Step /mpirun/niter-cmd-default-transformer-injector received inputs ['0']
+2026-06-14 15:10:02.972 DEBUG    Retrieving available locations for job /source-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.972 DEBUG    Available locations for job /source-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.972 DEBUG    Job /source-wf-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.973 DEBUG    Retrieving available locations for job /np-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.973 DEBUG    Available locations for job /np-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.973 DEBUG    Job /np-wf-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.973 DEBUG    Retrieving available locations for job /msg_size-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.973 DEBUG    Available locations for job /msg_size-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.973 DEBUG    Job /msg_size-wf-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.974 DEBUG    Retrieving available locations for job /niter-wf-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.974 DEBUG    Available locations for job /niter-wf-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.974 DEBUG    Job /niter-wf-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.974 DEBUG    Retrieving available locations for job /mpicc/source-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.975 DEBUG    Available locations for job /mpicc/source-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.975 DEBUG    Job /mpicc/source-cmd-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.975 DEBUG    Retrieving available locations for job /mpicc/output_name-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.976 DEBUG    Available locations for job /mpicc/output_name-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.976 DEBUG    Job /mpicc/output_name-cmd-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.976 DEBUG    Retrieving available locations for job /mpirun/np-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.977 DEBUG    Available locations for job /mpirun/np-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.977 DEBUG    Job /mpirun/np-cmd-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.977 DEBUG    Retrieving available locations for job /mpirun/msg_size-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.977 DEBUG    Available locations for job /mpirun/msg_size-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.977 DEBUG    Job /mpirun/msg_size-cmd-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.978 DEBUG    Retrieving available locations for job /mpirun/niter-cmd-default-transformer-injector/0 on __LOCAL__.
+2026-06-14 15:10:02.978 DEBUG    Available locations for job /mpirun/niter-cmd-default-transformer-injector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:02.978 DEBUG    Job /mpirun/niter-cmd-default-transformer-injector/0 allocated locally
+2026-06-14 15:10:02.980 DEBUG    COMPLETED Step __deploy__/__LOCAL__
+2026-06-14 15:10:02.980 DEBUG    COMPLETED Step __deploy__/0f2eecb9-8b11-458e-aca1-1bd9f5660b4f
+2026-06-14 15:10:02.980 DEBUG    COMPLETED Step __deploy__/fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564
+2026-06-14 15:10:02.980 DEBUG    Job /source-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.981 DEBUG    Job /np-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.982 DEBUG    Job /msg_size-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.982 DEBUG    Job /niter-wf-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.982 DEBUG    Job /mpicc/source-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.983 DEBUG    Job /mpicc/output_name-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.983 DEBUG    Job /mpirun/np-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.983 DEBUG    Job /mpirun/msg_size-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.983 DEBUG    Job /mpirun/niter-cmd-default-transformer-injector/0 changed status to RUNNING
+2026-06-14 15:10:02.984 DEBUG    COMPLETED Step /source-wf-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.984 DEBUG    COMPLETED Step /np-wf-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.984 DEBUG    COMPLETED Step /msg_size-wf-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.984 DEBUG    COMPLETED Step /niter-wf-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.984 DEBUG    COMPLETED Step /mpicc/source-cmd-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.985 DEBUG    COMPLETED Step /mpicc/output_name-cmd-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.985 DEBUG    COMPLETED Step /mpirun/np-cmd-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.985 DEBUG    COMPLETED Step /mpirun/msg_size-cmd-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.985 DEBUG    COMPLETED Step /mpirun/niter-cmd-default-transformer-injector/__schedule__
+2026-06-14 15:10:02.986 DEBUG    Job /np-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.986 DEBUG    Step /np-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.986 DEBUG    Step /msg_size-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.986 DEBUG    Step /niter-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.986 DEBUG    Job /msg_size-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.986 DEBUG    Step /source-wf-default-transformer received inputs ['0']
+2026-06-14 15:10:02.987 DEBUG    Step /np-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Job /niter-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Step /msg_size-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Job /mpicc/output_name-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Step /niter-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Job /mpirun/np-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Step /mpicc/output_name-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Job /mpirun/msg_size-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Step /mpirun/np-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Job /mpirun/niter-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.987 DEBUG    Step /mpirun/msg_size-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.988 DEBUG    Job /mpicc/source-cmd-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.988 DEBUG    Step /mpirun/niter-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.988 DEBUG    Job /source-wf-default-transformer-injector/0 changed status to COMPLETED
+2026-06-14 15:10:02.988 DEBUG    Step /mpicc/source-cmd-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.988 DEBUG    Step /source-wf-default-transformer-injector received termination token with Status COMPLETED
+2026-06-14 15:10:02.989 DEBUG    Step /np-token-transformer received inputs ['0']
+2026-06-14 15:10:02.989 DEBUG    Step /np-wf-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.989 DEBUG    Step /msg_size-token-transformer received inputs ['0']
+2026-06-14 15:10:02.989 DEBUG    Step /msg_size-wf-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.990 DEBUG    Step /niter-token-transformer received inputs ['0']
+2026-06-14 15:10:02.990 DEBUG    Step /niter-wf-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.990 DEBUG    Step /source-token-transformer received inputs ['0']
+2026-06-14 15:10:02.990 DEBUG    Processing /home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c on location __LOCAL__/__LOCAL__.
+2026-06-14 15:10:02.990 DEBUG    Step /source-wf-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /np-wf-default-transformer-injector
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /msg_size-wf-default-transformer-injector
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /niter-wf-default-transformer-injector
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /mpicc/output_name-cmd-default-transformer-injector
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /mpirun/np-cmd-default-transformer-injector
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /mpirun/msg_size-cmd-default-transformer-injector
+2026-06-14 15:10:02.991 DEBUG    COMPLETED Step /mpirun/niter-cmd-default-transformer-injector
+2026-06-14 15:10:02.992 DEBUG    COMPLETED Step /mpicc/source-cmd-default-transformer-injector
+2026-06-14 15:10:02.992 DEBUG    COMPLETED Step /source-wf-default-transformer-injector
+2026-06-14 15:10:02.992 DEBUG    COMPLETED Step /np-wf-default-transformer
+2026-06-14 15:10:02.992 DEBUG    COMPLETED Step /msg_size-wf-default-transformer
+2026-06-14 15:10:02.992 DEBUG    COMPLETED Step /niter-wf-default-transformer
+2026-06-14 15:10:02.992 DEBUG    COMPLETED Step /source-wf-default-transformer
+2026-06-14 15:10:02.992 DEBUG    Step /np-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.992 DEBUG    Step /msg_size-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.993 DEBUG    Step /niter-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.993 DEBUG    Step /mpicc/output_name-step-default-transformer received inputs ['0']
+2026-06-14 15:10:02.993 DEBUG    Step /mpicc/source-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:02.993 DEBUG    Step /source-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.993 DEBUG    Step /mpicc/output_name-step-default-transformer received inputs ['0']
+2026-06-14 15:10:02.993 DEBUG    Step /mpicc/output_name-step-default-transformer received inputs ['0']
+2026-06-14 15:10:02.993 DEBUG    COMPLETED Step /np-token-transformer
+2026-06-14 15:10:02.993 DEBUG    COMPLETED Step /msg_size-token-transformer
+2026-06-14 15:10:02.994 DEBUG    COMPLETED Step /niter-token-transformer
+2026-06-14 15:10:02.994 DEBUG    COMPLETED Step /source-token-transformer
+2026-06-14 15:10:02.994 DEBUG    Step /mpicc/source-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.994 DEBUG    Step /mpicc/output_name-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:02.994 DEBUG    Step /mpicc/output_name-step-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.994 DEBUG    Step /mpicc/output_name-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:02.994 DEBUG    COMPLETED Step /mpicc/source-cmd-default-transformer
+2026-06-14 15:10:02.994 DEBUG    COMPLETED Step /mpicc/output_name-step-default-transformer
+2026-06-14 15:10:02.995 DEBUG    Step /mpicc/source-token-transformer received inputs ['0', '0']
+2026-06-14 15:10:02.995 DEBUG    Processing /home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c on location __LOCAL__/__LOCAL__.
+2026-06-14 15:10:02.995 DEBUG    Step /mpicc/output_name-token-transformer received inputs ['0', '0']
+2026-06-14 15:10:02.995 DEBUG    Step /mpicc/output_name-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.995 DEBUG    COMPLETED Step /mpicc/output_name-cmd-default-transformer
+2026-06-14 15:10:02.996 DEBUG    Step /mpicc/__transfer__/output_name received inputs ['0']
+2026-06-14 15:10:02.996 DEBUG    Step /mpicc/output_name-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.996 DEBUG    Step /mpicc/__transfer__/source received inputs ['0']
+2026-06-14 15:10:02.996 DEBUG    Step /mpicc/__schedule__ received inputs ['0', '0']
+2026-06-14 15:10:02.996 DEBUG    Step /mpicc/source-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:02.996 DEBUG    Retrieving available locations for job /mpicc/0 on 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/mfisherman/mpich:4.3.2.
+2026-06-14 15:10:02.996 INFO     DEPLOYING 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f
+2026-06-14 15:10:02.997 DEBUG    EXECUTING command docker version --format '{{.Client.Version}}' 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:02.998 DEBUG    COMPLETED Step /mpicc/output_name-token-transformer
+2026-06-14 15:10:02.998 DEBUG    COMPLETED Step /mpicc/source-token-transformer
+2026-06-14 15:10:03.014 DEBUG    Using Docker 29.1.3.
+2026-06-14 15:10:03.014 DEBUG    EXECUTING command docker image inspect mfisherman/mpich:4.3.2 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.075 DEBUG    EXECUTING command docker run --detach --interactive                                        --init            --log-driver  "none"         --network  "none"             --rm      --sig-proxy=true          --volume  "/tmp/streamflow:/tmp/streamflow"     mfisherman/mpich:4.3.2  2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.288 DEBUG    EXECUTING command docker inspect --format '{{json .}}' 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.310 DEBUG    EXECUTING command id -u 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.368 DEBUG    EXECUTING command test -e /sys/fs/cgroup/cpuset 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.368 DEBUG    EXECUTING command cat /sys/fs/cgroup/cpu.max /sys/fs/cgroup/cpuset.cpus.effective /sys/fs/cgroup/memory.max 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.369 DEBUG    EXECUTING command cat /proc/meminfo | grep MemTotal | awk '{print $2}' 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.371 DEBUG    EXECUTING command df -aT | tail -n +2 | awk 'NF == 1 {device = $1; getline; $0 = device $0} {print $7, $2, $5}' 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.375 INFO     COMPLETED deployment of 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f
+2026-06-14 15:10:03.375 DEBUG    EXECUTING command test -e /tmp/streamflow && readlink -f /tmp/streamflow 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.377 DEBUG    Available locations for job /mpicc/0 on 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/mfisherman/mpich:4.3.2 are ['2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013'].
+2026-06-14 15:10:03.377 DEBUG    Job /mpicc/0 allocated on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013
+2026-06-14 15:10:03.377 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.378 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.380 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.381 DEBUG    EXECUTING command test -e /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6 && readlink -f /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.382 DEBUG    EXECUTING command test -e /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e && readlink -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.383 DEBUG    EXECUTING command test -e /tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25 && readlink -f /tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.384 DEBUG    EXECUTING command test -e /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6 && readlink -f /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.385 DEBUG    EXECUTING command test -e /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e && readlink -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.387 DEBUG    EXECUTING command test -e /tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25 && readlink -f /tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.388 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.388 DEBUG    Step /mpicc/__schedule__ received termination token with Status COMPLETED
+2026-06-14 15:10:03.389 DEBUG    COMPLETED Step /mpicc/__schedule__
+2026-06-14 15:10:03.389 DEBUG    Step /mpicc/__transfer__/output_name received termination token with Status COMPLETED
+2026-06-14 15:10:03.389 DEBUG    COMPLETED Step /mpicc/__transfer__/output_name
+2026-06-14 15:10:03.389 DEBUG    EXECUTING command test -d /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.390 DEBUG    EXECUTING command test -d "/tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c" 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.390 DEBUG    Extracted effective locations 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 from initial locations 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013
+2026-06-14 15:10:03.390 INFO     COPYING from /home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c on local file-system to /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013
+2026-06-14 15:10:03.453 INFO     COMPLETED copy from /home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c on local file-system to /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013
+2026-06-14 15:10:03.453 DEBUG    EXECUTING command test -L /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.454 DEBUG    EXECUTING command test -f /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c && sha1sum /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c | awk '{print $1}' 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.458 DEBUG    Step /mpicc received inputs ['0', '0']
+2026-06-14 15:10:03.458 DEBUG    Step /mpicc/__transfer__/source received termination token with Status COMPLETED
+2026-06-14 15:10:03.459 DEBUG    COMPLETED Step /mpicc/__transfer__/source
+2026-06-14 15:10:03.459 DEBUG    Job /mpicc/0 started
+2026-06-14 15:10:03.459 DEBUG    Job /mpicc/0 changed status to RUNNING
+2026-06-14 15:10:03.459 DEBUG    Job /mpicc/0 inputs: {
+    "output_name": "sr",
+    "source": {
+        "basename": "sr.c",
+        "checksum": "sha1$6bc47b5dda547374dd067150823bd0376840a366",
+        "class": "File",
+        "dirname": "/tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc",
+        "location": "file:///tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c",
+        "nameext": ".c",
+        "nameroot": "sr",
+        "path": "/tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c",
+        "size": 2570
+    }
+}
+2026-06-14 15:10:03.459 INFO     EXECUTING step /mpicc (job /mpicc/0) on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 into directory /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e:
+mpicc \
+	/tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c \
+	-o \
+	sr
+2026-06-14 15:10:03.459 DEBUG    Step /mpicc received termination token with Status COMPLETED
+2026-06-14 15:10:03.460 DEBUG    EXECUTING command cd /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e && export HOME="/tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e" && export TMPDIR="/tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25" && mpicc /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c -o sr 2>&1 on 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 for job /mpicc/0
+2026-06-14 15:10:03.460 DEBUG    EXECUTING command docker exec  2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh -c 'cd /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e && export HOME="/tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e" && export TMPDIR="/tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25" && mpicc /tmp/streamflow/a7fb586f-6956-4e70-a549-407c567216d6/8e462bab-de15-44fe-9ef0-bc922c666acc/sr.c -o sr 2>&1' 2>&1 on __LOCAL__/__LOCAL__ for job /mpicc/0
+2026-06-14 15:10:03.591 DEBUG    EXECUTING command test -e /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/cwl.output.json 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.592 DEBUG    EXECUTING command set -- /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr ; test -e "$1" && printf '%s\n' "$@" ; : 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.593 DEBUG    EXECUTING command test -e /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr && readlink -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.594 DEBUG    EXECUTING command test -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.595 DEBUG    EXECUTING command test -e /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr && readlink -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.596 DEBUG    EXECUTING command find -L "/tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.599 DEBUG    EXECUTING command test -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr && sha1sum /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr | awk '{print $1}' 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.602 DEBUG    EXECUTING command test -e /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr && readlink -f /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr 2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.604 DEBUG    Job /mpicc/0 changed status to COMPLETED
+2026-06-14 15:10:03.604 DEBUG    Step /mpirun/np-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:03.604 DEBUG    Step /mpirun/msg_size-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:03.604 DEBUG    Step /mpirun/niter-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:03.604 DEBUG    EXECUTING command find -L "/tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.604 DEBUG    Step /mpirun/np-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:03.604 DEBUG    Step /mpirun/msg_size-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:03.604 DEBUG    Step /mpirun/niter-cmd-default-transformer received inputs ['0']
+2026-06-14 15:10:03.606 DEBUG    Step /mpirun/np-token-transformer received inputs ['0', '0', '0', '0']
+2026-06-14 15:10:03.606 DEBUG    Step /mpirun/executable-token-transformer received inputs ['0', '0', '0', '0']
+2026-06-14 15:10:03.606 DEBUG    Processing /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013.
+2026-06-14 15:10:03.607 DEBUG    Step /mpirun/msg_size-token-transformer received inputs ['0', '0', '0', '0']
+2026-06-14 15:10:03.607 DEBUG    Step /mpirun/niter-token-transformer received inputs ['0', '0', '0', '0']
+2026-06-14 15:10:03.608 DEBUG    EXECUTING command find -L "/tmp/streamflow/854cbac7-aeac-4ed6-ac2f-e202bc9b4c25" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 sh`
+2026-06-14 15:10:03.609 DEBUG    Step /mpirun/__transfer__/np received inputs ['0']
+2026-06-14 15:10:03.609 DEBUG    Step /mpirun/__transfer__/msg_size received inputs ['0']
+2026-06-14 15:10:03.609 DEBUG    Step /mpirun/__transfer__/niter received inputs ['0']
+2026-06-14 15:10:03.609 DEBUG    Step /mpirun/__transfer__/executable received inputs ['0']
+2026-06-14 15:10:03.609 DEBUG    Step /mpirun/__schedule__ received inputs ['0', '0', '0', '0']
+2026-06-14 15:10:03.611 DEBUG    COMPLETED Job /mpicc/0 terminated
+2026-06-14 15:10:03.611 DEBUG    Retrieving available locations for job /mpirun/0 on fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/mfisherman/mpich:4.3.2.
+2026-06-14 15:10:03.611 INFO     DEPLOYING fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564
+2026-06-14 15:10:03.611 DEBUG    EXECUTING command docker version --format '{{.Client.Version}}' 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.612 DEBUG    Step /mpirun/np-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.612 DEBUG    Step /mpirun/msg_size-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.613 DEBUG    Step /mpirun/niter-cmd-default-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.613 DEBUG    Step /mpirun/np-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.613 DEBUG    Step /mpirun/executable-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.613 DEBUG    Step /mpirun/msg_size-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.613 DEBUG    Step /mpirun/niter-token-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:03.614 INFO     COMPLETED Step /mpicc
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/np-cmd-default-transformer
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/msg_size-cmd-default-transformer
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/niter-cmd-default-transformer
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/np-token-transformer
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/executable-token-transformer
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/msg_size-token-transformer
+2026-06-14 15:10:03.614 DEBUG    COMPLETED Step /mpirun/niter-token-transformer
+2026-06-14 15:10:03.631 DEBUG    Using Docker 29.1.3.
+2026-06-14 15:10:03.631 DEBUG    EXECUTING command docker image inspect mfisherman/mpich:4.3.2 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.695 DEBUG    EXECUTING command docker run --detach --interactive                                        --init            --log-driver  "none"         --network  "none"             --rm      --sig-proxy=true          --volume  "/tmp/streamflow:/tmp/streamflow"     mfisherman/mpich:4.3.2  2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.898 DEBUG    EXECUTING command docker inspect --format '{{json .}}' f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:03.913 DEBUG    EXECUTING command id -u 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.966 DEBUG    EXECUTING command test -e /sys/fs/cgroup/cpuset 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.966 DEBUG    EXECUTING command cat /sys/fs/cgroup/cpu.max /sys/fs/cgroup/cpuset.cpus.effective /sys/fs/cgroup/memory.max 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.968 DEBUG    EXECUTING command cat /proc/meminfo | grep MemTotal | awk '{print $2}' 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.969 DEBUG    EXECUTING command df -aT | tail -n +2 | awk 'NF == 1 {device = $1; getline; $0 = device $0} {print $7, $2, $5}' 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.972 INFO     COMPLETED deployment of fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564
+2026-06-14 15:10:03.972 DEBUG    EXECUTING command test -e /tmp/streamflow && readlink -f /tmp/streamflow 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.973 DEBUG    Available locations for job /mpirun/0 on fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/mfisherman/mpich:4.3.2 are ['f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb'].
+2026-06-14 15:10:03.973 DEBUG    Job /mpirun/0 allocated on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb
+2026-06-14 15:10:03.974 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.975 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.976 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.977 DEBUG    EXECUTING command test -e /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988 && readlink -f /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.978 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.979 DEBUG    EXECUTING command test -e /tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1 && readlink -f /tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.980 DEBUG    EXECUTING command test -e /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988 && readlink -f /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.981 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.982 DEBUG    EXECUTING command test -e /tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1 && readlink -f /tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.984 DEBUG    EXECUTING command mkdir -m 777 -p /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.984 DEBUG    Step /mpirun/__schedule__ received termination token with Status COMPLETED
+2026-06-14 15:10:03.984 DEBUG    COMPLETED Step /mpirun/__schedule__
+2026-06-14 15:10:03.985 DEBUG    Step /mpirun/__transfer__/np received termination token with Status COMPLETED
+2026-06-14 15:10:03.985 DEBUG    Step /mpirun/__transfer__/msg_size received termination token with Status COMPLETED
+2026-06-14 15:10:03.985 DEBUG    Step /mpirun/__transfer__/niter received termination token with Status COMPLETED
+2026-06-14 15:10:03.985 DEBUG    EXECUTING command test -d /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:03.985 DEBUG    COMPLETED Step /mpirun/__transfer__/np
+2026-06-14 15:10:03.985 DEBUG    COMPLETED Step /mpirun/__transfer__/msg_size
+2026-06-14 15:10:03.985 DEBUG    COMPLETED Step /mpirun/__transfer__/niter
+2026-06-14 15:10:03.985 DEBUG    Extracted effective locations f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb from initial locations f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb
+2026-06-14 15:10:03.986 INFO     COPYING from /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 to /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb
+2026-06-14 15:10:03.986 DEBUG    EXECUTING command test -d "/tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr" 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.060 INFO     COMPLETED copy from /tmp/streamflow/2236766c-7910-4d18-8847-2b5961b2156e/sr on location 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f/2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 to /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb
+2026-06-14 15:10:04.061 DEBUG    EXECUTING command test -L /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.061 DEBUG    EXECUTING command test -f /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr && sha1sum /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr | awk '{print $1}' 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.065 DEBUG    Step /mpirun received inputs ['0', '0', '0', '0']
+2026-06-14 15:10:04.066 DEBUG    Step /mpirun/__transfer__/executable received termination token with Status COMPLETED
+2026-06-14 15:10:04.066 DEBUG    COMPLETED Step /mpirun/__transfer__/executable
+2026-06-14 15:10:04.066 DEBUG    Job /mpirun/0 started
+2026-06-14 15:10:04.066 DEBUG    Job /mpirun/0 changed status to RUNNING
+2026-06-14 15:10:04.066 DEBUG    Job /mpirun/0 inputs: {
+    "executable": {
+        "basename": "sr",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "class": "File",
+        "dirname": "/tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1",
+        "location": "file:///tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr",
+        "nameext": "",
+        "nameroot": "sr",
+        "path": "/tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr",
+        "size": 16512
+    },
+    "msg_size": 0,
+    "niter": 1,
+    "np": 2
+}
+2026-06-14 15:10:04.067 INFO     EXECUTING step /mpirun (job /mpirun/0) on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb into directory /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075:
+mpirun \
+	-np \
+	2 \
+	/tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr \
+	0 \
+	1
+2026-06-14 15:10:04.067 DEBUG    Step /mpirun received termination token with Status COMPLETED
+2026-06-14 15:10:04.067 DEBUG    EXECUTING command cd /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 && export HOME="/tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075" && export TMPDIR="/tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1" && mpirun -np 2 /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr 0 1 > mpirun-base-command.out 2>mpirun-base-command.err on fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb for job /mpirun/0
+2026-06-14 15:10:04.067 DEBUG    EXECUTING command docker exec  f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh -c 'cd /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075 && export HOME="/tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075" && export TMPDIR="/tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1" && mpirun -np 2 /tmp/streamflow/7f307eb7-dd2e-4351-9477-5eebe7f39988/9f2a02fb-bec1-4a9e-bf3e-648372d473b1/sr 0 1 > mpirun-base-command.out 2>mpirun-base-command.err' 2>&1 on __LOCAL__/__LOCAL__ for job /mpirun/0
+2026-06-14 15:10:04.156 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/cwl.output.json 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.157 DEBUG    EXECUTING command set -- /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out ; test -e "$1" && printf '%s\n' "$@" ; : 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.158 DEBUG    EXECUTING command set -- /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err ; test -e "$1" && printf '%s\n' "$@" ; : 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.158 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.160 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.162 DEBUG    EXECUTING command test -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.162 DEBUG    EXECUTING command test -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.163 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.164 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.166 DEBUG    EXECUTING command find -L "/tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.169 DEBUG    EXECUTING command find -L "/tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.173 DEBUG    EXECUTING command test -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out && sha1sum /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out | awk '{print $1}' 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.175 DEBUG    EXECUTING command test -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err && sha1sum /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err | awk '{print $1}' 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.178 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.179 DEBUG    EXECUTING command test -e /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err && readlink -f /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err 2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.180 DEBUG    Step /stdout-collector-transformer received inputs ['0']
+2026-06-14 15:10:04.180 DEBUG    Processing /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb.
+2026-06-14 15:10:04.182 DEBUG    Step /stdout-collector received inputs ['0']
+2026-06-14 15:10:04.182 DEBUG    Step /stdout-collector/__schedule__ received inputs ['0']
+2026-06-14 15:10:04.182 DEBUG    Retrieving available locations for job /stdout-collector/0 on __LOCAL__.
+2026-06-14 15:10:04.182 DEBUG    Available locations for job /stdout-collector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:04.182 DEBUG    Job /stdout-collector/0 allocated locally
+2026-06-14 15:10:04.184 DEBUG    Job /mpirun/0 changed status to COMPLETED
+2026-06-14 15:10:04.184 DEBUG    Step /stderr-collector-transformer received inputs ['0']
+2026-06-14 15:10:04.184 DEBUG    EXECUTING command find -L "/tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.184 DEBUG    Processing /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb.
+2026-06-14 15:10:04.187 INFO     COPYING from /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.out on local file-system
+2026-06-14 15:10:04.189 DEBUG    Step /stderr-collector received inputs ['0']
+2026-06-14 15:10:04.189 DEBUG    Step /stderr-collector/__schedule__ received inputs ['0']
+2026-06-14 15:10:04.191 DEBUG    EXECUTING command find -L "/tmp/streamflow/cd7d0819-eb32-4156-9379-0b1c6b6441a1" -type f -exec ls -ln {} \+ | awk 'BEGIN {sum=0} {sum+=$5} END {print sum}';  2>&1 on SubprocessShell with command `docker exec --interactive f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb sh`
+2026-06-14 15:10:04.194 DEBUG    COMPLETED Job /mpirun/0 terminated
+2026-06-14 15:10:04.195 DEBUG    Retrieving available locations for job /stderr-collector/0 on __LOCAL__.
+2026-06-14 15:10:04.195 DEBUG    Available locations for job /stderr-collector/0 on __LOCAL__ are ['__LOCAL__'].
+2026-06-14 15:10:04.195 DEBUG    Job /stderr-collector/0 allocated locally
+2026-06-14 15:10:04.195 DEBUG    Step /stdout-collector-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:04.195 DEBUG    Step /stderr-collector-transformer received termination token with Status COMPLETED
+2026-06-14 15:10:04.196 DEBUG    Step /stdout-collector/__schedule__ received termination token with Status COMPLETED
+2026-06-14 15:10:04.197 INFO     COMPLETED Step /mpirun
+2026-06-14 15:10:04.197 DEBUG    COMPLETED Step /stdout-collector-transformer
+2026-06-14 15:10:04.197 DEBUG    COMPLETED Step /stderr-collector-transformer
+2026-06-14 15:10:04.198 DEBUG    COMPLETED Step /stdout-collector/__schedule__
+2026-06-14 15:10:04.199 INFO     COPYING from /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.err on local file-system
+2026-06-14 15:10:04.201 DEBUG    Step /stderr-collector/__schedule__ received termination token with Status COMPLETED
+2026-06-14 15:10:04.203 DEBUG    COMPLETED Step /stderr-collector/__schedule__
+2026-06-14 15:10:04.273 INFO     COMPLETED copy from /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.out on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.out on local file-system
+2026-06-14 15:10:04.274 DEBUG    Step /stdout-collector received termination token with Status COMPLETED
+2026-06-14 15:10:04.275 DEBUG    COMPLETED Step /stdout-collector
+2026-06-14 15:10:04.296 INFO     COMPLETED copy from /tmp/streamflow/6be303e6-bc3b-489f-b403-71b29bbfc075/mpirun-base-command.err on location fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564/f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.err on local file-system
+2026-06-14 15:10:04.297 DEBUG    Step /stderr-collector received termination token with Status COMPLETED
+2026-06-14 15:10:04.299 DEBUG    COMPLETED Step /stderr-collector
+2026-06-14 15:10:04.299 INFO     COMPLETED workflow execution
+2026-06-14 15:10:04.300 INFO     UNDEPLOYING 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f
+2026-06-14 15:10:04.300 DEBUG    EXECUTING command docker stop 2fa718bf8cf5364550aa31d59003cf220a844c453e8f099d6440fb33dfaf2013 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:04.301 INFO     UNDEPLOYING fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564
+2026-06-14 15:10:04.301 DEBUG    EXECUTING command docker stop f764daa15cc664154f6b85d76cc34b4fe16b3b220aead80b592d66cbda9175eb 2>&1 on __LOCAL__/__LOCAL__ 
+2026-06-14 15:10:04.409 INFO     COMPLETED undeployment of 0f2eecb9-8b11-458e-aca1-1bd9f5660b4f
+2026-06-14 15:10:04.409 INFO     COMPLETED undeployment of fa6e92ff-bd5f-4ef1-95d0-d4d379cd3564
+{
+    "stderr": {
+        "basename": "mpirun-base-command.err",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "class": "File",
+        "dirname": "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker",
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.err",
+        "nameext": ".err",
+        "nameroot": "mpirun-base-command",
+        "path": "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.err",
+        "size": 0
+    },
+    "stdout": {
+        "basename": "mpirun-base-command.out",
+        "checksum": "sha1$a20fd46cc83a3f007cb5f220a8d62246687f5b4e",
+        "class": "File",
+        "dirname": "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker",
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.out",
+        "nameext": ".out",
+        "nameroot": "mpirun-base-command",
+        "path": "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/streamflow/cloud/docker/mpirun-base-command.out",
+        "size": 136
+    }
+}
