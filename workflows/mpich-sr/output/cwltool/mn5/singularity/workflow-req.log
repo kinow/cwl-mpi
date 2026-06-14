@@ -1,0 +1,201 @@
+[1;30mINFO[0m /gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'sr-workflow-mpi-requirement.cwl' to 'file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl'
+[1;30mWARNING[0m [33mCould not load extension schema https://schema.org/version/latest/schemaorg-current-http.rdf: Error fetching https://schema.org/version/latest/schemaorg-current-http.rdf: HTTPSConnectionPool(host='schema.org', port=443): Max retries exceeded with url: /version/latest/schemaorg-current-http.rdf (Caused by NewConnectionError("HTTPSConnection(host='schema.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))[0m
+[1;30mWARNING[0m [33mWarning: Field '$schemas' contains undefined reference to 'https://schema.org/version/latest/schemaorg-current-http.rdf'[0m
+[1;30mWARNING[0m [33msr-workflow-mpi-requirement.cwl:22:3: Warning: Field 'class' contains undefined reference to
+                                      'https://schema.org/Person'[0m
+[1;30mWARNING[0m [33mCould not load extension schema https://schema.org/version/latest/schemaorg-current-http.rdf: Error fetching https://schema.org/version/latest/schemaorg-current-http.rdf: HTTPSConnectionPool(host='schema.org', port=443): Max retries exceeded with url: /version/latest/schemaorg-current-http.rdf (Caused by NewConnectionError("HTTPSConnection(host='schema.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))[0m
+[1;30mWARNING[0m [33mWarning: Field '$schemas' contains undefined reference to 'https://schema.org/version/latest/schemaorg-current-http.rdf'[0m
+[1;30mWARNING[0m [33mmpicc.cwl:22:3: Warning: Field 'class' contains undefined reference to 'https://schema.org/Person'[0m
+[1;30mWARNING[0m [33mCould not load extension schema https://schema.org/version/latest/schemaorg-current-http.rdf: Error fetching https://schema.org/version/latest/schemaorg-current-http.rdf: HTTPSConnectionPool(host='schema.org', port=443): Max retries exceeded with url: /version/latest/schemaorg-current-http.rdf (Caused by NewConnectionError("HTTPSConnection(host='schema.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))[0m
+[1;30mWARNING[0m [33mWarning: Field '$schemas' contains undefined reference to 'https://schema.org/version/latest/schemaorg-current-http.rdf'[0m
+[1;30mWARNING[0m [33msr-mpi-requirement.cwl:21:3: Warning: Field 'class' contains undefined reference to
+                             'https://schema.org/Person'[0m
+[1;30mDEBUG[0m [32mParsed job order from command line: {
+    "__id": "sr-workflow-mpi-requirement.cwl",
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6,
+    "source": {
+        "class": "File",
+        "path": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6,
+    "source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [workflow ] starting step mpicc
+[1;30mDEBUG[0m [32m[step mpicc] job input {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] evaluated job input to {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] start
+[1;30mDEBUG[0m [32m[job mpicc] initializing from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mpicc.cwl#mpich-mpicc as part of step mpicc[0m
+[1;30mDEBUG[0m [32m[job mpicc] {
+    "source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    },
+    "output_name": "sr"
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] path mappings is {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c": [
+        "/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "/var/lib/cwl/stgac3a4fe4-04d6-4150-86f2-fc01296b4785/sr.c",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpicc"
+    },
+    {
+        "position": [
+            1,
+            "source"
+        ],
+        "datum": {
+            "class": "File",
+            "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+            "size": 2570,
+            "basename": "sr.c",
+            "nameroot": "sr",
+            "nameext": ".c",
+            "path": "/var/lib/cwl/stgac3a4fe4-04d6-4150-86f2-fc01296b4785/sr.c",
+            "dirname": "/var/lib/cwl/stgac3a4fe4-04d6-4150-86f2-fc01296b4785"
+        }
+    },
+    {
+        "prefix": "-o",
+        "position": [
+            2,
+            "output_name"
+        ],
+        "datum": "sr"
+    }
+][0m
+[1;30mWARNING[0m [33mYou have specified '--preserve-environment={I_MPI_ROOT, LD_LIBRARY_PATH}' while running a container which will override variables set in the container. This may break the container, be non-portable, and/or affect reproducibility.[0m
+[1;30mDEBUG[0m [32mSingularity version: 4.1.5 ({_SINGULARITY_FLAVOR}.[0m
+[1;30mINFO[0m ['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']
+WARNING: Couldn't use cached digest for registry: Get "https://index.docker.io/v2/": dial tcp [2600:1f18:2148:bc00:107:46a9:5c19:dda6]:443: connect: cannot assign requested address
+WARNING: Falling back to direct digest.
+FATAL:   While making image from oci registry: error fetching image: failed to get checksum for docker://mfisherman/mpich:4.3.2: Get "https://index.docker.io/v2/": dial tcp [2600:1f18:2148:bc02:5a8b:10f3:2c06:8d0d]:443: connect: cannot assign requested address
+[1;30mDEBUG[0m [32mSingularity error[0m
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 788, in run
+    self.get_from_requirements(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        docker_req,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        runtimeContext.image_base_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/singularity.py", line 469, in get_from_requirements
+    if not self.get_image(
+           ~~~~~~~~~~~~~~^
+        cast(dict[str, str], r),
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        sandbox_base_path=image_base_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/singularity.py", line 414, in get_image
+    check_call(cmd, stdout=sys.stderr)  # nosec
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/subprocess.py", line 419, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']' returned non-zero exit status 255.
+[1;30mERROR[0m [31mWorkflow error:
+Singularity is not available for this tool, try --no-container to disable Singularity, or install a user space Docker replacement like uDocker with --user-space-docker-cmd.: Command '['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']' returned non-zero exit status 255.[0m
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 788, in run
+    self.get_from_requirements(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        docker_req,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        runtimeContext.image_base_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/singularity.py", line 469, in get_from_requirements
+    if not self.get_image(
+           ~~~~~~~~~~~~~~^
+        cast(dict[str, str], r),
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        sandbox_base_path=image_base_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/singularity.py", line 414, in get_image
+    check_call(cmd, stdout=sys.stderr)  # nosec
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/subprocess.py", line 419, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']' returned non-zero exit status 255.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/main.py", line 1323, in main
+    out, status = real_executor(
+                  ~~~~~~~~~~~~~^
+        tool, initialized_job_order_object, runtimeContext, logger=_logger
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/executors.py", line 55, in __call__
+    return self.execute(process, job_order_object, runtime_context, logger)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/executors.py", line 138, in execute
+    self.run_jobs(process, job_order_object, logger, runtime_context)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/executors.py", line 248, in run_jobs
+    job.run(runtime_context)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 834, in run
+    raise WorkflowException(
+    ...<4 lines>...
+    ) from err
+cwl_utils.errors.WorkflowException: Singularity is not available for this tool, try --no-container to disable Singularity, or install a user space Docker replacement like uDocker with --user-space-docker-cmd.: Command '['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']' returned non-zero exit status 255.

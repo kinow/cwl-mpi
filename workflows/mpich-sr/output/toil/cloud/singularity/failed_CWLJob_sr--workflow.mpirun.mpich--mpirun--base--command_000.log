@@ -1,0 +1,165 @@
+[2026-06-14T15:04:25+0000] [MainThread] [I] [toil.worker] ---TOIL WORKER OUTPUT LOG---
+[2026-06-14T15:04:25+0000] [MainThread] [I] [toil] Running Toil version 9.4.1-c6a39f2c827899f9a1dd0018ca2b72c675120096 on host mpi-01.
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil] Configuration: {'cwl': False, 'workflowID': '4be28311-0d43-4694-9292-599d4936bfe8', 'kill_polling_interval': 5, 'jobStore': 'file:/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/106c5a66-68f4-45c0-bf51-77ffb9291683', 'workDir': '/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity', 'coordination_dir': None, 'noStdOutErr': False, 'stats': False, 'cleanWorkDir': 'always', 'clean': 'onSuccess', 'clusterStats': None, 'restart': False, 'batchSystem': 'single_machine', 'scale': 1, 'slurm_allocate_mem': True, 'slurm_default_all_mem': False, 'slurm_time': None, 'slurm_partition': None, 'slurm_gpu_partition': None, 'slurm_pe': None, 'slurm_args': '', 'disableAutoDeployment': False, 'max_jobs': 9223372036854775807, 'max_local_jobs': None, 'manualMemArgs': False, 'run_local_jobs_on_workers': False, 'statePollingWait': None, 'state_polling_timeout': 1200, 'batch_logs_dir': None, 'symlinkImports': True, 'moveOutputs': False, 'caching': False, 'symlink_job_store_reads': True, 'provisioner': None, 'nodeTypes': [], 'minNodes': [0], 'maxNodes': [10], 'targetTime': 1800, 'betaInertia': 0.1, 'scaleInterval': 60, 'metrics': False, 'assume_zero_overhead': False, 'preemptibleCompensation': 0.0, 'nodeStorage': 50, 'nodeStorageOverrides': [], 'maxServiceJobs': 9223372036854775807, 'maxPreemptibleServiceJobs': 9223372036854775807, 'deadlockWait': 60, 'deadlockCheckInterval': 30, 'defaultMemory': 2147483648, 'defaultCores': 1, 'defaultDisk': 2147483648, 'defaultAccelerators': [], 'maxCores': 9223372036854775807, 'maxMemory': 9223372036854775807, 'maxDisk': 9223372036854775807, 'defaultPreemptible': False, 'retryCount': 0, 'retry_backoff_seconds': 2, 'retry_backoff_factor': 3, 'stop_on_first_failure': False, 'enableUnlimitedPreemptibleRetries': False, 'doubleMem': False, 'maxJobDuration': 9223372036854775807, 'rescueJobsFrequency': 60, 'job_store_timeout': 30, 'maxLogFileSize': 104857600, 'writeLogs': 'logs/toil/cloud/singularity', 'writeLogsGzip': None, 'writeLogsFromAllJobs': False, 'write_messages': '/tmp/tmpipkkkf1l', 'publish_workflow_metrics': None, 'environment': {}, 'disableChaining': False, 'disableJobStoreChecksumVerification': False, 'statusWait': 3600, 'disableProgress': False, 'sseKey': None, 'servicePollingInterval': 60.0, 'forceDockerAppliance': False, 'debugWorker': False, 'disableWorkerOutputCapture': False, 'badWorker': 0.0, 'badWorkerFailInterval': 0.01, 'logLevel': 'Debug', 'colored_logs': True, 'memory_is_product': False, 'workflowAttemptNumber': 0}
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.deferred] Opened with own state file /run/lock/toilwf-83511fb5a0735912a0b969b2db529a76/deferred/func5kbi5lww
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.worker] Parsed job description
+[2026-06-14T15:04:25+0000] [MainThread] [I] [toil.worker] Working on job 'CWLJob' sr-workflow.mpirun.mpich-mpirun-base-command kind-CWLJob/instance-mdliqs52 v1
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.job] Loading user module ModuleDescriptor(dirPath='/home/cwlmpi/micromamba/envs/toil/lib/python3.13/site-packages', name='toil.cwl.cwltoil', fromVirtualEnv=True).
+[2026-06-14T15:04:25+0000] [MainThread] [D] [pydot] pydot initializing
+[2026-06-14T15:04:25+0000] [MainThread] [D] [pydot] pydot 4.0.1
+[2026-06-14T15:04:25+0000] [MainThread] [D] [pydot.core] pydot core module initializing
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.jobStores.fileJobStore] Path to job store directory is '/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/106c5a66-68f4-45c0-bf51-77ffb9291683'.
+[2026-06-14T15:04:25+0000] [MainThread] [I] [toil.worker] Loaded body Job('CWLJob' sr-workflow.mpirun.mpich-mpirun-base-command kind-CWLJob/instance-mdliqs52 v1) from description 'CWLJob' sr-workflow.mpirun.mpich-mpirun-base-command kind-CWLJob/instance-mdliqs52 v1
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.lib.threading] Detected that /run/lock/toilwf-83511fb5a0735912a0b969b2db529a76 has lockable filesystem type: tmpfs
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.deferred] Running orphaned deferred functions
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.deferred] Ran orphaned deferred functions from 0 abandoned state files
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.deferred] Running job
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.cwl.cwltoil] Loaded order:
+{'executable': ResolveSource(source key source, name executable in promise), 'msg_size': DefaultWithSource(0, ResolveSource(source key source, name msg_size in promise)), 'niter': DefaultWithSource(1, ResolveSource(source key source, name niter in promise)), 'np': DefaultWithSource(2, ResolveSource(source key source, name np in promise))}
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.cwl.cwltoil] Output disposition: copy
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.cwl.cwltoil] Running tool ToilCommandLineTool('file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-mpi-requirement.cwl#mpich-mpirun-base-command') with order: {'executable': ResolveSource(source key source, name executable in promise), 'msg_size': DefaultWithSource(0, ResolveSource(source key source, name msg_size in promise)), 'niter': DefaultWithSource(1, ResolveSource(source key source, name niter in promise)), 'np': DefaultWithSource(2, ResolveSource(source key source, name np in promise))}
+[2026-06-14T15:04:25+0000] [MainThread] [W] [cwltool] MPIRequirement with containers is a beta feature
+[2026-06-14T15:04:25+0000] [MainThread] [W] [cwltool] MPIRequirement with containers is a beta feature
+[2026-06-14T15:04:25+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] initializing from file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-mpi-requirement.cwl#mpich-mpirun-base-command
+[2026-06-14T15:04:25+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] {
+    "executable": {
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "msg_size": 0,
+    "niter": 1,
+    "np": 2
+}
+[2026-06-14T15:04:25+0000] [MainThread] [D] [toil.cwl.cwltoil] Initial work dir: {'class': 'Directory', 'listing': [], 'basename': ''}
+[2026-06-14T15:04:25+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] path mappings is {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/sr": [
+        "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/sr",
+        "/var/lib/cwl/stg070ab3ac-1173-4d6b-b7a7-900b28e83b22/sr",
+        "File",
+        true
+    ]
+}
+[2026-06-14T15:04:25+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] command line bindings is [
+    {
+        "position": [
+            2,
+            "executable"
+        ],
+        "datum": {
+            "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/sr",
+            "basename": "sr",
+            "nameroot": "sr",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+            "size": 16512,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/var/lib/cwl/stg070ab3ac-1173-4d6b-b7a7-900b28e83b22/sr",
+            "dirname": "/var/lib/cwl/stg070ab3ac-1173-4d6b-b7a7-900b28e83b22"
+        }
+    },
+    {
+        "position": [
+            3,
+            "msg_size"
+        ],
+        "datum": 0
+    },
+    {
+        "position": [
+            4,
+            "niter"
+        ],
+        "datum": 1
+    }
+]
+[2026-06-14T15:04:25+0000] [MainThread] [D] [cwltool] Singularity version: 1.4.5 ({_SINGULARITY_FLAVOR}.
+[2026-06-14T15:04:25+0000] [MainThread] [I] [cwltool] ['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']
+INFO:    Using cached SIF image
+[2026-06-14T15:04:26+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] initial work dir {}
+[2026-06-14T15:04:26+0000] [MainThread] [I] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] /tmp/tmp0j_ev_00$ mpirun \
+    -n \
+    2 \
+    singularity \
+    --quiet \
+    run \
+    --contain \
+    --ipc \
+    --cleanenv \
+    --no-eval \
+    --userns \
+    --home \
+    /tmp/tmp0j_ev_00:/azNEKk \
+    --mount=type=bind,source=/tmp/tmp1_13hqga,target=/tmp \
+    --mount=type=bind,source=/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/sr,target=/var/lib/cwl/stg070ab3ac-1173-4d6b-b7a7-900b28e83b22/sr,readonly \
+    --pwd \
+    /azNEKk \
+    --net \
+    --network \
+    none \
+    /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/toilwf-83511fb5a0735912a0b969b2db529a76/6bc1/job/mfisherman_mpich:4.3.2.sif \
+    /var/lib/cwl/stg070ab3ac-1173-4d6b-b7a7-900b28e83b22/sr \
+    0 \
+    1 > /tmp/tmp0j_ev_00/mpirun-mpi-requirement.out 2> /tmp/tmp0j_ev_00/mpirun-mpi-requirement.err
+[2026-06-14T15:04:27+0000] [MainThread] [W] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] exited with status: 6
+[2026-06-14T15:04:27+0000] [MainThread] [W] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] completed permanentFail
+[2026-06-14T15:04:27+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] outputs {
+    "stderr_file": {
+        "location": "file:///tmp/tmp0j_ev_00/mpirun-mpi-requirement.err",
+        "basename": "mpirun-mpi-requirement.err",
+        "nameroot": "mpirun-mpi-requirement",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$70e26758e43486a7f52c98afb8dccd79d8915d50",
+        "size": 634,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout_file": {
+        "location": "file:///tmp/tmp0j_ev_00/mpirun-mpi-requirement.out",
+        "basename": "mpirun-mpi-requirement.out",
+        "nameroot": "mpirun-mpi-requirement",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$cf60e11a4648fc37e83247c3427d0f469e04811f",
+        "size": 162,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}
+[2026-06-14T15:04:27+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] Removing input staging directory /tmp/tmpsa8yeohv
+[2026-06-14T15:04:27+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpich-mpirun-base-command] Removing temporary directory /tmp/tmp1_13hqga
+[2026-06-14T15:04:27+0000] [MainThread] [D] [cwltool] Copying /tmp/tmp0j_ev_00/mpirun-mpi-requirement.err to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/mpirun-mpi-requirement.err
+[2026-06-14T15:04:27+0000] [MainThread] [D] [cwltool] Copying /tmp/tmp0j_ev_00/mpirun-mpi-requirement.out to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/singularity/mpirun-mpi-requirement.out
+[2026-06-14T15:04:27+0000] [MainThread] [D] [cwltool] Removing intermediate output directory /tmp/tmp0j_ev_00
+[2026-06-14T15:04:27+0000] [MainThread] [D] [toil.fileStores.abstractFileStore] LOG-TO-LEADER: Job 'CWLJob' sr-workflow.mpirun.mpich-mpirun-base-command kind-CWLJob/instance-mdliqs52 v1 used 25.02% disk (256.2 MiB [268632064B] used, 1.0 GiB [1073741824B] requested).
+[2026-06-14T15:04:27+0000] [MainThread] [D] [toil.deferred] Running own deferred functions
+[2026-06-14T15:04:27+0000] [MainThread] [D] [toil.deferred] Out of deferred functions!
+[2026-06-14T15:04:27+0000] [MainThread] [D] [toil.deferred] Running orphaned deferred functions
+[2026-06-14T15:04:27+0000] [MainThread] [D] [toil.deferred] Ran orphaned deferred functions from 0 abandoned state files
+[2026-06-14T15:04:27+0000] [MainThread] [C] [toil.worker] Worker crashed with traceback:
+Traceback (most recent call last):
+  File "/home/cwlmpi/micromamba/envs/toil/lib/python3.13/site-packages/toil/worker.py", line 591, in workerScript
+    job._runner(
+    ~~~~~~~~~~~^
+        jobGraph=None,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        defer=defer,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/home/cwlmpi/micromamba/envs/toil/lib/python3.13/site-packages/toil/job.py", line 3376, in _runner
+    returnValues = self._run(jobGraph=None, fileStore=fileStore)
+  File "/home/cwlmpi/micromamba/envs/toil/lib/python3.13/site-packages/toil/job.py", line 3254, in _run
+    return self.run(fileStore)
+           ~~~~~~~~^^^^^^^^^^^
+  File "/home/cwlmpi/micromamba/envs/toil/lib/python3.13/site-packages/toil/cwl/cwltoil.py", line 2871, in run
+    raise cwl_utils.errors.WorkflowException(status)
+cwl_utils.errors.WorkflowException: permanentFail
+
+[2026-06-14T15:04:27+0000] [MainThread] [E] [toil.worker] Exiting the worker because of a failed job on host mpi-01

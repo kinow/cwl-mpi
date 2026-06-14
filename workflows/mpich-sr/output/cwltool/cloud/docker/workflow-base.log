@@ -1,0 +1,376 @@
+[1;30mINFO[0m /home/cwlmpi/micromamba/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'sr-workflow-base-command.cwl' to 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl'
+[1;30mDEBUG[0m [32mParsed job order from command line: {
+    "__id": "sr-workflow-base-command.cwl",
+    "msg_size": 0,
+    "niter": 1,
+    "np": 2,
+    "source": {
+        "class": "File",
+        "path": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "msg_size": 0,
+    "niter": 1,
+    "np": 2,
+    "source": {
+        "class": "File",
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [workflow ] starting step mpicc
+[1;30mDEBUG[0m [32m[step mpicc] job input {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] evaluated job input to {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] start
+[1;30mDEBUG[0m [32m[job mpicc] initializing from file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/mpicc.cwl#mpich-mpicc as part of step mpicc[0m
+[1;30mDEBUG[0m [32m[job mpicc] {
+    "source": {
+        "class": "File",
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    },
+    "output_name": "sr"
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] path mappings is {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c": [
+        "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c",
+        "/var/lib/cwl/stg4bcff029-41ef-499a-ab91-2f0b0b0070b1/sr.c",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpicc"
+    },
+    {
+        "position": [
+            1,
+            "source"
+        ],
+        "datum": {
+            "class": "File",
+            "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c",
+            "size": 2570,
+            "basename": "sr.c",
+            "nameroot": "sr",
+            "nameext": ".c",
+            "path": "/var/lib/cwl/stg4bcff029-41ef-499a-ab91-2f0b0b0070b1/sr.c",
+            "dirname": "/var/lib/cwl/stg4bcff029-41ef-499a-ab91-2f0b0b0070b1"
+        }
+    },
+    {
+        "prefix": "-o",
+        "position": [
+            2,
+            "output_name"
+        ],
+        "datum": "sr"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job mpicc] initial work dir {}[0m
+[1;30mINFO[0m [job mpicc] /tmp/kzz98p07$ docker \
+    run \
+    -i \
+    --mount=type=bind,source=/tmp/kzz98p07,target=/NaQYLa \
+    --mount=type=bind,source=/tmp/yytav975,target=/tmp \
+    --mount=type=bind,source=/home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr.c,target=/var/lib/cwl/stg4bcff029-41ef-499a-ab91-2f0b0b0070b1/sr.c,readonly \
+    --workdir=/NaQYLa \
+    --read-only=true \
+    --net=none \
+    --user=1000:1000 \
+    --rm \
+    --cidfile=/tmp/tbz82tay/20260614141228-730321.cid \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/NaQYLa \
+    --memory=512m \
+    --cpus=2 \
+    mfisherman/mpich:4.3.2 \
+    mpicc \
+    /var/lib/cwl/stg4bcff029-41ef-499a-ab91-2f0b0b0070b1/sr.c \
+    -o \
+    sr
+[1;30mINFO[0m [job mpicc] completed success
+[1;30mDEBUG[0m [32m[job mpicc] outputs {
+    "executable": {
+        "location": "file:///tmp/kzz98p07/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] produced output {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/executable": {
+        "location": "file:///tmp/kzz98p07/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] completed success
+[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /tmp/08snznsy[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /tmp/yytav975[0m
+[1;30mINFO[0m [workflow ] starting step mpirun
+[1;30mDEBUG[0m [32m[step mpirun] job input {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
+        "location": "file:///tmp/kzz98p07/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/msg_size": 0,
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/niter": 1,
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/np": 2
+}[0m
+[1;30mDEBUG[0m [32m[step mpirun] evaluated job input to {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
+        "location": "file:///tmp/kzz98p07/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/msg_size": 0,
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/niter": 1,
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/np": 2
+}[0m
+[1;30mINFO[0m [step mpirun] start
+[1;30mDEBUG[0m [32m[job mpirun] initializing from file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-base-command.cwl#mpirun-base-command as part of step mpirun[0m
+[1;30mDEBUG[0m [32m[job mpirun] {
+    "executable": {
+        "location": "file:///tmp/kzz98p07/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+        "size": 16512,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "msg_size": 0,
+    "niter": 1,
+    "np": 2
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] path mappings is {
+    "file:///tmp/kzz98p07/sr": [
+        "/tmp/kzz98p07/sr",
+        "/var/lib/cwl/stga5815521-e063-4d67-a2bc-54f9a5d607a9/sr",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-np",
+        "position": [
+            1,
+            "np"
+        ],
+        "datum": 2
+    },
+    {
+        "position": [
+            2,
+            "executable"
+        ],
+        "datum": {
+            "location": "file:///tmp/kzz98p07/sr",
+            "basename": "sr",
+            "nameroot": "sr",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$0ec2227060df40b5ce79cc59c60cdaacaf19bfb6",
+            "size": 16512,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/var/lib/cwl/stga5815521-e063-4d67-a2bc-54f9a5d607a9/sr",
+            "dirname": "/var/lib/cwl/stga5815521-e063-4d67-a2bc-54f9a5d607a9"
+        }
+    },
+    {
+        "position": [
+            3,
+            "msg_size"
+        ],
+        "datum": 0
+    },
+    {
+        "position": [
+            4,
+            "niter"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mDEBUG[0m [32m[job mpirun] initial work dir {}[0m
+[1;30mINFO[0m [job mpirun] /tmp/ud75f3d2$ docker \
+    run \
+    -i \
+    --mount=type=bind,source=/tmp/ud75f3d2,target=/NaQYLa \
+    --mount=type=bind,source=/tmp/57y_6j41,target=/tmp \
+    --mount=type=bind,source=/tmp/kzz98p07/sr,target=/var/lib/cwl/stga5815521-e063-4d67-a2bc-54f9a5d607a9/sr,readonly \
+    --workdir=/NaQYLa \
+    --read-only=true \
+    --net=none \
+    --log-driver=none \
+    --user=1000:1000 \
+    --rm \
+    --cidfile=/tmp/qwi9qt6d/20260614141229-738892.cid \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/NaQYLa \
+    --memory=512m \
+    --cpus=2 \
+    mfisherman/mpich:4.3.2 \
+    mpirun \
+    -np \
+    2 \
+    /var/lib/cwl/stga5815521-e063-4d67-a2bc-54f9a5d607a9/sr \
+    0 \
+    1 > /tmp/ud75f3d2/mpirun-base-command.out 2> /tmp/ud75f3d2/mpirun-base-command.err
+[1;30mINFO[0m [job mpirun] completed success
+[1;30mDEBUG[0m [32m[job mpirun] outputs {
+    "stderr_file": {
+        "location": "file:///tmp/ud75f3d2/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout_file": {
+        "location": "file:///tmp/ud75f3d2/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$c9c80dae90e2a704fe4e54e671a4d7dbf768543e",
+        "size": 136,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpirun] produced output {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/stdout_file": {
+        "location": "file:///tmp/ud75f3d2/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$c9c80dae90e2a704fe4e54e671a4d7dbf768543e",
+        "size": 136,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/stderr_file": {
+        "location": "file:///tmp/ud75f3d2/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step mpirun] completed success
+[1;30mINFO[0m [workflow ] completed success
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stderr": {
+        "location": "file:///tmp/ud75f3d2/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout": {
+        "location": "file:///tmp/ud75f3d2/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$c9c80dae90e2a704fe4e54e671a4d7dbf768543e",
+        "size": 136,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /tmp/ipepzkv6[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /tmp/57y_6j41[0m
+[1;30mDEBUG[0m [32mMoving /tmp/ud75f3d2/mpirun-base-command.err to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/cwltool/cloud/docker/mpirun-base-command.err[0m
+[1;30mDEBUG[0m [32mMoving /tmp/ud75f3d2/mpirun-base-command.out to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/cwltool/cloud/docker/mpirun-base-command.out[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/ud75f3d2[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/kzz98p07[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/msqjf1kx[0m
+{
+    "stderr": {
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/cwltool/cloud/docker/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/cwltool/cloud/docker/mpirun-base-command.err"
+    },
+    "stdout": {
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/cwltool/cloud/docker/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "class": "File",
+        "checksum": "sha1$c9c80dae90e2a704fe4e54e671a4d7dbf768543e",
+        "size": 136,
+        "path": "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/cwltool/cloud/docker/mpirun-base-command.out"
+    }
+}[1;30mINFO[0m Final process status is success

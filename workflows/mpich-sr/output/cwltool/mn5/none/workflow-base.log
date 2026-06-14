@@ -1,0 +1,354 @@
+[1;30mINFO[0m /gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'sr-workflow-base-command.cwl' to 'file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl'
+[1;30mWARNING[0m [33mCould not load extension schema https://schema.org/version/latest/schemaorg-current-http.rdf: Error fetching https://schema.org/version/latest/schemaorg-current-http.rdf: HTTPSConnectionPool(host='schema.org', port=443): Max retries exceeded with url: /version/latest/schemaorg-current-http.rdf (Caused by NewConnectionError("HTTPSConnection(host='schema.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))[0m
+[1;30mWARNING[0m [33mWarning: Field '$schemas' contains undefined reference to 'https://schema.org/version/latest/schemaorg-current-http.rdf'[0m
+[1;30mWARNING[0m [33msr-workflow-base-command.cwl:22:3: Warning: Field 'class' contains undefined reference to
+                                   'https://schema.org/Person'[0m
+[1;30mWARNING[0m [33mCould not load extension schema https://schema.org/version/latest/schemaorg-current-http.rdf: Error fetching https://schema.org/version/latest/schemaorg-current-http.rdf: HTTPSConnectionPool(host='schema.org', port=443): Max retries exceeded with url: /version/latest/schemaorg-current-http.rdf (Caused by NewConnectionError("HTTPSConnection(host='schema.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))[0m
+[1;30mWARNING[0m [33mWarning: Field '$schemas' contains undefined reference to 'https://schema.org/version/latest/schemaorg-current-http.rdf'[0m
+[1;30mWARNING[0m [33mmpicc.cwl:22:3: Warning: Field 'class' contains undefined reference to 'https://schema.org/Person'[0m
+[1;30mWARNING[0m [33mCould not load extension schema https://schema.org/version/latest/schemaorg-current-http.rdf: Error fetching https://schema.org/version/latest/schemaorg-current-http.rdf: HTTPSConnectionPool(host='schema.org', port=443): Max retries exceeded with url: /version/latest/schemaorg-current-http.rdf (Caused by NewConnectionError("HTTPSConnection(host='schema.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))[0m
+[1;30mWARNING[0m [33mWarning: Field '$schemas' contains undefined reference to 'https://schema.org/version/latest/schemaorg-current-http.rdf'[0m
+[1;30mWARNING[0m [33msr-base-command.cwl:21:3: Warning: Field 'class' contains undefined reference to
+                          'https://schema.org/Person'[0m
+[1;30mDEBUG[0m [32mParsed job order from command line: {
+    "__id": "sr-workflow-base-command.cwl",
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6,
+    "source": {
+        "class": "File",
+        "path": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6,
+    "source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [workflow ] starting step mpicc
+[1;30mDEBUG[0m [32m[step mpicc] job input {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] evaluated job input to {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] start
+[1;30mDEBUG[0m [32m[job mpicc] initializing from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mpicc.cwl#mpich-mpicc as part of step mpicc[0m
+[1;30mDEBUG[0m [32m[job mpicc] {
+    "source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c"
+    },
+    "output_name": "sr"
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] path mappings is {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c": [
+        "/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "/scratch/tmp/41768606/o4ipy34b/stg38496844-2267-419b-93de-ae69a284db82/sr.c",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpicc] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpicc"
+    },
+    {
+        "position": [
+            1,
+            "source"
+        ],
+        "datum": {
+            "class": "File",
+            "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+            "size": 2570,
+            "basename": "sr.c",
+            "nameroot": "sr",
+            "nameext": ".c",
+            "path": "/scratch/tmp/41768606/o4ipy34b/stg38496844-2267-419b-93de-ae69a284db82/sr.c",
+            "dirname": "/scratch/tmp/41768606/o4ipy34b/stg38496844-2267-419b-93de-ae69a284db82"
+        }
+    },
+    {
+        "prefix": "-o",
+        "position": [
+            2,
+            "output_name"
+        ],
+        "datum": "sr"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job mpicc] initial work dir {}[0m
+[1;30mINFO[0m [job mpicc] /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy$ mpicc \
+    /scratch/tmp/41768606/o4ipy34b/stg38496844-2267-419b-93de-ae69a284db82/sr.c \
+    -o \
+    sr
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job mpicc] completed success
+[1;30mDEBUG[0m [32m[job mpicc] outputs {
+    "executable": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e8e4e7622ce3ceef23c8b43a857fed2fc44458b5",
+        "size": 26136,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpicc] produced output {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/executable": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e8e4e7622ce3ceef23c8b43a857fed2fc44458b5",
+        "size": 26136,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step mpicc] completed success
+[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /scratch/tmp/41768606/o4ipy34b[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /scratch/tmp/41768606/ngwt1kvm[0m
+[1;30mINFO[0m [workflow ] starting step mpirun
+[1;30mDEBUG[0m [32m[step mpirun] job input {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e8e4e7622ce3ceef23c8b43a857fed2fc44458b5",
+        "size": 26136,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/msg_size": 0,
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/niter": 1,
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/np": 6
+}[0m
+[1;30mDEBUG[0m [32m[step mpirun] evaluated job input to {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e8e4e7622ce3ceef23c8b43a857fed2fc44458b5",
+        "size": 26136,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/msg_size": 0,
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/niter": 1,
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/np": 6
+}[0m
+[1;30mINFO[0m [step mpirun] start
+[1;30mDEBUG[0m [32m[job mpirun] initializing from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-base-command.cwl#mpirun-base-command as part of step mpirun[0m
+[1;30mDEBUG[0m [32m[job mpirun] {
+    "executable": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$e8e4e7622ce3ceef23c8b43a857fed2fc44458b5",
+        "size": 26136,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "msg_size": 0,
+    "niter": 1,
+    "np": 6
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] path mappings is {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr": [
+        "/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+        "/scratch/tmp/41768606/c_z5obu5/stgec671bd7-365b-49b5-9af0-e2f36c7f7495/sr",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-np",
+        "position": [
+            1,
+            "np"
+        ],
+        "datum": 6
+    },
+    {
+        "position": [
+            2,
+            "executable"
+        ],
+        "datum": {
+            "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy/sr",
+            "basename": "sr",
+            "nameroot": "sr",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$e8e4e7622ce3ceef23c8b43a857fed2fc44458b5",
+            "size": 26136,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/scratch/tmp/41768606/c_z5obu5/stgec671bd7-365b-49b5-9af0-e2f36c7f7495/sr",
+            "dirname": "/scratch/tmp/41768606/c_z5obu5/stgec671bd7-365b-49b5-9af0-e2f36c7f7495"
+        }
+    },
+    {
+        "position": [
+            3,
+            "msg_size"
+        ],
+        "datum": 0
+    },
+    {
+        "position": [
+            4,
+            "niter"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mDEBUG[0m [32m[job mpirun] initial work dir {}[0m
+[1;30mINFO[0m [job mpirun] /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry$ mpirun \
+    -np \
+    6 \
+    /scratch/tmp/41768606/c_z5obu5/stgec671bd7-365b-49b5-9af0-e2f36c7f7495/sr \
+    0 \
+    1 > /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.out 2> /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.err
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job mpirun] completed success
+[1;30mDEBUG[0m [32m[job mpirun] outputs {
+    "stderr_file": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout_file": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$23f4c55d5be8d1757bd3efdb5475024f67408f60",
+        "size": 300,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step mpirun] produced output {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/stdout_file": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$23f4c55d5be8d1757bd3efdb5475024f67408f60",
+        "size": 300,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/stderr_file": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step mpirun] completed success
+[1;30mINFO[0m [workflow ] completed success
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stderr": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$23f4c55d5be8d1757bd3efdb5475024f67408f60",
+        "size": 300,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /scratch/tmp/41768606/c_z5obu5[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /scratch/tmp/41768606/1nihueoj[0m
+[1;30mDEBUG[0m [32mMoving /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.err to /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/none/mpirun-base-command.err[0m
+[1;30mDEBUG[0m [32mMoving /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry/mpirun-base-command.out to /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/none/mpirun-base-command.out[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonexh7ermpt[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/nonekr1avfgy[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/noneqmn9npry[0m
+{
+    "stderr": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/none/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "path": "/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/none/mpirun-base-command.err"
+    },
+    "stdout": {
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/none/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "class": "File",
+        "checksum": "sha1$23f4c55d5be8d1757bd3efdb5475024f67408f60",
+        "size": 300,
+        "path": "/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/mn5/none/mpirun-base-command.out"
+    }
+}[1;30mINFO[0m Final process status is success

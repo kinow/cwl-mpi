@@ -1,0 +1,162 @@
+[2026-06-14T00:30:44+0200] [MainThread] [I] [toil.worker] ---TOIL WORKER OUTPUT LOG---
+[2026-06-14T00:30:44+0200] [MainThread] [I] [toil] Running Toil version 9.4.1-c6a39f2c827899f9a1dd0018ca2b72c675120096 on host gs14r3b26.
+[2026-06-14T00:30:44+0200] [MainThread] [D] [toil] Configuration: {'cwl': False, 'workflowID': '643d9c9e-9a00-4715-9443-b191a557c09d', 'kill_polling_interval': 5, 'jobStore': 'file:/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/toil/mn5/singularity/d9a5525c-7423-4498-a0e6-52b809f4f338', 'workDir': '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/toil/mn5/singularity', 'coordination_dir': None, 'noStdOutErr': False, 'stats': False, 'cleanWorkDir': 'always', 'clean': 'onSuccess', 'clusterStats': None, 'restart': False, 'batchSystem': 'single_machine', 'scale': 1, 'slurm_allocate_mem': True, 'slurm_default_all_mem': False, 'slurm_time': None, 'slurm_partition': None, 'slurm_gpu_partition': None, 'slurm_pe': None, 'slurm_args': '', 'disableAutoDeployment': False, 'max_jobs': 9223372036854775807, 'max_local_jobs': None, 'manualMemArgs': False, 'run_local_jobs_on_workers': False, 'statePollingWait': None, 'state_polling_timeout': 1200, 'batch_logs_dir': None, 'symlinkImports': True, 'moveOutputs': False, 'caching': False, 'symlink_job_store_reads': True, 'provisioner': None, 'nodeTypes': [], 'minNodes': [0], 'maxNodes': [10], 'targetTime': 1800, 'betaInertia': 0.1, 'scaleInterval': 60, 'metrics': False, 'assume_zero_overhead': False, 'preemptibleCompensation': 0.0, 'nodeStorage': 50, 'nodeStorageOverrides': [], 'maxServiceJobs': 9223372036854775807, 'maxPreemptibleServiceJobs': 9223372036854775807, 'deadlockWait': 60, 'deadlockCheckInterval': 30, 'defaultMemory': 2147483648, 'defaultCores': 1, 'defaultDisk': 2147483648, 'defaultAccelerators': [], 'maxCores': 9223372036854775807, 'maxMemory': 9223372036854775807, 'maxDisk': 9223372036854775807, 'defaultPreemptible': False, 'retryCount': 0, 'retry_backoff_seconds': 2, 'retry_backoff_factor': 3, 'stop_on_first_failure': False, 'enableUnlimitedPreemptibleRetries': False, 'doubleMem': False, 'maxJobDuration': 9223372036854775807, 'rescueJobsFrequency': 60, 'job_store_timeout': 30, 'maxLogFileSize': 104857600, 'writeLogs': 'logs/toil/mn5/singularity', 'writeLogsGzip': None, 'writeLogsFromAllJobs': False, 'write_messages': '/scratch/tmp/41770356/tmp3li1iorn', 'publish_workflow_metrics': None, 'environment': {}, 'disableChaining': False, 'disableJobStoreChecksumVerification': False, 'statusWait': 3600, 'disableProgress': False, 'sseKey': None, 'servicePollingInterval': 60.0, 'forceDockerAppliance': False, 'debugWorker': False, 'disableWorkerOutputCapture': False, 'badWorker': 0.0, 'badWorkerFailInterval': 0.01, 'logLevel': 'Debug', 'colored_logs': True, 'memory_is_product': False, 'workflowAttemptNumber': 0}
+[2026-06-14T00:30:44+0200] [MainThread] [D] [toil.deferred] Opened with own state file /scratch/tmp/41770356/toilwf-b279e46fb6235e369134e00ead34fb77/deferred/func2skou4w6
+[2026-06-14T00:30:44+0200] [MainThread] [D] [toil.worker] Parsed job description
+[2026-06-14T00:30:44+0200] [MainThread] [I] [toil.worker] Working on job 'CWLJob' sr-workflow.mpicc.mpich-mpicc kind-CWLJob/instance-q4ltlhj5 v1
+[2026-06-14T00:30:44+0200] [MainThread] [D] [toil.job] Loading user module ModuleDescriptor(dirPath='/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages', name='toil.cwl.cwltoil', fromVirtualEnv=True).
+[2026-06-14T00:30:45+0200] [MainThread] [D] [pydot] pydot initializing
+[2026-06-14T00:30:45+0200] [MainThread] [D] [pydot] pydot 4.0.1
+[2026-06-14T00:30:45+0200] [MainThread] [D] [pydot.core] pydot core module initializing
+[2026-06-14T00:30:45+0200] [MainThread] [I] [toil.worker] Loaded body Job('CWLJob' sr-workflow.mpicc.mpich-mpicc kind-CWLJob/instance-q4ltlhj5 v1) from description 'CWLJob' sr-workflow.mpicc.mpich-mpicc kind-CWLJob/instance-q4ltlhj5 v1
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.lib.threading] Detected that /scratch/tmp/41770356/toilwf-b279e46fb6235e369134e00ead34fb77 has lockable filesystem type: ext2/ext3
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Running orphaned deferred functions
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Ran orphaned deferred functions from 0 abandoned state files
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Running job
+[2026-06-14T00:30:45+0200] [MainThread] [W] [toil.fileStores.nonCachingFileStore] Starting job 'CWLJob' sr-workflow.mpicc.mpich-mpicc kind-CWLJob/instance-q4ltlhj5 v1 with less than 10%% of disk space remaining.
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.cwl.cwltoil] Loaded order:
+{'source': DefaultWithSource({'class': 'File', 'location': 'file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c', 'size': 2570, 'basename': 'sr.c', 'nameroot': 'sr', 'nameext': '.c'}, ResolveSource(source key source, name source in promise))}
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.cwl.cwltoil] Output disposition: copy
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.cwl.cwltoil] Running tool ToilCommandLineTool('file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mpicc.cwl#mpich-mpicc') with order: {'source': DefaultWithSource({'class': 'File', 'location': 'file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c', 'size': 2570, 'basename': 'sr.c', 'nameroot': 'sr', 'nameext': '.c'}, ResolveSource(source key source, name source in promise))}
+Warning: invalid field 'streamable', expected one of: 'class', 'location', 'path', 'basename', 'dirname', 'nameroot', 'nameext', 'checksum', 'size', 'secondaryFiles', 'format', 'contents'
+[2026-06-14T00:30:45+0200] [MainThread] [W] [salad] Warning: invalid field 'streamable', expected one of: 'class', 'location', 'path', 'basename', 'dirname', 'nameroot', 'nameext', 'checksum', 'size', 'secondaryFiles', 'format', 'contents'
+[2026-06-14T00:30:45+0200] [MainThread] [D] [cwltool] [job sr-workflow.mpicc.mpich-mpicc] initializing from file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/mpicc.cwl#mpich-mpicc
+[2026-06-14T00:30:45+0200] [MainThread] [D] [cwltool] [job sr-workflow.mpicc.mpich-mpicc] {
+    "source": {
+        "class": "File",
+        "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "size": 2570,
+        "basename": "sr.c",
+        "nameroot": "sr",
+        "nameext": ".c",
+        "streamable": false
+    },
+    "output_name": "sr"
+}
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.cwl.cwltoil] Initial work dir: {'class': 'Directory', 'listing': [], 'basename': ''}
+[2026-06-14T00:30:45+0200] [MainThread] [D] [cwltool] [job sr-workflow.mpicc.mpich-mpicc] path mappings is {
+    "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c": [
+        "/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+        "/var/lib/cwl/stg1a524910-dec7-4043-a5fc-8abdaffa7790/sr.c",
+        "File",
+        true
+    ]
+}
+[2026-06-14T00:30:45+0200] [MainThread] [D] [cwltool] [job sr-workflow.mpicc.mpich-mpicc] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpicc"
+    },
+    {
+        "position": [
+            1,
+            "source"
+        ],
+        "datum": {
+            "class": "File",
+            "location": "file:///gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
+            "size": 2570,
+            "basename": "sr.c",
+            "nameroot": "sr",
+            "nameext": ".c",
+            "streamable": false,
+            "path": "/var/lib/cwl/stg1a524910-dec7-4043-a5fc-8abdaffa7790/sr.c",
+            "dirname": "/var/lib/cwl/stg1a524910-dec7-4043-a5fc-8abdaffa7790"
+        }
+    },
+    {
+        "prefix": "-o",
+        "position": [
+            2,
+            "output_name"
+        ],
+        "datum": "sr"
+    }
+]
+[2026-06-14T00:30:45+0200] [MainThread] [D] [cwltool] Singularity version: 4.1.5 ({_SINGULARITY_FLAVOR}.
+[2026-06-14T00:30:45+0200] [MainThread] [I] [cwltool] ['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']
+WARNING: Couldn't use cached digest for registry: Get "https://index.docker.io/v2/": dial tcp [2600:1f18:2148:bc01:12a0:7444:b449:20a3]:443: connect: cannot assign requested address
+WARNING: Falling back to direct digest.
+FATAL:   While making image from oci registry: error fetching image: failed to get checksum for docker://mfisherman/mpich:4.3.2: Get "https://index.docker.io/v2/": dial tcp [2600:1f18:2148:bc02:2a5b:7d8e:cf91:121d]:443: connect: cannot assign requested address
+[2026-06-14T00:30:45+0200] [MainThread] [D] [cwltool] Singularity error
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.fileStores.abstractFileStore] LOG-TO-LEADER: Job 'CWLJob' sr-workflow.mpicc.mpich-mpicc kind-CWLJob/instance-q4ltlhj5 v1 used 0.00% disk (1.0 KiB [1024B] used, 1.0 GiB [1073741824B] requested).
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Running own deferred functions
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Out of deferred functions!
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Running orphaned deferred functions
+[2026-06-14T00:30:45+0200] [MainThread] [D] [toil.deferred] Ran orphaned deferred functions from 0 abandoned state files
+[2026-06-14T00:30:45+0200] [MainThread] [C] [toil.worker] Worker crashed with traceback:
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/cwltool/job.py", line 788, in run
+    self.get_from_requirements(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        docker_req,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        runtimeContext.image_base_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/cwltool/singularity.py", line 469, in get_from_requirements
+    if not self.get_image(
+           ~~~~~~~~~~~~~~^
+        cast(dict[str, str], r),
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        sandbox_base_path=image_base_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/cwltool/singularity.py", line 414, in get_image
+    check_call(cmd, stdout=sys.stderr)  # nosec
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/subprocess.py", line 419, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']' returned non-zero exit status 255.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/toil/worker.py", line 591, in workerScript
+    job._runner(
+    ~~~~~~~~~~~^
+        jobGraph=None,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        defer=defer,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/toil/job.py", line 3376, in _runner
+    returnValues = self._run(jobGraph=None, fileStore=fileStore)
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/toil/job.py", line 3254, in _run
+    return self.run(fileStore)
+           ~~~~~~~~^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/toil/cwl/cwltoil.py", line 2835, in run
+    output, status = ToilSingleJobExecutor().execute(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        process=self.cwltool,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        logger=cwllogger,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/cwltool/executors.py", line 138, in execute
+    self.run_jobs(process, job_order_object, logger, runtime_context)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/toil/cwl/cwltoil.py", line 1086, in run_jobs
+    return super().run_jobs(process, job_order_object, logger, runtime_context)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/cwltool/executors.py", line 248, in run_jobs
+    job.run(runtime_context)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/gpfs/projects/[REDACTED]/[REDACTED]/micromamba-envs/envs/toil/lib/python3.13/site-packages/cwltool/job.py", line 834, in run
+    raise WorkflowException(
+    ...<4 lines>...
+    ) from err
+cwl_utils.errors.WorkflowException: Singularity is not available for this tool, try --no-container to disable Singularity, or install a user space Docker replacement like uDocker with --user-space-docker-cmd.: Command '['singularity', 'pull', '--force', '--name', 'mfisherman_mpich:4.3.2.sif', 'docker://mfisherman/mpich:4.3.2']' returned non-zero exit status 255.
+
+[2026-06-14T00:30:45+0200] [MainThread] [E] [toil.worker] Exiting the worker because of a failed job on host gs14r3b26

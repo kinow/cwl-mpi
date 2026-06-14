@@ -1,5 +1,9 @@
 # StreamFlow
 
+> NOTE: These files are not used! They were initially used but dropped during the
+>       development of the Makefile and StreamFlow wrapper. Now, these files serve
+>       only as a reference for the StreamFlow workflow.
+
 StreamFlow version: 0.2.0.dev14 (commit f8619e9b4aa9176bbce90bf64b05c9bb1903cc9b)
 
 ## Prerequisites

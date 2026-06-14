@@ -1,0 +1,152 @@
+[2026-06-14T14:59:33+0000] [MainThread] [I] [toil.worker] ---TOIL WORKER OUTPUT LOG---
+[2026-06-14T14:59:33+0000] [MainThread] [I] [toil] Running Toil version 9.4.1-c6a39f2c827899f9a1dd0018ca2b72c675120096 on host mpi-01.
+[2026-06-14T14:59:33+0000] [MainThread] [D] [toil] Configuration: {'cwl': False, 'workflowID': '4ebd2d61-a874-439f-a800-4f11905c703f', 'kill_polling_interval': 5, 'jobStore': 'file:/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/29555c10-3ef9-4d4d-9bfd-5cf80891625f', 'workDir': '/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none', 'coordination_dir': None, 'noStdOutErr': False, 'stats': False, 'cleanWorkDir': 'always', 'clean': 'onSuccess', 'clusterStats': None, 'restart': False, 'batchSystem': 'single_machine', 'scale': 1, 'slurm_allocate_mem': True, 'slurm_default_all_mem': False, 'slurm_time': None, 'slurm_partition': None, 'slurm_gpu_partition': None, 'slurm_pe': None, 'slurm_args': '', 'disableAutoDeployment': False, 'max_jobs': 9223372036854775807, 'max_local_jobs': None, 'manualMemArgs': False, 'run_local_jobs_on_workers': False, 'statePollingWait': None, 'state_polling_timeout': 1200, 'batch_logs_dir': None, 'symlinkImports': True, 'moveOutputs': False, 'caching': False, 'symlink_job_store_reads': True, 'provisioner': None, 'nodeTypes': [], 'minNodes': [0], 'maxNodes': [10], 'targetTime': 1800, 'betaInertia': 0.1, 'scaleInterval': 60, 'metrics': False, 'assume_zero_overhead': False, 'preemptibleCompensation': 0.0, 'nodeStorage': 50, 'nodeStorageOverrides': [], 'maxServiceJobs': 9223372036854775807, 'maxPreemptibleServiceJobs': 9223372036854775807, 'deadlockWait': 60, 'deadlockCheckInterval': 30, 'defaultMemory': 2147483648, 'defaultCores': 1, 'defaultDisk': 2147483648, 'defaultAccelerators': [], 'maxCores': 9223372036854775807, 'maxMemory': 9223372036854775807, 'maxDisk': 9223372036854775807, 'defaultPreemptible': False, 'retryCount': 0, 'retry_backoff_seconds': 2, 'retry_backoff_factor': 3, 'stop_on_first_failure': False, 'enableUnlimitedPreemptibleRetries': False, 'doubleMem': False, 'maxJobDuration': 9223372036854775807, 'rescueJobsFrequency': 60, 'job_store_timeout': 30, 'maxLogFileSize': 104857600, 'writeLogs': 'logs/toil/cloud/none', 'writeLogsGzip': None, 'writeLogsFromAllJobs': False, 'write_messages': '/tmp/tmpc_cwxrev', 'publish_workflow_metrics': None, 'environment': {}, 'disableChaining': False, 'disableJobStoreChecksumVerification': False, 'statusWait': 3600, 'disableProgress': False, 'sseKey': None, 'servicePollingInterval': 60.0, 'forceDockerAppliance': False, 'debugWorker': False, 'disableWorkerOutputCapture': False, 'badWorker': 0.0, 'badWorkerFailInterval': 0.01, 'logLevel': 'Debug', 'colored_logs': True, 'memory_is_product': False, 'workflowAttemptNumber': 0}
+[2026-06-14T14:59:33+0000] [MainThread] [D] [toil.deferred] Opened with own state file /run/lock/toilwf-fb4c35d1ee4f5deca05abd0fc879a9c4/deferred/funcpv0d6wpe
+[2026-06-14T14:59:33+0000] [MainThread] [D] [toil.worker] Parsed job description
+[2026-06-14T14:59:33+0000] [MainThread] [I] [toil.worker] Working on job 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1
+[2026-06-14T14:59:33+0000] [MainThread] [D] [toil.job] Loading user module ModuleDescriptor(dirPath='/home/cwlmpi/micromamba/envs/toil/lib/python3.13/site-packages', name='toil.cwl.cwltoil', fromVirtualEnv=True).
+[2026-06-14T14:59:33+0000] [MainThread] [D] [pydot] pydot initializing
+[2026-06-14T14:59:33+0000] [MainThread] [D] [pydot] pydot 4.0.1
+[2026-06-14T14:59:33+0000] [MainThread] [D] [pydot.core] pydot core module initializing
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.jobStores.fileJobStore] Path to job store directory is '/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/29555c10-3ef9-4d4d-9bfd-5cf80891625f'.
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.worker] Loaded body Job('CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1) from description 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.lib.threading] Detected that /run/lock/toilwf-fb4c35d1ee4f5deca05abd0fc879a9c4 has lockable filesystem type: tmpfs
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Running orphaned deferred functions
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Ran orphaned deferred functions from 0 abandoned state files
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Running job
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Loaded order:
+{'executable': ResolveSource(source key source, name executable in promise), 'msg_size': DefaultWithSource(0, ResolveSource(source key source, name msg_size in promise)), 'niter': DefaultWithSource(1, ResolveSource(source key source, name niter in promise)), 'np': DefaultWithSource(2, ResolveSource(source key source, name np in promise))}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Output disposition: copy
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Running tool ToilCommandLineTool('file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-base-command.cwl#mpirun-base-command') with order: {'executable': ResolveSource(source key source, name executable in promise), 'msg_size': DefaultWithSource(0, ResolveSource(source key source, name msg_size in promise)), 'niter': DefaultWithSource(1, ResolveSource(source key source, name niter in promise)), 'np': DefaultWithSource(2, ResolveSource(source key source, name np in promise))}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] initializing from file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/sr-base-command.cwl#mpirun-base-command
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] {
+    "executable": {
+        "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/sr",
+        "basename": "sr",
+        "nameroot": "sr",
+        "nameext": "",
+        "class": "File",
+        "checksum": "sha1$477d38bc0e7c5e436119a5d685824809672236d6",
+        "size": 16560,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "msg_size": 0,
+    "niter": 1,
+    "np": 2
+}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Initial work dir: {'class': 'Directory', 'listing': [], 'basename': ''}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] path mappings is {
+    "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/sr": [
+        "/home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/sr",
+        "/tmp/tmp5u4t5ovj/stgbce3cabe-3799-4cce-bff7-1ca06bbb26f9/sr",
+        "File",
+        true
+    ]
+}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-np",
+        "position": [
+            1,
+            "np"
+        ],
+        "datum": 2
+    },
+    {
+        "position": [
+            2,
+            "executable"
+        ],
+        "datum": {
+            "location": "file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/sr",
+            "basename": "sr",
+            "nameroot": "sr",
+            "nameext": "",
+            "class": "File",
+            "checksum": "sha1$477d38bc0e7c5e436119a5d685824809672236d6",
+            "size": 16560,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/tmp5u4t5ovj/stgbce3cabe-3799-4cce-bff7-1ca06bbb26f9/sr",
+            "dirname": "/tmp/tmp5u4t5ovj/stgbce3cabe-3799-4cce-bff7-1ca06bbb26f9"
+        }
+    },
+    {
+        "position": [
+            3,
+            "msg_size"
+        ],
+        "datum": 0
+    },
+    {
+        "position": [
+            4,
+            "niter"
+        ],
+        "datum": 1
+    }
+]
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] initial work dir {}
+[2026-06-14T14:59:34+0000] [MainThread] [I] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] /tmp/tmpw5u5kd08$ mpirun \
+    -np \
+    2 \
+    /tmp/tmp5u4t5ovj/stgbce3cabe-3799-4cce-bff7-1ca06bbb26f9/sr \
+    0 \
+    1 > /tmp/tmpw5u5kd08/mpirun-base-command.out 2> /tmp/tmpw5u5kd08/mpirun-base-command.err
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] Could not collect memory usage, job ended before monitoring began.
+[2026-06-14T14:59:34+0000] [MainThread] [I] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] completed success
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] outputs {
+    "stderr_file": {
+        "location": "file:///tmp/tmpw5u5kd08/mpirun-base-command.err",
+        "basename": "mpirun-base-command.err",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout_file": {
+        "location": "file:///tmp/tmpw5u5kd08/mpirun-base-command.out",
+        "basename": "mpirun-base-command.out",
+        "nameroot": "mpirun-base-command",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$e8c4975b97f4eab8e92b6aeb1062065fe1fac813",
+        "size": 136,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] Removing input staging directory /tmp/tmp5u4t5ovj
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] [job sr-workflow.mpirun.mpirun-base-command] Removing temporary directory /tmp/tmp8mw59q2n
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] Copying /tmp/tmpw5u5kd08/mpirun-base-command.err to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.err
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] Copying /tmp/tmpw5u5kd08/mpirun-base-command.out to /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.out
+[2026-06-14T14:59:34+0000] [MainThread] [D] [cwltool] Removing intermediate output directory /tmp/tmpw5u5kd08
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Visiting files for {'stderr_file': {'location': 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.err', 'basename': 'mpirun-base-command.err', 'nameroot': 'mpirun-base-command', 'nameext': '.err', 'class': 'File', 'checksum': 'sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709', 'size': 0, 'http://commonwl.org/cwltool#generation': 0}, 'stdout_file': {'location': 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.out', 'basename': 'mpirun-base-command.out', 'nameroot': 'mpirun-base-command', 'nameext': '.out', 'class': 'File', 'checksum': 'sha1$e8c4975b97f4eab8e92b6aeb1062065fe1fac813', 'size': 136, 'http://commonwl.org/cwltool#generation': 0}}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Visiting files in {'stderr_file': {'location': 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.err', 'basename': 'mpirun-base-command.err', 'nameroot': 'mpirun-base-command', 'nameext': '.err', 'class': 'File', 'checksum': 'sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709', 'size': 0, 'http://commonwl.org/cwltool#generation': 0}, 'stdout_file': {'location': 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.out', 'basename': 'mpirun-base-command.out', 'nameroot': 'mpirun-base-command', 'nameext': '.out', 'class': 'File', 'checksum': 'sha1$e8c4975b97f4eab8e92b6aeb1062065fe1fac813', 'size': 136, 'http://commonwl.org/cwltool#generation': 0}}
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.cwl.cwltoil] Emitting output: {'stderr_file': {'location': 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.err', 'basename': 'mpirun-base-command.err', 'nameroot': 'mpirun-base-command', 'nameext': '.err', 'class': 'File', 'checksum': 'sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709', 'size': 0, 'http://commonwl.org/cwltool#generation': 0}, 'stdout_file': {'location': 'file:///home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/mpirun-base-command.out', 'basename': 'mpirun-base-command.out', 'nameroot': 'mpirun-base-command', 'nameext': '.out', 'class': 'File', 'checksum': 'sha1$e8c4975b97f4eab8e92b6aeb1062065fe1fac813', 'size': 136, 'http://commonwl.org/cwltool#generation': 0}}
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.fileStores.abstractFileStore] LOG-TO-LEADER: CWL step complete: sr-workflow.mpirun.mpirun-base-command
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.job] Saving graph of 1 jobs, 1 non-service, 0 new
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.job] Resolve promise files/no-job/file-53aaa5c02c154a5f9bda306761044d6a/stream from Job('CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1) with a <class 'dict'>
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.job] Resolve promise files/no-job/file-13b34668af4147a8a2f5cdbe7cf265a7/stream from Job('CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1) with a <class 'dict'>
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.job] Resolve promise files/no-job/file-84dbcfce8537451f94fc5f98e2fb80d9/stream from Job('CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1) with a <class 'dict'>
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.job] Resolve promise files/no-job/file-73436559454941ab9b25cc8653d33098/stream from Job('CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1) with a <class 'dict'>
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.job] Processing job 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.fileStores.abstractFileStore] LOG-TO-LEADER: Job 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v1 used 0.00% disk (4.0 KiB [4096B] used, 1.0 GiB [1073741824B] requested).
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Running own deferred functions
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Out of deferred functions!
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Running orphaned deferred functions
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.deferred] Ran orphaned deferred functions from 0 abandoned state files
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.job] New job version: 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v2
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.job] New job version: 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v3
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.worker] Completed body for 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v3
+[2026-06-14T14:59:34+0000] [MainThread] [D] [toil.worker] Stopping running chain of jobs: no successors: True, services: 0, checkpoint: False
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.worker] Not chaining from job 'CWLJob' sr-workflow.mpirun.mpirun-base-command kind-CWLJob/instance-50kjtrti v3
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.worker] Worker log can be found at /home/cwlmpi/cwl-mpi/workflows/mpich-sr/logs/toil/cloud/none/toilwf-fb4c35d1ee4f5deca05abd0fc879a9c4/e17c. Set --cleanWorkDir to retain this log
+[2026-06-14T14:59:34+0000] [MainThread] [I] [toil.worker] Finished running the chain of jobs on this node, we ran for a total of 0.584059 seconds
