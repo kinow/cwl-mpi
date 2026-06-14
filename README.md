@@ -1,34 +1,37 @@
 # CWL MPI
 
-This repository contains CWL MPI workflows. These workflows are used for
-testing and demonstration purposes. They are part of a thesis written for
-the [joint HPC Master at the universities of Santiago de Compostela and
-da Coruña](https://www.usc.gal/en/studies/masters/engineering-and-architecture/master-high-performance-computing-online).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20348637.svg)](https://doi.org/10.5281/zenodo.20348637)
+
+This repository contains Common Workflow Language (CWL) workflows that use MPI.
+They were developed for testing and demonstration purposes as part of the master's
+thesis by [Bruno de Paula Kinoshita](https://orcid.org/0000-0001-8250-4074),
+completed within the [Joint Master in High Performance Computing](https://www.usc.gal/en/studies/masters/engineering-and-architecture/master-high-performance-computing-online)
+offered by the [Universities of Santiago de Compostela](https://www.usc.gal/)
+and [A Coruña](https://udc.es/). The thesis, “CWL Workflows with MPI in Bare-Metal,
+Containers, Cloud, and HPC Environments”, explores the use of MPI-enabled CWL workflows
+across a range of computing platforms.
 
 ## CWL Conformance Tests
+
+Results and reports for CWL conformance testing.
 
 [Report](./cwl-conformance-tests/README.md)
 
 ## Workflows
 
-These are some examples used for the tests.
+Example workflows used throughout the tests and evaluations.
 
 ### Simple MPI Workflow
 
-`sr.c`: A test program from MPICH, that simply prints information about
-the MPI ranks. Used to test that a MPI program is launched correctly on
-HPCs with CWL.
+`sr.c`: is a test program from MPICH that prints information about MPI ranks.
+It is used to verify that MPI applications can be launched correctly through
+CWL on HPC systems.
 
-[Report](./workflows/mpich-sr/README.md)
+* [cwltool](./workflows/mpich-sr/README-cwltool.md)
+* [Toil](./workflows/mpich-sr/README-toil.md)
+* [StreamFlow](./workflows/mpich-sr/README-streamflow.md)
 
-#### CWLTool
+For a description of the workflow and its files, see the main report:
 
-[Report](./workflows/mpich-sr/README-cwltool.md)
+[Workflow Report](./workflows/mpich-sr/README.md)
 
-#### StreamFlow
-
-[Report](./workflows/mpich-sr/README-streamflow.md)
-
-#### Toil
-
-[Report](./workflows/mpich-sr/README-toil.md)
