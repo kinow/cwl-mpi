@@ -3,238 +3,231 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage[table]{xcolor}
-\usepackage{hhline}
 \geometry{margin=1in}
 \begin{document}
+
+
+% --- cwltool ---
+
+
 \clearpage
 \subsubsection*{cwltool Conformance Tests Results}
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 197 & 0 & 0 & \textbf{100.0} \% \\
-FinisTerrae III & slurm & 197 & 0 & 0 & \textbf{100.0} \% \\
-FinisTerrae III & batch & — & — & — & — \\
-\hline\hline
-LUMI & local & 197 & 0 & 0 & \textbf{100.0} \% \\
-LUMI & slurm & 197 & 0 & 0 & \textbf{100.0} \% \\
-LUMI & batch & — & — & — & — \\
-\hline\hline
-MareNostrum 5 & local & 197 & 0 & 0 & \textbf{100.0} \% \\
-MareNostrum 5 & slurm & 197 & 0 & 0 & \textbf{100.0} \% \\
-MareNostrum 5 & batch & — & — & — & — \\
+CWL v1.0.2 & \texttt{login-node} & 197 & 0 & 0 & 100.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 197 & 0 & 0 & 100.0 \\ \hline
+\hline
+CWL v1.1.0 & \texttt{login-node} & 252 & 1 & 0 & 99.6 \\ \hline
+CWL v1.1.0 & \texttt{slurm-node} & 252 & 1 & 0 & 99.6 \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 377 & 1 & 0 & 99.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 377 & 1 & 0 & 99.7 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.0.2 conformance results on HPC systems.}
-\label{tab:cwltool_v10}
+\caption{FinisTerrae III conformance results using cwltool across CWL versions.}
 \end{table}
+
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 252 & 1 & 0 & 99.6 \% \\
-FinisTerrae III & slurm & 252 & 1 & 0 & 99.6 \% \\
-FinisTerrae III & batch & — & — & — & — \\
-\hline\hline
-LUMI & local & 252 & 1 & 0 & 99.6 \% \\
-LUMI & slurm & 252 & 1 & 0 & 99.6 \% \\
-LUMI & batch & — & — & — & — \\
-\hline\hline
-MareNostrum 5 & local & 252 & 1 & 0 & 99.6 \% \\
-MareNostrum 5 & slurm & 251 & 2 & 0 & 99.2 \% \\
-MareNostrum 5 & batch & — & — & — & — \\
+CWL v1.0.2 & \texttt{login-node} & 197 & 0 & 0 & 100.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 197 & 0 & 0 & 100.0 \\ \hline
+\hline
+CWL v1.1.0 & \texttt{login-node} & 252 & 1 & 0 & 99.6 \\ \hline
+CWL v1.1.0 & \texttt{slurm-node} & 252 & 1 & 0 & 99.6 \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 377 & 1 & 0 & 99.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 377 & 1 & 0 & 99.7 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.1.0 conformance results on HPC systems.}
-\label{tab:cwltool_v11}
+\caption{LUMI conformance results using cwltool across CWL versions.}
 \end{table}
+
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 377 & 1 & 0 & 99.7 \% \\
-FinisTerrae III & slurm & 377 & 1 & 0 & 99.7 \% \\
-FinisTerrae III & batch & — & — & — & — \\
-\hline\hline
-LUMI & local & 377 & 1 & 0 & 99.7 \% \\
-LUMI & slurm & 377 & 1 & 0 & 99.7 \% \\
-LUMI & batch & — & — & — & — \\
-\hline\hline
-MareNostrum 5 & local & 377 & 1 & 0 & 99.7 \% \\
-MareNostrum 5 & slurm & 376 & 2 & 0 & 99.5 \% \\
-MareNostrum 5 & batch & — & — & — & — \\
+CWL v1.0.2 & \texttt{login-node} & 197 & 0 & 0 & 100.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 197 & 0 & 0 & 100.0 \\ \hline
+\hline
+CWL v1.1.0 & \texttt{login-node} & 252 & 1 & 0 & 99.6 \\ \hline
+CWL v1.1.0 & \texttt{slurm-node} & 251 & 2 & 0 & 99.2 \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 377 & 1 & 0 & 99.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 376 & 2 & 0 & 99.5 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.2.1 conformance results on HPC systems.}
-\label{tab:cwltool_v12}
+\caption{MareNostrum 5 conformance results using cwltool across CWL versions.}
 \end{table}
+
+
+
+% --- Toil ---
+
+
 \clearpage
 \subsubsection*{Toil Conformance Tests Results}
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 197 & 0 & 0 & \textbf{100.0} \% \\
-FinisTerrae III & slurm & 194 & 3 & 0 & 98.5 \% \\
-FinisTerrae III & batch & 38 & 159 & 0 & 19.3 \% \\
-\hline\hline
-LUMI & local & 195 & 2 & 0 & 99.0 \% \\
-LUMI & slurm & 195 & 2 & 0 & 99.0 \% \\
-LUMI & batch & 48 & 149 & 0 & 24.4 \% \\
-\hline\hline
-MareNostrum 5 & local & 197 & 0 & 0 & \textbf{100.0} \% \\
-MareNostrum 5 & slurm & 157 & 33 & 7 & 79.7 \% \\
-MareNostrum 5 & batch & 70 & 124 & 3 & 35.5 \% \\
+CWL v1.0.2 & \texttt{login-node} & 197 & 0 & 0 & 100.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 194 & 3 & 0 & 98.5 \\ \hline
+CWL v1.0.2 & \texttt{slurm-batch} & 38 & 159 & 0 & 19.3 \\ \hline
+\hline
+CWL v1.1.0 & \texttt{login-node} & 249 & 2 & 2 & 98.4 \\ \hline
+CWL v1.1.0 & \texttt{slurm-node} & 249 & 2 & 2 & 98.4 \\ \hline
+CWL v1.1.0 & \texttt{slurm-batch} & 138 & 115 & 0 & 54.5 \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 373 & 3 & 2 & 98.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 373 & 3 & 2 & 98.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-batch} & 222 & 156 & 0 & 58.7 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.0.2 conformance results on HPC systems.}
-\label{tab:toil_v10}
+\caption{FinisTerrae III conformance results using Toil across CWL versions.}
 \end{table}
+
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 249 & 2 & 2 & 98.4 \% \\
-FinisTerrae III & slurm & 249 & 2 & 2 & 98.4 \% \\
-FinisTerrae III & batch & 138 & 115 & 0 & 54.5 \% \\
-\hline\hline
-LUMI & local & 247 & 4 & 2 & 97.6 \% \\
-LUMI & slurm & 249 & 2 & 2 & 98.4 \% \\
-LUMI & batch & 90 & 163 & 0 & 35.6 \% \\
-\hline\hline
-MareNostrum 5 & local & 250 & 1 & 2 & 98.8 \% \\
-MareNostrum 5 & slurm & 206 & 38 & 9 & 81.4 \% \\
-MareNostrum 5 & batch & 124 & 124 & 5 & 49.0 \% \\
+CWL v1.0.2 & \texttt{login-node} & 195 & 2 & 0 & 99.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 195 & 2 & 0 & 99.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-batch} & 48 & 149 & 0 & 24.4 \\ \hline
+\hline
+CWL v1.1.0 & \texttt{login-node} & 247 & 4 & 2 & 97.6 \\ \hline
+CWL v1.1.0 & \texttt{slurm-node} & 249 & 2 & 2 & 98.4 \\ \hline
+CWL v1.1.0 & \texttt{slurm-batch} & 90 & 163 & 0 & 35.6 \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 374 & 2 & 2 & 98.9 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 373 & 3 & 2 & 98.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-batch} & 176 & 202 & 0 & 46.6 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.1.0 conformance results on HPC systems.}
-\label{tab:toil_v11}
+\caption{LUMI conformance results using Toil across CWL versions.}
 \end{table}
+
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 373 & 3 & 2 & 98.7 \% \\
-FinisTerrae III & slurm & 373 & 3 & 2 & 98.7 \% \\
-FinisTerrae III & batch & 222 & 156 & 0 & 58.7 \% \\
-\hline\hline
-LUMI & local & 374 & 2 & 2 & 98.9 \% \\
-LUMI & slurm & 373 & 3 & 2 & 98.7 \% \\
-LUMI & batch & 176 & 202 & 0 & 46.6 \% \\
-\hline\hline
-MareNostrum 5 & local & 373 & 3 & 2 & 98.7 \% \\
-MareNostrum 5 & slurm & 320 & 43 & 15 & 84.7 \% \\
-MareNostrum 5 & batch & 171 & 203 & 4 & 45.2 \% \\
+CWL v1.0.2 & \texttt{login-node} & 197 & 0 & 0 & 100.0 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 157 & 33 & 7 & 79.7 \\ \hline
+CWL v1.0.2 & \texttt{slurm-batch} & 70 & 124 & 3 & 35.5 \\ \hline
+\hline
+CWL v1.1.0 & \texttt{login-node} & 250 & 1 & 2 & 98.8 \\ \hline
+CWL v1.1.0 & \texttt{slurm-node} & 206 & 38 & 9 & 81.4 \\ \hline
+CWL v1.1.0 & \texttt{slurm-batch} & 124 & 124 & 5 & 49.0 \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 373 & 3 & 2 & 98.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 320 & 43 & 15 & 84.7 \\ \hline
+CWL v1.2.1 & \texttt{slurm-batch} & 171 & 203 & 4 & 45.2 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.2.1 conformance results on HPC systems.}
-\label{tab:toil_v12}
+\caption{MareNostrum 5 conformance results using Toil across CWL versions.}
 \end{table}
+
+
+
+% --- StreamFlow ---
+
+
 \clearpage
 \subsubsection*{StreamFlow Conformance Tests Results}
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 162 & 18 & 1 & 89.5 \% \\
-FinisTerrae III & slurm & 170 & 26 & 1 & 86.3 \% \\
-FinisTerrae III & batch & — & — & — & — \\
-\hline\hline
-LUMI & local & 196 & 0 & 1 & 99.5 \% \\
-LUMI & slurm & 196 & 0 & 1 & 99.5 \% \\
-LUMI & batch & — & — & — & — \\
-\hline\hline
-MareNostrum 5 & local & 157 & 39 & 1 & 79.7 \% \\
-MareNostrum 5 & slurm & 157 & 39 & 1 & 79.7 \% \\
-MareNostrum 5 & batch & — & — & — & — \\
+CWL v1.0.2 & \texttt{login-node} & 162 & 18 & 1 & 89.5 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 170 & 26 & 1 & 86.3 \\ \hline
+\hline
+\multicolumn{6}{|l|}{\textit{CWL v1.1.0: conformance suite not executed (launch failure).}} \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 314 & 31 & 2 & 90.5 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 0 & 0 & 0 & — \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.0.2 conformance results on HPC systems.}
-\label{tab:streamflow_v10}
+\caption{FinisTerrae III conformance results using StreamFlow across CWL versions.}
 \end{table}
+
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 0 & 0 & 0 & 0.0 \% \\
-FinisTerrae III & slurm & 0 & 0 & 0 & 0.0 \% \\
-FinisTerrae III & batch & — & — & — & — \\
-\hline\hline
-LUMI & local & 0 & 0 & 0 & 0.0 \% \\
-LUMI & slurm & 0 & 0 & 0 & 0.0 \% \\
-LUMI & batch & — & — & — & — \\
-\hline\hline
-MareNostrum 5 & local & 0 & 0 & 0 & 0.0 \% \\
-MareNostrum 5 & slurm & 0 & 0 & 0 & 0.0 \% \\
-MareNostrum 5 & batch & — & — & — & — \\
+CWL v1.0.2 & \texttt{login-node} & 196 & 0 & 1 & 99.5 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 196 & 0 & 1 & 99.5 \\ \hline
+\hline
+\multicolumn{6}{|l|}{\textit{CWL v1.1.0: conformance suite not executed (launch failure).}} \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 375 & 1 & 2 & 99.2 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 0 & 0 & 0 & — \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.1.0 conformance results on HPC systems.}
-\label{tab:streamflow_v11}
+\caption{LUMI conformance results using StreamFlow across CWL versions.}
 \end{table}
+
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|c|}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
+\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\
 \hline
-FinisTerrae III & local & 314 & 31 & 2 & 90.5 \% \\
-FinisTerrae III & slurm & 0 & 0 & 0 & 0.0 \% \\
-FinisTerrae III & batch & — & — & — & — \\
-\hline\hline
-LUMI & local & 375 & 1 & 2 & 99.2 \% \\
-LUMI & slurm & 0 & 0 & 0 & 0.0 \% \\
-LUMI & batch & — & — & — & — \\
-\hline\hline
-MareNostrum 5 & local & 325 & 51 & 2 & 86.0 \% \\
-MareNostrum 5 & slurm & 325 & 51 & 2 & 86.0 \% \\
-MareNostrum 5 & batch & — & — & — & — \\
+CWL v1.0.2 & \texttt{login-node} & 157 & 39 & 1 & 79.7 \\ \hline
+CWL v1.0.2 & \texttt{slurm-node} & 157 & 39 & 1 & 79.7 \\ \hline
+\hline
+\multicolumn{6}{|l|}{\textit{CWL v1.1.0: conformance suite not executed (launch failure).}} \\ \hline
+\hline
+CWL v1.2.1 & \texttt{login-node} & 325 & 51 & 2 & 86.0 \\ \hline
+CWL v1.2.1 & \texttt{slurm-node} & 325 & 51 & 2 & 86.0 \\ \hline
 \hline
 \end{tabular}
-\caption{CWL v1.2.1 conformance results on HPC systems.}
-\label{tab:streamflow_v12}
+\caption{MareNostrum 5 conformance results using StreamFlow across CWL versions.}
 \end{table}
+
 \end{document}

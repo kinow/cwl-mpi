@@ -16,6 +16,11 @@ HPCS = ["ft3", "lumi", "mn5"]
 # Enforce that all 3 modes must be presented in this exact row order for each HPC
 MODES = ["local", "slurm", "batch"]
 
+FAILED_RUNS = {
+    ("streamflow", "v1.1"),
+}
+"""Configurations that failed to launch the tests."""
+
 
 @dataclass(frozen=True)
 class Result:
@@ -83,25 +88,28 @@ def print_latex(results_found: AllResultType) -> None:
     print(r"\usepackage{array}")
     print(r"\usepackage{multirow}")
     print(r"\usepackage[table]{xcolor}")
-    print(r"\usepackage{hhline}")
     print(r"\geometry{margin=1in}")
     print(r"\begin{document}")
 
-    # Map versions
     CWL_VERSIONS = {
         "v1.0": "CWL v1.0.2",
         "v1.1": "CWL v1.1.0",
         "v1.2": "CWL v1.2.1",
     }
 
-    # and HPC names
     HPC_NAMES = {
         "ft3": "FinisTerrae III",
         "lumi": "LUMI",
         "mn5": "MareNostrum 5",
     }
 
-    def cell(r: Result | None) -> tuple[str, str, str]:
+    MODE_LABELS = {
+        "local": "login-node",
+        "slurm": "slurm-node",
+        "batch": "slurm-batch",
+    }
+
+    def cell(r: Result | None):
         if r is None:
             return ("—", "—", "—")
         return (str(r.passed), str(r.failed), str(r.skipped))
@@ -111,59 +119,94 @@ def print_latex(results_found: AllResultType) -> None:
             return "—"
         total = r.passed + r.failed + r.skipped
         if total == 0:
-            # return "—"
-            return "0.0"
+            return "—"
         return f"{(r.passed / total) * 100:.1f}"
+
+    def is_failed_run(runner_key: str, version_key: str) -> bool:
+        return (runner_key, version_key) in FAILED_RUNS
 
     for runner_key, runner_name in RUNNERS.items():
         runner_data = results_found.get(runner_key, {})
 
+        print("")
+        print("")
+        print(rf"% --- {runner_name} ---")
+        print("")
+        print("")
+
         print(r"\clearpage")
         print(r"\subsubsection*{" + runner_name + r" Conformance Tests Results}")
 
-        # Build tables per CWL version
-        for version_key, version_label in CWL_VERSIONS.items():
+        for hpc in HPCS:
+            hpc_name = HPC_NAMES.get(hpc, hpc.upper())
 
             print(r"\begin{table}[ht!]")
             print(r"\centering")
-            print(r"\setlength{\tabcolsep}{6pt}")
             print(r"\renewcommand{\arraystretch}{1.2}")
+            print(r"\setlength{\tabcolsep}{6pt}")
 
-            print(r"\begin{tabular}{|c|c|c|c|c|c|}")
+            print(r"\begin{tabular}{|l|c|c|c|c|c|}")
             print(r"\hline")
 
-            # Header
             print(r"\rowcolor{lightgray!50}")
-            print(r"\textbf{HPC} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\")
+            print(
+                r"\textbf{Version} & \textbf{Mode} & \textbf{Passed} & \textbf{Failed} & \textbf{Skipped} & \textbf{Success (\%)} \\"
+            )
             print(r"\hline")
 
-            for i, hpc in enumerate(HPCS):
-                for mode in MODES:
+            table_has_rows = False
 
+            for version_key, version_label in CWL_VERSIONS.items():
+
+                if is_failed_run(runner_key, version_key):
+                    print(
+                        r"\multicolumn{6}{|l|}{\textit{"
+                        + f"{version_label}: conformance suite not executed (launch failure)."
+                        + r"}} \\ \hline"
+                    )
+                    print(r"\hline")
+                    continue
+
+                version_has_rows = False
+
+                for mode in MODES:
                     rdata = runner_data.get((hpc, mode, version_key))
+                    if rdata is None:
+                        continue
+
                     passed, failed, skipped = cell(rdata)
                     pct = success_pct(rdata)
-                    if pct == "100.0":
-                        pct = r"\textbf{100.0}"
-                    hpc_name = HPC_NAMES.get(hpc, hpc.upper())
-                    if pct != "—":
-                        pct = f"{pct} \%"
+
+                    mode_label = rf"\texttt{{{MODE_LABELS.get(mode, mode)}}}"
 
                     print(
-                        f"{hpc_name} & {mode} & "
-                        f"{passed} & {failed} & {skipped} & {pct} \\\\"
+                        f"{version_label} & {mode_label} & "
+                        f"{passed} & {failed} & {skipped} & {pct} \\\\ \\hline"
                     )
 
-                # visual separator between HPC blocks
-                if i < len(HPCS) - 1:
-                    print(r"\hline\hline")
-                else:
+                    version_has_rows = True
+                    table_has_rows = True
+
+                if version_has_rows:
                     print(r"\hline")
 
             print(r"\end{tabular}")
-            print(r"\caption{" + f"{version_label} conformance results on HPC systems." + r"}")
-            print(r"\label{tab:" + runner_key + "_" + version_key.replace(".", "") + r"}")
+
+            if table_has_rows:
+                print(
+                    r"\caption{"
+                    + f"{hpc_name} conformance results using {runner_name} across CWL versions."
+                    + r"}"
+                )
+            else:
+                print(
+                    r"\caption{"
+                    + f"{hpc_name} conformance results using {runner_name} (no data available)."
+                    + r"}"
+                )
+
             print(r"\end{table}")
+            print()
 
     print(r"\end{document}")
 

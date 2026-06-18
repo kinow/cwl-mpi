@@ -5,94 +5,84 @@
 \begin{document}
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|}
+\textbf{cwltool}\\[0.2cm]
+\begin{tabular}{|l|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{Runner} & \textbf{HPC} & \textbf{Container} & \textbf{Status} & \textbf{Time (s)} \\
+\textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
 \hline
-cwltool & LUMI & none & ERR & 87.0 \\
-cwltool & LUMI & singularity & IN & 79.0 \\
-cwltool & MareNostrum 5 & none & \textbf{OK} & 8.0 \\
-cwltool & MareNostrum 5 & singularity & ERR & 3.0 \\
-cwltool & Laptop & none & \textbf{OK} & 3.0 \\
-cwltool & Laptop & docker & \textbf{OK} & 5.0 \\
-cwltool & Laptop & singularity & IN & 4.0 \\
-cwltool & Cloud & none & \textbf{OK} & 5.0 \\
-cwltool & Cloud & docker & \textbf{OK} & 7.0 \\
-cwltool & Cloud & singularity & IN & 5.0 \\
-\hline\hline
-streamflow & LUMI & none & ERR & 113.0 \\
-streamflow & LUMI & singularity & TO & 300.0 \\
-streamflow & MareNostrum 5 & none & ERR & 16.0 \\
-streamflow & MareNostrum 5 & singularity & ERR & 1.0 \\
-streamflow & Laptop & none & \textbf{OK} & 2.0 \\
-streamflow & Laptop & docker & \textbf{OK} & 3.0 \\
-streamflow & Laptop & singularity & TO & 31.0 \\
-streamflow & Cloud & none & \textbf{OK} & 5.0 \\
-streamflow & Cloud & docker & \textbf{OK} & 4.0 \\
-streamflow & Cloud & singularity & TO & 30.0 \\
-\hline\hline
-toil & LUMI & none & ERR & 124.0 \\
-toil & LUMI & singularity & IN & 113.0 \\
-toil & MareNostrum 5 & none & ERR & 18.0 \\
-toil & MareNostrum 5 & singularity & ERR & 10.0 \\
-toil & Laptop & none & \textbf{OK} & 11.0 \\
-toil & Laptop & docker & \textbf{OK} & 18.0 \\
-toil & Laptop & singularity & IN & 14.0 \\
-toil & Cloud & none & \textbf{OK} & 15.0 \\
-toil & Cloud & docker & \textbf{OK} & 20.0 \\
-toil & Cloud & singularity & IN & 20.0 \\
+LUMI & ERROR (87) & INVALID (79) \\
+MareNostrum 5 & \textbf{OK} (8) & ERROR (3) \\
+Laptop & \textbf{OK} (3) & INVALID (4) \\
+Cloud & \textbf{OK} (5) & INVALID (5) \\
 \hline
 \end{tabular}
-\caption{Simple MPI workflow execution results across runners, platforms, and container backends with baseCommand: mpirun (TO: time-out, IN: invalid)}
+\\[0.6cm]
+\textbf{toil}\\[0.2cm]
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
+\hline
+LUMI & ERROR (124) & INVALID (113) \\
+MareNostrum 5 & ERROR (18) & ERROR (10) \\
+Laptop & \textbf{OK} (11) & INVALID (14) \\
+Cloud & \textbf{OK} (15) & INVALID (20) \\
+\hline
+\end{tabular}
+\\[0.6cm]
+\caption{Simple MPI workflow using \protect\textbf{baseCommand: mpirun}. Execution time is shown in seconds. “INVALID” indicates runs where the MPI job was launched via Singularity instead of the host MPI launcher.}
+\label{table:workflow-base}
 \end{table}
 
 \begin{table}[ht!]
 \centering
-\setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{|c|c|c|c|c|}
+\textbf{cwltool}\\[0.2cm]
+\begin{tabular}{|l|c|c|}
 \hline
 \rowcolor{lightgray!50}
-\textbf{Runner} & \textbf{HPC} & \textbf{Container} & \textbf{Status} & \textbf{Time (s)} \\
+\textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
 \hline
-cwltool & LUMI & none & \textbf{OK} & 4.0 \\
-cwltool & LUMI & singularity & ERR & 5.0 \\
-cwltool & MareNostrum 5 & none & \textbf{OK} & 3.0 \\
-cwltool & MareNostrum 5 & singularity & ERR & 2.0 \\
-cwltool & Laptop & none & \textbf{OK} & 3.0 \\
-cwltool & Laptop & docker & \textbf{OK} & 4.0 \\
-cwltool & Laptop & singularity & ERR & 3.0 \\
-cwltool & Cloud & none & \textbf{OK} & 4.0 \\
-cwltool & Cloud & docker & ERR & 5.0 \\
-cwltool & Cloud & singularity & ERR & 6.0 \\
-\hline\hline
-streamflow & LUMI & none & ERR & 3.0 \\
-streamflow & LUMI & singularity & ERR & 3.0 \\
-streamflow & MareNostrum 5 & none & ERR & 1.0 \\
-streamflow & MareNostrum 5 & singularity & ERR & 1.0 \\
-streamflow & Laptop & none & ERR & 2.0 \\
-streamflow & Laptop & docker & ERR & 1.0 \\
-streamflow & Laptop & singularity & ERR & 1.0 \\
-streamflow & Cloud & none & ERR & 2.0 \\
-streamflow & Cloud & docker & ERR & 3.0 \\
-streamflow & Cloud & singularity & ERR & 2.0 \\
-\hline\hline
-toil & LUMI & none & \textbf{OK} & 14.0 \\
-toil & LUMI & singularity & ERR & 20.0 \\
-toil & MareNostrum 5 & none & ERR & 8.0 \\
-toil & MareNostrum 5 & singularity & ERR & 9.0 \\
-toil & Laptop & none & \textbf{OK} & 11.0 \\
-toil & Laptop & docker & ERR & 4.0 \\
-toil & Laptop & singularity & ERR & 14.0 \\
-toil & Cloud & none & \textbf{OK} & 14.0 \\
-toil & Cloud & docker & ERR & 2.0 \\
-toil & Cloud & singularity & ERR & 19.0 \\
+LUMI & \textbf{OK} (4) & ERROR (5) \\
+MareNostrum 5 & \textbf{OK} (3) & ERROR (2) \\
+Laptop & \textbf{OK} (3) & ERROR (3) \\
+Cloud & \textbf{OK} (4) & ERROR (6) \\
 \hline
 \end{tabular}
-\caption{Simple MPI workflow execution results across runners, platforms, and container backends with MPIRequirement (TO: time-out, IN: invalid)}
+\\[0.6cm]
+\textbf{toil}\\[0.2cm]
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
+\hline
+LUMI & \textbf{OK} (14) & ERROR (20) \\
+MareNostrum 5 & ERROR (8) & ERROR (9) \\
+Laptop & \textbf{OK} (11) & ERROR (14) \\
+Cloud & \textbf{OK} (14) & ERROR (19) \\
+\hline
+\end{tabular}
+\\[0.6cm]
+\caption{Simple MPI workflow using \protect\textbf{code:MPIRequirement}. Execution time is shown in seconds.}
+\label{table:workflow-req}
 \end{table}
 
 \end{document}
+
+================================================================================
+DOCKER RESULTS SUMMARY
+================================================================================
+
+[workflow-base]
+cwltool    Laptop          \textbf{OK}
+cwltool    Cloud           \textbf{OK}
+toil       Laptop          \textbf{OK}
+toil       Cloud           \textbf{OK}
+
+[workflow-req]
+cwltool    Laptop          \textbf{OK}
+cwltool    Cloud           ERROR
+toil       Laptop          ERROR
+toil       Cloud           ERROR

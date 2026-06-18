@@ -14,6 +14,21 @@
   publisher = {Springer}
 }
 
+@inproceedings{10.1007/978-3-031-86240-3_14,
+  title = {Enabling Message Passing Interface Containers on the {{LUMI}} Supercomputer},
+  booktitle = {Proceedings of the 6th Nordic E-{{Infrastructure}} Collaboration Conference ({{NeIC}} 2024)},
+  author = {Lazzaro, Alfio},
+  editor = {Azab, Abdulrahman and Malkiewicz, Tomasz},
+  year = 2025,
+  month = may,
+  series = {Communications in Computer and Information Science},
+  volume = {2398},
+  pages = {183--196},
+  publisher = {Springer},
+  address = {Tallinn, Estonia},
+  doi = {10.1007/978-3-031-86240-3_14}
+}
+
 @article{10.1007/s10723-013-9272-5,
   title = {{{ServiceSs}}: An Interoperable Programming Framework for the {{Cloud}}},
   author = {Lordan, Frederic and Tejedor, Enric and Ejarque, Jordi and Rafanell, Roger and {\'A}lvarez, Joan and Marozzo, Filippo and Lezzi, Daniele and Sirvent, Raul and Talia, Domenico and Badia, Rosa M.},
@@ -38,6 +53,18 @@
   doi = {10.1007/s11227-021-03914-1},
   url = {https://doi.org/10.1007/s11227-021-03914-1},
   abstract = {Modern scientific research challenges require new technologies, integrated tools, reusable and complex experiments in distributed computing infrastructures. But above all, computing power for efficient data processing and analyzing. Containers technologies have emerged as a new paradigm to address such intensive scientific applications problems. Their easy deployment in a reasonable amount of time and the few required computational resource make them more suitable. Containers are considered light virtualization solutions. They enable performance isolation and flexible deployment of complex, parallel, and high-performance systems. Moreover, they gained popularity to modernize and migrate scientific applications in computing infrastructure management. Additionally, they reduce computational time processing. In this paper, we first give an overview of virtualization and containerization technologies. We discuss the taxonomies of containerization technologies of the literature, and then we provide a new one that covers and completes those proposed in the literature. We identify the most important application domains of containerization and their technological progress. Furthermore, we discuss the performance metrics used in most containerization techniques. Finally, we point out research gaps in the related aspects of containerization technology that require more research.}
+}
+
+@article{10.1007/s11227-022-04848-y,
+  title = {Containers in {{HPC}}: A Survey},
+  author = {Tesser, Rafael Keller and Borin, Edson},
+  year = 2023,
+  journal = {The Journal of Supercomputing},
+  volume = {79},
+  number = {5},
+  pages = {5759--5827},
+  doi = {10.1007/s11227-022-04848-y},
+  url = {https://doi.org/10.1007/s11227-022-04848-y}
 }
 
 @article{10.1016/j.acags.2023.100126,
@@ -74,6 +101,18 @@
   url = {https://doi.org/10.1016/j.cpc.2018.05.021}
 }
 
+@article{10.1016/j.future.2017.02.026,
+  title = {A Characterization of Workflow Management Systems for Extreme-Scale Applications},
+  author = {{Ferreira da Silva}, Rafael and Filgueira, Rosa and Pietri, Ilia and Jiang, Ming and Sakellariou, Rizos and Deelman, Ewa},
+  year = 2017,
+  month = oct,
+  journal = {Future Generation Computer Systems},
+  volume = {75},
+  pages = {228--238},
+  doi = {10.1016/j.future.2017.02.026},
+  url = {https://doi.org/10.1016/j.future.2017.02.026}
+}
+
 @article{10.1038/nbt.3772,
   title = {Toil Enables Reproducible, Open Source, Big Biomedical Data Analyses},
   author = {Vivian, John and Rao, Arjun Arkal and Nothaft, Frank Austin and Ketchum, Christopher and Armstrong, Joel and Novak, Adam and Pfeil, Jacob and Narkizian, Jake and Deran, Alden D. and {Musselman-Brown}, Audrey and Schmidt, Hannes and Amstutz, Peter and Craft, Brian and Goldman, Mary and Rosenbloom, Kate and Cline, Melissa and O'Connor, Brian and Hanna, Megan and Birger, Chet and Kent, W. James and Patterson, David A. and Joseph, Anthony D. and Zhu, Jingchun and Zaranek, Sasha and Getz, Gad and Haussler, David and Paten, Benedict},
@@ -105,6 +144,20 @@
   volume = {7},
   pages = {300},
   doi = {10.1038/s41597-020-00638-4}
+}
+
+@article{10.1038/s43586-023-00236-9,
+  title = {Containers for Computational Reproducibility},
+  author = {Moreau, David and Wiebels, Kristina and Boettiger, Carl},
+  year = 2023,
+  journal = {Nature Reviews Methods Primers},
+  volume = {3},
+  number = {1},
+  pages = {50},
+  issn = {2662-8449},
+  doi = {10.1038/s43586-023-00236-9},
+  url = {https://doi.org/10.1038/s43586-023-00236-9},
+  abstract = {The fast-paced development of computational tools has enabled tremendous scientific progress in recent years. However, this rapid surge of technological capability also comes at a cost, as it leads to an increase in the complexity of software environments and potential compatibility issues across systems. Advanced workflows in processing or analysis often require specific software versions and operating systems to run smoothly, and discrepancies across machines and researchers can impede reproducibility and efficient collaboration. As a result, scientific teams are increasingly relying on containers to implement robust, dependable research ecosystems. Originally popularized in software engineering, containers have become common in scientific projects, particularly in large collaborative efforts. In this Primer, we describe what containers are, how they work and the rationale for their use in scientific projects. We review state-of-the-art implementations in diverse contexts and fields, with examples in various scientific fields. Finally, we discuss the possibilities enabled by the widespread adoption of containerization, especially in the context of open and reproducible research, and propose recommendations to facilitate seamless implementation across platforms and domains, including within high-performance computing clusters such as those typically available at universities and research institutes.}
 }
 
 @article{10.1051/epjconf/201921406034,
@@ -142,6 +195,22 @@
   doi = {10.1088/1742-6596/898/8/082021},
   url = {https://doi.org/10.1088/1742-6596/898/8/082021},
   abstract = {Bringing HEP computing to HPC can be difficult. Software stacks are often very complicated with numerous dependencies that are difficult to get installed on an HPC system. To address this issue, NERSC has created Shifter, a framework that delivers Docker-like functionality to HPC. It works by extracting images from native formats and converting them to a common format that is optimally tuned for the HPC environment. We have used Shifter to deliver the CVMFS software stack for ALICE, ATLAS, and STAR on the supercomputers at NERSC. As well as enabling the distribution multi-TB sized CVMFS stacks to HPC, this approach also offers performance advantages. Software startup times are significantly reduced and load times scale with minimal variation to 1000s of nodes. We profile several successful examples of scientists using Shifter to make scientific analysis easily customizable and scalable. We will describe the Shifter framework and several efforts in HEP and NP to use Shifter to deliver their software on the Cori HPC system.}
+}
+
+@article{10.1093/bioinformatics/bts480,
+  title = {Snakemake---a Scalable Bioinformatics Workflow Engine},
+  author = {K{\"o}ster, Johannes and Rahmann, Sven},
+  year = 2012,
+  month = oct,
+  journal = {Bioinformatics (Oxford, England)},
+  volume = {28},
+  number = {19},
+  eprint = {https://academic.oup.com/bioinformatics/article-pdf/28/19/2520/48879301/bioinformatics\_28\_19\_2520.pdf},
+  pages = {2520--2522},
+  issn = {1367-4803},
+  doi = {10.1093/bioinformatics/bts480},
+  url = {https://doi.org/10.1093/bioinformatics/bts480},
+  abstract = {Summary: Snakemake is a workflow engine that provides a readable Python-based workflow definition language and a powerful execution environment that scales from single-core workstations to compute clusters without modifying the workflow. It is the first system to support the use of automatically inferred multiple named wildcards (or variables) in input and output filenames.Availability:  http://snakemake.googlecode.com.Contact:  johannes.koester@uni-due.de}
 }
 
 @article{10.1093/nar/gkae410,
@@ -427,6 +496,16 @@
   keywords = {exascale MPI,HPC communication,HPC network,Message passing interface,MPI}
 }
 
+@book{10.1201/EBK1439811924,
+  title = {Introduction to High Performance Computing for Scientists and Engineers},
+  author = {Hager, Georg and Wellein, Gerhard},
+  year = 2010,
+  edition = {1},
+  publisher = {CRC Press},
+  doi = {10.1201/EBK1439811924},
+  url = {https://doi.org/10.1201/EBK1439811924}
+}
+
 @article{10.12688/f1000research.29032.1,
   title = {Sustainable Data Analysis with {{Snakemake}}},
   author = {M{\"o}lder, F. and Jablonski, K. P. and Letcher, B. and {al.}, et},
@@ -481,6 +560,17 @@
   doi = {10.1371/journal.pone.0309210},
   url = {https://doi.org/10.1371/journal.pone.0309210},
   abstract = {Recording the provenance of scientific computation results is key to the support of traceability, reproducibility and quality assessment of data products. Several data models have been explored to address this need, providing representations of workflow plans and their executions as well as means of packaging the resulting information for archiving and sharing. However, existing approaches tend to lack interoperable adoption across workflow management systems. In this work we present Workflow Run RO-Crate, an extension of RO-Crate (Research Object Crate) and Schema.org to capture the provenance of the execution of computational workflows at different levels of granularity and bundle together all their associated objects (inputs, outputs, code, etc.). The model is supported by a diverse, open community that runs regular meetings, discussing development, maintenance and adoption aspects. Workflow Run RO-Crate is already implemented by several workflow management systems, allowing interoperable comparisons between workflow runs from heterogeneous systems. We describe the model, its alignment to standards such as W3C PROV, and its implementation in six workflow systems. Finally, we illustrate the application of Workflow Run RO-Crate in two use cases of machine learning in the digital image analysis domain.}
+}
+
+@incollection{10.14279/depositonce-24000,
+  title = {The Anatomy of Scientific Workflow Management Systems},
+  booktitle = {Workflow Systems for Large-Scale Scientific Data Analysis},
+  author = {Leser, Ulf},
+  editor = {Leser, Ulf and Hilbrich, Marcus and Wilkinson, Sean R. and {Ferreira da Silva}, Rafael},
+  year = 2026,
+  publisher = {Berlin Universities Publishing},
+  doi = {10.14279/depositonce-24000},
+  url = {https://doi.org/10.14279/depositonce-24000}
 }
 
 @article{10.21105/joss.00737,
@@ -657,17 +747,6 @@
   publisher = {Springer}
 }
 
-@techreport{acaryrobert2026guixhpc,
-  title = {Guix-{{HPC}} Activity Report 2025},
-  author = {{Acary-Robert}, C{\'e}line and Arrondeau, Benjamin and Bouttier, Pierre-Antoine and Cirrottola, Luca and Court{\`e}s, Ludovic and others},
-  year = 2026,
-  number = {hal-05499984},
-  pages = {1--33},
-  institution = {Inria Bordeaux -- Sud Ouest},
-  url = {https://hal.science/hal-05499984},
-  note = {HAL archive identifier: hal-05499984v1}
-}
-
 @inproceedings{ben-nunWorkflowsAreNew2020,
   title = {Workflows Are the {{New Applications}}: {{Challenges}} in {{Performance}}, {{Portability}}, and {{Productivity}}},
   shorttitle = {Workflows Are the {{New Applications}}},
@@ -741,6 +820,14 @@
   note = {Accessed: 2026-05-06. \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/mpi-library.html}{https://www.intel.com/content/www/us/en/developer/tools/oneapi/mpi-library.html}}
 }
 
+@inproceedings{kandalla2023craympt,
+  title = {Designing the {{HPE}} Cray Message Passing Toolkit Software Stack for {{HPE}} Cray {{EX}} Supercomputers},
+  booktitle = {Proceedings of the Cray User Group ({{CUG}}) 2023},
+  author = {Kandalla, Krishna and McMahon, Kim and Ravi, Naga and White, Trey and Kaplan, Laurence and Pagel, Mark},
+  year = 2023,
+  url = {https://cug.org/proceedings/cug2023_proceedings/includes/files/pap144s2-file1.pdf}
+}
+
 @article{khanSharingInteroperableWorkflow2019,
   title = {Sharing Interoperable Workflow Provenance: {{A}} Review of Best Practices and Their Practical Application in {{CWLProv}}},
   shorttitle = {Sharing Interoperable Workflow Provenance},
@@ -790,18 +877,11 @@
   file = {/home/kinow/Zotero/storage/P697H3ZA/Leipzig et al. - 2021 - The role of metadata in reproducible computational research.pdf}
 }
 
-@article{Moreau2023,
-  title = {Containers for Computational Reproducibility},
-  author = {Moreau, David and Wiebels, Kristina and Boettiger, Carl},
-  year = 2023,
-  journal = {Nature Reviews Methods Primers},
-  volume = {3},
-  number = {1},
-  pages = {50},
-  issn = {2662-8449},
-  doi = {10.1038/s43586-023-00236-9},
-  url = {https://doi.org/10.1038/s43586-023-00236-9},
-  abstract = {The fast-paced development of computational tools has enabled tremendous scientific progress in recent years. However, this rapid surge of technological capability also comes at a cost, as it leads to an increase in the complexity of software environments and potential compatibility issues across systems. Advanced workflows in processing or analysis often require specific software versions and operating systems to run smoothly, and discrepancies across machines and researchers can impede reproducibility and efficient collaboration. As a result, scientific teams are increasingly relying on containers to implement robust, dependable research ecosystems. Originally popularized in software engineering, containers have become common in scientific projects, particularly in large collaborative efforts. In this Primer, we describe what containers are, how they work and the rationale for their use in scientific projects. We review state-of-the-art implementations in diverse contexts and fields, with examples in various scientific fields. Finally, we discuss the possibilities enabled by the widespread adoption of containerization, especially in the context of open and reproducible research, and propose recommendations to facilitate seamless implementation across platforms and domains, including within high-performance computing clusters such as those typically available at universities and research institutes.}
+@misc{lumi_container_jobs,
+  title = {Container Jobs in {{LUMI}} Documentation},
+  author = {{LUMI User Support Team}},
+  year = 2025,
+  note = {Accessed: 2026-06-06. \href{https://docs.lumi-supercomputer.eu/runjobs/scheduled-jobs/container-jobs/}{https://docs.lumi-supercomputer.eu/runjobs/scheduled-jobs/container-jobs/}}
 }
 
 @misc{mpi_test_suite_reference,
@@ -840,6 +920,22 @@
   url = {https://www.mpi-forum.org/docs/mpi-5.0/mpi50-report.pdf}
 }
 
+@misc{nextflow_mpi_like_execution,
+  title = {{{MPI-like}} Distributed Execution with Nextflow},
+  author = {{Seqera}},
+  year = {n.d.},
+  url = {https://seqera.io/blog/mpi-like-execution-with-nextflow/},
+  note = {Accessed: 2026-06-17. https://seqera.io/blog/mpi-like-execution-with-nextflow/}
+}
+
+@misc{pegasus_cwl_support,
+  title = {{{CWL}} Support},
+  author = {{Pegasus Workflow Management System}},
+  year = {n.d.},
+  url = {https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html},
+  note = {Accessed: 2026-06-17. https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html}
+}
+
 @article{piccoloSimplifyingDevelopmentPortable2021,
   title = {Simplifying the Development of Portable, Scalable, and Reproducible Workflows},
   author = {Piccolo, Stephen R and Ence, Zachary E and Anderson, Elizabeth C and Chang, Jeffrey T and Bild, Andrea H},
@@ -869,12 +965,6 @@
   urldate = {2026-05-10}
 }
 
-@misc{prolog-mpi,
-  title = {Prolog-Mpi},
-  url = {http://apps.lumii.lv/prolog-mpi/},
-  note = {Accessed: 2026-05-06. \href{http://apps.lumii.lv/prolog-mpi/}{http://apps.lumii.lv/prolog-mpi/}}
-}
-
 @manual{riken_fugaku_mpi,
   type = {Manual},
   title = {Fugaku Programming Manual: {{MPI}} Library},
@@ -885,14 +975,11 @@
   note = {Accessed: 2026-05-06. \href{https://www.r-ccs.riken.jp/fugaku/docs/manual/en/lang/mpi/j2ul-2565-01enz0.pdf}{https://www.r-ccs.riken.jp/fugaku/docs/manual/en/lang/mpi/j2ul-2565-01enz0.pdf}}
 }
 
-@misc{singh2026hpccontainersebrainsportable,
+@inproceedings{singh2026hpc,
   title = {{{HPC}} Containers for {{EBRAINS}}: {{Towards}} Portable Cross-Domain Software Environment},
-  author = {Singh, Krishna Kant and M{\"u}ller, Eric and Mathioulaki, Eleni and Klijn, Wouter and Oden, Lena},
-  year = 2026,
-  eprint = {2603.12044},
-  primaryclass = {cs.DC},
-  url = {https://arxiv.org/abs/2603.12044},
-  archiveprefix = {arXiv}
+  booktitle = {Proceedings of the Conference Name Here},
+  author = {Singh, Krishna Kant and M{\"u}ller, Eric and Mathioulaki, Eleni},
+  year = 2026
 }
 
 @misc{slurm_mpi,
@@ -901,6 +988,21 @@
   year = 2026,
   url = {https://slurm.schedmd.com/mpi_guide.html},
   note = {Accessed: 2026-05-07. \href{https://slurm.schedmd.com/mpi_guide.html}{https://slurm.schedmd.com/mpi\_guide.html}}
+}
+
+@misc{snakemake_mpi_support,
+  title = {Snakemake Documentation: {{MPI}} Support in Rules},
+  author = {{Snakemake Developers}},
+  year = {n.d.},
+  url = {https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#mpi-support},
+  note = {Accessed: 2026-06-17. https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html\#mpi-support}
+}
+
+@misc{sylabs_mpi,
+  title = {{{SingularityCE}} User Guide: {{MPI}} Applications},
+  author = {{Sylabs}},
+  url = {https://docs.sylabs.io/guides/4.4/user-guide/mpi.html},
+  note = {Accessed: 2026-06-18. \href{https://docs.sylabs.io/guides/4.4/user-guide/mpi.html}{https://docs.sylabs.io/guides/4.4/user-guide/mpi.html}}
 }
 
 @phdthesis{tronge2022orchestration,
