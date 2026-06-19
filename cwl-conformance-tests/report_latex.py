@@ -21,6 +21,12 @@ FAILED_RUNS = {
 }
 """Configurations that failed to launch the tests."""
 
+FAILED_MODES = {
+    ("streamflow", "ft3", "slurm", "v1.2"),
+    ("streamflow", "lumi", "slurm", "v1.2"),
+}
+"""Individual executions that failed."""
+
 
 @dataclass(frozen=True)
 class Result:
@@ -125,6 +131,14 @@ def print_latex(results_found: AllResultType) -> None:
     def is_failed_run(runner_key: str, version_key: str) -> bool:
         return (runner_key, version_key) in FAILED_RUNS
 
+    def is_failed_mode(
+            runner_key: str,
+            hpc: str,
+            mode: str,
+            version_key: str,
+    ) -> bool:
+        return (runner_key, hpc, mode, version_key) in FAILED_MODES
+
     for runner_key, runner_name in RUNNERS.items():
         runner_data = results_found.get(runner_key, {})
 
@@ -170,14 +184,25 @@ def print_latex(results_found: AllResultType) -> None:
                 version_has_rows = False
 
                 for mode in MODES:
+                    mode_label = rf"\texttt{{{MODE_LABELS.get(mode, mode)}}}"
+
+                    if is_failed_mode(runner_key, hpc, mode, version_key):
+                        print(
+                            f"{version_label} & {mode_label} & "
+                            r"\multicolumn{4}{l|}{\textit{conformance suite not executed (launch failure)}} "
+                            r"\\ \hline"
+                        )
+
+                        version_has_rows = True
+                        table_has_rows = True
+                        continue
+
                     rdata = runner_data.get((hpc, mode, version_key))
                     if rdata is None:
                         continue
 
                     passed, failed, skipped = cell(rdata)
                     pct = success_pct(rdata)
-
-                    mode_label = rf"\texttt{{{MODE_LABELS.get(mode, mode)}}}"
 
                     print(
                         f"{version_label} & {mode_label} & "
