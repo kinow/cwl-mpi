@@ -24,23 +24,25 @@ tests.
 
 ## Output
 
-The output of these tests is stored in the output directory for each CWL tool. Each
+The output of these tests is stored in the output directory for each CWL runner. Each
 output directory contains subfolders with the output of each run. e.g.,
 
 ```
 cwl-conformance-tests/
 ├── cwl_conformance_tests.sh
 └── hpc/
-    ├── mn5.sh
+    ├── ft3.sh
     ├── lumi.sh
-    ├── local.sh
+    ├── mn5.sh
+    output/
+    ├── cwltool/
+    ├── streamflow/
+    ├── toil/
     runs/
     ├── specs/
     │   ├── v1.0/
     │   ├── v1.1/
     │   └── v1.2/
-    ├── cwltool/
-    ├── toil/
     └── venv-*
 ```
 
