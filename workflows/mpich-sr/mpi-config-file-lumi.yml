@@ -19,8 +19,10 @@
 
 # Example specifying srun as MPI launcher instead of the default mpirun.
 runner: srun
+nproc_flag: "-n"
+extra_flags: ["--mpi=pmi2", "--partition=debug"]
 
 # To avoid --preserve-entire-environment, we pass the environment variables
 # necessary for srun to work. In LUMI, we pass the SLURM and CRAY environment
 # variables, and also LD_LIBRARY_PATH as that is needed for libfabric.
-env_pass_regex: ["SLURM_.*", "CRAY_.*", "LD_LIBRARY_PATH"]
+env_pass_regex: ["SLURM_.*", "CRAY_.*", "LD_LIBRARY_PATH", "PMI_.*", "MPICH.*"]
