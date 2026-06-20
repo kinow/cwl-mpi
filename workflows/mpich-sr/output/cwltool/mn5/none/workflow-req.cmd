@@ -1,0 +1,1 @@
+COMMAND: cwltool --no-container --debug --strict-cpu-limit --strict-memory-limit --enable-ext --mpi-config-file mpi-config-file.yml --outdir=logs/cwltool/mn5/none --tmp-outdir-prefix=logs/cwltool/mn5/none --preserve-environment=I_MPI_ROOT --preserve-environment=LD_LIBRARY_PATH sr-workflow-mpi-requirement.cwl --np 6
