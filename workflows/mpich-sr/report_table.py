@@ -256,7 +256,7 @@ def detect_singularity_mode(log_file: Path) -> str | None:
         line = lines[i]
 
         # cwltool and Toil both write logs with [job abc..., then write the command line (multiline)
-        if "[job" in line and "$" in line:
+        if ("[job mpirun" in line or "[job sr-workflow.mpirun" in line) and "$" in line:
             # extract everything after '$'
             cmd = line.split("$", 1)[1].strip()
 
