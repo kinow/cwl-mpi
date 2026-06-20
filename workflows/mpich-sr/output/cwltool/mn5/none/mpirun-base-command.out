@@ -1,0 +1,14 @@
+sr: size 6 rank 1
+sr: size 6 rank 2
+sr: process 2 finished
+sr: size 6 rank 0
+msg_sz=0, niter=1
+sr: size 6 rank 5
+sr: process 5 finished
+sr: size 6 rank 4
+sr: process 4 finished
+sr: process 0 finished
+sr: size 6 rank 3
+sr: process 3 finished
+All messages successfully received!
+sr: process 1 finished

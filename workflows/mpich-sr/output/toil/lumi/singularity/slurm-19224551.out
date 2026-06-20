@@ -1,0 +1,22 @@
+Platform=lumi Container=singularity Runner=toil-cwl-runner
+make workflow-base
+make[1]: Entering directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+→ workflow-base
+START=$(date +%s); timeout --kill-after=30s 300s toil-cwl-runner --singularity --logDebug --strict-cpu-limit --strict-memory-limit --enable-ext --bypass-file-store --disable-streaming --retryCount 0 --mpi-config-file mpi-config-file.yml --outdir=logs/toil/lumi/singularity --workDir=logs/toil/lumi/singularity --writeLogs=logs/toil/lumi/singularity --jobStore=logs/toil/lumi/singularity/fde6b794-1465-4b09-8fc2-e7b73e307539 --writeLogs=logs/toil/lumi/singularity sr-workflow-base-command.cwl --np 6 > "logs/toil/lumi/singularity/workflow-base.log" 2>&1 ; EXIT=$? ; END=$(date +%s); DURATION=$((END - START)); echo "$DURATION" > "logs/toil/lumi/singularity/workflow-base.time"; if [ $EXIT -eq 124 ]; then echo "timeout" > "logs/toil/lumi/singularity/workflow-base.exit"; elif [ $EXIT -eq 137 ]; then echo "killed" > "logs/toil/lumi/singularity/workflow-base.exit"; else echo $EXIT > "logs/toil/lumi/singularity/workflow-base.exit"; fi
+make[1]: Leaving directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+make workflow-req
+make[1]: Entering directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+→ workflow-req
+START=$(date +%s); timeout --kill-after=30s 300s toil-cwl-runner --singularity --logDebug --strict-cpu-limit --strict-memory-limit --enable-ext --bypass-file-store --disable-streaming --retryCount 0 --mpi-config-file mpi-config-file.yml --outdir=logs/toil/lumi/singularity --workDir=logs/toil/lumi/singularity --writeLogs=logs/toil/lumi/singularity --jobStore=logs/toil/lumi/singularity/e5ba04b3-cabc-41f2-8f60-9749936f64c8 --writeLogs=logs/toil/lumi/singularity sr-workflow-mpi-requirement.cwl --np 6 > "logs/toil/lumi/singularity/workflow-req.log" 2>&1 ; EXIT=$? ; END=$(date +%s); DURATION=$((END - START)); echo "$DURATION" > "logs/toil/lumi/singularity/workflow-req.time"; if [ $EXIT -eq 124 ]; then echo "timeout" > "logs/toil/lumi/singularity/workflow-req.exit"; elif [ $EXIT -eq 137 ]; then echo "killed" > "logs/toil/lumi/singularity/workflow-req.exit"; else echo $EXIT > "logs/toil/lumi/singularity/workflow-req.exit"; fi
+make[1]: Leaving directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+
+================ REPORT ================
+make[1]: Entering directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+====================================================
+ Experiment report (with timing)
+====================================================
+TEST                 RESULT     TIME(s)   
+----------------------------------------------------
+workflow-base        0          113       
+workflow-req         1          20        
+make[1]: Leaving directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'

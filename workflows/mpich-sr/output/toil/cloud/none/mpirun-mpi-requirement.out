@@ -1,0 +1,6 @@
+sr: size 2 rank 0
+msg_sz=0, niter=1
+sr: process 0 finished
+sr: size 2 rank 1
+All messages successfully received!
+sr: process 1 finished

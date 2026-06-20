@@ -32,6 +32,9 @@ depending on the system configuration.
 The CWL workflow and tool defined here are used in the master's
 thesis as the simplest test of CWL + MPI.
 
+> On LUMI, `srun --pmi=pmi2` worked with `srun` directly in the terminal, but
+> when used within a Slurm job, it failed. Further tests are required.
+
 ## Main files
 
 - [`mpicc.cwl`](mpicc.cwl)

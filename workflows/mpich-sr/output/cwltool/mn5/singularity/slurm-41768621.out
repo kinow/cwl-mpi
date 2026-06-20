@@ -1,0 +1,26 @@
+unload SINGULARITY/4.1.5 (PATH)
+load SINGULARITY/4.1.5 (PATH)
+remove impi/2021.10.0 (PATH, MANPATH, LD_LIBRARY_PATH)
+load impi/2021.10.0 (PATH, MANPATH, LD_LIBRARY_PATH)
+Platform=mn5 Container=singularity Runner=cwltool
+make workflow-base
+make[1]: Entering directory '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+→ workflow-base
+START=$(date +%s); timeout --kill-after=30s 300s cwltool --singularity --debug --strict-cpu-limit --strict-memory-limit --enable-ext --mpi-config-file mpi-config-file.yml --outdir=logs/cwltool/mn5/singularity --tmp-outdir-prefix=logs/cwltool/mn5/singularity --preserve-environment=I_MPI_ROOT --preserve-environment=LD_LIBRARY_PATH sr-workflow-base-command.cwl --np 6 > "logs/cwltool/mn5/singularity/workflow-base.log" 2>&1 ; EXIT=$? ; END=$(date +%s); DURATION=$((END - START)); echo "$DURATION" > "logs/cwltool/mn5/singularity/workflow-base.time"; if [ $EXIT -eq 124 ]; then echo "timeout" > "logs/cwltool/mn5/singularity/workflow-base.exit"; elif [ $EXIT -eq 137 ]; then echo "killed" > "logs/cwltool/mn5/singularity/workflow-base.exit"; else echo $EXIT > "logs/cwltool/mn5/singularity/workflow-base.exit"; fi
+make[1]: Leaving directory '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+make workflow-req
+make[1]: Entering directory '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+→ workflow-req
+START=$(date +%s); timeout --kill-after=30s 300s cwltool --singularity --debug --strict-cpu-limit --strict-memory-limit --enable-ext --mpi-config-file mpi-config-file.yml --outdir=logs/cwltool/mn5/singularity --tmp-outdir-prefix=logs/cwltool/mn5/singularity --preserve-environment=I_MPI_ROOT --preserve-environment=LD_LIBRARY_PATH sr-workflow-mpi-requirement.cwl --np 6 > "logs/cwltool/mn5/singularity/workflow-req.log" 2>&1 ; EXIT=$? ; END=$(date +%s); DURATION=$((END - START)); echo "$DURATION" > "logs/cwltool/mn5/singularity/workflow-req.time"; if [ $EXIT -eq 124 ]; then echo "timeout" > "logs/cwltool/mn5/singularity/workflow-req.exit"; elif [ $EXIT -eq 137 ]; then echo "killed" > "logs/cwltool/mn5/singularity/workflow-req.exit"; else echo $EXIT > "logs/cwltool/mn5/singularity/workflow-req.exit"; fi
+make[1]: Leaving directory '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+
+================ REPORT ================
+make[1]: Entering directory '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+====================================================
+ Experiment report (with timing)
+====================================================
+TEST                 RESULT     TIME(s)   
+----------------------------------------------------
+workflow-base        1          3         
+workflow-req         1          2         
+make[1]: Leaving directory '/gpfs/projects/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'

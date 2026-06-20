@@ -1,0 +1,6 @@
+sr: size 1 rank 0
+ERROR: needs to be run with at least 2 procs
+msg_sz=0, niter=1
+sr: size 1 rank 0
+ERROR: needs to be run with at least 2 procs
+msg_sz=0, niter=1

@@ -1,0 +1,9 @@
+/tmp/j2lbuazd/stg9d12d4cf-2cbc-4c54-b289-5c201e1c4ef6/sr: error while loading shared libraries: libmpi.so.12: cannot open shared object file: No such file or directory
+/tmp/j2lbuazd/stg9d12d4cf-2cbc-4c54-b289-5c201e1c4ef6/sr: error while loading shared libraries: libmpi.so.12: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-mpi-01-17795@1,0]
+   Exit code:    127
+--------------------------------------------------------------------------

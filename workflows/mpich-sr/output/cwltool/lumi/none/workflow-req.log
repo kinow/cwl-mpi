@@ -1,4 +1,4 @@
-[1;30mINFO[0m /pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/bin/cwltool 3.2.20260413085819
 [1;30mINFO[0m Resolved 'sr-workflow-mpi-requirement.cwl' to 'file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl'
 [1;30mDEBUG[0m [32mParsed job order from command line: {
     "__id": "sr-workflow-mpi-requirement.cwl",
@@ -63,7 +63,7 @@
 [1;30mDEBUG[0m [32m[job mpicc] path mappings is {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c": [
         "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
-        "/tmp/81ykfxce/stg74d2993a-f041-41ea-99af-4339481bcfac/sr.c",
+        "/tmp/4541d0k1/stg1e6c4aeb-fe3d-4851-abb8-e0fc88756822/sr.c",
         "File",
         true
     ]
@@ -88,8 +88,8 @@
             "basename": "sr.c",
             "nameroot": "sr",
             "nameext": ".c",
-            "path": "/tmp/81ykfxce/stg74d2993a-f041-41ea-99af-4339481bcfac/sr.c",
-            "dirname": "/tmp/81ykfxce/stg74d2993a-f041-41ea-99af-4339481bcfac"
+            "path": "/tmp/4541d0k1/stg1e6c4aeb-fe3d-4851-abb8-e0fc88756822/sr.c",
+            "dirname": "/tmp/4541d0k1/stg1e6c4aeb-fe3d-4851-abb8-e0fc88756822"
         }
     },
     {
@@ -102,15 +102,15 @@
     }
 ][0m
 [1;30mDEBUG[0m [32m[job mpicc] initial work dir {}[0m
-[1;30mINFO[0m [job mpicc] /tmp/8nx1qjq8$ mpicc \
-    /tmp/81ykfxce/stg74d2993a-f041-41ea-99af-4339481bcfac/sr.c \
+[1;30mINFO[0m [job mpicc] /tmp/0zbwm_er$ mpicc \
+    /tmp/4541d0k1/stg1e6c4aeb-fe3d-4851-abb8-e0fc88756822/sr.c \
     -o \
     sr
 [1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
 [1;30mINFO[0m [job mpicc] completed success
 [1;30mDEBUG[0m [32m[job mpicc] outputs {
     "executable": {
-        "location": "file:///tmp/8nx1qjq8/sr",
+        "location": "file:///tmp/0zbwm_er/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -122,7 +122,7 @@
 }[0m
 [1;30mDEBUG[0m [32m[step mpicc] produced output {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpicc/executable": {
-        "location": "file:///tmp/8nx1qjq8/sr",
+        "location": "file:///tmp/0zbwm_er/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -133,12 +133,12 @@
     }
 }[0m
 [1;30mINFO[0m [step mpicc] completed success
-[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /tmp/81ykfxce[0m
-[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /tmp/xne0sc8j[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /tmp/4541d0k1[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /tmp/h39lv6vh[0m
 [1;30mINFO[0m [workflow ] starting step mpirun
 [1;30mDEBUG[0m [32m[step mpirun] job input {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpirun/executable": {
-        "location": "file:///tmp/8nx1qjq8/sr",
+        "location": "file:///tmp/0zbwm_er/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -153,7 +153,7 @@
 }[0m
 [1;30mDEBUG[0m [32m[step mpirun] evaluated job input to {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpirun/executable": {
-        "location": "file:///tmp/8nx1qjq8/sr",
+        "location": "file:///tmp/0zbwm_er/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -170,7 +170,7 @@
 [1;30mDEBUG[0m [32m[job mpirun] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-mpi-requirement.cwl#mpich-mpirun-base-command as part of step mpirun[0m
 [1;30mDEBUG[0m [32m[job mpirun] {
     "executable": {
-        "location": "file:///tmp/8nx1qjq8/sr",
+        "location": "file:///tmp/0zbwm_er/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -184,9 +184,9 @@
     "np": 6
 }[0m
 [1;30mDEBUG[0m [32m[job mpirun] path mappings is {
-    "file:///tmp/8nx1qjq8/sr": [
-        "/tmp/8nx1qjq8/sr",
-        "/tmp/ov811ol_/stg065723f0-4a22-4231-9a7e-7c5543be2632/sr",
+    "file:///tmp/0zbwm_er/sr": [
+        "/tmp/0zbwm_er/sr",
+        "/tmp/zs8fogzn/stgf4552d5f-c818-4c3d-9055-8293dcbe22e2/sr",
         "File",
         true
     ]
@@ -198,7 +198,7 @@
             "executable"
         ],
         "datum": {
-            "location": "file:///tmp/8nx1qjq8/sr",
+            "location": "file:///tmp/0zbwm_er/sr",
             "basename": "sr",
             "nameroot": "sr",
             "nameext": "",
@@ -206,8 +206,8 @@
             "checksum": "sha1$dd86b70fef9bdf2628560d5455992724765aa3e5",
             "size": 18424,
             "http://commonwl.org/cwltool#generation": 0,
-            "path": "/tmp/ov811ol_/stg065723f0-4a22-4231-9a7e-7c5543be2632/sr",
-            "dirname": "/tmp/ov811ol_/stg065723f0-4a22-4231-9a7e-7c5543be2632"
+            "path": "/tmp/zs8fogzn/stgf4552d5f-c818-4c3d-9055-8293dcbe22e2/sr",
+            "dirname": "/tmp/zs8fogzn/stgf4552d5f-c818-4c3d-9055-8293dcbe22e2"
         }
     },
     {
@@ -226,17 +226,18 @@
     }
 ][0m
 [1;30mDEBUG[0m [32m[job mpirun] initial work dir {}[0m
-[1;30mINFO[0m [job mpirun] /tmp/ypl2ym3w$ srun \
+[1;30mINFO[0m [job mpirun] /tmp/d16b_fzx$ srun \
     -n \
     6 \
-    /tmp/ov811ol_/stg065723f0-4a22-4231-9a7e-7c5543be2632/sr \
+    --partition=debug \
+    /tmp/zs8fogzn/stgf4552d5f-c818-4c3d-9055-8293dcbe22e2/sr \
     0 \
-    1 > /tmp/ypl2ym3w/mpirun-mpi-requirement.out 2> /tmp/ypl2ym3w/mpirun-mpi-requirement.err
+    1 > /tmp/d16b_fzx/mpirun-mpi-requirement.out 2> /tmp/d16b_fzx/mpirun-mpi-requirement.err
 [1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
 [1;30mINFO[0m [job mpirun] completed success
 [1;30mDEBUG[0m [32m[job mpirun] outputs {
     "stderr_file": {
-        "location": "file:///tmp/ypl2ym3w/mpirun-mpi-requirement.err",
+        "location": "file:///tmp/d16b_fzx/mpirun-mpi-requirement.err",
         "basename": "mpirun-mpi-requirement.err",
         "nameroot": "mpirun-mpi-requirement",
         "nameext": ".err",
@@ -246,7 +247,7 @@
         "http://commonwl.org/cwltool#generation": 0
     },
     "stdout_file": {
-        "location": "file:///tmp/ypl2ym3w/mpirun-mpi-requirement.out",
+        "location": "file:///tmp/d16b_fzx/mpirun-mpi-requirement.out",
         "basename": "mpirun-mpi-requirement.out",
         "nameroot": "mpirun-mpi-requirement",
         "nameext": ".out",
@@ -258,7 +259,7 @@
 }[0m
 [1;30mDEBUG[0m [32m[step mpirun] produced output {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpirun/stdout_file": {
-        "location": "file:///tmp/ypl2ym3w/mpirun-mpi-requirement.out",
+        "location": "file:///tmp/d16b_fzx/mpirun-mpi-requirement.out",
         "basename": "mpirun-mpi-requirement.out",
         "nameroot": "mpirun-mpi-requirement",
         "nameext": ".out",
@@ -268,7 +269,7 @@
         "http://commonwl.org/cwltool#generation": 0
     },
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-mpi-requirement.cwl#sr-workflow/mpirun/stderr_file": {
-        "location": "file:///tmp/ypl2ym3w/mpirun-mpi-requirement.err",
+        "location": "file:///tmp/d16b_fzx/mpirun-mpi-requirement.err",
         "basename": "mpirun-mpi-requirement.err",
         "nameroot": "mpirun-mpi-requirement",
         "nameext": ".err",
@@ -282,7 +283,7 @@
 [1;30mINFO[0m [workflow ] completed success
 [1;30mDEBUG[0m [32m[workflow ] outputs {
     "stderr": {
-        "location": "file:///tmp/ypl2ym3w/mpirun-mpi-requirement.err",
+        "location": "file:///tmp/d16b_fzx/mpirun-mpi-requirement.err",
         "basename": "mpirun-mpi-requirement.err",
         "nameroot": "mpirun-mpi-requirement",
         "nameext": ".err",
@@ -292,7 +293,7 @@
         "http://commonwl.org/cwltool#generation": 0
     },
     "stdout": {
-        "location": "file:///tmp/ypl2ym3w/mpirun-mpi-requirement.out",
+        "location": "file:///tmp/d16b_fzx/mpirun-mpi-requirement.out",
         "basename": "mpirun-mpi-requirement.out",
         "nameroot": "mpirun-mpi-requirement",
         "nameext": ".out",
@@ -302,13 +303,13 @@
         "http://commonwl.org/cwltool#generation": 0
     }
 }[0m
-[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /tmp/ov811ol_[0m
-[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /tmp/kabytcsd[0m
-[1;30mDEBUG[0m [32mMoving /tmp/ypl2ym3w/mpirun-mpi-requirement.err to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/none/mpirun-mpi-requirement.err[0m
-[1;30mDEBUG[0m [32mMoving /tmp/ypl2ym3w/mpirun-mpi-requirement.out to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/none/mpirun-mpi-requirement.out[0m
-[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/8nx1qjq8[0m
-[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/ypl2ym3w[0m
-[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/ktg2m155[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /tmp/zs8fogzn[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /tmp/11r5mb03[0m
+[1;30mDEBUG[0m [32mMoving /tmp/d16b_fzx/mpirun-mpi-requirement.err to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/none/mpirun-mpi-requirement.err[0m
+[1;30mDEBUG[0m [32mMoving /tmp/d16b_fzx/mpirun-mpi-requirement.out to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/none/mpirun-mpi-requirement.out[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/d16b_fzx[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/0k2qc3vd[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/0zbwm_er[0m
 {
     "stderr": {
         "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/logs/cwltool/lumi/none/mpirun-mpi-requirement.err",

@@ -46,7 +46,7 @@ class Result:
     mode: str | None = None
 
 
-def read_result(base: Path, test: str) -> Result | None:
+def read_result(runner: str, base: Path, test: str) -> Result | None:
     exit_file = base / f"{test}.exit"
     time_file = base / f"{test}.time"
 
@@ -68,7 +68,7 @@ def read_result(base: Path, test: str) -> Result | None:
     log_file = base / f"{test}.log"
 
     if base.name == "singularity":
-        mode = detect_singularity_mode(log_file)
+        mode = detect_singularity_mode(runner, log_file)
 
     return Result(
         status=status,
@@ -100,7 +100,7 @@ def collect():
 
                 for f in container.glob("*.exit"):
                     test = f.stem
-                    data[runner][key][test] = read_result(container, test)
+                    data[runner][key][test] = read_result(runner, container, test)
 
     return data
 
@@ -241,7 +241,7 @@ def print_latex_tables(data):
     print(r"\end{document}")
 
 
-def detect_singularity_mode(log_file: Path) -> str | None:
+def detect_singularity_mode(runner: str, log_file: Path) -> str | None:
     if not log_file.exists():
         return None
 
@@ -256,7 +256,12 @@ def detect_singularity_mode(log_file: Path) -> str | None:
         line = lines[i]
 
         # cwltool and Toil both write logs with [job abc..., then write the command line (multiline)
-        if ("[job mpirun" in line or "[job sr-workflow.mpirun" in line) and "$" in line:
+        is_job = False
+        if "toil" in runner:
+            is_job = "[job sr-workflow.mpirun" in line
+        else:
+            is_job = "[job mpirun"
+        if is_job and "$" in line:
             # extract everything after '$'
             cmd = line.split("$", 1)[1].strip()
 

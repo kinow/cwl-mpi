@@ -1,0 +1,22 @@
+Platform=lumi Container=none Runner=toil-cwl-runner
+make workflow-base
+make[1]: Entering directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+→ workflow-base
+START=$(date +%s); timeout --kill-after=30s 300s toil-cwl-runner --no-container --logDebug --strict-cpu-limit --strict-memory-limit --enable-ext --bypass-file-store --disable-streaming --retryCount 0 --mpi-config-file mpi-config-file.yml --outdir=logs/toil/lumi/none --workDir=logs/toil/lumi/none --writeLogs=logs/toil/lumi/none --jobStore=logs/toil/lumi/none/f6b9d18f-6ee2-4ab4-a741-05e4354acbdf --writeLogs=logs/toil/lumi/none sr-workflow-base-command.cwl --np 6 > "logs/toil/lumi/none/workflow-base.log" 2>&1 ; EXIT=$? ; END=$(date +%s); DURATION=$((END - START)); echo "$DURATION" > "logs/toil/lumi/none/workflow-base.time"; if [ $EXIT -eq 124 ]; then echo "timeout" > "logs/toil/lumi/none/workflow-base.exit"; elif [ $EXIT -eq 137 ]; then echo "killed" > "logs/toil/lumi/none/workflow-base.exit"; else echo $EXIT > "logs/toil/lumi/none/workflow-base.exit"; fi
+make[1]: Leaving directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+make workflow-req
+make[1]: Entering directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+→ workflow-req
+START=$(date +%s); timeout --kill-after=30s 300s toil-cwl-runner --no-container --logDebug --strict-cpu-limit --strict-memory-limit --enable-ext --bypass-file-store --disable-streaming --retryCount 0 --mpi-config-file mpi-config-file.yml --outdir=logs/toil/lumi/none --workDir=logs/toil/lumi/none --writeLogs=logs/toil/lumi/none --jobStore=logs/toil/lumi/none/b6135dc0-d50d-4c1c-85f3-87895455a3a3 --writeLogs=logs/toil/lumi/none sr-workflow-mpi-requirement.cwl --np 6 > "logs/toil/lumi/none/workflow-req.log" 2>&1 ; EXIT=$? ; END=$(date +%s); DURATION=$((END - START)); echo "$DURATION" > "logs/toil/lumi/none/workflow-req.time"; if [ $EXIT -eq 124 ]; then echo "timeout" > "logs/toil/lumi/none/workflow-req.exit"; elif [ $EXIT -eq 137 ]; then echo "killed" > "logs/toil/lumi/none/workflow-req.exit"; else echo $EXIT > "logs/toil/lumi/none/workflow-req.exit"; fi
+make[1]: Leaving directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+
+================ REPORT ================
+make[1]: Entering directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'
+====================================================
+ Experiment report (with timing)
+====================================================
+TEST                 RESULT     TIME(s)   
+----------------------------------------------------
+workflow-base        1          124       
+workflow-req         0          14        
+make[1]: Leaving directory '/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr'

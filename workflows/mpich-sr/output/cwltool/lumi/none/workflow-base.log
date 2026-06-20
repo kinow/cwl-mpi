@@ -1,4 +1,4 @@
-[1;30mINFO[0m /pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/bin/cwltool 3.2.20260413085819
 [1;30mINFO[0m Resolved 'sr-workflow-base-command.cwl' to 'file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl'
 [1;30mDEBUG[0m [32mParsed job order from command line: {
     "__id": "sr-workflow-base-command.cwl",
@@ -25,7 +25,6 @@
         "nameext": ".c"
     }
 }[0m
-[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun not ready[0m
 [1;30mINFO[0m [workflow ] starting step mpicc
 [1;30mDEBUG[0m [32m[step mpicc] job input {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/source": {
@@ -63,7 +62,7 @@
 [1;30mDEBUG[0m [32m[job mpicc] path mappings is {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c": [
         "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr.c",
-        "/tmp/5a6pwah7/stg52e75c11-c9b3-43e8-8b2c-3a65cc82adc2/sr.c",
+        "/tmp/_jvn4g1m/stg564f4077-30b4-4a80-8127-6325f4f38c74/sr.c",
         "File",
         true
     ]
@@ -88,8 +87,8 @@
             "basename": "sr.c",
             "nameroot": "sr",
             "nameext": ".c",
-            "path": "/tmp/5a6pwah7/stg52e75c11-c9b3-43e8-8b2c-3a65cc82adc2/sr.c",
-            "dirname": "/tmp/5a6pwah7/stg52e75c11-c9b3-43e8-8b2c-3a65cc82adc2"
+            "path": "/tmp/_jvn4g1m/stg564f4077-30b4-4a80-8127-6325f4f38c74/sr.c",
+            "dirname": "/tmp/_jvn4g1m/stg564f4077-30b4-4a80-8127-6325f4f38c74"
         }
     },
     {
@@ -102,15 +101,15 @@
     }
 ][0m
 [1;30mDEBUG[0m [32m[job mpicc] initial work dir {}[0m
-[1;30mINFO[0m [job mpicc] /tmp/v92cspes$ mpicc \
-    /tmp/5a6pwah7/stg52e75c11-c9b3-43e8-8b2c-3a65cc82adc2/sr.c \
+[1;30mINFO[0m [job mpicc] /tmp/30hz1nj8$ mpicc \
+    /tmp/_jvn4g1m/stg564f4077-30b4-4a80-8127-6325f4f38c74/sr.c \
     -o \
     sr
-[1;30mINFO[0m [job mpicc] Max memory used: 106MiB
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
 [1;30mINFO[0m [job mpicc] completed success
 [1;30mDEBUG[0m [32m[job mpicc] outputs {
     "executable": {
-        "location": "file:///tmp/v92cspes/sr",
+        "location": "file:///tmp/30hz1nj8/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -122,7 +121,7 @@
 }[0m
 [1;30mDEBUG[0m [32m[step mpicc] produced output {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpicc/executable": {
-        "location": "file:///tmp/v92cspes/sr",
+        "location": "file:///tmp/30hz1nj8/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -133,12 +132,12 @@
     }
 }[0m
 [1;30mINFO[0m [step mpicc] completed success
-[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /tmp/5a6pwah7[0m
-[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /tmp/1n5cuuiw[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing input staging directory /tmp/_jvn4g1m[0m
+[1;30mDEBUG[0m [32m[job mpicc] Removing temporary directory /tmp/wfjtp4xb[0m
 [1;30mINFO[0m [workflow ] starting step mpirun
 [1;30mDEBUG[0m [32m[step mpirun] job input {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
-        "location": "file:///tmp/v92cspes/sr",
+        "location": "file:///tmp/30hz1nj8/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -153,7 +152,7 @@
 }[0m
 [1;30mDEBUG[0m [32m[step mpirun] evaluated job input to {
     "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-workflow-base-command.cwl#sr-workflow/mpirun/executable": {
-        "location": "file:///tmp/v92cspes/sr",
+        "location": "file:///tmp/30hz1nj8/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -170,7 +169,7 @@
 [1;30mDEBUG[0m [32m[job mpirun] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/cwl-mpi/workflows/mpich-sr/sr-base-command.cwl#mpirun-base-command as part of step mpirun[0m
 [1;30mDEBUG[0m [32m[job mpirun] {
     "executable": {
-        "location": "file:///tmp/v92cspes/sr",
+        "location": "file:///tmp/30hz1nj8/sr",
         "basename": "sr",
         "nameroot": "sr",
         "nameext": "",
@@ -184,9 +183,9 @@
     "np": 6
 }[0m
 [1;30mDEBUG[0m [32m[job mpirun] path mappings is {
-    "file:///tmp/v92cspes/sr": [
-        "/tmp/v92cspes/sr",
-        "/tmp/ublnj_bb/stgfc0ffe52-dc46-4c2e-96c2-918009a815c9/sr",
+    "file:///tmp/30hz1nj8/sr": [
+        "/tmp/30hz1nj8/sr",
+        "/tmp/od8y4dtb/stgaec2f38f-eab8-4337-b6cf-1a0a12c7e451/sr",
         "File",
         true
     ]
@@ -213,7 +212,7 @@
             "executable"
         ],
         "datum": {
-            "location": "file:///tmp/v92cspes/sr",
+            "location": "file:///tmp/30hz1nj8/sr",
             "basename": "sr",
             "nameroot": "sr",
             "nameext": "",
@@ -221,8 +220,8 @@
             "checksum": "sha1$dd86b70fef9bdf2628560d5455992724765aa3e5",
             "size": 18424,
             "http://commonwl.org/cwltool#generation": 0,
-            "path": "/tmp/ublnj_bb/stgfc0ffe52-dc46-4c2e-96c2-918009a815c9/sr",
-            "dirname": "/tmp/ublnj_bb/stgfc0ffe52-dc46-4c2e-96c2-918009a815c9"
+            "path": "/tmp/od8y4dtb/stgaec2f38f-eab8-4337-b6cf-1a0a12c7e451/sr",
+            "dirname": "/tmp/od8y4dtb/stgaec2f38f-eab8-4337-b6cf-1a0a12c7e451"
         }
     },
     {
@@ -241,27 +240,27 @@
     }
 ][0m
 [1;30mDEBUG[0m [32m[job mpirun] initial work dir {}[0m
-[1;30mINFO[0m [job mpirun] /tmp/8t6e4brp$ mpirun \
+[1;30mINFO[0m [job mpirun] /tmp/fnhvijxa$ mpirun \
     -np \
     6 \
-    /tmp/ublnj_bb/stgfc0ffe52-dc46-4c2e-96c2-918009a815c9/sr \
+    /tmp/od8y4dtb/stgaec2f38f-eab8-4337-b6cf-1a0a12c7e451/sr \
     0 \
-    1 > /tmp/8t6e4brp/mpirun-base-command.out 2> /tmp/8t6e4brp/mpirun-base-command.err
+    1 > /tmp/fnhvijxa/mpirun-base-command.out 2> /tmp/fnhvijxa/mpirun-base-command.err
 [1;30mERROR[0m [31m'mpirun' not found: [Errno 2] No such file or directory: 'mpirun'[0m
 Traceback (most recent call last):
-  File "/pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 324, in _execute
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 324, in _execute
     rcode = _job_popen(
         commands,
     ...<11 lines>...
         default_stderr=runtimeContext.default_stderr,
     )
-  File "/pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 963, in _job_popen
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 963, in _job_popen
     sproc = subprocess.Popen(
         commands,
     ...<7 lines>...
         universal_newlines=True,
     )
-  File "/pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/lib/python3.13/subprocess.py", line 1039, in __init__
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/subprocess.py", line 1039, in __init__
     self._execute_child(args, executable, preexec_fn, close_fds,
     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                         pass_fds, cwd, env,
@@ -271,7 +270,7 @@ Traceback (most recent call last):
                         ^^^^^^^^^^^^^^^^^^^^^^
                         start_new_session, process_group)
                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/pfs/lustrep4/users/[REDACTED]/.local/share/mamba/envs/cwltool/lib/python3.13/subprocess.py", line 1991, in _execute_child
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/subprocess.py", line 1991, in _execute_child
     raise child_exception_type(errno_num, err_msg, err_filename)
 FileNotFoundError: [Errno 2] No such file or directory: 'mpirun'
 [1;30mWARNING[0m [33m[job mpirun] completed permanentFail[0m
@@ -285,11 +284,11 @@ FileNotFoundError: [Errno 2] No such file or directory: 'mpirun'
     "stderr": null,
     "stdout": null
 }[0m
-[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /tmp/ublnj_bb[0m
-[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /tmp/qr0mfmm0[0m
-[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/v92cspes[0m
-[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/8t6e4brp[0m
-[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/3x3ogkio[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing input staging directory /tmp/od8y4dtb[0m
+[1;30mDEBUG[0m [32m[job mpirun] Removing temporary directory /tmp/jbv9wez6[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/30hz1nj8[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/fnhvijxa[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/__ds62l7[0m
 {
     "stderr": null,
     "stdout": null

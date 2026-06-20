@@ -30,7 +30,6 @@
 
 # Executables
 *.exe
-*.out
 *.app
 *.i*86
 *.x86_64
@@ -54,7 +53,6 @@ dkms.conf
 *.dwo
 
 # Slurm files
-*.err
 **/sr
 
 # Python venv
@@ -63,6 +61,8 @@ venv/
 # Singularity/Apptainer containers
 *.sif
 *.tar
+
+examples/openmpi-hello_nodename/singularity/a.out
 
 cwl-conformance-tests/runs/
 cwl-conformance-tests/*.aux

@@ -1,0 +1,10 @@
+Abort(943352582) on node 0 (rank 0 in comm 0): Fatal error in internal_Send: Invalid rank, error stack:
+internal_Send(124): MPI_Send(buf=(nil), count=0, MPI_INT, 1, 0, MPI_COMM_WORLD) failed
+internal_Send(78).: Invalid rank has value 1 but must be nonnegative and less than 1
+Abort(943352582) on node 0 (rank 0 in comm 0): Fatal error in internal_Send: Invalid rank, error stack:
+internal_Send(124): MPI_Send(buf=(nil), count=0, MPI_INT, 1, 0, MPI_COMM_WORLD) failed
+internal_Send(78).: Invalid rank has value 1 but must be nonnegative and less than 1
+srun: error: nid002500: tasks 2-3: Exited with exit code 6
+srun: Terminating StepId=19388881.0
+slurmstepd: error: *** STEP 19388881.0 ON nid002500 CANCELLED AT 2026-06-20T23:23:42 ***
+srun: error: nid002500: tasks 0-1,4-5: Exited with exit code 143
