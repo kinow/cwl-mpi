@@ -1,0 +1,1 @@
+COMMAND: cwltool   --no-container   --enable-ext   --mpi-config-file mpi-config-file-lumi.yml   --debug   --strict-memory-limit   --strict-cpu-limit   fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna   arguments_etna_lumi.yml

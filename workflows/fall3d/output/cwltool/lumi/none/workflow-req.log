@@ -1,0 +1,3848 @@
+[1;30mINFO[0m /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna' to 'file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna'
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "volcano": "Etna",
+    "scenario": "high",
+    "meteo_database": "ERA5ML",
+    "initial_condition": "RESTART",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "end_date_time": "2018-12-28T00:00:00Z",
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))",
+    "dx": 0.05,
+    "dy": 0.05,
+    "nlevels": 24,
+    "vent_lon": 15.0,
+    "vent_lat": 37.75,
+    "vent_height": 3300,
+    "nx_mpi": 6,
+    "ny_mpi": 4,
+    "nz_mpi": 1,
+    "keys": [
+        "tephra_col_mass",
+        "SO2_cloud_top"
+    ],
+    "times": 6,
+    "template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x"
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_cogs not ready[0m
+[1;30mINFO[0m [workflow ] starting step set_scenario
+[1;30mDEBUG[0m [32m[step set_scenario] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/end_time": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/start_time": null
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/end_time": 72,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/start_time": 0
+}[0m
+[1;30mINFO[0m [step set_scenario] start
+[1;30mDEBUG[0m [32m[job set_scenario] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#phases-etna as part of step set_scenario[0m
+[1;30mDEBUG[0m [32m[job set_scenario] {
+    "end_time": 72,
+    "scenario": "high",
+    "start_time": 0
+}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "echo"
+    },
+    {
+        "position": [
+            0,
+            0
+        ],
+        "datum": "Creating phases file"
+    },
+    {
+        "prefix": "--path",
+        "position": [
+            0,
+            "scenario"
+        ],
+        "datum": "high"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job set_scenario] initial work dir {
+    "_:52ba79ea-28da-44b7-9e5c-f9871052bc83": [
+        "0 72 5000\n",
+        "/tmp/1uxspbbd/phases.dat",
+        "CreateFile",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job set_scenario] /tmp/1uxspbbd$ echo \
+    'Creating phases file' \
+    --path \
+    high
+Creating phases file --path high
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] outputs {
+    "phases": {
+        "location": "file:///tmp/1uxspbbd/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/set_scenario/phases": {
+        "location": "file:///tmp/1uxspbbd/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] Removing input staging directory /tmp/8189v_9g[0m
+[1;30mDEBUG[0m [32m[job set_scenario] Removing temporary directory /tmp/yhnfwek3[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d not ready[0m
+[1;30mINFO[0m [workflow ] starting step configure
+[1;30mDEBUG[0m [32m[step configure] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/date": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/dx": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/dy": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/end_time": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/nlevels": 24,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/start_time": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[step configure] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/date": "20181225",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/dx": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/dy": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/end_time": 72,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/nlevels": 24,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/start_time": 0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mINFO[0m [step configure] start
+[1;30mDEBUG[0m [32m[job configure] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#config-etna as part of step configure[0m
+[1;30mDEBUG[0m [32m[job configure] {
+    "dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "dx": 0.05,
+    "dy": 0.05,
+    "end_date_time": "2018-12-28T00:00:00Z",
+    "initial_condition": "RESTART",
+    "levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "meteo_database": "ERA5ML",
+    "nlevels": 24,
+    "restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "vent_height": 3300,
+    "vent_lat": 37.75,
+    "vent_lon": 15.0,
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[job configure] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job configure] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "fill_template.py"
+    },
+    {
+        "prefix": "--METEO_DICTIONARY",
+        "position": [
+            0,
+            "dictionary"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl"
+    },
+    {
+        "prefix": "--DX",
+        "position": [
+            0,
+            "dx"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--DY",
+        "position": [
+            0,
+            "dy"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--end_date_time",
+        "position": [
+            0,
+            "end_date_time"
+        ],
+        "datum": "2018-12-28T00:00:00Z"
+    },
+    {
+        "prefix": "--INITIAL",
+        "position": [
+            0,
+            "initial_condition"
+        ],
+        "datum": "RESTART"
+    },
+    {
+        "prefix": "--LEVELS_FILE",
+        "position": [
+            0,
+            "levels"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels"
+    },
+    {
+        "prefix": "--METEO_FILE",
+        "position": [
+            0,
+            "meteo"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc"
+    },
+    {
+        "prefix": "--METEO_DATABASE",
+        "position": [
+            0,
+            "meteo_database"
+        ],
+        "datum": "ERA5ML"
+    },
+    {
+        "prefix": "--NZ",
+        "position": [
+            0,
+            "nlevels"
+        ],
+        "datum": 24
+    },
+    {
+        "prefix": "--RESTART_FILE",
+        "position": [
+            0,
+            "restart"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc"
+    },
+    {
+        "prefix": "--start_date_time",
+        "position": [
+            0,
+            "start_date_time"
+        ],
+        "datum": "2018-12-25T00:00:00Z"
+    },
+    {
+        "prefix": "--template",
+        "position": [
+            0,
+            "template"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp"
+    },
+    {
+        "prefix": "--VENT_HEIGHT",
+        "position": [
+            0,
+            "vent_height"
+        ],
+        "datum": 3300
+    },
+    {
+        "prefix": "--VENT_LAT",
+        "position": [
+            0,
+            "vent_lat"
+        ],
+        "datum": 37.75
+    },
+    {
+        "prefix": "--VENT_LON",
+        "position": [
+            0,
+            "vent_lon"
+        ],
+        "datum": 15.0
+    },
+    {
+        "prefix": "--WKT",
+        "position": [
+            0,
+            "wkt"
+        ],
+        "datum": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job configure] initial work dir {}[0m
+[1;30mINFO[0m [job configure] /tmp/fvol80ik$ fill_template.py \
+    --METEO_DICTIONARY \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl \
+    --DX \
+    0.05 \
+    --DY \
+    0.05 \
+    --end_date_time \
+    2018-12-28T00:00:00Z \
+    --INITIAL \
+    RESTART \
+    --LEVELS_FILE \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels \
+    --METEO_FILE \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc \
+    --METEO_DATABASE \
+    ERA5ML \
+    --NZ \
+    24 \
+    --RESTART_FILE \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc \
+    --start_date_time \
+    2018-12-25T00:00:00Z \
+    --template \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp \
+    --VENT_HEIGHT \
+    3300 \
+    --VENT_LAT \
+    37.75 \
+    --VENT_LON \
+    15.0 \
+    --WKT \
+    'POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))'
+INFO:FILL_TEMPLATE:Filling in template...
+INFO:FILL_TEMPLATE:Done!
+Volcano coordinates are inside the domain box.
+[1;30mINFO[0m [job configure] Max memory used: 23MiB
+[1;30mINFO[0m [job configure] completed success
+[1;30mDEBUG[0m [32m[job configure] outputs {
+    "inp": {
+        "location": "file:///tmp/fvol80ik/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step configure] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/configure/inp": {
+        "location": "file:///tmp/fvol80ik/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step configure] completed success
+[1;30mDEBUG[0m [32m[job configure] Removing input staging directory /tmp/quxj_656[0m
+[1;30mDEBUG[0m [32m[job configure] Removing temporary directory /tmp/th48a1wr[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_cogs not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog not ready[0m
+[1;30mINFO[0m [workflow ] starting step run_fall3d
+[1;30mDEBUG[0m [32m[step run_fall3d] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/fvol80ik/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/nx": 6,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/ny": 4,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/1uxspbbd/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/fvol80ik/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/nx": 6,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/ny": 4,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/1uxspbbd/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mINFO[0m [step run_fall3d] start
+[1;30mDEBUG[0m [32m[job run_fall3d] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#runner-etna as part of step run_fall3d[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] {
+    "exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x",
+    "inp": {
+        "location": "file:///tmp/fvol80ik/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "nx": 6,
+    "ny": 4,
+    "nz": 1,
+    "phases": {
+        "location": "file:///tmp/1uxspbbd/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "task": "all"
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] path mappings is {
+    "file:///tmp/fvol80ik/final.inp": [
+        "/tmp/fvol80ik/final.inp",
+        "/tmp/mhsdit2f/final.inp",
+        "File",
+        false
+    ],
+    "file:///tmp/1uxspbbd/phases.dat": [
+        "/tmp/1uxspbbd/phases.dat",
+        "/tmp/mhsdit2f/phases.dat",
+        "File",
+        false
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] command line bindings is [
+    {
+        "position": [
+            0,
+            "exe"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x"
+    },
+    {
+        "position": [
+            1,
+            "task"
+        ],
+        "datum": "all"
+    },
+    {
+        "position": [
+            2,
+            "inp"
+        ],
+        "datum": {
+            "location": "file:///tmp/fvol80ik/final.inp",
+            "basename": "final.inp",
+            "nameroot": "final",
+            "nameext": ".inp",
+            "class": "File",
+            "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+            "size": 29486,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/mhsdit2f/final.inp",
+            "dirname": "/tmp/mhsdit2f"
+        }
+    },
+    {
+        "position": [
+            3,
+            "nx"
+        ],
+        "datum": 6
+    },
+    {
+        "position": [
+            4,
+            "ny"
+        ],
+        "datum": 4
+    },
+    {
+        "position": [
+            5,
+            "nz"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mDEBUG[0m [32m[job run_fall3d] initial work dir {
+    "file:///tmp/fvol80ik/final.inp": [
+        "/tmp/fvol80ik/final.inp",
+        "/tmp/mhsdit2f/final.inp",
+        "File",
+        true
+    ],
+    "file:///tmp/1uxspbbd/phases.dat": [
+        "/tmp/1uxspbbd/phases.dat",
+        "/tmp/mhsdit2f/phases.dat",
+        "File",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job run_fall3d] /tmp/mhsdit2f$ srun \
+    -n \
+    24 \
+    /project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x \
+    all \
+    /tmp/mhsdit2f/final.inp \
+    6 \
+    4 \
+    1 > /tmp/mhsdit2f/fall3d.out 2> /tmp/mhsdit2f/fall3d.err
+[1;30mINFO[0m [job run_fall3d] Max memory used: 14MiB
+[1;30mINFO[0m [job run_fall3d] completed success
+[1;30mDEBUG[0m [32m[job run_fall3d] outputs {
+    "log": {
+        "location": "file:///tmp/mhsdit2f/final.Fall3d.log",
+        "basename": "final.Fall3d.log",
+        "nameroot": "final.Fall3d",
+        "nameext": ".log",
+        "class": "File",
+        "checksum": "sha1$3fc0caae9720a2557516e5b4b2632ad99c2c61be",
+        "size": 628031,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "res": {
+        "location": "file:///tmp/mhsdit2f/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$714db7df56c358f83ed6bb0cda3337a04b3be25d",
+        "size": 119932720,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "rst": {
+        "location": "file:///tmp/mhsdit2f/final.2018-12-28-00-00.rst.nc",
+        "basename": "final.2018-12-28-00-00.rst.nc",
+        "nameroot": "final.2018-12-28-00-00.rst",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$3479731f921e4741080a733add047500e5a908f5",
+        "size": 23733881,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stderr": {
+        "location": "file:///tmp/mhsdit2f/fall3d.err",
+        "basename": "fall3d.err",
+        "nameroot": "fall3d",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$a661d2e212584a53713438bd09a7fd4bf17d675a",
+        "size": 1339,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout": {
+        "location": "file:///tmp/mhsdit2f/fall3d.out",
+        "basename": "fall3d.out",
+        "nameroot": "fall3d",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$10e104cc697675efe46ec47dc4092c6a4c499378",
+        "size": 1487,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/log": {
+        "location": "file:///tmp/mhsdit2f/final.Fall3d.log",
+        "basename": "final.Fall3d.log",
+        "nameroot": "final.Fall3d",
+        "nameext": ".log",
+        "class": "File",
+        "checksum": "sha1$3fc0caae9720a2557516e5b4b2632ad99c2c61be",
+        "size": 628031,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/res": {
+        "location": "file:///tmp/mhsdit2f/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$714db7df56c358f83ed6bb0cda3337a04b3be25d",
+        "size": 119932720,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/run_fall3d/rst": {
+        "location": "file:///tmp/mhsdit2f/final.2018-12-28-00-00.rst.nc",
+        "basename": "final.2018-12-28-00-00.rst.nc",
+        "nameroot": "final.2018-12-28-00-00.rst",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$3479731f921e4741080a733add047500e5a908f5",
+        "size": 23733881,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step run_fall3d] completed success
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing input staging directory /tmp/_23dg6nd[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing temporary directory /tmp/9kzelmzf[0m
+[1;30mINFO[0m [workflow ] starting step create_cogs
+[1;30mINFO[0m [step create_cogs] start
+[1;30mDEBUG[0m [32m[job create_cogs] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#figures-etna as part of step create_cogs[0m
+[1;30mDEBUG[0m [32m[job create_cogs] {
+    "key": "tephra_col_mass",
+    "netcdf": {
+        "location": "file:///tmp/mhsdit2f/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$714db7df56c358f83ed6bb0cda3337a04b3be25d",
+        "size": 119932720,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "times": 6
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs] path mappings is {
+    "file:///tmp/mhsdit2f/final.res.nc": [
+        "/tmp/mhsdit2f/final.res.nc",
+        "/tmp/rjmkj10i/stg04ecdd90-1e16-405a-a029-e1a0cca2fe72/final.res.nc",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "createCOG.py"
+    },
+    {
+        "prefix": "--key",
+        "position": [
+            0,
+            "key"
+        ],
+        "datum": "tephra_col_mass"
+    },
+    {
+        "prefix": "--fname",
+        "position": [
+            0,
+            "netcdf"
+        ],
+        "datum": {
+            "location": "file:///tmp/mhsdit2f/final.res.nc",
+            "basename": "final.res.nc",
+            "nameroot": "final.res",
+            "nameext": ".nc",
+            "class": "File",
+            "checksum": "sha1$714db7df56c358f83ed6bb0cda3337a04b3be25d",
+            "size": 119932720,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/rjmkj10i/stg04ecdd90-1e16-405a-a029-e1a0cca2fe72/final.res.nc",
+            "dirname": "/tmp/rjmkj10i/stg04ecdd90-1e16-405a-a029-e1a0cca2fe72"
+        }
+    },
+    {
+        "prefix": "--times",
+        "position": [
+            0,
+            "times"
+        ],
+        "datum": 6
+    }
+][0m
+[1;30mDEBUG[0m [32m[job create_cogs] initial work dir {}[0m
+[1;30mINFO[0m [job create_cogs] /tmp/j19i_fof$ createCOG.py \
+    --key \
+    tephra_col_mass \
+    --fname \
+    /tmp/rjmkj10i/stg04ecdd90-1e16-405a-a029-e1a0cca2fe72/final.res.nc \
+    --times \
+    6
+INFO:NETCDF2COG:Creating COG GeoTIFF file...
+INFO:NETCDF2COG:Saving tephra_col_mass-t000.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t006.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t012.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t018.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t024.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t030.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t036.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t042.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t048.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t054.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t060.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t066.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t072.tif
+INFO:NETCDF2COG:Done!
+[1;30mINFO[0m [job create_cogs] Max memory used: 133MiB
+[1;30mINFO[0m [job create_cogs] completed success
+[1;30mDEBUG[0m [32m[job create_cogs] outputs {
+    "tif": [
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+            "size": 41521,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+            "size": 70199,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+            "size": 82960,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+            "size": 87028,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+            "size": 92827,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+            "basename": "tephra_col_mass-t030.tif",
+            "nameroot": "tephra_col_mass-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+            "size": 72624,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+            "basename": "tephra_col_mass-t036.tif",
+            "nameroot": "tephra_col_mass-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+            "size": 68490,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+            "basename": "tephra_col_mass-t042.tif",
+            "nameroot": "tephra_col_mass-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+            "size": 60326,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+            "basename": "tephra_col_mass-t048.tif",
+            "nameroot": "tephra_col_mass-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+            "size": 59828,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+            "basename": "tephra_col_mass-t054.tif",
+            "nameroot": "tephra_col_mass-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+            "size": 67776,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+            "basename": "tephra_col_mass-t060.tif",
+            "nameroot": "tephra_col_mass-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+            "size": 68547,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+            "basename": "tephra_col_mass-t066.tif",
+            "nameroot": "tephra_col_mass-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+            "size": 68688,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+            "basename": "tephra_col_mass-t072.tif",
+            "nameroot": "tephra_col_mass-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+            "size": 76827,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs] Removing input staging directory /tmp/rjmkj10i[0m
+[1;30mDEBUG[0m [32m[job create_cogs] Removing temporary directory /tmp/3eqf1mdu[0m
+[1;30mINFO[0m [step create_cogs] start
+[1;30mDEBUG[0m [32m[job create_cogs_2] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#figures-etna as part of step create_cogs[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] {
+    "key": "SO2_cloud_top",
+    "netcdf": {
+        "location": "file:///tmp/mhsdit2f/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$714db7df56c358f83ed6bb0cda3337a04b3be25d",
+        "size": 119932720,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "times": 6
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] path mappings is {
+    "file:///tmp/mhsdit2f/final.res.nc": [
+        "/tmp/mhsdit2f/final.res.nc",
+        "/tmp/9qdcis_5/stg36897c9f-9c87-48e8-a7cc-9fd7948c54cc/final.res.nc",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "createCOG.py"
+    },
+    {
+        "prefix": "--key",
+        "position": [
+            0,
+            "key"
+        ],
+        "datum": "SO2_cloud_top"
+    },
+    {
+        "prefix": "--fname",
+        "position": [
+            0,
+            "netcdf"
+        ],
+        "datum": {
+            "location": "file:///tmp/mhsdit2f/final.res.nc",
+            "basename": "final.res.nc",
+            "nameroot": "final.res",
+            "nameext": ".nc",
+            "class": "File",
+            "checksum": "sha1$714db7df56c358f83ed6bb0cda3337a04b3be25d",
+            "size": 119932720,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/9qdcis_5/stg36897c9f-9c87-48e8-a7cc-9fd7948c54cc/final.res.nc",
+            "dirname": "/tmp/9qdcis_5/stg36897c9f-9c87-48e8-a7cc-9fd7948c54cc"
+        }
+    },
+    {
+        "prefix": "--times",
+        "position": [
+            0,
+            "times"
+        ],
+        "datum": 6
+    }
+][0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] initial work dir {}[0m
+[1;30mINFO[0m [job create_cogs_2] /tmp/d8lili50$ createCOG.py \
+    --key \
+    SO2_cloud_top \
+    --fname \
+    /tmp/9qdcis_5/stg36897c9f-9c87-48e8-a7cc-9fd7948c54cc/final.res.nc \
+    --times \
+    6
+INFO:NETCDF2COG:Creating COG GeoTIFF file...
+INFO:NETCDF2COG:Saving SO2_cloud_top-t000.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t006.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t012.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t018.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t024.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t030.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t036.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t042.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t048.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t054.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t060.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t066.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t072.tif
+INFO:NETCDF2COG:Done!
+[1;30mINFO[0m [job create_cogs_2] Max memory used: 144MiB
+[1;30mINFO[0m [job create_cogs_2] completed success
+[1;30mDEBUG[0m [32m[job create_cogs_2] outputs {
+    "tif": [
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+            "size": 18725,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+            "size": 13113,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+            "size": 10318,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+            "size": 10833,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+            "size": 10600,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+            "basename": "SO2_cloud_top-t030.tif",
+            "nameroot": "SO2_cloud_top-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+            "size": 10787,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+            "basename": "SO2_cloud_top-t036.tif",
+            "nameroot": "SO2_cloud_top-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+            "size": 10751,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+            "basename": "SO2_cloud_top-t042.tif",
+            "nameroot": "SO2_cloud_top-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+            "size": 10714,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+            "basename": "SO2_cloud_top-t048.tif",
+            "nameroot": "SO2_cloud_top-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+            "size": 10266,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+            "basename": "SO2_cloud_top-t054.tif",
+            "nameroot": "SO2_cloud_top-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+            "size": 10533,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+            "basename": "SO2_cloud_top-t060.tif",
+            "nameroot": "SO2_cloud_top-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+            "size": 11761,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+            "basename": "SO2_cloud_top-t066.tif",
+            "nameroot": "SO2_cloud_top-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+            "size": 11663,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+            "basename": "SO2_cloud_top-t072.tif",
+            "nameroot": "SO2_cloud_top-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+            "size": 11164,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[step create_cogs] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_cogs/tif": [
+        [
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+                "basename": "tephra_col_mass-t000.tif",
+                "nameroot": "tephra_col_mass-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+                "size": 41521,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+                "basename": "tephra_col_mass-t006.tif",
+                "nameroot": "tephra_col_mass-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+                "size": 70199,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+                "basename": "tephra_col_mass-t012.tif",
+                "nameroot": "tephra_col_mass-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+                "size": 82960,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+                "basename": "tephra_col_mass-t018.tif",
+                "nameroot": "tephra_col_mass-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+                "size": 87028,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+                "basename": "tephra_col_mass-t024.tif",
+                "nameroot": "tephra_col_mass-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+                "size": 92827,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+                "basename": "tephra_col_mass-t030.tif",
+                "nameroot": "tephra_col_mass-t030",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+                "size": 72624,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+                "basename": "tephra_col_mass-t036.tif",
+                "nameroot": "tephra_col_mass-t036",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+                "size": 68490,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+                "basename": "tephra_col_mass-t042.tif",
+                "nameroot": "tephra_col_mass-t042",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+                "size": 60326,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+                "basename": "tephra_col_mass-t048.tif",
+                "nameroot": "tephra_col_mass-t048",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+                "size": 59828,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+                "basename": "tephra_col_mass-t054.tif",
+                "nameroot": "tephra_col_mass-t054",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+                "size": 67776,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+                "basename": "tephra_col_mass-t060.tif",
+                "nameroot": "tephra_col_mass-t060",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+                "size": 68547,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+                "basename": "tephra_col_mass-t066.tif",
+                "nameroot": "tephra_col_mass-t066",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+                "size": 68688,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+                "basename": "tephra_col_mass-t072.tif",
+                "nameroot": "tephra_col_mass-t072",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+                "size": 76827,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ],
+        [
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+                "basename": "SO2_cloud_top-t000.tif",
+                "nameroot": "SO2_cloud_top-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+                "size": 18725,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+                "basename": "SO2_cloud_top-t006.tif",
+                "nameroot": "SO2_cloud_top-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+                "size": 13113,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+                "basename": "SO2_cloud_top-t012.tif",
+                "nameroot": "SO2_cloud_top-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+                "size": 10318,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+                "basename": "SO2_cloud_top-t018.tif",
+                "nameroot": "SO2_cloud_top-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+                "size": 10833,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+                "basename": "SO2_cloud_top-t024.tif",
+                "nameroot": "SO2_cloud_top-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+                "size": 10600,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+                "basename": "SO2_cloud_top-t030.tif",
+                "nameroot": "SO2_cloud_top-t030",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+                "size": 10787,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+                "basename": "SO2_cloud_top-t036.tif",
+                "nameroot": "SO2_cloud_top-t036",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+                "size": 10751,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+                "basename": "SO2_cloud_top-t042.tif",
+                "nameroot": "SO2_cloud_top-t042",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+                "size": 10714,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+                "basename": "SO2_cloud_top-t048.tif",
+                "nameroot": "SO2_cloud_top-t048",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+                "size": 10266,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+                "basename": "SO2_cloud_top-t054.tif",
+                "nameroot": "SO2_cloud_top-t054",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+                "size": 10533,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+                "basename": "SO2_cloud_top-t060.tif",
+                "nameroot": "SO2_cloud_top-t060",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+                "size": 11761,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+                "basename": "SO2_cloud_top-t066.tif",
+                "nameroot": "SO2_cloud_top-t066",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+                "size": 11663,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+                "basename": "SO2_cloud_top-t072.tif",
+                "nameroot": "SO2_cloud_top-t072",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+                "size": 11164,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ]
+    ]
+}[0m
+[1;30mINFO[0m [step create_cogs] completed success
+[1;30mDEBUG[0m [32m[job create_cogs_2] Removing input staging directory /tmp/9qdcis_5[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] Removing temporary directory /tmp/i4agbvdx[0m
+[1;30mINFO[0m [workflow ] starting step create_catalog
+[1;30mDEBUG[0m [32m[step create_catalog] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog/scenario": "high",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog/tifs": [
+        [
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+                "basename": "tephra_col_mass-t000.tif",
+                "nameroot": "tephra_col_mass-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+                "size": 41521,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+                "basename": "tephra_col_mass-t006.tif",
+                "nameroot": "tephra_col_mass-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+                "size": 70199,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+                "basename": "tephra_col_mass-t012.tif",
+                "nameroot": "tephra_col_mass-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+                "size": 82960,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+                "basename": "tephra_col_mass-t018.tif",
+                "nameroot": "tephra_col_mass-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+                "size": 87028,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+                "basename": "tephra_col_mass-t024.tif",
+                "nameroot": "tephra_col_mass-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+                "size": 92827,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+                "basename": "tephra_col_mass-t030.tif",
+                "nameroot": "tephra_col_mass-t030",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+                "size": 72624,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+                "basename": "tephra_col_mass-t036.tif",
+                "nameroot": "tephra_col_mass-t036",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+                "size": 68490,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+                "basename": "tephra_col_mass-t042.tif",
+                "nameroot": "tephra_col_mass-t042",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+                "size": 60326,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+                "basename": "tephra_col_mass-t048.tif",
+                "nameroot": "tephra_col_mass-t048",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+                "size": 59828,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+                "basename": "tephra_col_mass-t054.tif",
+                "nameroot": "tephra_col_mass-t054",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+                "size": 67776,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+                "basename": "tephra_col_mass-t060.tif",
+                "nameroot": "tephra_col_mass-t060",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+                "size": 68547,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+                "basename": "tephra_col_mass-t066.tif",
+                "nameroot": "tephra_col_mass-t066",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+                "size": 68688,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+                "basename": "tephra_col_mass-t072.tif",
+                "nameroot": "tephra_col_mass-t072",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+                "size": 76827,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ],
+        [
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+                "basename": "SO2_cloud_top-t000.tif",
+                "nameroot": "SO2_cloud_top-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+                "size": 18725,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+                "basename": "SO2_cloud_top-t006.tif",
+                "nameroot": "SO2_cloud_top-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+                "size": 13113,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+                "basename": "SO2_cloud_top-t012.tif",
+                "nameroot": "SO2_cloud_top-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+                "size": 10318,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+                "basename": "SO2_cloud_top-t018.tif",
+                "nameroot": "SO2_cloud_top-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+                "size": 10833,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+                "basename": "SO2_cloud_top-t024.tif",
+                "nameroot": "SO2_cloud_top-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+                "size": 10600,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+                "basename": "SO2_cloud_top-t030.tif",
+                "nameroot": "SO2_cloud_top-t030",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+                "size": 10787,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+                "basename": "SO2_cloud_top-t036.tif",
+                "nameroot": "SO2_cloud_top-t036",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+                "size": 10751,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+                "basename": "SO2_cloud_top-t042.tif",
+                "nameroot": "SO2_cloud_top-t042",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+                "size": 10714,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+                "basename": "SO2_cloud_top-t048.tif",
+                "nameroot": "SO2_cloud_top-t048",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+                "size": 10266,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+                "basename": "SO2_cloud_top-t054.tif",
+                "nameroot": "SO2_cloud_top-t054",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+                "size": 10533,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+                "basename": "SO2_cloud_top-t060.tif",
+                "nameroot": "SO2_cloud_top-t060",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+                "size": 11761,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+                "basename": "SO2_cloud_top-t066.tif",
+                "nameroot": "SO2_cloud_top-t066",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+                "size": 11663,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+                "basename": "SO2_cloud_top-t072.tif",
+                "nameroot": "SO2_cloud_top-t072",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+                "size": 11164,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ]
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[step create_catalog] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog/scenario": "high",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog/tifs": [
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+            "size": 41521,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+            "size": 70199,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+            "size": 82960,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+            "size": 87028,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+            "size": 92827,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+            "basename": "tephra_col_mass-t030.tif",
+            "nameroot": "tephra_col_mass-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+            "size": 72624,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+            "basename": "tephra_col_mass-t036.tif",
+            "nameroot": "tephra_col_mass-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+            "size": 68490,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+            "basename": "tephra_col_mass-t042.tif",
+            "nameroot": "tephra_col_mass-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+            "size": 60326,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+            "basename": "tephra_col_mass-t048.tif",
+            "nameroot": "tephra_col_mass-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+            "size": 59828,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+            "basename": "tephra_col_mass-t054.tif",
+            "nameroot": "tephra_col_mass-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+            "size": 67776,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+            "basename": "tephra_col_mass-t060.tif",
+            "nameroot": "tephra_col_mass-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+            "size": 68547,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+            "basename": "tephra_col_mass-t066.tif",
+            "nameroot": "tephra_col_mass-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+            "size": 68688,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+            "basename": "tephra_col_mass-t072.tif",
+            "nameroot": "tephra_col_mass-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+            "size": 76827,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+            "size": 18725,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+            "size": 13113,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+            "size": 10318,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+            "size": 10833,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+            "size": 10600,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+            "basename": "SO2_cloud_top-t030.tif",
+            "nameroot": "SO2_cloud_top-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+            "size": 10787,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+            "basename": "SO2_cloud_top-t036.tif",
+            "nameroot": "SO2_cloud_top-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+            "size": 10751,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+            "basename": "SO2_cloud_top-t042.tif",
+            "nameroot": "SO2_cloud_top-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+            "size": 10714,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+            "basename": "SO2_cloud_top-t048.tif",
+            "nameroot": "SO2_cloud_top-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+            "size": 10266,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+            "basename": "SO2_cloud_top-t054.tif",
+            "nameroot": "SO2_cloud_top-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+            "size": 10533,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+            "basename": "SO2_cloud_top-t060.tif",
+            "nameroot": "SO2_cloud_top-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+            "size": 11761,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+            "basename": "SO2_cloud_top-t066.tif",
+            "nameroot": "SO2_cloud_top-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+            "size": 11663,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+            "basename": "SO2_cloud_top-t072.tif",
+            "nameroot": "SO2_cloud_top-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+            "size": 11164,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mINFO[0m [step create_catalog] start
+[1;30mDEBUG[0m [32m[job create_catalog] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#catalog-etna as part of step create_catalog[0m
+[1;30mDEBUG[0m [32m[job create_catalog] {
+    "scenario": "high",
+    "tifs": [
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+            "size": 41521,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+            "size": 70199,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+            "size": 82960,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+            "size": 87028,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+            "size": 92827,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+            "basename": "tephra_col_mass-t030.tif",
+            "nameroot": "tephra_col_mass-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+            "size": 72624,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+            "basename": "tephra_col_mass-t036.tif",
+            "nameroot": "tephra_col_mass-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+            "size": 68490,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+            "basename": "tephra_col_mass-t042.tif",
+            "nameroot": "tephra_col_mass-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+            "size": 60326,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+            "basename": "tephra_col_mass-t048.tif",
+            "nameroot": "tephra_col_mass-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+            "size": 59828,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+            "basename": "tephra_col_mass-t054.tif",
+            "nameroot": "tephra_col_mass-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+            "size": 67776,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+            "basename": "tephra_col_mass-t060.tif",
+            "nameroot": "tephra_col_mass-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+            "size": 68547,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+            "basename": "tephra_col_mass-t066.tif",
+            "nameroot": "tephra_col_mass-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+            "size": 68688,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+            "basename": "tephra_col_mass-t072.tif",
+            "nameroot": "tephra_col_mass-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+            "size": 76827,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+            "size": 18725,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+            "size": 13113,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+            "size": 10318,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+            "size": 10833,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+            "size": 10600,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+            "basename": "SO2_cloud_top-t030.tif",
+            "nameroot": "SO2_cloud_top-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+            "size": 10787,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+            "basename": "SO2_cloud_top-t036.tif",
+            "nameroot": "SO2_cloud_top-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+            "size": 10751,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+            "basename": "SO2_cloud_top-t042.tif",
+            "nameroot": "SO2_cloud_top-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+            "size": 10714,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+            "basename": "SO2_cloud_top-t048.tif",
+            "nameroot": "SO2_cloud_top-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+            "size": 10266,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+            "basename": "SO2_cloud_top-t054.tif",
+            "nameroot": "SO2_cloud_top-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+            "size": 10533,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+            "basename": "SO2_cloud_top-t060.tif",
+            "nameroot": "SO2_cloud_top-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+            "size": 11761,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+            "basename": "SO2_cloud_top-t066.tif",
+            "nameroot": "SO2_cloud_top-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+            "size": 11663,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+            "basename": "SO2_cloud_top-t072.tif",
+            "nameroot": "SO2_cloud_top-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+            "size": 11164,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_catalog] path mappings is {
+    "file:///tmp/j19i_fof/tephra_col_mass-t000.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t000.tif",
+        "/tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0/tephra_col_mass-t000.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t006.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t006.tif",
+        "/tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26/tephra_col_mass-t006.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t012.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t012.tif",
+        "/tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894/tephra_col_mass-t012.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t018.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t018.tif",
+        "/tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b/tephra_col_mass-t018.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t024.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t024.tif",
+        "/tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e/tephra_col_mass-t024.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t030.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t030.tif",
+        "/tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607/tephra_col_mass-t030.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t036.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t036.tif",
+        "/tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636/tephra_col_mass-t036.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t042.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t042.tif",
+        "/tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef/tephra_col_mass-t042.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t048.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t048.tif",
+        "/tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605/tephra_col_mass-t048.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t054.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t054.tif",
+        "/tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a/tephra_col_mass-t054.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t060.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t060.tif",
+        "/tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a/tephra_col_mass-t060.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t066.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t066.tif",
+        "/tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b/tephra_col_mass-t066.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/j19i_fof/tephra_col_mass-t072.tif": [
+        "/tmp/j19i_fof/tephra_col_mass-t072.tif",
+        "/tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb/tephra_col_mass-t072.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t000.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t000.tif",
+        "/tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737/SO2_cloud_top-t000.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t006.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t006.tif",
+        "/tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8/SO2_cloud_top-t006.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t012.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t012.tif",
+        "/tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3/SO2_cloud_top-t012.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t018.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t018.tif",
+        "/tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2/SO2_cloud_top-t018.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t024.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t024.tif",
+        "/tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604/SO2_cloud_top-t024.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t030.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t030.tif",
+        "/tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5/SO2_cloud_top-t030.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t036.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t036.tif",
+        "/tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330/SO2_cloud_top-t036.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t042.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t042.tif",
+        "/tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709/SO2_cloud_top-t042.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t048.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t048.tif",
+        "/tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702/SO2_cloud_top-t048.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t054.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t054.tif",
+        "/tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb/SO2_cloud_top-t054.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t060.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t060.tif",
+        "/tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a/SO2_cloud_top-t060.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t066.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t066.tif",
+        "/tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3/SO2_cloud_top-t066.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/d8lili50/SO2_cloud_top-t072.tif": [
+        "/tmp/d8lili50/SO2_cloud_top-t072.tif",
+        "/tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595/SO2_cloud_top-t072.tif",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_catalog] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "createSTAC.py"
+    },
+    {
+        "prefix": "--path",
+        "position": [
+            0,
+            "scenario"
+        ],
+        "datum": "high"
+    },
+    {
+        "prefix": "--cogs",
+        "position": [
+            0,
+            "tifs"
+        ],
+        "datum": [
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+                "basename": "tephra_col_mass-t000.tif",
+                "nameroot": "tephra_col_mass-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+                "size": 41521,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0/tephra_col_mass-t000.tif",
+                "dirname": "/tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+                "basename": "tephra_col_mass-t006.tif",
+                "nameroot": "tephra_col_mass-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+                "size": 70199,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26/tephra_col_mass-t006.tif",
+                "dirname": "/tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+                "basename": "tephra_col_mass-t012.tif",
+                "nameroot": "tephra_col_mass-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+                "size": 82960,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894/tephra_col_mass-t012.tif",
+                "dirname": "/tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+                "basename": "tephra_col_mass-t018.tif",
+                "nameroot": "tephra_col_mass-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+                "size": 87028,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b/tephra_col_mass-t018.tif",
+                "dirname": "/tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+                "basename": "tephra_col_mass-t024.tif",
+                "nameroot": "tephra_col_mass-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+                "size": 92827,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e/tephra_col_mass-t024.tif",
+                "dirname": "/tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+                "basename": "tephra_col_mass-t030.tif",
+                "nameroot": "tephra_col_mass-t030",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+                "size": 72624,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607/tephra_col_mass-t030.tif",
+                "dirname": "/tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+                "basename": "tephra_col_mass-t036.tif",
+                "nameroot": "tephra_col_mass-t036",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+                "size": 68490,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636/tephra_col_mass-t036.tif",
+                "dirname": "/tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+                "basename": "tephra_col_mass-t042.tif",
+                "nameroot": "tephra_col_mass-t042",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+                "size": 60326,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef/tephra_col_mass-t042.tif",
+                "dirname": "/tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+                "basename": "tephra_col_mass-t048.tif",
+                "nameroot": "tephra_col_mass-t048",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+                "size": 59828,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605/tephra_col_mass-t048.tif",
+                "dirname": "/tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+                "basename": "tephra_col_mass-t054.tif",
+                "nameroot": "tephra_col_mass-t054",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+                "size": 67776,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a/tephra_col_mass-t054.tif",
+                "dirname": "/tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+                "basename": "tephra_col_mass-t060.tif",
+                "nameroot": "tephra_col_mass-t060",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+                "size": 68547,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a/tephra_col_mass-t060.tif",
+                "dirname": "/tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+                "basename": "tephra_col_mass-t066.tif",
+                "nameroot": "tephra_col_mass-t066",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+                "size": 68688,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b/tephra_col_mass-t066.tif",
+                "dirname": "/tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b"
+            },
+            {
+                "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+                "basename": "tephra_col_mass-t072.tif",
+                "nameroot": "tephra_col_mass-t072",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+                "size": 76827,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb/tephra_col_mass-t072.tif",
+                "dirname": "/tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+                "basename": "SO2_cloud_top-t000.tif",
+                "nameroot": "SO2_cloud_top-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+                "size": 18725,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737/SO2_cloud_top-t000.tif",
+                "dirname": "/tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+                "basename": "SO2_cloud_top-t006.tif",
+                "nameroot": "SO2_cloud_top-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+                "size": 13113,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8/SO2_cloud_top-t006.tif",
+                "dirname": "/tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+                "basename": "SO2_cloud_top-t012.tif",
+                "nameroot": "SO2_cloud_top-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+                "size": 10318,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3/SO2_cloud_top-t012.tif",
+                "dirname": "/tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+                "basename": "SO2_cloud_top-t018.tif",
+                "nameroot": "SO2_cloud_top-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+                "size": 10833,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2/SO2_cloud_top-t018.tif",
+                "dirname": "/tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+                "basename": "SO2_cloud_top-t024.tif",
+                "nameroot": "SO2_cloud_top-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+                "size": 10600,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604/SO2_cloud_top-t024.tif",
+                "dirname": "/tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+                "basename": "SO2_cloud_top-t030.tif",
+                "nameroot": "SO2_cloud_top-t030",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+                "size": 10787,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5/SO2_cloud_top-t030.tif",
+                "dirname": "/tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+                "basename": "SO2_cloud_top-t036.tif",
+                "nameroot": "SO2_cloud_top-t036",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+                "size": 10751,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330/SO2_cloud_top-t036.tif",
+                "dirname": "/tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+                "basename": "SO2_cloud_top-t042.tif",
+                "nameroot": "SO2_cloud_top-t042",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+                "size": 10714,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709/SO2_cloud_top-t042.tif",
+                "dirname": "/tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+                "basename": "SO2_cloud_top-t048.tif",
+                "nameroot": "SO2_cloud_top-t048",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+                "size": 10266,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702/SO2_cloud_top-t048.tif",
+                "dirname": "/tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+                "basename": "SO2_cloud_top-t054.tif",
+                "nameroot": "SO2_cloud_top-t054",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+                "size": 10533,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb/SO2_cloud_top-t054.tif",
+                "dirname": "/tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+                "basename": "SO2_cloud_top-t060.tif",
+                "nameroot": "SO2_cloud_top-t060",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+                "size": 11761,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a/SO2_cloud_top-t060.tif",
+                "dirname": "/tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+                "basename": "SO2_cloud_top-t066.tif",
+                "nameroot": "SO2_cloud_top-t066",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+                "size": 11663,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3/SO2_cloud_top-t066.tif",
+                "dirname": "/tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3"
+            },
+            {
+                "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+                "basename": "SO2_cloud_top-t072.tif",
+                "nameroot": "SO2_cloud_top-t072",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+                "size": 11164,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595/SO2_cloud_top-t072.tif",
+                "dirname": "/tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595"
+            }
+        ]
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            0,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+            "size": 41521,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0/tephra_col_mass-t000.tif",
+            "dirname": "/tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            1,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+            "size": 70199,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26/tephra_col_mass-t006.tif",
+            "dirname": "/tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            2,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+            "size": 82960,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894/tephra_col_mass-t012.tif",
+            "dirname": "/tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            3,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+            "size": 87028,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b/tephra_col_mass-t018.tif",
+            "dirname": "/tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            4,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+            "size": 92827,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e/tephra_col_mass-t024.tif",
+            "dirname": "/tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            5,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t030.tif",
+            "basename": "tephra_col_mass-t030.tif",
+            "nameroot": "tephra_col_mass-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+            "size": 72624,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607/tephra_col_mass-t030.tif",
+            "dirname": "/tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            6,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t036.tif",
+            "basename": "tephra_col_mass-t036.tif",
+            "nameroot": "tephra_col_mass-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+            "size": 68490,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636/tephra_col_mass-t036.tif",
+            "dirname": "/tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            7,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t042.tif",
+            "basename": "tephra_col_mass-t042.tif",
+            "nameroot": "tephra_col_mass-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+            "size": 60326,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef/tephra_col_mass-t042.tif",
+            "dirname": "/tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            8,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t048.tif",
+            "basename": "tephra_col_mass-t048.tif",
+            "nameroot": "tephra_col_mass-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+            "size": 59828,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605/tephra_col_mass-t048.tif",
+            "dirname": "/tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            9,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t054.tif",
+            "basename": "tephra_col_mass-t054.tif",
+            "nameroot": "tephra_col_mass-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+            "size": 67776,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a/tephra_col_mass-t054.tif",
+            "dirname": "/tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            10,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t060.tif",
+            "basename": "tephra_col_mass-t060.tif",
+            "nameroot": "tephra_col_mass-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+            "size": 68547,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a/tephra_col_mass-t060.tif",
+            "dirname": "/tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            11,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t066.tif",
+            "basename": "tephra_col_mass-t066.tif",
+            "nameroot": "tephra_col_mass-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+            "size": 68688,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b/tephra_col_mass-t066.tif",
+            "dirname": "/tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            12,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/j19i_fof/tephra_col_mass-t072.tif",
+            "basename": "tephra_col_mass-t072.tif",
+            "nameroot": "tephra_col_mass-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+            "size": 76827,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb/tephra_col_mass-t072.tif",
+            "dirname": "/tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            13,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+            "size": 18725,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737/SO2_cloud_top-t000.tif",
+            "dirname": "/tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            14,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+            "size": 13113,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8/SO2_cloud_top-t006.tif",
+            "dirname": "/tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            15,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+            "size": 10318,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3/SO2_cloud_top-t012.tif",
+            "dirname": "/tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            16,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+            "size": 10833,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2/SO2_cloud_top-t018.tif",
+            "dirname": "/tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            17,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+            "size": 10600,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604/SO2_cloud_top-t024.tif",
+            "dirname": "/tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            18,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t030.tif",
+            "basename": "SO2_cloud_top-t030.tif",
+            "nameroot": "SO2_cloud_top-t030",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+            "size": 10787,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5/SO2_cloud_top-t030.tif",
+            "dirname": "/tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            19,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t036.tif",
+            "basename": "SO2_cloud_top-t036.tif",
+            "nameroot": "SO2_cloud_top-t036",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+            "size": 10751,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330/SO2_cloud_top-t036.tif",
+            "dirname": "/tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            20,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t042.tif",
+            "basename": "SO2_cloud_top-t042.tif",
+            "nameroot": "SO2_cloud_top-t042",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+            "size": 10714,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709/SO2_cloud_top-t042.tif",
+            "dirname": "/tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            21,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t048.tif",
+            "basename": "SO2_cloud_top-t048.tif",
+            "nameroot": "SO2_cloud_top-t048",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+            "size": 10266,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702/SO2_cloud_top-t048.tif",
+            "dirname": "/tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            22,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t054.tif",
+            "basename": "SO2_cloud_top-t054.tif",
+            "nameroot": "SO2_cloud_top-t054",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+            "size": 10533,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb/SO2_cloud_top-t054.tif",
+            "dirname": "/tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            23,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t060.tif",
+            "basename": "SO2_cloud_top-t060.tif",
+            "nameroot": "SO2_cloud_top-t060",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+            "size": 11761,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a/SO2_cloud_top-t060.tif",
+            "dirname": "/tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            24,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t066.tif",
+            "basename": "SO2_cloud_top-t066.tif",
+            "nameroot": "SO2_cloud_top-t066",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+            "size": 11663,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3/SO2_cloud_top-t066.tif",
+            "dirname": "/tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            25,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/d8lili50/SO2_cloud_top-t072.tif",
+            "basename": "SO2_cloud_top-t072.tif",
+            "nameroot": "SO2_cloud_top-t072",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+            "size": 11164,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595/SO2_cloud_top-t072.tif",
+            "dirname": "/tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595"
+        }
+    }
+][0m
+[1;30mDEBUG[0m [32m[job create_catalog] initial work dir {}[0m
+[1;30mINFO[0m [job create_catalog] /tmp/sge84xf7$ createSTAC.py \
+    --path \
+    high \
+    --cogs \
+    /tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0/tephra_col_mass-t000.tif \
+    /tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26/tephra_col_mass-t006.tif \
+    /tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894/tephra_col_mass-t012.tif \
+    /tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b/tephra_col_mass-t018.tif \
+    /tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e/tephra_col_mass-t024.tif \
+    /tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607/tephra_col_mass-t030.tif \
+    /tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636/tephra_col_mass-t036.tif \
+    /tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef/tephra_col_mass-t042.tif \
+    /tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605/tephra_col_mass-t048.tif \
+    /tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a/tephra_col_mass-t054.tif \
+    /tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a/tephra_col_mass-t060.tif \
+    /tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b/tephra_col_mass-t066.tif \
+    /tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb/tephra_col_mass-t072.tif \
+    /tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737/SO2_cloud_top-t000.tif \
+    /tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8/SO2_cloud_top-t006.tif \
+    /tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3/SO2_cloud_top-t012.tif \
+    /tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2/SO2_cloud_top-t018.tif \
+    /tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604/SO2_cloud_top-t024.tif \
+    /tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5/SO2_cloud_top-t030.tif \
+    /tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330/SO2_cloud_top-t036.tif \
+    /tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709/SO2_cloud_top-t042.tif \
+    /tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702/SO2_cloud_top-t048.tif \
+    /tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb/SO2_cloud_top-t054.tif \
+    /tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a/SO2_cloud_top-t060.tif \
+    /tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3/SO2_cloud_top-t066.tif \
+    /tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595/SO2_cloud_top-t072.tif
+INFO:CREATE_STAC:Creating STAC catalog...
+INFO:CREATE_STAC:/tmp/5ia53ons/stg1ec01b6b-3319-47a2-ae31-aa18585f75e0/tephra_col_mass-t000.tif: size=5924, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stgeb781504-a6ae-42cf-a938-94153f6c4f26/tephra_col_mass-t006.tif: size=11289, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg4dac7b19-e496-4667-98e8-c2b205827894/tephra_col_mass-t012.tif: size=13734, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg1b83fec5-1d34-4b0c-a4ea-c8e778fa981b/tephra_col_mass-t018.tif: size=14602, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg38756da0-9376-4a90-ae1a-577a6f13826e/tephra_col_mass-t024.tif: size=15654, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg57ebeca8-bbd1-4180-be0d-a998a4bc0607/tephra_col_mass-t030.tif: size=11737, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stgda0f78fd-7f3c-4b80-805a-b39b00628636/tephra_col_mass-t036.tif: size=10929, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg653852a2-283d-4cbd-ac7a-8badef7515ef/tephra_col_mass-t042.tif: size=9345, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg7976412c-f6ee-4295-a075-dd4acc04b605/tephra_col_mass-t048.tif: size=9235, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stgfa5a3325-b827-4b9a-8f43-1fddfd65535a/tephra_col_mass-t054.tif: size=10800, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg551da323-1685-410a-8ef6-563e7293d57a/tephra_col_mass-t060.tif: size=10974, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg30f0395f-72db-4a2f-9132-5c3dbea7b04b/tephra_col_mass-t066.tif: size=10986, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stgdbfe8e6a-eead-493f-bdf0-0ad75c2941bb/tephra_col_mass-t072.tif: size=12575, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg34591cba-6fd0-47a9-bc90-4867bec05737/SO2_cloud_top-t000.tif: size=2014, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg3e5132f3-f51b-46d2-b1ba-dcf51d46cdc8/SO2_cloud_top-t006.tif: size=1605, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg85ec2a6d-4cc1-4307-9f5a-9b28c87102d3/SO2_cloud_top-t012.tif: size=1099, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg0bbbe284-be78-480a-8c5d-68e039117de2/SO2_cloud_top-t018.tif: size=1167, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stgb4ad9150-cea7-4039-bb61-9b2c3a55f604/SO2_cloud_top-t024.tif: size=816, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg257f7737-f065-4e83-8909-8578a59daca5/SO2_cloud_top-t030.tif: size=649, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg7c9a376d-e393-4ed4-923b-f738f0441330/SO2_cloud_top-t036.tif: size=761, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg7d4e8722-935a-4157-b23c-0f58d3ba1709/SO2_cloud_top-t042.tif: size=732, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg94bb3d94-df91-4b9f-8eac-a95df9183702/SO2_cloud_top-t048.tif: size=801, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg10125516-74b0-4f66-9d2f-3f99a6c92dcb/SO2_cloud_top-t054.tif: size=916, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stge8e9cdf0-919a-41b0-97f6-5f917847ca6a/SO2_cloud_top-t060.tif: size=1250, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stgca1192e7-a6b7-49e3-9477-00f9344053b3/SO2_cloud_top-t066.tif: size=936, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/5ia53ons/stg15386cf2-e5b7-4f8f-b556-1e49318df595/SO2_cloud_top-t072.tif: size=1054, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:Done!
+[1;30mINFO[0m [job create_catalog] Max memory used: 103MiB
+[1;30mINFO[0m [job create_catalog] completed success
+[1;30mDEBUG[0m [32m[job create_catalog] outputs {
+    "stac": {
+        "location": "file:///tmp/sge84xf7/high",
+        "basename": "high",
+        "nameroot": "high",
+        "nameext": "",
+        "class": "Directory"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step create_catalog] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna/create_catalog/stac": {
+        "location": "file:///tmp/sge84xf7/high",
+        "basename": "high",
+        "nameroot": "high",
+        "nameext": "",
+        "class": "Directory"
+    }
+}[0m
+[1;30mINFO[0m [step create_catalog] completed success
+[1;30mINFO[0m [workflow ] completed success
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stac": {
+        "location": "file:///tmp/sge84xf7/high",
+        "basename": "high",
+        "nameroot": "high",
+        "nameext": "",
+        "class": "Directory"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[job create_catalog] Removing input staging directory /tmp/5ia53ons[0m
+[1;30mDEBUG[0m [32m[job create_catalog] Removing temporary directory /tmp/qhtk27nc[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/catalog.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/catalog.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/072 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/072/072.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/072.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/072/SO2_cloud_top-t072.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/SO2_cloud_top-t072.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/072/tephra_col_mass-t072.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/tephra_col_mass-t072.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/066 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/066/066.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/066.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/066/SO2_cloud_top-t066.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/SO2_cloud_top-t066.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/066/tephra_col_mass-t066.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/tephra_col_mass-t066.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/060 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/060/060.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/060.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/060/SO2_cloud_top-t060.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/SO2_cloud_top-t060.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/060/tephra_col_mass-t060.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/tephra_col_mass-t060.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/054 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/054/054.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/054.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/054/SO2_cloud_top-t054.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/SO2_cloud_top-t054.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/054/tephra_col_mass-t054.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/tephra_col_mass-t054.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/048 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/048/048.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/048.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/048/SO2_cloud_top-t048.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/SO2_cloud_top-t048.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/048/tephra_col_mass-t048.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/tephra_col_mass-t048.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/042 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/042/042.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/042.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/042/SO2_cloud_top-t042.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/SO2_cloud_top-t042.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/042/tephra_col_mass-t042.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/tephra_col_mass-t042.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/036 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/036/036.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/036.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/036/SO2_cloud_top-t036.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/SO2_cloud_top-t036.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/036/tephra_col_mass-t036.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/tephra_col_mass-t036.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/030 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/030/030.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/030.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/030/SO2_cloud_top-t030.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/SO2_cloud_top-t030.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/030/tephra_col_mass-t030.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/tephra_col_mass-t030.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/024 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/024/024.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/024.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/024/SO2_cloud_top-t024.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/SO2_cloud_top-t024.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/024/tephra_col_mass-t024.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/tephra_col_mass-t024.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/018 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/018/018.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/018.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/018/SO2_cloud_top-t018.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/SO2_cloud_top-t018.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/018/tephra_col_mass-t018.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/tephra_col_mass-t018.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/012 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/012/012.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/012.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/012/SO2_cloud_top-t012.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/SO2_cloud_top-t012.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/012/tephra_col_mass-t012.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/tephra_col_mass-t012.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/006 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/006/006.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/006.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/006/SO2_cloud_top-t006.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/SO2_cloud_top-t006.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/006/tephra_col_mass-t006.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/tephra_col_mass-t006.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/000 to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/000/000.json to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/000.json[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/000/SO2_cloud_top-t000.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/SO2_cloud_top-t000.tif[0m
+[1;30mDEBUG[0m [32mMoving /tmp/sge84xf7/high/000/tephra_col_mass-t000.tif to /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/tephra_col_mass-t000.tif[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/2czggk1q[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/mhsdit2f[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/1uxspbbd[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/d8lili50[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/fvol80ik[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/sge84xf7[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/j19i_fof[0m
+{
+    "stac": {
+        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high",
+        "basename": "high",
+        "class": "Directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/catalog.json",
+                "basename": "catalog.json",
+                "size": 1717,
+                "checksum": "sha1$21036c1f3c6cc0cec5d67e2effda0eafc0603c01",
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/catalog.json"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072",
+                "basename": "072",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/072.json",
+                        "basename": "072.json",
+                        "size": 13230,
+                        "checksum": "sha1$4f9f8abbe9ccaf7c4632da4a3287ec5bbf262f87",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/072.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/SO2_cloud_top-t072.tif",
+                        "basename": "SO2_cloud_top-t072.tif",
+                        "size": 11164,
+                        "checksum": "sha1$020dd3c55376841792fc1e60f2d364bc0c07ac4d",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/SO2_cloud_top-t072.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/tephra_col_mass-t072.tif",
+                        "basename": "tephra_col_mass-t072.tif",
+                        "size": 76827,
+                        "checksum": "sha1$2f204a5c85452d77eb21432d14d83270ba24d4e4",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072/tephra_col_mass-t072.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/072"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066",
+                "basename": "066",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/066.json",
+                        "basename": "066.json",
+                        "size": 13207,
+                        "checksum": "sha1$c4a52eee57e39e247cb24f852a5a376f67834222",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/066.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/SO2_cloud_top-t066.tif",
+                        "basename": "SO2_cloud_top-t066.tif",
+                        "size": 11663,
+                        "checksum": "sha1$7a6f34b9df6e4102474df9c7ced9adc71ce98bd9",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/SO2_cloud_top-t066.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/tephra_col_mass-t066.tif",
+                        "basename": "tephra_col_mass-t066.tif",
+                        "size": 68688,
+                        "checksum": "sha1$91152d4cf6ceedd4d17576114b5531ce413cbfbb",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066/tephra_col_mass-t066.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/066"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060",
+                "basename": "060",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/060.json",
+                        "basename": "060.json",
+                        "size": 13223,
+                        "checksum": "sha1$f5602c7b6761c895450712e1901bbbb00e1df178",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/060.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/SO2_cloud_top-t060.tif",
+                        "basename": "SO2_cloud_top-t060.tif",
+                        "size": 11761,
+                        "checksum": "sha1$a3dce76e44bff44b9f38360bbfa14e8b6ca41169",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/SO2_cloud_top-t060.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/tephra_col_mass-t060.tif",
+                        "basename": "tephra_col_mass-t060.tif",
+                        "size": 68547,
+                        "checksum": "sha1$1ed35b5f138b16224358ee531670b2a9fee2cab0",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060/tephra_col_mass-t060.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/060"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054",
+                "basename": "054",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/054.json",
+                        "basename": "054.json",
+                        "size": 13218,
+                        "checksum": "sha1$00721c675443c6afb3dec8790ae8f23fa73e3204",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/054.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/SO2_cloud_top-t054.tif",
+                        "basename": "SO2_cloud_top-t054.tif",
+                        "size": 10533,
+                        "checksum": "sha1$d017916e2923d18dc95cb66057bc250ae841cc46",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/SO2_cloud_top-t054.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/tephra_col_mass-t054.tif",
+                        "basename": "tephra_col_mass-t054.tif",
+                        "size": 67776,
+                        "checksum": "sha1$2e2892760139e0c9e9bac676d39d9c08ba13b42b",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054/tephra_col_mass-t054.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/054"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048",
+                "basename": "048",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/048.json",
+                        "basename": "048.json",
+                        "size": 13187,
+                        "checksum": "sha1$63bf185ed75f679512b797322227ffe4c532e2ba",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/048.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/SO2_cloud_top-t048.tif",
+                        "basename": "SO2_cloud_top-t048.tif",
+                        "size": 10266,
+                        "checksum": "sha1$2a021ce55e8afe12e928e099d05d607ee8880150",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/SO2_cloud_top-t048.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/tephra_col_mass-t048.tif",
+                        "basename": "tephra_col_mass-t048.tif",
+                        "size": 59828,
+                        "checksum": "sha1$295c54715a13b66c5fb117e286830f5ab15574ff",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048/tephra_col_mass-t048.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/048"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042",
+                "basename": "042",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/042.json",
+                        "basename": "042.json",
+                        "size": 13211,
+                        "checksum": "sha1$48ed2e13f5523346348b27edf4bec030d6c1e4b1",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/042.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/SO2_cloud_top-t042.tif",
+                        "basename": "SO2_cloud_top-t042.tif",
+                        "size": 10714,
+                        "checksum": "sha1$2938983548697c0776fc6e942c09efc140917215",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/SO2_cloud_top-t042.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/tephra_col_mass-t042.tif",
+                        "basename": "tephra_col_mass-t042.tif",
+                        "size": 60326,
+                        "checksum": "sha1$65e2b75410cc85e172ff419133580cb845aca3e7",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042/tephra_col_mass-t042.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/042"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036",
+                "basename": "036",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/036.json",
+                        "basename": "036.json",
+                        "size": 13196,
+                        "checksum": "sha1$4f34847e060f1485d6791cb6b6cb492d168d7408",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/036.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/SO2_cloud_top-t036.tif",
+                        "basename": "SO2_cloud_top-t036.tif",
+                        "size": 10751,
+                        "checksum": "sha1$7b353b5ee9b6843c32bf3b9da907e27ffbcadae6",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/SO2_cloud_top-t036.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/tephra_col_mass-t036.tif",
+                        "basename": "tephra_col_mass-t036.tif",
+                        "size": 68490,
+                        "checksum": "sha1$c58f646e98d3872a83bb0105c5eeb1f2c4934932",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036/tephra_col_mass-t036.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/036"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030",
+                "basename": "030",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/030.json",
+                        "basename": "030.json",
+                        "size": 13205,
+                        "checksum": "sha1$d5d2e82e9b6fbc0b0b36de393d058ab8fbd7d0ff",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/030.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/SO2_cloud_top-t030.tif",
+                        "basename": "SO2_cloud_top-t030.tif",
+                        "size": 10787,
+                        "checksum": "sha1$a21c8af7d2d44e19bdb0392ecb1cc3a196019409",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/SO2_cloud_top-t030.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/tephra_col_mass-t030.tif",
+                        "basename": "tephra_col_mass-t030.tif",
+                        "size": 72624,
+                        "checksum": "sha1$9d1961ee3c45483f102c762ce3d0d3ca57e1180b",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030/tephra_col_mass-t030.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/030"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024",
+                "basename": "024",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/024.json",
+                        "basename": "024.json",
+                        "size": 13206,
+                        "checksum": "sha1$c56957c02085962343bb10fd664757727b2e0f5b",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/024.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/SO2_cloud_top-t024.tif",
+                        "basename": "SO2_cloud_top-t024.tif",
+                        "size": 10600,
+                        "checksum": "sha1$22f1da84fef952714b801df315e3ba0b8919edf4",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/SO2_cloud_top-t024.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/tephra_col_mass-t024.tif",
+                        "basename": "tephra_col_mass-t024.tif",
+                        "size": 92827,
+                        "checksum": "sha1$932036704eb896cfdbba1fda959f34c0eef0308e",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024/tephra_col_mass-t024.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/024"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018",
+                "basename": "018",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/018.json",
+                        "basename": "018.json",
+                        "size": 13214,
+                        "checksum": "sha1$41f743641e9f494fdab8052dc18cfe1659a4d160",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/018.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/SO2_cloud_top-t018.tif",
+                        "basename": "SO2_cloud_top-t018.tif",
+                        "size": 10833,
+                        "checksum": "sha1$4d5895f76906c61307ec29cdd485b79a7f654485",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/SO2_cloud_top-t018.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/tephra_col_mass-t018.tif",
+                        "basename": "tephra_col_mass-t018.tif",
+                        "size": 87028,
+                        "checksum": "sha1$d8e149809abc702caea66a757d39ccb8625806d3",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018/tephra_col_mass-t018.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/018"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012",
+                "basename": "012",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/012.json",
+                        "basename": "012.json",
+                        "size": 13205,
+                        "checksum": "sha1$b0935e07c5e245933277bc45e091ddfc1d0b4171",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/012.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/SO2_cloud_top-t012.tif",
+                        "basename": "SO2_cloud_top-t012.tif",
+                        "size": 10318,
+                        "checksum": "sha1$cd2c542abfad4479f41a1c0ad36d2f553f05f0ff",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/SO2_cloud_top-t012.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/tephra_col_mass-t012.tif",
+                        "basename": "tephra_col_mass-t012.tif",
+                        "size": 82960,
+                        "checksum": "sha1$e77bef22d7062722aeb7f498676af82eba66812f",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012/tephra_col_mass-t012.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/012"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006",
+                "basename": "006",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/006.json",
+                        "basename": "006.json",
+                        "size": 13247,
+                        "checksum": "sha1$80e5f516fcee4f61d43f41ba316dc4e04e39bfef",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/006.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/SO2_cloud_top-t006.tif",
+                        "basename": "SO2_cloud_top-t006.tif",
+                        "size": 13113,
+                        "checksum": "sha1$19c6337454f4f34578ca61d62d20fd23c94c66fd",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/SO2_cloud_top-t006.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/tephra_col_mass-t006.tif",
+                        "basename": "tephra_col_mass-t006.tif",
+                        "size": 70199,
+                        "checksum": "sha1$361d004fd7d9f5f9c3575c7ba889c9ab6aa646af",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006/tephra_col_mass-t006.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/006"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000",
+                "basename": "000",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/000.json",
+                        "basename": "000.json",
+                        "size": 13198,
+                        "checksum": "sha1$d98068f7aadf105d95f9de07f14d5fae5deb335b",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/000.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/SO2_cloud_top-t000.tif",
+                        "basename": "SO2_cloud_top-t000.tif",
+                        "size": 18725,
+                        "checksum": "sha1$43bd5b6d5d2800cfcb4c6c8a81cf442901fae650",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/SO2_cloud_top-t000.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/tephra_col_mass-t000.tif",
+                        "basename": "tephra_col_mass-t000.tif",
+                        "size": 41521,
+                        "checksum": "sha1$7009b33f223e05972e9e3397340c76158e4fa838",
+                        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000/tephra_col_mass-t000.tif"
+                    }
+                ],
+                "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high/000"
+            }
+        ],
+        "path": "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/high"
+    }
+}[1;30mINFO[0m Final process status is success

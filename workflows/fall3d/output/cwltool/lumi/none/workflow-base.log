@@ -1,0 +1,635 @@
+[1;30mINFO[0m /pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'fall3d-what-if-volcanos.0.2.1.cwl#demo-etna' to 'file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna'
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "volcano": "Etna",
+    "scenario": "high",
+    "meteo_database": "ERA5ML",
+    "initial_condition": "RESTART",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "end_date_time": "2018-12-28T00:00:00Z",
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))",
+    "dx": 0.05,
+    "dy": 0.05,
+    "nlevels": 24,
+    "vent_lon": 15.0,
+    "vent_lat": 37.75,
+    "vent_height": 3300,
+    "nx_mpi": 6,
+    "ny_mpi": 4,
+    "nz_mpi": 1,
+    "keys": [
+        "tephra_col_mass",
+        "SO2_cloud_top"
+    ],
+    "times": 6,
+    "template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x"
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_cogs not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog not ready[0m
+[1;30mINFO[0m [workflow ] starting step configure
+[1;30mDEBUG[0m [32m[step configure] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/date": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dx": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dy": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_time": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/nlevels": 24,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_time": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[step configure] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/date": "20181225",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dx": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dy": 0.05,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_time": 72,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/nlevels": 24,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_time": 0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mINFO[0m [step configure] start
+[1;30mDEBUG[0m [32m[job configure] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#config-etna as part of step configure[0m
+[1;30mDEBUG[0m [32m[job configure] {
+    "dictionary": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl",
+    "dx": 0.05,
+    "dy": 0.05,
+    "end_date_time": "2018-12-28T00:00:00Z",
+    "initial_condition": "RESTART",
+    "levels": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels",
+    "meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "meteo_database": "ERA5ML",
+    "nlevels": 24,
+    "restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "template": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp",
+    "vent_height": 3300,
+    "vent_lat": 37.75,
+    "vent_lon": 15.0,
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[job configure] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job configure] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "fill_template.py"
+    },
+    {
+        "prefix": "--METEO_DICTIONARY",
+        "position": [
+            0,
+            "dictionary"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl"
+    },
+    {
+        "prefix": "--DX",
+        "position": [
+            0,
+            "dx"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--DY",
+        "position": [
+            0,
+            "dy"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--end_date_time",
+        "position": [
+            0,
+            "end_date_time"
+        ],
+        "datum": "2018-12-28T00:00:00Z"
+    },
+    {
+        "prefix": "--INITIAL",
+        "position": [
+            0,
+            "initial_condition"
+        ],
+        "datum": "RESTART"
+    },
+    {
+        "prefix": "--LEVELS_FILE",
+        "position": [
+            0,
+            "levels"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels"
+    },
+    {
+        "prefix": "--METEO_FILE",
+        "position": [
+            0,
+            "meteo"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc"
+    },
+    {
+        "prefix": "--METEO_DATABASE",
+        "position": [
+            0,
+            "meteo_database"
+        ],
+        "datum": "ERA5ML"
+    },
+    {
+        "prefix": "--NZ",
+        "position": [
+            0,
+            "nlevels"
+        ],
+        "datum": 24
+    },
+    {
+        "prefix": "--RESTART_FILE",
+        "position": [
+            0,
+            "restart"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc"
+    },
+    {
+        "prefix": "--start_date_time",
+        "position": [
+            0,
+            "start_date_time"
+        ],
+        "datum": "2018-12-25T00:00:00Z"
+    },
+    {
+        "prefix": "--template",
+        "position": [
+            0,
+            "template"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp"
+    },
+    {
+        "prefix": "--VENT_HEIGHT",
+        "position": [
+            0,
+            "vent_height"
+        ],
+        "datum": 3300
+    },
+    {
+        "prefix": "--VENT_LAT",
+        "position": [
+            0,
+            "vent_lat"
+        ],
+        "datum": 37.75
+    },
+    {
+        "prefix": "--VENT_LON",
+        "position": [
+            0,
+            "vent_lon"
+        ],
+        "datum": 15.0
+    },
+    {
+        "prefix": "--WKT",
+        "position": [
+            0,
+            "wkt"
+        ],
+        "datum": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job configure] initial work dir {}[0m
+[1;30mINFO[0m [job configure] /tmp/6flklz9y$ fill_template.py \
+    --METEO_DICTIONARY \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/ERA5.tbl \
+    --DX \
+    0.05 \
+    --DY \
+    0.05 \
+    --end_date_time \
+    2018-12-28T00:00:00Z \
+    --INITIAL \
+    RESTART \
+    --LEVELS_FILE \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/L137_ECMWF.levels \
+    --METEO_FILE \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc \
+    --METEO_DATABASE \
+    ERA5ML \
+    --NZ \
+    24 \
+    --RESTART_FILE \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc \
+    --start_date_time \
+    2018-12-25T00:00:00Z \
+    --template \
+    /project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/template.inp \
+    --VENT_HEIGHT \
+    3300 \
+    --VENT_LAT \
+    37.75 \
+    --VENT_LON \
+    15.0 \
+    --WKT \
+    'POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))'
+INFO:FILL_TEMPLATE:Filling in template...
+INFO:FILL_TEMPLATE:Done!
+Volcano coordinates are inside the domain box.
+[1;30mINFO[0m [job configure] Max memory used: 21MiB
+[1;30mINFO[0m [job configure] completed success
+[1;30mDEBUG[0m [32m[job configure] outputs {
+    "inp": {
+        "location": "file:///tmp/6flklz9y/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step configure] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/inp": {
+        "location": "file:///tmp/6flklz9y/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step configure] completed success
+[1;30mDEBUG[0m [32m[job configure] Removing input staging directory /tmp/bz9kuf6f[0m
+[1;30mDEBUG[0m [32m[job configure] Removing temporary directory /tmp/t30uy1ra[0m
+[1;30mINFO[0m [workflow ] starting step set_scenario
+[1;30mDEBUG[0m [32m[step set_scenario] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_time": null,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_time": null
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_date_time": "2018-12-28T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_time": 72,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_time": 0
+}[0m
+[1;30mINFO[0m [step set_scenario] start
+[1;30mDEBUG[0m [32m[job set_scenario] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#phases-etna as part of step set_scenario[0m
+[1;30mDEBUG[0m [32m[job set_scenario] {
+    "end_time": 72,
+    "scenario": "high",
+    "start_time": 0
+}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "echo"
+    },
+    {
+        "position": [
+            0,
+            0
+        ],
+        "datum": "Creating phases file"
+    },
+    {
+        "prefix": "--path",
+        "position": [
+            0,
+            "scenario"
+        ],
+        "datum": "high"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job set_scenario] initial work dir {
+    "_:226e7acb-9e28-40ce-a6f7-b1ae474dd454": [
+        "0 72 5000\n",
+        "/tmp/l5tdgzyl/phases.dat",
+        "CreateFile",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job set_scenario] /tmp/l5tdgzyl$ echo \
+    'Creating phases file' \
+    --path \
+    high
+Creating phases file --path high
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] outputs {
+    "phases": {
+        "location": "file:///tmp/l5tdgzyl/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] produced output {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/phases": {
+        "location": "file:///tmp/l5tdgzyl/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] Removing input staging directory /tmp/8w81f3h4[0m
+[1;30mDEBUG[0m [32m[job set_scenario] Removing temporary directory /tmp/xpc81ij0[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_cogs not ready[0m
+[1;30mINFO[0m [workflow ] starting step run_fall3d
+[1;30mDEBUG[0m [32m[step run_fall3d] job input {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/6flklz9y/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nx": 6,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/ny": 4,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/l5tdgzyl/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] evaluated job input to {
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/6flklz9y/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nx": 6,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/ny": 4,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/l5tdgzyl/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mINFO[0m [step run_fall3d] start
+[1;30mDEBUG[0m [32m[job run_fall3d] initializing from file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#runner-etna as part of step run_fall3d[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] {
+    "exe": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x",
+    "inp": {
+        "location": "file:///tmp/6flklz9y/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+        "size": 29486,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "meteo": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/meteo.nc",
+    "nx": 6,
+    "ny": 4,
+    "nz": 1,
+    "phases": {
+        "location": "file:///tmp/l5tdgzyl/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$8a4143a2314a3dd058d2d7905a9c92a344bdacae",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "restart": "/project/[REDACTED]/[REDACTED]/getit-workflows/app_etna/restart.nc",
+    "task": "all"
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] path mappings is {
+    "file:///tmp/6flklz9y/final.inp": [
+        "/tmp/6flklz9y/final.inp",
+        "/tmp/mv6rxq6l/final.inp",
+        "File",
+        false
+    ],
+    "file:///tmp/l5tdgzyl/phases.dat": [
+        "/tmp/l5tdgzyl/phases.dat",
+        "/tmp/mv6rxq6l/phases.dat",
+        "File",
+        false
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-n",
+        "valueFrom": "$(inputs.nx * inputs.ny * inputs.nz)",
+        "position": [
+            0,
+            0
+        ]
+    },
+    {
+        "position": [
+            0,
+            "exe"
+        ],
+        "datum": "/project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x"
+    },
+    {
+        "position": [
+            1,
+            "task"
+        ],
+        "datum": "all"
+    },
+    {
+        "position": [
+            2,
+            "inp"
+        ],
+        "datum": {
+            "location": "file:///tmp/6flklz9y/final.inp",
+            "basename": "final.inp",
+            "nameroot": "final",
+            "nameext": ".inp",
+            "class": "File",
+            "checksum": "sha1$8e0d2db2f3a00334c0a2e42c53679bf77dc9e31a",
+            "size": 29486,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/mv6rxq6l/final.inp",
+            "dirname": "/tmp/mv6rxq6l"
+        }
+    },
+    {
+        "position": [
+            3,
+            "nx"
+        ],
+        "datum": 6
+    },
+    {
+        "position": [
+            4,
+            "ny"
+        ],
+        "datum": 4
+    },
+    {
+        "position": [
+            5,
+            "nz"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mDEBUG[0m [32m[job run_fall3d] initial work dir {
+    "file:///tmp/6flklz9y/final.inp": [
+        "/tmp/6flklz9y/final.inp",
+        "/tmp/mv6rxq6l/final.inp",
+        "File",
+        true
+    ],
+    "file:///tmp/l5tdgzyl/phases.dat": [
+        "/tmp/l5tdgzyl/phases.dat",
+        "/tmp/mv6rxq6l/phases.dat",
+        "File",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job run_fall3d] /tmp/mv6rxq6l$ mpirun \
+    -n \
+    24 \
+    /project/[REDACTED]/[REDACTED]/fall3d/build/bin/Fall3d.Cray.r8.mpi.cpu.x \
+    all \
+    /tmp/mv6rxq6l/final.inp \
+    6 \
+    4 \
+    1 > /tmp/mv6rxq6l/fall3d.out 2> /tmp/mv6rxq6l/fall3d.err
+[1;30mERROR[0m [31m'mpirun' not found: [Errno 2] No such file or directory: 'mpirun'[0m
+Traceback (most recent call last):
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 324, in _execute
+    rcode = _job_popen(
+        commands,
+    ...<11 lines>...
+        default_stderr=runtimeContext.default_stderr,
+    )
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 963, in _job_popen
+    sproc = subprocess.Popen(
+        commands,
+    ...<7 lines>...
+        universal_newlines=True,
+    )
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/micromamba-envs/envs/cwltool/lib/python3.13/subprocess.py", line 1991, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'mpirun'
+[1;30mWARNING[0m [33m[job run_fall3d] completed permanentFail[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] outputs {}[0m
+[1;30mERROR[0m [31m[step run_fall3d] Output is missing expected field file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/log[0m
+[1;30mERROR[0m [31m[step run_fall3d] Output is missing expected field file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/res[0m
+[1;30mERROR[0m [31m[step run_fall3d] Output is missing expected field file:///pfs/lustrep4/projappl/[REDACTED]/[REDACTED]/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/rst[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] produced output {}[0m
+[1;30mWARNING[0m [33m[step run_fall3d] completed permanentFail[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing input staging directory /tmp/2mek_hap[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing temporary directory /tmp/25_3npbv[0m
+[1;30mINFO[0m [workflow ] completed permanentFail
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stac": null
+}[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/mv6rxq6l[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/l5tdgzyl[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/6flklz9y[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/w63e39tv[0m
+{
+    "stac": null
+}[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
