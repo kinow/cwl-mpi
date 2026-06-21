@@ -4,14 +4,14 @@ from dataclasses import dataclass
 from pathlib import Path
 import re
 
-"""Script to generate the Simple MPI Workflow Results.
+"""Script to generate the FALL3D Workflow Results.
 
 Note that this is not a copy and paste output. The results were analyzed
 individually, because some runners produced a successful run but in reality
 were doing `singularity mpirun` instead of `mpirun singularity`.
 
 After this analysis, the table was manually edited to include the INVALID
-(Invalid) results.
+results.
 """
 
 LOG_DIR = Path("output")
@@ -21,19 +21,17 @@ ANSI_ESCAPE = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 TABLE_CONTAINERS = ["none", "singularity"]
 DOCKER_CONTAINER = "docker"
 
-RUNNERS = ["cwltool", "toil"]  # "streamflow" == Does not support the MPIRequirement
-PLATFORMS = ["lumi", "mn5", "laptop", "cloud"]  # "ft3" == VPN is offline due to security issues
+RUNNERS = ["cwltool"]  # "streamflow" == Does not support the MPIRequirement, "toil" == issues with Slurm/containers
+PLATFORMS = ["lumi", "laptop", "cloud"]  # "ft3" == VPN is offline due to security issues
 CONTAINERS = ["none", "docker", "singularity"]
 TESTS = [
     ("workflow-base",
-     "Simple MPI workflow using \\protect\\textbf{baseCommand: mpirun}. Execution time is shown in seconds. “INVALID” indicates runs where the MPI job was launched via Singularity instead of the host MPI launcher."),
+     "FALL3D workflow using \\protect\\textbf{baseCommand: mpirun}. Execution time is shown in seconds. “INVALID” indicates runs where the MPI job was launched via Singularity instead of the host MPI launcher."),
     ("workflow-req",
-     "Simple MPI workflow using \\protect\\textbf{MPIRequirement}. Execution time is shown in seconds."),
+     "FALL3D workflow using \\protect\\textbf{MPIRequirement}. Execution time is shown in seconds."),
 ]
 PLATFORM_NAMES = {
-    "ft3": "FinisTerrae III",
     "lumi": "LUMI",
-    "mn5": "MareNostrum 5",
     "laptop": "Laptop",
     "cloud": "Cloud",
 }

@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\geometry{margin=1in}
+\begin{document}
+\begin{table}[ht!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\textbf{cwltool}\\[0.2cm]
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
+\hline
+LUMI & ERROR (26) & \textbf{OK} (250) \\
+Laptop & -- & -- \\
+Cloud & -- & -- \\
+\hline
+\end{tabular}
+\\[0.6cm]
+\caption{FALL3D workflow using \protect\textbf{baseCommand: mpirun}. Execution time is shown in seconds. “INVALID” indicates runs where the MPI job was launched via Singularity instead of the host MPI launcher.}
+\label{table:workflow-base}
+\end{table}
+
+\begin{table}[ht!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\textbf{cwltool}\\[0.2cm]
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{lightgray!50}
+\textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
+\hline
+LUMI & \textbf{OK} (219) & ERROR (4) \\
+Laptop & -- & -- \\
+Cloud & -- & -- \\
+\hline
+\end{tabular}
+\\[0.6cm]
+\caption{FALL3D workflow using \protect\textbf{MPIRequirement}. Execution time is shown in seconds.}
+\label{table:workflow-req}
+\end{table}
+
+\end{document}
+
+================================================================================
+DOCKER RESULTS SUMMARY
+================================================================================
+
+[workflow-base]
+
+[workflow-req]
