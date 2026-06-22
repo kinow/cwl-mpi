@@ -95,6 +95,7 @@ When dependencies are needed to run a `requirements.txt` file is provided.
 The following software was used during the thesis:
 
 - [Overleaf](https://www.overleaf.com/), for writing the thesis
+- [Zotero](https://www.zotero.org/), for the bibliography references
 - Git, Python, LaTeX, SSH, FileZilla, Bash Shell, and Linux
 - [PyCharm IDE](https://www.jetbrains.com/pycharm/) for most of the development
 - CWL Runners ([cwltool](https://cwltool.readthedocs.io/en/latest/),
