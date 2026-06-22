@@ -8,7 +8,131 @@ submit the workflow to the cloud environment (Hetzner).
 [`BUILD.md`](./BUILD.md) describes how the FALL3D model was compiled on each
 environment.
 
-## Submitting in LUMI
+## Running FALL3D+CWL+MPI on the laptop or in the cloud environment
+
+### `baseCommand: mpirun`, no containers
+
+```bash
+SIM=workflow-base
+ENV=laptop  # or cloud
+JOBFILE="arguments_etna_laptop.yml"  # or arguments_etna_cloud.yml
+CONTAINER=none
+
+LOGDIR="logs/cwltool/$ENV/$CONTAINER"
+mkdir -p "$LOGDIR"
+
+CMD="cwltool \
+  --no-container \
+  --debug \
+  --strict-memory-limit \
+  --strict-cpu-limit \
+  fall3d-what-if-volcanos.0.2.1.cwl#demo-etna \
+  $JOBFILE"
+
+echo "COMMAND: $CMD" > "$LOGDIR/$SIM.cmd"
+START=$(date +%s)
+bash -c "$CMD" > "$LOGDIR/$SIM.log" 2>&1
+EXIT=$?
+END=$(date +%s)
+DURATION=$((END - START))
+echo "$DURATION" > "$LOGDIR/$SIM.time"
+echo "$EXIT" > "$LOGDIR/$SIM.exit"
+```
+
+### `baseCommand: mpirun`, with Singularity
+
+```bash
+SIM=workflow-base
+ENV=laptop  # or cloud
+JOBFILE="arguments_etna_container.yml"
+CONTAINER=singularity
+
+LOGDIR="logs/cwltool/$ENV/$CONTAINER"
+mkdir -p "$LOGDIR"
+
+CMD="cwltool \
+  --singularity \
+  --debug \
+  --strict-memory-limit \
+  --strict-cpu-limit \
+  fall3d-what-if-volcanos.0.2.1.cwl#demo-etna \
+  $JOBFILE"
+
+echo "COMMAND: $CMD" > "$LOGDIR/$SIM.cmd"
+START=$(date +%s)
+bash -c "$CMD" > "$LOGDIR/$SIM.log" 2>&1
+EXIT=$?
+END=$(date +%s)
+DURATION=$((END - START))
+echo "$DURATION" > "$LOGDIR/$SIM.time"
+echo "$EXIT" > "$LOGDIR/$SIM.exit"
+```
+
+### `MPIRequirement`, no containers
+
+```bash
+SIM=workflow-req
+ENV=laptop  # or cloud
+JOBFILE="arguments_etna_laptop.yml"  # or arguments_etna_cloud.yml
+CONTAINER=none
+MPICONFIGFILE="mpi-config-file-laptop.yml"  # or mpi-config-file-cloud.yml
+
+LOGDIR="logs/cwltool/$ENV/$CONTAINER"
+mkdir -p "$LOGDIR"
+
+CMD="cwltool \
+  --no-container \
+  --enable-ext \
+  --mpi-config-file $MPICONFIGFILE \
+  --debug \
+  --strict-memory-limit \
+  --strict-cpu-limit \
+  fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna \
+  $JOBFILE"
+
+echo "COMMAND: $CMD" > "$LOGDIR/$SIM.cmd"
+START=$(date +%s)
+bash -c "$CMD" > "$LOGDIR/$SIM.log" 2>&1
+EXIT=$?
+END=$(date +%s)
+DURATION=$((END - START))
+echo "$DURATION" > "$LOGDIR/$SIM.time"
+echo "$EXIT" > "$LOGDIR/$SIM.exit"
+```
+
+### `MPIRequirement`, with Singularity
+
+```bash
+SIM=workflow-req
+ENV=laptop  # or cloud
+JOBFILE="arguments_etna_container.yml"
+CONTAINER=singularity
+MPICONFIGFILE="mpi-config-file-laptop.yml"  # or mpi-config-file-cloud.yml
+
+LOGDIR="logs/cwltool/$ENV/$CONTAINER"
+mkdir -p "$LOGDIR"
+
+CMD="cwltool \
+  --singularity \
+  --enable-ext \
+  --mpi-config-file $MPICONFIGFILE \
+  --debug \
+  --strict-memory-limit \
+  --strict-cpu-limit \
+  fall3d-what-if-volcanos.0.2.1_mpirequirement.cwl#demo-etna \
+  $JOBFILE"
+
+echo "COMMAND: $CMD" > "$LOGDIR/$SIM.cmd"
+START=$(date +%s)
+bash -c "$CMD" > "$LOGDIR/$SIM.log" 2>&1
+EXIT=$?
+END=$(date +%s)
+DURATION=$((END - START))
+echo "$DURATION" > "$LOGDIR/$SIM.time"
+echo "$EXIT" > "$LOGDIR/$SIM.exit"
+```
+
+## Running FALL3D+CWL+MPI on LUMI
 
 ### `baseCommand: mpirun`, no containers
 

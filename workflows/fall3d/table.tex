@@ -12,14 +12,14 @@
 \rowcolor{lightgray!50}
 \textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
 \hline
-LUMI & ERROR (26) & \textbf{OK} (250) \\
-Laptop & -- & -- \\
-Cloud & -- & -- \\
+LUMI & ERROR (26) & INVALID (250) \\
+Laptop & ERROR (2) & INVALID (202) \\
+Cloud & \textbf{OK} (1135) & ERROR (3) \\
 \hline
 \end{tabular}
 \\[0.6cm]
 \caption{FALL3D workflow using \protect\textbf{baseCommand: mpirun}. Execution time is shown in seconds. “INVALID” indicates runs where the MPI job was launched via Singularity instead of the host MPI launcher.}
-\label{table:workflow-base}
+\label{table:workflow-base_fall3d}
 \end{table}
 
 \begin{table}[ht!]
@@ -32,21 +32,13 @@ Cloud & -- & -- \\
 \textbf{System} & \textbf{No Container} & \textbf{Singularity} \\
 \hline
 LUMI & \textbf{OK} (219) & ERROR (4) \\
-Laptop & -- & -- \\
-Cloud & -- & -- \\
+Laptop & ERROR (2) & ERROR (3) \\
+Cloud & \textbf{OK} (1135) & ERROR (5) \\
 \hline
 \end{tabular}
 \\[0.6cm]
 \caption{FALL3D workflow using \protect\textbf{MPIRequirement}. Execution time is shown in seconds.}
-\label{table:workflow-req}
+\label{table:workflow-req_fall3d}
 \end{table}
 
 \end{document}
-
-================================================================================
-DOCKER RESULTS SUMMARY
-================================================================================
-
-[workflow-base]
-
-[workflow-req]

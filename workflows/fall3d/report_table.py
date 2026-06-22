@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
-import re
 
 """Script to generate the FALL3D Workflow Results.
 
@@ -19,11 +19,10 @@ LOG_DIR = Path("output")
 ANSI_ESCAPE = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 
 TABLE_CONTAINERS = ["none", "singularity"]
-DOCKER_CONTAINER = "docker"
 
 RUNNERS = ["cwltool"]  # "streamflow" == Does not support the MPIRequirement, "toil" == issues with Slurm/containers
 PLATFORMS = ["lumi", "laptop", "cloud"]  # "ft3" == VPN is offline due to security issues
-CONTAINERS = ["none", "docker", "singularity"]
+CONTAINERS = ["none", "singularity"]
 TESTS = [
     ("workflow-base",
      "FALL3D workflow using \\protect\\textbf{baseCommand: mpirun}. Execution time is shown in seconds. “INVALID” indicates runs where the MPI job was launched via Singularity instead of the host MPI launcher."),
@@ -188,42 +187,9 @@ def print_table(data, test, caption):
         print_runner_table(data, runner, test)
 
     print(f"\\caption{{{caption}}}")
-    print(r"\label{table:" + test + "}")
+    print(r"\label{table:" + test + "_fall3d}")
     print(r"\end{table}")
     print()
-
-
-def print_docker_summary(data):
-    """The Docker tests always pass, on laptop and cloud. So no point in adding
-    these to the table. This function prints the summary to the stdout in the
-    command line so that it can be used for reporting."""
-    print("\n" + "=" * 80)
-    print("DOCKER RESULTS SUMMARY")
-    print("=" * 80)
-
-    for test, _ in TESTS:
-        print(f"\n[{test}]")
-
-        for runner in RUNNERS:
-
-            runner_data = data.get(runner, {})
-
-            for platform in PLATFORMS:
-
-                result = (
-                    runner_data
-                    .get((platform, DOCKER_CONTAINER), {})
-                    .get(test)
-                )
-
-                if result is None:
-                    continue
-
-                print(
-                    f"{runner:10s} "
-                    f"{PLATFORM_NAMES.get(platform, platform):15s} "
-                    f"{fmt_status(result.status)}"
-                )
 
 
 def print_latex_tables(data):
@@ -254,12 +220,7 @@ def detect_singularity_mode(runner: str, log_file: Path) -> str | None:
         line = lines[i]
 
         # cwltool and Toil both write logs with [job abc..., then write the command line (multiline)
-        is_job = False
-        if "toil" in runner:
-            is_job = "[job sr-workflow.mpirun" in line
-        else:
-            is_job = "[job mpirun" in line
-        if is_job and "$" in line:
+        if "[job run_fall3d" in line and "$" in line:
             # extract everything after '$'
             cmd = line.split("$", 1)[1].strip()
 
@@ -318,4 +279,3 @@ def detect_singularity_mode(runner: str, log_file: Path) -> str | None:
 if __name__ == "__main__":
     data = collect()
     print_latex_tables(data)
-    print_docker_summary(data)
