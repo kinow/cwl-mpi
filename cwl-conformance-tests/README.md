@@ -5,16 +5,10 @@ different HPC systems.
 
 ## Python
 
-For Python, the preferred option is to use one of the HPC modules. The fallback option
-is to use micromamba.
-
-We could have inverted the logic to have a more homogeneous test across HPC systems.
-However, many (or most?) of the users of these HPC systems will use the Python modules
-first, and if that fails, they may resort to something like micromamba. We follow a
-similar path and tell users which Python module we used in their HPC system, thus giving
-users more reassurance that CWL should work on their environments. Normally, if it works
-in the Python module on the HPC, it should work on micromamba/conda/etc, while the
-reverse is not true.
+Micromamba was used to create and manage Conda environments on each HPC system.
+The first experiments were performed with `module` system. However, in many cases
+i) the Python version was not compatible (too old), or ii) Node.js or other dependencies
+like GDAL were not available.
 
 ## CWL specification Git folders
 
