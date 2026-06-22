@@ -1,0 +1,8 @@
+Warning!  Library version information error.
+The HDF5 library version information are not consistent in its source code.
+This is NOT a fatal error but should be corrected.  Setting the environment
+variable 'HDF5_DISABLE_VERSION_CHECK' to a value of 1 will suppress
+this warning.
+Library version information are:
+H5_VERS_MAJOR=1, H5_VERS_MINOR=14, H5_VERS_RELEASE=4, H5_VERS_SUBRELEASE=2,
+H5_VERS_INFO=HDF5 library version: 1.14.4

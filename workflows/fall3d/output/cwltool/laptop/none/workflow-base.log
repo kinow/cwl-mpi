@@ -1,0 +1,657 @@
+[1;30mINFO[0m /home/kinow/Development/python/micromamba/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'fall3d-what-if-volcanos.0.2.1.cwl#demo-etna' to 'file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna'
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "volcano": "Etna",
+    "scenario": "high",
+    "meteo_database": "ERA5ML",
+    "initial_condition": "RESTART",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "end_date_time": "2018-12-26T00:00:00Z",
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))",
+    "dx": 0.05,
+    "dy": 0.05,
+    "nlevels": 24,
+    "vent_lon": 15.0,
+    "vent_lat": 37.75,
+    "vent_height": 3300,
+    "keys": [
+        "tephra_col_mass",
+        "SO2_cloud_top"
+    ],
+    "times": 6,
+    "template": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/template.inp",
+    "meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc",
+    "dictionary": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/ERA5.tbl",
+    "levels": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/L137_ECMWF.levels",
+    "exe": "/home/kinow/Development/fortran/workspace/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "nx_mpi": 3,
+    "ny_mpi": 2,
+    "nz_mpi": 1
+}[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_cogs not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d not ready[0m
+[1;30mINFO[0m [workflow ] starting step configure
+[1;30mDEBUG[0m [32m[step configure] job input {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/date": null,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dictionary": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/ERA5.tbl",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dx": 0.05,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dy": 0.05,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_time": null,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/levels": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/nlevels": 24,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_time": null,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/template": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/template.inp",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[step configure] evaluated job input to {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/date": "20181225",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dictionary": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/ERA5.tbl",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dx": 0.05,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dy": 0.05,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_time": 24,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/levels": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/nlevels": 24,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_time": 0,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/template": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/template.inp",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mINFO[0m [step configure] start
+[1;30mDEBUG[0m [32m[job configure] initializing from file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#config-etna as part of step configure[0m
+[1;30mDEBUG[0m [32m[job configure] {
+    "dictionary": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/ERA5.tbl",
+    "dx": 0.05,
+    "dy": 0.05,
+    "end_date_time": "2018-12-26T00:00:00Z",
+    "initial_condition": "RESTART",
+    "levels": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/L137_ECMWF.levels",
+    "meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "meteo_database": "ERA5ML",
+    "nlevels": 24,
+    "restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "template": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/template.inp",
+    "vent_height": 3300,
+    "vent_lat": 37.75,
+    "vent_lon": 15.0,
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[job configure] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job configure] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "fill_template.py"
+    },
+    {
+        "prefix": "--METEO_DICTIONARY",
+        "position": [
+            0,
+            "dictionary"
+        ],
+        "datum": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/ERA5.tbl"
+    },
+    {
+        "prefix": "--DX",
+        "position": [
+            0,
+            "dx"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--DY",
+        "position": [
+            0,
+            "dy"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--end_date_time",
+        "position": [
+            0,
+            "end_date_time"
+        ],
+        "datum": "2018-12-26T00:00:00Z"
+    },
+    {
+        "prefix": "--INITIAL",
+        "position": [
+            0,
+            "initial_condition"
+        ],
+        "datum": "RESTART"
+    },
+    {
+        "prefix": "--LEVELS_FILE",
+        "position": [
+            0,
+            "levels"
+        ],
+        "datum": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/L137_ECMWF.levels"
+    },
+    {
+        "prefix": "--METEO_FILE",
+        "position": [
+            0,
+            "meteo"
+        ],
+        "datum": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc"
+    },
+    {
+        "prefix": "--METEO_DATABASE",
+        "position": [
+            0,
+            "meteo_database"
+        ],
+        "datum": "ERA5ML"
+    },
+    {
+        "prefix": "--NZ",
+        "position": [
+            0,
+            "nlevels"
+        ],
+        "datum": 24
+    },
+    {
+        "prefix": "--RESTART_FILE",
+        "position": [
+            0,
+            "restart"
+        ],
+        "datum": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc"
+    },
+    {
+        "prefix": "--start_date_time",
+        "position": [
+            0,
+            "start_date_time"
+        ],
+        "datum": "2018-12-25T00:00:00Z"
+    },
+    {
+        "prefix": "--template",
+        "position": [
+            0,
+            "template"
+        ],
+        "datum": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/template.inp"
+    },
+    {
+        "prefix": "--VENT_HEIGHT",
+        "position": [
+            0,
+            "vent_height"
+        ],
+        "datum": 3300
+    },
+    {
+        "prefix": "--VENT_LAT",
+        "position": [
+            0,
+            "vent_lat"
+        ],
+        "datum": 37.75
+    },
+    {
+        "prefix": "--VENT_LON",
+        "position": [
+            0,
+            "vent_lon"
+        ],
+        "datum": 15.0
+    },
+    {
+        "prefix": "--WKT",
+        "position": [
+            0,
+            "wkt"
+        ],
+        "datum": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job configure] initial work dir {}[0m
+[1;30mINFO[0m [job configure] /tmp/ymdt8gfu$ fill_template.py \
+    --METEO_DICTIONARY \
+    /home/kinow/Development/python/workspace/getit-workflows/app_etna/ERA5.tbl \
+    --DX \
+    0.05 \
+    --DY \
+    0.05 \
+    --end_date_time \
+    2018-12-26T00:00:00Z \
+    --INITIAL \
+    RESTART \
+    --LEVELS_FILE \
+    /home/kinow/Development/python/workspace/getit-workflows/app_etna/L137_ECMWF.levels \
+    --METEO_FILE \
+    /home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc \
+    --METEO_DATABASE \
+    ERA5ML \
+    --NZ \
+    24 \
+    --RESTART_FILE \
+    /home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc \
+    --start_date_time \
+    2018-12-25T00:00:00Z \
+    --template \
+    /home/kinow/Development/python/workspace/getit-workflows/app_etna/template.inp \
+    --VENT_HEIGHT \
+    3300 \
+    --VENT_LAT \
+    37.75 \
+    --VENT_LON \
+    15.0 \
+    --WKT \
+    'POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))'
+INFO:FILL_TEMPLATE:Filling in template...
+INFO:FILL_TEMPLATE:Done!
+Volcano coordinates are inside the domain box.
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job configure] completed success
+[1;30mDEBUG[0m [32m[job configure] outputs {
+    "inp": {
+        "location": "file:///tmp/ymdt8gfu/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$f48669fb49844668ab7cca4fa9088123268ba781",
+        "size": 29510,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step configure] produced output {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/inp": {
+        "location": "file:///tmp/ymdt8gfu/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$f48669fb49844668ab7cca4fa9088123268ba781",
+        "size": 29510,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step configure] completed success
+[1;30mDEBUG[0m [32m[job configure] Removing input staging directory /tmp/h_3uxcow[0m
+[1;30mDEBUG[0m [32m[job configure] Removing temporary directory /tmp/ayf5bzmo[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog not ready[0m
+[1;30mINFO[0m [workflow ] starting step set_scenario
+[1;30mDEBUG[0m [32m[step set_scenario] job input {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_time": null,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_time": null
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] evaluated job input to {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_time": 24,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_time": 0
+}[0m
+[1;30mINFO[0m [step set_scenario] start
+[1;30mDEBUG[0m [32m[job set_scenario] initializing from file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#phases-etna as part of step set_scenario[0m
+[1;30mDEBUG[0m [32m[job set_scenario] {
+    "end_time": 24,
+    "scenario": "high",
+    "start_time": 0
+}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "echo"
+    },
+    {
+        "position": [
+            0,
+            0
+        ],
+        "datum": "Creating phases file"
+    },
+    {
+        "prefix": "--path",
+        "position": [
+            0,
+            "scenario"
+        ],
+        "datum": "high"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job set_scenario] initial work dir {
+    "_:8fa66e7a-3641-45ce-86a6-cf8753d40cb6": [
+        "0 24 5000\n",
+        "/tmp/1z7yrdyk/phases.dat",
+        "CreateFile",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job set_scenario] /tmp/1z7yrdyk$ echo \
+    'Creating phases file' \
+    --path \
+    high
+Creating phases file --path high
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] outputs {
+    "phases": {
+        "location": "file:///tmp/1z7yrdyk/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] produced output {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/phases": {
+        "location": "file:///tmp/1z7yrdyk/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] Removing input staging directory /tmp/yyjz08zt[0m
+[1;30mDEBUG[0m [32m[job set_scenario] Removing temporary directory /tmp/ioqu7tj2[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_cogs not ready[0m
+[1;30mINFO[0m [workflow ] starting step run_fall3d
+[1;30mDEBUG[0m [32m[step run_fall3d] job input {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/exe": "/home/kinow/Development/fortran/workspace/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/ymdt8gfu/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$f48669fb49844668ab7cca4fa9088123268ba781",
+        "size": 29510,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nx": 3,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/ny": 2,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/1z7yrdyk/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] evaluated job input to {
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/exe": "/home/kinow/Development/fortran/workspace/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/ymdt8gfu/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$f48669fb49844668ab7cca4fa9088123268ba781",
+        "size": 29510,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nx": 3,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/ny": 2,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/1z7yrdyk/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mINFO[0m [step run_fall3d] start
+[1;30mDEBUG[0m [32m[job run_fall3d] initializing from file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#runner-etna as part of step run_fall3d[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] {
+    "exe": "/home/kinow/Development/fortran/workspace/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "inp": {
+        "location": "file:///tmp/ymdt8gfu/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$f48669fb49844668ab7cca4fa9088123268ba781",
+        "size": 29510,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "meteo": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/meteo.nc",
+    "nx": 3,
+    "ny": 2,
+    "nz": 1,
+    "phases": {
+        "location": "file:///tmp/1z7yrdyk/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "restart": "/home/kinow/Development/python/workspace/getit-workflows/app_etna/restart.nc",
+    "task": "all"
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] path mappings is {
+    "file:///tmp/ymdt8gfu/final.inp": [
+        "/tmp/ymdt8gfu/final.inp",
+        "/tmp/fc02is88/final.inp",
+        "File",
+        false
+    ],
+    "file:///tmp/1z7yrdyk/phases.dat": [
+        "/tmp/1z7yrdyk/phases.dat",
+        "/tmp/fc02is88/phases.dat",
+        "File",
+        false
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-n",
+        "valueFrom": "$(inputs.nx * inputs.ny * inputs.nz)",
+        "position": [
+            0,
+            0
+        ]
+    },
+    {
+        "position": [
+            0,
+            "exe"
+        ],
+        "datum": "/home/kinow/Development/fortran/workspace/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x"
+    },
+    {
+        "position": [
+            1,
+            "task"
+        ],
+        "datum": "all"
+    },
+    {
+        "position": [
+            2,
+            "inp"
+        ],
+        "datum": {
+            "location": "file:///tmp/ymdt8gfu/final.inp",
+            "basename": "final.inp",
+            "nameroot": "final",
+            "nameext": ".inp",
+            "class": "File",
+            "checksum": "sha1$f48669fb49844668ab7cca4fa9088123268ba781",
+            "size": 29510,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/fc02is88/final.inp",
+            "dirname": "/tmp/fc02is88"
+        }
+    },
+    {
+        "position": [
+            3,
+            "nx"
+        ],
+        "datum": 3
+    },
+    {
+        "position": [
+            4,
+            "ny"
+        ],
+        "datum": 2
+    },
+    {
+        "position": [
+            5,
+            "nz"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mDEBUG[0m [32m[job run_fall3d] initial work dir {
+    "file:///tmp/ymdt8gfu/final.inp": [
+        "/tmp/ymdt8gfu/final.inp",
+        "/tmp/fc02is88/final.inp",
+        "File",
+        true
+    ],
+    "file:///tmp/1z7yrdyk/phases.dat": [
+        "/tmp/1z7yrdyk/phases.dat",
+        "/tmp/fc02is88/phases.dat",
+        "File",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job run_fall3d] /tmp/fc02is88$ mpirun \
+    -n \
+    6 \
+    /home/kinow/Development/fortran/workspace/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x \
+    all \
+    /tmp/fc02is88/final.inp \
+    3 \
+    2 \
+    1 > /tmp/fc02is88/fall3d.out 2> /tmp/fc02is88/fall3d.err
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mWARNING[0m [33m[job run_fall3d] exited with status: 15[0m
+[1;30mERROR[0m [31m[job run_fall3d] Job error:
+Error collecting output for parameter 'log': fall3d-what-if-volcanos.0.2.1.cwl:795:11: Did not find output file with glob pattern: ['*.Fall3d.log'].[0m
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/cwltool/command_line_tool.py", line 1438, in collect_output
+    raise WorkflowException(
+        f"Did not find output file with glob pattern: {globpatterns!r}."
+    )
+cwl_utils.errors.WorkflowException: Did not find output file with glob pattern: ['*.Fall3d.log'].
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/cwltool/command_line_tool.py", line 1269, in collect_output_ports
+    ret[fragment] = self.collect_output(
+                    ~~~~~~~~~~~~~~~~~~~^
+        port,
+        ^^^^^
+    ...<3 lines>...
+        compute_checksum=compute_checksum,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/cwltool/command_line_tool.py", line 1436, in collect_output
+    with SourceLine(binding, "glob", WorkflowException, debug):
+         ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/schema_salad/sourceline.py", line 255, in __exit__
+    raise self.makeError(str(exc_value)) from exc_value
+cwl_utils.errors.WorkflowException: fall3d-what-if-volcanos.0.2.1.cwl:795:11: Did not find output file with glob pattern: ['*.Fall3d.log'].
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/cwltool/job.py", line 376, in _execute
+    outputs = self.collect_outputs(self.outdir, rcode)
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/cwltool/command_line_tool.py", line 1262, in collect_output_ports
+    with SourceLine(
+         ~~~~~~~~~~^
+        ports,
+        ^^^^^^
+    ...<2 lines>...
+        debug,
+        ^^^^^^
+    ):
+    ^
+  File "/home/kinow/Development/python/micromamba/envs/cwltool/lib/python3.13/site-packages/schema_salad/sourceline.py", line 255, in __exit__
+    raise self.makeError(str(exc_value)) from exc_value
+cwltool.command_line_tool.ParameterOutputWorkflowException: Error collecting output for parameter 'log': fall3d-what-if-volcanos.0.2.1.cwl:795:11: Did not find output file with glob pattern: ['*.Fall3d.log'].
+[1;30mWARNING[0m [33m[job run_fall3d] completed permanentFail[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] outputs {}[0m
+[1;30mERROR[0m [31m[step run_fall3d] Output is missing expected field file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/log[0m
+[1;30mERROR[0m [31m[step run_fall3d] Output is missing expected field file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/res[0m
+[1;30mERROR[0m [31m[step run_fall3d] Output is missing expected field file:///home/kinow/Development/python/workspace/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/rst[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] produced output {}[0m
+[1;30mWARNING[0m [33m[step run_fall3d] completed permanentFail[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing input staging directory /tmp/qkdlrvww[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing temporary directory /tmp/k8lvb6vr[0m
+[1;30mINFO[0m [workflow ] completed permanentFail
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stac": null
+}[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/ymdt8gfu[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/fc02is88[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/1z7yrdyk[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/wd4qhzpt[0m
+{
+    "stac": null
+}[1;30mWARNING[0m [33mFinal process status is permanentFail[0m

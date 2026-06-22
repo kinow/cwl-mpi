@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+                                                           
+           ______      _      _      ____  _____           
+          |  ____/\   | |    | |    |___ \|  __ \          
+          | |__ /  \  | |    | |      __) | |  | |         
+          |  __/ /\ \ | |    | |     |__ <| |  | |         
+          | | / ____ \| |____| |____ ___) | |__| |         
+          |_|/_/    \_\______|______|____/|_____/          
+                                                           
+                                                           
+                 Initializing FALL3D suite                 
+                                                           
+   Copyright: 2018 GNU General Public License version 3    
+                 (see licence for details)                 
+                                                           
+  Version               : 9.1.0/noGitInfo
+  Hardware              : General Purpose (CPU)
+  Compiler              : GCC version 15.2.0
+  Input File            : /DpgZtL/final.inp
+  Number of processors  : 00006
+  Number of sub-domains : 00003 x 00002 x 00001
+  Number of instances   : 00001
+                                                           
+-----------------------------------------------------------
+
+<LOG> Running SetTgsd task...
+<LOG> Running SetDbs task...
+<LOG> Running SetSrc task...
+<LOG> Running FALL3D solver...
+<LOG> The program has been run successfully

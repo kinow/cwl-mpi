@@ -1,0 +1,2065 @@
+[1;30mINFO[0m /home/cwlmpi/.local/share/mamba/envs/cwltool/bin/cwltool 3.2.20260413085819
+[1;30mINFO[0m Resolved 'fall3d-what-if-volcanos.0.2.1.cwl#demo-etna' to 'file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna'
+[1;30mDEBUG[0m [32m[workflow ] initialized from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna[0m
+[1;30mINFO[0m [workflow ] start
+[1;30mDEBUG[0m [32m[workflow ] inputs {
+    "volcano": "Etna",
+    "scenario": "high",
+    "meteo_database": "ERA5ML",
+    "initial_condition": "RESTART",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "end_date_time": "2018-12-26T00:00:00Z",
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))",
+    "dx": 0.05,
+    "dy": 0.05,
+    "nlevels": 24,
+    "vent_lon": 15.0,
+    "vent_lat": 37.75,
+    "vent_height": 3300,
+    "keys": [
+        "tephra_col_mass",
+        "SO2_cloud_top"
+    ],
+    "times": 6,
+    "template": "/shared/getit-workflows/app_etna/template.inp",
+    "meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "restart": "/shared/getit-workflows/app_etna/restart.nc",
+    "dictionary": "/shared/getit-workflows/app_etna/ERA5.tbl",
+    "levels": "/shared/getit-workflows/app_etna/L137_ECMWF.levels",
+    "exe": "/shared/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "nx_mpi": 3,
+    "ny_mpi": 2,
+    "nz_mpi": 1
+}[0m
+[1;30mINFO[0m [workflow ] starting step set_scenario
+[1;30mDEBUG[0m [32m[step set_scenario] job input {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_time": null,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_time": null
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] evaluated job input to {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/end_time": 24,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/scenario": "high",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/start_time": 0
+}[0m
+[1;30mINFO[0m [step set_scenario] start
+[1;30mDEBUG[0m [32m[job set_scenario] initializing from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#phases-etna as part of step set_scenario[0m
+[1;30mDEBUG[0m [32m[job set_scenario] {
+    "end_time": 24,
+    "scenario": "high",
+    "start_time": 0
+}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job set_scenario] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "echo"
+    },
+    {
+        "position": [
+            0,
+            0
+        ],
+        "datum": "Creating phases file"
+    },
+    {
+        "prefix": "--path",
+        "position": [
+            0,
+            "scenario"
+        ],
+        "datum": "high"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job set_scenario] initial work dir {
+    "_:9a292521-12ef-4724-971c-d48ad2a9ec58": [
+        "0 24 5000\n",
+        "/tmp/mmbe6e1l/phases.dat",
+        "CreateFile",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job set_scenario] /tmp/mmbe6e1l$ echo \
+    'Creating phases file' \
+    --path \
+    high
+Creating phases file --path high
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] outputs {
+    "phases": {
+        "location": "file:///tmp/mmbe6e1l/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step set_scenario] produced output {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/set_scenario/phases": {
+        "location": "file:///tmp/mmbe6e1l/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step set_scenario] completed success
+[1;30mDEBUG[0m [32m[job set_scenario] Removing input staging directory /tmp/k6esn74t[0m
+[1;30mDEBUG[0m [32m[job set_scenario] Removing temporary directory /tmp/iekioxht[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d not ready[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_cogs not ready[0m
+[1;30mINFO[0m [workflow ] starting step configure
+[1;30mDEBUG[0m [32m[step configure] job input {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/date": null,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dictionary": "/shared/getit-workflows/app_etna/ERA5.tbl",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dx": 0.05,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dy": 0.05,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_time": null,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/levels": "/shared/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/nlevels": 24,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/restart": "/shared/getit-workflows/app_etna/restart.nc",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_time": null,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/template": "/shared/getit-workflows/app_etna/template.inp",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[step configure] evaluated job input to {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/date": "20181225",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dictionary": "/shared/getit-workflows/app_etna/ERA5.tbl",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dx": 0.05,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/dy": 0.05,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_date_time": "2018-12-26T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/end_time": 24,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/initial_condition": "RESTART",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/levels": "/shared/getit-workflows/app_etna/L137_ECMWF.levels",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/meteo_database": "ERA5ML",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/nlevels": 24,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/restart": "/shared/getit-workflows/app_etna/restart.nc",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_date_time": "2018-12-25T00:00:00Z",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/start_time": 0,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/template": "/shared/getit-workflows/app_etna/template.inp",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_height": 3300,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lat": 37.75,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/vent_lon": 15.0,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mINFO[0m [step configure] start
+[1;30mDEBUG[0m [32m[job configure] initializing from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#config-etna as part of step configure[0m
+[1;30mDEBUG[0m [32m[job configure] {
+    "dictionary": "/shared/getit-workflows/app_etna/ERA5.tbl",
+    "dx": 0.05,
+    "dy": 0.05,
+    "end_date_time": "2018-12-26T00:00:00Z",
+    "initial_condition": "RESTART",
+    "levels": "/shared/getit-workflows/app_etna/L137_ECMWF.levels",
+    "meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "meteo_database": "ERA5ML",
+    "nlevels": 24,
+    "restart": "/shared/getit-workflows/app_etna/restart.nc",
+    "start_date_time": "2018-12-25T00:00:00Z",
+    "template": "/shared/getit-workflows/app_etna/template.inp",
+    "vent_height": 3300,
+    "vent_lat": 37.75,
+    "vent_lon": 15.0,
+    "wkt": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+}[0m
+[1;30mDEBUG[0m [32m[job configure] path mappings is {}[0m
+[1;30mDEBUG[0m [32m[job configure] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "fill_template.py"
+    },
+    {
+        "prefix": "--METEO_DICTIONARY",
+        "position": [
+            0,
+            "dictionary"
+        ],
+        "datum": "/shared/getit-workflows/app_etna/ERA5.tbl"
+    },
+    {
+        "prefix": "--DX",
+        "position": [
+            0,
+            "dx"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--DY",
+        "position": [
+            0,
+            "dy"
+        ],
+        "datum": 0.05
+    },
+    {
+        "prefix": "--end_date_time",
+        "position": [
+            0,
+            "end_date_time"
+        ],
+        "datum": "2018-12-26T00:00:00Z"
+    },
+    {
+        "prefix": "--INITIAL",
+        "position": [
+            0,
+            "initial_condition"
+        ],
+        "datum": "RESTART"
+    },
+    {
+        "prefix": "--LEVELS_FILE",
+        "position": [
+            0,
+            "levels"
+        ],
+        "datum": "/shared/getit-workflows/app_etna/L137_ECMWF.levels"
+    },
+    {
+        "prefix": "--METEO_FILE",
+        "position": [
+            0,
+            "meteo"
+        ],
+        "datum": "/shared/getit-workflows/app_etna/meteo.nc"
+    },
+    {
+        "prefix": "--METEO_DATABASE",
+        "position": [
+            0,
+            "meteo_database"
+        ],
+        "datum": "ERA5ML"
+    },
+    {
+        "prefix": "--NZ",
+        "position": [
+            0,
+            "nlevels"
+        ],
+        "datum": 24
+    },
+    {
+        "prefix": "--RESTART_FILE",
+        "position": [
+            0,
+            "restart"
+        ],
+        "datum": "/shared/getit-workflows/app_etna/restart.nc"
+    },
+    {
+        "prefix": "--start_date_time",
+        "position": [
+            0,
+            "start_date_time"
+        ],
+        "datum": "2018-12-25T00:00:00Z"
+    },
+    {
+        "prefix": "--template",
+        "position": [
+            0,
+            "template"
+        ],
+        "datum": "/shared/getit-workflows/app_etna/template.inp"
+    },
+    {
+        "prefix": "--VENT_HEIGHT",
+        "position": [
+            0,
+            "vent_height"
+        ],
+        "datum": 3300
+    },
+    {
+        "prefix": "--VENT_LAT",
+        "position": [
+            0,
+            "vent_lat"
+        ],
+        "datum": 37.75
+    },
+    {
+        "prefix": "--VENT_LON",
+        "position": [
+            0,
+            "vent_lon"
+        ],
+        "datum": 15.0
+    },
+    {
+        "prefix": "--WKT",
+        "position": [
+            0,
+            "wkt"
+        ],
+        "datum": "POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))"
+    }
+][0m
+[1;30mDEBUG[0m [32m[job configure] initial work dir {}[0m
+[1;30mINFO[0m [job configure] /tmp/y5ktrg97$ fill_template.py \
+    --METEO_DICTIONARY \
+    /shared/getit-workflows/app_etna/ERA5.tbl \
+    --DX \
+    0.05 \
+    --DY \
+    0.05 \
+    --end_date_time \
+    2018-12-26T00:00:00Z \
+    --INITIAL \
+    RESTART \
+    --LEVELS_FILE \
+    /shared/getit-workflows/app_etna/L137_ECMWF.levels \
+    --METEO_FILE \
+    /shared/getit-workflows/app_etna/meteo.nc \
+    --METEO_DATABASE \
+    ERA5ML \
+    --NZ \
+    24 \
+    --RESTART_FILE \
+    /shared/getit-workflows/app_etna/restart.nc \
+    --start_date_time \
+    2018-12-25T00:00:00Z \
+    --template \
+    /shared/getit-workflows/app_etna/template.inp \
+    --VENT_HEIGHT \
+    3300 \
+    --VENT_LAT \
+    37.75 \
+    --VENT_LON \
+    15.0 \
+    --WKT \
+    'POLYGON((8.0 33.0, 22.0 33.0, 22.0 40.0, 8.0 40.0, 8.0 33.0))'
+INFO:FILL_TEMPLATE:Filling in template...
+INFO:FILL_TEMPLATE:Done!
+Volcano coordinates are inside the domain box.
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job configure] completed success
+[1;30mDEBUG[0m [32m[job configure] outputs {
+    "inp": {
+        "location": "file:///tmp/y5ktrg97/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$994da4363d1afe18167cb011a8b71be68b656255",
+        "size": 29312,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step configure] produced output {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/configure/inp": {
+        "location": "file:///tmp/y5ktrg97/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$994da4363d1afe18167cb011a8b71be68b656255",
+        "size": 29312,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step configure] completed success
+[1;30mDEBUG[0m [32m[job configure] Removing input staging directory /tmp/niaolqde[0m
+[1;30mDEBUG[0m [32m[job configure] Removing temporary directory /tmp/jshmb5q9[0m
+[1;30mDEBUG[0m [32m[workflow ] job step file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog not ready[0m
+[1;30mINFO[0m [workflow ] starting step run_fall3d
+[1;30mDEBUG[0m [32m[step run_fall3d] job input {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/exe": "/shared/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/y5ktrg97/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$994da4363d1afe18167cb011a8b71be68b656255",
+        "size": 29312,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nx": 3,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/ny": 2,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/mmbe6e1l/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/restart": "/shared/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] evaluated job input to {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/exe": "/shared/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/inp": {
+        "location": "file:///tmp/y5ktrg97/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$994da4363d1afe18167cb011a8b71be68b656255",
+        "size": 29312,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nx": 3,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/ny": 2,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/nz": 1,
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/phases": {
+        "location": "file:///tmp/mmbe6e1l/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/restart": "/shared/getit-workflows/app_etna/restart.nc"
+}[0m
+[1;30mINFO[0m [step run_fall3d] start
+[1;30mDEBUG[0m [32m[job run_fall3d] initializing from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#runner-etna as part of step run_fall3d[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] {
+    "exe": "/shared/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x",
+    "inp": {
+        "location": "file:///tmp/y5ktrg97/final.inp",
+        "basename": "final.inp",
+        "nameroot": "final",
+        "nameext": ".inp",
+        "class": "File",
+        "checksum": "sha1$994da4363d1afe18167cb011a8b71be68b656255",
+        "size": 29312,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "meteo": "/shared/getit-workflows/app_etna/meteo.nc",
+    "nx": 3,
+    "ny": 2,
+    "nz": 1,
+    "phases": {
+        "location": "file:///tmp/mmbe6e1l/phases.dat",
+        "basename": "phases.dat",
+        "nameroot": "phases",
+        "nameext": ".dat",
+        "class": "File",
+        "checksum": "sha1$b62d994f43911242fa91f4d83e487b0e53ec5b3d",
+        "size": 10,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "restart": "/shared/getit-workflows/app_etna/restart.nc",
+    "task": "all"
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] path mappings is {
+    "file:///tmp/y5ktrg97/final.inp": [
+        "/tmp/y5ktrg97/final.inp",
+        "/tmp/_fokb4qb/final.inp",
+        "File",
+        false
+    ],
+    "file:///tmp/mmbe6e1l/phases.dat": [
+        "/tmp/mmbe6e1l/phases.dat",
+        "/tmp/_fokb4qb/phases.dat",
+        "File",
+        false
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "mpirun"
+    },
+    {
+        "prefix": "-n",
+        "valueFrom": "$(inputs.nx * inputs.ny * inputs.nz)",
+        "position": [
+            0,
+            0
+        ]
+    },
+    {
+        "position": [
+            0,
+            "exe"
+        ],
+        "datum": "/shared/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x"
+    },
+    {
+        "position": [
+            1,
+            "task"
+        ],
+        "datum": "all"
+    },
+    {
+        "position": [
+            2,
+            "inp"
+        ],
+        "datum": {
+            "location": "file:///tmp/y5ktrg97/final.inp",
+            "basename": "final.inp",
+            "nameroot": "final",
+            "nameext": ".inp",
+            "class": "File",
+            "checksum": "sha1$994da4363d1afe18167cb011a8b71be68b656255",
+            "size": 29312,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/_fokb4qb/final.inp",
+            "dirname": "/tmp/_fokb4qb"
+        }
+    },
+    {
+        "position": [
+            3,
+            "nx"
+        ],
+        "datum": 3
+    },
+    {
+        "position": [
+            4,
+            "ny"
+        ],
+        "datum": 2
+    },
+    {
+        "position": [
+            5,
+            "nz"
+        ],
+        "datum": 1
+    }
+][0m
+[1;30mDEBUG[0m [32m[job run_fall3d] initial work dir {
+    "file:///tmp/y5ktrg97/final.inp": [
+        "/tmp/y5ktrg97/final.inp",
+        "/tmp/_fokb4qb/final.inp",
+        "File",
+        true
+    ],
+    "file:///tmp/mmbe6e1l/phases.dat": [
+        "/tmp/mmbe6e1l/phases.dat",
+        "/tmp/_fokb4qb/phases.dat",
+        "File",
+        true
+    ]
+}[0m
+[1;30mINFO[0m [job run_fall3d] /tmp/_fokb4qb$ mpirun \
+    -n \
+    6 \
+    /shared/fall3d/build/bin/Fall3d.GNU.r8.mpi.cpu.x \
+    all \
+    /tmp/_fokb4qb/final.inp \
+    3 \
+    2 \
+    1 > /tmp/_fokb4qb/fall3d.out 2> /tmp/_fokb4qb/fall3d.err
+[1;30mINFO[0m [job run_fall3d] Max memory used: 779MiB
+[1;30mINFO[0m [job run_fall3d] completed success
+[1;30mDEBUG[0m [32m[job run_fall3d] outputs {
+    "log": {
+        "location": "file:///tmp/_fokb4qb/final.Fall3d.log",
+        "basename": "final.Fall3d.log",
+        "nameroot": "final.Fall3d",
+        "nameext": ".log",
+        "class": "File",
+        "checksum": "sha1$ceb8b8f4c5e79b8ee974d5e03700036b21041002",
+        "size": 213029,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "res": {
+        "location": "file:///tmp/_fokb4qb/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$b02775d2fff5f9d09b11a1d4b5a39572c482f71f",
+        "size": 43805174,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "rst": {
+        "location": "file:///tmp/_fokb4qb/final.2018-12-26-00-00.rst.nc",
+        "basename": "final.2018-12-26-00-00.rst.nc",
+        "nameroot": "final.2018-12-26-00-00.rst",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$cb65a4acda72142a3782c8c6c6a7151f5ca8639c",
+        "size": 23733887,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stderr": {
+        "location": "file:///tmp/_fokb4qb/fall3d.err",
+        "basename": "fall3d.err",
+        "nameroot": "fall3d",
+        "nameext": ".err",
+        "class": "File",
+        "checksum": "sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "size": 0,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "stdout": {
+        "location": "file:///tmp/_fokb4qb/fall3d.out",
+        "basename": "fall3d.out",
+        "nameroot": "fall3d",
+        "nameext": ".out",
+        "class": "File",
+        "checksum": "sha1$76b37aac3adb20c0dee19d797bbaaefbd290e369",
+        "size": 1482,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step run_fall3d] produced output {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/log": {
+        "location": "file:///tmp/_fokb4qb/final.Fall3d.log",
+        "basename": "final.Fall3d.log",
+        "nameroot": "final.Fall3d",
+        "nameext": ".log",
+        "class": "File",
+        "checksum": "sha1$ceb8b8f4c5e79b8ee974d5e03700036b21041002",
+        "size": 213029,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/res": {
+        "location": "file:///tmp/_fokb4qb/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$b02775d2fff5f9d09b11a1d4b5a39572c482f71f",
+        "size": 43805174,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/run_fall3d/rst": {
+        "location": "file:///tmp/_fokb4qb/final.2018-12-26-00-00.rst.nc",
+        "basename": "final.2018-12-26-00-00.rst.nc",
+        "nameroot": "final.2018-12-26-00-00.rst",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$cb65a4acda72142a3782c8c6c6a7151f5ca8639c",
+        "size": 23733887,
+        "http://commonwl.org/cwltool#generation": 0
+    }
+}[0m
+[1;30mINFO[0m [step run_fall3d] completed success
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing input staging directory /tmp/s8m9w9l9[0m
+[1;30mDEBUG[0m [32m[job run_fall3d] Removing temporary directory /tmp/xuu4kbd_[0m
+[1;30mINFO[0m [workflow ] starting step create_cogs
+[1;30mINFO[0m [step create_cogs] start
+[1;30mDEBUG[0m [32m[job create_cogs] initializing from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#figures-etna as part of step create_cogs[0m
+[1;30mDEBUG[0m [32m[job create_cogs] {
+    "key": "tephra_col_mass",
+    "netcdf": {
+        "location": "file:///tmp/_fokb4qb/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$b02775d2fff5f9d09b11a1d4b5a39572c482f71f",
+        "size": 43805174,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "times": 6
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs] path mappings is {
+    "file:///tmp/_fokb4qb/final.res.nc": [
+        "/tmp/_fokb4qb/final.res.nc",
+        "/tmp/pg2bm2y4/stg70f1d6db-4692-4c45-a817-1ae293265ee1/final.res.nc",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "createCOG.py"
+    },
+    {
+        "prefix": "--key",
+        "position": [
+            0,
+            "key"
+        ],
+        "datum": "tephra_col_mass"
+    },
+    {
+        "prefix": "--fname",
+        "position": [
+            0,
+            "netcdf"
+        ],
+        "datum": {
+            "location": "file:///tmp/_fokb4qb/final.res.nc",
+            "basename": "final.res.nc",
+            "nameroot": "final.res",
+            "nameext": ".nc",
+            "class": "File",
+            "checksum": "sha1$b02775d2fff5f9d09b11a1d4b5a39572c482f71f",
+            "size": 43805174,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/pg2bm2y4/stg70f1d6db-4692-4c45-a817-1ae293265ee1/final.res.nc",
+            "dirname": "/tmp/pg2bm2y4/stg70f1d6db-4692-4c45-a817-1ae293265ee1"
+        }
+    },
+    {
+        "prefix": "--times",
+        "position": [
+            0,
+            "times"
+        ],
+        "datum": 6
+    }
+][0m
+[1;30mDEBUG[0m [32m[job create_cogs] initial work dir {}[0m
+[1;30mINFO[0m [job create_cogs] /tmp/t6dhcjke$ createCOG.py \
+    --key \
+    tephra_col_mass \
+    --fname \
+    /tmp/pg2bm2y4/stg70f1d6db-4692-4c45-a817-1ae293265ee1/final.res.nc \
+    --times \
+    6
+INFO:NETCDF2COG:Creating COG GeoTIFF file...
+INFO:NETCDF2COG:Saving tephra_col_mass-t000.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t006.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t012.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t018.tif
+INFO:NETCDF2COG:Saving tephra_col_mass-t024.tif
+INFO:NETCDF2COG:Done!
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job create_cogs] completed success
+[1;30mDEBUG[0m [32m[job create_cogs] outputs {
+    "tif": [
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+            "size": 41516,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+            "size": 70723,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+            "size": 81387,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+            "size": 95933,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+            "size": 104290,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs] Removing input staging directory /tmp/pg2bm2y4[0m
+[1;30mDEBUG[0m [32m[job create_cogs] Removing temporary directory /tmp/pcxidy1s[0m
+[1;30mINFO[0m [step create_cogs] start
+[1;30mDEBUG[0m [32m[job create_cogs_2] initializing from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#figures-etna as part of step create_cogs[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] {
+    "key": "SO2_cloud_top",
+    "netcdf": {
+        "location": "file:///tmp/_fokb4qb/final.res.nc",
+        "basename": "final.res.nc",
+        "nameroot": "final.res",
+        "nameext": ".nc",
+        "class": "File",
+        "checksum": "sha1$b02775d2fff5f9d09b11a1d4b5a39572c482f71f",
+        "size": 43805174,
+        "http://commonwl.org/cwltool#generation": 0
+    },
+    "times": 6
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] path mappings is {
+    "file:///tmp/_fokb4qb/final.res.nc": [
+        "/tmp/_fokb4qb/final.res.nc",
+        "/tmp/raqra63f/stg2b6a56fc-7ca4-4563-ae30-3504a0cda118/final.res.nc",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "createCOG.py"
+    },
+    {
+        "prefix": "--key",
+        "position": [
+            0,
+            "key"
+        ],
+        "datum": "SO2_cloud_top"
+    },
+    {
+        "prefix": "--fname",
+        "position": [
+            0,
+            "netcdf"
+        ],
+        "datum": {
+            "location": "file:///tmp/_fokb4qb/final.res.nc",
+            "basename": "final.res.nc",
+            "nameroot": "final.res",
+            "nameext": ".nc",
+            "class": "File",
+            "checksum": "sha1$b02775d2fff5f9d09b11a1d4b5a39572c482f71f",
+            "size": 43805174,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/raqra63f/stg2b6a56fc-7ca4-4563-ae30-3504a0cda118/final.res.nc",
+            "dirname": "/tmp/raqra63f/stg2b6a56fc-7ca4-4563-ae30-3504a0cda118"
+        }
+    },
+    {
+        "prefix": "--times",
+        "position": [
+            0,
+            "times"
+        ],
+        "datum": 6
+    }
+][0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] initial work dir {}[0m
+[1;30mINFO[0m [job create_cogs_2] /tmp/gw51ekn1$ createCOG.py \
+    --key \
+    SO2_cloud_top \
+    --fname \
+    /tmp/raqra63f/stg2b6a56fc-7ca4-4563-ae30-3504a0cda118/final.res.nc \
+    --times \
+    6
+INFO:NETCDF2COG:Creating COG GeoTIFF file...
+INFO:NETCDF2COG:Saving SO2_cloud_top-t000.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t006.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t012.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t018.tif
+INFO:NETCDF2COG:Saving SO2_cloud_top-t024.tif
+INFO:NETCDF2COG:Done!
+[1;30mDEBUG[0m [32mCould not collect memory usage, job ended before monitoring began.[0m
+[1;30mINFO[0m [job create_cogs_2] completed success
+[1;30mDEBUG[0m [32m[job create_cogs_2] outputs {
+    "tif": [
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+            "size": 18747,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+            "size": 18414,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+            "size": 22041,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+            "size": 19638,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+            "size": 21717,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[step create_cogs] produced output {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_cogs/tif": [
+        [
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+                "basename": "tephra_col_mass-t000.tif",
+                "nameroot": "tephra_col_mass-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+                "size": 41516,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+                "basename": "tephra_col_mass-t006.tif",
+                "nameroot": "tephra_col_mass-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+                "size": 70723,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+                "basename": "tephra_col_mass-t012.tif",
+                "nameroot": "tephra_col_mass-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+                "size": 81387,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+                "basename": "tephra_col_mass-t018.tif",
+                "nameroot": "tephra_col_mass-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+                "size": 95933,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+                "basename": "tephra_col_mass-t024.tif",
+                "nameroot": "tephra_col_mass-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+                "size": 104290,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ],
+        [
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+                "basename": "SO2_cloud_top-t000.tif",
+                "nameroot": "SO2_cloud_top-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+                "size": 18747,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+                "basename": "SO2_cloud_top-t006.tif",
+                "nameroot": "SO2_cloud_top-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+                "size": 18414,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+                "basename": "SO2_cloud_top-t012.tif",
+                "nameroot": "SO2_cloud_top-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+                "size": 22041,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+                "basename": "SO2_cloud_top-t018.tif",
+                "nameroot": "SO2_cloud_top-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+                "size": 19638,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+                "basename": "SO2_cloud_top-t024.tif",
+                "nameroot": "SO2_cloud_top-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+                "size": 21717,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ]
+    ]
+}[0m
+[1;30mINFO[0m [step create_cogs] completed success
+[1;30mDEBUG[0m [32m[job create_cogs_2] Removing input staging directory /tmp/raqra63f[0m
+[1;30mDEBUG[0m [32m[job create_cogs_2] Removing temporary directory /tmp/f_vin4m3[0m
+[1;30mINFO[0m [workflow ] starting step create_catalog
+[1;30mDEBUG[0m [32m[step create_catalog] job input {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog/scenario": "high",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog/tifs": [
+        [
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+                "basename": "tephra_col_mass-t000.tif",
+                "nameroot": "tephra_col_mass-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+                "size": 41516,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+                "basename": "tephra_col_mass-t006.tif",
+                "nameroot": "tephra_col_mass-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+                "size": 70723,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+                "basename": "tephra_col_mass-t012.tif",
+                "nameroot": "tephra_col_mass-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+                "size": 81387,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+                "basename": "tephra_col_mass-t018.tif",
+                "nameroot": "tephra_col_mass-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+                "size": 95933,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+                "basename": "tephra_col_mass-t024.tif",
+                "nameroot": "tephra_col_mass-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+                "size": 104290,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ],
+        [
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+                "basename": "SO2_cloud_top-t000.tif",
+                "nameroot": "SO2_cloud_top-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+                "size": 18747,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+                "basename": "SO2_cloud_top-t006.tif",
+                "nameroot": "SO2_cloud_top-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+                "size": 18414,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+                "basename": "SO2_cloud_top-t012.tif",
+                "nameroot": "SO2_cloud_top-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+                "size": 22041,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+                "basename": "SO2_cloud_top-t018.tif",
+                "nameroot": "SO2_cloud_top-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+                "size": 19638,
+                "http://commonwl.org/cwltool#generation": 0
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+                "basename": "SO2_cloud_top-t024.tif",
+                "nameroot": "SO2_cloud_top-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+                "size": 21717,
+                "http://commonwl.org/cwltool#generation": 0
+            }
+        ]
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[step create_catalog] evaluated job input to {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog/scenario": "high",
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog/tifs": [
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+            "size": 41516,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+            "size": 70723,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+            "size": 81387,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+            "size": 95933,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+            "size": 104290,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+            "size": 18747,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+            "size": 18414,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+            "size": 22041,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+            "size": 19638,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+            "size": 21717,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mINFO[0m [step create_catalog] start
+[1;30mDEBUG[0m [32m[job create_catalog] initializing from file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#catalog-etna as part of step create_catalog[0m
+[1;30mDEBUG[0m [32m[job create_catalog] {
+    "scenario": "high",
+    "tifs": [
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+            "size": 41516,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+            "size": 70723,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+            "size": 81387,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+            "size": 95933,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+            "size": 104290,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+            "size": 18747,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+            "size": 18414,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+            "size": 22041,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+            "size": 19638,
+            "http://commonwl.org/cwltool#generation": 0
+        },
+        {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+            "size": 21717,
+            "http://commonwl.org/cwltool#generation": 0
+        }
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_catalog] path mappings is {
+    "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif": [
+        "/tmp/t6dhcjke/tephra_col_mass-t000.tif",
+        "/tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e/tephra_col_mass-t000.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif": [
+        "/tmp/t6dhcjke/tephra_col_mass-t006.tif",
+        "/tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47/tephra_col_mass-t006.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif": [
+        "/tmp/t6dhcjke/tephra_col_mass-t012.tif",
+        "/tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc/tephra_col_mass-t012.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif": [
+        "/tmp/t6dhcjke/tephra_col_mass-t018.tif",
+        "/tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417/tephra_col_mass-t018.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif": [
+        "/tmp/t6dhcjke/tephra_col_mass-t024.tif",
+        "/tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c/tephra_col_mass-t024.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif": [
+        "/tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+        "/tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d/SO2_cloud_top-t000.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif": [
+        "/tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+        "/tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525/SO2_cloud_top-t006.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif": [
+        "/tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+        "/tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0/SO2_cloud_top-t012.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif": [
+        "/tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+        "/tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3/SO2_cloud_top-t018.tif",
+        "File",
+        true
+    ],
+    "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif": [
+        "/tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+        "/tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742/SO2_cloud_top-t024.tif",
+        "File",
+        true
+    ]
+}[0m
+[1;30mDEBUG[0m [32m[job create_catalog] command line bindings is [
+    {
+        "position": [
+            -1000000,
+            0
+        ],
+        "datum": "createSTAC.py"
+    },
+    {
+        "prefix": "--path",
+        "position": [
+            0,
+            "scenario"
+        ],
+        "datum": "high"
+    },
+    {
+        "prefix": "--cogs",
+        "position": [
+            0,
+            "tifs"
+        ],
+        "datum": [
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+                "basename": "tephra_col_mass-t000.tif",
+                "nameroot": "tephra_col_mass-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+                "size": 41516,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e/tephra_col_mass-t000.tif",
+                "dirname": "/tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e"
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+                "basename": "tephra_col_mass-t006.tif",
+                "nameroot": "tephra_col_mass-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+                "size": 70723,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47/tephra_col_mass-t006.tif",
+                "dirname": "/tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47"
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+                "basename": "tephra_col_mass-t012.tif",
+                "nameroot": "tephra_col_mass-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+                "size": 81387,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc/tephra_col_mass-t012.tif",
+                "dirname": "/tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc"
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+                "basename": "tephra_col_mass-t018.tif",
+                "nameroot": "tephra_col_mass-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+                "size": 95933,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417/tephra_col_mass-t018.tif",
+                "dirname": "/tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417"
+            },
+            {
+                "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+                "basename": "tephra_col_mass-t024.tif",
+                "nameroot": "tephra_col_mass-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+                "size": 104290,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c/tephra_col_mass-t024.tif",
+                "dirname": "/tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c"
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+                "basename": "SO2_cloud_top-t000.tif",
+                "nameroot": "SO2_cloud_top-t000",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+                "size": 18747,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d/SO2_cloud_top-t000.tif",
+                "dirname": "/tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d"
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+                "basename": "SO2_cloud_top-t006.tif",
+                "nameroot": "SO2_cloud_top-t006",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+                "size": 18414,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525/SO2_cloud_top-t006.tif",
+                "dirname": "/tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525"
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+                "basename": "SO2_cloud_top-t012.tif",
+                "nameroot": "SO2_cloud_top-t012",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+                "size": 22041,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0/SO2_cloud_top-t012.tif",
+                "dirname": "/tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0"
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+                "basename": "SO2_cloud_top-t018.tif",
+                "nameroot": "SO2_cloud_top-t018",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+                "size": 19638,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3/SO2_cloud_top-t018.tif",
+                "dirname": "/tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3"
+            },
+            {
+                "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+                "basename": "SO2_cloud_top-t024.tif",
+                "nameroot": "SO2_cloud_top-t024",
+                "nameext": ".tif",
+                "class": "File",
+                "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+                "size": 21717,
+                "http://commonwl.org/cwltool#generation": 0,
+                "path": "/tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742/SO2_cloud_top-t024.tif",
+                "dirname": "/tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742"
+            }
+        ]
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            0,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t000.tif",
+            "basename": "tephra_col_mass-t000.tif",
+            "nameroot": "tephra_col_mass-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+            "size": 41516,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e/tephra_col_mass-t000.tif",
+            "dirname": "/tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            1,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t006.tif",
+            "basename": "tephra_col_mass-t006.tif",
+            "nameroot": "tephra_col_mass-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+            "size": 70723,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47/tephra_col_mass-t006.tif",
+            "dirname": "/tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            2,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t012.tif",
+            "basename": "tephra_col_mass-t012.tif",
+            "nameroot": "tephra_col_mass-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+            "size": 81387,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc/tephra_col_mass-t012.tif",
+            "dirname": "/tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            3,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t018.tif",
+            "basename": "tephra_col_mass-t018.tif",
+            "nameroot": "tephra_col_mass-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+            "size": 95933,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417/tephra_col_mass-t018.tif",
+            "dirname": "/tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            4,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/t6dhcjke/tephra_col_mass-t024.tif",
+            "basename": "tephra_col_mass-t024.tif",
+            "nameroot": "tephra_col_mass-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+            "size": 104290,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c/tephra_col_mass-t024.tif",
+            "dirname": "/tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            5,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t000.tif",
+            "basename": "SO2_cloud_top-t000.tif",
+            "nameroot": "SO2_cloud_top-t000",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+            "size": 18747,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d/SO2_cloud_top-t000.tif",
+            "dirname": "/tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            6,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t006.tif",
+            "basename": "SO2_cloud_top-t006.tif",
+            "nameroot": "SO2_cloud_top-t006",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+            "size": 18414,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525/SO2_cloud_top-t006.tif",
+            "dirname": "/tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            7,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t012.tif",
+            "basename": "SO2_cloud_top-t012.tif",
+            "nameroot": "SO2_cloud_top-t012",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+            "size": 22041,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0/SO2_cloud_top-t012.tif",
+            "dirname": "/tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            8,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t018.tif",
+            "basename": "SO2_cloud_top-t018.tif",
+            "nameroot": "SO2_cloud_top-t018",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+            "size": 19638,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3/SO2_cloud_top-t018.tif",
+            "dirname": "/tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3"
+        }
+    },
+    {
+        "position": [
+            0,
+            "tifs",
+            9,
+            0,
+            "tifs",
+            "tifs"
+        ],
+        "datum": {
+            "location": "file:///tmp/gw51ekn1/SO2_cloud_top-t024.tif",
+            "basename": "SO2_cloud_top-t024.tif",
+            "nameroot": "SO2_cloud_top-t024",
+            "nameext": ".tif",
+            "class": "File",
+            "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+            "size": 21717,
+            "http://commonwl.org/cwltool#generation": 0,
+            "path": "/tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742/SO2_cloud_top-t024.tif",
+            "dirname": "/tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742"
+        }
+    }
+][0m
+[1;30mDEBUG[0m [32m[job create_catalog] initial work dir {}[0m
+[1;30mINFO[0m [job create_catalog] /tmp/0d2pey_i$ createSTAC.py \
+    --path \
+    high \
+    --cogs \
+    /tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e/tephra_col_mass-t000.tif \
+    /tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47/tephra_col_mass-t006.tif \
+    /tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc/tephra_col_mass-t012.tif \
+    /tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417/tephra_col_mass-t018.tif \
+    /tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c/tephra_col_mass-t024.tif \
+    /tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d/SO2_cloud_top-t000.tif \
+    /tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525/SO2_cloud_top-t006.tif \
+    /tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0/SO2_cloud_top-t012.tif \
+    /tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3/SO2_cloud_top-t018.tif \
+    /tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742/SO2_cloud_top-t024.tif
+INFO:CREATE_STAC:Creating STAC catalog...
+INFO:CREATE_STAC:/tmp/j50947kd/stg6a71b45b-e61b-4b2c-bf0d-829660bed20e/tephra_col_mass-t000.tif: size=5924, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stga0d55522-c1d1-4a83-a383-b2f0ad995b47/tephra_col_mass-t006.tif: size=11421, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stg4ee1026a-2c90-4406-acd2-08009dc146fc/tephra_col_mass-t012.tif: size=13485, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stg3a7eadf9-4f48-4db8-85d8-925b848e5417/tephra_col_mass-t018.tif: size=16230, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stg541e6e26-cc8e-4538-b060-4a2b22f8b61c/tephra_col_mass-t024.tif: size=17860, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stg83a0b336-3779-448c-9345-f5fe1f1df69d/SO2_cloud_top-t000.tif: size=2014, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stgd15ed542-3100-42d8-b0f3-4ff62c6d9525/SO2_cloud_top-t006.tif: size=2006, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stg5a0f3592-92fd-436d-afdf-ee6bb7f5e3e0/SO2_cloud_top-t012.tif: size=3029, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stgca2d92a7-a0db-43e7-bcc2-1f7fcc3bdbe3/SO2_cloud_top-t018.tif: size=2311, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:/tmp/j50947kd/stga2deb1a1-3800-4e96-a0eb-a86cb79fe742/SO2_cloud_top-t024.tif: size=2943, nan_count=0, nodata=0.0
+INFO:CREATE_STAC:Done!
+[1;30mINFO[0m [job create_catalog] Max memory used: 143MiB
+[1;30mINFO[0m [job create_catalog] completed success
+[1;30mDEBUG[0m [32m[job create_catalog] outputs {
+    "stac": {
+        "location": "file:///tmp/0d2pey_i/high",
+        "basename": "high",
+        "nameroot": "high",
+        "nameext": "",
+        "class": "Directory"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[step create_catalog] produced output {
+    "file:///shared/getit-workflows/fall3d-what-if-volcanos.0.2.1.cwl#demo-etna/create_catalog/stac": {
+        "location": "file:///tmp/0d2pey_i/high",
+        "basename": "high",
+        "nameroot": "high",
+        "nameext": "",
+        "class": "Directory"
+    }
+}[0m
+[1;30mINFO[0m [step create_catalog] completed success
+[1;30mINFO[0m [workflow ] completed success
+[1;30mDEBUG[0m [32m[workflow ] outputs {
+    "stac": {
+        "location": "file:///tmp/0d2pey_i/high",
+        "basename": "high",
+        "nameroot": "high",
+        "nameext": "",
+        "class": "Directory"
+    }
+}[0m
+[1;30mDEBUG[0m [32m[job create_catalog] Removing input staging directory /tmp/j50947kd[0m
+[1;30mDEBUG[0m [32m[job create_catalog] Removing temporary directory /tmp/z60m_1tv[0m
+[1;30mDEBUG[0m [32mMoving /tmp/0d2pey_i/high to /shared/getit-workflows/high[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/y5ktrg97[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/_fokb4qb[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/mmbe6e1l[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/kimjakgl[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/gw51ekn1[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/t6dhcjke[0m
+[1;30mDEBUG[0m [32mRemoving intermediate output directory /tmp/0d2pey_i[0m
+{
+    "stac": {
+        "location": "file:///shared/getit-workflows/high",
+        "basename": "high",
+        "class": "Directory",
+        "listing": [
+            {
+                "class": "File",
+                "location": "file:///shared/getit-workflows/high/catalog.json",
+                "basename": "catalog.json",
+                "size": 893,
+                "checksum": "sha1$6d14eb249bc8937e73eb52084fb185a3adc0f005",
+                "path": "/shared/getit-workflows/high/catalog.json"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///shared/getit-workflows/high/024",
+                "basename": "024",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/024/024.json",
+                        "basename": "024.json",
+                        "size": 13216,
+                        "checksum": "sha1$7223b21d6f58564f0d6b6f0f7517b930d0630a7e",
+                        "path": "/shared/getit-workflows/high/024/024.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/024/SO2_cloud_top-t024.tif",
+                        "basename": "SO2_cloud_top-t024.tif",
+                        "size": 21717,
+                        "checksum": "sha1$0c15d62226cc5f707b5ed87318e7fd5e01e47888",
+                        "path": "/shared/getit-workflows/high/024/SO2_cloud_top-t024.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/024/tephra_col_mass-t024.tif",
+                        "basename": "tephra_col_mass-t024.tif",
+                        "size": 104290,
+                        "checksum": "sha1$36cbb7e811d3e8fa260c3f0d2b6d3a955dd717b8",
+                        "path": "/shared/getit-workflows/high/024/tephra_col_mass-t024.tif"
+                    }
+                ],
+                "path": "/shared/getit-workflows/high/024"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///shared/getit-workflows/high/018",
+                "basename": "018",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/018/018.json",
+                        "basename": "018.json",
+                        "size": 13192,
+                        "checksum": "sha1$47fa9fede1ccb45bcb02b6910f196c22c45e92e8",
+                        "path": "/shared/getit-workflows/high/018/018.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/018/SO2_cloud_top-t018.tif",
+                        "basename": "SO2_cloud_top-t018.tif",
+                        "size": 19638,
+                        "checksum": "sha1$60141b657697e36fff0aa6dee432cb15294ba9e4",
+                        "path": "/shared/getit-workflows/high/018/SO2_cloud_top-t018.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/018/tephra_col_mass-t018.tif",
+                        "basename": "tephra_col_mass-t018.tif",
+                        "size": 95933,
+                        "checksum": "sha1$26677e113fd44bd67a862f305dde84d890c8f952",
+                        "path": "/shared/getit-workflows/high/018/tephra_col_mass-t018.tif"
+                    }
+                ],
+                "path": "/shared/getit-workflows/high/018"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///shared/getit-workflows/high/012",
+                "basename": "012",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/012/012.json",
+                        "basename": "012.json",
+                        "size": 13175,
+                        "checksum": "sha1$04845f99ec3c17f5bf6ae423a223edd58a22a6bc",
+                        "path": "/shared/getit-workflows/high/012/012.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/012/SO2_cloud_top-t012.tif",
+                        "basename": "SO2_cloud_top-t012.tif",
+                        "size": 22041,
+                        "checksum": "sha1$1ac061768b261f89ddabd85599371d9e0af685c0",
+                        "path": "/shared/getit-workflows/high/012/SO2_cloud_top-t012.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/012/tephra_col_mass-t012.tif",
+                        "basename": "tephra_col_mass-t012.tif",
+                        "size": 81387,
+                        "checksum": "sha1$a3f75e86a382aa65b3161b5d2f102b41e72b410e",
+                        "path": "/shared/getit-workflows/high/012/tephra_col_mass-t012.tif"
+                    }
+                ],
+                "path": "/shared/getit-workflows/high/012"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///shared/getit-workflows/high/006",
+                "basename": "006",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/006/006.json",
+                        "basename": "006.json",
+                        "size": 13162,
+                        "checksum": "sha1$95f49ea7b73eb1b0d629d5eaf9ffb1ba233d3970",
+                        "path": "/shared/getit-workflows/high/006/006.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/006/SO2_cloud_top-t006.tif",
+                        "basename": "SO2_cloud_top-t006.tif",
+                        "size": 18414,
+                        "checksum": "sha1$79117692a6710938a8e0cb5eba66cd2864d28ada",
+                        "path": "/shared/getit-workflows/high/006/SO2_cloud_top-t006.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/006/tephra_col_mass-t006.tif",
+                        "basename": "tephra_col_mass-t006.tif",
+                        "size": 70723,
+                        "checksum": "sha1$4cf659301e4dd12b4ee72b103685b41bdfa9692d",
+                        "path": "/shared/getit-workflows/high/006/tephra_col_mass-t006.tif"
+                    }
+                ],
+                "path": "/shared/getit-workflows/high/006"
+            },
+            {
+                "class": "Directory",
+                "location": "file:///shared/getit-workflows/high/000",
+                "basename": "000",
+                "listing": [
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/000/000.json",
+                        "basename": "000.json",
+                        "size": 13132,
+                        "checksum": "sha1$ea3e6948df76bc91bc88acd6aa61ec62aeccc364",
+                        "path": "/shared/getit-workflows/high/000/000.json"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/000/SO2_cloud_top-t000.tif",
+                        "basename": "SO2_cloud_top-t000.tif",
+                        "size": 18747,
+                        "checksum": "sha1$7ebc65866142d132119d645a25fe39a410023b8f",
+                        "path": "/shared/getit-workflows/high/000/SO2_cloud_top-t000.tif"
+                    },
+                    {
+                        "class": "File",
+                        "location": "file:///shared/getit-workflows/high/000/tephra_col_mass-t000.tif",
+                        "basename": "tephra_col_mass-t000.tif",
+                        "size": 41516,
+                        "checksum": "sha1$ce115b23707b9e169470dc159722e2deb5eff2e3",
+                        "path": "/shared/getit-workflows/high/000/tephra_col_mass-t000.tif"
+                    }
+                ],
+                "path": "/shared/getit-workflows/high/000"
+            }
+        ],
+        "path": "/shared/getit-workflows/high"
+    }
+}[1;30mINFO[0m Final process status is success
