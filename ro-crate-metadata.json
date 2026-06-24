@@ -1,0 +1,635 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-8250-4074"
+                }
+            ],
+            "datePublished": "2026-06-24T19:46:32+00:00",
+            "description": "If you use these research artefacts, please cite this dataset.",
+            "hasPart": [
+                {
+                    "@id": "bibliography/cwl-mpi-thesis-bibliography.bib"
+                },
+                {
+                    "@id": "bibliography/README.md"
+                },
+                {
+                    "@id": "containers/mpich-4..3.1-osu-7.5.1.Dockerfile"
+                },
+                {
+                    "@id": "containers/mpich-3.4.3-osu-7.4.def"
+                },
+                {
+                    "@id": "containers/README.md"
+                },
+                {
+                    "@id": "containers/mpich-3.4a2.def"
+                },
+                {
+                    "@id": "examples/README.md"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/README.md"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/workflow.cwl"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/cat.cwl"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/README.md"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/poem.txt"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/job.yml"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/grep_tool.cwl"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/grep.log"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/cat.log"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/sr-workflow.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/Singularity.def"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/compile-sr.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/sr.c"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/README.md"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpireq.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-streamflow.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-streamflow-slurm.jinja"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/sr-workflow-job.yml"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-nodocker.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-job.yml"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/hello_nodename.c"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-streamflow-slurm.cwl"
+                },
+                {
+                    "@id": "images/usc.png"
+                },
+                {
+                    "@id": "images/cwl_building_blocks.png"
+                },
+                {
+                    "@id": "images/cwl_runners.png"
+                },
+                {
+                    "@id": "images/README.md"
+                },
+                {
+                    "@id": "images/cwl_ecosystem.png"
+                },
+                {
+                    "@id": "images/mpi.png"
+                },
+                {
+                    "@id": "images/cwl_conformance_tests.png"
+                },
+                {
+                    "@id": "images/udc.png"
+                },
+                {
+                    "@id": "images/cwl_conformance_tests_modes.png"
+                },
+                {
+                    "@id": "images/cwl_mpi.svg"
+                },
+                {
+                    "@id": "images/cwl_specification.png"
+                },
+                {
+                    "@id": "images/cwl.png"
+                },
+                {
+                    "@id": "images/usc_udc.png"
+                }
+            ],
+            "identifier": "https://doi.org/10.5281/zenodo.20348637",
+            "keywords": [
+                "CWL",
+                "MPI",
+                "HPC",
+                "Cloud computing",
+                "Workflows",
+                "Scientific computing",
+                "Scientific workflows",
+                "Structured computing"
+            ],
+            "license": {
+                "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
+            },
+            "name": "Research Artefacts for CWL Workflows with MPI in Bare-Metal, Containers, Cloud, and HPC",
+            "version": "1.0.0"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        },
+        {
+            "@id": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "@type": "CreativeWork",
+            "name": "CC-BY-4.0",
+            "url": "https://spdx.org/licenses/CC-BY-4.0.html"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-8250-4074",
+            "@type": "Person",
+            "familyName": "Kinoshita",
+            "givenName": "Bruno de Paula",
+            "identifier": {
+                "@id": "https://orcid.org/0000-0001-8250-4074"
+            },
+            "sameAs": {
+                "@id": "https://orcid.org/0000-0001-8250-4074"
+            }
+        },
+        {
+            "@id": "bibliography/cwl-mpi-thesis-bibliography.bib",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "73059",
+            "dateModified": "2026-06-24T15:59:13.232208+00:00",
+            "encodingFormat": "text/x-bibtex"
+        },
+        {
+            "@id": "bibliography/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "529",
+            "dateModified": "2026-06-24T14:42:59.251631+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "containers/mpich-4..3.1-osu-7.5.1.Dockerfile",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode",
+                "ContainerDefinition"
+            ],
+            "contentSize": "2303",
+            "dateModified": "2026-06-24T14:45:50.309615+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "containers/mpich-3.4.3-osu-7.4.def",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode",
+                "ContainerDefinition"
+            ],
+            "contentSize": "1278",
+            "dateModified": "2026-06-24T15:32:46.874355+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "containers/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "3171",
+            "dateModified": "2026-06-24T15:40:53.952309+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "containers/mpich-3.4a2.def",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode",
+                "ContainerDefinition"
+            ],
+            "contentSize": "1355",
+            "dateModified": "2026-06-24T14:41:39.548638+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "examples/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "103",
+            "dateModified": "2026-06-24T14:42:28.046633+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "364",
+            "dateModified": "2026-06-08T18:43:18.976924+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/workflow.cwl",
+            "@type": "File",
+            "additionalType": [
+                "ComputationalWorkflow"
+            ],
+            "contentSize": "420",
+            "dateModified": "2026-06-10T08:40:27.461783+00:00",
+            "encodingFormat": "application/cwl",
+            "hasPart": [
+                {
+                    "@id": "examples/cwl_building_blocks/cat.cwl"
+                },
+                {
+                    "@id": "examples/cwl_building_blocks/grep_tool.cwl"
+                }
+            ]
+        },
+        {
+            "@id": "examples/cwl_building_blocks/cat.cwl",
+            "@type": "File",
+            "additionalType": [
+                "CommandLineTool"
+            ],
+            "contentSize": "217",
+            "dateModified": "2026-06-10T08:36:03.403803+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "879",
+            "dateModified": "2026-06-10T08:44:42.476764+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/poem.txt",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "1256",
+            "dateModified": "2026-06-10T08:32:03.892820+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/job.yml",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "37",
+            "dateModified": "2026-06-10T08:36:44.058800+00:00",
+            "encodingFormat": "application/yaml"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/grep_tool.cwl",
+            "@type": "File",
+            "additionalType": [
+                "CommandLineTool"
+            ],
+            "contentSize": "288",
+            "dateModified": "2026-06-10T08:36:06.059803+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/grep.log",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "52",
+            "dateModified": "2026-06-10T08:58:57.571444+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "examples/cwl_building_blocks/cat.log",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "1256",
+            "dateModified": "2026-06-10T08:58:57.566701+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/sr-workflow.cwl",
+            "@type": "File",
+            "additionalType": [
+                "ComputationalWorkflow",
+                "HPCWorkflow"
+            ],
+            "contentSize": "1377",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "application/cwl",
+            "hasPart": [
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/compile-sr.cwl"
+                },
+                {
+                    "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpireq.cwl"
+                }
+            ]
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun.cwl",
+            "@type": "File",
+            "additionalType": [
+                "CommandLineTool",
+                "HPCWorkflow"
+            ],
+            "contentSize": "1397",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/Singularity.def",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode",
+                "ContainerDefinition"
+            ],
+            "contentSize": "645",
+            "dateModified": "2026-06-08T18:43:18.977924+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/compile-sr.cwl",
+            "@type": "File",
+            "additionalType": [
+                "CommandLineTool",
+                "HPCWorkflow"
+            ],
+            "contentSize": "1169",
+            "dateModified": "2026-06-08T18:43:18.977924+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/sr.c",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode"
+            ],
+            "contentSize": "2570",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "text/x-csrc"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "4077",
+            "dateModified": "2026-06-08T18:43:18.976924+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpireq.cwl",
+            "@type": "File",
+            "additionalType": [
+                "CommandLineTool",
+                "HPCWorkflow"
+            ],
+            "contentSize": "1630",
+            "dateModified": "2026-06-08T18:43:18.977924+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-streamflow.cwl",
+            "@type": "File",
+            "additionalType": [
+                "HPCWorkflow"
+            ],
+            "contentSize": "215",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-streamflow-slurm.jinja",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode"
+            ],
+            "contentSize": "0",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/sr-workflow-job.yml",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "63",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "application/yaml"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-nodocker.cwl",
+            "@type": "File",
+            "additionalType": [
+                "CommandLineTool",
+                "HPCWorkflow"
+            ],
+            "contentSize": "1469",
+            "dateModified": "2026-06-08T18:43:18.977924+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-job.yml",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "69",
+            "dateModified": "2026-06-08T18:43:18.977924+00:00",
+            "encodingFormat": "application/yaml"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/hello_nodename.c",
+            "@type": "File",
+            "additionalType": [
+                "SoftwareSourceCode"
+            ],
+            "contentSize": "1285",
+            "dateModified": "2026-06-08T18:43:18.977924+00:00",
+            "encodingFormat": "text/x-csrc"
+        },
+        {
+            "@id": "examples/openmpi-hello_nodename/singularity/run-sr-mpirun-streamflow-slurm.cwl",
+            "@type": "File",
+            "additionalType": [
+                "StreamFlow",
+                "HPCWorkflow"
+            ],
+            "contentSize": "527",
+            "dateModified": "2026-06-08T18:43:18.978924+00:00",
+            "encodingFormat": "application/cwl"
+        },
+        {
+            "@id": "images/usc.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "132279",
+            "dateModified": "2026-06-22T14:53:35.681545+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cwl_building_blocks.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "131463",
+            "dateModified": "2026-06-22T17:28:47.133684+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cwl_runners.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "114248",
+            "dateModified": "2026-06-08T18:43:18.989924+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "645",
+            "dateModified": "2026-06-24T14:42:37.832633+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "images/cwl_ecosystem.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "83522",
+            "dateModified": "2026-06-08T18:43:18.989140+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/mpi.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "20734",
+            "dateModified": "2026-06-24T14:27:41.929715+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cwl_conformance_tests.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "121142",
+            "dateModified": "2026-06-08T18:43:18.988156+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/udc.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "36421",
+            "dateModified": "2026-06-24T14:32:38.670688+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cwl_conformance_tests_modes.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "64764",
+            "dateModified": "2026-06-22T17:44:00.629599+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cwl_mpi.svg",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "541854",
+            "dateModified": "2026-06-23T00:42:56.172276+00:00",
+            "encodingFormat": "image/svg+xml"
+        },
+        {
+            "@id": "images/cwl_specification.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "116048",
+            "dateModified": "2026-06-23T00:43:06.070275+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cwl.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "118149",
+            "dateModified": "2026-06-24T14:26:41.267721+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/usc_udc.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "153630",
+            "dateModified": "2026-06-24T14:23:58.279736+00:00",
+            "encodingFormat": "image/png"
+        }
+    ]
+}
