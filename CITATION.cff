@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+
+title: "CWL + MPI Workflows"
+version: 1.0.0
+
+doi: 10.5281/zenodo.20348637
+url: https://github.com/kinow/cwl-mpi
+
+authors:
+  - family-names: Kinoshita
+    given-names: Bruno de Paula
+    orcid: https://orcid.org/0000-0001-8250-4074
+
+preferred-citation:
+  type: thesis
+  title: "CWL Workflows with MPI in Bare-Metal, Containers, Cloud, and HPC Environments"
+  authors:
+    - family-names: Kinoshita
+      given-names: Bruno de Paula
+  year: 2026
+  institution: University of Santiago de Compostela / University of A Coruña
+  url: https://doi.org/10.5281/zenodo.20348637
