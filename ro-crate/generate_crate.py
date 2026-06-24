@@ -32,6 +32,7 @@ _INCLUDED_DIRS = [
     "containers",
     "examples",
     "images",
+    "cwl-conformance-tests",
 ]
 """What directories are included. These directories have certain expected files/content."""
 
@@ -132,6 +133,10 @@ def _iter_files():
             for p in base.rglob("*"):
                 if p.is_file():
                     yield p
+
+
+def _is_conformance_root(path: Path) -> bool:
+    return "cwl-conformance-tests" in path.parts
 
 
 def load_cff(path: Path) -> dict:
@@ -246,6 +251,17 @@ def add_workflow_links(file_index, workflow_graph):
             src_entity["hasPart"] = has_parts
 
 
+def _extract_run_group(rel: str) -> str | None:
+    parts = Path(rel).parts
+    if len(parts) < 5:
+        return None
+
+    if parts[0] != "cwl-conformance-tests" or parts[1] != "output":
+        return None
+
+    return "/".join(parts[:5]) + "/"
+
+
 def main():
     crate = ROCrate()
 
@@ -256,6 +272,20 @@ def main():
 
     file_index = {}
     workflow_graph = []
+
+    conformance_dataset = ContextEntity(
+        crate,
+        "cwl-conformance-tests/",
+        {
+            "@type": "Dataset",
+            "name": "CWL Conformance Tests",
+            "description": "Execution results and specifications for CWL conformance testing across runners, HPC systems, and CWL versions."
+        }
+    )
+    crate.add(conformance_dataset)
+    dataset["hasPart"] = dataset.get("hasPart", []) + [
+        {"@id": "cwl-conformance-tests/"}
+    ]
 
     for f in _iter_files():
         rel = str(f.relative_to(_ROOT))
@@ -284,6 +314,18 @@ def main():
 
         if references:
             workflow_graph.append((rel, references))
+
+        is_part_of = []
+
+        if "cwl-conformance-tests" in rel:
+            is_part_of.append({"@id": "cwl-conformance-tests/"})
+
+        group_id = _extract_run_group(rel)
+        if group_id:
+            is_part_of.append({"@id": group_id})
+
+        if is_part_of:
+            entity["isPartOf"] = is_part_of
 
     add_workflow_links(file_index, workflow_graph)
 
