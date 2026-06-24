@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: Build and install dependencies
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Find and install requirements files
+        run: |
+          set -e
+          echo "Searching for requirements.txt files..."
+          files=$(find . -name "requirements.txt")
+
+          if [ -z "$files" ]; then
+            echo "No requirements.txt files found."
+          else
+            for req in $files; do
+              echo "Installing dependencies from $req"
+              python -m pip install -r "$req"
+            done
+          fi
+
+      - name: Install CWL Runners used in the thesis
+        run: |
+          python -m pip install \
+            cwltool==3.2.20260413085819 \
+            toil==9.4.1 \
+            streamflow==0.2.0rc2
+
+     # TODO: run a few CWL files with these runners?
+
+  rocrate-validation:
+    name: RO-Crate validation
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install rocrate-validator
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ro-crate/requirements.txt
+
+      - name: Validate RO-Crate
+        run: |
+          FILE="ro-crate-metadata.json"
+
+          if [ ! -f "$FILE" ]; then
+            echo "No RO-Crate file found!"
+            exit 1
+          fi
+
+          rocrate-validator validate --verbose --no-paging --output-format text "$FILE"
