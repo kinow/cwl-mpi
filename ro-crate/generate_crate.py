@@ -8,30 +8,48 @@ import mimetypes
 from datetime import UTC, datetime
 from rocrate.model.contextentity import ContextEntity
 from rocrate.model.person import Person
+from rocrate.rocrate import ROCrate
 from ruamel.yaml import YAML
+from tempfile import TemporaryDirectory
+from shutil import move
 
-"""Generate an RO-Crate metadata JSON-LD file for the thesis dataset."""
+"""Generate an RO-Crate metadata JSON-LD file for the thesis dataset.
 
-ROOT = Path("..").resolve()
+Part of the data (licence, author, etc.) are retrieved from the CITATION.cff
+file to avoid duplicating the information elsewhere. The citation file is
+loaded as a YAML by ruamel.yaml.
+"""
 
-yaml = YAML(typ="safe")
+_ROOT = Path("..").resolve()
+"""Path to store the RO-Crate metadata file, and where to find the dataset files."""
 
-INCLUDED_DIRS = [
+_YAML = YAML(typ="safe")
+"""ruamel.yaml object."""
+
+_INCLUDED_DIRS = [
     "bibliography",
     "containers",
     "examples",
     "images",
 ]
+"""What directories are included. These directories have certain expected files/content."""
 
 
-def parse_cwl(path: Path) -> tuple[list[str], list[str]]:
-    """
-    Returns:
+def _parse_cwl(path: Path) -> tuple[list[str], list[str]]:
+    """Parse CWL to find out its RO-Crate entity type.
+
+    A .cwl file may be a CWL Workflow, a CWL tool, or a file used in StreamFlow.
+
+    This function is not perfect, sorry. But I hope it gives future-users
+    a way to parse the content more easily and re-use the data in future
+    analyses.
+
+    Augments it with:
         additional_types
         referenced_cwl_files
     """
     try:
-        data = yaml.load(path.read_text())
+        data = _YAML.load(path.read_text())
     except Exception:
         return [], []
 
@@ -68,7 +86,7 @@ def parse_cwl(path: Path) -> tuple[list[str], list[str]]:
     return list(dict.fromkeys(additional_types)), references
 
 
-def guess_mime(path: Path) -> str:
+def _guess_mime(path: Path) -> str:
     mime, _ = mimetypes.guess_type(path)
 
     if mime:
@@ -84,7 +102,7 @@ def guess_mime(path: Path) -> str:
     return "text/plain"
 
 
-def schema_additional_types(path: Path) -> list[str]:
+def _schema_additional_types(path: Path) -> list[str]:
     suffix = path.suffix.lower()
     name = path.name.lower()
 
@@ -106,9 +124,9 @@ def schema_additional_types(path: Path) -> list[str]:
     return []
 
 
-def iter_files():
-    for d in INCLUDED_DIRS:
-        base = ROOT / d
+def _iter_files():
+    for d in _INCLUDED_DIRS:
+        base = _ROOT / d
         if base.exists():
             for p in base.rglob("*"):
                 if p.is_file():
@@ -116,16 +134,59 @@ def iter_files():
 
 
 def load_cff(path: Path) -> dict:
+    """Loads a ``CITATION.cff``."""
     with path.open("r", encoding="utf-8") as f:
-        data = yaml.load(f)
+        data = _YAML.load(f)
 
     return data if isinstance(data, dict) else {}
 
 
-from rocrate.rocrate import ROCrate
+def cff2rocrate(crate: ROCrate, cff: dict):
+    """Populate an RO-Crate crate with CFF (citation) file information."""
 
+    def add_license(crate, license_id: str) -> str:
+        license_url = f"https://spdx.org/licenses/{license_id}.html"
 
-def apply_cff_to_rocrate(crate: ROCrate, cff: dict):
+        license_entity = ContextEntity(
+            crate,
+            license_url,
+            {
+                "@type": "CreativeWork",
+                "name": license_id,
+                "url": license_url
+            }
+        )
+
+        crate.add(license_entity)
+
+        return license_url
+
+    def add_authors(crate, cff: dict) -> list[dict[str, str]]:
+        authors = cff.get("authors", [])
+        author_nodes = []
+
+        for i, a in enumerate(authors):
+            orcid = a.get("orcid")
+
+            author_id = orcid if orcid else f"#author-{i}"
+
+            properties = {
+                "givenName": a.get("given-names"),
+                "familyName": a.get("family-names"),
+            }
+
+            if orcid:
+                properties["sameAs"] = {"@id": orcid}
+                properties["identifier"] = {"@id": orcid}
+
+            person = Person(crate, author_id, properties)
+
+            crate.add(person)
+
+            author_nodes.append({"@id": author_id})
+
+        return author_nodes
+
     dataset = crate.root_dataset
 
     # --- identity ---
@@ -143,7 +204,7 @@ def apply_cff_to_rocrate(crate: ROCrate, cff: dict):
         dataset["keywords"] = cff["keywords"]
 
     # --- license (FIXED: SPDX → URL) ---
-    license_id = cff.get("license")
+    license_id = str(cff.get("license"))
     if license_id:
         license_url = add_license(crate, license_id)
         dataset["license"] = {"@id": license_url}
@@ -154,52 +215,12 @@ def apply_cff_to_rocrate(crate: ROCrate, cff: dict):
         dataset["author"] = author_nodes
 
 
-def add_license(crate, license_id: str) -> str:
-    license_url = f"https://spdx.org/licenses/{license_id}.html"
+def add_workflow_links(file_index, workflow_graph):
+    """Link CWL Workflows and Tools.
 
-    license_entity = ContextEntity(
-        crate,
-        license_url,
-        {
-            "@type": "CreativeWork",
-            "name": license_id,
-            "url": license_url
-        }
-    )
-
-    crate.add(license_entity)
-
-    return license_url
-
-
-def add_authors(crate, cff: dict):
-    authors = cff.get("authors", [])
-    author_nodes = []
-
-    for i, a in enumerate(authors):
-        orcid = a.get("orcid")
-
-        author_id = orcid if orcid else f"#author-{i}"
-
-        properties = {
-            "givenName": a.get("given-names"),
-            "familyName": a.get("family-names"),
-        }
-
-        if orcid:
-            properties["sameAs"] = {"@id": orcid}
-            properties["identifier"] = {"@id": orcid}
-
-        person = Person(crate, author_id, properties)
-
-        crate.add(person)
-
-        author_nodes.append({"@id": author_id})
-
-    return author_nodes
-
-
-def add_workflow_links(crate, file_index, workflow_graph):
+    We have some CWL Workflows with Tools in the project that are related.
+    While we are not using CWLProv, we can still link it somehow, to at least
+    give future readers a chance to connect/parse/re-use them more easily."""
     for src, refs in workflow_graph:
         src_entity = file_index.get(src)
         if not src_entity:
@@ -210,10 +231,10 @@ def add_workflow_links(crate, file_index, workflow_graph):
             has_parts = [has_parts]
 
         for ref in refs:
-            target_path = (ROOT / Path(src).parent / ref).resolve()
+            target_path = (_ROOT / Path(src).parent / ref).resolve()
 
             try:
-                rel_target = str(target_path.relative_to(ROOT))
+                rel_target = str(target_path.relative_to(_ROOT))
             except Exception:
                 continue
 
@@ -230,27 +251,27 @@ def main():
     crate = ROCrate()
 
     cff = load_cff(Path("../CITATION.cff"))
-    apply_cff_to_rocrate(crate, cff)
+    cff2rocrate(crate, cff)
 
     file_index = {}
     workflow_graph = []
 
-    for f in iter_files():
-        rel = str(f.relative_to(ROOT))
+    for f in _iter_files():
+        rel = str(f.relative_to(_ROOT))
         stat = f.stat()
 
-        additional_types = schema_additional_types(f)
+        additional_types = _schema_additional_types(f)
         references = []
 
         if f.suffix == ".cwl":
-            cwl_types, references = parse_cwl(f)
+            cwl_types, references = _parse_cwl(f)
             additional_types.extend(cwl_types)
 
         entity = crate.add_file(
             source=str(f),
             dest_path=rel,
             properties={
-                "encodingFormat": guess_mime(f),
+                "encodingFormat": _guess_mime(f),
                 "contentSize": str(stat.st_size),
                 "dateModified": datetime.fromtimestamp(stat.st_mtime, UTC).isoformat(),
                 "additionalType": additional_types or None,
@@ -263,12 +284,17 @@ def main():
         if references:
             workflow_graph.append((rel, references))
 
-    add_workflow_links(crate, file_index, workflow_graph)
+    add_workflow_links(file_index, workflow_graph)
 
-    out = ROOT / "build/"
-    crate.write(out)
-
-    print(f"Wrote RO-Crate -> {out}")
+    # TBD: Strange, I seem to recall there was a way to generate just the
+    #      JSON-LD file, no?
+    rocrate_file = _ROOT / "ro-crate-metadata.json"
+    with TemporaryDirectory() as tmpdir:
+        tmp_path = Path(tmpdir)
+        crate.write(tmp_path)
+        tmp_rocrate = Path(tmp_path / "ro-crate-metadata.json")
+        move(tmp_rocrate, rocrate_file)
+        print(f"Wrote RO-Crate -> {rocrate_file}")
 
 
 if __name__ == "__main__":
