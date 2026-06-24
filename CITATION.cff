@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata below."
 
-title: "CWL + MPI Workflows"
+message: "If you use these research artefacts, please cite this dataset."
+
+title: "Research Artefacts for CWL Workflows with MPI in Bare-Metal, Containers, Cloud, and HPC"
+
 version: 1.0.0
 
 doi: 10.5281/zenodo.20348637
@@ -12,12 +14,28 @@ authors:
     given-names: Bruno de Paula
     orcid: https://orcid.org/0000-0001-8250-4074
 
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20348637
+
+keywords:
+  - CWL
+  - MPI
+  - HPC
+  - Cloud computing
+  - Workflows
+  - Scientific computing
+  - Scientific workflows
+  - Structured computing
+
+license: CC-BY-4.0
+
 preferred-citation:
-  type: thesis
-  title: "CWL Workflows with MPI in Bare-Metal, Containers, Cloud, and HPC Environments"
+  type: dataset
+  title: "Research Artefacts for CWL Workflows with MPI in Bare-Metal, Containers, Cloud, and HPC"
   authors:
-    - family-names: Kinoshita
-      given-names: Bruno de Paula
+    - family-names: de Paula Kinoshita
+      given-names: Bruno
+  doi: 10.5281/zenodo.20348637
   year: 2026
-  institution: University of Santiago de Compostela / University of A Coruña
-  url: https://doi.org/10.5281/zenodo.20348637
+  repository-code: https://github.com/kinow/cwl-mpi
