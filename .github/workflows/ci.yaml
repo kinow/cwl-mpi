@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Build and install dependencies
+    name: cwltool tests
     runs-on: ubuntu-latest
 
     steps:
@@ -44,7 +44,24 @@ jobs:
             toil==9.4.1 \
             streamflow==0.2.0rc2
 
-     # TODO: run a few CWL files with these runners?
+      - name: Run CWL workflows
+        run: |
+          set -e
+
+          echo "== Appendix/Hello World =="
+
+          cwltool workflows/hello_world/hello_world.cwl
+          cwltool workflows/hello_world/hello_world_containerized.cwl
+          cwltool workflows/hello_world/hello_world_wf.cwl
+          
+          toil-cwl-runner workflows/hello_world/hello_world.cwl
+          toil-cwl-runner workflows/hello_world/hello_world_containerized.cwl
+          toil-cwl-runner workflows/hello_world/hello_world_wf.cwl
+
+          echo "== Simple MPI Workflow =="
+
+          cwltool workflows/mpich-sr/mpicc.cwl
+          cwltool workflows/mpich-sr/sr-workflow-base-command.cwl
 
   rocrate-validation:
     name: RO-Crate validation
