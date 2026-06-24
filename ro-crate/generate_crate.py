@@ -8,6 +8,7 @@ import mimetypes
 from contextlib import suppress
 from datetime import UTC, datetime
 from rocrate.model.contextentity import ContextEntity
+from rocrate.model.dataset import Dataset
 from rocrate.model.person import Person
 from rocrate.rocrate import ROCrate
 from ruamel.yaml import YAML
@@ -33,6 +34,7 @@ _INCLUDED_DIRS = [
     "examples",
     "images",
     "cwl-conformance-tests",
+    "workflows"
 ]
 """What directories are included. These directories have certain expected files/content."""
 
@@ -101,6 +103,9 @@ def _guess_mime(path: Path) -> str:
     if suffix == ".bib":
         return "text/x-bibtex"
 
+    if suffix in {".log", ".out", ".err", ".cmd", ".time", ".exit"}:
+        return "text/plain"
+
     return "text/plain"
 
 
@@ -122,6 +127,9 @@ def _schema_additional_types(path: Path) -> list[str]:
 
     if suffix == ".md":
         return ["CreativeWork"]
+
+    if suffix in {".log", ".out", ".err", ".cmd", ".time", ".exit"}:
+        return ["Log", "File"]
 
     return []
 
@@ -262,13 +270,20 @@ def _extract_run_group(rel: str) -> str | None:
     return "/".join(parts[:5]) + "/"
 
 
+def _workflow_root(rel: str) -> str | None:
+    parts = Path(rel).parts
+    if len(parts) < 2:
+        return None
+    if parts[0] != "workflows":
+        return None
+    return f"workflows/{parts[1]}/"
+
+
 def main():
     crate = ROCrate()
 
     cff = load_cff(_ROOT / "CITATION.cff")
     cff2rocrate(crate, cff)
-
-    dataset = crate.root_dataset
 
     file_index = {}
     workflow_graph = []
@@ -283,9 +298,24 @@ def main():
         }
     )
     crate.add(conformance_dataset)
-    dataset["hasPart"] = dataset.get("hasPart", []) + [
-        {"@id": "cwl-conformance-tests/"}
+
+    workflow_root_dataset = ContextEntity(
+        crate,
+        "workflows/",
+        {
+            "@type": "Dataset",
+            "name": "MPI + CWL Workflow Experiments",
+            "description": "Execution results and specifications for MPI + CWL Workflow Experiments (Simple MPI Workflow, and FALL3D Workflow)."
+        }
+    )
+    crate.add(workflow_root_dataset)
+
+    crate.root_dataset["hasPart"] = crate.root_dataset.get("hasPart", []) + [
+        {"@id": "cwl-conformance-tests/"},
+        {"@id": "workflows/"},
     ]
+
+    workflow_datasets = {}
 
     for f in _iter_files():
         rel = str(f.relative_to(_ROOT))
@@ -317,6 +347,7 @@ def main():
 
         is_part_of = []
 
+        # A single dataset with the CWL Conformance Test results
         if "cwl-conformance-tests" in rel:
             is_part_of.append({"@id": "cwl-conformance-tests/"})
 
@@ -326,6 +357,29 @@ def main():
 
         if is_part_of:
             entity["isPartOf"] = is_part_of
+
+        # Two datasets, one for workflows/mpich-sr and one for workflows/fall3d
+        if rel.startswith("workflows/"):
+            wf_root = _workflow_root(rel)
+
+            if wf_root and wf_root not in workflow_datasets:
+                dataset = ContextEntity(
+                    crate,
+                    wf_root,
+                    {
+                        "@type": "Dataset",
+                        "name": wf_root.strip("/").split("/")[-1],
+                        "isPartOf": {"@id": "workflows/"}
+                    }
+                )
+
+                crate.add(dataset)
+
+                workflow_datasets[wf_root] = dataset
+
+                workflow_root_dataset["hasPart"] = workflow_root_dataset.get("hasPart", []) + [
+                    {"@id": wf_root}
+                ]
 
     add_workflow_links(file_index, workflow_graph)
 
