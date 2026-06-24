@@ -75,4 +75,4 @@ jobs:
             exit 1
           fi
 
-          rocrate-validator validate --verbose --no-paging --output-format text "$FILE"
+          rocrate-validator validate --verbose --no-paging --output-format text ./
