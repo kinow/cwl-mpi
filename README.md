@@ -16,12 +16,9 @@ The thesis was supervised by [Michael R. Crusoe](https://orcid.org/0000-0002-296
 and [Prof. Pablo Quesada](https://orcid.org/0000-0002-3790-8819).
 
 <p align="center">
-  <img src="./images/usc.png"
-       alt="University of Santiago de Compostela"
-       width="40%">
-  <img src="./images/udc.png"
-       alt="University of A Coruña"
-       width="40%">
+  <img src="./images/usc_udc.png"
+       alt="Logos of Universidade de Santiago de Compostela and Universidade da Coruña"
+       width="70%" />
 </p>
 
 ## Contents
@@ -32,12 +29,6 @@ This repository includes:
 - CWL conformance test results across multiple CWL runners
 - Execution logs from HPC and cloud environments
 - Supporting scripts for generating thesis figures and LaTeX tables
-
-<p align="center">
-  <img src="./images/cwl.png"
-       alt="Common Workflow Language"
-       width="40%">
-</p>
 
 The results cover executions on:
 
@@ -143,6 +134,17 @@ The following tools and platforms were used during the thesis:
 
 - https://github.com/kinow/msc-project-management/ — thesis planning and research notes
 - https://github.com/kinow/getit-workflows/ — fork of FALL3D workflows with MPIRequirement support
+
+---
+
+<p align="center">
+  <img src="./images/cwl.png"
+       alt="Common Workflow Language"
+       width="40%">
+  <img src="./images/mpi.png"
+       alt="Message Passing Interface"
+       width="40%">
+</p>
 
 ---
 
