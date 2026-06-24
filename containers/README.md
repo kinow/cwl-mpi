@@ -4,11 +4,17 @@ These are some containers used as tests on HPC systems and local laptop.
 They may not be directly linked to CWL and are more likely used to
 evaluate the underlying operating system, MPI & containers installations.
 
+Most of the containers used in the CWL workflows using MPI are from the
+same author:
+
+- https://hub.docker.com/u/mfisherman
+- https://github.com/mfisherman/docker
+
+## OSU
+
 References:
 
 - https://docs.lumi-supercomputer.eu/software/containers/singularity/
-
-## OSU
 
 (The thesis objectives are mainly around integration and correctness of
 CWL and MPI, not performance — these are only illustrative examples.)
