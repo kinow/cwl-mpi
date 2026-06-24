@@ -18,7 +18,7 @@
 # - env_set
 
 # I use MPICH on my laptop.
-runner: mpirun
+runner: mpirun.mpich
 
 # To avoid --preserve-entire-environment, we pass the environment variables
 # necessary for srun to work.
