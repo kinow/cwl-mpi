@@ -1,4 +1,4 @@
-# CWL+MPI thesis documents
+# CWL & MPI — Bibliography
 
 This folder contains documents related to the CWL+MPI thesis.
 
