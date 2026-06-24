@@ -1,6 +1,7 @@
 # CWL & MPI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20348637.svg)](https://doi.org/10.5281/zenodo.20348637)
+![RO-Crate](https://img.shields.io/badge/RO--Crate-1.2-blue.svg)
 
 This repository contains [Common Workflow Language (CWL)](https://www.commonwl.org/)
 workflows integrating the [Message Passing Interface (MPI)](https://www.mpi-forum.org/).
