@@ -1,4 +1,4 @@
-# CWL Conformance Tests
+# CWL & MPI — CWL Conformance Tests
 
 This directory contains automation code to assist running CWL Conformance Tests on
 different HPC systems.

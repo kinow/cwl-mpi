@@ -1,4 +1,4 @@
-# CWL+MPI Images
+# CWL & MPI — Images
 
 This folder contains the images used in the thesis.
 

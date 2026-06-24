@@ -1,4 +1,4 @@
-# CWL+MPI Workflows
+# CWL & MPI — Workflows
 
 This folder contains CWL workflows and tools written for the thesis.
 

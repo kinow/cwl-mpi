@@ -1,4 +1,4 @@
-# CWL+MPI Examples
+# CWL & MPI — Examples
 
 Examples used for the thesis document.
 
