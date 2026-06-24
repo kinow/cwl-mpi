@@ -151,6 +151,7 @@ The following tools and platforms were used during the thesis:
 - IDE: PyCharm
 - Bibliography: Zotero
 - Writing: Overleaf
+- RO-Crate: rocrate-py, rocrate-validator, Language-Research-Technology/ro-crate-html-js, simleo/rochtml (Docker)
 
 ---
 
