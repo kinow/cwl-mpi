@@ -5,13 +5,14 @@
 from pathlib import Path
 
 import mimetypes
+from contextlib import suppress
 from datetime import UTC, datetime
 from rocrate.model.contextentity import ContextEntity
 from rocrate.model.person import Person
 from rocrate.rocrate import ROCrate
 from ruamel.yaml import YAML
-from tempfile import TemporaryDirectory
 from shutil import move
+from tempfile import TemporaryDirectory
 
 """Generate an RO-Crate metadata JSON-LD file for the thesis dataset.
 
@@ -20,7 +21,7 @@ file to avoid duplicating the information elsewhere. The citation file is
 loaded as a YAML by ruamel.yaml.
 """
 
-_ROOT = Path("..").resolve()
+_ROOT = Path(__file__).resolve().parents[1]
 """Path to store the RO-Crate metadata file, and where to find the dataset files."""
 
 _YAML = YAML(typ="safe")
@@ -233,10 +234,8 @@ def add_workflow_links(file_index, workflow_graph):
         for ref in refs:
             target_path = (_ROOT / Path(src).parent / ref).resolve()
 
-            try:
+            with suppress(FileNotFoundError):
                 rel_target = str(target_path.relative_to(_ROOT))
-            except Exception:
-                continue
 
             if rel_target not in file_index:
                 continue
@@ -250,8 +249,10 @@ def add_workflow_links(file_index, workflow_graph):
 def main():
     crate = ROCrate()
 
-    cff = load_cff(Path("../CITATION.cff"))
+    cff = load_cff(_ROOT / "CITATION.cff")
     cff2rocrate(crate, cff)
+
+    dataset = crate.root_dataset
 
     file_index = {}
     workflow_graph = []
