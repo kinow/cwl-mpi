@@ -9,8 +9,18 @@
 ![CI](https://github.com/kinow/cwl-mpi/actions/workflows/ci.yaml/badge.svg)
 ![GitHub Release](https://img.shields.io/github/v/release/kinow/cwl-mpi)
 
+<p><img src="./images/cover.png"
+     alt="Master's thesis cover"
+     align="left"
+     width="40%" /></p>
+
 This repository contains [Common Workflow Language (CWL)](https://www.commonwl.org/)
-workflows integrating the [Message Passing Interface (MPI)](https://www.mpi-forum.org/).
+workflows integrating the [Message Passing Interface (MPI)].
+
+This repository contains CWL-based workflows, execution traces,
+conformance test results, and supporting artefacts exploring the integration of the
+[Common Workflow Language [CWL](https://www.commonwl.org/) with the
+[Message Passing Interface (MPI)](https://www.mpi-forum.org/).
 
 The workflows were developed as part of the master's thesis:
 
@@ -55,13 +65,15 @@ scripts used during the experiments. It reflects the execution hierarchy of CWL 
 tests & workflows across multiple runners (cwltool, Toil, StreamFlow), MPI implementations,
 computing environments, and execution modes.
 
-No manual post-processing or restructuring of execution outputs has been performed.
-This design choice ensures full traceability and preservation of both workflow outputs
-and workflow engine execution behaviour, including internal runtime state where available.
+Output logs were processed to redact personally identifiable information (PII).
+No other manual post-processing or restructuring of execution outputs has been
+performed. This design choice ensures full traceability and preservation of both
+workflow outputs and workflow engine execution behaviour, including internal
+runtime state where available.
 
 The dataset therefore includes both:
 
-- scientific execution outputs (workflow results, logs, conformance test outputs)
+- execution outputs (workflow results, logs, conformance test outputs)
 - execution engine traces (including internal state produced by workflow runners such as Toil and StreamFlow)
 
 This structure is intentional and is required to support analysis of MPI integration
