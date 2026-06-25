@@ -9,7 +9,7 @@
                     "@id": "https://orcid.org/0000-0001-8250-4074"
                 }
             ],
-            "datePublished": "2026-06-25T00:28:40+00:00",
+            "datePublished": "2026-06-25T10:13:58+00:00",
             "description": "If you use these research artefacts, please cite this dataset.",
             "hasPart": [
                 {
@@ -140,6 +140,9 @@
                 },
                 {
                     "@id": "images/cwl_specification.png"
+                },
+                {
+                    "@id": "images/cover.png"
                 },
                 {
                     "@id": "images/cwl.png"
@@ -2672,6 +2675,16 @@
             ],
             "contentSize": "116048",
             "dateModified": "2026-06-23T00:43:06.070275+00:00",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@id": "images/cover.png",
+            "@type": "File",
+            "additionalType": [
+                "ImageObject"
+            ],
+            "contentSize": "614129",
+            "dateModified": "2026-06-25T10:11:40.674149+00:00",
             "encodingFormat": "image/png"
         },
         {
@@ -5306,7 +5319,7 @@
                 "File"
             ],
             "contentSize": "6690",
-            "dateModified": "2026-06-24T20:10:29.696906+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -5332,7 +5345,7 @@
             "@type": "File",
             "additionalType": null,
             "contentSize": "38771",
-            "dateModified": "2026-06-24T20:10:29.697180+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "application/pdf"
         },
         {
@@ -5340,7 +5353,7 @@
             "@type": "File",
             "additionalType": null,
             "contentSize": "1280",
-            "dateModified": "2026-06-24T20:10:29.697306+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/x-tex"
         },
         {
@@ -5398,7 +5411,7 @@
             "@type": "File",
             "additionalType": null,
             "contentSize": "766",
-            "dateModified": "2026-06-24T20:10:29.697306+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "application/yaml"
         },
         {
@@ -10214,7 +10227,7 @@
                 "File"
             ],
             "contentSize": "95172",
-            "dateModified": "2026-06-24T20:10:29.696906+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -10236,7 +10249,7 @@
                 "File"
             ],
             "contentSize": "224",
-            "dateModified": "2026-06-24T20:10:29.696746+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -10258,7 +10271,7 @@
                 "File"
             ],
             "contentSize": "2",
-            "dateModified": "2026-06-24T20:10:29.696746+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -10269,7 +10282,7 @@
                 "File"
             ],
             "contentSize": "4",
-            "dateModified": "2026-06-24T20:10:29.696906+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -10783,7 +10796,7 @@
             "@type": "File",
             "additionalType": null,
             "contentSize": "53",
-            "dateModified": "2026-06-25T00:00:36.232538+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -10791,7 +10804,7 @@
             "@type": "File",
             "additionalType": null,
             "contentSize": "11194",
-            "dateModified": "2026-06-25T00:28:38.779382+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/x-python"
         },
         {
@@ -10801,7 +10814,7 @@
                 "CreativeWork"
             ],
             "contentSize": "278",
-            "dateModified": "2026-06-24T18:29:16.094376+00:00",
+            "dateModified": "2026-06-25T09:14:01.658504+00:00",
             "encodingFormat": "text/markdown"
         },
         {
@@ -10809,7 +10822,7 @@
             "@type": "File",
             "additionalType": null,
             "contentSize": "615",
-            "dateModified": "2026-06-25T00:28:05.164386+00:00",
+            "dateModified": "2026-06-25T09:14:01.657469+00:00",
             "encodingFormat": "text/plain"
         }
     ]
