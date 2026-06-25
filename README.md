@@ -1,7 +1,13 @@
 # CWL & MPI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20348637.svg)](https://doi.org/10.5281/zenodo.20348637)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--8250--4074-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0001-8250-4074)
 ![RO-Crate](https://img.shields.io/badge/RO--Crate-1.2-blue.svg)
+![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)
+![Reproducible](https://img.shields.io/badge/reproducible-yes-brightgreen)
+![Open Data](https://img.shields.io/badge/Open%20Data-yes-blue)
+![CI](https://github.com/kinow/cwl-mpi/actions/workflows/ci.yaml/badge.svg)
+![GitHub Release](https://img.shields.io/github/v/release/kinow/cwl-mpi)
 
 This repository contains [Common Workflow Language (CWL)](https://www.commonwl.org/)
 workflows integrating the [Message Passing Interface (MPI)](https://www.mpi-forum.org/).
