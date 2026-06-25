@@ -9,7 +9,7 @@
                     "@id": "https://orcid.org/0000-0001-8250-4074"
                 }
             ],
-            "datePublished": "2026-06-24T23:35:59+00:00",
+            "datePublished": "2026-06-25T00:03:13+00:00",
             "description": "If you use these research artefacts, please cite this dataset.",
             "hasPart": [
                 {
@@ -710,6 +710,9 @@
                 },
                 {
                     "@id": "workflows/mpich-sr/table.pdf"
+                },
+                {
+                    "@id": "workflows/mpich-sr/sr"
                 },
                 {
                     "@id": "workflows/mpich-sr/table.tex"
@@ -5666,6 +5669,14 @@
             "contentSize": "39465",
             "dateModified": "2026-06-24T23:35:25.005974+00:00",
             "encodingFormat": "application/pdf"
+        },
+        {
+            "@id": "workflows/mpich-sr/sr",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "16512",
+            "dateModified": "2026-06-24T23:48:11.786522+00:00",
+            "encodingFormat": "text/plain"
         },
         {
             "@id": "workflows/mpich-sr/table.tex",
