@@ -6,3 +6,6 @@ This repository contains workflows written to run with external workflow
 managers. No code from those workflow manager tools is included.
 All workflow definitions in this repository are licensed under CC BY 4.0.
 
+The file examples/cwl_building_blocks/poem.txt contains the poem
+“Adiós ríos, adiós fontes” by Rosalía de Castro (1837–1885),
+which is in the public domain.
