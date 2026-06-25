@@ -9,7 +9,7 @@
                     "@id": "https://orcid.org/0000-0001-8250-4074"
                 }
             ],
-            "datePublished": "2026-06-25T12:58:42+00:00",
+            "datePublished": "2026-06-25T16:42:20+00:00",
             "description": "If you use these research artefacts, please cite this dataset.",
             "hasPart": [
                 {
@@ -2633,8 +2633,8 @@
             "additionalType": [
                 "ImageObject"
             ],
-            "contentSize": "121142",
-            "dateModified": "2026-06-08T18:43:18.988156+00:00",
+            "contentSize": "1067120",
+            "dateModified": "2026-06-25T14:16:34.876791+00:00",
             "encodingFormat": "image/png"
         },
         {
@@ -2663,8 +2663,8 @@
             "additionalType": [
                 "ImageObject"
             ],
-            "contentSize": "541854",
-            "dateModified": "2026-06-23T00:42:56.172276+00:00",
+            "contentSize": "542026",
+            "dateModified": "2026-06-25T14:23:46.241751+00:00",
             "encodingFormat": "image/svg+xml"
         },
         {
@@ -2673,8 +2673,8 @@
             "additionalType": [
                 "ImageObject"
             ],
-            "contentSize": "116048",
-            "dateModified": "2026-06-23T00:43:06.070275+00:00",
+            "contentSize": "114749",
+            "dateModified": "2026-06-25T14:23:21.798753+00:00",
             "encodingFormat": "image/png"
         },
         {
