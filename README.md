@@ -21,7 +21,7 @@ conformance test results, and supporting artefacts exploring the integration of 
 
 The workflows were developed as part of the master's thesis:
 
-**“CWL Workflows with MPI in Bare-Metal, Containers, Cloud, and HPC Environments”**  
+**“CWL workflows with MPI in bare-metal, containers, cloud, and HPC”**  
 by [Bruno de Paula Kinoshita](https://orcid.org/0000-0001-8250-4074), within the Joint Master in High Performance
 Computing offered by the [University of Santiago de Compostela](https://www.usc.gal/) and
 the [University of A Coruña](https://udc.es/).
