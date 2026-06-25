@@ -14,12 +14,9 @@
      align="left"
      width="40%" /></p>
 
-This repository contains [Common Workflow Language (CWL)](https://www.commonwl.org/)
-workflows integrating the [Message Passing Interface (MPI)].
-
 This repository contains CWL-based workflows, execution traces,
 conformance test results, and supporting artefacts exploring the integration of the
-[Common Workflow Language [CWL](https://www.commonwl.org/) with the
+[Common Workflow Language (CWL)](https://www.commonwl.org/) with the
 [Message Passing Interface (MPI)](https://www.mpi-forum.org/).
 
 The workflows were developed as part of the master's thesis:
@@ -53,6 +50,7 @@ The results cover executions on:
 
 - Hetzner Cloud (OpenMPI 5)
 - Framework Laptop AMD 13 (MPICH 4)
+- CESGA FinisTerrae III (Intel MPI 2021.3.0)
 - CSC LUMI (Cray MPICH 8.1.32)
 - BSC MareNostrum 5 (Intel MPI 2021.10.0)
 
@@ -95,6 +93,7 @@ CWL conformance testing was performed using:
 - [CESGA FinisTerrae III](https://cesga-docs.gitlab.io/ft3-user-guide/index.html) 🇪🇸
 - [CSC LUMI](https://www.lumi.csc.fi/public/) 🇫🇮
 - [BSC MareNostrum 5](https://bsc.es/marenostrum/marenostrum-5) 🇪🇸
+- [Hetzner Cloud](https://www.hetzner.com/) 🇩🇪
 
 Reports and results: [CWL Conformance Tests](./cwl-conformance-tests/README.md)
 
@@ -106,7 +105,7 @@ The repository contains example workflows used for evaluation
 of MPI execution in CWL.
 
 Container-based experiments used images from:
-https://hub.docker.com/u/mfisherman  
+https://hub.docker.com/u/mfisherman, 
 https://github.com/mfisherman/docker
 
 ---
