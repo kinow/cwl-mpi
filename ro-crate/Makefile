@@ -16,5 +16,6 @@ validator:
 
 all: crate html validator
 
+# See also: git clean -fdX
 clean:
 	rm -f ../ro-crate-metadata.json ../ro-crate-preview.html

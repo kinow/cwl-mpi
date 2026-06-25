@@ -8,7 +8,6 @@ import mimetypes
 from contextlib import suppress
 from datetime import UTC, datetime
 from rocrate.model.contextentity import ContextEntity
-from rocrate.model.dataset import Dataset
 from rocrate.model.person import Person
 from rocrate.rocrate import ROCrate
 from ruamel.yaml import YAML
@@ -34,7 +33,8 @@ _INCLUDED_DIRS = [
     "examples",
     "images",
     "cwl-conformance-tests",
-    "workflows"
+    "workflows",
+    "ro-crate"
 ]
 """What directories are included. These directories have certain expected files/content."""
 

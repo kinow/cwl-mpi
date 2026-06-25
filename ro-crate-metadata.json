@@ -9,7 +9,7 @@
                     "@id": "https://orcid.org/0000-0001-8250-4074"
                 }
             ],
-            "datePublished": "2026-06-25T00:03:13+00:00",
+            "datePublished": "2026-06-25T00:28:40+00:00",
             "description": "If you use these research artefacts, please cite this dataset.",
             "hasPart": [
                 {
@@ -637,9 +637,6 @@
                     "@id": "workflows/fall3d/table.tex"
                 },
                 {
-                    "@id": "workflows/mpich-sr/mfisherman_mpich%3A4.3.2.sif"
-                },
-                {
                     "@id": "workflows/mpich-sr/sr-job.yaml"
                 },
                 {
@@ -685,13 +682,7 @@
                     "@id": "workflows/mpich-sr/streamflow-run-wrapper.sh"
                 },
                 {
-                    "@id": "workflows/mpich-sr/table.log"
-                },
-                {
                     "@id": "workflows/mpich-sr/mpi-config-file.yml"
-                },
-                {
-                    "@id": "workflows/mpich-sr/table.aux"
                 },
                 {
                     "@id": "workflows/mpich-sr/mpi-config-file-cloud.yml"
@@ -710,9 +701,6 @@
                 },
                 {
                     "@id": "workflows/mpich-sr/table.pdf"
-                },
-                {
-                    "@id": "workflows/mpich-sr/sr"
                 },
                 {
                     "@id": "workflows/mpich-sr/table.tex"
@@ -758,78 +746,6 @@
                 },
                 {
                     "@id": "workflows/mpich-sr/cloud/hetzner/single-node.sh"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.time"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.exit"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.log"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.cmd"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-mpi-requirement.out"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-mpi-requirement.err"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.exit"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-base-command.out"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.time"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-base-command.err"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.log"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.cmd"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.time"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.exit"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.log"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.cmd"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-mpi-requirement.out"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-mpi-requirement.err"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.exit"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-base-command.out"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.time"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-base-command.err"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.log"
-                },
-                {
-                    "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.cmd"
                 },
                 {
                     "@id": "workflows/mpich-sr/output/toil/laptop/none/workflow-base.time"
@@ -1169,9 +1085,6 @@
                 },
                 {
                     "@id": "workflows/mpich-sr/output/toil/cloud/docker/CWLJob_sr--workflow.mpirun.mpirun--base--command_000.log"
-                },
-                {
-                    "@id": "workflows/mpich-sr/output/toil/cloud/docker/sr"
                 },
                 {
                     "@id": "workflows/mpich-sr/output/toil/cloud/docker/CWLWorkflow_sr--workflow_000.log"
@@ -2237,6 +2150,18 @@
                 },
                 {
                     "@id": "workflows/fall3d/output/cwltool/lumi/singularity/workflow-base.cmd"
+                },
+                {
+                    "@id": "ro-crate/requirements.txt"
+                },
+                {
+                    "@id": "ro-crate/generate_crate.py"
+                },
+                {
+                    "@id": "ro-crate/README.md"
+                },
+                {
+                    "@id": "ro-crate/Makefile"
                 }
             ],
             "identifier": "https://doi.org/10.5281/zenodo.20348637",
@@ -5419,12 +5344,12 @@
             "encodingFormat": "text/x-tex"
         },
         {
-            "@id": "workflows/mpich-sr/mfisherman_mpich%3A4.3.2.sif",
+            "@id": "workflows/mpich-sr/sr-job.yaml",
             "@type": "File",
             "additionalType": null,
-            "contentSize": "268627968",
-            "dateModified": "2026-06-24T09:28:43.301374+00:00",
-            "encodingFormat": "text/plain"
+            "contentSize": "37",
+            "dateModified": "2026-06-14T21:26:34.222908+00:00",
+            "encodingFormat": "application/yaml"
         },
         {
             "@id": "workflows/mpich-sr/",
@@ -5433,14 +5358,6 @@
                 "@id": "workflows/"
             },
             "name": "mpich-sr"
-        },
-        {
-            "@id": "workflows/mpich-sr/sr-job.yaml",
-            "@type": "File",
-            "additionalType": null,
-            "contentSize": "37",
-            "dateModified": "2026-06-14T21:26:34.222908+00:00",
-            "encodingFormat": "application/yaml"
         },
         {
             "@id": "workflows/mpich-sr/README-toil.md",
@@ -5582,31 +5499,12 @@
             "encodingFormat": "application/x-sh"
         },
         {
-            "@id": "workflows/mpich-sr/table.log",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "6690",
-            "dateModified": "2026-06-24T23:33:47.174687+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
             "@id": "workflows/mpich-sr/mpi-config-file.yml",
             "@type": "File",
             "additionalType": null,
             "contentSize": "760",
             "dateModified": "2026-06-24T23:09:35.433665+00:00",
             "encodingFormat": "application/yaml"
-        },
-        {
-            "@id": "workflows/mpich-sr/table.aux",
-            "@type": "File",
-            "additionalType": null,
-            "contentSize": "628",
-            "dateModified": "2026-06-24T23:33:47.165687+00:00",
-            "encodingFormat": "text/plain"
         },
         {
             "@id": "workflows/mpich-sr/mpi-config-file-cloud.yml",
@@ -5669,14 +5567,6 @@
             "contentSize": "39465",
             "dateModified": "2026-06-24T23:35:25.005974+00:00",
             "encodingFormat": "application/pdf"
-        },
-        {
-            "@id": "workflows/mpich-sr/sr",
-            "@type": "File",
-            "additionalType": null,
-            "contentSize": "16512",
-            "dateModified": "2026-06-24T23:48:11.786522+00:00",
-            "encodingFormat": "text/plain"
         },
         {
             "@id": "workflows/mpich-sr/table.tex",
@@ -5824,270 +5714,6 @@
             "contentSize": "3073",
             "dateModified": "2026-06-14T21:26:34.183466+00:00",
             "encodingFormat": "application/x-sh"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.time",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:09:03.309345+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.exit",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:09:03.309345+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.log",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "14182",
-            "dateModified": "2026-06-24T23:09:05.741997+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.cmd",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "205",
-            "dateModified": "2026-06-24T23:09:03.319643+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-mpi-requirement.out",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "486",
-            "dateModified": "2026-06-24T23:09:05.708824+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-mpi-requirement.err",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2263",
-            "dateModified": "2026-06-24T23:09:05.708824+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.exit",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:09:06.235373+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-base-command.out",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "300",
-            "dateModified": "2026-06-24T23:09:02.663824+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-req.time",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:09:06.235373+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/mpirun-base-command.err",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "0",
-            "dateModified": "2026-06-24T23:09:01.879824+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.log",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "14119",
-            "dateModified": "2026-06-24T23:09:02.749931+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/none/workflow-base.cmd",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "202",
-            "dateModified": "2026-06-24T23:09:00.191042+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.time",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:08:33.670428+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.exit",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:08:33.670428+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.log",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "15562",
-            "dateModified": "2026-06-24T23:08:36.335749+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.cmd",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "211",
-            "dateModified": "2026-06-24T23:08:33.682735+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-mpi-requirement.out",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "486",
-            "dateModified": "2026-06-24T23:08:36.325826+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-mpi-requirement.err",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "1656",
-            "dateModified": "2026-06-24T23:08:36.326827+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.exit",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:08:36.900037+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-base-command.out",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "300",
-            "dateModified": "2026-06-24T23:08:33.167827+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-req.time",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "2",
-            "dateModified": "2026-06-24T23:08:36.900037+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/mpirun-base-command.err",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "0",
-            "dateModified": "2026-06-24T23:08:32.711827+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.log",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "15422",
-            "dateModified": "2026-06-24T23:08:33.178163+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/logs/cwltool/laptop/singularity/workflow-base.cmd",
-            "@type": "File",
-            "additionalType": [
-                "Log",
-                "File"
-            ],
-            "contentSize": "208",
-            "dateModified": "2026-06-24T23:08:30.353843+00:00",
-            "encodingFormat": "text/plain"
         },
         {
             "@id": "workflows/mpich-sr/output/toil/laptop/none/workflow-base.time",
@@ -7330,14 +6956,6 @@
             ],
             "contentSize": "16375",
             "dateModified": "2026-06-20T20:29:03.723064+00:00",
-            "encodingFormat": "text/plain"
-        },
-        {
-            "@id": "workflows/mpich-sr/output/toil/cloud/docker/sr",
-            "@type": "File",
-            "additionalType": null,
-            "contentSize": "16512",
-            "dateModified": "2026-06-14T15:05:10.460901+00:00",
             "encodingFormat": "text/plain"
         },
         {
@@ -11158,6 +10776,40 @@
             ],
             "contentSize": "165",
             "dateModified": "2026-06-21T14:17:28.283357+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "ro-crate/requirements.txt",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "53",
+            "dateModified": "2026-06-25T00:00:36.232538+00:00",
+            "encodingFormat": "text/plain"
+        },
+        {
+            "@id": "ro-crate/generate_crate.py",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "11194",
+            "dateModified": "2026-06-25T00:28:38.779382+00:00",
+            "encodingFormat": "text/x-python"
+        },
+        {
+            "@id": "ro-crate/README.md",
+            "@type": "File",
+            "additionalType": [
+                "CreativeWork"
+            ],
+            "contentSize": "278",
+            "dateModified": "2026-06-24T18:29:16.094376+00:00",
+            "encodingFormat": "text/markdown"
+        },
+        {
+            "@id": "ro-crate/Makefile",
+            "@type": "File",
+            "additionalType": null,
+            "contentSize": "615",
+            "dateModified": "2026-06-25T00:28:05.164386+00:00",
             "encodingFormat": "text/plain"
         }
     ]
