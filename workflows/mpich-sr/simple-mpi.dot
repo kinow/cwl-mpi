@@ -1,0 +1,61 @@
+digraph Workflow {
+    rankdir=LR;
+    bgcolor="white";
+    nodesep=0.2;
+    ranksep=0.35;
+
+    node [
+	    fontname="Courier",
+	    fontsize=10,
+	    shape=box,
+	    style=filled,
+	    fillcolor="#94DDF4"
+	]
+
+    // Inputs
+    subgraph cluster_inputs {
+        label="Inputs";
+        style=dashed;
+
+		source   [label="source", shape=box, style=filled, fillcolor="#94DDF4"];
+		np       [label="np", shape=box, style=filled, fillcolor="#94DDF4"];
+		msg_size [label="msg_size", shape=box, style=filled, fillcolor="#94DDF4"];
+		niter    [label="niter", shape=box, style=filled, fillcolor="#94DDF4"];
+    }
+
+    // Workflow steps
+    mpicc [
+        label="mpicc",
+        shape=box,
+        style="rounded,filled",
+        fillcolor="#F3CEA1"
+    ];
+
+    mpirun [
+        label="mpirun",
+        shape=box,
+        style="rounded,filled",
+        fillcolor="#F3CEA1"
+    ];
+
+    // Outputs
+    subgraph cluster_outputs {
+        label="Outputs";
+        style=dashed;
+
+        stdout [label="stdout", shape=note, style=filled, fillcolor="#94DDF4"];
+        stderr [label="stderr", shape=note, style=filled, fillcolor="#94DDF4"];
+    }
+
+    // Connections
+    source -> mpicc;
+
+    mpicc -> mpirun [label="executable"];
+
+    np       -> mpirun;
+    msg_size -> mpirun;
+    niter    -> mpirun;
+
+    mpirun -> stdout;
+    mpirun -> stderr;
+}
