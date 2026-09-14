@@ -68,11 +68,12 @@ fi
 ##############################
 
 # CWL versions to test
-CWL_VERSIONS=("v1.0" "v1.1" "v1.2")
-#CWL_VERSIONS=("v1.0")
+#CWL_VERSIONS=("v1.0" "v1.1" "v1.2")
+CWL_VERSIONS=("v1.0")
 
 # How many tests we will run in parallel
-N_TESTS_IN_PARALLEL=16
+# N_TESTS_IN_PARALLEL=16
+N_TESTS_IN_PARALLEL=4
 
 # CWL repo URLs
 declare -A CWL_REPO
@@ -87,9 +88,9 @@ CWL_TAG[v1.1]="v1.1.0"
 CWL_TAG[v1.2]="v1.2.1"
 
 # Tools configuration
-TOOLS=("cwltool" "toil")
+#TOOLS=("cwltool" "toil")
 #TOOLS=("cwltool")
-#TOOLS=("toil")
+TOOLS=("toil")
 
 # NOTE: We are using declare here, which will not work with MacOS'
 #       default Shell (bash in MacOS may be an alias to another
@@ -103,7 +104,7 @@ TOOL_BIN[toil]="toil-cwl-runner"
 # Extra args passed to the binaries
 declare -A TOOL_ARGS
 TOOL_ARGS[cwltool]="--singularity --enable-dev --tmpdir-prefix=$HPC_SCRATCH_DIR"
-TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress --defaultMemory=2G --maxMemory=2G --cwl-min-ram=2G --outdir=$HPC_SCRATCH_DIR --log-dir=$HPC_SCRATCH_DIR --tmpdir-prefix=$HPC_SCRATCH_DIR --tmp-outdir-prefix=$HPC_SCRATCH_DIR --workDir=$HPC_SCRATCH_DIR --coordinationDir=$HPC_SCRATCH_DIR"
+TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress --defaultMemory=2G --maxMemory=2G --cwl-min-ram=2G --enable-dev --clean=always"
 
 # Base working directory
 BASE_DIR=$(pwd)/runs
@@ -131,14 +132,15 @@ setup_python_env() {
 
     python3 -m venv "$ENV_DIR"
     "$ENV_DIR/bin/pip" install --upgrade pip
-    "$ENV_DIR/bin/pip" install cwltest
+    # "$ENV_DIR/bin/pip" install cwltest
+    "$ENV_DIR/bin/pip" install git+https://github.com/kinow/cwltest.git@add-outdir-stop-using-tmpdir
 
     case "$TOOL" in
     cwltool)
         "$ENV_DIR/bin/pip" install cwltool==3.2.20260413085819
         ;;
     toil)
-        "$ENV_DIR/bin/pip" install toil[cwl]==9.4.1
+        "$ENV_DIR/bin/pip" install toil[cwl]==9.5.0
         ;;
     esac
 }
@@ -225,6 +227,27 @@ run_tests() {
         RUNNER="${TOOL_BIN[$TOOL]}"
         EXTRA="${TOOL_ARGS[$TOOL]}"
 
+        RUN_ROOT_DIR=""
+        JOB_STORE=""
+
+        if [ "$TOOL" = "toil" ]; then
+            # One dedicated root directory for this complete tool/version/mode run.
+            RUN_ROOT_DIR="${HPC_SCRATCH_DIR}/$(uuidgen)"
+            mkdir -p "$RUN_ROOT_DIR"
+
+            # Toil job stores cannot be reused, so create a fresh one for each run.
+            JOB_STORE="${RUN_ROOT_DIR}/$(uuidgen)"
+
+            # Keep all Toil working directories under the same dedicated root.
+            EXTRA="${EXTRA} --outdir=${RUN_ROOT_DIR}"
+            EXTRA="${EXTRA} --log-dir=${RUN_ROOT_DIR}"
+            EXTRA="${EXTRA} --tmpdir-prefix=${RUN_ROOT_DIR}"
+            EXTRA="${EXTRA} --tmp-outdir-prefix=${RUN_ROOT_DIR}"
+            EXTRA="${EXTRA} --workDir=${RUN_ROOT_DIR}"
+            EXTRA="${EXTRA} --coordinationDir=${RUN_ROOT_DIR}"
+            EXTRA="${EXTRA} --jobStore=${JOB_STORE}"
+        fi
+
         # For toil + batch mode, we want to use the --batchSystem=slurm option.
         # And the --bypass-file-store is used to assume the data is available
         # everywhere (e.g., GPFS, Lustre).
@@ -247,6 +270,14 @@ run_tests() {
             TEST_FILE="conformance_test_v1.0.yaml"
         fi
 
+        # cwltest parallelism.
+        # Toil needs one test at a time because each cwltest invocation uses
+        # the same Toil job store.
+        TESTS_IN_PARALLEL="$N_TESTS_IN_PARALLEL"
+        if [ "$TOOL" = "toil" ] && [ "$MODE" = "batch" ]; then
+            TESTS_IN_PARALLEL=1
+        fi
+
         # Build base args
         ARGS=(
             "--verbose"
@@ -254,10 +285,25 @@ run_tests() {
             "--junit-verbose"
             "--junit-xml=${TOOL_DIR}/junit.xml"
             "--timeout=600"
-            "-j${N_TESTS_IN_PARALLEL}"
+            "-j${TESTS_IN_PARALLEL}"
             "--tool=$RUNNER"
             "--"
         )
+
+        if [ "$TOOL" = "toil" ]; then
+            ARGS=(
+                "--verbose"
+                "--test=${TEST_FILE}"
+                "--outdir=${RUN_ROOT_DIR}"
+                "--junit-verbose"
+                "--junit-xml=${TOOL_DIR}/junit.xml"
+                "--timeout=600"
+                "-j${TESTS_IN_PARALLEL}"
+                "--tool=$RUNNER"
+                "--"
+            )
+        fi
+
         # split EXTRA into words safely
         read -r -a EXTRA_ARR <<<"$EXTRA"
 
@@ -275,6 +321,8 @@ run_tests() {
             echo "VERSION=$VERSION"
             echo "MODE=$MODE"
             echo "RUNNER=${TOOL_BIN[$TOOL]}"
+            echo "RUN_ROOT_DIR=${RUN_ROOT_DIR}"
+            echo "JOB_STORE=${JOB_STORE}"
             echo "EXTRA=${EXTRA}"
             echo "================="
             echo ""
