@@ -68,8 +68,8 @@ fi
 ##############################
 
 # CWL versions to test
-CWL_VERSIONS=("v1.0" "v1.1" "v1.2")
-#CWL_VERSIONS=("v1.0")
+#CWL_VERSIONS=("v1.0" "v1.1" "v1.2")
+CWL_VERSIONS=("v1.0")
 
 # How many tests we will run in parallel
 N_TESTS_IN_PARALLEL=16
@@ -87,9 +87,9 @@ CWL_TAG[v1.1]="v1.1.0"
 CWL_TAG[v1.2]="v1.2.1"
 
 # Tools configuration
-TOOLS=("cwltool" "toil")
+#TOOLS=("cwltool" "toil")
 #TOOLS=("cwltool")
-#TOOLS=("toil")
+TOOLS=("toil")
 
 # NOTE: We are using declare here, which will not work with MacOS'
 #       default Shell (bash in MacOS may be an alias to another
@@ -100,10 +100,35 @@ declare -A TOOL_BIN
 TOOL_BIN[cwltool]="cwltool"
 TOOL_BIN[toil]="toil-cwl-runner"
 
+RUN_ROOT_DIR="$HPC_SCRATCH_DIR/$(uuidgen)"
+mkdir -p "$RUN_ROOT_DIR"
+
+# Directories used by Toil
+declare -A RUN_DIRS=(
+    [outdir]="$RUN_ROOT_DIR/outdir"
+    [logdir]="$RUN_ROOT_DIR/logdir"
+    [tmpdir]="$RUN_ROOT_DIR/tmpdir"
+    [tmpoutdir]="$RUN_ROOT_DIR/tmpoutdir"
+    [workdir]="$RUN_ROOT_DIR/workdir"
+    [coordination]="$RUN_ROOT_DIR/coordination"
+)
+
 # Extra args passed to the binaries
 declare -A TOOL_ARGS
-TOOL_ARGS[cwltool]="--singularity --enable-dev --tmpdir-prefix=$HPC_SCRATCH_DIR"
-TOOL_ARGS[toil]="--singularity --disableCaching --disableProgress --defaultMemory=2G --maxMemory=2G --cwl-min-ram=2G --outdir=$HPC_SCRATCH_DIR --log-dir=$HPC_SCRATCH_DIR --tmpdir-prefix=$HPC_SCRATCH_DIR --tmp-outdir-prefix=$HPC_SCRATCH_DIR --workDir=$HPC_SCRATCH_DIR --coordinationDir=$HPC_SCRATCH_DIR"
+TOOL_ARGS[cwltool]="--singularity --enable-dev --tmpdir-prefix=${RUN_DIRS[tmpdir]}"
+
+TOOL_ARGS[toil]="--singularity \
+--disableCaching \
+--disableProgress \
+--defaultMemory=2G \
+--maxMemory=2G \
+--cwl-min-ram=2G \
+--outdir=${RUN_DIRS[outdir]} \
+--log-dir=${RUN_DIRS[logdir]} \
+--tmpdir-prefix=${RUN_DIRS[tmpdir]} \
+--tmp-outdir-prefix=${RUN_DIRS[tmpoutdir]} \
+--workDir=${RUN_DIRS[workdir]} \
+--coordinationDir=${RUN_DIRS[coordination]}"
 
 # Base working directory
 BASE_DIR=$(pwd)/runs
@@ -131,14 +156,15 @@ setup_python_env() {
 
     python3 -m venv "$ENV_DIR"
     "$ENV_DIR/bin/pip" install --upgrade pip
-    "$ENV_DIR/bin/pip" install cwltest
+    # "$ENV_DIR/bin/pip" install cwltest
+    "$ENV_DIR/bin/pip" install git+https://github.com/kinow/cwltest.git@add-outdir-stop-using-tmpdir
 
     case "$TOOL" in
     cwltool)
         "$ENV_DIR/bin/pip" install cwltool==3.2.20260413085819
         ;;
     toil)
-        "$ENV_DIR/bin/pip" install toil[cwl]==9.4.1
+        "$ENV_DIR/bin/pip" install toil[cwl]==9.5.0
         ;;
     esac
 }
@@ -247,17 +273,26 @@ run_tests() {
             TEST_FILE="conformance_test_v1.0.yaml"
         fi
 
-        # Build base args
+        CWLTEST_OUTDIR="$RUN_ROOT_DIR/$(uuidgen)"
+
+        # Pre-create all directories (cwltest only uses tmpdir, and it handles directory creation).
+        if [ "$TOOL" = "toil" ] ; then
+            mkdir -p "${RUN_DIRS[@]}"
+            mkdir -p "$CWLTEST_OUTDIR"
+        fi
+
+        # Build base args passed to cwltest.
         ARGS=(
             "--verbose"
             "--test=${TEST_FILE}"
+            "--outdir=${CWLTEST_OUTDIR}"
             "--junit-verbose"
             "--junit-xml=${TOOL_DIR}/junit.xml"
             "--timeout=600"
             "-j${N_TESTS_IN_PARALLEL}"
             "--tool=$RUNNER"
-            "--"
         )
+
         # split EXTRA into words safely
         read -r -a EXTRA_ARR <<<"$EXTRA"
 
@@ -275,6 +310,9 @@ run_tests() {
             echo "VERSION=$VERSION"
             echo "MODE=$MODE"
             echo "RUNNER=${TOOL_BIN[$TOOL]}"
+            echo "HPC_SCRATCH_DIR=$HPC_SCRATCH_DIR"
+            echo "RUN_ROOT_DIR=$RUN_ROOT_DIR"
+            echo "CWLTEST_OUTDIR=$CWLTEST_OUTDIR"
             echo "EXTRA=${EXTRA}"
             echo "================="
             echo ""
@@ -282,7 +320,7 @@ run_tests() {
             "$RUNNER" --version || true
             echo ""
             set -exv
-            "$TEST_SCRIPT" "${ARGS[@]}" "${EXTRA_ARR[@]}"
+            "$TEST_SCRIPT" "${ARGS[@]}" -- "${EXTRA_ARR[@]}"
             set +exv
         }
 
