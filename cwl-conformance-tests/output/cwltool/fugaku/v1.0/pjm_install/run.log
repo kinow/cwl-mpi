@@ -1,0 +1,890 @@
++ python3.11 -m venv /home/[REDACTED]/venv-arm
++ source /home/[REDACTED]/venv-arm/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/home/[REDACTED]/venv-arm
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/opt/local/mpiexec:/opt/FJSVxtclanga/tcsds-1.2.43/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/[REDACTED]/.local/bin:/home/[REDACTED]/bin
+++ PATH=/home/[REDACTED]/venv-arm/bin:/opt/local/mpiexec:/opt/FJSVxtclanga/tcsds-1.2.43/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/[REDACTED]/.local/bin:/home/[REDACTED]/bin
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(venv-arm) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(venv-arm) '
+++ export VIRTUAL_ENV_PROMPT
+++ hash -r
++ python -m pip install --upgrade pip
+Requirement already satisfied: pip in /home/[REDACTED]/venv-arm/lib64/python3.11/site-packages (22.3.1)
+Collecting pip
+  Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 14.5 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.3.1
+    Uninstalling pip-22.3.1:
+      Successfully uninstalled pip-22.3.1
+Successfully installed pip-26.2.1
++ python -m pip install cwltool cwltest
+Collecting cwltool
+  Downloading cwltool-3.2.20260720092025-py3-none-any.whl.metadata (42 kB)
+Collecting cwltest
+  Downloading cwltest-2.7.20260814150058-py3-none-any.whl.metadata (5.9 kB)
+Collecting requests>=2.6.1 (from cwltool)
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting ruamel.yaml<0.20,>=0.16 (from cwltool)
+  Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+Collecting rdflib<7.7.0,>=4.2.2 (from cwltool)
+  Downloading rdflib-7.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting schema-salad<9,>=8.9 (from cwltool)
+  Downloading schema_salad-8.10.20260825112551-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (18 kB)
+Collecting prov==1.5.1 (from cwltool)
+  Downloading prov-1.5.1-py2.py3-none-any.whl.metadata (7.9 kB)
+Collecting mypy-extensions (from cwltool)
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting psutil>=5.6.6 (from cwltool)
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (22 kB)
+Collecting coloredlogs (from cwltool)
+  Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+Collecting pydot>=1.4.1 (from cwltool)
+  Downloading pydot-4.0.1-py3-none-any.whl.metadata (11 kB)
+Collecting argcomplete>=1.12.0 (from cwltool)
+  Downloading argcomplete-3.7.2-py3-none-any.whl.metadata (16 kB)
+Collecting pyparsing!=3.0.2 (from cwltool)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting cwl-utils>=0.41 (from cwltool)
+  Downloading cwl_utils-0.44-py3-none-any.whl.metadata (9.0 kB)
+Collecting spython>=0.3.0 (from cwltool)
+  Downloading spython-0.3.14-py3-none-any.whl.metadata (8.6 kB)
+Collecting rich-argparse (from cwltool)
+  Downloading rich_argparse-1.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pygments>=2.20.0 (from cwltool)
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting typing-extensions>=4.1.0 (from cwltool)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting lxml (from prov==1.5.1->cwltool)
+  Downloading lxml-6.1.3-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (3.3 kB)
+Collecting networkx (from prov==1.5.1->cwltool)
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting python-dateutil (from prov==1.5.1->cwltool)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.9.0 (from prov==1.5.1->cwltool)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting mistune<3.4,>=3.3.0 (from schema-salad<9,>=8.9->cwltool)
+  Downloading mistune-3.3.4-py3-none-any.whl.metadata (1.9 kB)
+Collecting CacheControl<0.15,>=0.13.1 (from CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=8.9->cwltool)
+  Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl<0.15,>=0.13.1->CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=8.9->cwltool)
+  Downloading msgpack-1.2.2-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (8.3 kB)
+Collecting filelock>=3.8.0 (from CacheControl[filecache]<0.15,>=0.13.1->schema-salad<9,>=8.9->cwltool)
+  Downloading filelock-4.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting junit-xml>=1.8 (from cwltest)
+  Downloading junit_xml-1.9-py2.py3-none-any.whl.metadata (3.2 kB)
+Collecting cwl-upgrader>=1.2.3 (from cwl-utils>=0.41->cwltool)
+  Downloading cwl_upgrader-1.2.15-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging (from cwl-utils>=0.41->cwltool)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.6.1->cwltool)
+  Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (45 kB)
+Collecting idna<4,>=2.5 (from requests>=2.6.1->cwltool)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.6.1->cwltool)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.6.1->cwltool)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting humanfriendly>=9.1 (from coloredlogs->cwltool)
+  Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+Collecting rich>=11.0.0 (from rich-argparse->cwltool)
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=11.0.0->rich-argparse->cwltool)
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=11.0.0->rich-argparse->cwltool)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading cwltool-3.2.20260720092025-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 9.8 MB/s  0:00:00
+Downloading prov-1.5.1-py2.py3-none-any.whl (426 kB)
+Downloading rdflib-7.6.0-py3-none-any.whl (615 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 615.4/615.4 kB 3.0 MB/s  0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+Downloading schema_salad-8.10.20260825112551-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 7.9 MB/s  0:00:00
+Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+Downloading mistune-3.3.4-py3-none-any.whl (66 kB)
+Downloading msgpack-1.2.2-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (413 kB)
+Downloading cwltest-2.7.20260814150058-py3-none-any.whl (49 kB)
+Downloading argcomplete-3.7.2-py3-none-any.whl (43 kB)
+Downloading cwl_utils-0.44-py3-none-any.whl (444 kB)
+Downloading cwl_upgrader-1.2.15-py3-none-any.whl (27 kB)
+Downloading filelock-4.0.1-py3-none-any.whl (106 kB)
+Downloading junit_xml-1.9-py2.py3-none-any.whl (7.1 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (156 kB)
+Downloading pydot-4.0.1-py3-none-any.whl (37 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 8.4 MB/s  0:00:00
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (251 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading spython-0.3.14-py3-none-any.whl (109 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+Downloading lxml-6.1.3-cp311-cp311-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (5.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 27.4 MB/s  0:00:00
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 4.2 MB/s  0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading rich_argparse-1.8.0-py3-none-any.whl (25 kB)
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: spython, urllib3, typing-extensions, six, ruamel.yaml, pyparsing, pygments, psutil, packaging, networkx, mypy-extensions, msgpack, mistune, mdurl, lxml, idna, humanfriendly, filelock, charset_normalizer, certifi, argcomplete, requests, rdflib, python-dateutil, pydot, markdown-it-py, junit-xml, coloredlogs, rich, prov, CacheControl, rich-argparse, schema-salad, cwltest, cwl-upgrader, cwl-utils, cwltool
+
+Successfully installed CacheControl-0.14.4 argcomplete-3.7.2 certifi-2026.7.22 charset_normalizer-3.5.1 coloredlogs-15.0.1 cwl-upgrader-1.2.15 cwl-utils-0.44 cwltest-2.7.20260814150058 cwltool-3.2.20260720092025 filelock-4.0.1 humanfriendly-10.0 idna-3.20 junit-xml-1.9 lxml-6.1.3 markdown-it-py-4.2.0 mdurl-0.1.2 mistune-3.3.4 msgpack-1.2.2 mypy-extensions-1.1.0 networkx-3.6.1 packaging-26.3 prov-1.5.1 psutil-7.2.2 pydot-4.0.1 pygments-2.21.0 pyparsing-3.3.2 python-dateutil-2.9.0.post0 rdflib-7.6.0 requests-2.34.2 rich-15.0.0 rich-argparse-1.8.0 ruamel.yaml-0.19.1 schema-salad-8.10.20260825112551 six-1.17.0 spython-0.3.14 typing-extensions-4.16.0 urllib3-2.8.0
++ cwltest --test conformance_test_v1.0.yaml --tool=cwltool -j 4 --junit-verbose --junit-xml junit.xml -- --singularity --enable-dev
+Test [1/197] cl_basic_generation: General test of command line generation
+
+Test [2/197] nested_prefixes_arrays: Test nested prefixes with arrays
+
+Test [3/197] nested_cl_bindings: Test nested command line bindings
+
+Test [4/197] cl_optional_inputs_missing: Test command line with optional input (missing)
+
+Test 2 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpz7942beb --quiet v1.0/binding-test.cwl v1.0/bwa-mem-job.json
+Test nested prefixes with arrays
+Returned non-zero
+Test [5/197] cl_optional_bindings_provided: Test command line with optional input (provided)
+
+Test 3 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpwk8sge5n --quiet v1.0/tmap-tool.cwl v1.0/tmap-job.json
+Test nested command line bindings
+Returned non-zero
+Test [6/197] initworkdir_expreng_requirements: Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature
+
+Test 4 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmph3azb_f7 --quiet v1.0/cat1-testcli.cwl v1.0/cat-job.json
+Test command line with optional input (missing)
+Returned non-zero
+Test [7/197] stdout_redirect_docker: Test command execution in Docker with stdout redirection
+
+Test 1 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp7gwbolif --quiet v1.0/bwa-mem-tool.cwl v1.0/bwa-mem-job.json
+General test of command line generation
+Returned non-zero
+Test [8/197] stdout_redirect_shortcut_docker: Test command execution in Docker with shortcut stdout redirection
+
+Test 7 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpazywz4jl --quiet v1.0/cat3-tool-docker.cwl v1.0/cat-job.json
+Test command execution in Docker with stdout redirection
+Returned non-zero
+Test [9/197] stdout_redirect_mediumcut_docker: Test command execution in Docker with mediumcut stdout redirection
+
+Test 6 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpxfgeorau --quiet v1.0/template-tool.cwl v1.0/cat-job.json
+Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature
+Returned non-zero
+Test [10/197] stderr_redirect: Test command line with stderr redirection
+
+Test 5 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpbk80s2ve --quiet v1.0/cat1-testcli.cwl v1.0/cat-n-job.json
+Test command line with optional input (provided)
+Returned non-zero
+Test [11/197] stderr_redirect_shortcut: Test command line with stderr redirection, brief syntax
+
+Test 8 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp_1c79gjf --quiet v1.0/cat3-tool-shortcut.cwl v1.0/cat-job.json
+Test command execution in Docker with shortcut stdout redirection
+Returned non-zero
+Test [12/197] stderr_redirect_mediumcut: Test command line with stderr redirection, named brief syntax
+
+Test [13/197] stdinout_redirect_docker: Test command execution in Docker with stdin and stdout redirection
+
+Test [14/197] expression_any: Test default usage of Any in expressions.
+
+Test [15/197] expression_any_null: Test explicitly passing null to Any type inputs with default values.
+
+Test 9 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp687adcpl --quiet v1.0/cat3-tool-mediumcut.cwl v1.0/cat-job.json
+Test command execution in Docker with mediumcut stdout redirection
+Returned non-zero
+Test [16/197] expression_any_string: Testing the string 'null' does not trip up an Any with a default value.
+
+Test 15 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp2sf4u1_6 --quiet v1.0/null-expression1-tool.cwl v1.0/null-expression1-job.json
+Test explicitly passing null to Any type inputs with default values.
+Returned non-zero
+Test [17/197] expression_any_nodefaultany: Test Any without defaults cannot be unspecified.
+
+Test 14 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp1vxcsvup --quiet v1.0/null-expression1-tool.cwl v1.0/empty.json
+Test default usage of Any in expressions.
+Returned non-zero
+Test [18/197] expression_any_null_nodefaultany: Test explicitly passing null to Any type without a default value.
+
+Test 13 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpdfdov9pz --quiet v1.0/cat4-tool.cwl v1.0/cat-job.json
+Test command execution in Docker with stdin and stdout redirection
+Returned non-zero
+Test [19/197] expression_any_nullstring_nodefaultany: Testing the string 'null' does not trip up an Any without a default value.
+
+Test 16 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpz61qetr6 --quiet v1.0/null-expression1-tool.cwl v1.0/null-expression2-job.json
+Testing the string 'null' does not trip up an Any with a default value.
+Returned non-zero
+Test [20/197] any_outputSource_compatibility: Testing Any type compatibility in outputSource
+
+Test [21/197] stdinout_redirect: Test command execution in with stdin and stdout redirection
+
+Test [22/197] expression_parseint: Test ExpressionTool with Javascript engine
+
+Test 19 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp3qmsz8vm --quiet v1.0/null-expression2-tool.cwl v1.0/null-expression2-job.json
+Testing the string 'null' does not trip up an Any without a default value.
+Returned non-zero
+Test [23/197] expression_outputEval: Test outputEval to transform output
+
+Test [24/197] wf_wc_parseInt: Test two step workflow with imported tools
+
+Test [25/197] wf_wc_expressiontool: Test two step workflow with inline tools
+
+Test 22 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpj6w0vida --quiet v1.0/parseInt-tool.cwl v1.0/parseInt-job.json
+Test ExpressionTool with Javascript engine
+Returned non-zero
+Test [26/197] wf_wc_scatter: Test single step workflow with Scatter step
+
+Test 23 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp7w2nsce2 --quiet v1.0/wc2-tool.cwl v1.0/wc-job.json
+Test outputEval to transform output
+Returned non-zero
+Test [27/197] wf_wc_scatter_multiple_merge: Test single step workflow with Scatter step and two data links connected to same input, default merge behavior
+
+Test 24 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpvuyklin5 --quiet v1.0/count-lines1-wf.cwl v1.0/wc-job.json
+Test two step workflow with imported tools
+Returned non-zero
+Test [28/197] wf_wc_scatter_multiple_nested: Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior
+
+Test 27 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpzy5l0oqx --quiet v1.0/count-lines4-wf.cwl v1.0/count-lines4-job.json
+Test single step workflow with Scatter step and two data links connected to same input, default merge behavior
+Returned non-zero
+Test [29/197] wf_wc_scatter_multiple_flattened: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior
+
+Test 26 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp4in5o1fe --quiet v1.0/count-lines3-wf.cwl v1.0/count-lines3-job.json
+Test single step workflow with Scatter step
+Returned non-zero
+Test [30/197] wf_wc_nomultiple: Test that no MultipleInputFeatureRequirement is necessary when workflow step source is a single-item list
+
+Test 28 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpkxk7vtdz --quiet v1.0/count-lines6-wf.cwl v1.0/count-lines6-job.json
+Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior
+Returned non-zero
+Test [31/197] wf_input_default_missing: Test workflow with default value for input parameter (missing)
+
+Test 29 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpuas_pp7d --quiet v1.0/count-lines7-wf.cwl v1.0/count-lines6-job.json
+Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior
+Returned non-zero
+Test [32/197] wf_input_default_provided: Test workflow with default value for input parameter (provided)
+
+Test 31 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpqjto0008 --quiet v1.0/count-lines5-wf.cwl v1.0/empty.json
+Test workflow with default value for input parameter (missing)
+Returned non-zero
+Test [33/197] wf_default_tool_default: Test that workflow defaults override tool defaults
+
+Test 30 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmphs6rbeo_ --quiet v1.0/count-lines13-wf.cwl v1.0/count-lines6-job.json
+Test that no MultipleInputFeatureRequirement is necessary when workflow step source is a single-item list
+Returned non-zero
+Test [34/197] envvar_req: Test EnvVarRequirement
+
+Test [35/197] wf_scatter_single_param: Test workflow scatter with single scatter parameter
+
+Test [36/197] wf_scatter_two_nested_crossproduct: Test workflow scatter with two scatter parameters and nested_crossproduct join method
+
+Test [37/197] wf_scatter_two_flat_crossproduct: Test workflow scatter with two scatter parameters and flat_crossproduct join method
+
+Test [38/197] wf_scatter_two_dotproduct: Test workflow scatter with two scatter parameters and dotproduct join method
+
+Test 32 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp5800c4xk --quiet v1.0/count-lines5-wf.cwl v1.0/wc-job.json
+Test workflow with default value for input parameter (provided)
+Returned non-zero
+Test [39/197] wf_scatter_emptylist: Test workflow scatter with single empty list parameter
+
+Test [40/197] wf_scatter_nested_crossproduct_secondempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty
+
+Test [41/197] wf_scatter_nested_crossproduct_firstempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty
+
+Test [42/197] wf_scatter_flat_crossproduct_oneempty: Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method
+
+Test [43/197] wf_scatter_dotproduct_twoempty: Test workflow scatter with two empty scatter parameters and dotproduct join method
+
+Test [44/197] any_input_param: Test Any type input parameter
+
+Test [45/197] nested_workflow: Test nested workflow
+
+Test [46/197] requirement_priority: Test requirement priority
+
+Test [47/197] requirement_override_hints: Test requirements override hints
+
+Test [48/197] requirement_workflow_steps: Test requirements on workflow steps
+
+Test [49/197] step_input_default_value: Test default value on step input parameter
+
+Test 45 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp1lnhordq --quiet v1.0/count-lines8-wf.cwl v1.0/wc-job.json
+Test nested workflow
+Returned non-zero
+Test [50/197] step_input_default_value_nosource: Test use default value on step input parameter with empty source
+
+Test [51/197] step_input_default_value_nullsource: Test use default value on step input parameter with null source
+
+Test 49 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpfi01nzyq --quiet v1.0/count-lines9-wf.cwl v1.0/empty.json
+Test default value on step input parameter
+Returned non-zero
+Test [52/197] step_input_default_value_overriden: Test default value on step input parameter overridden by provided source
+
+Test 50 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpvd1g5fqv --quiet v1.0/count-lines11-wf.cwl v1.0/empty.json
+Test use default value on step input parameter with empty source
+Returned non-zero
+Test [53/197] wf_simple: Test simple workflow
+
+Test 51 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpqcro01ah --quiet v1.0/count-lines11-wf.cwl v1.0/file1-null.json
+Test use default value on step input parameter with null source
+Returned non-zero
+Test [54/197] hints_unknown_ignored: Test unknown hints are ignored.
+
+Test 52 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmppiigb2s9 --quiet v1.0/count-lines11-wf.cwl v1.0/cat-job.json
+Test default value on step input parameter overridden by provided source
+Returned non-zero
+Test [55/197] initial_workdir_secondary_files_expr: Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field.
+
+Test 25 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp5pwgw8kl --quiet v1.0/count-lines2-wf.cwl v1.0/wc-job.json
+Test two step workflow with inline tools
+Returned non-zero
+Test [56/197] rename: Test InitialWorkDirRequirement with expression in filename.
+
+Test 54 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp7vf3t8n1 --quiet v1.0/cat5-tool.cwl v1.0/cat-job.json
+Test unknown hints are ignored.
+Returned non-zero
+Test [57/197] initial_workdir_trailingnl: Test if trailing newline is present in file entry in InitialWorkDir
+
+Test 53 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpicti78sp --quiet v1.0/revsort.cwl v1.0/revsort-job.json
+Test simple workflow
+Returned non-zero
+Test [58/197] inline_expressions: Test inline expressions
+
+Test [59/197] schemadef_req_tool_param: Test SchemaDefRequirement definition used in tool parameter
+
+Test [60/197] schemadef_req_wf_param: Test SchemaDefRequirement definition used in workflow parameter
+
+Test [61/197] param_evaluation_noexpr: Test parameter evaluation, no support for JS expressions
+
+Test [62/197] param_evaluation_expr: Test parameter evaluation, with support for JS expressions
+
+Test 58 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpw3d7u9ds --quiet v1.0/wc4-tool.cwl v1.0/wc-job.json
+Test inline expressions
+Returned non-zero
+Test [63/197] metadata: Test metadata
+
+Test [64/197] format_checking: Test simple format checking.
+
+Test [65/197] format_checking_subclass: Test format checking against ontology using subclassOf.
+
+Test 62 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpd6xd0pj_ --quiet v1.0/params2.cwl v1.0/empty.json
+Test parameter evaluation, with support for JS expressions
+Returned non-zero
+Test [66/197] format_checking_equivalentclass: Test format checking against ontology using equivalentClass.
+
+Test 63 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpjp2ggoj5 --quiet v1.0/metadata.cwl v1.0/cat-job.json
+Test metadata
+Returned non-zero
+Test [67/197] output_secondaryfile_optional: Test optional output file and optional secondaryFile on output.
+
+Test 67 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp0i7dpif4 --quiet v1.0/optional-output.cwl v1.0/cat-job.json
+Test optional output file and optional secondaryFile on output.
+Returned non-zero
+Test [68/197] valuefrom_ignored_null: Test that valueFrom is ignored when the parameter is null
+
+Test 65 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpmfkpwtny --quiet v1.0/formattest2.cwl v1.0/formattest2-job.json
+Test format checking against ontology using subclassOf.
+Returned non-zero
+Test [69/197] valuefrom_secondexpr_ignored: Test that second expression in concatenated valueFrom is not ignored
+
+Test 66 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpr8_2thd4 --quiet v1.0/formattest3.cwl v1.0/formattest2-job.json
+Test format checking against ontology using equivalentClass.
+Returned non-zero
+Test [70/197] valuefrom_wf_step: Test valueFrom on workflow step.
+
+Test 68 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpon583nu2 --quiet v1.0/vf-concat.cwl v1.0/empty.json
+Test that valueFrom is ignored when the parameter is null
+Returned non-zero
+Test [71/197] valuefrom_wf_step_multiple: Test valueFrom on workflow step with multiple sources
+
+Test 69 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpehl7o3qq --quiet v1.0/vf-concat.cwl v1.0/cat-job.json
+Test that second expression in concatenated valueFrom is not ignored
+Returned non-zero
+Test [72/197] valuefrom_wf_step_other: Test valueFrom on workflow step referencing other inputs
+
+Test 70 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpkzo5rsle --quiet v1.0/step-valuefrom-wf.cwl v1.0/step-valuefrom-wf.json
+Test valueFrom on workflow step.
+Returned non-zero
+Test [73/197] record_output_binding: Test record type output binding.
+
+Test [74/197] docker_json_output_path: Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided.
+
+Test 74 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp62j1oo5q --quiet v1.0/test-cwl-out.cwl v1.0/empty.json
+Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided.
+Returned non-zero
+Test [75/197] docker_json_output_location: Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided.
+
+Test 55 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpu7o4sk2n --quiet 'v1.0/search.cwl#main' v1.0/search-job.json
+Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field.
+Returned non-zero
+Test [76/197] multiple_glob_expr_list: Test support for returning multiple glob patterns from expression
+
+Test 75 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpt33i08ro --quiet v1.0/test-cwl-out2.cwl v1.0/empty.json
+Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided.
+Returned non-zero
+Test [77/197] wf_scatter_oneparam_valuefrom: Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)
+
+Test [78/197] wf_scatter_twoparam_nested_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input
+
+Test [79/197] wf_scatter_twoparam_flat_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input
+
+Test [80/197] wf_scatter_twoparam_dotproduct_valuefrom: Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input
+
+Test [81/197] wf_scatter_oneparam_valuefrom_twice_current_el: Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)
+
+Test [82/197] wf_scatter_oneparam_valueFrom: Test valueFrom eval on scattered input parameter
+
+Test [83/197] wf_two_inputfiles_namecollision: Test workflow two input files with same name.
+
+Test [84/197] directory_input_param_ref: Test directory input with parameter reference
+
+Test [85/197] directory_input_docker: Test directory input in Docker
+
+Test [86/197] directory_output: Test directory output
+
+Test [87/197] directory_secondaryfiles: Test directories in secondaryFiles
+
+Test 85 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpvcr6rzv1 --quiet v1.0/dir2.cwl v1.0/dir-job.yml
+Test directory input in Docker
+Returned non-zero
+Test [88/197] dynamic_initial_workdir: Test dynamic initial work dir
+
+Test [89/197] writable_stagedfiles: Test writable staged files.
+
+Test [90/197] input_file_literal: Test file literal as input
+
+Test 89 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp0yt94_kp --quiet v1.0/stagefile.cwl v1.0/stagefile-job.yml
+Test writable staged files.
+Returned non-zero
+Test [91/197] initial_workdir_expr: Test expression in InitialWorkDir listing
+
+Test 71 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpdhn2dlcr --quiet v1.0/step-valuefrom2-wf.cwl v1.0/step-valuefrom-job.json
+Test valueFrom on workflow step with multiple sources
+Returned non-zero
+Test [92/197] nameroot_nameext_stdout_expr: Test nameroot/nameext expression in arguments, stdout
+
+Test 90 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpxfo9_cxl --quiet v1.0/cat3-tool.cwl v1.0/file-literal.yml
+Test file literal as input
+Returned non-zero
+Test [93/197] input_dir_inputbinding: Test directory input with inputBinding
+
+Test [94/197] cl_gen_arrayofarrays: Test command line generation of array-of-arrays
+
+Test [95/197] env_home_tmpdir: Test $HOME and $TMPDIR are set correctly
+
+Test 72 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpvlgpbqfn --quiet v1.0/step-valuefrom3-wf.cwl v1.0/step-valuefrom-job.json
+Test valueFrom on workflow step referencing other inputs
+Returned non-zero
+Test [96/197] env_home_tmpdir_docker: Test $HOME and $TMPDIR are set correctly in Docker
+
+Test [97/197] expressionlib_tool_wf_override: Test that expressionLib requirement of individual tool step overrides expressionLib of workflow.
+
+Test [98/197] initial_workdir_output: Test output of InitialWorkDir
+
+Test [99/197] embedded_subworkflow: Test embedded subworkflow
+
+Test 96 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpej70mi9v --quiet v1.0/envvar2.cwl v1.0/empty.json
+Test $HOME and $TMPDIR are set correctly in Docker
+Returned non-zero
+Test [100/197] filesarray_secondaryfiles: Test secondaryFiles on array of files.
+
+Test 97 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpgubjgc34 --quiet 'v1.0/js-expr-req-wf.cwl#wf' v1.0/empty.json
+Test that expressionLib requirement of individual tool step overrides expressionLib of workflow.
+Returned non-zero
+Test [101/197] exprtool_directory_literal: Test directory literal output created by ExpressionTool
+
+Test 99 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpj8aw_ljj --quiet v1.0/count-lines10-wf.cwl v1.0/wc-job.json
+Test embedded subworkflow
+Returned non-zero
+Test [102/197] exprtool_file_literal: Test file literal output created by ExpressionTool
+
+Test 98 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpb50v5xuq --quiet v1.0/initialworkdirrequirement-docker-out.cwl v1.0/initialworkdirrequirement-docker-out-job.json
+Test output of InitialWorkDir
+Returned non-zero
+Test [103/197] dockeroutputdir: Test dockerOutputDirectory
+
+Test 100 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpw5dlz346 --quiet v1.0/docker-array-secondaryfiles.cwl v1.0/docker-array-secondaryfiles-job.json
+Test secondaryFiles on array of files.
+Returned non-zero
+Test [104/197] hints_import: Test hints with $import
+
+Test 101 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpe2k76gp7 --quiet v1.0/dir7.cwl v1.0/dir7.yml
+Test directory literal output created by ExpressionTool
+Returned non-zero
+Test [105/197] default_path_notfound_warning: Test warning instead of error when default path is not found
+
+Test 102 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp21yucaz2 --quiet v1.0/file-literal-ex.cwl v1.0/empty.json
+Test file literal output created by ExpressionTool
+Returned non-zero
+Test [106/197] inlinejs_req_expressions: Test InlineJavascriptRequirement with multiple expressions in the same tool
+
+Test 103 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpewbzq38v --quiet v1.0/docker-output-dir.cwl v1.0/empty.json
+Test dockerOutputDirectory
+Returned non-zero
+Test [107/197] input_dir_recurs_copy_writable: Test if a writable input directory is recursively copied and writable
+
+Test [108/197] null_missing_params: Test that missing parameters are null (not undefined) in expression
+
+Test [109/197] param_notnull_expr: Test that provided parameter is not null in expression
+
+Test [110/197] wf_compound_doc: Test compound workflow document
+
+Test 106 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp2jqpmy1n --quiet v1.0/inline-js.cwl v1.0/empty.json
+Test InlineJavascriptRequirement with multiple expressions in the same tool
+Returned non-zero
+Test [111/197] nameroot_nameext_generated: Test that nameroot and nameext are generated from basename at execution time by the runner
+
+Test 108 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp0rn5exl2 --quiet v1.0/null-defined.cwl v1.0/empty.json
+Test that missing parameters are null (not undefined) in expression
+Returned non-zero
+Test [112/197] initialworkpath_output: Test that file path in $(inputs) for initialworkdir is in $(outdir).
+
+Test 109 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpeacg30b4 --quiet v1.0/null-defined.cwl v1.0/cat-job.json
+Test that provided parameter is not null in expression
+Returned non-zero
+Test [113/197] wf_scatter_twopar_oneinput_flattenedmerge: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list
+
+Test 110 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpw3k5icss --quiet 'v1.0/revsort-packed.cwl#main' v1.0/revsort-job.json
+Test compound workflow document
+Returned non-zero
+Test [114/197] wf_multiplesources_multipletypes: Test step input with multiple sources with multiple types
+
+Test [115/197] shelldir_notinterpreted: Test that shell directives are not interpreted.
+
+Test [116/197] shelldir_quoted: Test that shell directives are quoted.
+
+Test [117/197] initial_workdir_empty_writable: Test empty writable dir with InitialWorkDirRequirement
+
+Test [118/197] initial_workdir_empty_writable_docker: Test empty writable dir with InitialWorkDirRequirement inside Docker
+
+Test 113 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmparadkyjc --quiet v1.0/count-lines12-wf.cwl v1.0/count-lines6-job.json
+Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list
+Returned non-zero
+Test [119/197] dynamic_resreq_inputs: Test dynamic resource reqs referencing inputs
+
+Test [120/197] fileliteral_input_docker: Test file literal as input without Docker
+
+Test [121/197] outputbinding_glob_sorted: Test that OutputBinding.glob is sorted as specified by POSIX
+
+Test [122/197] initialworkdir_nesteddir: Test InitialWorkDirRequirement with a nested directory structure from another step
+
+Test [123/197] booleanflags_cl_noinputbinding: Test that boolean flags do not appear on command line if inputBinding is empty and not null
+
+Test 123 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpyzibf3dv --quiet v1.0/bool-empty-inputbinding.cwl v1.0/bool-empty-inputbinding-job.json
+Test that boolean flags do not appear on command line if inputBinding is empty and not null
+Returned non-zero
+Test [124/197] expr_reference_self_noinput: Test that expression engine does not fail to evaluate reference to self with unprovided input
+
+Test 124 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpat5dhwte --quiet v1.0/stage-unprovided-file.cwl v1.0/empty.json
+Test that expression engine does not fail to evaluate reference to self with unprovided input
+Returned non-zero
+Test [125/197] success_codes: Test successCodes
+
+Test [126/197] dynamic_resreq_wf: Test simple workflow with a dynamic resource requirement
+
+Test [127/197] cl_empty_array_input: Test that empty array input does not add anything to command line
+
+Test 127 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp3rwaayjl --quiet v1.0/empty-array-input.cwl v1.0/empty-array-job.json
+Test that empty array input does not add anything to command line
+Returned non-zero
+Test [128/197] resreq_step_overrides_wf: Test that ResourceRequirement on a step level redefines requirement on the workflow level
+
+Test [129/197] valuefrom_constant_overrides_inputs: Test valueFrom with constant value overriding provided array inputs
+
+Test 114 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp0gbaryeb --quiet v1.0/sum-wf.cwl v1.0/sum-job.json
+Test step input with multiple sources with multiple types
+Returned non-zero
+Test [130/197] dynamic_resreq_filesizes: Test dynamic resource reqs referencing the size of Files inside a Directory
+
+Test 129 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmphaaxw50o --quiet v1.0/valueFrom-constant.cwl v1.0/array-of-strings-job.yml
+Test valueFrom with constant value overriding provided array inputs
+Returned non-zero
+Test [131/197] wf_step_connect_undeclared_param: Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs.
+
+Test 117 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp62vlcvho --quiet v1.0/writable-dir.cwl v1.0/empty.json
+Test empty writable dir with InitialWorkDirRequirement
+Returned non-zero
+Test [132/197] wf_step_access_undeclared_param: Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool.
+
+Test 118 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpqg20j6qo --quiet v1.0/writable-dir-docker.cwl v1.0/empty.json
+Test empty writable dir with InitialWorkDirRequirement inside Docker
+Returned non-zero
+Test [133/197] env_home_tmpdir_docker_complex: Test $HOME and $TMPDIR are set correctly in Docker without using return code
+
+Test [134/197] wf_scatter_oneparam_valuefrom_inputs: Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)
+
+Test [135/197] packed_import_schema: SchemaDefRequirement with $import, and packed
+
+Test [136/197] job_input_secondary_subdirs: Test specifying secondaryFiles in subdirectories of the job input document.
+
+Test 130 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpbocjolv6 --quiet v1.0/dynresreq-dir.cwl v1.0/dynresreq-dir-job.yaml
+Test dynamic resource reqs referencing the size of Files inside a Directory
+Returned non-zero
+Test [137/197] job_input_subdir_primary_and_secondary_subdirs: Test specifying secondaryFiles in same subdirectory of the job input as the primary input file.
+
+Test [138/197] scatter_embedded_subworkflow: Test simple scatter over an embedded subworkflow
+
+Test [139/197] scatter_multi_input_embedded_subworkflow: Test simple multiple input scatter over an embedded subworkflow
+
+Test 133 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpif8i_wgz --quiet v1.0/envvar3.cwl v1.0/empty.json
+Test $HOME and $TMPDIR are set correctly in Docker without using return code
+Returned non-zero
+Test [140/197] workflow_embedded_subworkflow_embedded_subsubworkflow: Test twice nested subworkflow
+
+Test 135 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmplgw6kgxa --quiet 'v1.0/import_schema-def_packed.cwl#main' v1.0/import_schema-def_job.yml
+SchemaDefRequirement with $import, and packed
+Returned non-zero
+Test [141/197] workflow_embedded_subworkflow_with_tool_and_subsubworkflow: Test subworkflow of mixed depth with tool first
+
+Test 138 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpga2meoak --quiet v1.0/count-lines18-wf.cwl v1.0/count-lines3-job.json
+Test simple scatter over an embedded subworkflow
+Returned non-zero
+Test [142/197] workflow_embedded_subworkflow_with_subsubworkflow_and_tool: Test subworkflow of mixed depth with tool after
+
+Test 139 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp82vwjyp6 --quiet v1.0/count-lines14-wf.cwl v1.0/count-lines4-job.json
+Test simple multiple input scatter over an embedded subworkflow
+Returned non-zero
+Test [143/197] workflow_records_inputs_and_outputs: Test record type inputs to and outputs from workflows.
+
+Test 140 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmprdqv1jjl --quiet v1.0/count-lines15-wf.cwl v1.0/wc-job.json
+Test twice nested subworkflow
+Returned non-zero
+Test [144/197] workflow_integer_input: Test integer workflow input and outputs
+
+Test [145/197] workflow_integer_input_optional_specified: Test optional integer workflow inputs (specified)
+
+Test 141 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpi_3aez29 --quiet v1.0/count-lines16-wf.cwl v1.0/wc-job.json
+Test subworkflow of mixed depth with tool first
+Returned non-zero
+Test [146/197] workflow_integer_input_optional_unspecified: Test optional integer workflow inputs (unspecified)
+
+Test 142 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpg5kd1k4g --quiet v1.0/count-lines17-wf.cwl v1.0/wc-job.json
+Test subworkflow of mixed depth with tool after
+Returned non-zero
+Test [147/197] workflow_integer_input_default_specified: Test default integer workflow inputs (specified)
+
+Test 144 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmps7cel3k6 --quiet v1.0/io-int-wf.cwl v1.0/io-int.json
+Test integer workflow input and outputs
+Returned non-zero
+Test [148/197] workflow_integer_input_default_unspecified: Test default integer workflow inputs (unspecified)
+
+Test 145 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmptsvj7p0x --quiet v1.0/io-int-optional-wf.cwl v1.0/io-int.json
+Test optional integer workflow inputs (specified)
+Returned non-zero
+Test [149/197] workflow_integer_input_default_and_tool_integer_input_default: Test default integer tool and workflow inputs (unspecified)
+
+Test 146 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpjpoj7zw9 --quiet v1.0/io-int-optional-wf.cwl v1.0/empty.json
+Test optional integer workflow inputs (unspecified)
+Returned non-zero
+Test [150/197] workflow_file_input_default_unspecified: Test File input with default unspecified to workflow
+
+Test [151/197] workflow_file_input_default_specified: Test File input with default specified to workflow
+
+Test 147 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpfvdhq4on --quiet v1.0/io-int-default-wf.cwl v1.0/io-int.json
+Test default integer workflow inputs (specified)
+Returned non-zero
+Test [152/197] clt_optional_union_input_file_or_files_with_array_of_one_file_provided: Test input union type or File or File array to a tool with one file in array specified.
+
+Test [153/197] clt_optional_union_input_file_or_files_with_many_files_provided: Test input union type or File or File array to a tool with a few files in array specified.
+
+Test 152 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmplpohljtt --quiet v1.0/io-file-or-files.cwl v1.0/job-input-array-one-empty-file.json
+Test input union type or File or File array to a tool with one file in array specified.
+Returned non-zero
+Test [154/197] clt_optional_union_input_file_or_files_with_single_file_provided: Test input union type or File or File array to a tool with one file specified.
+
+Test 153 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpo65rsprv --quiet v1.0/io-file-or-files.cwl v1.0/job-input-array-few-files.json
+Test input union type or File or File array to a tool with a few files in array specified.
+Returned non-zero
+Test [155/197] clt_optional_union_input_file_or_files_with_nothing_provided: Test input union type or File or File array to a tool with null specified.
+
+Test 154 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpigq7nt8d --quiet v1.0/io-file-or-files.cwl v1.0/job-input-one-file.json
+Test input union type or File or File array to a tool with one file specified.
+Returned non-zero
+Test [156/197] clt_any_input_with_integer_provided: Test Any parameter with integer input to a tool
+
+Test 155 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpvdojov15 --quiet v1.0/io-file-or-files.cwl v1.0/job-input-null.json
+Test input union type or File or File array to a tool with null specified.
+Returned non-zero
+Test [157/197] clt_any_input_with_string_provided: Test Any parameter with string input to a tool
+
+Test 156 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpqgoj_wba --quiet v1.0/io-any-1.cwl v1.0/io-any-int.json
+Test Any parameter with integer input to a tool
+Returned non-zero
+Test [158/197] clt_any_input_with_file_provided: Test Any parameter with file input to a tool
+
+Test 157 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmph1tlxixw --quiet v1.0/io-any-1.cwl v1.0/io-any-string.json
+Test Any parameter with string input to a tool
+Returned non-zero
+Test [159/197] clt_any_input_with_mixed_array_provided: Test Any parameter with array input to a tool
+
+Test 158 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpo2ua080n --quiet v1.0/io-any-1.cwl v1.0/io-any-file.json
+Test Any parameter with file input to a tool
+Returned non-zero
+Test [160/197] clt_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Test 159 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpnk5y4z99 --quiet v1.0/io-any-1.cwl v1.0/io-any-array.json
+Test Any parameter with array input to a tool
+Returned non-zero
+Test [161/197] workflow_any_input_with_integer_provided: Test Any parameter with integer input to a workflow
+
+Test 160 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpbrkgemm9 --quiet v1.0/io-any-1.cwl v1.0/io-any-record.json
+Test Any parameter with record input to a tool
+Returned non-zero
+Test [162/197] workflow_any_input_with_string_provided: Test Any parameter with string input to a workflow
+
+Test 161 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpy6tjkx8p --quiet v1.0/io-any-wf-1.cwl v1.0/io-any-int.json
+Test Any parameter with integer input to a workflow
+Returned non-zero
+Test [163/197] workflow_any_input_with_file_provided: Test Any parameter with file input to a workflow
+
+Test 162 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpouoush5c --quiet v1.0/io-any-wf-1.cwl v1.0/io-any-string.json
+Test Any parameter with string input to a workflow
+Returned non-zero
+Test [164/197] workflow_any_input_with_mixed_array_provided: Test Any parameter with array input to a workflow
+
+Test 163 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp3j5r7asf --quiet v1.0/io-any-wf-1.cwl v1.0/io-any-file.json
+Test Any parameter with file input to a workflow
+Returned non-zero
+Test [165/197] workflow_any_input_with_record_provided: Test Any parameter with record input to a tool in a workflow
+
+Test 148 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpq8jvgm1c --quiet v1.0/io-int-default-wf.cwl v1.0/empty.json
+Test default integer workflow inputs (unspecified)
+Returned non-zero
+Test [166/197] workflow_union_default_input_unspecified: Test union type input to workflow with default unspecified
+
+Test 149 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpx13qvqv_ --quiet v1.0/io-int-default-tool-and-wf.cwl v1.0/empty.json
+Test default integer tool and workflow inputs (unspecified)
+Returned non-zero
+Test [167/197] workflow_union_default_input_with_file_provided: Test union type input to workflow with default specified as file
+
+Test 164 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpq9arwpfv --quiet v1.0/io-any-wf-1.cwl v1.0/io-any-array.json
+Test Any parameter with array input to a workflow
+Returned non-zero
+Test [168/197] workflowstep_valuefrom_string: Test valueFrom on workflow step from literal (string).
+
+Test 165 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpqvq0i824 --quiet v1.0/io-any-wf-1.cwl v1.0/io-any-record.json
+Test Any parameter with record input to a tool in a workflow
+Returned non-zero
+Test [169/197] workflowstep_valuefrom_file_basename: Test valueFrom on workflow step using basename.
+
+Test [170/197] expression_tool_int_array_output: Test output arrays in a tool (with ints).
+
+Test [171/197] workflowstep_int_array_input_output: Test output arrays in a workflow (with ints).
+
+Test 170 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp2u0gevqi --quiet v1.0/output-arrays-int.cwl v1.0/output-arrays-int-job.json
+Test output arrays in a tool (with ints).
+Returned non-zero
+Test [172/197] workflow_file_array_output: Test output arrays in a workflow (with Files).
+
+Test 166 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpt875m559 --quiet v1.0/io-union-input-default-wf.cwl v1.0/empty.json
+Test union type input to workflow with default unspecified
+Returned non-zero
+Test [173/197] docker_entrypoint: Test Docker ENTRYPOINT usage
+
+Test 167 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpsis86q0w --quiet v1.0/io-union-input-default-wf.cwl v1.0/io-any-file.json
+Test union type input to workflow with default specified as file
+Returned non-zero
+Test [174/197] clt_file_size_property_with_empty_file: Test use of size in expressions for an empty file
+
+Test 173 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp_f4uu93e --quiet v1.0/docker-run-cmd.cwl v1.0/empty.json
+Test Docker ENTRYPOINT usage
+Returned non-zero
+Test [175/197] clt_file_size_property_with_multi_file: Test use of size in expressions for a few files
+
+Test 171 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpu1enzjyq --quiet v1.0/output-arrays-int-wf.cwl v1.0/output-arrays-int-job.json
+Test output arrays in a workflow (with ints).
+Returned non-zero
+Test [176/197] any_without_defaults_unspecified_fails: Test Any without defaults, unspecified, should fail.
+
+Test 174 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpg8a3elta --quiet v1.0/size-expression-tool.cwl v1.0/job-input-array-one-empty-file.json
+Test use of size in expressions for an empty file
+Returned non-zero
+Test [177/197] any_without_defaults_specified_fails: Test Any without defaults, specified, should fail.
+
+Test [178/197] step_input_default_value_noexp: Test default value on step input parameter, no ExpressionTool
+
+Test [179/197] step_input_default_value_overriden_noexp: Test default value on step input parameter overridden by provided source, no ExpressionTool
+
+Test 172 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpuuto81xs --quiet v1.0/output-arrays-file-wf.cwl v1.0/output-arrays-file-job.json
+Test output arrays in a workflow (with Files).
+Returned non-zero
+Test [180/197] nested_workflow_noexp: Test nested workflow, without ExpressionTool
+
+Test 175 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpev7mlolf --quiet v1.0/size-expression-tool.cwl v1.0/job-input-array-few-files.json
+Test use of size in expressions for a few files
+Returned non-zero
+Test [181/197] wf_multiplesources_multipletypes_noexp: Test step input with multiple sources with multiple types, without ExpressionTool
+
+Test [182/197] dynamic_resreq_wf_optional_file_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input.
+
+Test [183/197] dynamic_resreq_wf_optional_file_step_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input.
+
+Test [184/197] dynamic_resreq_wf_optional_file_wf_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itself provides a default value (a local file) for this input.
+
+Test [185/197] step_input_default_value_overriden_2nd_step: Test default value on step input parameter overridden by provided source. With passthrough first step
+
+Test [186/197] step_input_default_value_overriden_2nd_step_noexp: Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool
+
+Test [187/197] step_input_default_value_overriden_2nd_step_null: Test default value on step input parameter overridden by provided source. With null producing first step
+
+Test [188/197] step_input_default_value_overriden_2nd_step_null_noexp: Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool
+
+Test 185 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpuag5sv9v --quiet v1.0/count-lines11-extra-step-wf.cwl v1.0/cat-job.json
+Test default value on step input parameter overridden by provided source. With passthrough first step
+Returned non-zero
+Test [189/197] stdin_from_directory_literal_with_local_file: Pipe to stdin from user provided local File via a Directory literal
+
+Test 187 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpzwliawke --quiet v1.0/count-lines11-null-step-wf.cwl v1.0/empty.json
+Test default value on step input parameter overridden by provided source. With null producing first step
+Returned non-zero
+Test [190/197] stdin_from_directory_literal_with_literal_file: Pipe to stdin from literal File via a Directory literal
+
+Test [191/197] directory_literal_with_literal_file_nostdin: Test non-stdin reference to literal File via a Directory literal
+
+Test 188 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp4tnyawhz --quiet v1.0/count-lines11-null-step-wf-noET.cwl v1.0/empty.json
+Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool
+Returned non-zero
+Test [192/197] no_inputs_commandlinetool: Test CommandLineTool without inputs
+
+Test [193/197] no_outputs_commandlinetool: Test CommandLineTool without outputs
+
+Test [194/197] no_inputs_workflow: Test Workflow without inputs
+
+Test 192 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpy3vv8su4 --quiet v1.0/no-inputs-tool.cwl
+Test CommandLineTool without inputs
+Returned non-zero
+Test [195/197] no_outputs_workflow: Test Workflow without outputs
+
+Test 193 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmp93ffdch9 --quiet v1.0/no-outputs-tool.cwl v1.0/cat-job.json
+Test CommandLineTool without outputs
+Returned non-zero
+Test [196/197] anonymous_enum_in_array: Test an anonymous enum inside an array inside a record
+
+Test 194 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmps5qlmboc --quiet v1.0/no-inputs-wf.cwl
+Test Workflow without inputs
+Returned non-zero
+Test [197/197] schema-def_anonymous_enum_in_array: Test an anonymous enum inside an array inside a record, SchemaDefRequirement
+
+Test 195 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpyh07aisn --quiet v1.0/no-outputs-wf.cwl v1.0/cat-job.json
+Test Workflow without outputs
+Returned non-zero
+Test 181 failed: cwltool --singularity --enable-dev --outdir=/home/[REDACTED]/tmpgt7z7yu_ --quiet v1.0/sum-wf-noET.cwl v1.0/sum-job.json
+Test step input with multiple sources with multiple types, without ExpressionTool
+Returned non-zero
+84 tests passed, 113 failures, 0 unsupported features
