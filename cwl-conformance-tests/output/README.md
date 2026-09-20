@@ -2,7 +2,7 @@ This directory contains CWL Conformance tests output files,
 executed on different HPC machines.
 
 BSC MareNostrum → mn5, CSC LUMI → lumi, CESGA Finis Terrae III
-→ ft3.
+→ ft3, RIKEN Fugaku → fugaku.
 
 Inside each CWL runner folder (e.g., `cwltool`), you will find a
 directory for each HPC (e.g., `mn5`) that was used to execute the
@@ -14,3 +14,6 @@ HPC. The `slurm` mode is a run in a Slurm allocation using a compute
 node. Finally, `batch` mode is for runs executed in a local environment
 (could be laptop or login node) submitting jobs via SSH or via a
 launcher to a batch scheduler like `sbatch`.
+
+Fugaku has different folders (`pjm`, `pjm_install`). The `fugaku/README.md`
+has more details about the contents of these two folders.
