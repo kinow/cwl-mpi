@@ -53,6 +53,7 @@ The results cover executions on:
 - CESGA FinisTerrae III (Intel MPI 2021.3.0)
 - CSC LUMI (Cray MPICH 8.1.32)
 - BSC MareNostrum 5 (Intel MPI 2021.10.0)
+- RIKEN Fugaku (only conformance tests, no MPI)
 
 ---
 
@@ -93,6 +94,7 @@ CWL conformance testing was performed using:
 - [CESGA FinisTerrae III](https://cesga-docs.gitlab.io/ft3-user-guide/index.html) 🇪🇸
 - [CSC LUMI](https://www.lumi.csc.fi/public/) 🇫🇮
 - [BSC MareNostrum 5](https://bsc.es/marenostrum/marenostrum-5) 🇪🇸
+- [RIKEN Fugaku](https://www.r-ccs.riken.jp/en/fugaku/) (cwltool & v1.0 only) 🇯🇵
 - [Hetzner Cloud](https://www.hetzner.com/) 🇩🇪
 
 Reports and results: [CWL Conformance Tests](./cwl-conformance-tests/README.md)
@@ -187,6 +189,27 @@ The following tools and platforms were used during the thesis:
   <img src="./images/mpi.png"
        alt="Message Passing Interface"
        width="40%">
+</p>
+
+---
+
+## FAIRness and reproducibility
+
+This repository is designed to support the FAIR and reproducible use of the
+research artefacts. The research data, workflows, software, execution results,
+and provenance are described using machine-actionable metadata,
+including an [RO-Crate 1.2](https://www.researchobject.org/ro-crate/) metadata file.
+The repository was assessed with [F-UJI](https://www.f-uji.net/), an automated
+tool for evaluating the FAIRness of research data. It achieved an “advanced” FAIRness
+level, with a score of 92%.
+
+<p align="center">
+  <img src="./images/ro-crate.png"
+       alt="RO-Crate"
+       width="40%">
+  <img src="./images/fuji_score.png"
+     alt="F-UJI Score screenshot"
+     width="40%">
 </p>
 
 ---
