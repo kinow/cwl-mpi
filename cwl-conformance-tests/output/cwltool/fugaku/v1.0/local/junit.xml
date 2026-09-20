@@ -1,0 +1,2583 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="197" time="642.1948869228363">
+	<testsuite disabled="0" errors="0" failures="0" name="conformance_test_v1.0" skipped="0" tests="197" time="642.1948869228363">
+		<testcase name="General test of command line generation" time="6.911432" class="required, command_line_tool" file="cl_basic_generation" url="cwltest:conformance_test_v1.0#1">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;bwa&quot;,
+        &quot;mem&quot;,
+        &quot;-t&quot;,
+        &quot;2&quot;,
+        &quot;-I&quot;,
+        &quot;1,2,3,4&quot;,
+        &quot;-m&quot;,
+        &quot;3&quot;,
+        &quot;chr20.fa&quot;,
+        &quot;example_human_Illumina.pe_1.fastq&quot;,
+        &quot;example_human_Illumina.pe_2.fastq&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test nested prefixes with arrays" time="6.917147" class="required, command_line_tool" file="nested_prefixes_arrays" url="cwltest:conformance_test_v1.0#2">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;bwa&quot;,
+        &quot;mem&quot;,
+        &quot;chr20.fa&quot;,
+        &quot;-XXX&quot;,
+        &quot;-YYY&quot;,
+        &quot;example_human_Illumina.pe_1.fastq&quot;,
+        &quot;-YYY&quot;,
+        &quot;example_human_Illumina.pe_2.fastq&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test nested command line bindings" time="6.921812" class="schema_def, command_line_tool" file="nested_cl_bindings" url="cwltest:conformance_test_v1.0#3">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;tmap&quot;,
+        &quot;mapall&quot;,
+        &quot;stage1&quot;,
+        &quot;map1&quot;,
+        &quot;--min-seq-length&quot;,
+        &quot;20&quot;,
+        &quot;map2&quot;,
+        &quot;--min-seq-length&quot;,
+        &quot;20&quot;,
+        &quot;stage2&quot;,
+        &quot;map1&quot;,
+        &quot;--max-seq-length&quot;,
+        &quot;20&quot;,
+        &quot;--min-seq-length&quot;,
+        &quot;10&quot;,
+        &quot;--seed-length&quot;,
+        &quot;16&quot;,
+        &quot;map2&quot;,
+        &quot;--max-seed-hits&quot;,
+        &quot;-1&quot;,
+        &quot;--max-seq-length&quot;,
+        &quot;20&quot;,
+        &quot;--min-seq-length&quot;,
+        &quot;10&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test command line with optional input (missing)" time="6.882327" class="required, command_line_tool" file="cl_optional_inputs_missing" url="cwltest:conformance_test_v1.0#4">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;cat&quot;,
+        &quot;hello.txt&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test command line with optional input (provided)" time="2.307804" class="required, command_line_tool" file="cl_optional_bindings_provided" url="cwltest:conformance_test_v1.0#5">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;cat&quot;,
+        &quot;-n&quot;,
+        &quot;hello.txt&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature" time="29.011284" class="initial_work_dir, inline_javascript, command_line_tool" file="initworkdir_expreng_requirements" url="cwltest:conformance_test_v1.0#6">
+			<system-out>{
+    &quot;foo&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpmy26cffw/foo.txt&quot;,
+        &quot;basename&quot;: &quot;foo.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$63da67422622fbf9251a046d7a34b7ea0fd4fead&quot;,
+        &quot;size&quot;: 22,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpmy26cffw/foo.txt&quot;
+    }
+}</system-out>
+			<system-err>INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+2026/09/20 22:48:11  warn xattr{etc/shadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:48:11  warn xattr{/home/[REDACTED]/build-temp-996539238/rootfs/etc/shadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2026/09/20 22:48:11  warn xattr{etc/shadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:48:11  warn xattr{/home/[REDACTED]/build-temp-996539238/rootfs/etc/shadow} destination filesystem does not support xattrs, further warnings will be suppressed
+INFO:    Inserting Singularity configuration...
+INFO:    Creating SIF file...
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:       exports = module.exports = _;
+v1.0/template-tool.cwl:7:9: JSHINT:       ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:     exports._ = _;
+v1.0/template-tool.cwl:7:9: JSHINT:     ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:     if (typeof module !== 'undefined' &amp;&amp; module.exports) {
+v1.0/template-tool.cwl:7:9: JSHINT:                                          ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:       exports = module.exports = _;
+v1.0/template-tool.cwl:7:9: JSHINT:                 ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:     return setTimeout(function(){
+v1.0/template-tool.cwl:7:9: JSHINT:            ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:         timeout = setTimeout(later, remaining);
+v1.0/template-tool.cwl:7:9: JSHINT:                   ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:         timeout = setTimeout(later, wait - last);
+v1.0/template-tool.cwl:7:9: JSHINT:                   ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:       if (!timeout) timeout = setTimeout(later, wait);
+v1.0/template-tool.cwl:7:9: JSHINT:                               ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:         clearTimeout(timeout);
+v1.0/template-tool.cwl:7:9: JSHINT:         ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'clearTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:     root._ = previousUnderscore;
+v1.0/template-tool.cwl:7:9: JSHINT:              ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'previousUnderscore' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:   if (typeof define === 'function' &amp;&amp; define.amd) {
+v1.0/template-tool.cwl:7:9: JSHINT:                                       ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:7:9: JSHINT:     define('underscore', [], function() {
+v1.0/template-tool.cwl:7:9: JSHINT:     ^
+v1.0/template-tool.cwl:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mv1.0/template-tool.cwl:8:9: JSHINT: var t = function(s) { return _.template(s, {variable: 'data'})({'inputs': inputs}); };
+v1.0/template-tool.cwl:8:9: JSHINT:                              ^
+v1.0/template-tool.cwl:8:9: JSHINT: W117: '_' is not defined.[0m
+The file is hello.txt
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test command execution in Docker with stdout redirection" time="23.313066" class="docker, command_line_tool" file="stdout_redirect_docker" url="cwltest:conformance_test_v1.0#7">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpvfpm323u/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpvfpm323u/output.txt&quot;
+    }
+}</system-out>
+			<system-err>INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+2026/09/20 22:48:10  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:48:10  warn xattr{/home/[REDACTED]/build-temp-3707360408/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2026/09/20 22:48:15  warn rootless{usr/local/man} ignoring (usually) harmless EPERM on setxattr &quot;user.rootlesscontainers&quot;
+INFO:    Inserting Singularity configuration...
+INFO:    Creating SIF file...
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test command execution in Docker with shortcut stdout redirection" time="23.526871" class="docker, command_line_tool" file="stdout_redirect_shortcut_docker" url="cwltest:conformance_test_v1.0#8">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpaf01dgf5/29a811ffd96aab75ed10663679ab79c8fa2521d1&quot;,
+        &quot;basename&quot;: &quot;29a811ffd96aab75ed10663679ab79c8fa2521d1&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpaf01dgf5/29a811ffd96aab75ed10663679ab79c8fa2521d1&quot;
+    }
+}</system-out>
+			<system-err>INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+2026/09/20 22:48:10  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:48:10  warn xattr{/home/[REDACTED]/build-temp-307735940/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2026/09/20 22:48:14  warn rootless{usr/local/man} ignoring (usually) harmless EPERM on setxattr &quot;user.rootlesscontainers&quot;
+INFO:    Inserting Singularity configuration...
+INFO:    Creating SIF file...
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test command execution in Docker with mediumcut stdout redirection" time="22.343705" class="docker, command_line_tool" file="stdout_redirect_mediumcut_docker" url="cwltest:conformance_test_v1.0#9">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp9hlbw01g/cat-out&quot;,
+        &quot;basename&quot;: &quot;cat-out&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp9hlbw01g/cat-out&quot;
+    }
+}</system-out>
+			<system-err>INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+2026/09/20 22:48:12  warn xattr{etc/gshadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:48:12  warn xattr{/home/[REDACTED]/build-temp-1283816835/rootfs/etc/gshadow} destination filesystem does not support xattrs, further warnings will be suppressed
+2026/09/20 22:48:16  warn rootless{usr/local/man} ignoring (usually) harmless EPERM on setxattr &quot;user.rootlesscontainers&quot;
+INFO:    Inserting Singularity configuration...
+INFO:    Creating SIF file...
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test command line with stderr redirection" time="1.866758" class="shell_command, command_line_tool" file="stderr_redirect" url="cwltest:conformance_test_v1.0#10">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpyfjiy1sz/error.txt&quot;,
+        &quot;basename&quot;: &quot;error.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&quot;,
+        &quot;size&quot;: 4,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpyfjiy1sz/error.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test command line with stderr redirection, brief syntax" time="1.603144" class="shell_command, command_line_tool" file="stderr_redirect_shortcut" url="cwltest:conformance_test_v1.0#11">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp9o5vps2b/e5a2ff1830dfc778315a9952cb97dbeb2c11d4db&quot;,
+        &quot;basename&quot;: &quot;e5a2ff1830dfc778315a9952cb97dbeb2c11d4db&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&quot;,
+        &quot;size&quot;: 4,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp9o5vps2b/e5a2ff1830dfc778315a9952cb97dbeb2c11d4db&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test command line with stderr redirection, named brief syntax" time="1.150792" class="shell_command, command_line_tool" file="stderr_redirect_mediumcut" url="cwltest:conformance_test_v1.0#12">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpnl6jnlxh/std.err&quot;,
+        &quot;basename&quot;: &quot;std.err&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&quot;,
+        &quot;size&quot;: 4,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpnl6jnlxh/std.err&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test command execution in Docker with stdin and stdout redirection" time="2.324179" class="required, command_line_tool" file="stdinout_redirect_docker" url="cwltest:conformance_test_v1.0#13">
+			<system-out>{
+    &quot;output_txt&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpu75l718_/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpu75l718_/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test default usage of Any in expressions." time="5.128850" class="inline_javascript, expression_tool" file="expression_any" url="cwltest:conformance_test_v1.0#14">
+			<system-out>{
+    &quot;output&quot;: 1
+}</system-out>
+		</testcase>
+		<testcase name="Test explicitly passing null to Any type inputs with default values." time="4.462257" class="inline_javascript, expression_tool" file="expression_any_null" url="cwltest:conformance_test_v1.0#15">
+			<system-out>{
+    &quot;output&quot;: 1
+}</system-out>
+		</testcase>
+		<testcase name="Testing the string 'null' does not trip up an Any with a default value." time="4.633156" class="inline_javascript, expression_tool" file="expression_any_string" url="cwltest:conformance_test_v1.0#16">
+			<system-out>{
+    &quot;output&quot;: 2
+}</system-out>
+		</testcase>
+		<testcase name="Test Any without defaults cannot be unspecified." time="3.405558" class="inline_javascript, expression_tool" file="expression_any_nodefaultany" url="cwltest:conformance_test_v1.0#17">
+			<system-err>[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+v1.0/null-expression2-tool.cwl:9:3: Missing required input parameter 'i1'[0m
+</system-err>
+		</testcase>
+		<testcase name="Test explicitly passing null to Any type without a default value." time="2.653509" class="inline_javascript, expression_tool" file="expression_any_null_nodefaultany" url="cwltest:conformance_test_v1.0#18">
+			<system-err>[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+v1.0/null-expression2-tool.cwl:9:3: Missing required input parameter 'i1'[0m
+</system-err>
+		</testcase>
+		<testcase name="Testing the string 'null' does not trip up an Any without a default value." time="4.518246" class="inline_javascript, expression_tool" file="expression_any_nullstring_nodefaultany" url="cwltest:conformance_test_v1.0#19">
+			<system-out>{
+    &quot;output&quot;: 2
+}</system-out>
+		</testcase>
+		<testcase name="Testing Any type compatibility in outputSource" time="1.150487" class="required, workflow" file="any_outputSource_compatibility" url="cwltest:conformance_test_v1.0#20">
+			<system-out>{
+    &quot;output1&quot;: [
+        &quot;hello&quot;,
+        &quot;world&quot;
+    ],
+    &quot;output2&quot;: [
+        &quot;foo&quot;,
+        &quot;bar&quot;
+    ],
+    &quot;output3&quot;: &quot;hello&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test command execution in with stdin and stdout redirection" time="1.096371" class="required, command_line_tool" file="stdinout_redirect" url="cwltest:conformance_test_v1.0#21">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp1ayjr7w6/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp1ayjr7w6/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test ExpressionTool with Javascript engine" time="4.706014" class="inline_javascript, expression_tool" file="expression_parseint" url="cwltest:conformance_test_v1.0#22">
+			<system-out>{
+    &quot;output&quot;: 42
+}</system-out>
+		</testcase>
+		<testcase name="Test outputEval to transform output" time="4.686914" class="inline_javascript, command_line_tool" file="expression_outputEval" url="cwltest:conformance_test_v1.0#23">
+			<system-out>{
+    &quot;output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test two step workflow with imported tools" time="4.595825" class="inline_javascript, workflow" file="wf_wc_parseInt" url="cwltest:conformance_test_v1.0#24">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test two step workflow with inline tools" time="3.115496" class="inline_javascript, workflow" file="wf_wc_expressiontool" url="cwltest:conformance_test_v1.0#25">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step" time="4.775796" class="scatter, inline_javascript, workflow" file="wf_wc_scatter" url="cwltest:conformance_test_v1.0#26">
+			<system-out>{
+    &quot;count_output&quot;: [
+        16,
+        1
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, default merge behavior" time="4.595683" class="scatter, multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_merge" url="cwltest:conformance_test_v1.0#27">
+			<system-out>{
+    &quot;count_output&quot;: [
+        16,
+        1
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior" time="4.741371" class="scatter, multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_nested" url="cwltest:conformance_test_v1.0#28">
+			<system-out>{
+    &quot;count_output&quot;: [
+        32,
+        2
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior" time="4.566020" class="multiple_input, inline_javascript, workflow" file="wf_wc_scatter_multiple_flattened" url="cwltest:conformance_test_v1.0#29">
+			<system-out>{
+    &quot;count_output&quot;: 34
+}</system-out>
+		</testcase>
+		<testcase name="Test that no MultipleInputFeatureRequirement is necessary when workflow step source is a single-item list" time="4.645524" class="inline_javascript, workflow" file="wf_wc_nomultiple" url="cwltest:conformance_test_v1.0#30">
+			<system-out>{
+    &quot;count_output&quot;: 32
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow with default value for input parameter (missing)" time="4.597529" class="inline_javascript, workflow" file="wf_input_default_missing" url="cwltest:conformance_test_v1.0#31">
+			<system-out>{
+    &quot;count_output&quot;: 1
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow with default value for input parameter (provided)" time="4.646373" class="inline_javascript, workflow" file="wf_input_default_provided" url="cwltest:conformance_test_v1.0#32">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test that workflow defaults override tool defaults" time="1.136903" class="required, workflow" file="wf_default_tool_default" url="cwltest:conformance_test_v1.0#33">
+			<system-out>{
+    &quot;default_output&quot;: &quot;workflow_default&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test EnvVarRequirement" time="1.383043" class="env_var, command_line_tool" file="envvar_req" url="cwltest:conformance_test_v1.0#34">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpsjyi3qg_/out&quot;,
+        &quot;basename&quot;: &quot;out&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519&quot;,
+        &quot;size&quot;: 15,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpsjyi3qg_/out&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter" time="1.343777" class="scatter, workflow" file="wf_scatter_single_param" url="cwltest:conformance_test_v1.0#35">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one&quot;,
+        &quot;foo two&quot;,
+        &quot;foo three&quot;,
+        &quot;foo four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method" time="1.191796" class="scatter, workflow" file="wf_scatter_two_nested_crossproduct" url="cwltest:conformance_test_v1.0#36">
+			<system-out>{
+    &quot;out&quot;: [
+        [
+            &quot;foo one three&quot;,
+            &quot;foo one four&quot;
+        ],
+        [
+            &quot;foo two three&quot;,
+            &quot;foo two four&quot;
+        ]
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and flat_crossproduct join method" time="1.264631" class="scatter, workflow" file="wf_scatter_two_flat_crossproduct" url="cwltest:conformance_test_v1.0#37">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one three&quot;,
+        &quot;foo one four&quot;,
+        &quot;foo two three&quot;,
+        &quot;foo two four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and dotproduct join method" time="1.163027" class="scatter, workflow" file="wf_scatter_two_dotproduct" url="cwltest:conformance_test_v1.0#38">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one three&quot;,
+        &quot;foo two four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single empty list parameter" time="1.315613" class="scatter, workflow" file="wf_scatter_emptylist" url="cwltest:conformance_test_v1.0#39">
+			<system-out>{
+    &quot;out&quot;: []
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in'.  All outputs will be empty.[0m
+</system-err>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty" time="1.057132" class="scatter, workflow" file="wf_scatter_nested_crossproduct_secondempty" url="cwltest:conformance_test_v1.0#40">
+			<system-out>{
+    &quot;out&quot;: [
+        [],
+        []
+    ]
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+</system-err>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty" time="1.079118" class="scatter, workflow" file="wf_scatter_nested_crossproduct_firstempty" url="cwltest:conformance_test_v1.0#41">
+			<system-out>{
+    &quot;out&quot;: []
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1'.  All outputs will be empty.[0m
+</system-err>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method" time="1.068688" class="scatter, workflow" file="wf_scatter_flat_crossproduct_oneempty" url="cwltest:conformance_test_v1.0#42">
+			<system-out>{
+    &quot;out&quot;: []
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+</system-err>
+		</testcase>
+		<testcase name="Test workflow scatter with two empty scatter parameters and dotproduct join method" time="1.082352" class="scatter, workflow" file="wf_scatter_dotproduct_twoempty" url="cwltest:conformance_test_v1.0#43">
+			<system-out>{
+    &quot;out&quot;: []
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1', 'echo_in2'.  All outputs will be empty.[0m
+</system-err>
+		</testcase>
+		<testcase name="Test Any type input parameter" time="1.086458" class="required, command_line_tool" file="any_input_param" url="cwltest:conformance_test_v1.0#44">
+			<system-out>{
+    &quot;out&quot;: &quot;hello test env\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test nested workflow" time="4.508756" class="subworkflow, workflow, inline_javascript" file="nested_workflow" url="cwltest:conformance_test_v1.0#45">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test requirement priority" time="1.140564" class="env_var, workflow" file="requirement_priority" url="cwltest:conformance_test_v1.0#46">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp3t3fgibk/out&quot;,
+        &quot;basename&quot;: &quot;out&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519&quot;,
+        &quot;size&quot;: 15,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp3t3fgibk/out&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test requirements override hints" time="1.357473" class="env_var, workflow" file="requirement_override_hints" url="cwltest:conformance_test_v1.0#47">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpt1mp2o8w/out&quot;,
+        &quot;basename&quot;: &quot;out&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$cdc1e84968261d6a7575b5305945471f8be199b6&quot;,
+        &quot;size&quot;: 9,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpt1mp2o8w/out&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test requirements on workflow steps" time="1.330702" class="env_var, workflow" file="requirement_workflow_steps" url="cwltest:conformance_test_v1.0#48">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp307iy350/out&quot;,
+        &quot;basename&quot;: &quot;out&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$cdc1e84968261d6a7575b5305945471f8be199b6&quot;,
+        &quot;size&quot;: 9,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp307iy350/out&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter" time="4.606444" class="inline_javascript, workflow" file="step_input_default_value" url="cwltest:conformance_test_v1.0#49">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test use default value on step input parameter with empty source" time="4.817639" class="inline_javascript, workflow" file="step_input_default_value_nosource" url="cwltest:conformance_test_v1.0#50">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/count-lines11-wf.cwl:6:3:  Source 'file1' of type [&quot;null&quot;, &quot;File&quot;] may be incompatible
+v1.0/count-lines11-wf.cwl:17:7:   with sink 'file1' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Test use default value on step input parameter with null source" time="4.925134" class="inline_javascript, workflow" file="step_input_default_value_nullsource" url="cwltest:conformance_test_v1.0#51">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/count-lines11-wf.cwl:6:3:  Source 'file1' of type [&quot;null&quot;, &quot;File&quot;] may be incompatible
+v1.0/count-lines11-wf.cwl:17:7:   with sink 'file1' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source" time="4.603236" class="inline_javascript, workflow" file="step_input_default_value_overriden" url="cwltest:conformance_test_v1.0#52">
+			<system-out>{
+    &quot;count_output&quot;: 1
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/count-lines11-wf.cwl:6:3:  Source 'file1' of type [&quot;null&quot;, &quot;File&quot;] may be incompatible
+v1.0/count-lines11-wf.cwl:17:7:   with sink 'file1' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Test simple workflow" time="2.736228" class="required, workflow" file="wf_simple" url="cwltest:conformance_test_v1.0#53">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpz0vblk7g/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b9214658cc453331b62c2282b772a5c063dbd284&quot;,
+        &quot;size&quot;: 1111,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpz0vblk7g/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test unknown hints are ignored." time="2.322024" class="required, command_line_tool" file="hints_unknown_ignored" url="cwltest:conformance_test_v1.0#54">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp4wlpv6ze/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp4wlpv6ze/output.txt&quot;
+    }
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mv1.0/cat5-tool.cwl:12:3: Warning: checking item
+                         Warning:   Field 'class' contains undefined reference to
+                         'http://example.com/BlibberBlubberFakeRequirement'[0m
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field." time="4.162282" class="initial_work_dir, inline_javascript, workflow" file="initial_workdir_secondary_files_expr" url="cwltest:conformance_test_v1.0#55">
+			<system-out>{
+    &quot;indexedfile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt&quot;,
+        &quot;basename&quot;: &quot;input.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+        &quot;size&quot;: 1111,
+        &quot;secondaryFiles&quot;: [
+            {
+                &quot;basename&quot;: &quot;input.txt.idx1&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt.idx1&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 1500,
+                &quot;checksum&quot;: &quot;sha1$1f6fe811644355974cdd06d9eb695d6e859f3b44&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt.idx1&quot;
+            },
+            {
+                &quot;basename&quot;: &quot;input.idx2&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.idx2&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.idx2&quot;
+            },
+            {
+                &quot;basename&quot;: &quot;input.txt.idx3&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt.idx3&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt.idx3&quot;
+            },
+            {
+                &quot;basename&quot;: &quot;input.txt.idx4&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt.idx4&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt.idx4&quot;
+            },
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;basename&quot;: &quot;input.txt.idx5&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt.idx5&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt.idx5&quot;
+            },
+            {
+                &quot;basename&quot;: &quot;input.idx6.txt&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.idx6.txt&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.idx6.txt&quot;
+            },
+            {
+                &quot;basename&quot;: &quot;input.txt.idx7&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt.idx7&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt.idx7&quot;
+            },
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/hello.txt&quot;,
+                &quot;size&quot;: 13,
+                &quot;basename&quot;: &quot;hello.txt&quot;,
+                &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/hello.txt&quot;
+            },
+            {
+                &quot;basename&quot;: &quot;input.txt_idx8&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt_idx8&quot;,
+                &quot;class&quot;: &quot;Directory&quot;,
+                &quot;listing&quot;: [
+                    {
+                        &quot;class&quot;: &quot;File&quot;,
+                        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/input.txt_idx8/index&quot;,
+                        &quot;basename&quot;: &quot;index&quot;,
+                        &quot;size&quot;: 0,
+                        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                        &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt_idx8/index&quot;
+                    }
+                ],
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt_idx8&quot;
+            }
+        ],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/input.txt&quot;
+    },
+    &quot;outfile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpo90rahbo/result.txt&quot;,
+        &quot;basename&quot;: &quot;result.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$e2dc9daaef945ac15f01c238ed2f1660f60909a0&quot;,
+        &quot;size&quot;: 142,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpo90rahbo/result.txt&quot;
+    }
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/search.cwl:112:9:  Parameter 'file' requires secondaryFiles ['${ return
+                        [self.basename+&quot;.idx7&quot;]; }'] but
+v1.0/search.cwl:107:13:   source 'result' does not provide those secondaryFiles.
+v1.0/search.cwl:36:7:     To resolve, add missing secondaryFiles patterns to definition of
+                          'result' or
+v1.0/search.cwl:61:7:     mark missing secondaryFiles in definition of 'file' as optional.[0m
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement with expression in filename." time="1.171099" class="initial_work_dir, command_line_tool" file="rename" url="cwltest:conformance_test_v1.0#56">
+			<system-out>{
+    &quot;outfile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpyyfwx6p4/fish.txt&quot;,
+        &quot;basename&quot;: &quot;fish.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+        &quot;size&quot;: 1111,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpyyfwx6p4/fish.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test if trailing newline is present in file entry in InitialWorkDir" time="1.126379" class="initial_work_dir, command_line_tool" file="initial_workdir_trailingnl" url="cwltest:conformance_test_v1.0#57">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_dhqzbvu/example.conf&quot;,
+        &quot;basename&quot;: &quot;example.conf&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$6a47aa22b2a9d13a66a24b3ee5eaed95ce4753cf&quot;,
+        &quot;size&quot;: 16,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp_dhqzbvu/example.conf&quot;
+    }
+}</system-out>
+			<system-err>CONFIGVAR=hello
+</system-err>
+		</testcase>
+		<testcase name="Test inline expressions" time="4.637389" class="inline_javascript, command_line_tool" file="inline_expressions" url="cwltest:conformance_test_v1.0#58">
+			<system-out>{
+    &quot;output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement definition used in tool parameter" time="1.215161" class="schema_def, command_line_tool" file="schemadef_req_tool_param" url="cwltest:conformance_test_v1.0#59">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmppxgtpjxd/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$f12e6cfe70f3253f70b0dbde17c692e7fb0f1e5e&quot;,
+        &quot;size&quot;: 12,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmppxgtpjxd/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test SchemaDefRequirement definition used in workflow parameter" time="1.354809" class="schema_def, workflow" file="schemadef_req_wf_param" url="cwltest:conformance_test_v1.0#60">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpuxvva426/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$f12e6cfe70f3253f70b0dbde17c692e7fb0f1e5e&quot;,
+        &quot;size&quot;: 12,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpuxvva426/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test parameter evaluation, no support for JS expressions" time="1.260291" class="required, command_line_tool" file="param_evaluation_noexpr" url="cwltest:conformance_test_v1.0#61">
+			<system-out>{
+    &quot;t1&quot;: {
+        &quot;bar&quot;: {
+            &quot;baz&quot;: &quot;zab1&quot;,
+            &quot;b az&quot;: 2,
+            &quot;b'az&quot;: true,
+            &quot;b\&quot;az&quot;: null,
+            &quot;buz&quot;: [
+                &quot;a&quot;,
+                &quot;b&quot;,
+                &quot;c&quot;
+            ]
+        }
+    },
+    &quot;t2&quot;: {
+        &quot;baz&quot;: &quot;zab1&quot;,
+        &quot;b az&quot;: 2,
+        &quot;b'az&quot;: true,
+        &quot;b\&quot;az&quot;: null,
+        &quot;buz&quot;: [
+            &quot;a&quot;,
+            &quot;b&quot;,
+            &quot;c&quot;
+        ]
+    },
+    &quot;t3&quot;: {
+        &quot;baz&quot;: &quot;zab1&quot;,
+        &quot;b az&quot;: 2,
+        &quot;b'az&quot;: true,
+        &quot;b\&quot;az&quot;: null,
+        &quot;buz&quot;: [
+            &quot;a&quot;,
+            &quot;b&quot;,
+            &quot;c&quot;
+        ]
+    },
+    &quot;t4&quot;: {
+        &quot;baz&quot;: &quot;zab1&quot;,
+        &quot;b az&quot;: 2,
+        &quot;b'az&quot;: true,
+        &quot;b\&quot;az&quot;: null,
+        &quot;buz&quot;: [
+            &quot;a&quot;,
+            &quot;b&quot;,
+            &quot;c&quot;
+        ]
+    },
+    &quot;t5&quot;: &quot;zab1&quot;,
+    &quot;t6&quot;: &quot;zab1&quot;,
+    &quot;t7&quot;: &quot;zab1&quot;,
+    &quot;t8&quot;: &quot;zab1&quot;,
+    &quot;t9&quot;: 2,
+    &quot;t10&quot;: true,
+    &quot;t11&quot;: true,
+    &quot;t12&quot;: null,
+    &quot;t13&quot;: &quot;-zab1&quot;,
+    &quot;t14&quot;: &quot;-zab1&quot;,
+    &quot;t15&quot;: &quot;-zab1&quot;,
+    &quot;t16&quot;: &quot;-zab1&quot;,
+    &quot;t17&quot;: &quot;zab1 zab1&quot;,
+    &quot;t18&quot;: &quot;zab1 zab1&quot;,
+    &quot;t19&quot;: &quot;zab1 zab1&quot;,
+    &quot;t20&quot;: &quot;zab1 zab1&quot;,
+    &quot;t21&quot;: &quot;2 2&quot;,
+    &quot;t22&quot;: &quot;true true&quot;,
+    &quot;t23&quot;: &quot;true true&quot;,
+    &quot;t24&quot;: &quot;null null&quot;,
+    &quot;t25&quot;: &quot;b&quot;,
+    &quot;t26&quot;: &quot;b b&quot;,
+    &quot;t27&quot;: null,
+    &quot;t28&quot;: 3
+}</system-out>
+		</testcase>
+		<testcase name="Test parameter evaluation, with support for JS expressions" time="2.913870" class="inline_javascript, command_line_tool" file="param_evaluation_expr" url="cwltest:conformance_test_v1.0#62">
+			<system-out>{
+    &quot;t1&quot;: {
+        &quot;bar&quot;: {
+            &quot;baz&quot;: &quot;zab1&quot;,
+            &quot;b az&quot;: 2,
+            &quot;b'az&quot;: true,
+            &quot;b\&quot;az&quot;: null,
+            &quot;buz&quot;: [
+                &quot;a&quot;,
+                &quot;b&quot;,
+                &quot;c&quot;
+            ]
+        }
+    },
+    &quot;t2&quot;: {
+        &quot;baz&quot;: &quot;zab1&quot;,
+        &quot;b az&quot;: 2,
+        &quot;b'az&quot;: true,
+        &quot;b\&quot;az&quot;: null,
+        &quot;buz&quot;: [
+            &quot;a&quot;,
+            &quot;b&quot;,
+            &quot;c&quot;
+        ]
+    },
+    &quot;t3&quot;: {
+        &quot;baz&quot;: &quot;zab1&quot;,
+        &quot;b az&quot;: 2,
+        &quot;b'az&quot;: true,
+        &quot;b\&quot;az&quot;: null,
+        &quot;buz&quot;: [
+            &quot;a&quot;,
+            &quot;b&quot;,
+            &quot;c&quot;
+        ]
+    },
+    &quot;t4&quot;: {
+        &quot;baz&quot;: &quot;zab1&quot;,
+        &quot;b az&quot;: 2,
+        &quot;b'az&quot;: true,
+        &quot;b\&quot;az&quot;: null,
+        &quot;buz&quot;: [
+            &quot;a&quot;,
+            &quot;b&quot;,
+            &quot;c&quot;
+        ]
+    },
+    &quot;t5&quot;: &quot;zab1&quot;,
+    &quot;t6&quot;: &quot;zab1&quot;,
+    &quot;t7&quot;: &quot;zab1&quot;,
+    &quot;t8&quot;: &quot;zab1&quot;,
+    &quot;t9&quot;: 2,
+    &quot;t10&quot;: true,
+    &quot;t11&quot;: true,
+    &quot;t12&quot;: null,
+    &quot;t13&quot;: &quot;-zab1&quot;,
+    &quot;t14&quot;: &quot;-zab1&quot;,
+    &quot;t15&quot;: &quot;-zab1&quot;,
+    &quot;t16&quot;: &quot;-zab1&quot;,
+    &quot;t17&quot;: &quot;zab1 zab1&quot;,
+    &quot;t18&quot;: &quot;zab1 zab1&quot;,
+    &quot;t19&quot;: &quot;zab1 zab1&quot;,
+    &quot;t20&quot;: &quot;zab1 zab1&quot;,
+    &quot;t21&quot;: &quot;2 2&quot;,
+    &quot;t22&quot;: &quot;true true&quot;,
+    &quot;t23&quot;: &quot;true true&quot;,
+    &quot;t24&quot;: &quot;null null&quot;,
+    &quot;t25&quot;: &quot;b&quot;,
+    &quot;t26&quot;: &quot;b b&quot;,
+    &quot;t27&quot;: null,
+    &quot;t28&quot;: 3
+}</system-out>
+		</testcase>
+		<testcase name="Test metadata" time="2.383369" class="required, command_line_tool" file="metadata" url="cwltest:conformance_test_v1.0#63">
+			<system-out>{}</system-out>
+			<system-err>Hello world!
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test simple format checking." time="1.212488" class="required, command_line_tool" file="format_checking" url="cwltest:conformance_test_v1.0#64">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpfkzkwfz6/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$97fe1b50b4582cebc7d853796ebd62e3e163aa3f&quot;,
+        &quot;size&quot;: 1111,
+        &quot;format&quot;: &quot;http://edamontology.org/format_2330&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpfkzkwfz6/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test format checking against ontology using subclassOf." time="5.584658" class="required, command_line_tool" file="format_checking_subclass" url="cwltest:conformance_test_v1.0#65">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp3rr7vuw9/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$971d88faeda85a796752ecf752b7e2e34f1337ce&quot;,
+        &quot;size&quot;: 12010,
+        &quot;format&quot;: &quot;http://edamontology.org/format_1929&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp3rr7vuw9/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test format checking against ontology using equivalentClass." time="5.910355" class="required, command_line_tool" file="format_checking_equivalentclass" url="cwltest:conformance_test_v1.0#66">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp53zrcqmx/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$971d88faeda85a796752ecf752b7e2e34f1337ce&quot;,
+        &quot;size&quot;: 12010,
+        &quot;format&quot;: &quot;http://edamontology.org/format_1929&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp53zrcqmx/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test optional output file and optional secondaryFile on output." time="2.042505" class="docker, command_line_tool" file="output_secondaryfile_optional" url="cwltest:conformance_test_v1.0#67">
+			<system-out>{
+    &quot;optional_file&quot;: null,
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpvwytrwgu/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;secondaryFiles&quot;: [],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpvwytrwgu/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test that valueFrom is ignored when the parameter is null" time="2.709963" class="inline_javascript, command_line_tool" file="valuefrom_ignored_null" url="cwltest:conformance_test_v1.0#68">
+			<system-out>{
+    &quot;out&quot;: &quot;\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test that second expression in concatenated valueFrom is not ignored" time="4.687309" class="inline_javascript, command_line_tool" file="valuefrom_secondexpr_ignored" url="cwltest:conformance_test_v1.0#69">
+			<system-out>{
+    &quot;out&quot;: &quot;a string\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step." time="4.577005" class="step_input, inline_javascript, workflow" file="valuefrom_wf_step" url="cwltest:conformance_test_v1.0#70">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step with multiple sources" time="2.520216" class="step_input, inline_javascript, multiple_input, workflow" file="valuefrom_wf_step_multiple" url="cwltest:conformance_test_v1.0#71">
+			<system-out>{
+    &quot;val&quot;: &quot;3\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step referencing other inputs" time="2.466315" class="step_input, inline_javascript, workflow" file="valuefrom_wf_step_other" url="cwltest:conformance_test_v1.0#72">
+			<system-out>{
+    &quot;val&quot;: &quot;3\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test record type output binding." time="1.270635" class="shell_command, command_line_tool" file="record_output_binding" url="cwltest:conformance_test_v1.0#73">
+			<system-out>{
+    &quot;orec&quot;: {
+        &quot;ofoo&quot;: {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp7cstzl9i/foo&quot;,
+            &quot;basename&quot;: &quot;foo&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+            &quot;size&quot;: 1111,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmp7cstzl9i/foo&quot;
+        },
+        &quot;obar&quot;: {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp7cstzl9i/bar&quot;,
+            &quot;basename&quot;: &quot;bar&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$aeb3d11bdf536511649129f4077d5cda6a324118&quot;,
+            &quot;size&quot;: 12010,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmp7cstzl9i/bar&quot;
+        }
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json when running in a Docker container and just 'path' is provided." time="3.010650" class="shell_command, command_line_tool" file="docker_json_output_path" url="cwltest:conformance_test_v1.0#74">
+			<system-out>{
+    &quot;foo&quot;: {
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;basename&quot;: &quot;foo&quot;,
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpnecpa3_d/foo&quot;,
+        &quot;size&quot;: 4,
+        &quot;checksum&quot;: &quot;sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpnecpa3_d/foo&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test support for reading cwl.output.json when running in a Docker container and just 'location' is provided." time="2.868565" class="shell_command, command_line_tool" file="docker_json_output_location" url="cwltest:conformance_test_v1.0#75">
+			<system-out>{
+    &quot;foo&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp0apc3trc/foo&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;basename&quot;: &quot;foo&quot;,
+        &quot;size&quot;: 4,
+        &quot;checksum&quot;: &quot;sha1$f1d2d2f924e986ac86fdf7b36c94bcdf32beec15&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp0apc3trc/foo&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test support for returning multiple glob patterns from expression" time="1.143908" class="required, command_line_tool" file="multiple_glob_expr_list" url="cwltest:conformance_test_v1.0#76">
+			<system-out>{
+    &quot;files&quot;: [
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpu690j1q0/a&quot;,
+            &quot;basename&quot;: &quot;a&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpu690j1q0/a&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpu690j1q0/b&quot;,
+            &quot;basename&quot;: &quot;b&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpu690j1q0/b&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpu690j1q0/c&quot;,
+            &quot;basename&quot;: &quot;c&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpu690j1q0/c&quot;
+        }
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)" time="1.180914" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom" url="cwltest:conformance_test_v1.0#77">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one one&quot;,
+        &quot;foo one two&quot;,
+        &quot;foo one three&quot;,
+        &quot;foo one four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input" time="1.255028" class="scatter, step_input, workflow" file="wf_scatter_twoparam_nested_crossproduct_valuefrom" url="cwltest:conformance_test_v1.0#78">
+			<system-out>{
+    &quot;out&quot;: [
+        [
+            &quot;foo one one three&quot;,
+            &quot;foo one one four&quot;
+        ],
+        [
+            &quot;foo one two three&quot;,
+            &quot;foo one two four&quot;
+        ]
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input" time="1.250129" class="scatter, step_input, workflow" file="wf_scatter_twoparam_flat_crossproduct_valuefrom" url="cwltest:conformance_test_v1.0#79">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one one three&quot;,
+        &quot;foo one one four&quot;,
+        &quot;foo one two three&quot;,
+        &quot;foo one two four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input" time="1.077736" class="scatter, step_input, workflow" file="wf_scatter_twoparam_dotproduct_valuefrom" url="cwltest:conformance_test_v1.0#80">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one one three&quot;,
+        &quot;foo one two four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)" time="1.098081" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom_twice_current_el" url="cwltest:conformance_test_v1.0#81">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one one&quot;,
+        &quot;foo two two&quot;,
+        &quot;foo three three&quot;,
+        &quot;foo four four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom eval on scattered input parameter" time="1.118949" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valueFrom" url="cwltest:conformance_test_v1.0#82">
+			<system-out>{
+    &quot;out_message&quot;: [
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpvam558jq/7d3abcb386796a475e6a648e021e501dc994430f&quot;,
+            &quot;basename&quot;: &quot;7d3abcb386796a475e6a648e021e501dc994430f&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$98030575f6fc40e5021be5a8803a6bef94aee11f&quot;,
+            &quot;size&quot;: 16,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpvam558jq/7d3abcb386796a475e6a648e021e501dc994430f&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpvam558jq/7d3abcb386796a475e6a648e021e501dc994430f_2&quot;,
+            &quot;basename&quot;: &quot;7d3abcb386796a475e6a648e021e501dc994430f&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$edcacd50778d98ae113015406b3195c165059dd8&quot;,
+            &quot;size&quot;: 16,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpvam558jq/7d3abcb386796a475e6a648e021e501dc994430f_2&quot;
+        }
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test workflow two input files with same name." time="1.150208" class="required, workflow" file="wf_two_inputfiles_namecollision" url="cwltest:conformance_test_v1.0#83">
+			<system-out>{
+    &quot;fileout&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp4n8gi_ym/out.txt&quot;,
+        &quot;basename&quot;: &quot;out.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$a2d8d6e7b28295dc9977dc3bdb652ddd480995f0&quot;,
+        &quot;size&quot;: 25,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp4n8gi_ym/out.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test directory input with parameter reference" time="1.094794" class="shell_command, command_line_tool" file="directory_input_param_ref" url="cwltest:conformance_test_v1.0#84">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmps3jmqk5f/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$13cda8661796ae241da3a18668fb552161a72592&quot;,
+        &quot;size&quot;: 20,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmps3jmqk5f/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test directory input in Docker" time="1.879793" class="command_line_tool, shell_command" file="directory_input_docker" url="cwltest:conformance_test_v1.0#85">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmprpcbniw_/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$13cda8661796ae241da3a18668fb552161a72592&quot;,
+        &quot;size&quot;: 20,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmprpcbniw_/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test directory output" time="1.136476" class="required, command_line_tool" file="directory_output" url="cwltest:conformance_test_v1.0#86">
+			<system-out>{
+    &quot;outdir&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_7znth8w/czh6kry0&quot;,
+        &quot;basename&quot;: &quot;czh6kry0&quot;,
+        &quot;class&quot;: &quot;Directory&quot;,
+        &quot;listing&quot;: [
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_7znth8w/czh6kry0/goodbye.txt&quot;,
+                &quot;basename&quot;: &quot;goodbye.txt&quot;,
+                &quot;size&quot;: 24,
+                &quot;checksum&quot;: &quot;sha1$dd0a4c4c49ba43004d6611771972b6cf969c1c01&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmp_7znth8w/czh6kry0/goodbye.txt&quot;
+            },
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_7znth8w/czh6kry0/hello.txt&quot;,
+                &quot;basename&quot;: &quot;hello.txt&quot;,
+                &quot;size&quot;: 13,
+                &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmp_7znth8w/czh6kry0/hello.txt&quot;
+            }
+        ],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp_7znth8w/czh6kry0&quot;
+    }
+}</system-out>
+			<system-err>hello.txt
+goodbye.txt
+</system-err>
+		</testcase>
+		<testcase name="Test directories in secondaryFiles" time="1.073115" class="shell_command, command_line_tool" file="directory_secondaryfiles" url="cwltest:conformance_test_v1.0#87">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp5spq3cyd/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$13cda8661796ae241da3a18668fb552161a72592&quot;,
+        &quot;size&quot;: 20,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp5spq3cyd/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test dynamic initial work dir" time="1.095627" class="shell_command, initial_work_dir, command_line_tool" file="dynamic_initial_workdir" url="cwltest:conformance_test_v1.0#88">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpalnal5gd/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$13cda8661796ae241da3a18668fb552161a72592&quot;,
+        &quot;size&quot;: 20,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpalnal5gd/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test writable staged files." time="2.205213" class="initial_work_dir, command_line_tool" file="writable_stagedfiles" url="cwltest:conformance_test_v1.0#89">
+			<system-out>{
+    &quot;outfile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpsv5hkix1/bob.txt&quot;,
+        &quot;basename&quot;: &quot;bob.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b769c7b2e316edd4b5eb2d24799b2c1f9d8c86e6&quot;,
+        &quot;size&quot;: 1111,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpsv5hkix1/bob.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test file literal as input" time="2.089378" class="required, command_line_tool" file="input_file_literal" url="cwltest:conformance_test_v1.0#90">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmptppkoj0q/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$d0e04ff6c413c7d57f9a0ca0a33cd3ab52e2dd9c&quot;,
+        &quot;size&quot;: 18,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmptppkoj0q/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test expression in InitialWorkDir listing" time="1.126814" class="initial_work_dir, command_line_tool" file="initial_workdir_expr" url="cwltest:conformance_test_v1.0#91">
+			<system-out>{
+    &quot;classfile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpds3_j9nx/Hello.class&quot;,
+        &quot;basename&quot;: &quot;Hello.class&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpds3_j9nx/Hello.class&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test nameroot/nameext expression in arguments, stdout" time="1.160698" class="required, command_line_tool" file="nameroot_nameext_stdout_expr" url="cwltest:conformance_test_v1.0#92">
+			<system-out>{
+    &quot;b&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpld993p7w/whale.xtx&quot;,
+        &quot;basename&quot;: &quot;whale.xtx&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$c4cfd130e7578714e3eef91c1d6d90e0e0b9db3e&quot;,
+        &quot;size&quot;: 21,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpld993p7w/whale.xtx&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test directory input with inputBinding" time="1.184247" class="shell_command, command_line_tool" file="input_dir_inputbinding" url="cwltest:conformance_test_v1.0#93">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp310cl7yh/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$13cda8661796ae241da3a18668fb552161a72592&quot;,
+        &quot;size&quot;: 20,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp310cl7yh/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test command line generation of array-of-arrays" time="1.097694" class="required, command_line_tool" file="cl_gen_arrayofarrays" url="cwltest:conformance_test_v1.0#94">
+			<system-out>{
+    &quot;echo&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp285__ss7/echo.txt&quot;,
+        &quot;basename&quot;: &quot;echo.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$3f786850e387550fdab836ed7e6dc881de23001b&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp285__ss7/echo.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly" time="1.087025" class="shell_command, command_line_tool" file="env_home_tmpdir" url="cwltest:conformance_test_v1.0#95">
+			<system-out>{}</system-out>
+			<system-err>HOME=/vol0006/mdt1/home/[REDACTED]/ie0xx678 TMPDIR=/vol0006/mdt1/home/[REDACTED]/cvzk6lix
+</system-err>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly in Docker" time="2.014326" class="shell_command, command_line_tool" file="env_home_tmpdir_docker" url="cwltest:conformance_test_v1.0#96">
+			<system-out>{}</system-out>
+			<system-err>HOME=/BGJTyZ TMPDIR=/tmp
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test that expressionLib requirement of individual tool step overrides expressionLib of workflow." time="4.750093" class="inline_javascript, workflow" file="expressionlib_tool_wf_override" url="cwltest:conformance_test_v1.0#97">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp7_dr0oby/whatever.txt&quot;,
+        &quot;basename&quot;: &quot;whatever.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp7_dr0oby/whatever.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test output of InitialWorkDir" time="2.232666" class="docker, initial_work_dir, command_line_tool" file="initial_workdir_output" url="cwltest:conformance_test_v1.0#98">
+			<system-out>{
+    &quot;OUTPUT&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpgdot4fr1/ref.fasta&quot;,
+        &quot;basename&quot;: &quot;ref.fasta&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$aeb3d11bdf536511649129f4077d5cda6a324118&quot;,
+        &quot;size&quot;: 12010,
+        &quot;secondaryFiles&quot;: [
+            {
+                &quot;basename&quot;: &quot;ref.fasta.fai&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpgdot4fr1/ref.fasta.fai&quot;,
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpgdot4fr1/ref.fasta.fai&quot;
+            }
+        ],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpgdot4fr1/ref.fasta&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test embedded subworkflow" time="4.489411" class="subworkflow, workflow" file="embedded_subworkflow" url="cwltest:conformance_test_v1.0#99">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test secondaryFiles on array of files." time="5.683711" class="docker, inline_javascript, shell_command, command_line_tool" file="filesarray_secondaryfiles" url="cwltest:conformance_test_v1.0#100">
+			<system-out>{
+    &quot;bai_list&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpgfx4fanm/fai.list&quot;,
+        &quot;basename&quot;: &quot;fai.list&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$081fc0e57d6efa5f75eeb237aab1d04031132be6&quot;,
+        &quot;size&quot;: 386,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpgfx4fanm/fai.list&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test directory literal output created by ExpressionTool" time="4.458898" class="inline_javascript, expression_tool" file="exprtool_directory_literal" url="cwltest:conformance_test_v1.0#101">
+			<system-out>{
+    &quot;dir&quot;: {
+        &quot;class&quot;: &quot;Directory&quot;,
+        &quot;basename&quot;: &quot;a_directory&quot;,
+        &quot;listing&quot;: [
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp8zdqf67x/a_directory/hello.txt&quot;,
+                &quot;size&quot;: 13,
+                &quot;basename&quot;: &quot;hello.txt&quot;,
+                &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmp8zdqf67x/a_directory/hello.txt&quot;
+            },
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp8zdqf67x/a_directory/whale.txt&quot;,
+                &quot;size&quot;: 1111,
+                &quot;basename&quot;: &quot;whale.txt&quot;,
+                &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmp8zdqf67x/a_directory/whale.txt&quot;
+            }
+        ],
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp8zdqf67x/a_directory&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp8zdqf67x/a_directory&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test file literal output created by ExpressionTool" time="5.185689" class="inline_javascript, expression_tool" file="exprtool_file_literal" url="cwltest:conformance_test_v1.0#102">
+			<system-out>{
+    &quot;lit&quot;: {
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;basename&quot;: &quot;a_file&quot;,
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp2ffjc6r_/a_file&quot;,
+        &quot;size&quot;: 19,
+        &quot;checksum&quot;: &quot;sha1$fea23663b9c8ed71968f86415b5ec091bb111448&quot;,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp2ffjc6r_/a_file&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test dockerOutputDirectory" time="2.874557" class="docker, command_line_tool" file="dockeroutputdir" url="cwltest:conformance_test_v1.0#103">
+			<system-out>{
+    &quot;thing&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpgmwkh7vf/thing&quot;,
+        &quot;basename&quot;: &quot;thing&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpgmwkh7vf/thing&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test hints with $import" time="1.260148" class="required, command_line_tool" file="hints_import" url="cwltest:conformance_test_v1.0#104">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmphlxkqxjo/out&quot;,
+        &quot;basename&quot;: &quot;out&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b3ec4ed1749c207e52b3a6d08c59f31d83bff519&quot;,
+        &quot;size&quot;: 15,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmphlxkqxjo/out&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test warning instead of error when default path is not found" time="1.544322" class="required, command_line_tool" file="default_path_notfound_warning" url="cwltest:conformance_test_v1.0#105">
+			<system-out>{}</system-out>
+			<system-err>Hello world!
+</system-err>
+		</testcase>
+		<testcase name="Test InlineJavascriptRequirement with multiple expressions in the same tool" time="6.178070" class="inline_javascript, command_line_tool" file="inlinejs_req_expressions" url="cwltest:conformance_test_v1.0#106">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;-A&quot;,
+        &quot;2&quot;,
+        &quot;-B&quot;,
+        &quot;baz&quot;,
+        &quot;-C&quot;,
+        &quot;10&quot;,
+        &quot;9&quot;,
+        &quot;8&quot;,
+        &quot;7&quot;,
+        &quot;6&quot;,
+        &quot;5&quot;,
+        &quot;4&quot;,
+        &quot;3&quot;,
+        &quot;2&quot;,
+        &quot;1&quot;,
+        &quot;-D&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test if a writable input directory is recursively copied and writable" time="1.226675" class="initial_work_dir, shell_command, command_line_tool" file="input_dir_recurs_copy_writable" url="cwltest:conformance_test_v1.0#107">
+			<system-out>{
+    &quot;output_dir&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/work_dir&quot;,
+        &quot;basename&quot;: &quot;work_dir&quot;,
+        &quot;class&quot;: &quot;Directory&quot;,
+        &quot;listing&quot;: [
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/work_dir/b&quot;,
+                &quot;basename&quot;: &quot;b&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/work_dir/b&quot;
+            },
+            {
+                &quot;class&quot;: &quot;Directory&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/work_dir/c&quot;,
+                &quot;basename&quot;: &quot;c&quot;,
+                &quot;listing&quot;: [
+                    {
+                        &quot;class&quot;: &quot;File&quot;,
+                        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/work_dir/c/d&quot;,
+                        &quot;basename&quot;: &quot;d&quot;,
+                        &quot;size&quot;: 0,
+                        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                        &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/work_dir/c/d&quot;
+                    }
+                ],
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/work_dir/c&quot;
+            },
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/work_dir/e&quot;,
+                &quot;basename&quot;: &quot;e&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/work_dir/e&quot;
+            },
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/work_dir/a&quot;,
+                &quot;basename&quot;: &quot;a&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/work_dir/a&quot;
+            }
+        ],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/work_dir&quot;
+    },
+    &quot;test_result&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpl4s8hxc0/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpl4s8hxc0/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that missing parameters are null (not undefined) in expression" time="4.930502" class="inline_javascript, command_line_tool" file="null_missing_params" url="cwltest:conformance_test_v1.0#108">
+			<system-out>{
+    &quot;out&quot;: &quot;t\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test that provided parameter is not null in expression" time="4.938768" class="inline_javascript, command_line_tool" file="param_notnull_expr" url="cwltest:conformance_test_v1.0#109">
+			<system-out>{
+    &quot;out&quot;: &quot;f\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test compound workflow document" time="2.808192" class="required, workflow" file="wf_compound_doc" url="cwltest:conformance_test_v1.0#110">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp3l57i4i2/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b9214658cc453331b62c2282b772a5c063dbd284&quot;,
+        &quot;size&quot;: 1111,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp3l57i4i2/output.txt&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test that nameroot and nameext are generated from basename at execution time by the runner" time="2.509965" class="step_input, workflow" file="nameroot_nameext_generated" url="cwltest:conformance_test_v1.0#111">
+			<system-out>{
+    &quot;extFile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp8kjhwlgd/881b43670ec7d80c6f1266f927c2cc84f9d0f2bb&quot;,
+        &quot;basename&quot;: &quot;881b43670ec7d80c6f1266f927c2cc84f9d0f2bb&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$301a72c82a835e1737caf30f94d0eec210c4d9f1&quot;,
+        &quot;size&quot;: 5,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp8kjhwlgd/881b43670ec7d80c6f1266f927c2cc84f9d0f2bb&quot;
+    },
+    &quot;rootFile&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp8kjhwlgd/881b43670ec7d80c6f1266f927c2cc84f9d0f2bb_2&quot;,
+        &quot;basename&quot;: &quot;881b43670ec7d80c6f1266f927c2cc84f9d0f2bb&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$b4a583c391e234cf210e1d576f68f674c8ad7ecd&quot;,
+        &quot;size&quot;: 10,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp8kjhwlgd/881b43670ec7d80c6f1266f927c2cc84f9d0f2bb_2&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that file path in $(inputs) for initialworkdir is in $(outdir)." time="1.166335" class="initial_work_dir, command_line_tool" file="initialworkpath_output" url="cwltest:conformance_test_v1.0#112">
+			<system-out>{}</system-out>
+		</testcase>
+		<testcase name="Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list" time="4.648622" class="multiple_input, inline_javascript, workflow" file="wf_scatter_twopar_oneinput_flattenedmerge" url="cwltest:conformance_test_v1.0#113">
+			<system-out>{
+    &quot;count_output&quot;: 34
+}</system-out>
+		</testcase>
+		<testcase name="Test step input with multiple sources with multiple types" time="2.516073" class="step_input, inline_javascript, multiple_input, workflow" file="wf_multiplesources_multipletypes" url="cwltest:conformance_test_v1.0#114">
+			<system-out>{
+    &quot;result&quot;: 12
+}</system-out>
+		</testcase>
+		<testcase name="Test that shell directives are not interpreted." time="1.160980" class="required, command_line_tool" file="shelldir_notinterpreted" url="cwltest:conformance_test_v1.0#115">
+			<system-out>{
+    &quot;stderr_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp04rrszr2/a44506256cf0532ab767fd8619677139dbb66c1c&quot;,
+        &quot;basename&quot;: &quot;a44506256cf0532ab767fd8619677139dbb66c1c&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp04rrszr2/a44506256cf0532ab767fd8619677139dbb66c1c&quot;
+    },
+    &quot;stdout_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp04rrszr2/cde73cfe16a6596be719d29f5e756087d542d723&quot;,
+        &quot;basename&quot;: &quot;cde73cfe16a6596be719d29f5e756087d542d723&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$1555252d52d4ec3262538a4426a83a99cfff4402&quot;,
+        &quot;size&quot;: 9,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp04rrszr2/cde73cfe16a6596be719d29f5e756087d542d723&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that shell directives are quoted." time="1.207275" class="shell_command, command_line_tool" file="shelldir_quoted" url="cwltest:conformance_test_v1.0#116">
+			<system-out>{
+    &quot;stderr_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpyb8hu097/8fb85cd4a19a505e62cc938916b6528318da5d0f&quot;,
+        &quot;basename&quot;: &quot;8fb85cd4a19a505e62cc938916b6528318da5d0f&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpyb8hu097/8fb85cd4a19a505e62cc938916b6528318da5d0f&quot;
+    },
+    &quot;stdout_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpyb8hu097/4221e23c6c07f500fa3f7c42428a43e1acf64b07&quot;,
+        &quot;basename&quot;: &quot;4221e23c6c07f500fa3f7c42428a43e1acf64b07&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$1555252d52d4ec3262538a4426a83a99cfff4402&quot;,
+        &quot;size&quot;: 9,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpyb8hu097/4221e23c6c07f500fa3f7c42428a43e1acf64b07&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test empty writable dir with InitialWorkDirRequirement" time="2.641241" class="inline_javascript, initial_work_dir, command_line_tool" file="initial_workdir_empty_writable" url="cwltest:conformance_test_v1.0#117">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpns80f4s0/emptyWritableDir&quot;,
+        &quot;basename&quot;: &quot;emptyWritableDir&quot;,
+        &quot;class&quot;: &quot;Directory&quot;,
+        &quot;listing&quot;: [
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpns80f4s0/emptyWritableDir/blurg&quot;,
+                &quot;basename&quot;: &quot;blurg&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpns80f4s0/emptyWritableDir/blurg&quot;
+            }
+        ],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpns80f4s0/emptyWritableDir&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test empty writable dir with InitialWorkDirRequirement inside Docker" time="8.476565" class="inline_javascript, initial_work_dir, command_line_tool" file="initial_workdir_empty_writable_docker" url="cwltest:conformance_test_v1.0#118">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpp6isdk82/emptyWritableDir&quot;,
+        &quot;basename&quot;: &quot;emptyWritableDir&quot;,
+        &quot;class&quot;: &quot;Directory&quot;,
+        &quot;listing&quot;: [
+            {
+                &quot;class&quot;: &quot;File&quot;,
+                &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpp6isdk82/emptyWritableDir/blurg&quot;,
+                &quot;basename&quot;: &quot;blurg&quot;,
+                &quot;size&quot;: 0,
+                &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+                &quot;path&quot;: &quot;/home/[REDACTED]/tmpp6isdk82/emptyWritableDir/blurg&quot;
+            }
+        ],
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpp6isdk82/emptyWritableDir&quot;
+    }
+}</system-out>
+			<system-err>INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+2026/09/20 22:49:47  warn xattr{etc/shadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:49:47  warn xattr{/home/[REDACTED]/build-temp-1231044884/rootfs/etc/shadow} destination filesystem does not support xattrs, further warnings will be suppressed
+INFO:    Inserting Singularity configuration...
+INFO:    Creating SIF file...
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test dynamic resource reqs referencing inputs" time="1.222407" class="resource, command_line_tool" file="dynamic_resreq_inputs" url="cwltest:conformance_test_v1.0#119">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpugs6nhyg/cores.txt&quot;,
+        &quot;basename&quot;: &quot;cores.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpugs6nhyg/cores.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test file literal as input without Docker" time="1.189042" class="required, command_line_tool" file="fileliteral_input_docker" url="cwltest:conformance_test_v1.0#120">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp3asbsa5f/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$d0e04ff6c413c7d57f9a0ca0a33cd3ab52e2dd9c&quot;,
+        &quot;size&quot;: 18,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp3asbsa5f/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that OutputBinding.glob is sorted as specified by POSIX" time="1.171225" class="required, command_line_tool" file="outputbinding_glob_sorted" url="cwltest:conformance_test_v1.0#121">
+			<system-out>{
+    &quot;letters&quot;: [
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/a&quot;,
+            &quot;basename&quot;: &quot;a&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/a&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/b&quot;,
+            &quot;basename&quot;: &quot;b&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/b&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/c&quot;,
+            &quot;basename&quot;: &quot;c&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/c&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/w&quot;,
+            &quot;basename&quot;: &quot;w&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/w&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/x&quot;,
+            &quot;basename&quot;: &quot;x&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/x&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/y&quot;,
+            &quot;basename&quot;: &quot;y&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/y&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpjq7_iyna/z&quot;,
+            &quot;basename&quot;: &quot;z&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpjq7_iyna/z&quot;
+        }
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test InitialWorkDirRequirement with a nested directory structure from another step" time="1.150109" class="initial_work_dir, workflow" file="initialworkdir_nesteddir" url="cwltest:conformance_test_v1.0#122">
+			<system-out>{
+    &quot;ya_empty&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp53t37h_k/ya&quot;,
+        &quot;basename&quot;: &quot;ya&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp53t37h_k/ya&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that boolean flags do not appear on command line if inputBinding is empty and not null" time="2.189827" class="required, command_line_tool" file="booleanflags_cl_noinputbinding" url="cwltest:conformance_test_v1.0#123">
+			<system-out>{
+    &quot;args&quot;: []
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test that expression engine does not fail to evaluate reference to self with unprovided input" time="2.108967" class="required, command_line_tool" file="expr_reference_self_noinput" url="cwltest:conformance_test_v1.0#124">
+			<system-out>{
+    &quot;args&quot;: []
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test successCodes" time="1.103419" class="required, command_line_tool" file="success_codes" url="cwltest:conformance_test_v1.0#125">
+			<system-out>{}</system-out>
+		</testcase>
+		<testcase name="Test simple workflow with a dynamic resource requirement" time="1.285560" class="resource, workflow" file="dynamic_resreq_wf" url="cwltest:conformance_test_v1.0#126">
+			<system-out>{
+    &quot;cores&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpnhcdjyx3/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpnhcdjyx3/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that empty array input does not add anything to command line" time="2.004611" class="required, command_line_tool" file="cl_empty_array_input" url="cwltest:conformance_test_v1.0#127">
+			<system-out>{
+    &quot;args&quot;: []
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test that ResourceRequirement on a step level redefines requirement on the workflow level" time="1.138373" class="resource, workflow" file="resreq_step_overrides_wf" url="cwltest:conformance_test_v1.0#128">
+			<system-out>{
+    &quot;out&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpv5wfnx2x/cores.txt&quot;,
+        &quot;basename&quot;: &quot;cores.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpv5wfnx2x/cores.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom with constant value overriding provided array inputs" time="2.197213" class="required, command_line_tool" file="valuefrom_constant_overrides_inputs" url="cwltest:conformance_test_v1.0#129">
+			<system-out>{
+    &quot;args&quot;: [
+        &quot;replacementValue&quot;
+    ]
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test dynamic resource reqs referencing the size of Files inside a Directory" time="2.667728" class="resource, command_line_tool" file="dynamic_resreq_filesizes" url="cwltest:conformance_test_v1.0#130">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpy4x1vo08/cores.txt&quot;,
+        &quot;basename&quot;: &quot;cores.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpy4x1vo08/cores.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs." time="1.231421" class="required, workflow" file="wf_step_connect_undeclared_param" url="cwltest:conformance_test_v1.0#131">
+			<system-out>{
+    &quot;out&quot;: &quot;hello inp1\n&quot;
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/pass-unconnected.cwl:18:7: 'in2' is not an input parameter of
+                                file:///vol0006/mdt1/home/[REDACTED]/common-workflow-language/v1.0/v1.0/echo-tool.cwl,
+                                expected in[0m
+</system-err>
+		</testcase>
+		<testcase name="Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool." time="1.294339" class="required, workflow" file="wf_step_access_undeclared_param" url="cwltest:conformance_test_v1.0#132">
+			<system-out>{
+    &quot;out&quot;: null
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/fail-unconnected.cwl:18:7: 'in2' is not an input parameter of
+                                file:///vol0006/mdt1/home/[REDACTED]/common-workflow-language/v1.0/v1.0/fail-unspecified-input.cwl,
+                                expected in[0m
+Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+Traceback (most recent call last):
+  File &quot;/vol0006/mdt1/home/[REDACTED]/venv/lib64/python3.11/site-packages/cwl_utils/expression.py&quot;, line 322, in do_eval
+    return interpolate(
+           ^^^^^^^^^^^^
+  File &quot;/vol0006/mdt1/home/[REDACTED]/venv/lib64/python3.11/site-packages/cwl_utils/expression.py&quot;, line 227, in interpolate
+    e = evaluator(
+        ^^^^^^^^^^
+  File &quot;/vol0006/mdt1/home/[REDACTED]/venv/lib64/python3.11/site-packages/cwl_utils/expression.py&quot;, line 176, in evaluator
+    raise JavascriptException(
+cwl_utils.errors.JavascriptException: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: v1.0/fail-unspecified-input.cwl:16:33: Expression evaluation error:
+v1.0/fail-unspecified-input.cwl:16:33: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+</system-err>
+		</testcase>
+		<testcase name="Test $HOME and $TMPDIR are set correctly in Docker without using return code" time="1.977425" class="shell_command, command_line_tool" file="env_home_tmpdir_docker_complex" url="cwltest:conformance_test_v1.0#133">
+			<system-out>{
+    &quot;results&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpc_nbwjx0/results&quot;,
+        &quot;basename&quot;: &quot;results&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7d5ca8c0c03e883c56c4eb1ef6f6bb9bccad4d86&quot;,
+        &quot;size&quot;: 8,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpc_nbwjx0/results&quot;
+    }
+}</system-out>
+			<system-err>HOME=/rKqbqE TMPDIR=/tmp
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)" time="1.126691" class="scatter, step_input, workflow" file="wf_scatter_oneparam_valuefrom_inputs" url="cwltest:conformance_test_v1.0#134">
+			<system-out>{
+    &quot;out&quot;: [
+        &quot;foo one one&quot;,
+        &quot;foo one two&quot;,
+        &quot;foo one three&quot;,
+        &quot;foo one four&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="SchemaDefRequirement with $import, and packed" time="1.986030" class="schema_def, workflow" file="packed_import_schema" url="cwltest:conformance_test_v1.0#135">
+			<system-out>{
+    &quot;output_bam&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpxxt751ny/a.bam&quot;,
+        &quot;basename&quot;: &quot;a.bam&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpxxt751ny/a.bam&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test specifying secondaryFiles in subdirectories of the job input document." time="1.147874" class="shell_command, command_line_tool" file="job_input_secondary_subdirs" url="cwltest:conformance_test_v1.0#136">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpbaerttfr/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$9d9bc8f5252d39274b5dfbac64216c6e888f5dfc&quot;,
+        &quot;size&quot;: 14,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpbaerttfr/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test specifying secondaryFiles in same subdirectory of the job input as the primary input file." time="1.224650" class="shell_command, command_line_tool" file="job_input_subdir_primary_and_secondary_subdirs" url="cwltest:conformance_test_v1.0#137">
+			<system-out>{
+    &quot;outlist&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp9rynmzeo/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$9d9bc8f5252d39274b5dfbac64216c6e888f5dfc&quot;,
+        &quot;size&quot;: 14,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp9rynmzeo/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test simple scatter over an embedded subworkflow" time="4.563595" class="workflow, inline_javascript" file="scatter_embedded_subworkflow" url="cwltest:conformance_test_v1.0#138">
+			<system-out>{
+    &quot;count_output&quot;: [
+        16,
+        1
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test simple multiple input scatter over an embedded subworkflow" time="4.556910" class="workflow, scatter, subworkflow, multiple_input, inline_javascript" file="scatter_multi_input_embedded_subworkflow" url="cwltest:conformance_test_v1.0#139">
+			<system-out>{
+    &quot;count_output&quot;: [
+        16,
+        1
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test twice nested subworkflow" time="4.651145" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_embedded_subsubworkflow" url="cwltest:conformance_test_v1.0#140">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test subworkflow of mixed depth with tool first" time="4.408816" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_with_tool_and_subsubworkflow" url="cwltest:conformance_test_v1.0#141">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test subworkflow of mixed depth with tool after" time="4.442693" class="workflow, subworkflow, inline_javascript" file="workflow_embedded_subworkflow_with_subsubworkflow_and_tool" url="cwltest:conformance_test_v1.0#142">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test record type inputs to and outputs from workflows." time="1.152697" class="workflow, shell_command" file="workflow_records_inputs_and_outputs" url="cwltest:conformance_test_v1.0#143">
+			<system-out>{
+    &quot;orec&quot;: {
+        &quot;ofoo&quot;: {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_gsbynrp/foo&quot;,
+            &quot;basename&quot;: &quot;foo&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+            &quot;size&quot;: 1111,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmp_gsbynrp/foo&quot;
+        },
+        &quot;obar&quot;: {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_gsbynrp/bar&quot;,
+            &quot;basename&quot;: &quot;bar&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$aeb3d11bdf536511649129f4077d5cda6a324118&quot;,
+            &quot;size&quot;: 12010,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmp_gsbynrp/bar&quot;
+        }
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test integer workflow input and outputs" time="2.495829" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input" url="cwltest:conformance_test_v1.0#144">
+			<system-out>{
+    &quot;o&quot;: 10
+}</system-out>
+		</testcase>
+		<testcase name="Test optional integer workflow inputs (specified)" time="2.583242" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_optional_specified" url="cwltest:conformance_test_v1.0#145">
+			<system-out>{
+    &quot;o&quot;: 10
+}</system-out>
+		</testcase>
+		<testcase name="Test optional integer workflow inputs (unspecified)" time="2.504420" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_optional_unspecified" url="cwltest:conformance_test_v1.0#146">
+			<system-out>{
+    &quot;o&quot;: 4
+}</system-out>
+		</testcase>
+		<testcase name="Test default integer workflow inputs (specified)" time="2.508261" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_specified" url="cwltest:conformance_test_v1.0#147">
+			<system-out>{
+    &quot;o&quot;: 10
+}</system-out>
+		</testcase>
+		<testcase name="Test default integer workflow inputs (unspecified)" time="2.465642" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_unspecified" url="cwltest:conformance_test_v1.0#148">
+			<system-out>{
+    &quot;o&quot;: 8
+}</system-out>
+		</testcase>
+		<testcase name="Test default integer tool and workflow inputs (unspecified)" time="2.500594" class="workflow, inline_javascript, expression_tool" file="workflow_integer_input_default_and_tool_integer_input_default" url="cwltest:conformance_test_v1.0#149">
+			<system-out>{
+    &quot;o&quot;: 13
+}</system-out>
+		</testcase>
+		<testcase name="Test File input with default unspecified to workflow" time="1.196742" class="workflow" file="workflow_file_input_default_unspecified" url="cwltest:conformance_test_v1.0#150">
+			<system-out>{
+    &quot;o&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpuuyzg8w9/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+        &quot;size&quot;: 1111,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpuuyzg8w9/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test File input with default specified to workflow" time="1.205827" class="workflow" file="workflow_file_input_default_specified" url="cwltest:conformance_test_v1.0#151">
+			<system-out>{
+    &quot;o&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp1teyr_58/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp1teyr_58/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with one file in array specified." time="4.760132" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_array_of_one_file_provided" url="cwltest:conformance_test_v1.0#152">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmppycf6lo_/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+        &quot;size&quot;: 0,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmppycf6lo_/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with a few files in array specified." time="4.769170" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_many_files_provided" url="cwltest:conformance_test_v1.0#153">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpfmhm3__k/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$6d1723861ad5a1260f1c3c07c93076c5a215f646&quot;,
+        &quot;size&quot;: 1114,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpfmhm3__k/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with one file specified." time="5.086918" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_single_file_provided" url="cwltest:conformance_test_v1.0#154">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp58278uqn/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$327fc7aedf4f6b69a42a7c8b808dc5a7aff61376&quot;,
+        &quot;size&quot;: 1111,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp58278uqn/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test input union type or File or File array to a tool with null specified." time="4.852212" class="command_line_tool, inline_javascript" file="clt_optional_union_input_file_or_files_with_nothing_provided" url="cwltest:conformance_test_v1.0#155">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpnsxgks_z/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$503458abf7614be3fb26d85ff5d8f3e17aa0a552&quot;,
+        &quot;size&quot;: 10,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpnsxgks_z/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with integer input to a tool" time="4.773083" class="command_line_tool, inline_javascript" file="clt_any_input_with_integer_provided" url="cwltest:conformance_test_v1.0#156">
+			<system-out>{
+    &quot;t1&quot;: 7
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with string input to a tool" time="4.751806" class="command_line_tool, inline_javascript" file="clt_any_input_with_string_provided" url="cwltest:conformance_test_v1.0#157">
+			<system-out>{
+    &quot;t1&quot;: &quot;7&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with file input to a tool" time="4.731962" class="command_line_tool, inline_javascript" file="clt_any_input_with_file_provided" url="cwltest:conformance_test_v1.0#158">
+			<system-out>{
+    &quot;t1&quot;: &quot;File&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with array input to a tool" time="4.468053" class="command_line_tool, inline_javascript" file="clt_any_input_with_mixed_array_provided" url="cwltest:conformance_test_v1.0#159">
+			<system-out>{
+    &quot;t1&quot;: [
+        1,
+        &quot;moocow&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with record input to a tool" time="4.985304" class="command_line_tool, inline_javascript" file="clt_any_input_with_record_provided" url="cwltest:conformance_test_v1.0#160">
+			<system-out>{
+    &quot;t1&quot;: {
+        &quot;moo&quot;: 1,
+        &quot;cow&quot;: 5
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with integer input to a workflow" time="4.640445" class="workflow, inline_javascript" file="workflow_any_input_with_integer_provided" url="cwltest:conformance_test_v1.0#161">
+			<system-out>{
+    &quot;t1&quot;: 7
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with string input to a workflow" time="4.503222" class="workflow, inline_javascript" file="workflow_any_input_with_string_provided" url="cwltest:conformance_test_v1.0#162">
+			<system-out>{
+    &quot;t1&quot;: &quot;7&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with file input to a workflow" time="4.464498" class="workflow, inline_javascript" file="workflow_any_input_with_file_provided" url="cwltest:conformance_test_v1.0#163">
+			<system-out>{
+    &quot;t1&quot;: &quot;File&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with array input to a workflow" time="4.530001" class="workflow, inline_javascript" file="workflow_any_input_with_mixed_array_provided" url="cwltest:conformance_test_v1.0#164">
+			<system-out>{
+    &quot;t1&quot;: [
+        1,
+        &quot;moocow&quot;
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test Any parameter with record input to a tool in a workflow" time="4.821589" class="workflow, inline_javascript" file="workflow_any_input_with_record_provided" url="cwltest:conformance_test_v1.0#165">
+			<system-out>{
+    &quot;t1&quot;: {
+        &quot;moo&quot;: 1,
+        &quot;cow&quot;: 5
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test union type input to workflow with default unspecified" time="2.617762" class="workflow, inline_javascript, expression_tool" file="workflow_union_default_input_unspecified" url="cwltest:conformance_test_v1.0#166">
+			<system-out>{
+    &quot;o&quot;: &quot;the default value&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test union type input to workflow with default specified as file" time="2.559726" class="workflow, inline_javascript, expression_tool" file="workflow_union_default_input_with_file_provided" url="cwltest:conformance_test_v1.0#167">
+			<system-out>{
+    &quot;o&quot;: &quot;File&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step from literal (string)." time="1.391163" class="workflow, step_input" file="workflowstep_valuefrom_string" url="cwltest:conformance_test_v1.0#168">
+			<system-out>{
+    &quot;val&quot;: &quot;moocow\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test valueFrom on workflow step using basename." time="1.303802" class="workflow, step_input" file="workflowstep_valuefrom_file_basename" url="cwltest:conformance_test_v1.0#169">
+			<system-out>{
+    &quot;val1&quot;: &quot;whale.txt\n&quot;,
+    &quot;val2&quot;: &quot;step1_out\n&quot;
+}</system-out>
+		</testcase>
+		<testcase name="Test output arrays in a tool (with ints)." time="4.383931" class="expression_tool, inline_javascript" file="expression_tool_int_array_output" url="cwltest:conformance_test_v1.0#170">
+			<system-out>{
+    &quot;o&quot;: [
+        0,
+        1,
+        2
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test output arrays in a workflow (with ints)." time="2.592976" class="workflow, expression_tool, inline_javascript" file="workflowstep_int_array_input_output" url="cwltest:conformance_test_v1.0#171">
+			<system-out>{
+    &quot;o&quot;: 12
+}</system-out>
+		</testcase>
+		<testcase name="Test output arrays in a workflow (with Files)." time="2.620239" class="workflow, expression_tool, inline_javascript" file="workflow_file_array_output" url="cwltest:conformance_test_v1.0#172">
+			<system-out>{
+    &quot;o&quot;: [
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpr427juyg/moo&quot;,
+            &quot;basename&quot;: &quot;moo&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpr427juyg/moo&quot;
+        },
+        {
+            &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpr427juyg/cow&quot;,
+            &quot;basename&quot;: &quot;cow&quot;,
+            &quot;class&quot;: &quot;File&quot;,
+            &quot;checksum&quot;: &quot;sha1$da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+            &quot;size&quot;: 0,
+            &quot;path&quot;: &quot;/home/[REDACTED]/tmpr427juyg/cow&quot;
+        }
+    ]
+}</system-out>
+		</testcase>
+		<testcase name="Test Docker ENTRYPOINT usage" time="16.788626" class="command_line_tool, docker" file="docker_entrypoint" url="cwltest:conformance_test_v1.0#173">
+			<system-out>{
+    &quot;cow&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpq3muhqqo/cow&quot;,
+        &quot;basename&quot;: &quot;cow&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7a788f56fa49ae0ba5ebde780efe4d6a89b5db47&quot;,
+        &quot;size&quot;: 4,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpq3muhqqo/cow&quot;
+    }
+}</system-out>
+			<system-err>INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+2026/09/20 22:50:27  warn xattr{etc/shadow} ignoring ENOTSUP on setxattr &quot;user.rootlesscontainers&quot;
+2026/09/20 22:50:27  warn xattr{/home/[REDACTED]/build-temp-413409560/rootfs/etc/shadow} destination filesystem does not support xattrs, further warnings will be suppressed
+INFO:    Inserting Singularity configuration...
+INFO:    Creating SIF file...
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test use of size in expressions for an empty file" time="4.464539" class="command_line_tool, inline_javascript" file="clt_file_size_property_with_empty_file" url="cwltest:conformance_test_v1.0#174">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpbsin_uc_/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$dad5a8472b87f6c5ef87d8fc6ef1458defc57250&quot;,
+        &quot;size&quot;: 11,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpbsin_uc_/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test use of size in expressions for a few files" time="4.355795" class="command_line_tool, inline_javascript" file="clt_file_size_property_with_multi_file" url="cwltest:conformance_test_v1.0#175">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp6n7m_lxy/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$9def39730e8012bd09bf8387648982728501737d&quot;,
+        &quot;size&quot;: 31,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp6n7m_lxy/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test Any without defaults, unspecified, should fail." time="1.111289" class="command_line_tool, required" file="any_without_defaults_unspecified_fails" url="cwltest:conformance_test_v1.0#176">
+			<system-err>[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+v1.0/echo-tool.cwl:9:3: Missing required input parameter 'in'[0m
+</system-err>
+		</testcase>
+		<testcase name="Test Any without defaults, specified, should fail." time="1.144465" class="command_line_tool, required" file="any_without_defaults_specified_fails" url="cwltest:conformance_test_v1.0#177">
+			<system-err>[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+v1.0/echo-tool.cwl:9:3: Missing required input parameter 'in'[0m
+</system-err>
+		</testcase>
+		<testcase name="Test default value on step input parameter, no ExpressionTool" time="1.094109" class="workflow, required" file="step_input_default_value_noexp" url="cwltest:conformance_test_v1.0#178">
+			<system-out>{
+    &quot;wc_output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpymp0ne3n/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$3596ea087bfdaf52380eae441077572ed289d657&quot;,
+        &quot;size&quot;: 3,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpymp0ne3n/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source, no ExpressionTool" time="1.106721" class="workflow, required" file="step_input_default_value_overriden_noexp" url="cwltest:conformance_test_v1.0#179">
+			<system-out>{
+    &quot;wc_output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp7zd45mgg/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp7zd45mgg/output&quot;
+    }
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/count-lines11-wf-noET.cwl:6:3:  Source 'file1' of type [&quot;null&quot;, &quot;File&quot;] may be incompatible
+v1.0/count-lines11-wf-noET.cwl:17:7:   with sink 'file1' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Test nested workflow, without ExpressionTool" time="1.105119" class="workflow, subworkflow" file="nested_workflow_noexp" url="cwltest:conformance_test_v1.0#180">
+			<system-out>{
+    &quot;wc_output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp_meq26al/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$3596ea087bfdaf52380eae441077572ed289d657&quot;,
+        &quot;size&quot;: 3,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp_meq26al/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test step input with multiple sources with multiple types, without ExpressionTool" time="2.284479" class="workflow, step_input, inline_javascript, multiple_input" file="wf_multiplesources_multipletypes_noexp" url="cwltest:conformance_test_v1.0#181">
+			<system-out>{
+    &quot;result&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpt1p_iny1/result.txt&quot;,
+        &quot;basename&quot;: &quot;result.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$ad552e6dc057d1d825bf49df79d6b98eba846ebe&quot;,
+        &quot;size&quot;: 3,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpt1p_iny1/result.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input." time="1.173534" class="workflow, resource" file="dynamic_resreq_wf_optional_file_default" url="cwltest:conformance_test_v1.0#182">
+			<system-out>{
+    &quot;cores&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp7_q5tpi7/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp7_q5tpi7/output&quot;
+    }
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/dynresreq-workflow-tooldefault.cwl:6:3:  Source 'special_file' of type [&quot;null&quot;, &quot;File&quot;] may be
+                                              incompatible
+v1.0/dynresreq-workflow-tooldefault.cwl:15:7:   with sink 'special_file' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input." time="1.177625" class="workflow, resource" file="dynamic_resreq_wf_optional_file_step_default" url="cwltest:conformance_test_v1.0#183">
+			<system-out>{
+    &quot;cores&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpyejk6e4f/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpyejk6e4f/output&quot;
+    }
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/dynresreq-workflow-stepdefault.cwl:6:3:  Source 'special_file' of type [&quot;null&quot;, &quot;File&quot;] may be
+                                              incompatible
+v1.0/dynresreq-workflow-stepdefault.cwl:15:7:   with sink 'special_file' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itself provides a default value (a local file) for this input." time="1.204074" class="workflow, resource" file="dynamic_resreq_wf_optional_file_wf_default" url="cwltest:conformance_test_v1.0#184">
+			<system-out>{
+    &quot;cores&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpid7vzau0/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$7448d8798a4380162d4b56f9b452e2f6f9e24e7a&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpid7vzau0/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With passthrough first step" time="4.403184" class="workflow, inline_javascript" file="step_input_default_value_overriden_2nd_step" url="cwltest:conformance_test_v1.0#185">
+			<system-out>{
+    &quot;count_output&quot;: 1
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/count-lines11-extra-step-wf.cwl:6:3:  Source 'file1' of type [&quot;null&quot;, &quot;File&quot;] may be
+                                           incompatible
+v1.0/count-lines11-extra-step-wf.cwl:17:7:   with sink 'file1' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool" time="1.184611" class="workflow, required" file="step_input_default_value_overriden_2nd_step_noexp" url="cwltest:conformance_test_v1.0#186">
+			<system-out>{
+    &quot;wc_output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmprn6nb1hq/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$e5fa44f2b31c1fb553b6021e7360d07d5d91ff5e&quot;,
+        &quot;size&quot;: 2,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmprn6nb1hq/output&quot;
+    }
+}</system-out>
+			<system-err>[1;30mWARNING[0m [33mWorkflow checker warning:
+v1.0/count-lines11-extra-step-wf-noET.cwl:6:3:  Source 'file1' of type [&quot;null&quot;, &quot;File&quot;] may be
+                                                incompatible
+v1.0/count-lines11-extra-step-wf-noET.cwl:17:7:   with sink 'file1' of type &quot;File&quot;[0m
+</system-err>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With null producing first step" time="4.552744" class="workflow, inline_javascript" file="step_input_default_value_overriden_2nd_step_null" url="cwltest:conformance_test_v1.0#187">
+			<system-out>{
+    &quot;count_output&quot;: 16
+}</system-out>
+		</testcase>
+		<testcase name="Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool" time="4.462305" class="workflow, required" file="step_input_default_value_overriden_2nd_step_null_noexp" url="cwltest:conformance_test_v1.0#188">
+			<system-out>{
+    &quot;wc_output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmplvl1ln8e/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$3596ea087bfdaf52380eae441077572ed289d657&quot;,
+        &quot;size&quot;: 3,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmplvl1ln8e/output&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Pipe to stdin from user provided local File via a Directory literal" time="1.214745" class="command_line_tool, required" file="stdin_from_directory_literal_with_local_file" url="cwltest:conformance_test_v1.0#189">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp7j70wr4y/5dbb6a708b525ff922ed1a620cab2f2b5f9dfad6&quot;,
+        &quot;basename&quot;: &quot;5dbb6a708b525ff922ed1a620cab2f2b5f9dfad6&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$47a013e660d408619d894b20806b1d5086aab03b&quot;,
+        &quot;size&quot;: 13,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp7j70wr4y/5dbb6a708b525ff922ed1a620cab2f2b5f9dfad6&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Pipe to stdin from literal File via a Directory literal" time="1.208784" class="command_line_tool, required" file="stdin_from_directory_literal_with_literal_file" url="cwltest:conformance_test_v1.0#190">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmp9wcrj5cy/5dbb6a708b525ff922ed1a620cab2f2b5f9dfad6&quot;,
+        &quot;basename&quot;: &quot;5dbb6a708b525ff922ed1a620cab2f2b5f9dfad6&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$ef88e689559565999700d6fea7cf7ba306d04360&quot;,
+        &quot;size&quot;: 26,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmp9wcrj5cy/5dbb6a708b525ff922ed1a620cab2f2b5f9dfad6&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test non-stdin reference to literal File via a Directory literal" time="1.195045" class="command_line_tool, required" file="directory_literal_with_literal_file_nostdin" url="cwltest:conformance_test_v1.0#191">
+			<system-out>{
+    &quot;output_file&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpu_2y89jo/output.txt&quot;,
+        &quot;basename&quot;: &quot;output.txt&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$ef88e689559565999700d6fea7cf7ba306d04360&quot;,
+        &quot;size&quot;: 26,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpu_2y89jo/output.txt&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test CommandLineTool without inputs" time="2.045373" class="command_line_tool, required" file="no_inputs_commandlinetool" url="cwltest:conformance_test_v1.0#192">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpndfh3mwu/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae&quot;,
+        &quot;size&quot;: 4,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpndfh3mwu/output&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test CommandLineTool without outputs" time="2.170173" class="command_line_tool, required" file="no_outputs_commandlinetool" url="cwltest:conformance_test_v1.0#193">
+			<system-out>{}</system-out>
+			<system-err>/var/lib/cwl/stg07e8fa52-96d8-43f8-8909-43526c6c7711/hello.txt
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test Workflow without inputs" time="2.191221" class="workflow, required" file="no_inputs_workflow" url="cwltest:conformance_test_v1.0#194">
+			<system-out>{
+    &quot;output&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpltyvufai/output&quot;,
+        &quot;basename&quot;: &quot;output&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$1334e67fe9eb70db8ae14ccfa6cfb59e2cc24eae&quot;,
+        &quot;size&quot;: 4,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpltyvufai/output&quot;
+    }
+}</system-out>
+			<system-err>ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test Workflow without outputs" time="2.039214" class="workflow, required" file="no_outputs_workflow" url="cwltest:conformance_test_v1.0#195">
+			<system-out>{}</system-out>
+			<system-err>/var/lib/cwl/stgd6ecbcaa-0582-42f1-bb54-2bf35b3d1f35/hello.txt
+ERROR:   While running host cleanup tasks: encountered errors during CleanupHost: []
+ERROR:   Unprivileged host cleanup failed: host cleanup failed
+</system-err>
+		</testcase>
+		<testcase name="Test an anonymous enum inside an array inside a record" time="1.297879" class="command_line_tool, required" file="anonymous_enum_in_array" url="cwltest:conformance_test_v1.0#196">
+			<system-out>{
+    &quot;result&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmprgfyoiec/4fd13d2da6dd20e752804644bb6fd121f07fde65&quot;,
+        &quot;basename&quot;: &quot;4fd13d2da6dd20e752804644bb6fd121f07fde65&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$2132943d72c39423e0b9425cbc40dfd5bf3e9cb2&quot;,
+        &quot;size&quot;: 39,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmprgfyoiec/4fd13d2da6dd20e752804644bb6fd121f07fde65&quot;
+    }
+}</system-out>
+		</testcase>
+		<testcase name="Test an anonymous enum inside an array inside a record, SchemaDefRequirement" time="1.141658" class="command_line_tool, schema_def" file="schema-def_anonymous_enum_in_array" url="cwltest:conformance_test_v1.0#197">
+			<system-out>{
+    &quot;result&quot;: {
+        &quot;location&quot;: &quot;file:///home/[REDACTED]/tmpgs0krd3r/63e18fc077f6c7850b334d3acdf74df99678d439&quot;,
+        &quot;basename&quot;: &quot;63e18fc077f6c7850b334d3acdf74df99678d439&quot;,
+        &quot;class&quot;: &quot;File&quot;,
+        &quot;checksum&quot;: &quot;sha1$f17c7d81f66e1520fca25b96b90eeeae5bbf08b0&quot;,
+        &quot;size&quot;: 39,
+        &quot;path&quot;: &quot;/home/[REDACTED]/tmpgs0krd3r/63e18fc077f6c7850b334d3acdf74df99678d439&quot;
+    }
+}</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
