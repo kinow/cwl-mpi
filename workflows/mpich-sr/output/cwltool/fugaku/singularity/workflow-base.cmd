@@ -1,0 +1,1 @@
+COMMAND: cwltool --singularity --debug --strict-cpu-limit --strict-memory-limit --enable-ext --mpi-config-file mpi-config-file.yml --preserve-entire-environment --outdir=logs/cwltool/fugaku/singularity sr-workflow-base-command.cwl --np 2
