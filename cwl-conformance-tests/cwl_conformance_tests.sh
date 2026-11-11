@@ -134,10 +134,10 @@ setup_python_env() {
 
     case "$TOOL" in
     cwltool)
-        "$ENV_DIR/bin/pip" install cwltool==3.2.20260413085819
+        "$ENV_DIR/bin/pip" install cwltool==3.3.20261106131234
         ;;
     toil)
-        "$ENV_DIR/bin/pip" install toil[cwl]==9.4.1
+        "$ENV_DIR/bin/pip" install toil[cwl]==9.6.0
         ;;
     esac
 }

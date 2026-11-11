@@ -62,13 +62,21 @@ venv/
 *.sif
 *.tar
 
+# Compiled binaries
 examples/openmpi-hello_nodename/singularity/a.out
 
+# CWL conformance tests
 cwl-conformance-tests/runs/
 cwl-conformance-tests/*.aux
 cwl-conformance-tests/*.log
-run.log
 
+# Ignore run.log everywhere by default
+**/run.log
+
+# Allow CWL conformance test run logs
+!cwl-conformance-tests/**/run.log
+
+# Workflow outputs
 workflows/mpich-sr/logs/
 workflows/mpich-sr/table.aux
 workflows/mpich-sr/table.log

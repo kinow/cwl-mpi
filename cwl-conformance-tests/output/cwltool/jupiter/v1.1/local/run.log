@@ -1,0 +1,1532 @@
+=== RUN START ===
+Wed Nov 11 09:08:48 PM CET 2026
+TOOL=[REDACTED]tool
+VERSION=v1.1
+MODE=local
+RUNNER=[REDACTED]tool
+HPC_SCRATCH_DIR=/e/scratch/[REDACTED]/tmp/
+RUN_ROOT_DIR=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28
+CWLTEST_OUTDIR=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837
+EXTRA=--singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir
+=================
+
+/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/bin/[REDACTED]tool 3.3.20261106131234
+
++ [REDACTED]test --verbose --test=conformance_tests.yaml --outdir=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837 --junit-verbose --junit-xml=/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/[REDACTED]tool/v1.1/local/junit.xml -j8 --tool=[REDACTED]tool --timeout=3600 -- --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `id` field with integer is deprecated. Use string identifier instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+The `label` field is deprecated. Use `id` field instead.
+Test [1/253] cl_basic_generation: General test of command line generation
+
+Test [2/253] nested_prefixes_arrays: Test nested prefixes with arrays
+
+Test [3/253] nested_cl_bindings: Test nested command line bindings
+
+Test [4/253] cl_optional_inputs_missing: Test command line with optional input (missing)
+
+Test [5/253] cl_optional_bindings_provided: Test command line with optional input (provided)
+
+Test [6/253] initworkdir_expreng_requirements: Test InitialWorkDirRequirement ExpressionEngineRequirement.engineConfig feature
+
+Test [7/253] stdout_redirect_docker: Test command execution in Docker with stdout redirection
+
+Test [8/253] stdout_redirect_shortcut_docker: Test command execution in Docker with shortcut stdout redirection
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpro_334us --quiet tests/binding-test.[REDACTED] tests/bwa-mem-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppay_dpa5 --quiet tests/cat1-testcli.[REDACTED] tests/cat-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmprgo7_bck --quiet tests/bwa-mem-tool.[REDACTED] tests/bwa-mem-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpuzup7r8e --quiet tests/tmap-tool.[REDACTED] tests/tmap-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpnvopz8le --quiet tests/cat1-testcli.[REDACTED] tests/cat-n-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpjyej7f1r --quiet tests/template-tool.[REDACTED] tests/cat-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpuypqb8c8 --quiet tests/cat3-tool.[REDACTED] tests/cat-job.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpo6sxx2pc --quiet tests/cat3-tool-shortcut.[REDACTED] tests/cat-job.json
+Pulling debian:stretch-slim with Singularity...
+Pulling python:2-slim with Singularity...
+Pulling python:2-slim with Singularity...
+Pulling python:2-slim with Singularity...
+Pulling debian:stretch-slim with Singularity...
+Pulling python:2-slim with Singularity...
+Pulling python:2-slim with Singularity...
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:       exports = module.exports = _;
+tests/template-tool.[REDACTED]:7:9: JSHINT:       ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:     exports._ = _;
+tests/template-tool.[REDACTED]:7:9: JSHINT:     ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'exports' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:     if (typeof module !== 'undefined' && module.exports) {
+tests/template-tool.[REDACTED]:7:9: JSHINT:                                          ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:       exports = module.exports = _;
+tests/template-tool.[REDACTED]:7:9: JSHINT:                 ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'module' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:     return setTimeout(function(){
+tests/template-tool.[REDACTED]:7:9: JSHINT:            ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:         timeout = setTimeout(later, remaining);
+tests/template-tool.[REDACTED]:7:9: JSHINT:                   ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:         timeout = setTimeout(later, wait - last);
+tests/template-tool.[REDACTED]:7:9: JSHINT:                   ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:       if (!timeout) timeout = setTimeout(later, wait);
+tests/template-tool.[REDACTED]:7:9: JSHINT:                               ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'setTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:         clearTimeout(timeout);
+tests/template-tool.[REDACTED]:7:9: JSHINT:         ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'clearTimeout' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:     root._ = previousUnderscore;
+tests/template-tool.[REDACTED]:7:9: JSHINT:              ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'previousUnderscore' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:   if (typeof define === 'function' && define.amd) {
+tests/template-tool.[REDACTED]:7:9: JSHINT:                                       ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:7:9: JSHINT:     define('underscore', [], function() {
+tests/template-tool.[REDACTED]:7:9: JSHINT:     ^
+tests/template-tool.[REDACTED]:7:9: JSHINT: W117: 'define' is not defined.[0m
+[1;30mWARNING[0m [33mtests/template-tool.[REDACTED]:8:9: JSHINT: var t = function(s) { return _.template(s, {variable: 'data'})({'inputs': inputs}); };
+tests/template-tool.[REDACTED]:8:9: JSHINT:                              ^
+tests/template-tool.[REDACTED]:8:9: JSHINT: W117: '_' is not defined.[0m
+Pulling debian:stretch-slim with Singularity...
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif
+Test [9/253] stdout_redirect_mediumcut_docker: Test command execution in Docker with mediumcut stdout redirection
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpmvrqybiu --quiet tests/cat3-tool-mediumcut.[REDACTED] tests/cat-job.json
+Test [10/253] stderr_redirect: Test command line with stderr redirection
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgmmf7mri --quiet tests/stderr.[REDACTED] tests/empty.json
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:2-slim.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:2-slim.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:2-slim.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:2-slim.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:2-slim.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/debian:stretch-slim.sif
+The file is hello.txt
+Test [11/253] stderr_redirect_shortcut: Test command line with stderr redirection, brief syntax
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8c4thuz0 --quiet tests/stderr-shortcut.[REDACTED] tests/empty.json
+Test [12/253] stderr_redirect_mediumcut: Test command line with stderr redirection, named brief syntax
+
+Test [13/253] stdinout_redirect_docker: Test command execution in Docker with stdin and stdout redirection
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp53h7wniv --quiet tests/stderr-mediumcut.[REDACTED] tests/empty.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvg1j01k6 --quiet tests/cat4-tool.[REDACTED] tests/cat-job.json
+Test [14/253] expression_any: Test default usage of Any in expressions.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpesh3jlm1 --quiet tests/null-expression1-tool.[REDACTED] tests/empty.json
+Test [15/253] expression_any_null: Test explicitly passing null to Any type inputs with default values.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6_72dnm5 --quiet tests/null-expression1-tool.[REDACTED] tests/null-expression1-job.json
+Test [16/253] expression_any_string: Testing the string 'null' does not trip up an Any with a default value.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpz33f7iiy --quiet tests/null-expression1-tool.[REDACTED] tests/null-expression2-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [17/253] expression_any_nodefaultany: Test Any without defaults cannot be unspecified.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmptuams12f --quiet tests/null-expression2-tool.[REDACTED] tests/empty.json
+Test [18/253] expression_any_null_nodefaultany: Test explicitly passing null to Any type without a default value.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwsjruydu --quiet tests/null-expression2-tool.[REDACTED] tests/null-expression1-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [19/253] expression_any_nullstring_nodefaultany: Testing the string 'null' does not trip up an Any without a default value.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp0pm0qczo --quiet tests/null-expression2-tool.[REDACTED] tests/null-expression2-job.json
+Test [20/253] any_outputSource_compatibility: Testing Any type compatibility in outputSource
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp_r30hu3q --quiet tests/any-type-compat.[REDACTED] tests/any-type-job.json
+Test [21/253] stdinout_redirect: Test command execution in with stdin and stdout redirection
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpjlmftlz2 --quiet tests/cat-tool.[REDACTED] tests/cat-job.json
+Test [22/253] expression_parseint: Test ExpressionTool with Javascript engine
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmph6y8_6ld --quiet tests/parseInt-tool.[REDACTED] tests/parseInt-job.json
+Test [23/253] expression_outputEval: Test outputEval to transform output
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpjewp3l3n --quiet tests/wc2-tool.[REDACTED] tests/wc-job.json
+Test [24/253] wf_wc_parseInt: Test two step workflow with imported tools
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpufq5ah2k --quiet tests/count-lines1-wf.[REDACTED] tests/wc-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/null-expression2-tool.[REDACTED]:9:3: Missing required input parameter 'i1'[0m
+Test [25/253] wf_wc_expressiontool: Test two step workflow with inline tools
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp4telw1gl --quiet tests/count-lines2-wf.[REDACTED] tests/wc-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/null-expression2-tool.[REDACTED]:9:3: Missing required input parameter 'i1'[0m
+Test [26/253] wf_wc_scatter: Test single step workflow with Scatter step
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5gcf71dp --quiet tests/count-lines3-wf.[REDACTED] tests/count-lines3-job.json
+Test [27/253] wf_wc_scatter_multiple_merge: Test single step workflow with Scatter step and two data links connected to same input, default merge behavior
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvjkcefum --quiet tests/count-lines4-wf.[REDACTED] tests/count-lines4-job.json
+Test [28/253] wf_wc_scatter_multiple_nested: Test single step workflow with Scatter step and two data links connected to same input, nested merge behavior
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8ldi2vnn --quiet tests/count-lines6-wf.[REDACTED] tests/count-lines6-job.json
+Test [29/253] wf_wc_scatter_multiple_flattened: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpnldu3o0e --quiet tests/count-lines7-wf.[REDACTED] tests/count-lines6-job.json
+Test [30/253] wf_wc_nomultiple: Test that no MultipleInputFeatureRequirement is necessary when workflow step source is a single-item list
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppzopb4fp --quiet tests/count-lines13-wf.[REDACTED] tests/count-lines6-job.json
+Test [31/253] wf_input_default_missing: Test workflow with default value for input parameter (missing)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpunqqof3x --quiet tests/count-lines5-wf.[REDACTED] tests/empty.json
+Test [32/253] wf_input_default_provided: Test workflow with default value for input parameter (provided)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpc2oh138w --quiet tests/count-lines5-wf.[REDACTED] tests/wc-job.json
+Test [33/253] wf_default_tool_default: Test that workflow defaults override tool defaults
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmploeenvzg --quiet tests/echo-wf-default.[REDACTED] tests/empty.json
+Test [34/253] envvar_req: Test EnvVarRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp18udh7n7 --quiet tests/env-tool1.[REDACTED] tests/env-job.json
+Test [35/253] wf_scatter_single_param: Test workflow scatter with single scatter parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpq021tb9i --quiet tests/scatter-wf1.[REDACTED] tests/scatter-job1.json
+Test [36/253] wf_scatter_two_nested_crossproduct: Test workflow scatter with two scatter parameters and nested_crossproduct join method
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpcf77mtb5 --quiet tests/scatter-wf2.[REDACTED] tests/scatter-job2.json
+Test [37/253] wf_scatter_two_flat_crossproduct: Test workflow scatter with two scatter parameters and flat_crossproduct join method
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpafrm1n_k --quiet tests/scatter-wf3.[REDACTED]#main tests/scatter-job2.json
+Test [38/253] wf_scatter_two_dotproduct: Test workflow scatter with two scatter parameters and dotproduct join method
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6wonrs7a --quiet tests/scatter-wf4.[REDACTED]#main tests/scatter-job2.json
+Test [39/253] wf_scatter_emptylist: Test workflow scatter with single empty list parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpn0ych_a_ --quiet tests/scatter-wf1.[REDACTED] tests/scatter-empty-job1.json
+Test [40/253] wf_scatter_nested_crossproduct_secondempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with second list empty
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2rpoq7lc --quiet tests/scatter-wf2.[REDACTED] tests/scatter-empty-job2.json
+Test [41/253] wf_scatter_nested_crossproduct_firstempty: Test workflow scatter with two scatter parameters and nested_crossproduct join method with first list empty
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp61ez4bns --quiet tests/scatter-wf3.[REDACTED]#main tests/scatter-empty-job3.json
+Test [42/253] wf_scatter_flat_crossproduct_oneempty: Test workflow scatter with two scatter parameters, one of which is empty and flat_crossproduct join method
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpg708k6ai --quiet tests/scatter-wf3.[REDACTED]#main tests/scatter-empty-job2.json
+Test [43/253] wf_scatter_dotproduct_twoempty: Test workflow scatter with two empty scatter parameters and dotproduct join method
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpm4_uqppg --quiet tests/scatter-wf4.[REDACTED]#main tests/scatter-empty-job4.json
+Test [44/253] any_input_param: Test Any type input parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6l5fx9ex --quiet tests/echo-tool.[REDACTED] tests/env-job.json
+Test [45/253] nested_workflow: Test nested workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqzrd_4xx --quiet tests/count-lines8-wf.[REDACTED] tests/wc-job.json
+Test [46/253] requirement_priority: Test requirement priority
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqmjfqwd_ --quiet tests/env-wf1.[REDACTED] tests/env-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in'.  All outputs will be empty.[0m
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+Test [47/253] requirement_override_hints: Test requirements override hints
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpp4k20721 --quiet tests/env-wf2.[REDACTED] tests/env-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1'.  All outputs will be empty.[0m
+Test [48/253] requirement_workflow_steps: Test requirements on workflow steps
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpcdra1zcn --quiet tests/env-wf3.[REDACTED] tests/env-job.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in2'.  All outputs will be empty.[0m
+Test [49/253] step_input_default_value: Test default value on step input parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwglb67l4 --quiet tests/count-lines9-wf.[REDACTED] tests/empty.json
+[1;30mWARNING[0m [33m[job step step1] Notice: scattering over empty input in 'echo_in1', 'echo_in2'.  All outputs will be empty.[0m
+Test [50/253] step_input_default_value_nosource: Test use default value on step input parameter with empty source
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpng3sh8ai --quiet tests/count-lines11-wf.[REDACTED] tests/empty.json
+Test [51/253] step_input_default_value_nullsource: Test use default value on step input parameter with null source
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8tp7gg9i --quiet tests/count-lines11-wf.[REDACTED] tests/file1-null.json
+Test [52/253] step_input_default_value_overriden: Test default value on step input parameter overridden by provided source
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpds___h7h --quiet tests/count-lines11-wf.[REDACTED] tests/cat-job.json
+Test [53/253] wf_simple: Test simple workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5a_e3ekp --quiet tests/revsort.[REDACTED] tests/revsort-job.json
+Test [54/253] hints_unknown_ignored: Test unknown hints are ignored.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpra6vwpna --quiet tests/cat5-tool.[REDACTED] tests/cat-job.json
+Test [55/253] initial_workdir_secondary_files_expr: Test InitialWorkDirRequirement linking input files and capturing secondaryFiles on input and output. Also tests the use of a variety of parameter references and expressions in the secondaryFiles field.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpea2f8ydu --quiet tests/search.[REDACTED]#main tests/search-job.json
+Test [56/253] rename: Test InitialWorkDirRequirement with expression in filename.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpogof5xle --quiet tests/rename.[REDACTED] tests/rename-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.[REDACTED]:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.[REDACTED]:17:7:   with sink 'file1' of type "File"[0m
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.[REDACTED]:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.[REDACTED]:17:7:   with sink 'file1' of type "File"[0m
+Test [57/253] initial_workdir_trailingnl: Test if trailing newline is present in file entry in InitialWorkDir
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvtsuc4va --quiet tests/iwdr-entry.[REDACTED] tests/string-job.json
+Test [58/253] inline_expressions: Test inline expressions
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpy4w5br20 --quiet tests/wc4-tool.[REDACTED] tests/wc-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf.[REDACTED]:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf.[REDACTED]:17:7:   with sink 'file1' of type "File"[0m
+Test [59/253] schemadef_req_tool_param: Test SchemaDefRequirement definition used in tool parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpl5uuelgn --quiet tests/schemadef-tool.[REDACTED] tests/schemadef-job.json
+[1;30mWARNING[0m [33mtests/cat5-tool.[REDACTED]:10:3: Warning: checking item
+                          Warning:   Field 'class' contains undefined reference to
+                          'http://example.com/BlibberBlubberFakeRequirement'[0m
+Already cached debian:stretch-slim with Singularity.
+Test [60/253] schemadef_req_wf_param: Test SchemaDefRequirement definition used in workflow parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpt7xjgo7_ --quiet tests/schemadef-wf.[REDACTED] tests/schemadef-job.json
+Already cached debian:stretch-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+Test [61/253] param_evaluation_noexpr: Test parameter evaluation, no support for JS expressions
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp_0kvburr --quiet tests/params.[REDACTED] tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/search.[REDACTED]:103:13: Source 'result' of type "File" may be incompatible
+tests/search.[REDACTED]:108:9:    with sink 'file' of type "File"[0m
+Test [62/253] param_evaluation_expr: Test parameter evaluation, with support for JS expressions
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2o6ztlev --quiet tests/params2.[REDACTED] tests/empty.json
+Test [63/253] metadata: Test metadata
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp0f5trm8r --quiet tests/metadata.[REDACTED] tests/cat-job.json
+Already cached python:2-slim with Singularity.
+CONFIGVAR=hello
+Test [64/253] format_checking: Test simple format checking.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpto6zn6t0 --quiet tests/formattest.[REDACTED] tests/formattest-job.json
+Test [65/253] format_checking_subclass: Test format checking against ontology using subclassOf.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpcp7rxpy3 --quiet tests/formattest2.[REDACTED] tests/formattest2-job.json
+Already cached python:2-slim with Singularity.
+Test [66/253] format_checking_equivalentclass: Test format checking against ontology using equivalentClass.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppxquete3 --quiet tests/formattest3.[REDACTED] tests/formattest2-job.json
+Test [67/253] output_secondaryfile_optional: Test optional output file and optional secondaryFile on output.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp7073jkrw --quiet tests/optional-output.[REDACTED] tests/cat-job.json
+Test [68/253] valuefrom_ignored_null: Test that valueFrom is ignored when the parameter is null
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmprszad4g3 --quiet tests/vf-concat.[REDACTED] tests/empty.json
+Test [69/253] valuefrom_secondexpr_ignored: Test that second expression in concatenated valueFrom is not ignored
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp01yxayg2 --quiet tests/vf-concat.[REDACTED] tests/cat-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [70/253] valuefrom_wf_step: Test valueFrom on workflow step.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpcaa0x15u --quiet tests/step-valuefrom-wf.[REDACTED] tests/step-valuefrom-wf.json
+Test [71/253] valuefrom_wf_step_multiple: Test valueFrom on workflow step with multiple sources
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpeo_4ox2p --quiet tests/step-valuefrom2-wf.[REDACTED] tests/step-valuefrom-job.json
+Hello world!
+Test [72/253] valuefrom_wf_step_other: Test valueFrom on workflow step referencing other inputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpkb7qufvn --quiet tests/step-valuefrom3-wf.[REDACTED] tests/step-valuefrom-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [73/253] record_output_binding: Test record type output binding.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmply25gi_u --quiet tests/record-output.[REDACTED] tests/record-output-job.json
+Test [74/253] docker_json_output_path: Test support for reading [REDACTED].output.json when running in a Docker container and just 'path' is provided.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmphxwsxicw --quiet tests/test-[REDACTED]-out.[REDACTED] tests/empty.json
+Test [75/253] docker_json_output_location: Test support for reading [REDACTED].output.json when running in a Docker container and just 'location' is provided.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2tvq32jm --quiet tests/test-[REDACTED]-out2.[REDACTED] tests/empty.json
+Test [76/253] multiple_glob_expr_list: Test support for returning multiple glob patterns from expression
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpx_68g12y --quiet tests/glob-expr-list.[REDACTED] tests/abc.json
+Test [77/253] wf_scatter_oneparam_valuefrom: Test workflow scatter with single scatter parameter and two valueFrom on step input (first and current el)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp65xo3ozw --quiet tests/scatter-valuefrom-wf1.[REDACTED] tests/scatter-valuefrom-job1.json
+Test [78/253] wf_scatter_twoparam_nested_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and nested_crossproduct join method and valueFrom on step input
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpj6qsus5q --quiet tests/scatter-valuefrom-wf2.[REDACTED] tests/scatter-valuefrom-job2.json
+Already cached debian:stretch-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+Test [79/253] wf_scatter_twoparam_flat_crossproduct_valuefrom: Test workflow scatter with two scatter parameters and flat_crossproduct join method and valueFrom on step input
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmphw_7mkoc --quiet tests/scatter-valuefrom-wf3.[REDACTED]#main tests/scatter-valuefrom-job2.json
+Already cached debian:stretch-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+Test [80/253] wf_scatter_twoparam_dotproduct_valuefrom: Test workflow scatter with two scatter parameters and dotproduct join method and valueFrom on step input
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpynj0vm_1 --quiet tests/scatter-valuefrom-wf4.[REDACTED]#main tests/scatter-valuefrom-job2.json
+Test [81/253] wf_scatter_oneparam_valuefrom_twice_current_el: Test workflow scatter with single scatter parameter and two valueFrom on step input (current el twice)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmporq0in3q --quiet tests/scatter-valuefrom-wf5.[REDACTED] tests/scatter-valuefrom-job1.json
+Test [82/253] wf_scatter_oneparam_valueFrom: Test valueFrom eval on scattered input parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwxylutjd --quiet tests/scatter-valuefrom-wf6.[REDACTED] tests/scatter-valuefrom-job3.json
+Test [83/253] wf_two_inputfiles_namecollision: Test workflow two input files with same name.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp1mtux_v5 --quiet tests/conflict-wf.[REDACTED]#collision tests/conflict-job.json
+Test [84/253] directory_input_param_ref: Test directory input with parameter reference
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmplvozlsth --quiet tests/dir.[REDACTED] tests/dir-job.yml
+Test [85/253] directory_input_docker: Test directory input in Docker
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwtekivdi --quiet tests/dir2.[REDACTED] tests/dir-job.yml
+Test [86/253] directory_output: Test directory output
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpidk8z0kw --quiet tests/dir3.[REDACTED] tests/dir3-job.yml
+Test [87/253] directory_secondaryfiles: Test directories in secondaryFiles
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpa2apo07p --quiet tests/dir4.[REDACTED] tests/dir4-job.yml
+Test [88/253] dynamic_initial_workdir: Test dynamic initial work dir
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwo1hc81t --quiet tests/dir5.[REDACTED] tests/dir-job.yml
+Test [89/253] writable_stagedfiles: Test writable staged files.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp4ca7g8w7 --quiet tests/stagefile.[REDACTED] tests/stagefile-job.yml
+Test [90/253] input_file_literal: Test file literal as input
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpo2tdopb_ --quiet tests/cat3-tool.[REDACTED] tests/file-literal.yml
+Test [91/253] initial_workdir_expr: Test expression in InitialWorkDir listing
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpddbqqr4f --quiet tests/linkfile.[REDACTED] tests/arguments-job.yml
+Test [92/253] nameroot_nameext_stdout_expr: Test nameroot/nameext expression in arguments, stdout
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqsmkth0q --quiet tests/nameroot.[REDACTED] tests/wc-job.json
+Already cached debian:stretch-slim with Singularity.
+hello.txt
+goodbye.txt
+Test [93/253] input_dir_inputbinding: Test directory input with inputBinding
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgswrkb27 --quiet tests/dir6.[REDACTED] tests/dir-job.yml
+Test [94/253] cl_gen_arrayofarrays: Test command line generation of array-of-arrays
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpdopqwg80 --quiet tests/nested-array.[REDACTED] tests/nested-array-job.yml
+Test [95/253] env_home_tmpdir: Test $HOME and $TMPDIR are set correctly
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpoi343z8t --quiet tests/envvar.[REDACTED] tests/empty.json
+Already cached python:2-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+Test [96/253] env_home_tmpdir_docker: Test $HOME and $TMPDIR are set correctly in Docker
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2ygcr0yr --quiet tests/envvar2.[REDACTED] tests/empty.json
+Test [97/253] expressionlib_tool_wf_override: Test that expressionLib requirement of individual tool step overrides expressionLib of workflow.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp3s822ttc --quiet tests/js-expr-req-wf.[REDACTED]#wf tests/empty.json
+Test [98/253] initial_workdir_output: Test output of InitialWorkDir
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpd5soy7iq --quiet tests/initialworkdirrequirement-docker-out.[REDACTED] tests/initialworkdirrequirement-docker-out-job.json
+Test [99/253] embedded_subworkflow: Test embedded subworkflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpub7ml932 --quiet tests/count-lines10-wf.[REDACTED] tests/wc-job.json
+Test [100/253] filesarray_secondaryfiles: Test required, optional and null secondaryFiles on array of files.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppafcz6jf --quiet tests/docker-array-secondaryfiles.[REDACTED] tests/docker-array-secondaryfiles-job.json
+Test [101/253] filesarray_secondaryfiles2: Test required, optional and null secondaryFiles on array of files.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppjn3_v4e --quiet tests/docker-array-secondaryfiles.[REDACTED] tests/docker-array-secondaryfiles-job2.json
+Test [102/253] exprtool_directory_literal: Test directory literal output created by ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpt4kgo1u5 --quiet tests/dir7.[REDACTED] tests/dir7.yml
+HOME=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdirji8iz2x7 TMPDIR=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir4f3gawgv
+Test [103/253] exprtool_file_literal: Test file literal output created by ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp3o02fdcq --quiet tests/file-literal-ex.[REDACTED] tests/empty.json
+Already cached debian:stretch-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+HOME=/XeQlCB TMPDIR=/tmp
+Test [104/253] dockeroutputdir: Test dockerOutputDirectory
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpmits1dgj --quiet tests/docker-output-dir.[REDACTED] tests/empty.json
+Test [105/253] hints_import: Test hints with $import
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp7grlph14 --quiet tests/imported-hint.[REDACTED] tests/empty.json
+Test [106/253] default_path_notfound_warning: Test warning instead of error when default path is not found
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp4fnoxlz4 --quiet tests/default_path.[REDACTED] tests/default_path_job.yml
+Test [107/253] inlinejs_req_expressions: Test InlineJavascriptRequirement with multiple expressions in the same tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpebtt5jiu --quiet tests/inline-js.[REDACTED] tests/empty.json
+Already cached debian:stretch-slim with Singularity.
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Missing required secondary file '.dat' from file object: {
+    "class": "File",
+    "location": "file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/ref.fasta",
+    "size": 12010,
+    "basename": "ref.fasta",
+    "nameroot": "ref",
+    "nameext": ".fasta",
+    "secondaryFiles": [
+        {
+            "location": "file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/ref.fasta.fai",
+            "basename": "ref.fasta.fai",
+            "class": "File"
+        }
+    ]
+}[0m
+Test [108/253] input_dir_recurs_copy_writable: Test if a writable input directory is recursively copied and writable
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpiiezcpxf --quiet tests/recursive-input-directory.[REDACTED] tests/recursive-input-directory.yml
+Test [109/253] null_missing_params: Test that missing parameters are null (not undefined) in expression
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpt083gmos --quiet tests/null-defined.[REDACTED] tests/empty.json
+Test [110/253] param_notnull_expr: Test that provided parameter is not null in expression
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpe3gl7ywi --quiet tests/null-defined.[REDACTED] tests/cat-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [111/253] wf_compound_doc: Test compound workflow document
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwc_vekdf --quiet tests/revsort-packed.[REDACTED]#main tests/revsort-job.json
+Test [112/253] nameroot_nameext_generated: Test that nameroot and nameext are generated from basename at execution time by the runner
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqxm94ou3 --quiet tests/basename-fields-test.[REDACTED] tests/basename-fields-job.yml
+Hello world!
+Test [113/253] initialworkpath_output: Test that file path in $(inputs) for initialworkdir is in $(outdir).
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp1_2dqagu --quiet tests/initialwork-path.[REDACTED] tests/wc-job.json
+Test [114/253] wf_scatter_twopar_oneinput_flattenedmerge: Test single step workflow with Scatter step and two data links connected to same input, flattened merge behavior. Workflow inputs are set as list
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgvr8lpbn --quiet tests/count-lines12-wf.[REDACTED] tests/count-lines6-job.json
+Test [115/253] wf_multiplesources_multipletypes: Test step input with multiple sources with multiple types
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpc_bqg8tz --quiet tests/sum-wf.[REDACTED] tests/sum-job.json
+Already cached python:2-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+Test [116/253] shelldir_notinterpreted: Test that shell directives are not interpreted.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmptxx7l8tz --quiet tests/shellchar.[REDACTED] tests/empty.json
+Test [117/253] shelldir_quoted: Test that shell directives are quoted.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpfel6s3iu --quiet tests/shellchar2.[REDACTED] tests/empty.json
+Test [118/253] initial_workdir_empty_writable: Test empty writable dir with InitialWorkDirRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp0_z6ddmj --quiet tests/writable-dir.[REDACTED] tests/empty.json
+Test [119/253] initial_workdir_empty_writable_docker: Test empty writable dir with InitialWorkDirRequirement inside Docker
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpuxxb_v5j --quiet tests/writable-dir-docker.[REDACTED] tests/empty.json
+Already cached debian:stretch-slim with Singularity.
+Test [120/253] dynamic_resreq_inputs: Test dynamic resource reqs referencing inputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpfbj002c1 --quiet tests/dynresreq.[REDACTED] tests/dynresreq-job.yaml
+Test [121/253] fileliteral_input_docker: Test file literal as input without Docker
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpskkhp9pt --quiet tests/cat3-nodocker.[REDACTED] tests/file-literal.yml
+Test [122/253] outputbinding_glob_sorted: Test that OutputBinding.glob is sorted as specified by POSIX
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpa7r4c9u4 --quiet tests/glob_test.[REDACTED] tests/empty.json
+Test [123/253] initialworkdir_nesteddir: Test InitialWorkDirRequirement with a nested directory structure from another step
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp7ljzvhk8 --quiet tests/iwdr_with_nested_dirs.[REDACTED] tests/empty.json
+Test [124/253] booleanflags_cl_noinputbinding: Test that boolean flags do not appear on command line if inputBinding is empty and not null
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpb3t3kjoo --quiet tests/bool-empty-inputbinding.[REDACTED] tests/bool-empty-inputbinding-job.json
+Test [125/253] expr_reference_self_noinput: Test that expression engine does not fail to evaluate reference to self with unprovided input
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgif1za90 --quiet tests/stage-unprovided-file.[REDACTED] tests/empty.json
+Test [126/253] success_codes: Test successCodes
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpklyzcsgu --quiet tests/exit-success.[REDACTED] tests/empty.json
+Test [127/253] dynamic_resreq_wf: Test simple workflow with a dynamic resource requirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpmxzxa4do --quiet tests/dynresreq-workflow.[REDACTED] tests/dynresreq-job.yaml
+Pulling alpine:latest with Singularity...
+Test [128/253] cl_empty_array_input: Test that empty array input does not add anything to command line
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp62f_r509 --quiet tests/empty-array-input.[REDACTED] tests/empty-array-job.json
+Test [129/253] resreq_step_overrides_wf: Test that ResourceRequirement on a step level redefines requirement on the workflow level
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppnxd9ql9 --quiet tests/steplevel-resreq.[REDACTED] tests/empty.json
+Test [130/253] valuefrom_constant_overrides_inputs: Test valueFrom with constant value overriding provided array inputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvuv3ej11 --quiet tests/valueFrom-constant.[REDACTED] tests/array-of-strings-job.yml
+Already cached python:2-slim with Singularity.
+Already cached python:2-slim with Singularity.
+Test [131/253] dynamic_resreq_filesizes: Test dynamic resource reqs referencing the size of Files inside a Directory
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpd0hlw8l0 --quiet tests/dynresreq-dir.[REDACTED] tests/dynresreq-dir-job.yaml
+Test [132/253] wf_step_connect_undeclared_param: Test that it is not an error to connect a parameter to a workflow step, even if the parameter doesn't appear in the `run` process inputs.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2dqupl6i --quiet tests/pass-unconnected.[REDACTED] tests/empty.json
+Already cached python:2-slim with Singularity.
+Test [133/253] wf_step_access_undeclared_param: Test that parameters that don't appear in the `run` process inputs are not present in the input object used to run the tool.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgla4h7lb --quiet tests/fail-unconnected.[REDACTED] tests/empty.json
+Test [134/253] env_home_tmpdir_docker: Test $HOME and $TMPDIR are set correctly in Docker without using return code
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpi9tg2msc --quiet tests/envvar3.[REDACTED] tests/empty.json
+Test [135/253] wf_scatter_oneparam_valuefrom_inputs: Test workflow scatter with single scatter parameter and two valueFrom using $inputs (first and current el)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5lbictvj --quiet tests/scatter-valuefrom-inputs-wf1.[REDACTED] tests/scatter-valuefrom-job1.json
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/alpine:latest.sif
+Already cached python:2-slim with Singularity.
+Test [136/253] packed_import_schema: SchemaDefRequirement with $import, and packed
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmphzf2pzot --quiet tests/import_schema-def_packed.[REDACTED] tests/import_schema-def_job.yml
+Test [137/253] job_input_secondary_subdirs: Test specifying secondaryFiles in subdirectories of the job input document.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvmgpds4l --quiet tests/dir4.[REDACTED] tests/dir4-subdir-1-job.yml
+Test [138/253] job_input_subdir_primary_and_secondary_subdirs: Test specifying secondaryFiles in same subdirectory of the job input as the primary input file.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpzm_2ajab --quiet tests/dir4.[REDACTED] tests/dir4-subdir-2-job.yml
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/pass-unconnected.[REDACTED]:18:7: 'in2' is not an input parameter of
+                                 file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/echo-tool.[REDACTED],
+                                 expected in[0m
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/fail-unconnected.[REDACTED]:18:7: 'in2' is not an input parameter of
+                                 file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/fail-unspecified-input.[REDACTED],
+                                 expected in[0m
+Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+Traceback (most recent call last):
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]_utils/expression.py", line 322, in do_eval
+    return interpolate(
+        ex,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]_utils/expression.py", line 227, in interpolate
+    e = evaluator(
+        js_engine, scan[w[0] + 1 : w[1]], rootvars, jslib, fullJS, **kwargs
+    )
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]_utils/expression.py", line 176, in evaluator
+    raise JavascriptException(
+    ...<3 lines>...
+    )
+[REDACTED]_utils.errors.JavascriptException: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: tests/fail-unspecified-input.[REDACTED]:13:33: Expression evaluation error:
+tests/fail-unspecified-input.[REDACTED]:13:33: Syntax error in parameter reference 'inputs.in2': inputs does not contain key 'in2'.. This could be due to using Javascript code without specifying InlineJavascriptRequirement.[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [139/253] scatter_embedded_subworkflow: Test simple scatter over an embedded subworkflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp57fmiyv_ --quiet tests/count-lines18-wf.[REDACTED] tests/count-lines3-job.json
+Test [140/253] scatter_multi_input_embedded_subworkflow: Test simple multiple input scatter over an embedded subworkflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpt69ir1m4 --quiet tests/count-lines14-wf.[REDACTED] tests/count-lines4-job.json
+Test [141/253] workflow_embedded_subworkflow_embedded_subsubworkflow: Test twice nested subworkflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpu77xp631 --quiet tests/count-lines15-wf.[REDACTED] tests/wc-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [142/253] workflow_embedded_subworkflow_with_tool_and_subsubworkflow: Test subworkflow of mixed depth with tool first
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmprmqua40v --quiet tests/count-lines16-wf.[REDACTED] tests/wc-job.json
+Test [143/253] workflow_embedded_subworkflow_with_subsubworkflow_and_tool: Test subworkflow of mixed depth with tool after
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8q2mjkt9 --quiet tests/count-lines17-wf.[REDACTED] tests/wc-job.json
+Test [144/253] workflow_records_inputs_and_outputs: Test record type inputs to and outputs from workflows.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpcucl2sse --quiet tests/record-output-wf.[REDACTED] tests/record-output-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [145/253] workflow_integer_input: Test integer workflow input and outputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvjlyoz8d --quiet tests/io-int-wf.[REDACTED] tests/io-int.json
+Test [146/253] workflow_integer_input_optional_specified: Test optional integer workflow inputs (specified)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmps_sgo4zw --quiet tests/io-int-optional-wf.[REDACTED] tests/io-int.json
+Test [147/253] workflow_integer_input_optional_unspecified: Test optional integer workflow inputs (unspecified)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpag470cvt --quiet tests/io-int-optional-wf.[REDACTED] tests/empty.json
+Test [148/253] workflow_integer_input_default_specified: Test default integer workflow inputs (specified)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp0hac29k9 --quiet tests/io-int-default-wf.[REDACTED] tests/io-int.json
+Test [149/253] workflow_integer_input_default_unspecified: Test default integer workflow inputs (unspecified)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpzidjekwn --quiet tests/io-int-default-wf.[REDACTED] tests/empty.json
+Test [150/253] workflow_integer_input_default_and_tool_integer_input_default: Test default integer tool and workflow inputs (unspecified)
+
+Test [151/253] workflow_file_input_default_unspecified: Test File input with default unspecified to workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpd09pt_j7 --quiet tests/io-int-default-tool-and-wf.[REDACTED] tests/empty.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpa1hhd_ml --quiet tests/io-file-default-wf.[REDACTED] tests/empty.json
+Test [152/253] workflow_file_input_default_specified: Test File input with default specified to workflow
+
+Test [153/253] clt_optional_union_input_file_or_files_with_array_of_one_file_provided: Test input union type or File or File array to a tool with one file in array specified.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpezn26p8z --quiet tests/io-file-default-wf.[REDACTED] tests/default_path_job.yml
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvsjwx8wu --quiet tests/io-file-or-files.[REDACTED] tests/job-input-array-one-empty-file.json
+Test [154/253] clt_optional_union_input_file_or_files_with_many_files_provided: Test input union type or File or File array to a tool with a few files in array specified.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp3d2jhmnk --quiet tests/io-file-or-files.[REDACTED] tests/job-input-array-few-files.json
+Test [155/253] clt_optional_union_input_file_or_files_with_single_file_provided: Test input union type or File or File array to a tool with one file specified.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvh_fyzx6 --quiet tests/io-file-or-files.[REDACTED] tests/job-input-one-file.json
+Test [156/253] clt_optional_union_input_file_or_files_with_nothing_provided: Test input union type or File or File array to a tool with null specified.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpf29i0r23 --quiet tests/io-file-or-files.[REDACTED] tests/job-input-null.json
+Test [157/253] clt_any_input_with_integer_provided: Test Any parameter with integer input to a tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5vrrawdh --quiet tests/io-any-1.[REDACTED] tests/io-any-int.json
+Test [158/253] clt_any_input_with_string_provided: Test Any parameter with string input to a tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpwoe4gyrx --quiet tests/io-any-1.[REDACTED] tests/io-any-string.json
+Test [159/253] clt_any_input_with_file_provided: Test Any parameter with file input to a tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqw1uv9eu --quiet tests/io-any-1.[REDACTED] tests/io-any-file.json
+Test [160/253] clt_any_input_with_mixed_array_provided: Test Any parameter with array input to a tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpz5_rbc85 --quiet tests/io-any-1.[REDACTED] tests/io-any-array.json
+Test [161/253] clt_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmphlfuje4h --quiet tests/io-any-1.[REDACTED] tests/io-any-record.json
+Test [162/253] workflow_any_input_with_integer_provided: Test Any parameter with integer input to a workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpaf_wac1c --quiet tests/io-any-wf-1.[REDACTED] tests/io-any-int.json
+Test [163/253] workflow_any_input_with_string_provided: Test Any parameter with string input to a workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6y46elrp --quiet tests/io-any-wf-1.[REDACTED] tests/io-any-string.json
+Test [164/253] workflow_any_input_with_file_provided: Test Any parameter with file input to a workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp4zrve0ei --quiet tests/io-any-wf-1.[REDACTED] tests/io-any-file.json
+Test [165/253] workflow_any_input_with_mixed_array_provided: Test Any parameter with array input to a workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpn91va24c --quiet tests/io-any-wf-1.[REDACTED] tests/io-any-array.json
+Test [166/253] workflow_any_input_with_record_provided: Test Any parameter with record input to a tool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpaohdp3ud --quiet tests/io-any-wf-1.[REDACTED] tests/io-any-record.json
+Test [167/253] workflow_union_default_input_unspecified: Test union type input to workflow with default unspecified
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp0kkp1x09 --quiet tests/io-union-input-default-wf.[REDACTED] tests/empty.json
+Test [168/253] workflow_union_default_input_with_file_provided: Test union type input to workflow with default specified as file
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpetsk454k --quiet tests/io-union-input-default-wf.[REDACTED] tests/io-any-file.json
+Test [169/253] workflowstep_valuefrom_string: Test valueFrom on workflow step from literal (string).
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgnq0md0l --quiet tests/step-valuefrom4-wf.[REDACTED] tests/empty.json
+Test [170/253] workflowstep_valuefrom_file_basename: Test valueFrom on workflow step using basename.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8da7bhzf --quiet tests/step-valuefrom5-wf.[REDACTED] tests/wc-job.json
+Test [171/253] expression_tool_int_array_output: Test output arrays in a tool (with ints).
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5cz2saep --quiet tests/output-arrays-int.[REDACTED] tests/output-arrays-int-job.json
+Test [172/253] workflowstep_int_array_input_output: Test output arrays in a workflow (with ints).
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpfre4j28t --quiet tests/output-arrays-int-wf.[REDACTED] tests/output-arrays-int-job.json
+Test [173/253] workflow_file_array_output: Test output arrays in a workflow (with Files).
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpw9cy9va4 --quiet tests/output-arrays-file-wf.[REDACTED] tests/output-arrays-file-job.json
+Test [174/253] docker_entrypoint: Test Docker ENTRYPOINT usage
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpd_2s6igk --quiet tests/docker-run-cmd.[REDACTED] tests/empty.json
+Test [175/253] clt_file_size_property_with_empty_file: Test use of size in expressions for an empty file
+
+Test [176/253] clt_file_size_property_with_multi_file: Test use of size in expressions for a few files
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpu5nshjht --quiet tests/size-expression-tool.[REDACTED] tests/job-input-array-one-empty-file.json
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp06qxn_kb --quiet tests/size-expression-tool.[REDACTED] tests/job-input-array-few-files.json
+Test [177/253] any_without_defaults_unspecified_fails: Test Any without defaults, unspecified, should fail.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmplqaduero --quiet tests/echo-tool.[REDACTED] tests/null-expression-echo-job.json
+Test [178/253] any_without_defaults_specified_fails: Test Any without defaults, specified, should fail.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpommja86z --quiet tests/echo-tool.[REDACTED] tests/null-expression1-job.json
+Pulling bash:4.4.12 with Singularity...
+Test [179/253] step_input_default_value_noexp: Test default value on step input parameter, no ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpt51qlrdr --quiet tests/count-lines9-wf-noET.[REDACTED] tests/empty.json
+Test [180/253] step_input_default_value_overriden_noexp: Test default value on step input parameter overridden by provided source, no ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvyiu5nbk --quiet tests/count-lines11-wf-noET.[REDACTED] tests/cat-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/echo-tool.[REDACTED]:6:3: Missing required input parameter 'in'[0m
+Test [181/253] nested_workflow_noexp: Test nested workflow, without ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5olio24n --quiet tests/count-lines8-wf-noET.[REDACTED] tests/wc-job.json
+Test [182/253] wf_multiplesources_multipletypes_noexp: Test step input with multiple sources with multiple types, without ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpknx5wq4y --quiet tests/sum-wf-noET.[REDACTED] tests/sum-job.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Invalid job input record:
+tests/echo-tool.[REDACTED]:6:3: Missing required input parameter 'in'[0m
+Test [183/253] dynamic_resreq_wf_optional_file_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The CommandLineTool input has a default value (a local file) and the workflow nor the workflow step does not provide any value for this input.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgu_breuq --quiet tests/dynresreq-workflow-tooldefault.[REDACTED] tests/empty.json
+Test [184/253] dynamic_resreq_wf_optional_file_step_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow step provides a default value (a local file) for this input and the workflow itself does not provide any value for this input.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpbwmqmqgn --quiet tests/dynresreq-workflow-stepdefault.[REDACTED] tests/empty.json
+Test [185/253] dynamic_resreq_wf_optional_file_wf_default: Within a workflow, test accessing the size attribute of an optional input File as part of a CommandLineTool's ResourceRequirement calculation. The workflow itelf provides a default value (a local file) for this input.
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpc_z1p9kc --quiet tests/dynresreq-workflow-inputdefault.[REDACTED] tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-wf-noET.[REDACTED]:6:3:  Source 'file1' of type ["null", "File"] may be incompatible
+tests/count-lines11-wf-noET.[REDACTED]:17:7:   with sink 'file1' of type "File"[0m
+Test [186/253] step_input_default_value_overriden_2nd_step: Test default value on step input parameter overridden by provided source. With passthrough first step
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp3e3r7838 --quiet tests/count-lines11-extra-step-wf.[REDACTED] tests/cat-job.json
+Test [187/253] step_input_default_value_overriden_2nd_step_noexp: Test default value on step input parameter overridden by provided source. With passthrough first step and no ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpzyeqdy11 --quiet tests/count-lines11-extra-step-wf-noET.[REDACTED] tests/cat-job.json
+Test [188/253] step_input_default_value_overriden_2nd_step_null: Test default value on step input parameter overridden by provided source. With null producing first step
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp856wh1t2 --quiet tests/count-lines11-null-step-wf.[REDACTED] tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/dynresreq-workflow-tooldefault.[REDACTED]:6:3:  Source 'special_file' of type ["null", "File"] may
+                                               be incompatible
+tests/dynresreq-workflow-tooldefault.[REDACTED]:15:7:   with sink 'special_file' of type "File"[0m
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/dynresreq-workflow-stepdefault.[REDACTED]:6:3:  Source 'special_file' of type ["null", "File"] may
+                                               be incompatible
+tests/dynresreq-workflow-stepdefault.[REDACTED]:15:7:   with sink 'special_file' of type "File"[0m
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/bash:4.4.12.sif
+Test [189/253] step_input_default_value_overriden_2nd_step_null_noexp: Test default value on step input parameter overridden by provided source. With null producing first step and no ExpressionTool
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpx4jwmwaf --quiet tests/count-lines11-null-step-wf-noET.[REDACTED] tests/empty.json
+Test [190/253] stdin_from_directory_literal_with_local_file: Pipe to stdin from user provided local File via a Directory literal
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgrpfju2w --quiet tests/cat-from-dir.[REDACTED] tests/cat-from-dir-job.yaml
+Test [191/253] stdin_from_directory_literal_with_literal_file: Pipe to stdin from literal File via a Directory literal
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpcz4oqxur --quiet tests/cat-from-dir.[REDACTED] tests/cat-from-dir-with-literal-file.yaml
+Test [192/253] directory_literal_with_literal_file_nostdin: Test non-stdin reference to literal File via a Directory literal
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp9qxrx1aw --quiet tests/cat3-from-dir.[REDACTED] tests/cat-from-dir-with-literal-file.yaml
+Test [193/253] no_inputs_commandlinetool: Test CommandLineTool without inputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpw888k7si --quiet tests/no-inputs-tool.[REDACTED]
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-extra-step-wf-noET.[REDACTED]:6:3:  Source 'file1' of type ["null", "File"] may be
+                                                 incompatible
+tests/count-lines11-extra-step-wf-noET.[REDACTED]:17:7:   with sink 'file1' of type "File"[0m
+Test [194/253] no_outputs_commandlinetool: Test CommandLineTool without outputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp4jhc74df --quiet tests/no-outputs-tool.[REDACTED] tests/cat-job.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/count-lines11-extra-step-wf.[REDACTED]:6:3:  Source 'file1' of type ["null", "File"] may be
+                                            incompatible
+tests/count-lines11-extra-step-wf.[REDACTED]:17:7:   with sink 'file1' of type "File"[0m
+Test [195/253] no_inputs_workflow: Test Workflow without inputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpuqtamap_ --quiet tests/no-inputs-wf.[REDACTED]
+Test [196/253] no_outputs_workflow: Test Workflow without outputs
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpoyg84cbp --quiet tests/no-outputs-wf.[REDACTED] tests/cat-job.json
+Test [197/253] anonymous_enum_in_array: Test an anonymous enum inside an array inside a record
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6tkuj_sb --quiet tests/anon_enum_inside_array.[REDACTED] tests/anon_enum_inside_array.yml
+Test [198/253] schema-def_anonymous_enum_in_array: Test an anonymous enum inside an array inside a record, SchemaDefRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpbvr59c8z --quiet tests/anon_enum_inside_array_inside_schemadef.[REDACTED] tests/anon_enum_inside_array_inside_schemadef.yml
+Test [199/253] stdin_shorcut: Test command execution in with stdin and stdout redirection using stdin shortcut
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqss2_5ua --quiet tests/wc-tool-shortcut.[REDACTED] tests/wc-job.json
+Already cached debian:stretch-slim with Singularity.
+Test [200/253] secondary_files_in_unnamed_records: Test secondaryFiles on anonymous record fields
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpinxyu301 --quiet tests/record-in-secondaryFiles.[REDACTED] tests/record-secondaryFiles-job.yml
+Already cached debian:stretch-slim with Singularity.
+Test [201/253] secondary_files_in_named_records: Test secondaryFiles on SchemaDefRequirement record fields
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmparnj7tsm --quiet tests/record-sd-secondaryFiles.[REDACTED] tests/record-secondaryFiles-job.yml
+/var/lib/[REDACTED]/stga92fcf57-4121-4a79-ba0c-484a59290e55/hello.txt
+Test [202/253] secondary_files_in_output_records: Test secondaryFiles on output record fields
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmplw9gjuec --quiet tests/record-out-secondaryFiles.[REDACTED] tests/empty.json
+Already cached debian:stretch-slim with Singularity.
+Already cached debian:stretch-slim with Singularity.
+Test [203/253] secondary_files_workflow_propagation: Test secondaryFiles propagation through workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpjkmu4sdz --quiet tests/record-in-secondaryFiles-wf.[REDACTED] tests/record-secondaryFiles-job.yml
+Test [204/253] secondary_files_missing: Test checking when secondaryFiles are missing
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpz1fia8w0 --quiet tests/record-in-secondaryFiles-missing-wf.[REDACTED] tests/record-secondaryFiles-job.yml
+/var/lib/[REDACTED]/stg61e8a790-6fca-4294-8fce-d2b12a25364b/hello.txt
+Already cached debian:stretch-slim with Singularity.
+Test [205/253] input_records_file_entry_with_format: Test format on anonymous record fields
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpyq7zdqhq --quiet tests/record-in-format.[REDACTED] tests/record-format-job.yml
+Test [206/253] input_records_file_entry_with_format_and_bad_regular_input_file_format: Test file format checking on parameter
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpsrk_teev --quiet tests/record-in-format.[REDACTED] tests/record-format-job2.yml
+Test [207/253] input_records_file_entry_with_format_and_bad_entry_file_format: Test file format checking on record field
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8el5yv0x --quiet tests/record-in-format.[REDACTED] tests/record-format-job3.yml
+Test 199 failed: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqss2_5ua --quiet tests/wc-tool-shortcut.[REDACTED] tests/wc-job.json
+Test command execution in with stdin and stdout redirection using stdin shortcut
+Compare failure expected: {
+    "output": {
+        "checksum": "sha1$2936abd60952276ffbf91d709b19c6c48c263947",
+        "class": "File",
+        "location": "output",
+        "size": 24
+    }
+}
+got: {
+    "output": {
+        "basename": "output",
+        "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+        "class": "File",
+        "location": "file:///e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqss2_5ua/output",
+        "path": "/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqss2_5ua/output",
+        "size": 15
+    }
+}
+caused by: failed comparison for key 'output': expected: {
+    "checksum": "sha1$2936abd60952276ffbf91d709b19c6c48c263947",
+    "class": "File",
+    "location": "output",
+    "size": 24
+}
+got: {
+    "basename": "output",
+    "checksum": "sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae",
+    "class": "File",
+    "location": "file:///e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqss2_5ua/output",
+    "path": "/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqss2_5ua/output",
+    "size": 15
+}
+caused by: Output file checksums do not match: actual 'sha1$631bfbac524e2d04cdcc5ec33ade827fc10b06ae' is not equal to expected 'sha1$2936abd60952276ffbf91d709b19c6c48c263947'
+Test [208/253] input_records_file_entry_with_format_and_bad_entry_array_file_format: Test file format checking on array item
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpd3w_nk9a --quiet tests/record-in-format.[REDACTED] tests/record-format-job4.yml
+Test [209/253] record_output_file_entry_format: Test format on output record fields
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgjnr8nmw --quiet tests/record-out-format.[REDACTED] tests/record-secondaryFiles-job.yml
+Test [210/253] workflow_input_inputBinding_loadContents: Test WorkflowInputParameter.inputBinding.loadContents
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpc3e9e5lb --quiet tests/wf-loadContents.[REDACTED] tests/wf-loadContents-job.yml
+[1;30mERROR[0m [31mException on step 'step1'[0m
+[1;30mERROR[0m [31m[step step1] Cannot make job: tests/record-in-secondaryFiles.[REDACTED]:10:11: Missing required secondary file 'A.s2' from file object: {
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "class": "File",
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "location": "file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/rec/A",
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "size": 0,
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "basename": "A",
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "nameroot": "A",
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "nameext": "",
+tests/record-in-secondaryFiles.[REDACTED]:10:11:     "secondaryFiles": []
+tests/record-in-secondaryFiles.[REDACTED]:10:11: }[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [211/253] workflow_input_loadContents_without_inputBinding: Test WorkflowInputParameter.loadContents
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpt9_taiht --quiet tests/wf-loadContents2.[REDACTED] tests/wf-loadContents-job.yml
+Test [212/253] expression_tool_input_loadContents: Test loadContents on InputParameter.loadContents (expression)
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp5iym9tor --quiet tests/wf-loadContents3.[REDACTED] tests/wf-loadContents-job.yml
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Expected value of 'regular_input' to have format 'http://example.com/format1' but
+ File has an incompatible format: {
+    "class": "File",
+    "location": "file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/rec/D",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "D",
+    "nameroot": "D",
+    "nameext": ""
+}[0m
+Test [213/253] workflow_step_in_loadContents: Test WorkflowStepInput.loadContents
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpgnpc4pg8 --quiet tests/wf-loadContents4.[REDACTED] tests/wf-loadContents-job.yml
+Test [214/253] timelimit_basic: Test that job fails when exceeding time limit
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2laq9fmi --quiet tests/timelimit.[REDACTED] tests/empty.json
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+Expected value of 'f1' to have format 'http://example.com/format1' but
+ File has an incompatible format: {
+    "class": "File",
+    "location": "file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/rec/A",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "A",
+    "nameroot": "A",
+    "nameext": ""
+}[0m
+[1;30mERROR[0m [31mGot workflow error[0m
+Traceback (most recent call last):
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 541, in bind_input
+    check_format(
+    ~~~~~~~~~~~~^
+        fdatum,
+        ^^^^^^^
+        evaluated_format,
+        ^^^^^^^^^^^^^^^^^
+        self.formatgraph,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]_utils/file_formats.py", line 68, in check_format
+    raise ValidationException(
+        f"File has an incompatible format: {json_dumps(afile, indent=4)}"
+    )
+schema_salad.exceptions.ValidationException: File has an incompatible format: {
+    "class": "File",
+    "location": "file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/rec/C",
+    "format": "http://example.com/formatZ",
+    "size": 0,
+    "basename": "C",
+    "nameroot": "C",
+    "nameext": ""
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/executors.py", line 215, in run_jobs
+    for job in jobiter:
+               ^^^^^^^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/command_line_tool.py", line 1023, in job
+    builder = self._init_job(job_order, runtimeContext)
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/process.py", line 961, in _init_job
+    builder.bind_input(
+    ~~~~~~~~~~~~~~~~~~^
+        self.inputs_record_schema,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        job,
+        ^^^^
+        discover_secondaryFiles=getdefault(runtime_context.toplevel, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 323, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        f,
+        ^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 290, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        st,
+        ^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 323, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        f,
+        ^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 290, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        st,
+        ^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 348, in bind_input
+    self.bind_input(
+    ~~~~~~~~~~~~~~~^
+        itemschema,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        discover_secondaryFiles=discover_secondaryFiles,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/venv-[REDACTED]tool/lib/python3.13/site-packages/[REDACTED]tool/builder.py", line 548, in bind_input
+    f"Expected value of {schema['name']!r} to have "
+                         ~~~~~~^^^^^^^^
+KeyError: 'name'
+[1;30mERROR[0m [31mWorkflow error, try again with --debug for more information:
+'name'[0m
+Test [215/253] timelimit_invalid: Test invalid time limit value
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpa56ejh24 --quiet tests/timelimit2.[REDACTED] tests/empty.json
+Test [216/253] timelimit_zero_unlimited: Test zero timelimit means no limit
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpthax9kjm --quiet tests/timelimit3.[REDACTED] tests/empty.json
+Test [217/253] timelimit_from_expression: Test expression in time limit
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpqs6tqn38 --quiet tests/timelimit4.[REDACTED] tests/empty.json
+Test [218/253] timelimit_expressiontool: Test timelimit in expressiontool is ignored
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpo88dhl4n --quiet tests/timelimit5.[REDACTED] tests/empty.json
+[1;30mERROR[0m [31mInput object failed validation:
+tests/timelimit2.[REDACTED]:7:5: timelimit must be an integer >= 0, got: -1[0m
+Test [219/253] timelimit_basic_wf: Test that tool in workflow fails when exceeding time limit
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp3ozf8fgl --quiet tests/timelimit-wf.[REDACTED] tests/empty.json
+Test [220/253] timelimit_invalid_wf: Test that workflow level time limit is not applied to workflow execution time
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp7_2ajqev --quiet tests/timelimit2-wf.[REDACTED] tests/empty.json
+Test [221/253] timelimit_zero_unlimited_wf: Test zero timelimit means no limit in workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6hc5w1_x --quiet tests/timelimit3-wf.[REDACTED] tests/empty.json
+Test [222/253] timelimit_from_expression_wf: Test expression in time limit in workflow
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp_trnyd53 --quiet tests/timelimit4-wf.[REDACTED] tests/empty.json
+[1;30mERROR[0m [31mTool definition failed validation:
+tests/timelimit-wf.[REDACTED]:2:1:     Object 'tests/timelimit-wf.[REDACTED]' is not valid because
+                                tried 'Workflow' but
+tests/timelimit-wf.[REDACTED]:18:1:       the 'steps' field is not valid because
+                                    tried array of <WorkflowStep> but
+tests/timelimit-wf.[REDACTED]:19:3:           item is invalid because
+tests/timelimit-wf.[REDACTED]:23:5:             the 'run' field is not valid because
+tests/timelimit-wf.[REDACTED]:29:7:               the 'outputs' field is not valid because
+tests/timelimit-wf.[REDACTED]:30:9:                 item is invalid because
+tests/timelimit-wf.[REDACTED]:32:11:                 the 'outputBinding' field is not valid because
+                                                tried CommandOutputBinding but
+tests/timelimit-wf.[REDACTED]:33:13:                     the 'outputEval' field is not valid because
+                                                    tried Expression but
+                                                      value 'time passed' does not contain an
+                                                      expression in the form $() or ${}[0m
+Test [223/253] networkaccess: Test networkaccess enabled
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpn7vimiwt --quiet tests/networkaccess.[REDACTED] tests/empty.json
+[1;30mERROR[0m [31mTool definition failed validation:
+tests/timelimit4-wf.[REDACTED]:2:1:     Object 'tests/timelimit4-wf.[REDACTED]' is not valid because
+                                 tried 'Workflow' but
+tests/timelimit4-wf.[REDACTED]:21:1:       the 'steps' field is not valid because
+                                     tried array of <WorkflowStep> but
+tests/timelimit4-wf.[REDACTED]:22:3:           item is invalid because
+tests/timelimit4-wf.[REDACTED]:26:5:             the 'run' field is not valid because
+tests/timelimit4-wf.[REDACTED]:32:7:               the 'outputs' field is not valid because
+tests/timelimit4-wf.[REDACTED]:33:9:                 item is invalid because
+tests/timelimit4-wf.[REDACTED]:35:11:                 the 'outputBinding' field is not valid because
+                                                 tried CommandOutputBinding but
+tests/timelimit4-wf.[REDACTED]:36:13:                     the 'outputEval' field is not valid because
+                                                     tried Expression but
+                                                       value 'time passed' does not contain an
+                                                       expression in the form $() or ${}[0m
+Test [224/253] networkaccess_disabled: Test networkaccess is disabled by default
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpo0zyavt9 --quiet tests/networkaccess2.[REDACTED] tests/empty.json
+Pulling python:3 with Singularity...
+Pulling python:3 with Singularity...
+[1;30mWARNING[0m [33m[job timelimit.[REDACTED]] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job timelimit.[REDACTED]] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job timelimit.[REDACTED]] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [225/253] Test null and array input in InitialWorkDirRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp86gmuxxp --quiet tests/stage-array.[REDACTED] tests/stage-array-job.json
+Test [226/253] Test array of directories InitialWorkDirRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpiple1gf6 --quiet tests/stage-array-dirs.[REDACTED] tests/stage-array-dirs-job.yml
+[1;30mWARNING[0m [33m[job timelimit4.[REDACTED]] exceeded time limit of 3 seconds and will be terminated[0m
+[1;30mWARNING[0m [33m[job timelimit4.[REDACTED]] was terminated by signal: SIGTERM[0m
+[1;30mWARNING[0m [33m[job timelimit4.[REDACTED]] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [227/253] [REDACTED]_requirements_addition: Test requirements in input document via EnvVarRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpaya5fd8l --quiet tests/env-tool3.[REDACTED] tests/env-job3.yaml
+rec
+testdir
+Test [228/253] [REDACTED]_requirements_override_expression: Test conflicting requirements in input document via EnvVarRequirement and expression
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp1q45l8b_ --quiet tests/env-tool4.[REDACTED] tests/env-job3.yaml
+Test [229/253] [REDACTED]_requirements_override_static: Test conflicting requirements in input document via EnvVarRequirement
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpig0i3qvw --quiet tests/env-tool3.[REDACTED] tests/env-job4.yaml
+Test [230/253] Test output of InitialWorkDir
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpthsqh528 --quiet tests/initialworkdir-glob-fullpath.[REDACTED] tests/initialworkdirrequirement-docker-out-job.json
+Test [231/253] Test if full paths are allowed in glob
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8i8s20op --quiet tests/initialworkdir-glob-fullpath.[REDACTED] tests/initialworkdirrequirement-docker-out-job.json
+Test [232/253] Test fail trying to glob outside output directory
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp6s61ueob --quiet tests/glob-path-error.[REDACTED] tests/empty.json
+Test [233/253] symlink to file outside of working directory should NOT be retrieved
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpn6lhmf5d --quiet tests/symlink-illegal.[REDACTED] tests/empty.json
+Test [234/253] symlink to file inside of working directory should be retrieved
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpc1emorbr --quiet tests/symlink-legal.[REDACTED] tests/empty.json
+Already cached debian:stretch-slim with Singularity.
+
+[1;30mERROR[0m [31m[job glob-path-error.[REDACTED]] Job error:
+Error collecting output for parameter 'OUTPUT': tests/glob-path-error.[REDACTED]:17:7: glob patterns must not start with '/'[0m
+[1;30mWARNING[0m [33m[job glob-path-error.[REDACTED]] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [235/253] inplace update has side effect on file content
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp1incd18m --quiet tests/inp_update_wf.[REDACTED] tests/empty.json
+Already cached alpine:latest with Singularity.
+[1;30mERROR[0m [31m[job symlink-illegal.[REDACTED]] Job error:
+Error validating output record. Does not exist or is not a Directory: 'file:///e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir2lh40es_/symlink.txt'
+ in {
+    "output_file": {
+        "location": "file:///e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir2lh40es_/symlink.txt",
+        "basename": "symlink.txt",
+        "nameroot": "symlink",
+        "nameext": ".txt",
+        "class": "Directory"
+    }
+}[0m
+[1;30mWARNING[0m [33m[job symlink-illegal.[REDACTED]] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+Test [236/253] inplace update has side effect on directory content
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp2txr5er7 --quiet tests/inpdir_update_wf.[REDACTED] tests/empty.json
+Already cached alpine:latest with Singularity.
+Test [237/253] outputbinding_glob_directory: Test that OutputBinding.glob accepts Directories
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpa7gqqmyf --quiet tests/glob_directory.[REDACTED] tests/empty.json
+[1;30mWARNING[0m [33mWorkflow checker warning:
+tests/inp_update_wf.[REDACTED]:26:7: 'wait' is not an input parameter of
+                              file:///e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/tests/parseInt-tool.[REDACTED],
+                              expected file1[0m
+Pulling python:2.7.15-alpine3.7 with Singularity...
+Test [238/253] stage_file_array: Test that array of input files can be staged to directory with entryname
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmph4aire9e --quiet tests/stage_file_array.[REDACTED] tests/stage_file_array.job.json
+Test [239/253] stage_file_array: Test that array of input files can be staged to directory with basename
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp3eh5by_e --quiet tests/stage_file_array_basename.[REDACTED] tests/stage_file_array.job.json
+Test [240/253] stage_file_array: Test that if array of input files are staged to directory with basename and entryname, entryname overrides
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmppjmjwrbz --quiet tests/stage_file_array_basename_and_entryname.[REDACTED] tests/stage_file_array.job.json
+input_dir
+Test [241/253] tmpdir_is_not_outdir: Test that runtime.tmpdir is not runtime.outdir
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpxahk0b26 --quiet tests/runtime-paths-distinct.[REDACTED] tests/empty.json
+input_dir
+Test [242/253] listing_default_none: Test that default behavior is 'no_listing' if not specified
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpc5aixet8 --quiet tests/listing_none1.[REDACTED] tests/listing-job.yml
+input_dir
+Test [243/253] listing_requirement_none: Test that 'listing' is not present when LoadListingRequirement is 'no_listing'
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8f_p20o4 --quiet tests/listing_none2.[REDACTED] tests/listing-job.yml
+Test [244/253] listing_loadListing_none: Test that 'listing' is not present when loadListing on input parameter is 'no_listing'
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpxe5z7s_4 --quiet tests/listing_none3.[REDACTED] tests/listing-job.yml
+Test [245/253] listing_requirement_shallow: Test that 'listing' is present in top directory object but not subdirectory object when LoadListingRequirement is 'shallow_listing'
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpu2kn3j07 --quiet tests/listing_shallow1.[REDACTED] tests/listing-job.yml
+Test [246/253] listing_loadListing_shallow: Test that 'listing' is present in top directory object but not subdirectory object when loadListing on input parameter loadListing is 'shallow_listing'
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpvp__rht1 --quiet tests/listing_shallow2.[REDACTED] tests/listing-job.yml
+Test [247/253] listing_requirement_deep: Test that 'listing' is present in top directory object and in subdirectory objects when LoadListingRequirement is 'deep_listing'
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpl0kcg9ke --quiet tests/listing_deep1.[REDACTED] tests/listing-job.yml
+Test [248/253] listing_loadListing_deep: Test that 'listing' is present in top directory object and in subdirectory objects when input parameter loadListing is 'deep_listing'
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp8izsfs3d --quiet tests/listing_deep2.[REDACTED] tests/listing-job.yml
+Test [249/253] inputBinding_position_expr: Test for expression in the InputBinding.position field; also test using emoji in CWL document and tool output
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpm74s5blt --quiet tests/echo-position-expr.[REDACTED] tests/echo-position-expr-job.yml
+Test [250/253] outputEval_exitCode: Can access exit code in outputEval
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp0hjbn5ee --quiet tests/exitcode.[REDACTED] tests/empty.json
+Test [251/253] any_input_param_graph_no_default: Test use of $graph without specifying which process to run
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpu3n47c7u --quiet tests/echo-tool-packed.[REDACTED] tests/env-job.json
+Test [252/253] any_input_param_graph_no_default_hashmain: Test use of $graph without specifying which process to run, hash-prefixed "main"
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmp7ic8tpaj --quiet tests/echo-tool-packed2.[REDACTED] tests/env-job.json
+Test [253/253] optional_numerical_output_returns_0_not_null: Test that optional number output is returned as 0, not null
+
+Running: [REDACTED]tool --singularity --enable-dev --tmpdir-prefix=/e/scratch/[REDACTED]/tmp//cc7a9060-8f5b-4ae0-b298-05c6ba580c28/tmpdir --outdir=/e/scratch/[REDACTED]/tmp/cc7a9060-8f5b-4ae0-b298-05c6ba580c28/966af0d1-0817-4eba-b34f-622a5925c837/tmpl0ah1u__ --quiet tests/optional-numerical-output-0.[REDACTED] tests/empty.json
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:2.7.15-alpine3.7.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:3.sif
+Image successfully pulled: /e/scratch/[REDACTED]/[REDACTED]/[REDACTED]-mpi/[REDACTED]-conformance-tests/runs/specs/v1.1/python:3.sif
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.15/urllib/request.py", line 1335, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/http/client.py", line 1398, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/http/client.py", line 1444, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/http/client.py", line 1393, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/http/client.py", line 1153, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.15/http/client.py", line 1097, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.15/http/client.py", line 1063, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/socket.py", line 859, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/socket.py", line 998, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    assert(urllib.request.urlopen("http://commonwl.org").code == 200)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python3.15/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/local/lib/python3.15/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.15/urllib/request.py", line 1364, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.15/urllib/request.py", line 1338, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+[1;30mWARNING[0m [33m[job networkaccess2.[REDACTED]] exited with status: 1[0m
+[1;30mWARNING[0m [33m[job networkaccess2.[REDACTED]] completed permanentFail[0m
+[1;30mWARNING[0m [33mFinal process status is permanentFail[0m
+252 tests passed, 1 failures, 0 unsupported features
